@@ -178,24 +178,24 @@ parseEffectType percentageOpt =
     <|> withPotencies "MATK Up" MatkUp
     <|> withPotencies "PDEF Up" PdefUp
     <|> withPotencies "MDEF Up" MdefUp
-    <|> withPotencies "Fire Resistance Down" FireResistDown
-    <|> withPotencies "Ice Resistance Down" IceResistDown
-    <|> withPotencies "Thunder Resistance Down" ThunderResistDown
-    <|> withPotencies "Earth Resistance Down" EarthResistDown
-    <|> withPotencies "Water Resistance Down" WaterResistDown
-    <|> withPotencies "Wind Resistance Down" WindResistDown
-    <|> withoutPotencies "Veil" Veil
-    <|> withoutPotencies "Provoke" Provoke
-    <|> withPotencies "PATK Down" PatkDown
-    <|> withPotencies "MATK Down" MatkDown
-    <|> withPotencies "PDEF Down" PdefDown
-    <|> withPotencies "MDEF Down" MdefDown
     <|> withPotencies "Fire Damage Up" FireDamageUp
     <|> withPotencies "Ice Damage Up" IceDamageUp
     <|> withPotencies "Thunder Damage Up" ThunderDamageUp
     <|> withPotencies "Earth Damage Up" EarthDamageUp
     <|> withPotencies "Water Damage Up" WaterDamageUp
     <|> withPotencies "Wind Damage Up" WindDamageUp
+    <|> withoutPotencies "Veil" Veil
+    <|> withoutPotencies "Provoke" Provoke
+    <|> withPotencies "PATK Down" PatkDown
+    <|> withPotencies "MATK Down" MatkDown
+    <|> withPotencies "PDEF Down" PdefDown
+    <|> withPotencies "MDEF Down" MdefDown
+    <|> withPotencies "Fire Resistance Down" FireResistDown
+    <|> withPotencies "Ice Resistance Down" IceResistDown
+    <|> withPotencies "Thunder Resistance Down" ThunderResistDown
+    <|> withPotencies "Earth Resistance Down" EarthResistDown
+    <|> withPotencies "Water Resistance Down" WaterResistDown
+    <|> withPotencies "Wind Resistance Down" WindResistDown
     <|> parseHeal
   where
   withPotencies :: String -> (Potencies -> EffectType) -> Parser EffectType

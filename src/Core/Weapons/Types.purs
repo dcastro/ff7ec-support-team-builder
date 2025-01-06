@@ -46,12 +46,12 @@ data EffectType
   | MatkUp Potencies
   | PdefUp Potencies
   | MdefUp Potencies
-  | FireResistDown Potencies
-  | IceResistDown Potencies
-  | ThunderResistDown Potencies
-  | EarthResistDown Potencies
-  | WaterResistDown Potencies
-  | WindResistDown Potencies
+  | FireDamageUp Potencies
+  | IceDamageUp Potencies
+  | ThunderDamageUp Potencies
+  | EarthDamageUp Potencies
+  | WaterDamageUp Potencies
+  | WindDamageUp Potencies
   | Veil
   | Provoke
   -- Debuffs
@@ -59,12 +59,12 @@ data EffectType
   | MatkDown Potencies
   | PdefDown Potencies
   | MdefDown Potencies
-  | FireDamageUp Potencies
-  | IceDamageUp Potencies
-  | ThunderDamageUp Potencies
-  | EarthDamageUp Potencies
-  | WaterDamageUp Potencies
-  | WindDamageUp Potencies
+  | FireResistDown Potencies
+  | IceResistDown Potencies
+  | ThunderResistDown Potencies
+  | EarthResistDown Potencies
+  | WaterResistDown Potencies
+  | WindResistDown Potencies
 
 type WeaponEffect
   = { effectType ::

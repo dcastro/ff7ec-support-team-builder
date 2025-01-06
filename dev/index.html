@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Halogen7 Template</title>
+  </head>
+  <body>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://accounts.google.com/gsi/client"></script>
+    <script>
+      // https://developers.google.com/sheets/api/quickstart/js
+      async function gapiLogin(key) {
+        await gapi.client.init({
+          'apiKey': key,
+        });
+      }
+      gapi.load('client', () => { gapiLogin("AIzaSyARUnvuw1DvqJRISnPyOLEkqPvra4MF6fQ")});
+    </script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

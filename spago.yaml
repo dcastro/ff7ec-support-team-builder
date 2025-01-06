@@ -1,0 +1,44 @@
+package:
+  dependencies:
+    - aff
+    - aff-promise
+    - arrays
+    - console
+    - debug
+    - effect
+    - either
+    - halogen
+    - halogen-subscriptions
+    - lists
+    - maybe
+    - parsing
+    - prelude
+    - random
+    - strings
+    - stringutils
+    - tailrec
+    - tuples
+    - unsafe-coerce
+    - web-events
+    - web-html
+    - web-storage
+    - yoga-json
+  name: ff7ec-team-builder
+  test:
+    main: Test.Main
+    dependencies:
+      - node-execa
+      - spec
+      - spec-discovery
+    censorTestWarnings:
+      - ImplicitImport
+      - ImplicitQualifiedImport
+  build:
+    censorProjectWarnings:
+      - ImplicitImport
+      - ImplicitQualifiedImport
+
+workspace:
+  extraPackages: {}
+  packageSet:
+    registry: 62.2.5

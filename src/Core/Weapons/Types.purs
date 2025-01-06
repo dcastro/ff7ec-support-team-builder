@@ -37,7 +37,8 @@ data Range
   | SingleTarget
   | Self
 
-newtype Percentage = Percentage Int
+newtype Percentage
+  = Percentage Int
 
 data EffectType
   = Heal { percentage :: Percentage }
@@ -78,27 +79,38 @@ type Potencies
     , max :: Potency
     }
 
-derive instance Generic Range _
-derive instance Generic EffectType _
-derive instance Generic Potency _
+derive instance genericRange :: Generic Range _
 
-derive instance Eq Range
-derive instance Eq EffectType
-derive instance Eq Potency
-derive newtype instance Eq Percentage
+derive instance genericEffectType :: Generic EffectType _
 
-instance Show Range where show = genericShow
-instance Show EffectType where show = genericShow
-instance Show Potency where show = genericShow
-derive newtype instance Show Percentage
+derive instance genericPotency :: Generic Potency _
 
-instance WriteForeign Range where
+derive instance eqRange :: Eq Range
+
+derive instance eqEffectType :: Eq EffectType
+
+derive instance eqPotency :: Eq Potency
+
+derive newtype instance eqPercentage :: Eq Percentage
+
+instance showRange :: Show Range where
+  show = genericShow
+
+instance showEffectType :: Show EffectType where
+  show = genericShow
+
+instance showPotency :: Show Potency where
+  show = genericShow
+
+derive newtype instance showPercentage :: Show Percentage
+
+instance writeForeignRange :: WriteForeign Range where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
-instance WriteForeign EffectType where
+instance writeForeignEffectType :: WriteForeign EffectType where
   writeImpl = J.genericWriteForeignTaggedSum TaggedSum.defaultOptions
 
-instance WriteForeign Potency where
+instance writeForeignPotency :: WriteForeign Potency where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
-derive newtype instance WriteForeign Percentage
+derive newtype instance writeForeignPercentage :: WriteForeign Percentage

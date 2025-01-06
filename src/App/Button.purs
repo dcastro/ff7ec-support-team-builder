@@ -12,8 +12,7 @@ import Halogen.HTML.Events as HE
 import Halogen.Subscription as HS
 import Unsafe.Coerce (unsafeCoerce)
 
-type State
-  = { count :: Int }
+type State = { count :: Int }
 
 data Action
   = Increment

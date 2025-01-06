@@ -19,6 +19,9 @@ test:
 test-filter:
 	spago test -- --example "$(FILTER)"
 
+format:
+	purs-tidy format-in-place "src/**/*.purs" "test/**/*.purs"
+
 clean: ## Clean all artifacts
 	rm -rf output
 

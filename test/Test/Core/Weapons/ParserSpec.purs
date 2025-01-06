@@ -63,7 +63,7 @@ spec =
         Left errs ->
           throwError $ error
             $ "Failed to read `resources/weapons.json`: "
-            <> (errs # foldMap \err -> "\n" <> Foreign.renderForeignError err)
+                <> (errs # foldMap \err -> "\n" <> Foreign.renderForeignError err)
       weapons <- case parseWeapons sourceWeapons of
         Right res -> pure res
         Left err -> throwError $ error err

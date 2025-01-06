@@ -1,7 +1,7 @@
 module Core.Weapons.Search where
 
-import Core.Weapons.Types
 import Prelude
+import Core.Weapons.Types
 import Data.Foldable as F
 
 data FilterRange
@@ -9,7 +9,7 @@ data FilterRange
   | FilterSingleTargetOrAll
   | FilterSelfOrSingleTargetOrAll
 
-derive instance eqFilterRange :: Eq FilterRange
+derive instance Eq FilterRange
 
 data FilterEffectType
   = FilterHeal
@@ -38,12 +38,12 @@ data FilterEffectType
   | FilterWaterResistDown
   | FilterWindResistDown
 
-derive instance eqFilterEffectType :: Eq FilterEffectType
+derive instance Eq FilterEffectType
 
-type Filter
-  = { effectType :: FilterEffectType
-    , range :: FilterRange
-    }
+type Filter =
+  { effectType :: FilterEffectType
+  , range :: FilterRange
+  }
 
 -- Check if a weapon matches a given filter.
 matches :: Weapon -> Filter -> Boolean

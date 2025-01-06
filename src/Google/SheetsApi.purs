@@ -16,11 +16,11 @@ getSheet :: String -> Aff (Response GetSheetResult)
 getSheet range = do
   toAffE $ _getSheet range
 
-type Response r
-  = { status :: Int
-    , result :: r
-    }
+type Response r =
+  { status :: Int
+  , result :: r
+  }
 
-type GetSheetResult
-  = { values :: Array (Array String)
-    }
+type GetSheetResult =
+  { values :: Array (Array String)
+  }

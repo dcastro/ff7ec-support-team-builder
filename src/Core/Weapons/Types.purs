@@ -9,22 +9,22 @@ import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
 import Yoga.JSON.Generics.TaggedSumRep as TaggedSum
 
-type Weapon
-  = { name :: NonEmptyString
-    , character :: NonEmptyString
-    , image :: NonEmptyString
-    , ob0 :: ObLevel
-    , ob1 :: ObLevel
-    , ob6 :: ObLevel
-    , ob10 :: ObLevel
-    , cureAllAbility :: Boolean
-    }
+type Weapon =
+  { name :: NonEmptyString
+  , character :: NonEmptyString
+  , image :: NonEmptyString
+  , ob0 :: ObLevel
+  , ob1 :: ObLevel
+  , ob6 :: ObLevel
+  , ob10 :: ObLevel
+  , cureAllAbility :: Boolean
+  }
 
-type ObLevel
-  = { description :: NonEmptyString -- ^ The source text from which the buffs/debuffs were parsed.
-    , effects ::
-        Array WeaponEffect
-    }
+type ObLevel =
+  { description :: NonEmptyString -- ^ The source text from which the buffs/debuffs were parsed.
+  , effects ::
+      Array WeaponEffect
+  }
 
 data Potency
   = Low
@@ -37,8 +37,7 @@ data Range
   | SingleTarget
   | Self
 
-newtype Percentage
-  = Percentage Int
+newtype Percentage = Percentage Int
 
 data EffectType
   = Heal { percentage :: Percentage }
@@ -67,50 +66,45 @@ data EffectType
   | WaterResistDown Potencies
   | WindResistDown Potencies
 
-type WeaponEffect
-  = { effectType ::
-        EffectType
-    , range ::
-        Range
-    }
+type WeaponEffect =
+  { effectType ::
+      EffectType
+  , range ::
+      Range
+  }
 
-type Potencies
-  = { base :: Potency
-    , max :: Potency
-    }
+type Potencies =
+  { base :: Potency
+  , max :: Potency
+  }
 
-derive instance genericRange :: Generic Range _
+derive instance Generic Range _
+derive instance Generic EffectType _
+derive instance Generic Potency _
+derive instance Eq Range
 
-derive instance genericEffectType :: Generic EffectType _
+derive instance Eq EffectType
+derive instance Eq Potency
+derive newtype instance Eq Percentage
 
-derive instance genericPotency :: Generic Potency _
-
-derive instance eqRange :: Eq Range
-
-derive instance eqEffectType :: Eq EffectType
-
-derive instance eqPotency :: Eq Potency
-
-derive newtype instance eqPercentage :: Eq Percentage
-
-instance showRange :: Show Range where
+instance Show Range where
   show = genericShow
 
-instance showEffectType :: Show EffectType where
+instance Show EffectType where
   show = genericShow
 
-instance showPotency :: Show Potency where
+instance Show Potency where
   show = genericShow
 
-derive newtype instance showPercentage :: Show Percentage
+derive newtype instance Show Percentage
 
-instance writeForeignRange :: WriteForeign Range where
+instance WriteForeign Range where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
-instance writeForeignEffectType :: WriteForeign EffectType where
+instance WriteForeign EffectType where
   writeImpl = J.genericWriteForeignTaggedSum TaggedSum.defaultOptions
 
-instance writeForeignPotency :: WriteForeign Potency where
+instance WriteForeign Potency where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
-derive newtype instance writeForeignPercentage :: WriteForeign Percentage
+derive newtype instance WriteForeign Percentage

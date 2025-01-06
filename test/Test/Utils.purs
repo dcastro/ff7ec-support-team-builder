@@ -33,10 +33,10 @@ goldenTest expectedFilePath value = do
   -- Check if a snapshot file already exists
   liftEffect (NodeSync.exists expectedFilePath)
     >>= case _ of
-        true -> pure unit
-        false -> do
-          Console.log $ "Snapshot file '" <> expectedFilePath <> "' does not yet exist; creating it..."
-          overwriteSnapshotFile actualJson
+      true -> pure unit
+      false -> do
+        Console.log $ "Snapshot file '" <> expectedFilePath <> "' does not yet exist; creating it..."
+        overwriteSnapshotFile actualJson
   result <- shouldEqualFile actualJson expectedFilePath
   when (result.exitCode /= Just 0) do
     -- The snapshot file did not match the expected string.

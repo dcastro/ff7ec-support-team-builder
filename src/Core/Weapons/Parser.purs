@@ -16,8 +16,7 @@ import Parsing.Combinators as P
 import Parsing.String as P
 import Parsing.String.Basic as P
 
-type Result a
-  = Either String a
+type Result a = Either String a
 
 parseWeapons :: Array (Array String) -> Result (Array Weapon)
 parseWeapons = traverseWithIndex parseWeapon
@@ -71,8 +70,7 @@ onErr ma err = case ma of
   Just a -> Right a
   Nothing -> Left err
 
-type Coords
-  = { rowId :: Int, columnId :: Int }
+type Coords = { rowId :: Int, columnId :: Int }
 
 parseObLevel :: Coords -> NonEmptyString -> Result ObLevel
 parseObLevel coords description = do
@@ -87,8 +85,7 @@ parseObLevel coords description = do
     , effects
     }
 
-type Parser
-  = P.Parser String
+type Parser = P.Parser String
 
 parseWeaponEffect :: Coords -> Parser WeaponEffect
 parseWeaponEffect coords =
@@ -134,21 +131,16 @@ parseRange =
     inBrackets do
       _ <- P.string "Range: "
       (P.string "All Allies" <|> P.string "All Enemies") $> All
-        <|> (P.string "Single Ally" <|> P.string "Single Enemy")
-        $> SingleTarget
-        <|> (P.string "Self")
-        $> Self
+        <|> (P.string "Single Ally" <|> P.string "Single Enemy") $> SingleTarget
+        <|> P.string "Self" $> Self
 
 parsePotency :: Parser Potency
 parsePotency =
   inContext "Potency" do
     P.string "Low" $> Low
-      <|> P.string "Mid"
-      $> Mid
-      <|> P.string "High"
-      $> High
-      <|> P.string "Extra High"
-      $> ExtraHigh
+      <|> P.string "Mid" $> Mid
+      <|> P.string "High" $> High
+      <|> P.string "Extra High" $> ExtraHigh
 
 parsePotencies :: Parser { base :: Potency, max :: Potency }
 parsePotencies =

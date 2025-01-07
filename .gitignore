@@ -9,6 +9,7 @@ node_modules
 
 package-lock.json
 *.lock
+!spago.lock
 
 dist/
 prod/*

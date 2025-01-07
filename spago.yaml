@@ -33,10 +33,12 @@ package:
     censorTestWarnings:
       - ImplicitImport
       - ImplicitQualifiedImport
+      - ShadowedName
   build:
     censorProjectWarnings:
       - ImplicitImport
       - ImplicitQualifiedImport
+      - ShadowedName
 
 workspace:
   extraPackages: {}

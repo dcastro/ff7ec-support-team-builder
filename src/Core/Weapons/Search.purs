@@ -1,15 +1,29 @@
 module Core.Weapons.Search where
 
-import Prelude
 import Core.Weapons.Types
+import Prelude
+import Data.Array as Arr
 import Data.Foldable as F
+import Data.Generic.Rep (class Generic)
+import Data.Maybe (Maybe(..))
+import Data.Show.Generic (genericShow)
+import Unsafe.Coerce (unsafeCoerce)
+import Yoga.JSON (class WriteForeign)
+import Yoga.JSON.Generics as J
+import Yoga.JSON.Generics.EnumSumRep as Enum
 
 data FilterRange
   = FilterAll
   | FilterSingleTargetOrAll
   | FilterSelfOrSingleTargetOrAll
 
+derive instance Generic FilterRange _
 derive instance Eq FilterRange
+instance Show FilterRange where
+  show = genericShow
+
+instance WriteForeign FilterRange where
+  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
 data FilterEffectType
   = FilterHeal
@@ -38,16 +52,47 @@ data FilterEffectType
   | FilterWaterResistDown
   | FilterWindResistDown
 
+derive instance Generic FilterEffectType _
 derive instance Eq FilterEffectType
+instance Show FilterEffectType where
+  show = genericShow
+
+instance WriteForeign FilterEffectType where
+  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
 type Filter =
   { effectType :: FilterEffectType
   , range :: FilterRange
   }
 
+type FilterResult =
+  { filter :: Filter
+  , required :: Boolean
+  , matchingWeapons :: Array Weapon
+  }
+
+type Combination = Array
+  { filter :: Filter
+  , weapon :: Maybe Weapon
+  }
+
+combinations :: Array FilterResult -> Array Combination
+combinations results =
+  Arr.foldr
+    ( \(filterResult :: FilterResult) (combinations :: Array Combination) -> do
+        (weapon :: Weapon) <- filterResult.matchingWeapons
+        (combination :: Combination) <- combinations
+        [ Arr.cons { filter: filterResult.filter, weapon: Just weapon } combination ]
+    )
+    ([ [] ] :: Array Combination)
+    results
+
+findMatchingWeapons :: Filter -> Array Weapon -> Array Weapon
+findMatchingWeapons filter weapons = weapons # Arr.filter (matches filter)
+
 -- Check if a weapon matches a given filter.
-matches :: Weapon -> Filter -> Boolean
-matches weapon filter =
+matches :: Filter -> Weapon -> Boolean
+matches filter weapon =
   weaponHasHealAll
     || weaponHasEffect
   where
@@ -128,3 +173,25 @@ defaultFilterRange = case _ of
   FilterEarthResistDown -> FilterSingleTargetOrAll
   FilterWaterResistDown -> FilterSingleTargetOrAll
   FilterWindResistDown -> FilterSingleTargetOrAll
+
+cartesianProduct :: forall a. Array (Array a) -> Array (Array a)
+cartesianProduct arr =
+  case Arr.uncons arr of
+    Nothing -> []
+    Just { head, tail: [] } -> do
+      x <- head
+      [ [ x ] ]
+    Just { head, tail } -> do
+      x <- head
+      xs <- cartesianProduct tail
+      [ Arr.cons x xs ]
+
+cartesianProduct2 :: forall a. Array (Array a) -> Array (Array a)
+cartesianProduct2 =
+  Arr.foldr
+    ( \arr b -> do
+        x <- arr
+        xs <- b
+        [ Arr.cons x xs ]
+    )
+    [ [] ]

@@ -80,12 +80,19 @@ combinations :: Array FilterResult -> Array Combination
 combinations results =
   Arr.foldr
     ( \(filterResult :: FilterResult) (combinations :: Array Combination) -> do
-        (weapon :: Weapon) <- filterResult.matchingWeapons
+        (weapon :: Maybe Weapon) <- filterResult.matchingWeapons # handleOptional filterResult.required
         (combination :: Combination) <- combinations
-        [ Arr.cons { filter: filterResult.filter, weapon: Just weapon } combination ]
+        [ Arr.cons { filter: filterResult.filter, weapon } combination ]
     )
     ([ [] ] :: Array Combination)
     results
+  where
+
+  -- If there are no matching weaopns, return an array that yields a single `None`
+  handleOptional :: Boolean -> Array Weapon -> Array (Maybe Weapon)
+  handleOptional required matchingWeapons =
+    if not required && matchingWeapons == [] then [ Nothing ]
+    else Just <$> matchingWeapons
 
 findMatchingWeapons :: Filter -> Array Weapon -> Array Weapon
 findMatchingWeapons filter weapons = weapons # Arr.filter (matches filter)

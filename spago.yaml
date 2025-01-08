@@ -11,6 +11,7 @@ package:
     - halogen-subscriptions
     - lists
     - maybe
+    - ordered-collections
     - parsing
     - prelude
     - random
@@ -28,6 +29,7 @@ package:
     main: Test.Main
     dependencies:
       - node-execa
+      - nullable
       - spec
       - spec-discovery
     censorTestWarnings:

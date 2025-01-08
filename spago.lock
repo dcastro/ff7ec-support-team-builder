@@ -16,6 +16,7 @@
             "halogen-subscriptions",
             "lists",
             "maybe",
+            "ordered-collections",
             "parsing",
             "prelude",
             "random",
@@ -116,6 +117,7 @@
         "test": {
           "dependencies": [
             "node-execa",
+            "nullable",
             "spec",
             "spec-discovery"
           ],

@@ -9,8 +9,8 @@ import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
+import Data.Newtype (unwrap)
 import Data.Show.Generic (genericShow)
-import Data.String.NonEmpty (NonEmptyString)
 import Data.String.NonEmpty as NES
 import Unsafe.Coerce (unsafeCoerce)
 import Yoga.JSON (class WriteForeign)
@@ -159,7 +159,7 @@ matches filter weapon =
     FilterSelfOrSingleTargetOrAll, All -> true
 
 type Character =
-  { name :: NonEmptyString
+  { name :: CharacterName
   , mainHand :: EquipedWeapon
   , offHand :: Maybe EquipedWeapon
   }
@@ -193,8 +193,8 @@ assignWeaponsToCharacters maxCharacterCount =
             Just $ assignments { missedFilters = Arr.cons filter assignments.missedFilters }
           Just weapon -> do
             let
-              characterName = weapon.character
-              characterName' = NES.toString characterName
+              characterName = weapon.character :: CharacterName
+              characterName' = NES.toString (unwrap characterName)
             updatedCharacters <-
               case Map.lookup characterName' assignments.characters of
                 Nothing ->
@@ -211,7 +211,7 @@ assignWeaponsToCharacters maxCharacterCount =
 
   where
 
-  mkCharacter :: NonEmptyString -> Weapon -> Filter -> Character
+  mkCharacter :: CharacterName -> Weapon -> Filter -> Character
   mkCharacter name mainHandWeapon matchedFilter =
     { name
     , mainHand:

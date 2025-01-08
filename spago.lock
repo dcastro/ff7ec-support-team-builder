@@ -16,6 +16,7 @@
             "halogen-subscriptions",
             "lists",
             "maybe",
+            "newtype",
             "ordered-collections",
             "parsing",
             "prelude",

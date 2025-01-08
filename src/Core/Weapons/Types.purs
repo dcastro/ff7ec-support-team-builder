@@ -1,7 +1,9 @@
 module Core.Weapons.Types where
 
 import Prelude
+
 import Data.Generic.Rep (class Generic)
+import Data.Newtype (class Newtype)
 import Data.Show.Generic (genericShow)
 import Data.String.NonEmpty (NonEmptyString)
 import Yoga.JSON (class WriteForeign)
@@ -9,9 +11,12 @@ import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
 import Yoga.JSON.Generics.TaggedSumRep as TaggedSum
 
+newtype CharacterName = CharacterName NonEmptyString
+newtype WeaponName = WeaponName NonEmptyString
+
 type Weapon =
-  { name :: NonEmptyString
-  , character :: NonEmptyString
+  { name :: WeaponName
+  , character :: CharacterName
   , image :: NonEmptyString
   , ob0 :: ObLevel
   , ob1 :: ObLevel
@@ -81,11 +86,17 @@ type Potencies =
 derive instance Generic Range _
 derive instance Generic EffectType _
 derive instance Generic Potency _
-derive instance Eq Range
 
+derive instance Eq Range
 derive instance Eq EffectType
 derive instance Eq Potency
 derive newtype instance Eq Percentage
+derive newtype instance Eq CharacterName
+derive newtype instance Eq WeaponName
+
+derive instance Newtype Percentage _
+derive instance Newtype CharacterName _
+derive instance Newtype WeaponName _
 
 instance Show Range where
   show = genericShow
@@ -97,6 +108,8 @@ instance Show Potency where
   show = genericShow
 
 derive newtype instance Show Percentage
+derive newtype instance Show CharacterName
+derive newtype instance Show WeaponName
 
 instance WriteForeign Range where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
@@ -108,3 +121,5 @@ instance WriteForeign Potency where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
 derive newtype instance WriteForeign Percentage
+derive newtype instance WriteForeign CharacterName
+derive newtype instance WriteForeign WeaponName

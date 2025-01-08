@@ -5,7 +5,7 @@ import Test.Spec
 
 import Core.Weapons.Search (FilterEffectType(..), FilterRange(..), Filter)
 import Core.Weapons.Search as Search
-import Core.Weapons.Types (Weapon)
+import Core.Weapons.Types (CharacterName(..), Weapon, WeaponName(..))
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Nullable (null)
@@ -186,7 +186,7 @@ assignWeaponsToCharactersSpec = do
           { characters:
               ( Map.fromFoldable
                   [ Tuple "Tifa"
-                      { name: nes @"Tifa"
+                      { name: CharacterName $ nes @"Tifa"
                       , mainHand:
                           { weapon: tifaWeapon1
                           , matchedFilters: [ filter1 ]
@@ -197,7 +197,7 @@ assignWeaponsToCharactersSpec = do
                           }
                       }
                   , Tuple "Vincent"
-                      { name: nes @"Vincent"
+                      { name: CharacterName $ nes @"Vincent"
                       , mainHand:
                           { weapon: vincentWeapon1
                           , matchedFilters: [ filter3 ]
@@ -227,7 +227,7 @@ assignWeaponsToCharactersSpec = do
           { characters:
               ( Map.fromFoldable
                   [ Tuple "Tifa"
-                      { name: nes @"Tifa"
+                      { name: CharacterName $ nes @"Tifa"
                       , mainHand:
                           { weapon: tifaWeapon1
                           , matchedFilters: [ filter2, filter1 ]
@@ -238,7 +238,7 @@ assignWeaponsToCharactersSpec = do
                           }
                       }
                   , Tuple "Vincent"
-                      { name: nes @"Vincent"
+                      { name: CharacterName $ nes @"Vincent"
                       , mainHand:
                           { weapon: vincentWeapon1
                           , matchedFilters: [ filter5 ]
@@ -272,8 +272,8 @@ assignWeaponsToCharactersSpec = do
 
 mkWeapon :: NonEmptyString -> NonEmptyString -> Weapon
 mkWeapon id character =
-  { name: id
-  , character
+  { name: WeaponName id
+  , character: CharacterName character
   , image: nes @" "
   , ob0: { description: nes @" ", effects: [] }
   , ob1: { description: nes @" ", effects: [] }

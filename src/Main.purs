@@ -1,11 +1,13 @@
 module Main where
 
 import Prelude
+
 import App.Button as Button
+import Core.Weapons.Parser as P
 import Data.Array as Array
 import Data.Either (Either(..))
+import Data.Newtype (unwrap)
 import Data.String.NonEmpty as NES
-import Core.Weapons.Parser as P
 import Effect (Effect)
 import Effect.Class.Console as Console
 import Google.SheetsApi as SheetsApi
@@ -22,7 +24,7 @@ main =
       Left err -> Console.log err
       Right weapons -> do
         let
-          weapon = weapons # Array.find \w -> NES.toString w.name == "Kamura Wand"
+          weapon = weapons # Array.find \w -> NES.toString (unwrap w.name) == "Kamura Wand"
         Console.logShow weapon
         pure unit
     body <- HA.awaitBody

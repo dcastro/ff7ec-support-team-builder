@@ -23,8 +23,8 @@ parseWeapons = traverseWithIndex parseWeapon
 
 parseWeapon :: Int -> Array String -> Result Weapon
 parseWeapon rowId row = do
-  name <- getCell 0
-  character <- getCell 1
+  name <- WeaponName <$> getCell 0
+  character <- CharacterName <$> getCell 1
   ob0 <- getObLevel 18
   ob1 <- getObLevel 19
   ob6 <- getObLevel 20

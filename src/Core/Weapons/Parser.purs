@@ -22,7 +22,7 @@ parseWeapons :: Array (Array String) -> Result (Array Weapon)
 parseWeapons = traverseWithIndex parseWeapon
 
 parseWeapon :: Int -> Array String -> Result Weapon
-parseWeapon rowId row = do
+parseWeapon rowIndex row = do
   name <- WeaponName <$> getCell 0
   character <- CharacterName <$> getCell 1
   ob0 <- getObLevel 18
@@ -45,6 +45,8 @@ parseWeapon rowId row = do
     , cureAllAbility
     }
   where
+  rowId = rowIndex + 1
+
   getObLevel :: Int -> Result ObLevel
   getObLevel columnIndex = do
     let

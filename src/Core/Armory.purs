@@ -3,8 +3,7 @@ module Core.Armory where
 import Core.Weapons.Types
 import Prelude
 
-import Control.Monad.Error.Class (class MonadThrow, throwError)
-import Control.Monad.Error.Class as M
+import Control.Monad.Error.Class (class MonadThrow)
 import Control.Monad.Except (runExceptT)
 import Core.Weapons.Parser as P
 import Core.WebStorage as WS
@@ -12,7 +11,6 @@ import Data.Array as Arr
 import Data.DateTime (DateTime)
 import Data.DateTime as DateTime
 import Data.Either (Either(..), hush)
-import Data.Foldable as Fold
 import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
@@ -20,14 +18,13 @@ import Data.String.NonEmpty.Internal (NonEmptyString)
 import Data.Time.Duration (Hours(..))
 import Effect.Aff (Aff)
 import Effect.Aff.Class (class MonadAff, liftAff)
-import Effect.Class (class MonadEffect, liftEffect)
+import Effect.Class (liftEffect)
 import Effect.Class.Console as Console
 import Effect.Now as Now
-import Foreign (MultipleErrors, renderForeignError)
 import Google.SheetsApi as SheetsApi
 import Record as Record
 import Type.Proxy (Proxy(..))
-import Utils (whenJust)
+import Utils (logOnLeft, renderJsonErr, throwOnNothing, whenJust)
 import Yoga.JSON as J
 
 type Armory = Array ArmoryWeapon
@@ -134,36 +131,3 @@ writeToCache armory = do
 
   WS.setItem "armory" armoryStr
   WS.setItem "last_updated" lastUpdatedStr
-
-throwOnNothing :: forall m a. MonadThrow Unit m => m (Maybe a) -> m a
-throwOnNothing action =
-  action >>= M.liftMaybe unit
-
-logOnNothing' :: forall m a. MonadThrow Unit m => MonadEffect m => String -> m (Maybe a) -> m a
-logOnNothing' msg action = do
-  mb <- action
-  case mb of
-    Just a -> pure a
-    Nothing -> do
-      Console.log msg
-      throwError unit
-
-logOnNothing :: forall m a. MonadThrow Unit m => MonadEffect m => String -> Maybe a -> m a
-logOnNothing msg mb = do
-  case mb of
-    Just a -> pure a
-    Nothing -> do
-      Console.log msg
-      throwError unit
-
-logOnLeft :: forall m e a. MonadThrow Unit m => MonadEffect m => Either e a -> (e -> String) -> m a
-logOnLeft either mkMsg = do
-  case either of
-    Right a -> pure a
-    Left err -> do
-      Console.log $ mkMsg err
-      throwError unit
-
-renderJsonErr :: MultipleErrors -> String
-renderJsonErr errs =
-  Fold.intercalate ", " (renderForeignError <$> errs)

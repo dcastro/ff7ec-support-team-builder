@@ -4,16 +4,16 @@ import Core.Weapons.Parser
 import Core.Weapons.Types
 import Prelude
 import Test.Spec
+
 import Control.Monad.Error.Class (throwError)
 import Data.Either (Either(..))
-import Data.Foldable (foldMap)
 import Effect.Aff (error)
-import Foreign as Foreign
 import Google.SheetsApi (GetSheetResult)
 import Node.Encoding as Node
 import Node.FS.Aff as Node
-import Yoga.JSON as J
 import Test.Utils as T
+import Utils as Utils
+import Yoga.JSON as J
 
 spec :: Spec Unit
 spec =
@@ -62,8 +62,8 @@ spec =
         Right res -> pure res.values
         Left errs ->
           throwError $ error
-            $ "Failed to read `resources/weapons.json`: "
-                <> (errs # foldMap \err -> "\n" <> Foreign.renderForeignError err)
+            $ "Failed to read `resources/weapons.json`: \n"
+                <> Utils.renderJsonErr errs
       weapons <- case parseWeapons sourceWeapons of
         Right res -> pure res
         Left err -> throwError $ error err

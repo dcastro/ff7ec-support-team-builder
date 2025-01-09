@@ -4,6 +4,7 @@ package:
     - aff-promise
     - arrays
     - console
+    - datetime
     - debug
     - effect
     - either
@@ -12,10 +13,12 @@ package:
     - lists
     - maybe
     - newtype
+    - now
     - ordered-collections
     - parsing
     - prelude
     - random
+    - record
     - strings
     - stringutils
     - tailrec

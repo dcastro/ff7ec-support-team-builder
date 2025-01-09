@@ -6,7 +6,7 @@ import Data.Generic.Rep (class Generic)
 import Data.Newtype (class Newtype)
 import Data.Show.Generic (genericShow)
 import Data.String.NonEmpty (NonEmptyString)
-import Yoga.JSON (class WriteForeign)
+import Yoga.JSON (class ReadForeign, class WriteForeign)
 import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
 import Yoga.JSON.Generics.TaggedSumRep as TaggedSum
@@ -94,6 +94,8 @@ derive newtype instance Eq Percentage
 derive newtype instance Eq CharacterName
 derive newtype instance Eq WeaponName
 
+derive newtype instance Ord WeaponName
+
 derive instance Newtype Percentage _
 derive instance Newtype CharacterName _
 derive instance Newtype WeaponName _
@@ -123,3 +125,16 @@ instance WriteForeign Potency where
 derive newtype instance WriteForeign Percentage
 derive newtype instance WriteForeign CharacterName
 derive newtype instance WriteForeign WeaponName
+
+instance ReadForeign Range where
+  readImpl = J.genericReadForeignEnum Enum.defaultOptions
+
+instance ReadForeign EffectType where
+  readImpl = J.genericReadForeignTaggedSum TaggedSum.defaultOptions
+
+instance ReadForeign Potency where
+  readImpl = J.genericReadForeignEnum Enum.defaultOptions
+
+derive newtype instance ReadForeign Percentage
+derive newtype instance ReadForeign CharacterName
+derive newtype instance ReadForeign WeaponName

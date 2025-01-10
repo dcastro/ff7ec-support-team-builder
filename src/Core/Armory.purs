@@ -42,14 +42,16 @@ type ArmoryWeapon =
   , owned :: Boolean
   }
 
-init :: Aff (Maybe Armory)
+init :: forall m. MonadAff m => m (Maybe Armory)
 init = do
   runExceptT readFromCache >>= case _ of
     Left _ -> do
+      Console.log "Armory not found in cache, loading it from the spreadsheet..."
       armoryMb <- hush <$> runExceptT loadFromSpreadsheet
       whenJust armoryMb $ writeToCache
       pure armoryMb
     Right { armory, hasExpired } | hasExpired -> do
+      Console.log "Armory found in cache but has expired, updating cache..."
       hush <$> runExceptT (updateArmory armory) >>= case _ of
         Just updatedArmory -> do
           writeToCache updatedArmory
@@ -58,11 +60,12 @@ init = do
           Console.log "Failed to updated armory"
           pure $ Just armory
     Right { armory, hasExpired: _ } -> do
+      Console.log "Armory found in cache."
       pure $ Just armory
   where
 
   -- Load the weapons from the spreadsheet, and updating the existing armory.
-  updateArmory :: forall m. MonadAff m => MonadThrow Unit m => Armory -> m Armory
+  updateArmory :: forall f. MonadAff f => MonadThrow Unit f => Armory -> f Armory
   updateArmory existingArmory = do
     newArmory <- loadFromSpreadsheet
 
@@ -93,7 +96,7 @@ init = do
     pure $ Map.values updatedArmory # Arr.fromFoldable
 
   -- Throws if we can't parse the Google Sheet.
-  loadFromSpreadsheet :: forall m. MonadAff m => MonadThrow Unit m => m Armory
+  loadFromSpreadsheet :: forall f. MonadAff f => MonadThrow Unit f => f Armory
   loadFromSpreadsheet = do
     table <- liftAff $ SheetsApi.getSheet "Weapons!A:Z"
 

@@ -110,8 +110,8 @@ init = do
             ( \weapon ->
                 not (Arr.null weapon.ob10.effects) || weapon.cureAllAbility
             )
-        -- Set the `owned` field to `false` by default.
-        # map \weapon -> Record.insert (Proxy :: Proxy "owned") false weapon
+        -- Set the `owned` field to `true` by default.
+        # map \weapon -> Record.insert (Proxy :: Proxy "owned") true weapon
     pure armory
 
 -- Throws if the cache is empty OR the cache data is corrupted.

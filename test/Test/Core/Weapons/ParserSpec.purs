@@ -64,7 +64,5 @@ spec =
           throwError $ error
             $ "Failed to read `resources/weapons.json`: \n"
                 <> Utils.renderJsonErr errs
-      weapons <- case parseWeapons sourceWeapons of
-        Right res -> pure res
-        Left err -> throwError $ error err
-      T.goldenTest "resources/weapons.snap" weapons
+      let parseResult = parseWeapons sourceWeapons
+      T.goldenTest "resources/weapons.snap" parseResult

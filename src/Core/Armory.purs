@@ -3,7 +3,7 @@ module Core.Armory where
 import Core.Weapons.Types
 import Prelude
 
-import Control.Monad.Error.Class (class MonadThrow)
+import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Control.Monad.Except (runExceptT)
 import Core.Weapons.Parser as P
 import Core.WebStorage as WS
@@ -11,6 +11,7 @@ import Data.Array as Arr
 import Data.DateTime (DateTime)
 import Data.DateTime as DateTime
 import Data.Either (Either(..), hush)
+import Data.Foldable (for_)
 import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
@@ -95,8 +96,13 @@ init = do
   loadFromSpreadsheet :: forall m. MonadAff m => MonadThrow Unit m => m Armory
   loadFromSpreadsheet = do
     table <- liftAff $ SheetsApi.getSheet "Weapons!A:Z"
-    weapons <- P.parseWeapons table.result.values `logOnLeft`
-      \err -> "Failed to parse weapons:\n" <> err
+
+    let { weapons, errors } = P.parseWeapons table.result.values
+    for_ errors \err -> Console.log $ "Failed to parse weapon:\n" <> err
+
+    when (Arr.null weapons) do
+      Console.log "Failed to parse any weapons"
+      throwError unit
     let
       armory = weapons
         -- Keep only weapons which have effects (buffs, debuffs, or heal).

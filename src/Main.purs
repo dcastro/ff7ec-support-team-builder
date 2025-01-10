@@ -3,28 +3,24 @@ module Main where
 import Prelude
 
 import App.Button as Button
-import Core.Weapons.Parser as P
+import Core.Armory as Armory
 import Data.Array as Array
-import Data.Either (Either(..))
+import Data.Maybe (Maybe(..))
 import Data.Newtype (unwrap)
 import Data.String.NonEmpty as NES
 import Effect (Effect)
 import Effect.Class.Console as Console
-import Google.SheetsApi as SheetsApi
 import Halogen.Aff as HA
 import Halogen.VDom.Driver (runUI)
 
 main :: Effect Unit
 main =
   HA.runHalogenAff do
-    grid <- SheetsApi.getSheet "Weapons!A:Z"
-    let
-      rr = P.parseWeapons grid.result.values
-    case rr of
-      Left err -> Console.log err
-      Right weapons -> do
+    Armory.init >>= case _ of
+      Nothing -> pure unit
+      Just armory -> do
         let
-          weapon = weapons # Array.find \w -> NES.toString (unwrap w.name) == "Kamura Wand"
+          weapon = armory # Array.find \w -> NES.toString (unwrap w.name) == "Kamura Wand"
         Console.logShow weapon
         pure unit
     body <- HA.awaitBody

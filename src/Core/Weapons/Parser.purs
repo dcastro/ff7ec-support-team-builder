@@ -2,14 +2,15 @@ module Core.Weapons.Parser where
 
 import Core.Weapons.Types
 import Prelude
+
 import Control.Alt ((<|>))
 import Data.Array as Arr
 import Data.Either (Either(..), hush)
+import Data.FoldableWithIndex as F
 import Data.Maybe (Maybe(..))
 import Data.String.NonEmpty (NonEmptyString)
 import Data.String.NonEmpty as NES
 import Data.String.Utils as String
-import Data.TraversableWithIndex (traverseWithIndex)
 import Parsing (runParser)
 import Parsing as P
 import Parsing.Combinators as P
@@ -18,8 +19,21 @@ import Parsing.String.Basic as P
 
 type Result a = Either String a
 
-parseWeapons :: Array (Array String) -> Result (Array Weapon)
-parseWeapons = traverseWithIndex parseWeapon
+type ParseResult =
+  { weapons ::
+      Array Weapon
+  , errors :: Array String
+  }
+
+parseWeapons :: Array (Array String) -> ParseResult
+parseWeapons =
+  F.foldlWithIndex
+    ( \rowIndex result row ->
+        case parseWeapon rowIndex row of
+          Right weapon -> result { weapons = Arr.snoc result.weapons weapon }
+          Left err -> result { errors = Arr.snoc result.errors err }
+    )
+    { weapons: [], errors: [] }
 
 parseWeapon :: Int -> Array String -> Result Weapon
 parseWeapon rowIndex row = do

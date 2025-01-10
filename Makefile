@@ -25,6 +25,14 @@ format:
 clean: ## Clean all artifacts
 	rm -rf output
 
+full-clean:
+	rm -rf output
+	rm -rf node_modules
+	rm -rf .spago
+	rm -rf .psci_modules
+	rm -rf .parcel-cache
+
+
 regen-weapons: ## Regenerate the `weapons.json` file used in the tests
 	curl \
 		'https://sheets.googleapis.com/v4/spreadsheets/1evoNzTA9veDRTvYJEMe-9F81QQ-CxUWN4mrd93kn2W4/values/Weapons!A%3AZ?key=AIzaSyARUnvuw1DvqJRISnPyOLEkqPvra4MF6fQ' \

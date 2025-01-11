@@ -13,6 +13,7 @@ import Data.Newtype (unwrap)
 import Data.Show.Generic (genericShow)
 import Data.String.NonEmpty as NES
 import Unsafe.Coerce (unsafeCoerce)
+import Utils as Utils
 import Yoga.JSON (class WriteForeign)
 import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
@@ -24,11 +25,15 @@ data FilterRange
 
 derive instance Generic FilterRange _
 derive instance Eq FilterRange
+derive instance Ord FilterRange
 instance Show FilterRange where
   show = genericShow
 
 instance WriteForeign FilterRange where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
+
+allFilterRanges :: Array FilterRange
+allFilterRanges = Utils.listEnum
 
 data FilterEffectType
   = FilterHeal

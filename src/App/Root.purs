@@ -2,6 +2,7 @@ module App.Root where
 
 import Prelude
 
+import App.EffectSelector as EffectSelector
 import Core.Armory (Armory)
 import Core.Armory as Armory
 import Data.Array as Arr
@@ -13,7 +14,12 @@ import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.Subscription as HS
+import Type.Proxy (Proxy(..))
 import Unsafe.Coerce (unsafeCoerce)
+
+type Slots = (effectSelector :: forall query. H.Slot query Void Int)
+
+_effectSelector = Proxy :: Proxy "effectSelector"
 
 data State
   = Loading
@@ -30,7 +36,7 @@ component =
     , eval: H.mkEval H.defaultEval { handleAction = handleAction, initialize = Just Initialize }
     }
 
-render :: forall cs m. State -> H.ComponentHTML Action cs m
+render :: State -> H.ComponentHTML Action Slots Aff
 render state =
   case state of
     Loading ->
@@ -44,6 +50,7 @@ render state =
     Loaded { armory } ->
       HH.div_
         [ HH.text $ "Loaded " <> show (Arr.length armory) <> " weapons"
+        , HH.slot_ _effectSelector 0 EffectSelector.component armory
         ]
 
 handleAction :: forall cs o. Action → H.HalogenM State Action cs o Aff Unit

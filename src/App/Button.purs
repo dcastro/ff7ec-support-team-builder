@@ -43,7 +43,8 @@ handleAction = case _ of
     _ <- H.subscribe =<< timer Tick
     H.modify_ \st -> st { count = st.count + 1 }
   Tick -> do
-    unsafeCoerce "TODO"
+    -- unsafeCoerce "TODO"
+    pure unit
 
 timer :: forall m a. MonadAff m => a -> m (HS.Emitter a)
 timer val = do

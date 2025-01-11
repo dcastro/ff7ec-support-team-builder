@@ -1,11 +1,17 @@
 module Utils where
 
 import Prelude
-import Data.Maybe (Maybe(..))
+
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Control.Monad.Error.Class as M
+import Data.Bounded.Generic (class GenericBottom, genericBottom)
 import Data.Either (Either(..))
+import Data.Enum.Generic (class GenericEnum, genericSucc)
 import Data.Foldable as Fold
+import Data.Generic.Rep (class Generic)
+import Data.Maybe (Maybe(..))
+import Data.Tuple (Tuple(..))
+import Data.Unfoldable (unfoldr)
 import Effect.Class (class MonadEffect)
 import Effect.Class.Console as Console
 import Foreign (MultipleErrors, renderForeignError)
@@ -39,3 +45,8 @@ logOnLeft either mkMsg = do
 renderJsonErr :: MultipleErrors -> String
 renderJsonErr errs =
   Fold.intercalate ", " (renderForeignError <$> errs)
+
+listEnum :: forall a rep. Generic a rep => GenericEnum rep => GenericBottom rep => Array a
+listEnum = unfoldr (\b -> b >>= next) $ Just genericBottom
+  where
+  next a = Just $ Tuple a $ genericSucc a

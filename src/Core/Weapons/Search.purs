@@ -4,6 +4,7 @@ import Core.Weapons.Types
 import Prelude
 
 import Data.Array as Arr
+import Data.Bounded.Generic (genericBottom, genericTop)
 import Data.Foldable as F
 import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
@@ -38,6 +39,8 @@ allFilterRanges = Utils.listEnum
 data FilterEffectType
   = FilterHeal
   -- Buffs
+  | FilterVeil
+  | FilterProvoke
   | FilterPatkUp
   | FilterMatkUp
   | FilterPdefUp
@@ -48,8 +51,6 @@ data FilterEffectType
   | FilterEarthDamageUp
   | FilterWaterDamageUp
   | FilterWindDamageUp
-  | FilterVeil
-  | FilterProvoke
   -- Debuffs
   | FilterPatkDown
   | FilterMatkDown
@@ -69,6 +70,9 @@ instance Show FilterEffectType where
 
 instance WriteForeign FilterEffectType where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
+
+allFilterEffectTypes :: Array FilterEffectType
+allFilterEffectTypes = Utils.listEnum
 
 type Filter =
   { effectType :: FilterEffectType

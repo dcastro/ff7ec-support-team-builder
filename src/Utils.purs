@@ -15,6 +15,7 @@ import Data.Unfoldable (unfoldr)
 import Effect.Class (class MonadEffect)
 import Effect.Class.Console as Console
 import Foreign (MultipleErrors, renderForeignError)
+import Partial.Unsafe (unsafeCrashWith)
 
 whenJust :: forall @a @m. Monad m => Maybe a -> (a -> m Unit) -> m Unit
 whenJust mb action =
@@ -50,3 +51,9 @@ listEnum :: forall a rep. Generic a rep => GenericEnum rep => GenericBottom rep 
 listEnum = unfoldr (\b -> b >>= next) $ Just genericBottom
   where
   next a = Just $ Tuple a $ genericSucc a
+
+unsafeFromJust :: forall @a. Maybe a -> String -> a
+unsafeFromJust mb reason =
+  case mb of
+    Just a -> a
+    Nothing -> unsafeCrashWith reason

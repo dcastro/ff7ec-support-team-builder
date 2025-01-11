@@ -22,6 +22,7 @@ import Halogen.Subscription as HS
 import HtmlUtils (classes')
 import Partial.Unsafe (unsafePartial)
 import Unsafe.Coerce (unsafeCoerce)
+import Utils (unsafeFromJust)
 import Web.Event.Event (Event)
 
 type State =
@@ -33,6 +34,7 @@ type State =
 
 data Action
   = NoAction
+  | SelectedEffectType Int
   | SelectedRange Int
 
 component :: forall q o. H.Component q Armory o Aff
@@ -52,6 +54,17 @@ render state =
   HH.div_
     [ HH.div [ classes' "select" ]
         [ HH.select
+            [ HE.onSelectedIndexChange SelectedEffectType
+            ]
+            ( [ HH.option_ [ HH.text "Select a weapon effect..." ] ]
+                <>
+                  ( Search.allFilterEffectTypes <#> \effectType ->
+                      HH.option_ [ HH.text $ display effectType ]
+                  )
+            )
+        ]
+    , HH.div [ classes' "select" ]
+        [ HH.select
             [ HE.onSelectedIndexChange SelectedRange
             ]
             ( Search.allFilterRanges <#> \filterRange ->
@@ -60,31 +73,23 @@ render state =
         ]
     ]
 
--- HH.div_
---   [ HH.div [ classes' "dropdown is-active" ]
---       [ HH.div [ classes' "dropdown-trigger" ]
---           [ HH.button [ classes' "button" ]
---               [ HH.span_ [ HH.text "Dropdown button" ]
---               , HH.span
---                   [ classes' "icon is-small" ]
---                   [ HH.i [ classes' "fas fa-angle-down" ] []
---                   ]
---               ]
---           ]
---       , HH.div [ classes' "dropdown-menu" ]
---           [ HH.div [ classes' "dropdown-content" ]
---               [ HH.a [ classes' "dropdown-item" ] [ HH.text "aa" ]
---               , HH.a [ classes' "dropdown-item" ] [ HH.text "bb" ]
---               , HH.a [ classes' "dropdown-item" ] [ HH.text "cc" ]
---               ]
---           ]
---       ]
---   ]
-
 handleAction :: forall cs o. Action → H.HalogenM State Action cs o Aff Unit
 handleAction = case _ of
   NoAction -> pure unit
+  SelectedEffectType idx -> do
+    if idx == 0 then do
+      H.modify_ \s -> s { selectedEffectType = Nothing }
+    -- Console.log $ "idx " <> show idx
+    else do
+      let arrayIndex = idx - 1
+      let
+        effectType = Arr.index Search.allFilterEffectTypes arrayIndex `unsafeFromJust`
+          ("Invalid effect type index: " <> show arrayIndex)
+      -- Console.log $ "idx " <> show idx <> ", selected: " <> display effectType
+      H.modify_ \s -> s { selectedEffectType = Just effectType }
+    pure unit
   SelectedRange idx -> do
-    let filterRange = unsafePartial $ Arr.unsafeIndex Search.allFilterRanges idx
+    let filterRange = Arr.index Search.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
     H.modify_ \s -> s { selectedRange = filterRange }
+    -- Console.log $ "idx " <> show idx <> ", selected: " <> display filterRange
     pure unit

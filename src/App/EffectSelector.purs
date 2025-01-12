@@ -21,7 +21,7 @@ import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
 import Halogen.Subscription as HS
-import HtmlUtils (classes')
+import HtmlUtils (classes', tooltip)
 import Partial.Unsafe (unsafePartial)
 import Unsafe.Coerce (unsafeCoerce)
 import Utils (unsafeFromJust)
@@ -84,7 +84,9 @@ render state =
                 state.applicableWeapons <#> \weapon ->
                   HH.tr_
                     [ HH.img [ HP.src $ display weapon.image ]
-                    , HH.td_ [ HH.text $ display weapon.name ]
+                    , HH.td
+                        [ tooltip (mkTooltip weapon), classes' "has-tooltip-right" ]
+                        [ HH.text $ display weapon.name ]
                     , HH.td_ [ HH.text $ display weapon.character ]
                     ]
 
@@ -92,6 +94,12 @@ render state =
         ]
 
     ]
+
+mkTooltip :: ArmoryWeapon -> String
+mkTooltip weapon =
+  "OB0:\n" <> display weapon.ob0.description
+    <> "\n\nOB6:\n"
+    <> display weapon.ob6.description
 
 handleAction :: forall cs o. Action → H.HalogenM State Action cs o Aff Unit
 handleAction = case _ of

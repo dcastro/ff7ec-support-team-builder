@@ -1,6 +1,12 @@
 module Core.Display where
 
+import Prelude
+
 import Core.Weapons.Search (FilterEffectType(..), FilterRange(..))
+import Core.Weapons.Types (CharacterName(..), WeaponName(..))
+import Data.Newtype (unwrap)
+import Data.String.NonEmpty (NonEmptyString)
+import Data.String.NonEmpty as NES
 
 class Display a where
   display :: a -> String
@@ -38,3 +44,12 @@ instance Display FilterEffectType where
     FilterEarthResistDown -> "Earth resist down"
     FilterWaterResistDown -> "Water resist down"
     FilterWindResistDown -> "Wind resist down"
+
+instance Display NonEmptyString where
+  display = NES.toString
+
+instance Display WeaponName where
+  display = display <<< unwrap
+
+instance Display CharacterName where
+  display = display <<< unwrap

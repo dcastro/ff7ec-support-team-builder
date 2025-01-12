@@ -2,14 +2,16 @@ module App.EffectSelector where
 
 import Prelude
 
-import Core.Armory (Armory)
+import Core.Armory (Armory, ArmoryWeapon)
 import Core.Armory as Armory
 import Core.Display (display)
-import Core.Weapons.Search (FilterEffectType(..), FilterRange(..))
+import Core.Weapons.Search (FilterEffectType(..), FilterRange(..), Filter)
 import Core.Weapons.Search as Search
+import Core.Weapons.Types (WeaponName(..))
 import Data.Array as Arr
 import Data.Bounded.Generic (genericBottom)
-import Data.Maybe (Maybe(..))
+import Data.Map as Map
+import Data.Maybe (Maybe(..), fromMaybe)
 import Effect.Aff (Aff)
 import Effect.Aff as Aff
 import Effect.Aff.Class (class MonadAff)
@@ -30,6 +32,7 @@ type State =
       Armory
   , selectedEffectType :: Maybe FilterEffectType
   , selectedRange :: FilterRange
+  , applicableWeapons :: Array ArmoryWeapon
   }
 
 data Action
@@ -41,10 +44,12 @@ component :: forall q o. H.Component q Armory o Aff
 component =
   H.mkComponent
     { initialState: \armory ->
-        { armory
-        , selectedEffectType: Nothing
-        , selectedRange: genericBottom
-        }
+        updateApplicableWeapons
+          { armory
+          , selectedEffectType: Nothing
+          , selectedRange: genericBottom
+          , applicableWeapons: []
+          }
     , render
     , eval: H.mkEval H.defaultEval { handleAction = handleAction }
     }
@@ -58,8 +63,9 @@ render state =
             ]
             ( [ HH.option_ [ HH.text "Select a weapon effect..." ] ]
                 <>
-                  ( Search.allFilterEffectTypes <#> \effectType ->
-                      HH.option_ [ HH.text $ display effectType ]
+                  ( Search.allFilterEffectTypes <#> \effectType -> do
+                      let selected = state.selectedEffectType == Just effectType
+                      HH.option [ HP.selected selected ] [ HH.text $ display effectType ]
                   )
             )
         ]
@@ -71,25 +77,55 @@ render state =
                 HH.option_ [ HH.text $ display filterRange ]
             )
         ]
+
+    , HH.div_
+        [ HH.table [ classes' "table" ]
+            [ HH.tbody_ $
+                state.applicableWeapons <#> \weapon ->
+                  HH.tr_
+                    [ HH.img [ HP.src $ display weapon.image ]
+                    , HH.td_ [ HH.text $ display weapon.name ]
+                    , HH.td_ [ HH.text $ display weapon.character ]
+                    ]
+
+            ]
+        ]
+
     ]
 
 handleAction :: forall cs o. Action → H.HalogenM State Action cs o Aff Unit
 handleAction = case _ of
   NoAction -> pure unit
   SelectedEffectType idx -> do
-    if idx == 0 then do
-      H.modify_ \s -> s { selectedEffectType = Nothing }
-    -- Console.log $ "idx " <> show idx
+    if idx == 0 then
+      do
+        Console.log $ "Deselected effect type"
+        H.modify_ \s -> s { selectedEffectType = Nothing }
     else do
+      -- Find the correct filter
       let arrayIndex = idx - 1
       let
         effectType = Arr.index Search.allFilterEffectTypes arrayIndex `unsafeFromJust`
           ("Invalid effect type index: " <> show arrayIndex)
-      -- Console.log $ "idx " <> show idx <> ", selected: " <> display effectType
+
+      Console.log $ "idx " <> show idx <> ", selected: " <> display effectType
       H.modify_ \s -> s { selectedEffectType = Just effectType }
-    pure unit
+        # updateApplicableWeapons
+
   SelectedRange idx -> do
     let filterRange = Arr.index Search.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
+    Console.log $ "idx " <> show idx <> ", selected: " <> display filterRange
     H.modify_ \s -> s { selectedRange = filterRange }
-    -- Console.log $ "idx " <> show idx <> ", selected: " <> display filterRange
-    pure unit
+      # updateApplicableWeapons
+
+updateApplicableWeapons :: State -> State
+updateApplicableWeapons state = do
+  case state.selectedEffectType of
+    Just effectType -> do
+      let filter = { effectType, range: state.selectedRange } :: Filter
+      let applicableWeaponNames = Map.lookup filter state.armory.groupedByEffect # fromMaybe [] :: Array WeaponName
+      let
+        applicableWeapons = applicableWeaponNames <#> \weaponName ->
+          Map.lookup weaponName state.armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
+      state { applicableWeapons = applicableWeapons }
+    Nothing -> state

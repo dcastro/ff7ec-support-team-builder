@@ -5,30 +5,45 @@ import Prelude
 
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Control.Monad.Except (runExceptT)
+import Control.Monad.Rec.Class (class MonadRec)
 import Core.Weapons.Parser as P
+import Core.Weapons.Search (Filter, FilterEffectType(..), FilterRange(..))
 import Core.WebStorage as WS
 import Data.Array as Arr
 import Data.DateTime (DateTime)
 import Data.DateTime as DateTime
 import Data.Either (Either(..), hush)
 import Data.Foldable (for_)
+import Data.Foldable as F
 import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
+import Data.Newtype (unwrap)
+import Data.Set (Set)
+import Data.Set as Set
 import Data.String.NonEmpty.Internal (NonEmptyString)
 import Data.Time.Duration (Hours(..))
 import Effect.Aff (Aff)
 import Effect.Aff.Class (class MonadAff, liftAff)
-import Effect.Class (liftEffect)
+import Effect.Class (class MonadEffect, liftEffect)
 import Effect.Class.Console as Console
 import Effect.Now as Now
 import Google.SheetsApi as SheetsApi
 import Record as Record
 import Type.Proxy (Proxy(..))
-import Utils (logOnLeft, renderJsonErr, throwOnNothing, whenJust)
+import Utils (MapAsArray(..), logOnLeft, renderJsonErr, throwOnNothing, whenJust)
 import Yoga.JSON as J
 
-type Armory = Array ArmoryWeapon
+type Armory =
+  { allWeapons :: Map WeaponName ArmoryWeapon
+  , groupedByEffect :: Map Filter (Array WeaponName)
+
+  }
+
+type SerializableArmory =
+  { allWeapons :: MapAsArray WeaponName ArmoryWeapon
+  , groupedByEffect :: MapAsArray Filter (Array WeaponName)
+  }
 
 type ArmoryWeapon =
   { name :: WeaponName
@@ -42,12 +57,12 @@ type ArmoryWeapon =
   , owned :: Boolean
   }
 
-init :: forall m. MonadAff m => m (Maybe Armory)
+init :: Aff (Maybe Armory)
 init = do
   runExceptT readFromCache >>= case _ of
     Left _ -> do
       Console.log "Armory not found in cache, loading it from the spreadsheet..."
-      armoryMb <- hush <$> runExceptT loadFromSpreadsheet
+      armoryMb <- hush <$> runExceptT (updateArmory newArmory)
       whenJust armoryMb $ writeToCache
       pure armoryMb
     Right { armory, hasExpired } | hasExpired -> do
@@ -63,40 +78,17 @@ init = do
       Console.log "Armory found in cache."
       pure $ Just armory
   where
-
   -- Load the weapons from the spreadsheet, and updating the existing armory.
-  updateArmory :: forall f. MonadAff f => MonadThrow Unit f => Armory -> f Armory
+  updateArmory :: forall f. MonadAff f => MonadThrow Unit f => MonadRec f => Armory -> f Armory
   updateArmory existingArmory = do
-    newArmory <- loadFromSpreadsheet
-
-    -- Convert the array to a map for faster lookups
-    let
-      existingArmory' =
-        Arr.foldl
-          (\armory weapon -> Map.insert weapon.name weapon armory)
-          Map.empty
-          existingArmory
-          :: Map WeaponName ArmoryWeapon
-
-    updatedArmory <- Arr.foldM
-      ( \armory newWeapon -> do
-          case Map.lookup newWeapon.name armory of
-            Nothing -> do
-              Console.log $ "Weapon added: " <> show newWeapon.name
-              pure $ Map.insert newWeapon.name newWeapon armory
-            Just existingWeapon -> do
-              Console.log $ "Weapon updated: " <> show newWeapon.name
-              let newWeapon' = newWeapon { owned = existingWeapon.owned }
-              pure $ Map.insert newWeapon.name newWeapon' armory
-      )
-      existingArmory'
-      newArmory
-
-    -- Convert the map back to an array
-    pure $ Map.values updatedArmory # Arr.fromFoldable
+    weapons <- loadFromSpreadsheet
+    Arr.foldRecM
+      (\armory weapon -> insertWeapon weapon armory)
+      existingArmory
+      weapons
 
   -- Throws if we can't parse the Google Sheet.
-  loadFromSpreadsheet :: forall f. MonadAff f => MonadThrow Unit f => f Armory
+  loadFromSpreadsheet :: forall f. MonadAff f => MonadThrow Unit f => f (Array Weapon)
   loadFromSpreadsheet = do
     table <- liftAff $ SheetsApi.getSheet "Weapons!A:Z"
 
@@ -106,16 +98,103 @@ init = do
     when (Arr.null weapons) do
       Console.log "Failed to parse any weapons"
       throwError unit
-    let
-      armory = weapons
-        -- Keep only weapons which have effects (buffs, debuffs, or heal).
-        # Arr.filter
-            ( \weapon ->
-                not (Arr.null weapon.ob10.effects) || weapon.cureAllAbility
-            )
-        -- Set the `owned` field to `true` by default.
-        # map \weapon -> Record.insert (Proxy :: Proxy "owned") true weapon
+    pure weapons
+
+newArmory :: Armory
+newArmory =
+  { allWeapons: Map.empty
+  , groupedByEffect: Map.empty
+  }
+
+insertWeapon :: forall m. MonadEffect m => Weapon -> Armory -> m Armory
+insertWeapon weapon armory =
+  if Arr.null weapon.ob10.effects && not weapon.cureAllAbility then do
+    Console.log $ "Weapon has no effects, skipping: " <> show weapon.name
     pure armory
+  else
+    case Map.lookup weapon.name armory.allWeapons of
+      Just _existingWeapon -> do
+        Console.log $ "Weapon already exists, skipping: " <> show weapon.name
+        pure armory
+      Nothing -> do
+        Console.log $ "Weapon added: " <> show weapon.name
+        pure $ armory
+          # insert
+          # insertIntoGroups
+  where
+
+  insert :: Armory -> Armory
+  insert armory = do
+    -- Set the `owned` field to `true` by default.
+    let armoryWeapon = Record.insert (Proxy :: Proxy "owned") true weapon
+    armory { allWeapons = Map.insert armoryWeapon.name armoryWeapon armory.allWeapons }
+
+  insertIntoGroups :: Armory -> Armory
+  insertIntoGroups armory =
+    F.foldr
+      addToGroup
+      armory
+      matchingFilters
+
+  matchingEffectType :: EffectType -> FilterEffectType
+  matchingEffectType = case _ of
+    Heal _ -> FilterHeal
+    -- Buffs
+    Veil -> FilterVeil
+    Provoke -> FilterProvoke
+    PatkUp _ -> FilterPatkUp
+    MatkUp _ -> FilterMatkUp
+    PdefUp _ -> FilterPdefUp
+    MdefUp _ -> FilterMdefUp
+    FireDamageUp _ -> FilterFireDamageUp
+    IceDamageUp _ -> FilterIceDamageUp
+    ThunderDamageUp _ -> FilterThunderDamageUp
+    EarthDamageUp _ -> FilterEarthDamageUp
+    WaterDamageUp _ -> FilterWaterDamageUp
+    WindDamageUp _ -> FilterWindDamageUp
+    -- Debuffs
+    PatkDown _ -> FilterPatkDown
+    MatkDown _ -> FilterMatkDown
+    PdefDown _ -> FilterPdefDown
+    MdefDown _ -> FilterMdefDown
+    FireResistDown _ -> FilterFireResistDown
+    IceResistDown _ -> FilterIceResistDown
+    ThunderResistDown _ -> FilterThunderResistDown
+    EarthResistDown _ -> FilterEarthResistDown
+    WaterResistDown _ -> FilterWaterResistDown
+    WindResistDown _ -> FilterWindResistDown
+
+  matchingRanges :: Range -> Array FilterRange
+  matchingRanges = case _ of
+    Self -> [ FilterSelfOrSingleTargetOrAll ]
+    SingleTarget -> [ FilterSelfOrSingleTargetOrAll, FilterSingleTargetOrAll ]
+    All -> [ FilterSelfOrSingleTargetOrAll, FilterSingleTargetOrAll, FilterAll ]
+
+  matchingFilters' :: WeaponEffect -> Array Filter
+  matchingFilters' { effectType, range } =
+    matchingRanges range <#> \range ->
+      { effectType: matchingEffectType effectType
+      , range
+      }
+
+  matchingFilters :: Set Filter
+  matchingFilters = do
+    let filters = Set.fromFoldable $ weapon.ob10.effects >>= \effect -> matchingFilters' effect
+    if weapon.cureAllAbility then
+      Set.insert { effectType: FilterHeal, range: FilterAll } filters
+    else filters
+
+  addToGroup :: Filter -> Armory -> Armory
+  addToGroup filter armory = do
+    let
+      groupedByEffect = Map.alter
+        ( case _ of
+            Just weapons -> Just $ Arr.snoc weapons weapon.name
+            Nothing -> Just [ weapon.name ]
+        )
+        filter
+        armory.groupedByEffect
+    armory { groupedByEffect = groupedByEffect }
 
 -- Throws if the cache is empty OR the cache data is corrupted.
 readFromCache :: forall m. MonadThrow Unit m => MonadAff m => m { armory :: Armory, hasExpired :: Boolean }
@@ -123,7 +202,7 @@ readFromCache = do
   armoryStr <- throwOnNothing $ WS.getItem "armory"
   lastUpdatedStr <- throwOnNothing $ WS.getItem "last_updated"
 
-  armory :: Armory <- J.readJSON armoryStr `logOnLeft` \err ->
+  armory :: Armory <- fromSerializable <$> J.readJSON armoryStr `logOnLeft` \err ->
     "Failed to deserialize armory:\n" <> renderJsonErr err
   lastUpdated :: DateTime <- J.readJSON lastUpdatedStr `logOnLeft` \err ->
     "Failed to deserialize armory:\n" <> renderJsonErr err
@@ -132,11 +211,23 @@ readFromCache = do
   let hasExpired = DateTime.diff now lastUpdated > Hours 24.0
 
   pure { armory, hasExpired }
+  where
+  fromSerializable :: SerializableArmory -> Armory
+  fromSerializable armory =
+    { allWeapons: unwrap armory.allWeapons
+    , groupedByEffect: unwrap armory.groupedByEffect
+    }
 
 writeToCache :: forall m. MonadAff m => Armory -> m Unit
 writeToCache armory = do
-  let armoryStr = J.writeJSON armory
+  let armoryStr = J.writeJSON $ toSerializable armory
   lastUpdatedStr <- J.writeJSON <$> liftEffect Now.nowDateTime
 
   WS.setItem "armory" armoryStr
   WS.setItem "last_updated" lastUpdatedStr
+  where
+  toSerializable :: Armory -> SerializableArmory
+  toSerializable armory =
+    { allWeapons: MapAsArray armory.allWeapons
+    , groupedByEffect: MapAsArray armory.groupedByEffect
+    }

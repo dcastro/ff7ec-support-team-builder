@@ -5,17 +5,12 @@ import Prelude
 import App.EffectSelector as EffectSelector
 import Core.Armory (Armory)
 import Core.Armory as Armory
-import Data.Array as Arr
+import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Effect.Aff (Aff)
-import Effect.Aff as Aff
-import Effect.Aff.Class (class MonadAff)
 import Halogen as H
 import Halogen.HTML as HH
-import Halogen.HTML.Events as HE
-import Halogen.Subscription as HS
 import Type.Proxy (Proxy(..))
-import Unsafe.Coerce (unsafeCoerce)
 
 type Slots = (effectSelector :: forall query. H.Slot query Void Int)
 
@@ -49,13 +44,13 @@ render state =
         ]
     Loaded { armory } ->
       HH.div_
-        [ HH.text $ "Loaded " <> show (Arr.length armory) <> " weapons"
+        [ HH.text $ "Loaded " <> show (Map.size armory.allWeapons) <> " weapons"
         , HH.slot_ _effectSelector 0 EffectSelector.component armory
         ]
 
 handleAction :: forall cs o. Action → H.HalogenM State Action cs o Aff Unit
 handleAction = case _ of
   Initialize -> do
-    Armory.init >>= case _ of
+    H.liftAff Armory.init >>= case _ of
       Just armory -> H.put $ Loaded { armory }
       Nothing -> H.put FailedToLoad

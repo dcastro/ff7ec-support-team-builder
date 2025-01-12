@@ -4,7 +4,6 @@ import Core.Weapons.Types
 import Prelude
 
 import Data.Array as Arr
-import Data.Bounded.Generic (genericBottom, genericTop)
 import Data.Foldable as F
 import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
@@ -13,9 +12,8 @@ import Data.Maybe (Maybe(..))
 import Data.Newtype (unwrap)
 import Data.Show.Generic (genericShow)
 import Data.String.NonEmpty as NES
-import Unsafe.Coerce (unsafeCoerce)
 import Utils as Utils
-import Yoga.JSON (class WriteForeign)
+import Yoga.JSON (class ReadForeign, class WriteForeign)
 import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
 
@@ -32,6 +30,9 @@ instance Show FilterRange where
 
 instance WriteForeign FilterRange where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
+
+instance ReadForeign FilterRange where
+  readImpl = J.genericReadForeignEnum Enum.defaultOptions
 
 allFilterRanges :: Array FilterRange
 allFilterRanges = Utils.listEnum
@@ -65,11 +66,15 @@ data FilterEffectType
 
 derive instance Generic FilterEffectType _
 derive instance Eq FilterEffectType
+derive instance Ord FilterEffectType
 instance Show FilterEffectType where
   show = genericShow
 
 instance WriteForeign FilterEffectType where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
+
+instance ReadForeign FilterEffectType where
+  readImpl = J.genericReadForeignEnum Enum.defaultOptions
 
 allFilterEffectTypes :: Array FilterEffectType
 allFilterEffectTypes = Utils.listEnum

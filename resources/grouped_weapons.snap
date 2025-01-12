@@ -1,0 +1,950 @@
+[
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterHeal"
+    },
+    [
+      "Bahamut Rod",
+      "Crimson Staff",
+      "Egg Staff",
+      "Fairy Tale",
+      "Floral Wand",
+      "Kamura Wand",
+      "Mythril Rod",
+      "Snowflake",
+      "Terra's Rod",
+      "Umbrella",
+      "Stalwart Integrity",
+      "Assault Gun",
+      "Escutcheon Cannon",
+      "Microlaser",
+      "Quina Megaphone",
+      "Trumpet Shell",
+      "Bandaged Sword",
+      "Crystal Sword",
+      "Hardcore Squad",
+      "Bramble Spine",
+      "Centipede",
+      "Core Defender",
+      "Foam Sword",
+      "Luminary Sword",
+      "Prime Number",
+      "Syringe Rapier",
+      "Headphones",
+      "Pilot's Collar",
+      "Platinum Collar",
+      "Silver Collar",
+      "Sleek Collar",
+      "Lifeguard Wraps",
+      "Twinkling Star"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterHeal"
+    },
+    [
+      "Bahamut Rod",
+      "Chocobo Staff",
+      "Citric Wand",
+      "Fairy Tale",
+      "Garnet's Rod",
+      "Guard Stick",
+      "Kamura Wand",
+      "Mythril Rod",
+      "Umbrella",
+      "Stalwart Integrity",
+      "Assault Gun",
+      "Escutcheon Cannon",
+      "Heavy Vulcan",
+      "Lefko Kypseli",
+      "Microlaser",
+      "Rhad Cannon",
+      "Catsmegaphone",
+      "Crystal Megaphone",
+      "Flower Vase",
+      "Marching Horn",
+      "Quina Megaphone",
+      "Trumpet Shell",
+      "Bandaged Sword",
+      "Butterfly Edge",
+      "Crystal Sword",
+      "Hardcore Squad",
+      "Pumpkin Lamppost",
+      "Pumpkin Blaster",
+      "SSR1976",
+      "Bramble Spine",
+      "Centipede",
+      "Core Defender",
+      "Espee Rapiere Next-G",
+      "Giant Fork",
+      "Luminary Sword",
+      "Prime Number",
+      "Syringe Rapier",
+      "Pilot's Collar",
+      "Platinum Collar",
+      "Rubber Collar",
+      "Sleek Collar",
+      "Torn Wing",
+      "Lifeguard Wraps",
+      "Oven Mitts",
+      "Rhad Gun",
+      "Arctic Star",
+      "Crystal Cross",
+      "Defender",
+      "Enhance Sword (Z)"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterHeal"
+    },
+    [
+      "Bahamut Rod",
+      "Chocobo Staff",
+      "Citric Wand",
+      "Fairy Tale",
+      "Garnet's Rod",
+      "Guard Stick",
+      "Kamura Wand",
+      "Mythril Rod",
+      "Umbrella",
+      "Gargantuan Monolith",
+      "Stalwart Integrity",
+      "Assault Gun",
+      "Escutcheon Cannon",
+      "Heavy Vulcan",
+      "Lefko Kypseli",
+      "Microlaser",
+      "Rhad Cannon",
+      "Catsmegaphone",
+      "Crystal Megaphone",
+      "Flower Vase",
+      "Marching Horn",
+      "Quina Megaphone",
+      "Trumpet Shell",
+      "Bandaged Sword",
+      "Butterfly Edge",
+      "Crystal Sword",
+      "Hardcore Squad",
+      "Pumpkin Lamppost",
+      "Pumpkin Blaster",
+      "SSR1976",
+      "Tranquilizer Gun",
+      "Bramble Spine",
+      "Centipede",
+      "Core Defender",
+      "Espee Rapiere Next-G",
+      "Giant Fork",
+      "Luminary Sword",
+      "Prime Number",
+      "Syringe Rapier",
+      "Pilot's Collar",
+      "Platinum Collar",
+      "Rubber Collar",
+      "Sleek Collar",
+      "Aonibi",
+      "Mythril Type-0 Katana",
+      "Torn Wing",
+      "Grand Gloves",
+      "Lifeguard Wraps",
+      "Oven Mitts",
+      "Work Gloves",
+      "Gilded Age",
+      "Rhad Gun",
+      "Sawed-Off GS",
+      "Arctic Star",
+      "Crystal Cross",
+      "Defender",
+      "Enhance Sword (Z)"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterVeil"
+    },
+    [
+      "Greatsword (A)",
+      "Shinra Greatsword: Model I",
+      "Tranquility",
+      "Volcanic Heat"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterProvoke"
+    },
+    [
+      "Gargantuan Monolith",
+      "Orchard Shovel",
+      "Tranquility",
+      "Type-90 Longsword"
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterPatkUp"
+    },
+    [
+      "Kamura Wand",
+      "Stalwart Integrity",
+      "Quina Megaphone",
+      "Trumpet Shell"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterPatkUp"
+    },
+    [
+      "Kamura Wand",
+      "Stalwart Integrity",
+      "Rhad Cannon",
+      "Catsmegaphone",
+      "Marching Horn",
+      "Quina Megaphone",
+      "Trumpet Shell",
+      "Pumpkin Lamppost",
+      "Bramble Spine",
+      "Giant Fork",
+      "Oven Mitts",
+      "Rhad Gun",
+      "Arctic Star"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterPatkUp"
+    },
+    [
+      "Kamura Wand",
+      "Stalwart Integrity",
+      "Rhad Cannon",
+      "Catsmegaphone",
+      "Marching Horn",
+      "Quina Megaphone",
+      "Trumpet Shell",
+      "Glavenus Sword",
+      "Pumpkin Lamppost",
+      "Bramble Spine",
+      "Giant Fork",
+      "Shinra Military Sword",
+      "Amarant's Claws",
+      "Oven Mitts",
+      "Sabin's Claws",
+      "Work Gloves",
+      "Rhad Gun",
+      "Arctic Star",
+      "Ceremonial Sword (Z)"
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterMatkUp"
+    },
+    [
+      "Crimson Staff",
+      "Escutcheon Cannon",
+      "Trumpet Shell",
+      "Luminary Sword",
+      "Bahamut Fangs"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterMatkUp"
+    },
+    [
+      "Citric Wand",
+      "Crimson Staff",
+      "Garnet's Rod",
+      "Escutcheon Cannon",
+      "Microlaser",
+      "Flower Vase",
+      "Trumpet Shell",
+      "Luminary Sword",
+      "Bahamut Fangs",
+      "Crystal Cross"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterMatkUp"
+    },
+    [
+      "Citric Wand",
+      "Crimson Staff",
+      "Garnet's Rod",
+      "Escutcheon Cannon",
+      "Microlaser",
+      "Flower Vase",
+      "Trumpet Shell",
+      "Luminary Sword",
+      "Aonibi",
+      "Bahamut Fangs",
+      "Bunny Gloves",
+      "Kirin Gloves",
+      "Sabin's Claws",
+      "Sawed-Off GS",
+      "Crystal Cross"
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterPdefUp"
+    },
+    [
+      "Bahamut Rod",
+      "Mythril Rod",
+      "Stalwart Integrity",
+      "Assault Gun",
+      "Quina Megaphone",
+      "Hardcore Squad",
+      "Centipede",
+      "Syringe Rapier"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterPdefUp"
+    },
+    [
+      "Bahamut Rod",
+      "Mythril Rod",
+      "Stalwart Integrity",
+      "Assault Gun",
+      "Lefko Kypseli",
+      "Crystal Megaphone",
+      "Quina Megaphone",
+      "Butterfly Edge",
+      "Hardcore Squad",
+      "Centipede",
+      "Syringe Rapier",
+      "Torn Wing",
+      "Defender"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterPdefUp"
+    },
+    [
+      "Bahamut Rod",
+      "Mythril Rod",
+      "Stalwart Integrity",
+      "Assault Gun",
+      "Lefko Kypseli",
+      "Crystal Megaphone",
+      "Quina Megaphone",
+      "Butterfly Edge",
+      "Hardcore Squad",
+      "Centipede",
+      "Syringe Rapier",
+      "Mythril Type-0 Katana",
+      "Torn Wing",
+      "Work Gloves",
+      "Defender"
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterMdefUp"
+    },
+    [
+      "Kamura Wand",
+      "Mythril Rod",
+      "Escutcheon Cannon",
+      "Bandaged Sword",
+      "Hardcore Squad",
+      "Core Defender",
+      "Syringe Rapier",
+      "Pilot's Collar",
+      "Sleek Collar",
+      "Bahamut Cutter"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterMdefUp"
+    },
+    [
+      "Chocobo Staff",
+      "Guard Stick",
+      "Kamura Wand",
+      "Mythril Rod",
+      "Escutcheon Cannon",
+      "Heavy Vulcan",
+      "Bandaged Sword",
+      "Hardcore Squad",
+      "Pumpkin Blaster",
+      "SSR1976",
+      "Core Defender",
+      "Syringe Rapier",
+      "Pilot's Collar",
+      "Sleek Collar",
+      "Bahamut Cutter"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterMdefUp"
+    },
+    [
+      "Chocobo Staff",
+      "Guard Stick",
+      "Kamura Wand",
+      "Mythril Rod",
+      "Gargantuan Monolith",
+      "Escutcheon Cannon",
+      "Heavy Vulcan",
+      "Bandaged Sword",
+      "Hardcore Squad",
+      "Pumpkin Blaster",
+      "SSR1976",
+      "Core Defender",
+      "Syringe Rapier",
+      "Pilot's Collar",
+      "Sleek Collar",
+      "Sawed-Off GS",
+      "Bahamut Cutter"
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterFireDamageUp"
+    },
+    [
+      "Luminary Sword"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterFireDamageUp"
+    },
+    [
+      "Luminary Sword"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterFireDamageUp"
+    },
+    [
+      "Locke's Sword",
+      "Luminary Sword",
+      "Striped Moogle Float"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterIceDamageUp"
+    },
+    [
+      "Citric Wand"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterIceDamageUp"
+    },
+    [
+      "Citric Wand",
+      "Locke's Sword"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterThunderDamageUp"
+    },
+    [
+      "Locke's Sword"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterWaterDamageUp"
+    },
+    [
+      "Slay the Day",
+      "Feathered Gloves"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterWindDamageUp"
+    },
+    [
+      "Shinra Military Sword"
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterPatkDown"
+    },
+    [
+      "Full Metal Staff",
+      "Turks' Blade",
+      "Electrocannon",
+      "Battle Trumpet",
+      "Iron Blade",
+      "Marine Shooter",
+      "Kuja's Spirit Blade",
+      "S1976C",
+      "4-Point Shuriken"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterPatkDown"
+    },
+    [
+      "Full Metal Staff",
+      "Turks' Blade",
+      "Type-91 Two-Hander",
+      "Electrocannon",
+      "Battle Trumpet",
+      "Iron Blade",
+      "Steiner's Blade",
+      "Featherscatter",
+      "Marine Shooter",
+      "Slick Beetle",
+      "Steward Collar",
+      "Kuja's Spirit Blade",
+      "Northern Lights",
+      "Leather Gloves",
+      "Steward Gloves",
+      "S1976C",
+      "4-Point Shuriken"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterPatkDown"
+    },
+    [
+      "Full Metal Staff",
+      "Turks' Blade",
+      "Type-91 Two-Hander",
+      "Electrocannon",
+      "Battle Trumpet",
+      "Iron Blade",
+      "Steiner's Blade",
+      "Featherscatter",
+      "Marine Shooter",
+      "Slick Beetle",
+      "Steward Collar",
+      "Kuja's Spirit Blade",
+      "Northern Lights",
+      "Leather Gloves",
+      "Steward Gloves",
+      "S1976C",
+      "4-Point Shuriken"
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterMatkDown"
+    },
+    [
+      "Electrocannon",
+      "Battle Trumpet",
+      "Kuja's Spirit Blade",
+      "S1976C"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterMatkDown"
+    },
+    [
+      "Type-91 Two-Hander",
+      "Electrocannon",
+      "Solid Bazooka",
+      "Battle Trumpet",
+      "Gold Megaphone",
+      "Mad Minute",
+      "Junk Collar",
+      "Kuja's Spirit Blade",
+      "Amarant's Claws",
+      "Tiger Fangs",
+      "S1976C",
+      "Twinkling Star"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterMatkDown"
+    },
+    [
+      "Type-91 Two-Hander",
+      "Electrocannon",
+      "Solid Bazooka",
+      "Battle Trumpet",
+      "Gold Megaphone",
+      "Mad Minute",
+      "Junk Collar",
+      "Kuja's Spirit Blade",
+      "Amarant's Claws",
+      "Tiger Fangs",
+      "S1976C",
+      "Twinkling Star"
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterPdefDown"
+    },
+    [
+      "Greatsword (A)"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterPdefDown"
+    },
+    [
+      "Dawn's Prayers",
+      "Floral Wand",
+      "Sun Umbrella",
+      "Greatsword (A)",
+      "W Machine",
+      "Silver Megaphone",
+      "Glavenus Sword",
+      "Hardedge",
+      "Best Wishes",
+      "Piece of Cake",
+      "Slay the Day",
+      "Nightjar",
+      "Turks' Rifle",
+      "Iron Collar",
+      "Radiant Edge",
+      "Turks' Gloves",
+      "Black Whiskers",
+      "Cutlass",
+      "Iron Greatsword",
+      "Twinkling Star"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterPdefDown"
+    },
+    [
+      "Dawn's Prayers",
+      "Floral Wand",
+      "Sun Umbrella",
+      "Greatsword (A)",
+      "W Machine",
+      "Silver Megaphone",
+      "Glavenus Sword",
+      "Hardedge",
+      "Best Wishes",
+      "Piece of Cake",
+      "Slay the Day",
+      "Nightjar",
+      "Turks' Rifle",
+      "Iron Collar",
+      "Radiant Edge",
+      "Turks' Gloves",
+      "Black Whiskers",
+      "Cutlass",
+      "Iron Greatsword",
+      "Twinkling Star"
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterMdefDown"
+    },
+    [
+      "Crimson Staff",
+      "Canyon Collar",
+      "Gold Collar"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterMdefDown"
+    },
+    [
+      "Crimson Staff",
+      "Snowflake",
+      "Sun Umbrella",
+      "Hell House Cannon",
+      "Witch's Broom",
+      "Nightjar",
+      "Rose Musket",
+      "Thunderbird",
+      "Stingray",
+      "Canyon Collar",
+      "Gold Collar",
+      "Hell House Collar",
+      "Nameless",
+      "Feathered Gloves",
+      "Kaiser Knuckles",
+      "Holiday Bell",
+      "Arc Sword"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterMdefDown"
+    },
+    [
+      "Crimson Staff",
+      "Snowflake",
+      "Sun Umbrella",
+      "Hell House Cannon",
+      "Witch's Broom",
+      "Nightjar",
+      "Rose Musket",
+      "Thunderbird",
+      "Stingray",
+      "Canyon Collar",
+      "Gold Collar",
+      "Hell House Collar",
+      "Nameless",
+      "Feathered Gloves",
+      "Kaiser Knuckles",
+      "Holiday Bell",
+      "Arc Sword"
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterFireResistDown"
+    },
+    [
+      "Terra's Rod",
+      "Chocobo Paddle",
+      "Marine Shooter",
+      "Shinra Wyvern Blade"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterFireResistDown"
+    },
+    [
+      "Terra's Rod",
+      "Volcanic Heat",
+      "Sharkslayer",
+      "Gold Megaphone",
+      "Chocobo Paddle",
+      "Marine Shooter",
+      "Flame Dragon's Band",
+      "Ivy Collar",
+      "Flame Dragon Blade",
+      "Radiant Edge",
+      "Shinra Wyvern Blade",
+      "Withering Blaze",
+      "Boomerang"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterFireResistDown"
+    },
+    [
+      "Terra's Rod",
+      "Volcanic Heat",
+      "Sharkslayer",
+      "Gold Megaphone",
+      "Chocobo Paddle",
+      "Marine Shooter",
+      "Flame Dragon's Band",
+      "Ivy Collar",
+      "Flame Dragon Blade",
+      "Radiant Edge",
+      "Shinra Wyvern Blade",
+      "Withering Blaze",
+      "Boomerang"
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterIceResistDown"
+    },
+    [
+      "Terra's Rod"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterIceResistDown"
+    },
+    [
+      "Terra's Rod",
+      "Icebolt Megaphone",
+      "Bald Eagle",
+      "Ivy Collar",
+      "Icebolt Shooter",
+      "Pinwheel",
+      "Pressure Ridge"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterIceResistDown"
+    },
+    [
+      "Terra's Rod",
+      "Icebolt Megaphone",
+      "Bald Eagle",
+      "Ivy Collar",
+      "Icebolt Shooter",
+      "Pinwheel",
+      "Pressure Ridge"
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
+      "effectType": "FilterThunderResistDown"
+    },
+    [
+      "Terra's Rod"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterThunderResistDown"
+    },
+    [
+      "Terra's Rod",
+      "Icebolt Megaphone",
+      "Witch's Broom",
+      "Seaside Collar",
+      "Icebolt Shooter",
+      "Wind Slash"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterThunderResistDown"
+    },
+    [
+      "Terra's Rod",
+      "Icebolt Megaphone",
+      "Witch's Broom",
+      "Seaside Collar",
+      "Icebolt Shooter",
+      "Wind Slash"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterEarthResistDown"
+    },
+    [
+      "Shinra Greatsword: Model I",
+      "Blue Bramble",
+      "Chiron"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterEarthResistDown"
+    },
+    [
+      "Shinra Greatsword: Model I",
+      "Blue Bramble",
+      "Chiron"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterWaterResistDown"
+    },
+    [
+      "Sharkslayer",
+      "Green Megaphone",
+      "Silver Collar",
+      "Tempest",
+      "Black Whiskers"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterWaterResistDown"
+    },
+    [
+      "Sharkslayer",
+      "Green Megaphone",
+      "Silver Collar",
+      "Tempest",
+      "Black Whiskers"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterWindResistDown"
+    },
+    [
+      "Floral Wand",
+      "Silver Collar",
+      "Holiday Bell"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterWindResistDown"
+    },
+    [
+      "Floral Wand",
+      "Silver Collar",
+      "Holiday Bell"
+    ]
+  ]
+]

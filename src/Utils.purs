@@ -9,13 +9,18 @@ import Data.Either (Either(..))
 import Data.Enum.Generic (class GenericEnum, genericSucc)
 import Data.Foldable as Fold
 import Data.Generic.Rep (class Generic)
+import Data.Map (Map)
+import Data.Map as Map
 import Data.Maybe (Maybe(..))
+import Data.Newtype (class Newtype)
 import Data.Tuple (Tuple(..))
 import Data.Unfoldable (unfoldr)
 import Effect.Class (class MonadEffect)
 import Effect.Class.Console as Console
 import Foreign (MultipleErrors, renderForeignError)
 import Partial.Unsafe (unsafeCrashWith)
+import Yoga.JSON (class ReadForeign, class WriteForeign)
+import Yoga.JSON as J
 
 whenJust :: forall @a @m. Monad m => Maybe a -> (a -> m Unit) -> m Unit
 whenJust mb action =
@@ -57,3 +62,15 @@ unsafeFromJust mb reason =
   case mb of
     Just a -> a
     Nothing -> unsafeCrashWith reason
+
+newtype MapAsArray k v = MapAsArray (Map k v)
+
+instance WriteForeign (Tuple k v) => WriteForeign (MapAsArray k v) where
+  writeImpl (MapAsArray x) = J.writeImpl (Map.toUnfoldable x :: Array (Tuple k v))
+
+instance (ReadForeign (Tuple k v), Ord k) => ReadForeign (MapAsArray k v) where
+  readImpl json = do
+    arr <- J.readImpl json :: _ (Array (Tuple k v))
+    pure $ MapAsArray $ Map.fromFoldable arr
+
+derive instance Newtype (MapAsArray k v) _

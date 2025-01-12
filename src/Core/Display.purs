@@ -1,7 +1,5 @@
 module Core.Display where
 
-import Prelude
-
 import Core.Weapons.Search (FilterEffectType(..), FilterRange(..))
 
 class Display a where

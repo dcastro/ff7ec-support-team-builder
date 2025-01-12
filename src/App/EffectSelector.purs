@@ -83,7 +83,7 @@ render state =
             [ HH.tbody_ $
                 state.applicableWeapons <#> \weapon ->
                   HH.tr_
-                    [ HH.img [ HP.src $ display weapon.image ]
+                    [ HH.img [ HP.src (display weapon.image), classes' "image is-32x32" ]
                     , HH.td
                         [ tooltip (mkTooltip weapon), classes' "has-tooltip-right" ]
                         [ HH.text $ display weapon.name ]

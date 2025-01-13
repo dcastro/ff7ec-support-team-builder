@@ -107,6 +107,7 @@ handleAction = case _ of
       do
         Console.log $ "Deselected effect type"
         H.modify_ \s -> s { selectedEffectType = Nothing }
+          # updateApplicableWeapons
     else do
       -- Find the correct filter
       let arrayIndex = idx - 1
@@ -134,4 +135,4 @@ updateApplicableWeapons state = do
         applicableWeapons = applicableWeaponNames <#> \weaponName ->
           Map.lookup weaponName state.armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
       state { applicableWeapons = applicableWeapons }
-    Nothing -> state
+    Nothing -> state { applicableWeapons = [] }

@@ -60,17 +60,19 @@ render state =
     Loaded { armory, teams } ->
       HH.div_
         [ HH.text $ "Loaded " <> show (Map.size armory.allWeapons) <> " weapons"
-        , HH.div [ classes' "fixed-grid has-3-cols has-1-cols-mobile" ]
-            [ HH.div [ classes' "grid" ]
-                [ HH.div [ classes' "cell" ] [ HH.slot _effectSelector 0 EffectSelector.component armory HandleEffectSelector ]
-                , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 1 EffectSelector.component armory HandleEffectSelector ]
-                , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 2 EffectSelector.component armory HandleEffectSelector ]
-                , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 3 EffectSelector.component armory HandleEffectSelector ]
-                , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 4 EffectSelector.component armory HandleEffectSelector ]
-                , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 5 EffectSelector.component armory HandleEffectSelector ]
+        , HH.section [ classes' "section" ]
+            [ HH.div [ classes' "fixed-grid has-3-cols has-1-cols-mobile" ]
+                [ HH.div [ classes' "grid" ]
+                    [ HH.div [ classes' "cell" ] [ HH.slot _effectSelector 0 EffectSelector.component armory HandleEffectSelector ]
+                    , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 1 EffectSelector.component armory HandleEffectSelector ]
+                    , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 2 EffectSelector.component armory HandleEffectSelector ]
+                    , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 3 EffectSelector.component armory HandleEffectSelector ]
+                    , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 4 EffectSelector.component armory HandleEffectSelector ]
+                    , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 5 EffectSelector.component armory HandleEffectSelector ]
+                    ]
                 ]
             ]
-        , HH.div_
+        , HH.section [ classes' "section" ]
             [ HH.slot_ _results unit Results.component teams
 
             ]

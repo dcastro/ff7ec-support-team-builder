@@ -10,6 +10,7 @@ import Data.Maybe (Maybe(..))
 import Effect.Aff (Aff)
 import Halogen as H
 import Halogen.HTML as HH
+import HtmlUtils (classes')
 import Type.Proxy (Proxy(..))
 
 type Slots = (effectSelector :: forall query. H.Slot query Void Int)
@@ -45,7 +46,16 @@ render state =
     Loaded { armory } ->
       HH.div_
         [ HH.text $ "Loaded " <> show (Map.size armory.allWeapons) <> " weapons"
-        , HH.slot_ _effectSelector 0 EffectSelector.component armory
+        , HH.div [ classes' "fixed-grid has-3-cols has-1-cols-mobile" ]
+            [ HH.div [ classes' "grid" ]
+                [ HH.div [ classes' "cell" ] [ HH.slot_ _effectSelector 0 EffectSelector.component armory ]
+                , HH.div [ classes' "cell" ] [ HH.slot_ _effectSelector 1 EffectSelector.component armory ]
+                , HH.div [ classes' "cell" ] [ HH.slot_ _effectSelector 2 EffectSelector.component armory ]
+                , HH.div [ classes' "cell" ] [ HH.slot_ _effectSelector 3 EffectSelector.component armory ]
+                , HH.div [ classes' "cell" ] [ HH.slot_ _effectSelector 4 EffectSelector.component armory ]
+                , HH.div [ classes' "cell" ] [ HH.slot_ _effectSelector 5 EffectSelector.component armory ]
+                ]
+            ]
         ]
 
 handleAction :: forall cs o. Action → H.HalogenM State Action cs o Aff Unit

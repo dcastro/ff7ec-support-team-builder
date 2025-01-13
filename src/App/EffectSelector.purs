@@ -36,8 +36,7 @@ type State =
   }
 
 data Action
-  = NoAction
-  | SelectedEffectType Int
+  = SelectedEffectType Int
   | SelectedRange Int
 
 component :: forall q o. H.Component q Armory o Aff
@@ -56,7 +55,7 @@ component =
 
 render :: forall cs m. State -> H.ComponentHTML Action cs m
 render state =
-  HH.div_
+  HH.div [ classes' "box" ]
     [ HH.div [ classes' "select" ]
         [ HH.select
             [ HE.onSelectedIndexChange SelectedEffectType
@@ -103,7 +102,6 @@ mkTooltip weapon =
 
 handleAction :: forall cs o. Action → H.HalogenM State Action cs o Aff Unit
 handleAction = case _ of
-  NoAction -> pure unit
   SelectedEffectType idx -> do
     if idx == 0 then
       do

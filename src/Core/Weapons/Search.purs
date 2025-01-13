@@ -5,6 +5,7 @@ import Prelude
 
 import Core.Armory (ArmoryWeapon, Filter)
 import Data.Array as Arr
+import Data.Function (on)
 import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
@@ -24,14 +25,15 @@ type Combination = Array
 
 combinations :: Array FilterResult -> Array Combination
 combinations results =
-  Arr.foldr
-    ( \(filterResult :: FilterResult) (combinations :: Array Combination) -> do
-        (weapon :: Maybe ArmoryWeapon) <- filterResult.matchingWeapons # handleOptional filterResult.required
-        (combination :: Combination) <- combinations
-        [ Arr.cons { filter: filterResult.filter, weapon } combination ]
-    )
-    ([ [] ] :: Array Combination)
-    results
+  results
+    # Arr.nubBy (compare `on` _.filter)
+    # Arr.foldr
+        ( \(filterResult :: FilterResult) (combinations :: Array Combination) -> do
+            (weapon :: Maybe ArmoryWeapon) <- filterResult.matchingWeapons # handleOptional filterResult.required
+            (combination :: Combination) <- combinations
+            [ Arr.cons { filter: filterResult.filter, weapon } combination ]
+        )
+        ([ [] ] :: Array Combination)
   where
 
   -- If there are no matching weaopns, return an array that yields a single `None`

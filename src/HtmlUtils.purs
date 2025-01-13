@@ -2,6 +2,8 @@ module HtmlUtils where
 
 import Prelude
 
+import Core.Armory (ArmoryWeapon)
+import Core.Display (display)
 import Data.String.Utils as String
 import Halogen (AttrName(..), ClassName(..))
 import Halogen.HTML (IProp)
@@ -14,3 +16,9 @@ classes' str =
 
 tooltip :: forall r i. String -> IProp r i
 tooltip text = HH.attr (AttrName "data-tooltip") text
+
+mkTooltipForWeapon :: ArmoryWeapon -> String
+mkTooltipForWeapon weapon =
+  "OB0:\n" <> display weapon.ob0.description
+    <> "\n\nOB6:\n"
+    <> display weapon.ob6.description

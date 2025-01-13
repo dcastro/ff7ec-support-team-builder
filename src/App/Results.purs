@@ -22,7 +22,7 @@ import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
 import Halogen.Subscription as HS
-import HtmlUtils (classes', tooltip)
+import HtmlUtils (classes', mkTooltipForWeapon, tooltip)
 import Partial.Unsafe (unsafePartial)
 import Unsafe.Coerce (unsafeCoerce)
 import Utils (unsafeFromJust)
@@ -74,7 +74,10 @@ render state =
                                       [ HH.img [ HP.src (display weapon.weapon.image), classes' "image is-32x32" ]
                                       ]
                                   , HH.div [ classes' "column is-narrow" ]
-                                      [ HH.text (display weapon.weapon.name)
+                                      [ HH.span
+                                          [ tooltip (mkTooltipForWeapon weapon.weapon), classes' "has-tooltip-top" ]
+                                          [ HH.text (display weapon.weapon.name)
+                                          ]
                                       ]
                                   ]
                               ]

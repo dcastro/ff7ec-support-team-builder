@@ -17,7 +17,7 @@ import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
-import HtmlUtils (classes', tooltip)
+import HtmlUtils (classes', mkTooltipForWeapon, tooltip)
 import Utils (unsafeFromJust)
 
 type Slot id = H.Slot Query Output id
@@ -91,19 +91,13 @@ render state =
                   HH.tr_
                     [ HH.img [ HP.src (display weapon.image), classes' "image is-32x32" ]
                     , HH.td
-                        [ tooltip (mkTooltip weapon), classes' "has-tooltip-right" ]
+                        [ tooltip (mkTooltipForWeapon weapon), classes' "has-tooltip-right" ]
                         [ HH.text $ display weapon.name ]
                     , HH.td_ [ HH.text $ display weapon.character ]
                     ]
             ]
         ]
     ]
-
-mkTooltip :: ArmoryWeapon -> String
-mkTooltip weapon =
-  "OB0:\n" <> display weapon.ob0.description
-    <> "\n\nOB6:\n"
-    <> display weapon.ob6.description
 
 handleAction :: forall cs. Action → H.HalogenM State Action cs Output Aff Unit
 handleAction = case _ of

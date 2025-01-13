@@ -2,30 +2,25 @@ module App.EffectSelector where
 
 import Prelude
 
-import Core.Armory (Armory, ArmoryWeapon)
 import Core.Armory as Armory
 import Core.Display (display)
-import Core.Weapons.Search (FilterEffectType(..), FilterRange(..), Filter)
-import Core.Weapons.Search as Search
-import Core.Weapons.Types (WeaponName(..))
+import Core.Armory (Armory, ArmoryWeapon, Filter, FilterEffectType(..), FilterRange)
+import Core.Weapons.Search (FilterResult)
+import Core.Weapons.Types (WeaponName)
 import Data.Array as Arr
 import Data.Bounded.Generic (genericBottom)
 import Data.Map as Map
 import Data.Maybe (Maybe(..), fromMaybe)
 import Effect.Aff (Aff)
-import Effect.Aff as Aff
-import Effect.Aff.Class (class MonadAff)
 import Effect.Class.Console as Console
 import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
-import Halogen.Subscription as HS
 import HtmlUtils (classes', tooltip)
-import Partial.Unsafe (unsafePartial)
-import Unsafe.Coerce (unsafeCoerce)
 import Utils (unsafeFromJust)
-import Web.Event.Event (Event)
+
+type Slot id = H.Slot Query Output id
 
 type Input = Armory
 
@@ -34,7 +29,7 @@ type State =
       Armory
   , selectedEffectType :: Maybe FilterEffectType
   , selectedRange :: FilterRange
-  , applicableWeapons :: Array ArmoryWeapon
+  , matchingWeapons :: Array ArmoryWeapon
   }
 
 data Output =
@@ -44,18 +39,20 @@ data Action
   = SelectedEffectType Int
   | SelectedRange Int
 
-component :: forall q. H.Component q Input Output Aff
+data Query a = GetFilterResult (FilterResult -> a)
+
+component :: H.Component Query Input Output Aff
 component =
   H.mkComponent
     { initialState: \armory ->
-        updateApplicableWeapons
+        updatematchingWeapons
           { armory
           , selectedEffectType: Nothing
           , selectedRange: genericBottom
-          , applicableWeapons: []
+          , matchingWeapons: []
           }
     , render
-    , eval: H.mkEval H.defaultEval { handleAction = handleAction }
+    , eval: H.mkEval H.defaultEval { handleAction = handleAction, handleQuery = handleQuery }
     }
 
 render :: forall cs m. State -> H.ComponentHTML Action cs m
@@ -67,7 +64,7 @@ render state =
             ]
             ( [ HH.option_ [ HH.text "Select a weapon effect..." ] ]
                 <>
-                  ( Search.allFilterEffectTypes <#> \effectType -> do
+                  ( Armory.allFilterEffectTypes <#> \effectType -> do
                       let selected = state.selectedEffectType == Just effectType
                       HH.option [ HP.selected selected ] [ HH.text $ display effectType ]
                   )
@@ -77,7 +74,7 @@ render state =
         [ HH.select
             [ HE.onSelectedIndexChange SelectedRange
             ]
-            ( Search.allFilterRanges <#> \filterRange ->
+            ( Armory.allFilterRanges <#> \filterRange ->
                 HH.option_ [ HH.text $ display filterRange ]
             )
         ]
@@ -85,7 +82,7 @@ render state =
     , HH.div_
         [ HH.table [ classes' "table" ]
             [ HH.tbody_ $
-                state.applicableWeapons <#> \weapon ->
+                state.matchingWeapons <#> \weapon ->
                   HH.tr_
                     [ HH.img [ HP.src (display weapon.image), classes' "image is-32x32" ]
                     , HH.td
@@ -110,34 +107,49 @@ handleAction = case _ of
       do
         Console.log $ "Deselected effect type"
         H.modify_ \s -> s { selectedEffectType = Nothing }
-          # updateApplicableWeapons
+          # updatematchingWeapons
     else do
       -- Find the correct filter
       let arrayIndex = idx - 1
       let
-        effectType = Arr.index Search.allFilterEffectTypes arrayIndex `unsafeFromJust`
+        effectType = Arr.index Armory.allFilterEffectTypes arrayIndex `unsafeFromJust`
           ("Invalid effect type index: " <> show arrayIndex)
 
       Console.log $ "idx " <> show idx <> ", selected: " <> display effectType
       H.modify_ \s -> s { selectedEffectType = Just effectType }
-        # updateApplicableWeapons
+        # updatematchingWeapons
     H.raise SelectionChanged
 
   SelectedRange idx -> do
-    let filterRange = Arr.index Search.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
+    let filterRange = Arr.index Armory.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
     Console.log $ "idx " <> show idx <> ", selected: " <> display filterRange
     H.modify_ \s -> s { selectedRange = filterRange }
-      # updateApplicableWeapons
+      # updatematchingWeapons
     H.raise SelectionChanged
 
-updateApplicableWeapons :: State -> State
-updateApplicableWeapons state = do
+updatematchingWeapons :: State -> State
+updatematchingWeapons state = do
   case state.selectedEffectType of
     Just effectType -> do
       let filter = { effectType, range: state.selectedRange } :: Filter
-      let applicableWeaponNames = Map.lookup filter state.armory.groupedByEffect # fromMaybe [] :: Array WeaponName
+      let matchingWeaponNames = Map.lookup filter state.armory.groupedByEffect # fromMaybe [] :: Array WeaponName
       let
-        applicableWeapons = applicableWeaponNames <#> \weaponName ->
+        matchingWeapons = matchingWeaponNames <#> \weaponName ->
           Map.lookup weaponName state.armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
-      state { applicableWeapons = applicableWeapons }
-    Nothing -> state { applicableWeapons = [] }
+      state { matchingWeapons = matchingWeapons }
+    Nothing -> state { matchingWeapons = [] }
+
+handleQuery :: forall action a m. Query a -> H.HalogenM State action () Output m (Maybe a)
+handleQuery = case _ of
+  GetFilterResult reply -> do
+    state <- H.get
+    case state.selectedEffectType of
+      Just effectType -> pure $ Just $ reply
+        { filter:
+            { effectType
+            , range: state.selectedRange
+            }
+        , required: true
+        , matchingWeapons: state.matchingWeapons
+        }
+      Nothing -> pure Nothing

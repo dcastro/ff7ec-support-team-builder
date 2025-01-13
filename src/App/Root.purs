@@ -5,6 +5,10 @@ import Prelude
 import App.EffectSelector as EffectSelector
 import Core.Armory (Armory)
 import Core.Armory as Armory
+import Core.Display (display)
+import Core.Weapons.Search as Search
+import Data.Array as Arr
+import Data.Foldable (for_)
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Effect.Aff (Aff)
@@ -13,9 +17,10 @@ import Halogen as H
 import Halogen.HTML as HH
 import HtmlUtils (classes')
 import Type.Proxy (Proxy(..))
-import Unsafe.Coerce (unsafeCoerce)
 
-type Slots = (effectSelector :: forall query. H.Slot query EffectSelector.Output Int)
+type Slots =
+  ( effectSelector :: EffectSelector.Slot Int
+  )
 
 _effectSelector = Proxy :: Proxy "effectSelector"
 
@@ -62,7 +67,7 @@ render state =
             ]
         ]
 
-handleAction :: forall cs o. Action → H.HalogenM State Action cs o Aff Unit
+handleAction :: forall o. Action → H.HalogenM State Action Slots o Aff Unit
 handleAction = case _ of
   Initialize -> do
     H.liftAff Armory.init >>= case _ of
@@ -72,3 +77,20 @@ handleAction = case _ of
     case output of
       EffectSelector.SelectionChanged -> do
         Console.log "Selection changed"
+
+        -- Calculate all possible teams
+        responses <- H.requestAll _effectSelector EffectSelector.GetFilterResult
+        let filterResults = Arr.fromFoldable $ Map.values responses
+        let combinations = Search.combinations filterResults
+        let teams = combinations # Arr.mapMaybe (Search.assignWeaponsToCharacters 2)
+
+        Console.log "-----------------------------------------"
+        Console.log "-----------------------------------------"
+        Console.log "-----------------------------------------"
+        for_ teams \team -> do
+          Console.log "-----------"
+          for_ team.characters \char ->
+            case char.offHand of
+              Just offHand -> Console.log $ display char.name <> ": " <> display char.mainHand.weapon.name <> " / " <> display offHand.weapon.name
+              Nothing -> Console.log $ display char.name <> ": " <> display char.mainHand.weapon.name
+          pure unit

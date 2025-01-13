@@ -2,7 +2,7 @@ module Core.Display where
 
 import Prelude
 
-import Core.Weapons.Search (FilterEffectType(..), FilterRange(..))
+import Core.Armory (FilterEffectType(..), FilterRange(..))
 import Core.Weapons.Types (CharacterName, WeaponName)
 import Data.Newtype (unwrap)
 import Data.String.NonEmpty (NonEmptyString)

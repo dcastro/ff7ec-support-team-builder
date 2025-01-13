@@ -3,9 +3,9 @@ module Test.Core.Weapons.SearchSpec (spec) where
 import Prelude
 import Test.Spec
 
-import Core.Weapons.Search (FilterEffectType(..), FilterRange(..), Filter)
+import Core.Armory (Filter, FilterEffectType(..), FilterRange(..), ArmoryWeapon)
 import Core.Weapons.Search as Search
-import Core.Weapons.Types (CharacterName(..), Weapon, WeaponName(..))
+import Core.Weapons.Types (CharacterName(..), WeaponName(..))
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Nullable (null)
@@ -270,7 +270,7 @@ assignWeaponsToCharactersSpec = do
 
       Null.toNullable (Search.assignWeaponsToCharacters 2 combination) `shouldEqualPretty` null
 
-mkWeapon :: NonEmptyString -> NonEmptyString -> Weapon
+mkWeapon :: NonEmptyString -> NonEmptyString -> ArmoryWeapon
 mkWeapon id character =
   { name: WeaponName id
   , character: CharacterName character
@@ -280,6 +280,7 @@ mkWeapon id character =
   , ob6: { description: nes @" ", effects: [] }
   , ob10: { description: nes @" ", effects: [] }
   , cureAllAbility: true
+  , owned: true
   }
 
 filter1 :: Filter

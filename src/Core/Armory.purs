@@ -7,7 +7,6 @@ import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Control.Monad.Except (runExceptT)
 import Control.Monad.Rec.Class (class MonadRec)
 import Core.Weapons.Parser as P
-import Core.Weapons.Search (Filter, FilterEffectType(..), FilterRange(..))
 import Core.WebStorage as WS
 import Data.Array as Arr
 import Data.DateTime (DateTime)
@@ -15,12 +14,14 @@ import Data.DateTime as DateTime
 import Data.Either (Either(..), hush)
 import Data.Foldable (for_)
 import Data.Foldable as F
+import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Newtype (unwrap)
 import Data.Set (Set)
 import Data.Set as Set
+import Data.Show.Generic (genericShow)
 import Data.String.NonEmpty.Internal (NonEmptyString)
 import Data.Time.Duration (Hours(..))
 import Effect.Aff (Aff)
@@ -32,7 +33,11 @@ import Google.SheetsApi as SheetsApi
 import Record as Record
 import Type.Proxy (Proxy(..))
 import Utils (MapAsArray(..), logOnLeft, renderJsonErr, throwOnNothing, whenJust)
+import Utils as Utils
+import Yoga.JSON (class ReadForeign, class WriteForeign)
 import Yoga.JSON as J
+import Yoga.JSON.Generics as J
+import Yoga.JSON.Generics.EnumSumRep as Enum
 
 type Armory =
   { allWeapons :: Map WeaponName ArmoryWeapon
@@ -56,6 +61,73 @@ type ArmoryWeapon =
   , cureAllAbility :: Boolean
   , owned :: Boolean
   }
+
+type Filter =
+  { effectType :: FilterEffectType
+  , range :: FilterRange
+  }
+
+data FilterRange
+  = FilterAll
+  | FilterSingleTargetOrAll
+  | FilterSelfOrSingleTargetOrAll
+
+derive instance Generic FilterRange _
+derive instance Eq FilterRange
+derive instance Ord FilterRange
+instance Show FilterRange where
+  show = genericShow
+
+instance WriteForeign FilterRange where
+  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
+
+instance ReadForeign FilterRange where
+  readImpl = J.genericReadForeignEnum Enum.defaultOptions
+
+allFilterRanges :: Array FilterRange
+allFilterRanges = Utils.listEnum
+
+data FilterEffectType
+  = FilterHeal
+  -- Buffs
+  | FilterVeil
+  | FilterProvoke
+  | FilterPatkUp
+  | FilterMatkUp
+  | FilterPdefUp
+  | FilterMdefUp
+  | FilterFireDamageUp
+  | FilterIceDamageUp
+  | FilterThunderDamageUp
+  | FilterEarthDamageUp
+  | FilterWaterDamageUp
+  | FilterWindDamageUp
+  -- Debuffs
+  | FilterPatkDown
+  | FilterMatkDown
+  | FilterPdefDown
+  | FilterMdefDown
+  | FilterFireResistDown
+  | FilterIceResistDown
+  | FilterThunderResistDown
+  | FilterEarthResistDown
+  | FilterWaterResistDown
+  | FilterWindResistDown
+
+derive instance Generic FilterEffectType _
+derive instance Eq FilterEffectType
+derive instance Ord FilterEffectType
+instance Show FilterEffectType where
+  show = genericShow
+
+instance WriteForeign FilterEffectType where
+  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
+
+instance ReadForeign FilterEffectType where
+  readImpl = J.genericReadForeignEnum Enum.defaultOptions
+
+allFilterEffectTypes :: Array FilterEffectType
+allFilterEffectTypes = Utils.listEnum
 
 init :: Aff (Maybe Armory)
 init = do

@@ -57,7 +57,7 @@ render state =
   HH.div_
     [ HH.h1 [ classes' "title is-2 has-text-centered" ] [ HH.text "Teams " ]
     , HH.div [ classes' "columns" ]
-        [ HH.div [ classes' "column is-half is-offset-one-quarter" ] $
+        [ HH.div [ classes' "column is-half-desktop is-offset-one-quarter-desktop" ] $
             state.teams <#> \team ->
               HH.div [ classes' "box" ] $
                 Map.values team.characters # Arr.fromFoldable <#> \character ->
@@ -69,7 +69,7 @@ render state =
                       <>
                         ( Search.getEquipedWeapons character <#> \weapon ->
                             HH.div [ classes' "column is-two-fifths" ]
-                              [ HH.div [ classes' "columns is-mobile" ]
+                              [ HH.div [ classes' "columns is-mobile is-centered" ]
                                   [ HH.div [ classes' "column is-narrow" ]
                                       [ HH.img [ HP.src (display weapon.weapon.image), classes' "image is-32x32" ]
                                       ]

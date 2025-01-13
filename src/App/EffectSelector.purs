@@ -2,9 +2,9 @@ module App.EffectSelector where
 
 import Prelude
 
+import Core.Armory (Armory, ArmoryWeapon, Filter, FilterEffectType(..), FilterRange)
 import Core.Armory as Armory
 import Core.Display (display)
-import Core.Armory (Armory, ArmoryWeapon, Filter, FilterEffectType(..), FilterRange)
 import Core.Weapons.Search (FilterResult)
 import Core.Weapons.Types (WeaponName)
 import Data.Array as Arr
@@ -38,6 +38,7 @@ data Output =
 data Action
   = SelectedEffectType Int
   | SelectedRange Int
+  | Initialize
 
 data Query a = GetFilterResult (FilterResult -> a)
 
@@ -45,14 +46,18 @@ component :: H.Component Query Input Output Aff
 component =
   H.mkComponent
     { initialState: \armory ->
-        updatematchingWeapons
+        updateMatchingWeapons
           { armory
           , selectedEffectType: Nothing
           , selectedRange: genericBottom
           , matchingWeapons: []
           }
     , render
-    , eval: H.mkEval H.defaultEval { handleAction = handleAction, handleQuery = handleQuery }
+    , eval: H.mkEval H.defaultEval
+        { handleAction = handleAction
+        , handleQuery = handleQuery
+        , initialize = Just Initialize
+        }
     }
 
 render :: forall cs m. State -> H.ComponentHTML Action cs m
@@ -107,7 +112,7 @@ handleAction = case _ of
       do
         Console.log $ "Deselected effect type"
         H.modify_ \s -> s { selectedEffectType = Nothing }
-          # updatematchingWeapons
+          # updateMatchingWeapons
     else do
       -- Find the correct filter
       let arrayIndex = idx - 1
@@ -117,18 +122,25 @@ handleAction = case _ of
 
       Console.log $ "idx " <> show idx <> ", selected: " <> display effectType
       H.modify_ \s -> s { selectedEffectType = Just effectType }
-        # updatematchingWeapons
+        # updateMatchingWeapons
     H.raise SelectionChanged
 
   SelectedRange idx -> do
     let filterRange = Arr.index Armory.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
     Console.log $ "idx " <> show idx <> ", selected: " <> display filterRange
     H.modify_ \s -> s { selectedRange = filterRange }
-      # updatematchingWeapons
+      # updateMatchingWeapons
     H.raise SelectionChanged
 
-updatematchingWeapons :: State -> State
-updatematchingWeapons state = do
+  Initialize -> do
+    -- When this EffectSelector is done rendering, if the initial state has an effect type,
+    -- we notify the root component so the results section will be updated.
+    H.gets _.selectedEffectType >>= case _ of
+      Just _ -> H.raise SelectionChanged
+      Nothing -> pure unit
+
+updateMatchingWeapons :: State -> State
+updateMatchingWeapons state = do
   case state.selectedEffectType of
     Just effectType -> do
       let filter = { effectType, range: state.selectedRange } :: Filter

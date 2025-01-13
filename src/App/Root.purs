@@ -8,12 +8,14 @@ import Core.Armory as Armory
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Effect.Aff (Aff)
+import Effect.Class.Console as Console
 import Halogen as H
 import Halogen.HTML as HH
 import HtmlUtils (classes')
 import Type.Proxy (Proxy(..))
+import Unsafe.Coerce (unsafeCoerce)
 
-type Slots = (effectSelector :: forall query. H.Slot query Void Int)
+type Slots = (effectSelector :: forall query. H.Slot query EffectSelector.Output Int)
 
 _effectSelector = Proxy :: Proxy "effectSelector"
 
@@ -22,7 +24,9 @@ data State
   | FailedToLoad
   | Loaded { armory :: Armory }
 
-data Action = Initialize
+data Action
+  = Initialize
+  | HandleEffectSelector EffectSelector.Output
 
 component :: forall q i o. H.Component q i o Aff
 component =
@@ -48,12 +52,12 @@ render state =
         [ HH.text $ "Loaded " <> show (Map.size armory.allWeapons) <> " weapons"
         , HH.div [ classes' "fixed-grid has-3-cols has-1-cols-mobile" ]
             [ HH.div [ classes' "grid" ]
-                [ HH.div [ classes' "cell" ] [ HH.slot_ _effectSelector 0 EffectSelector.component armory ]
-                , HH.div [ classes' "cell" ] [ HH.slot_ _effectSelector 1 EffectSelector.component armory ]
-                , HH.div [ classes' "cell" ] [ HH.slot_ _effectSelector 2 EffectSelector.component armory ]
-                , HH.div [ classes' "cell" ] [ HH.slot_ _effectSelector 3 EffectSelector.component armory ]
-                , HH.div [ classes' "cell" ] [ HH.slot_ _effectSelector 4 EffectSelector.component armory ]
-                , HH.div [ classes' "cell" ] [ HH.slot_ _effectSelector 5 EffectSelector.component armory ]
+                [ HH.div [ classes' "cell" ] [ HH.slot _effectSelector 0 EffectSelector.component armory HandleEffectSelector ]
+                , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 1 EffectSelector.component armory HandleEffectSelector ]
+                , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 2 EffectSelector.component armory HandleEffectSelector ]
+                , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 3 EffectSelector.component armory HandleEffectSelector ]
+                , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 4 EffectSelector.component armory HandleEffectSelector ]
+                , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 5 EffectSelector.component armory HandleEffectSelector ]
                 ]
             ]
         ]
@@ -64,3 +68,7 @@ handleAction = case _ of
     H.liftAff Armory.init >>= case _ of
       Just armory -> H.put $ Loaded { armory }
       Nothing -> H.put FailedToLoad
+  HandleEffectSelector output ->
+    case output of
+      EffectSelector.SelectionChanged -> do
+        Console.log "Selection changed"

@@ -27,6 +27,8 @@ import Unsafe.Coerce (unsafeCoerce)
 import Utils (unsafeFromJust)
 import Web.Event.Event (Event)
 
+type Input = Armory
+
 type State =
   { armory ::
       Armory
@@ -35,11 +37,14 @@ type State =
   , applicableWeapons :: Array ArmoryWeapon
   }
 
+data Output =
+  SelectionChanged
+
 data Action
   = SelectedEffectType Int
   | SelectedRange Int
 
-component :: forall q o. H.Component q Armory o Aff
+component :: forall q. H.Component q Input Output Aff
 component =
   H.mkComponent
     { initialState: \armory ->
@@ -88,10 +93,8 @@ render state =
                         [ HH.text $ display weapon.name ]
                     , HH.td_ [ HH.text $ display weapon.character ]
                     ]
-
             ]
         ]
-
     ]
 
 mkTooltip :: ArmoryWeapon -> String
@@ -100,7 +103,7 @@ mkTooltip weapon =
     <> "\n\nOB6:\n"
     <> display weapon.ob6.description
 
-handleAction :: forall cs o. Action → H.HalogenM State Action cs o Aff Unit
+handleAction :: forall cs. Action → H.HalogenM State Action cs Output Aff Unit
 handleAction = case _ of
   SelectedEffectType idx -> do
     if idx == 0 then
@@ -118,12 +121,14 @@ handleAction = case _ of
       Console.log $ "idx " <> show idx <> ", selected: " <> display effectType
       H.modify_ \s -> s { selectedEffectType = Just effectType }
         # updateApplicableWeapons
+    H.raise SelectionChanged
 
   SelectedRange idx -> do
     let filterRange = Arr.index Search.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
     Console.log $ "idx " <> show idx <> ", selected: " <> display filterRange
     H.modify_ \s -> s { selectedRange = filterRange }
       # updateApplicableWeapons
+    H.raise SelectionChanged
 
 updateApplicableWeapons :: State -> State
 updateApplicableWeapons state = do

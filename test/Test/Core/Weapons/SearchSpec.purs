@@ -159,6 +159,84 @@ combinationsSpec = do
           , { filter: filter3, weapon: Nothing }
           ]
         ]
+    it "ignores weapons not owned" do
+      let
+        combs = Search.combinations
+          [ { filter: filter1
+            , required: true
+            , matchingWeapons:
+                [ weapon11 { owned = false }
+                , weapon12
+                , weapon13
+                ]
+            }
+          , { filter: filter2
+            , required: true
+            , matchingWeapons:
+                [ weapon21
+                , weapon22
+                ]
+            }
+          , { filter: filter3
+            , required: true
+            , matchingWeapons:
+                [ weapon31
+                ]
+            }
+          ]
+
+      combs `shouldEqualPretty`
+        [ [ { filter: filter1, weapon: Just weapon12 }
+          , { filter: filter2, weapon: Just weapon21 }
+          , { filter: filter3, weapon: Just weapon31 }
+          ]
+        , [ { filter: filter1, weapon: Just weapon12 }
+          , { filter: filter2, weapon: Just weapon22 }
+          , { filter: filter3, weapon: Just weapon31 }
+          ]
+        , [ { filter: filter1, weapon: Just weapon13 }
+          , { filter: filter2, weapon: Just weapon21 }
+          , { filter: filter3, weapon: Just weapon31 }
+          ]
+        , [ { filter: filter1, weapon: Just weapon13 }
+          , { filter: filter2, weapon: Just weapon22 }
+          , { filter: filter3, weapon: Just weapon31 }
+          ]
+        ]
+    it "ignores weapons not owned in optional filters" do
+      let
+        combs = Search.combinations
+          [ { filter: filter1
+            , required: false
+            , matchingWeapons:
+                [ weapon11 { owned = false }
+                ]
+            }
+          , { filter: filter2
+            , required: true
+            , matchingWeapons:
+                [ weapon21
+                , weapon22
+                ]
+            }
+          , { filter: filter3
+            , required: true
+            , matchingWeapons:
+                [ weapon31
+                ]
+            }
+          ]
+
+      combs `shouldEqualPretty`
+        [ [ { filter: filter1, weapon: Nothing }
+          , { filter: filter2, weapon: Just weapon21 }
+          , { filter: filter3, weapon: Just weapon31 }
+          ]
+        , [ { filter: filter1, weapon: Nothing }
+          , { filter: filter2, weapon: Just weapon22 }
+          , { filter: filter3, weapon: Just weapon31 }
+          ]
+        ]
 
 assignWeaponsToCharactersSpec :: Spec Unit
 assignWeaponsToCharactersSpec = do

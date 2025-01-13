@@ -159,13 +159,13 @@ combinationsSpec = do
           , { filter: filter3, weapon: Nothing }
           ]
         ]
-    it "ignores weapons not owned" do
+    it "discards ignored weapons" do
       let
         combs = Search.combinations
           [ { filter: filter1
             , required: true
             , matchingWeapons:
-                [ weapon11 { owned = false }
+                [ weapon11 { ignored = true }
                 , weapon12
                 , weapon13
                 ]
@@ -203,13 +203,13 @@ combinationsSpec = do
           , { filter: filter3, weapon: Just weapon31 }
           ]
         ]
-    it "ignores weapons not owned in optional filters" do
+    it "discards ignored weapons in optional filters" do
       let
         combs = Search.combinations
           [ { filter: filter1
             , required: false
             , matchingWeapons:
-                [ weapon11 { owned = false }
+                [ weapon11 { ignored = true }
                 ]
             }
           , { filter: filter2
@@ -358,7 +358,7 @@ mkWeapon id character =
   , ob6: { description: nes @" ", effects: [] }
   , ob10: { description: nes @" ", effects: [] }
   , cureAllAbility: true
-  , owned: true
+  , ignored: false
   }
 
 filter1 :: Filter

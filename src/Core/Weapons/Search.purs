@@ -30,7 +30,7 @@ combinations results =
     # Arr.foldr
         ( \(filterResult :: FilterResult) (combinations :: Array Combination) -> do
             (weapon :: Maybe ArmoryWeapon) <- filterResult.matchingWeapons
-              # ignoreNotOwned
+              # discardIgnored
               # handleOptional filterResult.required
             (combination :: Combination) <- combinations
             [ Arr.cons { filter: filterResult.filter, weapon } combination ]
@@ -44,8 +44,8 @@ combinations results =
     if not required && matchingWeapons == [] then [ Nothing ]
     else Just <$> matchingWeapons
 
-  ignoreNotOwned :: Array ArmoryWeapon -> Array ArmoryWeapon
-  ignoreNotOwned = Arr.filter \weapon -> weapon.owned
+  discardIgnored :: Array ArmoryWeapon -> Array ArmoryWeapon
+  discardIgnored = Arr.filter \weapon -> not weapon.ignored
 
 type Character =
   { name :: CharacterName

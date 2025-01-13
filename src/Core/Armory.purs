@@ -59,7 +59,7 @@ type ArmoryWeapon =
   , ob6 :: ObLevel
   , ob10 :: ObLevel
   , cureAllAbility :: Boolean
-  , owned :: Boolean
+  , ignored :: Boolean
   }
 
 type Filter =
@@ -197,8 +197,8 @@ insertWeapon weapon armory =
 
   insert :: Armory -> Armory
   insert armory = do
-    -- Set the `owned` field to `true` by default.
-    let armoryWeapon = Record.insert (Proxy :: Proxy "owned") true weapon
+    -- Set the `ignored` field to `false` by default.
+    let armoryWeapon = Record.insert (Proxy :: Proxy "ignored") false weapon
     armory { allWeapons = Map.insert armoryWeapon.name armoryWeapon armory.allWeapons }
 
   insertIntoGroups :: Armory -> Armory

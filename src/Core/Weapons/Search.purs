@@ -134,3 +134,9 @@ assignWeaponsToCharacters maxCharacterCount =
   addMatchedFilter :: Filter -> EquipedWeapon -> EquipedWeapon
   addMatchedFilter matchedFilter weapon =
     weapon { matchedFilters = Arr.cons matchedFilter weapon.matchedFilters }
+
+getEquipedWeapons :: Character -> Array EquipedWeapon
+getEquipedWeapons char =
+  case char.offHand of
+    Just offHand -> [ char.mainHand, offHand ]
+    Nothing -> [ char.mainHand ]

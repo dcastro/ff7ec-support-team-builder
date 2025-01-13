@@ -6,8 +6,8 @@ import Test.Spec
 
 import Control.Monad.Error.Class (throwError)
 import Core.Armory as Armory
-import Data.Array as Arr
 import Data.Either (Either(..))
+import Data.Map as Map
 import Effect.Aff (error)
 import Google.SheetsApi (GetSheetResult)
 import Node.Encoding as Node
@@ -30,9 +30,6 @@ spec =
                 <> Utils.renderJsonErr errs
       let { weapons, errors: _ } = parseWeapons sourceWeapons
 
-      armory <- Arr.foldRecM
-        (\armory weapon -> Armory.insertWeapon weapon armory)
-        Armory.newArmory
-        weapons
+      armory <- Armory.createArmory weapons Map.empty
 
       T.goldenTest "resources/grouped_weapons.snap" $ MapAsArray (armory.groupedByEffect)

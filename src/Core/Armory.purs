@@ -134,12 +134,12 @@ init = do
   runExceptT readFromCache >>= case _ of
     Left _ -> do
       Console.log "Armory not found in cache, loading it from the spreadsheet..."
-      armoryMb <- hush <$> runExceptT (updateArmory newArmory)
+      armoryMb <- hush <$> runExceptT (loadAndCreateArmory Map.empty)
       whenJust armoryMb $ writeToCache
       pure armoryMb
     Right { armory, hasExpired } | hasExpired -> do
       Console.log "Armory found in cache but has expired, updating cache..."
-      hush <$> runExceptT (updateArmory armory) >>= case _ of
+      hush <$> runExceptT (loadAndCreateArmory armory.allWeapons) >>= case _ of
         Just updatedArmory -> do
           writeToCache updatedArmory
           pure $ Just updatedArmory
@@ -151,13 +151,10 @@ init = do
       pure $ Just armory
   where
   -- Load the weapons from the spreadsheet, and updating the existing armory.
-  updateArmory :: forall f. MonadAff f => MonadThrow Unit f => MonadRec f => Armory -> f Armory
-  updateArmory existingArmory = do
+  loadAndCreateArmory :: forall f. MonadAff f => MonadThrow Unit f => MonadRec f => Map WeaponName ArmoryWeapon -> f Armory
+  loadAndCreateArmory existingWeapons = do
     weapons <- loadFromSpreadsheet
-    Arr.foldRecM
-      (\armory weapon -> insertWeapon weapon armory)
-      existingArmory
-      weapons
+    createArmory weapons existingWeapons
 
   -- Throws if we can't parse the Google Sheet.
   loadFromSpreadsheet :: forall f. MonadAff f => MonadThrow Unit f => f (Array Weapon)
@@ -178,12 +175,27 @@ newArmory =
   , groupedByEffect: Map.empty
   }
 
-insertWeapon :: forall m. MonadEffect m => Weapon -> Armory -> m Armory
-insertWeapon weapon armory =
-  case Map.lookup weapon.name armory.allWeapons of
-    Just _existingWeapon -> do
-      Console.log $ "Weapon already exists, skipping: " <> show weapon.name
-      pure armory
+createArmory :: forall m. MonadEffect m => MonadRec m => Array Weapon -> Map WeaponName ArmoryWeapon -> m Armory
+createArmory newWeapons existingWeapons = do
+  Arr.foldRecM
+    (\armory weapon -> insertWeapon weapon existingWeapons armory)
+    newArmory
+    newWeapons
+
+insertWeapon
+  :: forall m
+   . MonadEffect m
+  => Weapon
+  -> Map WeaponName ArmoryWeapon
+  -> Armory
+  -> m Armory
+insertWeapon weapon existingWeapons armory =
+  case Map.lookup weapon.name existingWeapons of
+    Just existingWeapon -> do
+      Console.log $ "Weapon already exists, replacing it: " <> show weapon.name
+      pure $ armory
+        # mergeWithExisting existingWeapon
+        # insertIntoGroups
     Nothing -> do
       Console.log $ "Weapon added: " <> show weapon.name
       pure $ armory
@@ -195,6 +207,11 @@ insertWeapon weapon armory =
   insert armory = do
     -- Set the `ignored` field to `false` by default.
     let armoryWeapon = Record.insert (Proxy :: Proxy "ignored") false weapon
+    armory { allWeapons = Map.insert armoryWeapon.name armoryWeapon armory.allWeapons }
+
+  mergeWithExisting :: ArmoryWeapon -> Armory -> Armory
+  mergeWithExisting existing armory = do
+    let armoryWeapon = Record.insert (Proxy :: Proxy "ignored") existing.ignored weapon
     armory { allWeapons = Map.insert armoryWeapon.name armoryWeapon armory.allWeapons }
 
   insertIntoGroups :: Armory -> Armory

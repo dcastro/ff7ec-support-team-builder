@@ -486,6 +486,15 @@
   [
     {
       "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterEarthDamageUp"
+    },
+    [
+      "Kugelblitz"
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
       "effectType": "FilterWaterDamageUp"
     },
     [
@@ -694,7 +703,8 @@
     [
       "Crimson Staff",
       "Canyon Collar",
-      "Gold Collar"
+      "Gold Collar",
+      "Kugelblitz"
     ]
   ],
   [
@@ -718,6 +728,7 @@
       "Nameless",
       "Feathered Gloves",
       "Kaiser Knuckles",
+      "Kugelblitz",
       "Holiday Bell",
       "Arc Sword"
     ]
@@ -743,6 +754,7 @@
       "Nameless",
       "Feathered Gloves",
       "Kaiser Knuckles",
+      "Kugelblitz",
       "Holiday Bell",
       "Arc Sword"
     ]
@@ -756,7 +768,8 @@
       "Terra's Rod",
       "Chocobo Paddle",
       "Marine Shooter",
-      "Shinra Wyvern Blade"
+      "Shinra Wyvern Blade",
+      "Mallet of Luck"
     ]
   ],
   [
@@ -777,7 +790,8 @@
       "Radiant Edge",
       "Shinra Wyvern Blade",
       "Withering Blaze",
-      "Boomerang"
+      "Boomerang",
+      "Mallet of Luck"
     ]
   ],
   [
@@ -798,7 +812,8 @@
       "Radiant Edge",
       "Shinra Wyvern Blade",
       "Withering Blaze",
-      "Boomerang"
+      "Boomerang",
+      "Mallet of Luck"
     ]
   ],
   [

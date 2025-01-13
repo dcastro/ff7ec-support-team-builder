@@ -14096,6 +14096,112 @@
     },
     {
       "ob6": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "MdefDown",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "EarthDamageUp",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          }
+        ],
+        "description": "Lightblast+ (4 ATB)\n660% Mag. Non-elem. Damage [Range: All Enemies]\n25s MDEF Down (+8s) (High) [Range: All Enemies]\n35s Earth Damage Up (+7s) (High) [Range: Self] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]\n+5% Limit Break Gauge [Range: Self]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "MdefDown",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "EarthDamageUp",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          }
+        ],
+        "description": "Lightblast++ (4 ATB)\n750% Mag. Non-elem. Damage [Range: All Enemies]\n35s MDEF Down (+11s) (High) [Range: All Enemies]\n45s Earth Damage Up (+9s) (High) [Range: Self] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]\n+5% Limit Break Gauge [Range: Self]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "MdefDown",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "EarthDamageUp",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Lightblast (4 ATB)\n540% Mag. Non-elem. Damage [Range: All Enemies]\n25s MDEF Down (+8s) (Mid) [Range: All Enemies]\n35s Earth Damage Up (+7s) (Mid) [Range: Self] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]\n+4% Limit Break Gauge [Range: Self]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "MdefDown",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "EarthDamageUp",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Lightblast (4 ATB)\n470% Mag. Non-elem. Damage [Range: All Enemies]\n20s MDEF Down (+6s) (Mid) [Range: All Enemies]\n30s Earth Damage Up (+6s) (Mid) [Range: Self] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]\n+4% Limit Break Gauge [Range: Self]"
+      },
+      "name": "Kugelblitz",
+      "image": "https://i.imgur.com/lVwoBpG.png",
+      "cureAllAbility": false,
+      "character": "Vincent"
+    },
+    {
+      "ob6": {
         "effects": [],
         "description": "Spinning Pentashot+ (4 ATB)\n620% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 1.5x (30% HP)] [Range: Single Enemy]\n+5% Limit Break Gauge [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
       },
@@ -15275,6 +15381,72 @@
       },
       "name": "Magic Shuriken",
       "image": "https://i.imgur.com/O8HCoQv.png",
+      "cureAllAbility": false,
+      "character": "Yuffie"
+    },
+    {
+      "ob6": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "FireResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Defira Surge A+ (4 ATB)\n240% Mag. Non-elem. Damage [Range: All Enemies]\n30s Fire Resistance Down (+7s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "FireResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Defira Surge A++ (4 ATB)\n250% Mag. Non-elem. Damage [Range: All Enemies]\n35s Fire Resistance Down (+8s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "FireResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Defira Surge A (4 ATB)\n210% Mag. Non-elem. Damage [Range: All Enemies]\n25s Fire Resistance Down (+6s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "FireResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Defira Surge A (4 ATB)\n180% Mag. Non-elem. Damage [Range: All Enemies]\n20s Fire Resistance Down (+5s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "name": "Mallet of Luck",
+      "image": "https://i.imgur.com/Yz3YJD2.png",
       "cureAllAbility": false,
       "character": "Yuffie"
     },
@@ -16557,8 +16729,5 @@
       "character": "Zack"
     }
   ],
-  "errors": [
-    "Cell at 297:1 is empty",
-    "Cell at 298:1 is empty"
-  ]
+  "errors": []
 }

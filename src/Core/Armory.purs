@@ -180,19 +180,15 @@ newArmory =
 
 insertWeapon :: forall m. MonadEffect m => Weapon -> Armory -> m Armory
 insertWeapon weapon armory =
-  if Arr.null weapon.ob10.effects && not weapon.cureAllAbility then do
-    Console.log $ "Weapon has no effects, skipping: " <> show weapon.name
-    pure armory
-  else
-    case Map.lookup weapon.name armory.allWeapons of
-      Just _existingWeapon -> do
-        Console.log $ "Weapon already exists, skipping: " <> show weapon.name
-        pure armory
-      Nothing -> do
-        Console.log $ "Weapon added: " <> show weapon.name
-        pure $ armory
-          # insert
-          # insertIntoGroups
+  case Map.lookup weapon.name armory.allWeapons of
+    Just _existingWeapon -> do
+      Console.log $ "Weapon already exists, skipping: " <> show weapon.name
+      pure armory
+    Nothing -> do
+      Console.log $ "Weapon added: " <> show weapon.name
+      pure $ armory
+        # insert
+        # insertIntoGroups
   where
 
   insert :: Armory -> Armory

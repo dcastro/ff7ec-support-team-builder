@@ -150,7 +150,7 @@ handleAction = case _ of
       Nothing -> pure unit
 
   Receive input -> do
-    H.modify_ \state -> updateMatchingWeapons $ state { armory = input.armory }
+    H.modify_ \state -> updateMatchingWeapons $ state { armory = input }
 
 updateMatchingWeapons :: State -> State
 updateMatchingWeapons state = do

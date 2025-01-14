@@ -22,7 +22,10 @@ import Utils (unsafeFromJust)
 
 type Slot id = H.Slot Query Output id
 
-type Input = Armory
+type Input =
+  { armory :: Armory
+  , effectTypeMb :: Maybe FilterEffectType
+  }
 
 type State =
   { armory ::
@@ -48,10 +51,10 @@ data Query a = GetFilter (Filter -> a)
 component :: H.Component Query Input Output Aff
 component =
   H.mkComponent
-    { initialState: \armory ->
+    { initialState: \{ armory, effectTypeMb } ->
         updateMatchingWeapons
           { armory
-          , selectedEffectType: Nothing
+          , selectedEffectType: effectTypeMb
           , selectedRange: genericBottom
           , matchingWeapons: []
           }
@@ -150,7 +153,7 @@ handleAction = case _ of
       Nothing -> pure unit
 
   Receive input -> do
-    H.modify_ \state -> updateMatchingWeapons $ state { armory = input }
+    H.modify_ \state -> updateMatchingWeapons $ state { armory = input.armory }
 
 updateMatchingWeapons :: State -> State
 updateMatchingWeapons state = do

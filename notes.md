@@ -11,6 +11,8 @@
 ## Decisions
 
 * We do not consider Ultimate Weapons; they're usually not a reliably way of keeping buffs/debuffs applied throughout a battle.
+* We consider "Healing Weapons" as weapons that have either a `All (Cure Spells)` S. Ability or a C. Ability that heals for at least 35%.
+  * This last criterium is used to exclude weapons like Microlaser and Flower Vase, but include Lifeguard Wraps (38% at OB0).
 * We don't discard teams that are superset of other teams.
   * Say you filter by `PATK Up All + MATK Up All`. Among the possible teams, you'll find these:
     1. Cait Sith with X

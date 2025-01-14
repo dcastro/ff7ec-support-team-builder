@@ -24,6 +24,7 @@ import Data.Set as Set
 import Data.Show.Generic (genericShow)
 import Data.String.NonEmpty.Internal (NonEmptyString)
 import Data.Time.Duration (Hours(..))
+import Data.Unfoldable as Unfoldable
 import Effect.Aff (Aff)
 import Effect.Aff.Class (class MonadAff, liftAff)
 import Effect.Class (class MonadEffect, liftEffect)
@@ -221,33 +222,35 @@ insertWeapon weapon existingWeapons armory =
       armory
       matchingFilters
 
-  matchingEffectType :: EffectType -> FilterEffectType
+  matchingEffectType :: EffectType -> Maybe FilterEffectType
   matchingEffectType = case _ of
-    Heal _ -> FilterHeal
+    Heal { percentage } ->
+      if percentage >= Percentage 35 then Just FilterHeal
+      else Nothing
     -- Buffs
-    Veil -> FilterVeil
-    Provoke -> FilterProvoke
-    PatkUp _ -> FilterPatkUp
-    MatkUp _ -> FilterMatkUp
-    PdefUp _ -> FilterPdefUp
-    MdefUp _ -> FilterMdefUp
-    FireDamageUp _ -> FilterFireDamageUp
-    IceDamageUp _ -> FilterIceDamageUp
-    ThunderDamageUp _ -> FilterThunderDamageUp
-    EarthDamageUp _ -> FilterEarthDamageUp
-    WaterDamageUp _ -> FilterWaterDamageUp
-    WindDamageUp _ -> FilterWindDamageUp
+    Veil -> Just FilterVeil
+    Provoke -> Just FilterProvoke
+    PatkUp _ -> Just FilterPatkUp
+    MatkUp _ -> Just FilterMatkUp
+    PdefUp _ -> Just FilterPdefUp
+    MdefUp _ -> Just FilterMdefUp
+    FireDamageUp _ -> Just FilterFireDamageUp
+    IceDamageUp _ -> Just FilterIceDamageUp
+    ThunderDamageUp _ -> Just FilterThunderDamageUp
+    EarthDamageUp _ -> Just FilterEarthDamageUp
+    WaterDamageUp _ -> Just FilterWaterDamageUp
+    WindDamageUp _ -> Just FilterWindDamageUp
     -- Debuffs
-    PatkDown _ -> FilterPatkDown
-    MatkDown _ -> FilterMatkDown
-    PdefDown _ -> FilterPdefDown
-    MdefDown _ -> FilterMdefDown
-    FireResistDown _ -> FilterFireResistDown
-    IceResistDown _ -> FilterIceResistDown
-    ThunderResistDown _ -> FilterThunderResistDown
-    EarthResistDown _ -> FilterEarthResistDown
-    WaterResistDown _ -> FilterWaterResistDown
-    WindResistDown _ -> FilterWindResistDown
+    PatkDown _ -> Just FilterPatkDown
+    MatkDown _ -> Just FilterMatkDown
+    PdefDown _ -> Just FilterPdefDown
+    MdefDown _ -> Just FilterMdefDown
+    FireResistDown _ -> Just FilterFireResistDown
+    IceResistDown _ -> Just FilterIceResistDown
+    ThunderResistDown _ -> Just FilterThunderResistDown
+    EarthResistDown _ -> Just FilterEarthResistDown
+    WaterResistDown _ -> Just FilterWaterResistDown
+    WindResistDown _ -> Just FilterWindResistDown
 
   matchingRanges :: Range -> Array FilterRange
   matchingRanges = case _ of
@@ -256,11 +259,10 @@ insertWeapon weapon existingWeapons armory =
     All -> [ FilterSelfOrSingleTargetOrAll, FilterSingleTargetOrAll, FilterAll ]
 
   matchingFilters' :: WeaponEffect -> Array Filter
-  matchingFilters' { effectType, range } =
-    matchingRanges range <#> \range ->
-      { effectType: matchingEffectType effectType
-      , range
-      }
+  matchingFilters' { effectType, range } = do
+    range <- matchingRanges range
+    effectType <- Unfoldable.fromMaybe $ matchingEffectType effectType
+    pure { effectType, range }
 
   matchingFilters :: Set Filter
   matchingFilters = do

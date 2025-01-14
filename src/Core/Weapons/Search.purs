@@ -37,8 +37,8 @@ findMatchingWeapons filter armory = do
   matchingWeaponNames <#> \weaponName ->
     Map.lookup weaponName armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
 
-search :: Array FilterOpts -> Armory -> Array AssignmentResult
-search filterOpts armory = do
+search :: Int -> Array FilterOpts -> Armory -> Array AssignmentResult
+search maxCharacterCount filterOpts armory = do
   let
     filterResults = filterOpts <#> \{ filter, required } ->
       { filter
@@ -48,7 +48,7 @@ search filterOpts armory = do
 
   let combs = combinations filterResults :: Array Combination
 
-  combs # Arr.mapMaybe (assignWeaponsToCharacters 2)
+  combs # Arr.mapMaybe (assignWeaponsToCharacters maxCharacterCount)
 
 combinations :: Array FilterResult -> Array Combination
 combinations results =

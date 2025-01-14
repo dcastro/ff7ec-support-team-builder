@@ -16,6 +16,7 @@ import Effect.Aff (Aff)
 import Effect.Class.Console as Console
 import Halogen as H
 import Halogen.HTML as HH
+import Halogen.HTML.Events as HE
 import HtmlUtils (classes')
 import Partial.Unsafe (unsafeCrashWith)
 import Type.Proxy (Proxy(..))
@@ -31,14 +32,18 @@ _results = Proxy :: Proxy "results"
 data State
   = Loading
   | FailedToLoad
-  | Loaded
-      { armory :: Armory
-      , teams :: Array AssignmentResult
-      }
+  | Loaded LoadedState
+
+type LoadedState =
+  { armory :: Armory
+  , teams :: Array AssignmentResult
+  , maxCharacterCount :: Int
+  }
 
 data Action
   = Initialize
   | HandleEffectSelector EffectSelector.Output
+  | SelectedMaxCharacterCount Int
 
 component :: forall q i o. H.Component q i o Aff
 component =
@@ -74,8 +79,25 @@ render state =
                 ]
             ]
         , HH.section [ classes' "section" ]
-            [ HH.slot_ _results unit Results.component teams
+            [ HH.h1 [ classes' "title is-2 has-text-centered" ] [ HH.text "Teams " ]
+            , HH.div_
+                [ HH.label []
+                    [ HH.text
+                        "Maximum number of characters: "
+                    , HH.div [ classes' "select" ]
+                        [ HH.select
+                            [ HE.onSelectedIndexChange SelectedMaxCharacterCount
+                            ]
+                            [ HH.option_ [ HH.text "1" ]
+                            , HH.option_ [ HH.text "2" ]
+                            , HH.option_ [ HH.text "3" ]
+                            ]
+                        ]
 
+                    ]
+
+                ]
+            , HH.slot_ _results unit Results.component teams
             ]
         ]
 
@@ -83,7 +105,14 @@ handleAction :: forall o. Action → H.HalogenM State Action Slots o Aff Unit
 handleAction = case _ of
   Initialize -> do
     H.liftAff Armory.init >>= case _ of
-      Just armory -> Loaded { armory, teams: [] } # updateTeams >>= H.put
+      Just armory -> do
+        let
+          initialState =
+            { armory
+            , teams: []
+            , maxCharacterCount: 2
+            }
+        Loaded initialState # updateTeams >>= H.put
       Nothing -> H.put FailedToLoad
   HandleEffectSelector output ->
     case output of
@@ -111,26 +140,37 @@ handleAction = case _ of
             updateTeams (Loaded state') >>= H.put
           _ ->
             unsafeCrashWith "Attempted to set 'ignored' flag before app has loaded"
+  SelectedMaxCharacterCount idx -> do
+    let maxCharacterCount = idx + 1
+    Console.log $ "Maximum number of characters: " <> show maxCharacterCount
+    state <- assumeLoaded <$> H.get
+    Loaded (state { maxCharacterCount = maxCharacterCount })
+      # updateTeams
+      >>= H.put
+
+assumeLoaded :: State -> LoadedState
+assumeLoaded = case _ of
+  Loaded state -> state
+  Loading -> unsafeCrashWith "Expected state to be `Loaded`, but was `Loading`"
+  FailedToLoad -> unsafeCrashWith "Expected state to be `Loaded`, but was `FailedToLoad`"
 
 updateTeams :: forall o. State -> H.HalogenM State Action Slots o Aff State
-updateTeams =
-  case _ of
-    Loaded state -> do
-      -- Calculate all possible teams
-      responses <- H.requestAll _effectSelector EffectSelector.GetFilterOpts
-      let filterOpts = Arr.fromFoldable $ Map.values responses :: Array FilterOpts
-      let teams = Search.search filterOpts state.armory
+updateTeams state = do
+  let loadedState = assumeLoaded state
+  -- Calculate all possible teams
+  responses <- H.requestAll _effectSelector EffectSelector.GetFilterOpts
+  let filterOpts = Arr.fromFoldable $ Map.values responses :: Array FilterOpts
+  let teams = Search.search loadedState.maxCharacterCount filterOpts loadedState.armory
 
-      -- Console.log "-----------------------------------------"
-      -- Console.log "-----------------------------------------"
-      -- Console.log "-----------------------------------------"
-      -- for_ teams \team -> do
-      --   Console.log "-----------"
-      --   for_ team.characters \char ->
-      --     case char.offHand of
-      --       Just offHand -> Console.log $ display char.name <> ": " <> display char.mainHand.weapon.name <> " / " <> display offHand.weapon.name
-      --       Nothing -> Console.log $ display char.name <> ": " <> display char.mainHand.weapon.name
-      --   pure unit
+  -- Console.log "-----------------------------------------"
+  -- Console.log "-----------------------------------------"
+  -- Console.log "-----------------------------------------"
+  -- for_ teams \team -> do
+  --   Console.log "-----------"
+  --   for_ team.characters \char ->
+  --     case char.offHand of
+  --       Just offHand -> Console.log $ display char.name <> ": " <> display char.mainHand.weapon.name <> " / " <> display offHand.weapon.name
+  --       Nothing -> Console.log $ display char.name <> ": " <> display char.mainHand.weapon.name
+  --   pure unit
 
-      pure $ Loaded $ state { teams = teams }
-    state -> pure state
+  pure $ Loaded $ loadedState { teams = teams }

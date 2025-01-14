@@ -54,35 +54,32 @@ component =
 
 render :: forall cs m. State -> H.ComponentHTML Action cs m
 render state =
-  HH.div_
-    [ HH.h1 [ classes' "title is-2 has-text-centered" ] [ HH.text "Teams " ]
-    , HH.div [ classes' "columns" ]
-        [ HH.div [ classes' "column is-half-desktop is-offset-one-quarter-desktop" ] $
-            state.teams <#> \team ->
-              HH.div [ classes' "box" ] $
-                Map.values team.characters # Arr.fromFoldable <#> \character ->
-                  HH.div [ classes' "columns" ] $
-                    [ HH.div [ classes' "column is-one-fifth" ]
-                        [ HH.span [ classes' "tag is-medium" ] [ HH.text (display character.name) ]
-                        ]
+  HH.div [ classes' "columns" ]
+    [ HH.div [ classes' "column is-half-desktop is-offset-one-quarter-desktop" ] $
+        state.teams <#> \team ->
+          HH.div [ classes' "box" ] $
+            Map.values team.characters # Arr.fromFoldable <#> \character ->
+              HH.div [ classes' "columns" ] $
+                [ HH.div [ classes' "column is-one-fifth" ]
+                    [ HH.span [ classes' "tag is-medium" ] [ HH.text (display character.name) ]
                     ]
-                      <>
-                        ( Search.getEquipedWeapons character <#> \weapon ->
-                            HH.div [ classes' "column is-two-fifths" ]
-                              [ HH.div [ classes' "columns is-mobile is-centered" ]
-                                  [ HH.div [ classes' "column is-narrow" ]
-                                      [ HH.img [ HP.src (display weapon.weapon.image), classes' "image is-32x32" ]
-                                      ]
-                                  , HH.div [ classes' "column is-narrow" ]
-                                      [ HH.span
-                                          [ tooltip (mkTooltipForWeapon weapon.weapon), classes' "has-tooltip-top" ]
-                                          [ HH.text (display weapon.weapon.name)
-                                          ]
+                ]
+                  <>
+                    ( Search.getEquipedWeapons character <#> \weapon ->
+                        HH.div [ classes' "column is-two-fifths" ]
+                          [ HH.div [ classes' "columns is-mobile is-centered" ]
+                              [ HH.div [ classes' "column is-narrow" ]
+                                  [ HH.img [ HP.src (display weapon.weapon.image), classes' "image is-32x32" ]
+                                  ]
+                              , HH.div [ classes' "column is-narrow" ]
+                                  [ HH.span
+                                      [ tooltip (mkTooltipForWeapon weapon.weapon), classes' "has-tooltip-top" ]
+                                      [ HH.text (display weapon.weapon.name)
                                       ]
                                   ]
                               ]
-                        )
-        ]
+                          ]
+                    )
     ]
 
 mkTooltip :: ArmoryWeapon -> String

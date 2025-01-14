@@ -19,6 +19,13 @@ tooltip text = HH.attr (AttrName "data-tooltip") text
 
 mkTooltipForWeapon :: ArmoryWeapon -> String
 mkTooltipForWeapon weapon =
-  "OB0:\n" <> display weapon.ob0.description
+  cureAllNote
+    <> "OB0:\n"
+    <> display weapon.ob0.description
     <> "\n\nOB6:\n"
     <> display weapon.ob6.description
+
+  where
+  cureAllNote =
+    if weapon.cureAllAbility then "Has 'All (Cure Spells)' S. Ability\n\n"
+    else ""

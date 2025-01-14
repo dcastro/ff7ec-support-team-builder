@@ -11,6 +11,7 @@ import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Newtype (unwrap)
+import Data.Ordering as Ordering
 import Data.String.NonEmpty as NES
 import Utils (unsafeFromJust)
 
@@ -100,24 +101,26 @@ type AssignmentResult =
 --  * There are more than 2 weapons for any character.
 --  * The selected weapons belong to more than `n` characters.
 assignWeaponsToCharacters :: Int -> Combination -> Maybe AssignmentResult
-assignWeaponsToCharacters maxCharacterCount =
-  Arr.foldRecM
-    ( \assignments { filter, weapon, required } ->
-        case weapon of
-          Just weapon ->
-            case assignWeapon filter weapon assignments of
-              Just assignments -> Just assignments
-              Nothing | required ->
-                -- The weapon could not be equiped, and its effect is required, so the step fails.
-                Nothing
+assignWeaponsToCharacters maxCharacterCount combs =
+  combs
+    # Arr.sortBy (\x y -> Ordering.invert $ compare x.required y.required)
+    # Arr.foldRecM
+        ( \assignments { filter, weapon, required } ->
+            case weapon of
+              Just weapon ->
+                case assignWeapon filter weapon assignments of
+                  Just assignments -> Just assignments
+                  Nothing | required ->
+                    -- The weapon could not be equiped, and its effect is required, so the step fails.
+                    Nothing
+                  Nothing ->
+                    -- The weapon could not be equiped, but its effect is not required, so the step succeeds.
+                    Just $ assignments { missedFilters = Arr.cons filter assignments.missedFilters }
               Nothing ->
-                -- The weapon could not be equiped, but its effect is not required, so the step succeeds.
+                -- No weapons found for this (optional) filter
                 Just $ assignments { missedFilters = Arr.cons filter assignments.missedFilters }
-          Nothing ->
-            -- No weapons found for this (optional) filter
-            Just $ assignments { missedFilters = Arr.cons filter assignments.missedFilters }
-    )
-    { characters: Map.empty, missedFilters: [] }
+        )
+        { characters: Map.empty, missedFilters: [] }
   where
 
   -- Returns `Nothing` if:

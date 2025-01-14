@@ -14,19 +14,20 @@ import Data.Newtype (unwrap)
 import Data.String.NonEmpty as NES
 import Utils (unsafeFromJust)
 
+type FilterOpts =
+  { filter :: Filter
+  , required :: Boolean
+  }
+
 type FilterResult =
   { filter :: Filter
   , required :: Boolean
   , matchingWeapons :: Array ArmoryWeapon
   }
 
-type FilterOpts =
-  { filter :: Filter
-  , required :: Boolean
-  }
-
 type Combination = Array
   { filter :: Filter
+  , required :: Boolean
   , weapon :: Maybe ArmoryWeapon
   }
 
@@ -59,7 +60,7 @@ combinations results =
               # discardIgnored
               # handleOptional filterResult.required
             (combination :: Combination) <- combinations
-            [ Arr.cons { filter: filterResult.filter, weapon } combination ]
+            [ Arr.cons { filter: filterResult.filter, required: filterResult.required, weapon } combination ]
         )
         ([ [] ] :: Array Combination)
   where
@@ -101,30 +102,43 @@ type AssignmentResult =
 assignWeaponsToCharacters :: Int -> Combination -> Maybe AssignmentResult
 assignWeaponsToCharacters maxCharacterCount =
   Arr.foldRecM
-    ( \assignments { filter, weapon } ->
+    ( \assignments { filter, weapon, required } ->
         case weapon of
+          Just weapon ->
+            case assignWeapon filter weapon assignments of
+              Just assignments -> Just assignments
+              Nothing | required ->
+                -- The weapon could not be equiped, and its effect is required, so the step fails.
+                Nothing
+              Nothing ->
+                -- The weapon could not be equiped, but its effect is not required, so the step succeeds.
+                Just $ assignments { missedFilters = Arr.cons filter assignments.missedFilters }
           Nothing ->
-            -- No weapons found for this filter
+            -- No weapons found for this (optional) filter
             Just $ assignments { missedFilters = Arr.cons filter assignments.missedFilters }
-          Just weapon -> do
-            let
-              characterName = weapon.character :: CharacterName
-              characterName' = NES.toString (unwrap characterName)
-            updatedCharacters <-
-              case Map.lookup characterName' assignments.characters of
-                Nothing ->
-                  -- This character hasn't been created yet, so we attempt to create it.
-                  if Map.size assignments.characters >= maxCharacterCount then Nothing
-                  else Just $ Map.insert characterName' (mkCharacter characterName weapon filter) assignments.characters
-                Just existingCharacter -> do
-                  -- This character already exists, so we attempt to equip this weapon.
-                  updatedCharacter <- equipWeapon weapon filter existingCharacter
-                  pure $ Map.insert characterName' updatedCharacter assignments.characters
-            Just $ assignments { characters = updatedCharacters }
     )
     { characters: Map.empty, missedFilters: [] }
-
   where
+
+  -- Returns `Nothing` if:
+  --  * There are more than 2 weapons for any character.
+  --  * The selected weapons belong to more than `n` characters.
+  assignWeapon :: Filter -> ArmoryWeapon -> AssignmentResult -> Maybe AssignmentResult
+  assignWeapon filter weapon assignments = do
+    let
+      characterName = weapon.character :: CharacterName
+      characterName' = NES.toString (unwrap characterName)
+    updatedCharacters <-
+      case Map.lookup characterName' assignments.characters of
+        Nothing ->
+          -- This character hasn't been created yet, so we attempt to create it.
+          if Map.size assignments.characters >= maxCharacterCount then Nothing
+          else Just $ Map.insert characterName' (mkCharacter characterName weapon filter) assignments.characters
+        Just existingCharacter -> do
+          -- This character already exists, so we attempt to equip this weapon.
+          updatedCharacter <- equipWeapon weapon filter existingCharacter
+          pure $ Map.insert characterName' updatedCharacter assignments.characters
+    Just $ assignments { characters = updatedCharacters }
 
   mkCharacter :: CharacterName -> ArmoryWeapon -> Filter -> Character
   mkCharacter name mainHandWeapon matchedFilter =

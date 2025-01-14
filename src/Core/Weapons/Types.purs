@@ -17,6 +17,7 @@ newtype WeaponName = WeaponName NonEmptyString
 type Weapon =
   { name :: WeaponName
   , character :: CharacterName
+  , source :: NonEmptyString
   , image :: NonEmptyString
   , ob0 :: ObLevel
   , ob1 :: ObLevel

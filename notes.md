@@ -12,15 +12,17 @@
 
 * We do not consider Ultimate Weapons; they're usually not a reliably way of keeping buffs/debuffs applied throughout a battle.
 * We consider "Healing Weapons" as weapons that have either a `All (Cure Spells)` S. Ability or a C. Ability that heals for at least 35%.
-  * This last criterium is used to exclude weapons like Microlaser and Flower Vase, but include Lifeguard Wraps (38% at OB0).
+    * This last criterium is used to exclude weapons like Microlaser and Flower Vase, but include Lifeguard Wraps (38% at OB0).
 * We don't discard teams that are superset of other teams.
-  * Say you filter by `PATK Up All + MATK Up All`. Among the possible teams, you'll find these:
-    1. Cait Sith with X
-    1. Cait Sith with X + Barret with Y
-  * At first it might seem like the 2nd team is redundant: if Cait Sith can do it all with one weapon, why force Barret into your team?
-    However, Cait's weapon may have high potency for `PATK Up` and low potency for `MATK Up`, whereas Barret's might have high `MATK Up`,
-    in which case it makes sense to have both.
+    * Say you filter by `PATK Up All + MATK Up All`. Among the possible teams, you'll find these:
+        1. Cait Sith with X
+        1. Cait Sith with X + Barret with Y
+    * At first it might seem like the 2nd team is redundant: if Cait Sith can do it all with one
+    weapon, why force Barret into your team?
+      However, Cait's weapon may have high potency for `PATK Up` and low potency for `MATK Up`, whereas Barret's might have high `MATK Up`, in which case it makes sense to have both.
 * When sorting the possible teams, the highest criterium is to have as high potency as possible.
   Fitting many effects into fewer characters is an important criterium, but not as important as having high potency.
   E.g. Cait Sith's Trumpet Shell can technically do `PATK Up All + MATK Up All`, but it's terrible at both.
   So having 2 characters with 1 weapon each, with high potency, is better than running Cait's Trumpet Shell.
+* By default, we ignore event weapons, since their effects have usually low potency.
+  Including event weapons in the calculations usually leads to a lot of noise in the results.

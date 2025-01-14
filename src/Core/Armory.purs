@@ -22,6 +22,7 @@ import Data.Newtype (unwrap)
 import Data.Set (Set)
 import Data.Set as Set
 import Data.Show.Generic (genericShow)
+import Data.String.NonEmpty as NES
 import Data.String.NonEmpty.Internal (NonEmptyString)
 import Data.Time.Duration (Hours(..))
 import Data.Unfoldable as Unfoldable
@@ -54,6 +55,7 @@ type SerializableArmory =
 type ArmoryWeapon =
   { name :: WeaponName
   , character :: CharacterName
+  , source :: NonEmptyString
   , image :: NonEmptyString
   , ob0 :: ObLevel
   , ob1 :: ObLevel
@@ -206,8 +208,9 @@ insertWeapon weapon existingWeapons armory =
 
   insert :: Armory -> Armory
   insert armory = do
-    -- Set the `ignored` field to `false` by default.
-    let armoryWeapon = Record.insert (Proxy :: Proxy "ignored") false weapon
+    -- By default, we ignore only "Event" weapons.
+    let ignored = if NES.toString weapon.source == "Event" then true else false
+    let armoryWeapon = Record.insert (Proxy :: Proxy "ignored") ignored weapon
     armory { allWeapons = Map.insert armoryWeapon.name armoryWeapon armory.allWeapons }
 
   mergeWithExisting :: ArmoryWeapon -> Armory -> Armory

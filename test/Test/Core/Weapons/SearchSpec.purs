@@ -257,6 +257,7 @@ mkWeapon :: NonEmptyString -> NonEmptyString -> ArmoryWeapon
 mkWeapon id character =
   { name: WeaponName id
   , character: CharacterName character
+  , source: nes @"Gacha"
   , image: nes @" "
   , ob0: { description: nes @" ", effects: [] }
   , ob1: { description: nes @" ", effects: [] }

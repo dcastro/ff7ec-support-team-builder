@@ -1,6 +1,7 @@
 {
   "weapons": [
     {
+      "source": "Source",
       "ob6": {
         "effects": [],
         "description": "C Ab. 3"
@@ -23,6 +24,7 @@
       "character": "Character"
     },
     {
+      "source": "Gacha (Limit Break)",
       "ob6": {
         "effects": [
           {
@@ -125,6 +127,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -227,6 +230,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -369,6 +373,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha (Limit Break)",
       "ob6": {
         "effects": [
           {
@@ -475,6 +480,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -541,6 +547,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Helical Flame+ (4 ATB)\n530% Mag. Fire Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]"
@@ -563,6 +570,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -625,6 +633,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -731,6 +740,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -797,6 +807,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [
           {
@@ -899,6 +910,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -1001,6 +1013,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -1023,6 +1036,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [
           {
@@ -1165,6 +1179,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -1307,6 +1322,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Raging Sphere+ (4 ATB)\n660% Mag. Wind Damage [Range: Single Enemy]"
@@ -1329,6 +1345,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Watera Surge A+ (4 ATB)\n280% Mag. Water Damage [Range: All Enemies]"
@@ -1351,6 +1368,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Summon Quests (Ramuh)",
       "ob6": {
         "effects": [],
         "description": "Thundara Surge+ (4 ATB)\n460% Mag. Lightning Damage [Range: Single Enemy]"
@@ -1373,6 +1391,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Blizzaga A+ (4 ATB)\n450% Mag. Ice Damage [Range: All Enemies]"
@@ -1395,6 +1414,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -1461,6 +1481,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Tempest Force+ (4 ATB)\n750% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -1483,6 +1504,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -1589,6 +1611,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [
           {
@@ -1735,6 +1758,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Summon Quests (Titan)",
       "ob6": {
         "effects": [],
         "description": "Quakera Surge+ (4 ATB)\n430% Mag. Earth Damage [Range: Single Enemy]"
@@ -1757,6 +1781,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [
           {
@@ -1819,6 +1844,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Thundaga A+ (4 ATB)\n450% Mag. Lightning Damage [Range: All Enemies]"
@@ -1841,6 +1867,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Quaga A+ (4 ATB)\n450% Mag. Earth Damage [Range: All Enemies]"
@@ -1863,6 +1890,7 @@
       "character": "Aerith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Thundaga Burst+ (4 ATB)\n740% Mag. Lightning Damage [Range: Single Enemy]"
@@ -1885,6 +1913,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Blizzara Impact+ (4 ATB)\n430% Phys. Ice Damage [Range: Single Enemy]"
@@ -1907,6 +1936,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -2033,6 +2063,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -2123,6 +2154,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Firaga A+ (4 ATB)\n440% Mag. Fire Damage [Range: All Enemies]"
@@ -2145,6 +2177,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [
           {
@@ -2195,6 +2228,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Earthly Horn+ (4 ATB)\n500% Phys. Earth Damage [Scaling: 1x (100% HP), 2x (30% HP)] [Range: Single Enemy]"
@@ -2217,6 +2251,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -2307,6 +2342,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -2449,6 +2485,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Summon Quests (Titan)",
       "ob6": {
         "effects": [],
         "description": "Quakera Surge+ (4 ATB)\n430% Mag. Earth Damage [Range: Single Enemy]"
@@ -2471,6 +2508,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Gacha (Limit Break)",
       "ob6": {
         "effects": [
           {
@@ -2545,6 +2583,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -2611,6 +2650,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -2661,6 +2701,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -2767,6 +2808,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -2857,6 +2899,7 @@
       "character": "Angeal"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -2959,6 +3002,7 @@
       "character": "Barret"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -3065,6 +3109,7 @@
       "character": "Barret"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Chain Bomber+ (4 ATB)\n550% Phys. Non-elem. Damage [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
@@ -3087,6 +3132,7 @@
       "character": "Barret"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -3229,6 +3275,7 @@
       "character": "Barret"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Firaga A+ (4 ATB)\n440% Mag. Fire Damage [Range: All Enemies]"
@@ -3251,6 +3298,7 @@
       "character": "Barret"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Blitz Beat+ [Sigils: 1 \\✖] (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -3273,6 +3321,7 @@
       "character": "Barret"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Pyroball+ (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -3295,6 +3344,7 @@
       "character": "Barret"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -3397,6 +3447,7 @@
       "character": "Barret"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -3463,6 +3514,7 @@
       "character": "Barret"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -3565,6 +3617,7 @@
       "character": "Barret"
     },
     {
+      "source": "Summon Quests (Leviathan)",
       "ob6": {
         "effects": [],
         "description": "Watera Surge+ (4 ATB)\n430% Mag. Water Damage [Range: Single Enemy]"
@@ -3587,6 +3640,7 @@
       "character": "Barret"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Energy Laser+ [Sigils: 1 \\◆] (4 ATB)\n620% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -3609,6 +3663,7 @@
       "character": "Barret"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -3711,6 +3766,7 @@
       "character": "Barret"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -3813,6 +3869,7 @@
       "character": "Barret"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [],
         "description": "Jet Fists+ (4 ATB)\n420% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -3835,6 +3892,7 @@
       "character": "Barret"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -3941,6 +3999,7 @@
       "character": "Barret"
     },
     {
+      "source": "Summon Quests (Shiva)",
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge+ (4 ATB)\n430% Mag. Ice Damage [Range: Single Enemy]"
@@ -3963,6 +4022,7 @@
       "character": "Barret"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Watera Surge A+ (4 ATB)\n280% Mag. Water Damage [Range: All Enemies]"
@@ -3985,6 +4045,7 @@
       "character": "Barret"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -4051,6 +4112,7 @@
       "character": "Barret"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -4117,6 +4179,7 @@
       "character": "Barret"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Ruinra Impact A+ (4 ATB)\r\n380% Phys. Non-elem. Damage [Range: All Enemies]\r\n10% Crit Rate [Range: All Enemies]"
@@ -4139,6 +4202,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -4245,6 +4309,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Blizzaga A+ (4 ATB)\n440% Mag. Ice Damage [Range: All Enemies]"
@@ -4267,6 +4332,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -4369,6 +4435,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -4471,6 +4538,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\r\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -4493,6 +4561,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -4595,6 +4664,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -4701,6 +4771,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -4767,6 +4838,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Aerora Surge A+ (4 ATB)\n280% Mag. Wind Damage [Range: All Enemies]"
@@ -4789,6 +4861,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Summon Quests (Shiva/Ramuh)",
       "ob6": {
         "effects": [
           {
@@ -4895,6 +4968,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -4997,6 +5071,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [
           {
@@ -5139,6 +5214,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Firaga A+ (4 ATB)\n440% Mag. Fire Damage [Range: All Enemies]"
@@ -5161,6 +5237,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -5267,6 +5344,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [
           {
@@ -5409,6 +5487,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -5515,6 +5594,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Sonic Meow+ (5 ATB)\n590% Phys. Non-elem. Damage [Range: Single Enemy]\n30% Crit Rate [Range: Single Enemy]\n3x Damage [Range: Single Enemy] [Condition: Critical Hit]"
@@ -5537,6 +5617,7 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Bloody End+ (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -5559,6 +5640,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha (Limit Break)",
       "ob6": {
         "effects": [],
         "description": "Fierce Claw+ (4 ATB)\r\n670% Phys. Non-elem. Damage [Range: All Enemies]\r\n25s Haste (+8s) [Range: Self] [Condition: First Use]\r\n10% Crit Rate [Range: All Enemies]\r\n30000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]"
@@ -5581,6 +5663,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -5683,6 +5766,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Fira Impact+ (4 ATB)\n430% Phys. Fire Damage [Range: Single Enemy]"
@@ -5705,6 +5789,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Crisis Medal Exchange",
       "ob6": {
         "effects": [],
         "description": "Braver+ [Sigils: 1 \\✖] (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]\n+200% Additional Damage [Range: Single Enemy] [Condition: Sigil Destruction]"
@@ -5727,6 +5812,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -5829,6 +5915,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -5895,6 +5982,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -5957,6 +6045,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Blizzaga A+ (4 ATB)\n440% Mag. Ice Damage [Range: All Enemies]"
@@ -5979,6 +6068,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [
           {
@@ -6085,6 +6175,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -6151,6 +6242,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Twister Blade+ (4 ATB)\n780% Mag. Wind Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]"
@@ -6173,6 +6265,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Quakera Surge A+ (4 ATB)\n280% Mag. Earth Damage [Range: All Enemies]"
@@ -6195,6 +6288,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Fira Surge A+ (4 ATB)\n280% Mag. Fire Damage [Range: All Enemies]"
@@ -6217,6 +6311,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -6283,6 +6378,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [
           {
@@ -6429,6 +6525,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Seasplitter+ (4 ATB)\n620% Phys. Water Damage [Range: Single Enemy]"
@@ -6451,6 +6548,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Thunderstrike+ (4 ATB)\n620% Phys. Lightning Damage [Range: Single Enemy]"
@@ -6473,6 +6571,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Blade Burst+ (4 ATB)\n780% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -6495,6 +6594,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [],
         "description": "Disorder+ (5 ATB) [No Limit Gauge Gain]\n1320% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -6517,6 +6617,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Shock Slice+ (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n5s Stun (+2s) [Range: Single Enemy] [Rate: 30%]\n10% Crit Rate [Range: Single Enemy]"
@@ -6539,6 +6640,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -6561,6 +6663,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Summon Quests (Shiva)",
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge+ (4 ATB)\n430% Mag. Ice Damage [Range: Single Enemy]"
@@ -6583,6 +6686,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Blazing Strike+ (4 ATB)\n710% Phys. Fire Damage [Range: Single Enemy]"
@@ -6605,6 +6709,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha (Limit Break)",
       "ob6": {
         "effects": [],
         "description": "Freezing Stream+ (4 ATB)\n740% Phys. Ice Damage [Range: Single Enemy]"
@@ -6627,6 +6732,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [],
         "description": "Free Energy+ (4 ATB)\n1140% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -6649,6 +6755,7 @@
       "character": "Cloud"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Twin Hell+ (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -6671,6 +6778,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -6737,6 +6845,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Spinning Blaze+ (4 ATB)\n620% Phys. Fire Damage [Range: Single Enemy]"
@@ -6759,6 +6868,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -6901,6 +7011,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Summon Quests (Ifrit)",
       "ob6": {
         "effects": [],
         "description": "Fira Surge+ (4 ATB)\n430% Mag. Fire Damage [Range: Single Enemy]"
@@ -6923,6 +7034,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Quaga A+ (4 ATB)\n440% Mag. Earth Damage [Range: All Enemies]"
@@ -6945,6 +7057,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Mad Bull+ (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -6967,6 +7080,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -7033,6 +7147,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -7135,6 +7250,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Watera Surge A+ (4 ATB)\n280% Mag. Water Damage [Range: All Enemies]"
@@ -7157,6 +7273,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Hell's Penalty+ [Sigils: 1 \\◆] (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -7179,6 +7296,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Thundaga A+ (4 ATB)\n440% Mag. Lightning Damage [Range: All Enemies]"
@@ -7201,6 +7319,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Fira Surge A+ (4 ATB)\n280% Mag. Fire Damage [Range: All Enemies]"
@@ -7223,6 +7342,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -7329,6 +7449,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [],
         "description": "Crushing Jump+ (4 ATB)\r\n570% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 2x (30% HP)] [Range: Single Enemy]\r\n10% Crit Rate [Range: Single Enemy]"
@@ -7351,6 +7472,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -7417,6 +7539,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Gacha (Limit Break)",
       "ob6": {
         "effects": [],
         "description": "Flooding Stream+ (4 ATB)\n740% Phys. Water Damage [Range: Single Enemy]"
@@ -7439,6 +7562,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Magic Ray+ (4 ATB)\n540% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -7461,6 +7585,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Skullknocker+ [Sigils: 1 \\⬤] (4 ATB)\n910% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -7483,6 +7608,7 @@
       "character": "Glenn"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -7549,6 +7675,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Striking Quintet+ [Sigils: 1 \\◆] (4 ATB)\n660% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -7571,6 +7698,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Quietude+ (4 ATB)\n660% Phys. Non-elem. Damage [Range: Single Enemy]\n5s Silence (+2s) [Range: Single Enemy] [Rate: 30%]\n10% Crit Rate [Range: Single Enemy]"
@@ -7593,6 +7721,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -7615,6 +7744,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -7681,6 +7811,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Rock Blast+ (4 ATB)\n660% Mag. Earth Damage [Range: Single Enemy]"
@@ -7703,6 +7834,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -7769,6 +7901,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -7875,6 +8008,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -7981,6 +8115,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Aeroga A+ (4 ATB)\n420% Mag. Wind Damage [Range: All Enemies]"
@@ -8003,6 +8138,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -8105,6 +8241,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Summon Quests (Ramuh)",
       "ob6": {
         "effects": [],
         "description": "Thundara Surge+ (4 ATB)\n410% Mag. Lightning Damage [Range: Single Enemy]"
@@ -8127,6 +8264,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -8193,6 +8331,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [],
         "description": "Parading Shot+ (4 ATB)\r\n510% Phys. Non-elem. Damage [Range: Single Enemy]\r\n+20% Stance Gauge\r\n10% Crit Rate [Range: Single Enemy]"
@@ -8215,6 +8354,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Hydroshot+ (4 ATB)\n660% Phys. Water Damage [Range: Single Enemy]"
@@ -8237,6 +8377,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -8339,6 +8480,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -8405,6 +8547,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -8467,6 +8610,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -8533,6 +8677,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Pineapple Shot+ (4 ATB)\n580% Phys. Non-elem. Damage [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
@@ -8555,6 +8700,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Fira Surge A+ (4 ATB)\n280% Mag. Fire Damage [Range: All Enemies]"
@@ -8577,6 +8723,7 @@
       "character": "Lucia"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Snowstorm+ (4 ATB)\n450% Mag. Ice Damage [Range: All Enemies]"
@@ -8599,6 +8746,7 @@
       "character": "Matt"
     },
     {
+      "source": "Summon Quests (Bahamut)",
       "ob6": {
         "effects": [],
         "description": "Ruinra Surge+ [Sigils: 1 \\◆] (4 ATB)\n430% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -8621,6 +8769,7 @@
       "character": "Matt"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -8723,6 +8872,7 @@
       "character": "Matt"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Shoot & Slash+ (4 ATB)\n750% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -8745,6 +8895,7 @@
       "character": "Matt"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Thundara Surge A+ (4 ATB)\r\n280% Mag. Lightning Damage [Range: All Enemies]"
@@ -8767,6 +8918,7 @@
       "character": "Matt"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -8869,6 +9021,7 @@
       "character": "Matt"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -8971,6 +9124,7 @@
       "character": "Matt"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -9033,6 +9187,7 @@
       "character": "Matt"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Fira Impact+ (4 ATB)\n430% Phys. Fire Damage [Range: Single Enemy]"
@@ -9055,6 +9210,7 @@
       "character": "Matt"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [],
         "description": "Swing+ (4 ATB)\r\n510% Phys. Non-elem. Damage [Range: Single Enemy]\r\nCancel Effect(s): PDEF Up [Range: Single Enemy]\r\n10% Crit Rate [Range: Single Enemy]"
@@ -9077,6 +9233,7 @@
       "character": "Matt"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -9179,6 +9336,7 @@
       "character": "Matt"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Quakera Surge A+ (4 ATB)\n280% Mag. Earth Damage [Range: All Enemies]"
@@ -9201,6 +9359,7 @@
       "character": "Matt"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Aerora Surge A+ (4 ATB)\n280% Mag. Wind Damage [Range: All Enemies]"
@@ -9223,6 +9382,7 @@
       "character": "Matt"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Killing Slash+ [Sigils: 1 \\◆] (4 ATB)\n590% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -9245,6 +9405,7 @@
       "character": "Matt"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -9387,6 +9548,7 @@
       "character": "Matt"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Waterga A+ (4 ATB)\n450% Mag. Water Damage [Range: All Enemies]"
@@ -9409,6 +9571,7 @@
       "character": "Matt"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -9471,6 +9634,7 @@
       "character": "Matt"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -9537,6 +9701,7 @@
       "character": "Matt"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -9603,6 +9768,7 @@
       "character": "Matt"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -9745,6 +9911,7 @@
       "character": "Matt"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -9767,6 +9934,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -9833,6 +10001,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Fira Surge A+ (4 ATB)\n280% Mag. Fire Damage [Range: All Enemies]"
@@ -9855,6 +10024,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Summon Quests (Ifrit/Bahamut)",
       "ob6": {
         "effects": [
           {
@@ -9921,6 +10091,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -9987,6 +10158,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [],
         "description": "Wild Howling+ (4 ATB)\n450% Mag. Non-elem. Damage [Range: All Enemies]\nCancel Effect(s): MDEF Up [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
@@ -10009,6 +10181,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -10075,6 +10248,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -10141,6 +10315,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -10247,6 +10422,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -10313,6 +10489,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Thundara Surge A+ (4 ATB)\n280% Mag. Lightning Damage [Range: All Enemies]"
@@ -10335,6 +10512,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Sonic Fangs+ (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -10357,6 +10535,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Waterga A+ (4 ATB)\n440% Mag. Water Damage [Range: All Enemies]"
@@ -10379,6 +10558,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -10481,6 +10661,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -10543,6 +10724,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Blaze Rush+ (4 ATB)\n620% Phys. Fire Damage [Range: Single Enemy]"
@@ -10565,6 +10747,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -10627,6 +10810,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -10693,6 +10877,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -10799,6 +10984,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -10901,6 +11087,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -10967,6 +11154,7 @@
       "character": "Red XIII"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -11069,6 +11257,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Fira Surge A+ (4 ATB)\n280% Mag. Fire Damage [Range: All Enemies]"
@@ -11091,6 +11280,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -11157,6 +11347,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Thundaga A+ (4 ATB)\n440% Mag. Lightning Damage [Range: All Enemies]"
@@ -11179,6 +11370,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Gale Strike+ (4 ATB)\n660% Phys. Wind Damage [Range: Single Enemy]"
@@ -11201,6 +11393,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [],
         "description": "Royal Shock+ (4 ATB)\n780% Mag. Water Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]"
@@ -11223,6 +11416,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Aerial Frostblade+ (4 ATB)\n660% Mag. Ice Damage [Range: Single Enemy]"
@@ -11245,6 +11439,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Summon Quests (Ifrit/Bahamut)",
       "ob6": {
         "effects": [
           {
@@ -11311,6 +11506,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Sweeping Slash+ (4 ATB)\n550% Phys. Non-elem. Damage [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
@@ -11333,6 +11529,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [
           {
@@ -11439,6 +11636,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -11541,6 +11739,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -11607,6 +11806,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -11673,6 +11873,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha (Limit Break)",
       "ob6": {
         "effects": [],
         "description": "Protector's Blow+ (4 ATB)\n740% Mag. Non-elem. Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n10% Crit Rate [Range: All Enemies]"
@@ -11695,6 +11896,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Firaga A+ (4 ATB)\n440% Mag. Fire Damage [Range: All Enemies]"
@@ -11717,6 +11919,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -11823,6 +12026,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Shock Blast+ (4 ATB)\n780% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -11845,6 +12049,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -11951,6 +12156,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -12017,6 +12223,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -12083,6 +12290,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -12185,6 +12393,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Aerora Surge A+ (4 ATB)\n280% Mag. Wind Damage [Range: All Enemies]"
@@ -12207,6 +12416,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -12273,6 +12483,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [],
         "description": "Heavenly Grasp+ (4 ATB)\r\n570% Phys. Non-elem. Damage [Range: Single Enemy]\r\n1.5x Damage [Range: Single Enemy] [Condition: Lv. 3 Attack Stance]\r\n10% Crit Rate [Range: Single Enemy]"
@@ -12295,6 +12506,7 @@
       "character": "Sephiroth"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [
           {
@@ -12401,6 +12613,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha (Limit Break)",
       "ob6": {
         "effects": [
           {
@@ -12467,6 +12680,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Summon Quests (Bahamut)",
       "ob6": {
         "effects": [],
         "description": "Ruinra Surge+ [Sigils: 1 \\◆] (4 ATB)\n430% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -12489,6 +12703,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Thundara Surge A+ (4 ATB)\n280% Mag. Lightning Damage [Range: All Enemies]"
@@ -12511,6 +12726,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha (Limit Break)",
       "ob6": {
         "effects": [],
         "description": "Blue Florescent Flurry+ (4 ATB)\n1000% Phys. Non-elem. Damage [Range: Single Enemy]\n50s 40% WeaknessAttackUp (+10s) [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
@@ -12533,6 +12749,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -12599,6 +12816,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Thundaga A+ (4 ATB)\n420% Mag. Lightning Damage [Range: All Enemies]"
@@ -12621,6 +12839,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -12727,6 +12946,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -12789,6 +13009,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [],
         "description": "Zangan Fist+ (4 ATB)\n1140% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -12811,6 +13032,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Freezing Blow+ (4 ATB)\n660% Phys. Ice Damage [Range: Single Enemy]"
@@ -12833,6 +13055,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -12899,6 +13122,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [
           {
@@ -12965,6 +13189,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -13031,6 +13256,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -13093,6 +13319,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Sonic Spiral+ (4 ATB)\n660% Phys. Wind Damage [Range: Single Enemy]"
@@ -13115,6 +13342,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -13217,6 +13445,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Savage Blast+ (4 ATB)\n750% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -13239,6 +13468,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [
           {
@@ -13345,6 +13575,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Spinning Fervor+ (4 ATB)\n810% Mag. Fire Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]"
@@ -13367,6 +13598,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Divekick+ (4 ATB)\n830% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -13389,6 +13621,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -13455,6 +13688,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -13521,6 +13755,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -13587,6 +13822,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [
           {
@@ -13729,6 +13965,7 @@
       "character": "Tifa"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Blizzaga A+ (4 ATB)\n440% Mag. Ice Damage [Range: All Enemies]"
@@ -13751,6 +13988,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -13817,6 +14055,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Shadow Swoop+ (4 ATB)\n780% Mag. Lightning Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]\n+5% Limit Break Gauge [Range: Self]"
@@ -13839,6 +14078,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Poison Sphere+ (4 ATB)\n440% Mag. Non-elem. Damage [Range: All Enemies]\n+3% Limit Break Gauge [Range: Self]\n10% Crit Rate [Range: All Enemies]\n20s Poison (+5s) [Range: All Enemies] [Condition: Self 0-30% HP]"
@@ -13861,6 +14101,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -13883,6 +14124,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -13945,6 +14187,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Hellhound Shot+ (4 ATB)\n780% Phys. Fire Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]\n+5% Limit Break Gauge [Range: Self]"
@@ -13967,6 +14210,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Pentaburst Shot+ (4 ATB)\n1140% Mag. Non-elem. Damage [Range: Single Enemy]\n+5% Limit Break Gauge [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
@@ -13989,6 +14233,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Summon Quests (Shiva/Ramuh)",
       "ob6": {
         "effects": [
           {
@@ -14095,6 +14340,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -14201,6 +14447,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Spinning Pentashot+ (4 ATB)\n620% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 1.5x (30% HP)] [Range: Single Enemy]\n+5% Limit Break Gauge [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
@@ -14223,6 +14470,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -14325,6 +14573,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -14431,6 +14680,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -14573,6 +14823,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Stormround+ (4 ATB)\n340% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+4% Limit Break Gauge [Range: Self]"
@@ -14595,6 +14846,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [],
         "description": "Gunspinner Shot+ (4 ATB)\r\n570% Phys. Non-elem. Damage [Range: Single Enemy]\r\n1.5x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff(s), Condition(s)]\r\n+3% Limit Break Gauge [Range: Self]\r\n10% Crit Rate [Range: Single Enemy]"
@@ -14617,6 +14869,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Quick Draw+ (2 ATB)\n250% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]\n+2% Limit Break Gauge [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
@@ -14639,6 +14892,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha (Limit Break)",
       "ob6": {
         "effects": [],
         "description": "Sludge Shot+ (4 ATB)\n780% Mag. Earth Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff(s), Condition(s)]\n+5% Limit Break Gauge [Range: Self]"
@@ -14661,6 +14915,7 @@
       "character": "Vincent"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -14727,6 +14982,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -14869,6 +15125,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha (Limit Break)",
       "ob6": {
         "effects": [
           {
@@ -14935,6 +15192,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [],
         "description": "Baddies Begone+ (4 ATB)\r\n420% Phys. Non-elem. Damage [Mult.: 2x (100% HP), 1x (30% HP)] [Range: Single Enemy]\r\n10% Crit Rate [Range: Single Enemy]"
@@ -14957,6 +15215,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -15023,6 +15282,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\r\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -15045,6 +15305,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Watera Surge A+ (4 ATB)\n280% Mag. Water Damage [Range: All Enemies]"
@@ -15067,6 +15328,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -15169,6 +15431,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Twister+ (4 ATB)\n710% Phys. Wind Damage [Range: Single Enemy]"
@@ -15191,6 +15454,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Earth Ninjutsu+ (4 ATB)\n710% Phys. Earth Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]"
@@ -15213,6 +15477,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -15319,6 +15584,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Summon Quests (Leviathan)",
       "ob6": {
         "effects": [],
         "description": "Watera Surge+ (4 ATB)\n430% Mag. Water Damage [Range: Single Enemy]"
@@ -15341,6 +15607,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Icebound+ (4 ATB)\r\n780% Mag. Ice Damage [Range: Single Enemy]\r\n1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]"
@@ -15363,6 +15630,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Wind Ninjutsu+ (4 ATB)\n440% Phys. Wind Damage [Range: All Enemies]"
@@ -15385,6 +15653,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -15451,6 +15720,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -15517,6 +15787,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Quaga A+ (4 ATB)\n440% Mag. Earth Damage [Range: All Enemies]"
@@ -15539,6 +15810,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Ice Ninjutsu+ (4 ATB)\n660% Phys. Ice Damage [Range: Single Enemy]"
@@ -15561,6 +15833,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -15627,6 +15900,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Venomstrike+ (4 ATB)\n450% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]\n26s Poison (+6s) [Range: Single Enemy] [Rate: 70%]"
@@ -15649,6 +15923,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -15715,6 +15990,7 @@
       "character": "Yuffie"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Ruinra Impact A+ (4 ATB)\r\n380% Phys. Non-elem. Damage [Range: All Enemies]\r\n10% Crit Rate [Range: All Enemies]"
@@ -15737,6 +16013,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -15803,6 +16080,7 @@
       "character": "Zack"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Magic Ray+ (4 ATB)\n540% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -15825,6 +16103,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [],
         "description": "Gale Slash+ (4 ATB)\r\n780% Phys. Wind Damage [Range: Single Enemy]\r\n1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]"
@@ -15847,6 +16126,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -15953,6 +16233,7 @@
       "character": "Zack"
     },
     {
+      "source": "Guild Exchange",
       "ob6": {
         "effects": [],
         "description": "Floral Flourish+ (4 ATB)\r\n330% Phys. Non-elem. Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\r\n10% Crit Rate [Range: Single Enemy]"
@@ -15975,6 +16256,7 @@
       "character": "Zack"
     },
     {
+      "source": "Crisis Medal Exchange",
       "ob6": {
         "effects": [],
         "description": "High Braver+ (4 ATB)\n710% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -15997,6 +16279,7 @@
       "character": "Zack"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Fira Surge A+ (4 ATB)\n280% Mag. Fire Damage [Range: All Enemies]"
@@ -16019,6 +16302,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -16085,6 +16369,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Firaga A+ (4 ATB)\n440% Mag. Fire Damage [Range: All Enemies]"
@@ -16107,6 +16392,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -16173,6 +16459,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -16275,6 +16562,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -16337,6 +16625,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Gale Blast+ (4 ATB)\n440% Phys. Wind Damage [Range: All Enemies]"
@@ -16359,6 +16648,7 @@
       "character": "Zack"
     },
     {
+      "source": "Summon Quests (Ifrit)",
       "ob6": {
         "effects": [],
         "description": "Fira Surge+ (4 ATB)\n430% Mag. Fire Damage [Range: Single Enemy]"
@@ -16381,6 +16671,7 @@
       "character": "Zack"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [
           {
@@ -16447,6 +16738,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -16513,6 +16805,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha (Limit Break)",
       "ob6": {
         "effects": [],
         "description": "Igniting Stream+ (4 ATB)\n710% Mag. Fire Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]"
@@ -16535,6 +16828,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [
           {
@@ -16641,6 +16935,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Rapid Slash+ [Sigils: 1 \\⬤] (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -16663,6 +16958,7 @@
       "character": "Zack"
     },
     {
+      "source": "Event",
       "ob6": {
         "effects": [],
         "description": "Aerora Surge A+ (4 ATB)\n280% Mag. Wind Damage [Range: All Enemies]"
@@ -16685,6 +16981,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha (Collab)",
       "ob6": {
         "effects": [],
         "description": "Lightning Edge+ (4 ATB)\n780% Phys. Lightning Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]"
@@ -16707,6 +17004,7 @@
       "character": "Zack"
     },
     {
+      "source": "Gacha",
       "ob6": {
         "effects": [],
         "description": "Slashing Thrust+ (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"

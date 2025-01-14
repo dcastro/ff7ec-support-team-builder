@@ -39,6 +39,7 @@ parseWeapon :: Int -> Array String -> Result Weapon
 parseWeapon rowIndex row = do
   name <- WeaponName <$> getCell 0
   character <- CharacterName <$> getCell 1
+  source <- getCell 2
   ob0 <- getObLevel 18
   ob1 <- getObLevel 19
   ob6 <- getObLevel 20
@@ -51,6 +52,7 @@ parseWeapon rowIndex row = do
   pure
     { name
     , character
+    , source
     , image
     , ob0
     , ob1

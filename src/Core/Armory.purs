@@ -225,7 +225,7 @@ insertWeapon weapon existingWeapons armory =
   matchingEffectType :: EffectType -> Maybe FilterEffectType
   matchingEffectType = case _ of
     Heal { percentage } ->
-      if percentage >= Percentage 35 then Just FilterHeal
+      if unwrap percentage >= 35 then Just FilterHeal
       else Nothing
     -- Buffs
     Veil -> Just FilterVeil

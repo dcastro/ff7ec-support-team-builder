@@ -17,6 +17,7 @@ import Effect.Class.Console as Console
 import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
+import Halogen.HTML.Properties as HP
 import HtmlUtils (classes')
 import Partial.Unsafe (unsafeCrashWith)
 import Type.Proxy (Proxy(..))
@@ -64,7 +65,7 @@ render state =
       HH.div_
         [ HH.text "Failed to load"
         ]
-    Loaded { armory, teams } ->
+    Loaded { armory, teams, maxCharacterCount } ->
       HH.div_
         [ HH.section [ classes' "section" ]
             [ HH.div [ classes' "fixed-grid has-3-cols has-1-cols-mobile" ]
@@ -88,9 +89,9 @@ render state =
                         [ HH.select
                             [ HE.onSelectedIndexChange SelectedMaxCharacterCount
                             ]
-                            [ HH.option_ [ HH.text "1" ]
-                            , HH.option_ [ HH.text "2" ]
-                            , HH.option_ [ HH.text "3" ]
+                            [ HH.option [ HP.selected (maxCharacterCount == 1) ] [ HH.text "1" ]
+                            , HH.option [ HP.selected (maxCharacterCount == 2) ] [ HH.text "2" ]
+                            , HH.option [ HP.selected (maxCharacterCount == 3) ] [ HH.text "3" ]
                             ]
                         ]
 

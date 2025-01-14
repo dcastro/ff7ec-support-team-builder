@@ -4,9 +4,10 @@ import Prelude
 
 import App.EffectSelector as EffectSelector
 import App.Results as Results
-import Core.Armory (Armory)
+import Core.Armory (Armory, FilterEffectType(..))
 import Core.Armory as Armory
-import Core.Weapons.Search (AssignmentResult)
+import Core.Display (display)
+import Core.Weapons.Search (AssignmentResult, FilterOpts)
 import Core.Weapons.Search as Search
 import Data.Array as Arr
 import Data.Map as Map
@@ -16,6 +17,7 @@ import Effect.Class.Console as Console
 import Halogen as H
 import Halogen.HTML as HH
 import HtmlUtils (classes')
+import Partial.Unsafe (unsafeCrashWith)
 import Type.Proxy (Proxy(..))
 
 type Slots =
@@ -86,19 +88,37 @@ handleAction = case _ of
       Nothing -> H.put FailedToLoad
   HandleEffectSelector output ->
     case output of
-      EffectSelector.SelectionChanged -> do
+      EffectSelector.RaiseSelectionChanged -> do
         Console.log "Selection changed"
         H.get >>= updateTeams >>= H.put
+      EffectSelector.RaiseCheckedIgnored weaponName ignored -> do
+        H.get >>= case _ of
+          Loaded state -> do
+            Console.log $ "Weapon " <> display weaponName <> " ignored: " <> show ignored
+            let
+              updatedAllWeapons =
+                Map.alter
+                  ( case _ of
+                      Just existingWeapon -> Just existingWeapon { ignored = ignored }
+                      Nothing -> unsafeCrashWith $ "Attempted to set 'ignored' flag, but weapon was not found: " <> display weaponName
+                  )
+                  weaponName
+                  state.armory.allWeapons
+
+            let state' = state { armory { allWeapons = updatedAllWeapons } }
+
+            updateTeams (Loaded state') >>= H.put
+          _ ->
+            unsafeCrashWith "Attempted to set 'ignored' flag before app has loaded"
 
 updateTeams :: forall o. State -> H.HalogenM State Action Slots o Aff State
 updateTeams =
   case _ of
     Loaded state -> do
       -- Calculate all possible teams
-      responses <- H.requestAll _effectSelector EffectSelector.GetFilterResult
-      let filterResults = Arr.fromFoldable $ Map.values responses
-      let combinations = Search.combinations filterResults
-      let teams = combinations # Arr.mapMaybe (Search.assignWeaponsToCharacters 2)
+      responses <- H.requestAll _effectSelector EffectSelector.GetFilterOpts
+      let filterOpts = Arr.fromFoldable $ Map.values responses :: Array FilterOpts
+      let teams = Search.search filterOpts state.armory
 
       -- Console.log "-----------------------------------------"
       -- Console.log "-----------------------------------------"

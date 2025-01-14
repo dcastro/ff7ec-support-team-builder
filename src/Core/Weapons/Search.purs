@@ -3,14 +3,16 @@ module Core.Weapons.Search where
 import Core.Weapons.Types
 import Prelude
 
-import Core.Armory (ArmoryWeapon, Filter)
+import Core.Armory (ArmoryWeapon, Filter, Armory)
+import Core.Display (display)
 import Data.Array as Arr
 import Data.Function (on)
 import Data.Map (Map)
 import Data.Map as Map
-import Data.Maybe (Maybe(..))
+import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Newtype (unwrap)
 import Data.String.NonEmpty as NES
+import Utils (unsafeFromJust)
 
 type FilterResult =
   { filter :: Filter
@@ -18,10 +20,34 @@ type FilterResult =
   , matchingWeapons :: Array ArmoryWeapon
   }
 
+type FilterOpts =
+  { filter :: Filter
+  , required :: Boolean
+  }
+
 type Combination = Array
   { filter :: Filter
   , weapon :: Maybe ArmoryWeapon
   }
+
+findMatchingWeapons :: Filter -> Armory -> Array ArmoryWeapon
+findMatchingWeapons filter armory = do
+  let matchingWeaponNames = Map.lookup filter armory.groupedByEffect # fromMaybe [] :: Array WeaponName
+  matchingWeaponNames <#> \weaponName ->
+    Map.lookup weaponName armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
+
+search :: Array FilterOpts -> Armory -> Array AssignmentResult
+search filterOpts armory = do
+  let
+    filterResults = filterOpts <#> \{ filter, required } ->
+      { filter
+      , required
+      , matchingWeapons: findMatchingWeapons filter armory
+      } :: FilterResult
+
+  let combs = combinations filterResults :: Array Combination
+
+  combs # Arr.mapMaybe (assignWeaponsToCharacters 2)
 
 combinations :: Array FilterResult -> Array Combination
 combinations results =

@@ -106,6 +106,8 @@ handleAction = case _ of
                   state.armory.allWeapons
 
             let state' = state { armory { allWeapons = updatedAllWeapons } }
+            Console.log "Saving armory to cache"
+            Armory.writeToCache state'.armory
 
             updateTeams (Loaded state') >>= H.put
           _ ->

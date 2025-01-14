@@ -30,6 +30,7 @@ type State =
       Armory
   , selectedEffectType :: Maybe FilterEffectType
   , selectedRange :: FilterRange
+  , selectedRequired :: Boolean
   , matchingWeapons :: Array ArmoryWeapon
   }
 
@@ -40,6 +41,7 @@ data Output
 data Action
   = SelectedEffectType Int
   | SelectedRange Int
+  | SelectedRequired Int
   | CheckedIgnored WeaponName Boolean
   | Initialize
   | Receive Input
@@ -54,6 +56,7 @@ component =
           { armory
           , selectedEffectType: Nothing
           , selectedRange: genericBottom
+          , selectedRequired: true
           , matchingWeapons: []
           }
     , render
@@ -87,6 +90,15 @@ render state =
             ( Armory.allFilterRanges <#> \filterRange ->
                 HH.option_ [ HH.text $ display filterRange ]
             )
+        ]
+
+    , HH.div [ classes' "select" ]
+        [ HH.select
+            [ HE.onSelectedIndexChange SelectedRequired
+            ]
+            [ HH.option_ [ HH.text "Required" ]
+            , HH.option_ [ HH.text "Optional" ]
+            ]
         ]
 
     , HH.div_
@@ -140,6 +152,12 @@ handleAction = case _ of
       # updateMatchingWeapons
     H.raise RaiseSelectionChanged
 
+  SelectedRequired idx -> do
+    let required = if idx == 0 then true else false
+    H.modify_ \s -> s { selectedRequired = required }
+    Console.log $ "Required: " <> show required
+    H.raise RaiseSelectionChanged
+
   CheckedIgnored weaponName ignored -> do
     H.raise $ RaiseCheckedIgnored weaponName ignored
 
@@ -171,6 +189,6 @@ handleQuery = case _ of
             { effectType
             , range: state.selectedRange
             }
-        , required: true
+        , required: state.selectedRequired
         }
       Nothing -> pure Nothing

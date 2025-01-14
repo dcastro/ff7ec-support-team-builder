@@ -61,8 +61,7 @@ render state =
         ]
     Loaded { armory, teams } ->
       HH.div_
-        [ HH.text $ "Loaded " <> show (Map.size armory.allWeapons) <> " weapons"
-        , HH.section [ classes' "section" ]
+        [ HH.section [ classes' "section" ]
             [ HH.div [ classes' "fixed-grid has-3-cols has-1-cols-mobile" ]
                 [ HH.div [ classes' "grid" ]
                     [ HH.div [ classes' "cell" ] [ HH.slot _effectSelector 0 EffectSelector.component armory HandleEffectSelector ]

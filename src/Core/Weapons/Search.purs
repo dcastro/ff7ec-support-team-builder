@@ -11,25 +11,17 @@ import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Newtype (unwrap)
-import Data.Ordering as Ordering
 import Data.String.NonEmpty as NES
 import Utils (unsafeFromJust)
 
-type FilterOpts =
-  { filter :: Filter
-  , required :: Boolean
-  }
-
 type FilterResult =
   { filter :: Filter
-  , required :: Boolean
   , matchingWeapons :: Array ArmoryWeapon
   }
 
 type Combination = Array
   { filter :: Filter
-  , required :: Boolean
-  , weapon :: Maybe ArmoryWeapon
+  , weapon :: ArmoryWeapon
   }
 
 findMatchingWeapons :: Filter -> Armory -> Array ArmoryWeapon
@@ -38,12 +30,11 @@ findMatchingWeapons filter armory = do
   matchingWeaponNames <#> \weaponName ->
     Map.lookup weaponName armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
 
-search :: Int -> Array FilterOpts -> Armory -> Array AssignmentResult
-search maxCharacterCount filterOpts armory = do
+search :: Int -> Array Filter -> Armory -> Array AssignmentResult
+search maxCharacterCount filters armory = do
   let
-    filterResults = filterOpts <#> \{ filter, required } ->
+    filterResults = filters <#> \filter ->
       { filter
-      , required
       , matchingWeapons: findMatchingWeapons filter armory
       } :: FilterResult
 
@@ -57,21 +48,13 @@ combinations results =
     # Arr.nubBy (compare `on` _.filter)
     # Arr.foldr
         ( \(filterResult :: FilterResult) (combinations :: Array Combination) -> do
-            (weapon :: Maybe ArmoryWeapon) <- filterResult.matchingWeapons
+            (weapon :: ArmoryWeapon) <- filterResult.matchingWeapons
               # discardIgnored
-              # handleOptional filterResult.required
             (combination :: Combination) <- combinations
-            [ Arr.cons { filter: filterResult.filter, required: filterResult.required, weapon } combination ]
+            [ Arr.cons { filter: filterResult.filter, weapon } combination ]
         )
         ([ [] ] :: Array Combination)
   where
-
-  -- If there are no matching weaopns, return an array that yields a single `None`
-  handleOptional :: Boolean -> Array ArmoryWeapon -> Array (Maybe ArmoryWeapon)
-  handleOptional required matchingWeapons =
-    if not required && matchingWeapons == [] then [ Nothing ]
-    else Just <$> matchingWeapons
-
   discardIgnored :: Array ArmoryWeapon -> Array ArmoryWeapon
   discardIgnored = Arr.filter \weapon -> not weapon.ignored
 
@@ -90,9 +73,6 @@ type EquipedWeapon =
 type AssignmentResult =
   { -- | Characters indexed by their name.
     characters :: Map String Character
-  ,
-    -- | A list of the effects for which no weapon was found.
-    missedFilters :: Array Filter
   }
 
 -- Attempts to equip the selected weapons to, at maximum, `n` characters.
@@ -103,24 +83,11 @@ type AssignmentResult =
 assignWeaponsToCharacters :: Int -> Combination -> Maybe AssignmentResult
 assignWeaponsToCharacters maxCharacterCount combs =
   combs
-    # Arr.sortBy (\x y -> Ordering.invert $ compare x.required y.required)
     # Arr.foldRecM
-        ( \assignments { filter, weapon, required } ->
-            case weapon of
-              Just weapon ->
-                case assignWeapon filter weapon assignments of
-                  Just assignments -> Just assignments
-                  Nothing | required ->
-                    -- The weapon could not be equiped, and its effect is required, so the step fails.
-                    Nothing
-                  Nothing ->
-                    -- The weapon could not be equiped, but its effect is not required, so the step succeeds.
-                    Just $ assignments { missedFilters = Arr.cons filter assignments.missedFilters }
-              Nothing ->
-                -- No weapons found for this (optional) filter
-                Just $ assignments { missedFilters = Arr.cons filter assignments.missedFilters }
+        ( \assignments { filter, weapon } ->
+            assignWeapon filter weapon assignments
         )
-        { characters: Map.empty, missedFilters: [] }
+        { characters: Map.empty }
   where
 
   -- Returns `Nothing` if:

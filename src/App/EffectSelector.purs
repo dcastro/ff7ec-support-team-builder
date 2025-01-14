@@ -5,7 +5,6 @@ import Prelude
 import Core.Armory (Armory, ArmoryWeapon, Filter, FilterEffectType, FilterRange)
 import Core.Armory as Armory
 import Core.Display (display)
-import Core.Weapons.Search (FilterOpts)
 import Core.Weapons.Search as Search
 import Core.Weapons.Types (WeaponName)
 import Data.Array as Arr
@@ -30,7 +29,6 @@ type State =
       Armory
   , selectedEffectType :: Maybe FilterEffectType
   , selectedRange :: FilterRange
-  , selectedRequired :: Boolean
   , matchingWeapons :: Array ArmoryWeapon
   }
 
@@ -41,12 +39,11 @@ data Output
 data Action
   = SelectedEffectType Int
   | SelectedRange Int
-  | SelectedRequired Int
   | CheckedIgnored WeaponName Boolean
   | Initialize
   | Receive Input
 
-data Query a = GetFilterOpts (FilterOpts -> a)
+data Query a = GetFilter (Filter -> a)
 
 component :: H.Component Query Input Output Aff
 component =
@@ -56,7 +53,6 @@ component =
           { armory
           , selectedEffectType: Nothing
           , selectedRange: genericBottom
-          , selectedRequired: true
           , matchingWeapons: []
           }
     , render
@@ -90,15 +86,6 @@ render state =
             ( Armory.allFilterRanges <#> \filterRange ->
                 HH.option_ [ HH.text $ display filterRange ]
             )
-        ]
-
-    , HH.div [ classes' "select" ]
-        [ HH.select
-            [ HE.onSelectedIndexChange SelectedRequired
-            ]
-            [ HH.option_ [ HH.text "Required" ]
-            , HH.option_ [ HH.text "Optional" ]
-            ]
         ]
 
     , HH.div_
@@ -152,12 +139,6 @@ handleAction = case _ of
       # updateMatchingWeapons
     H.raise RaiseSelectionChanged
 
-  SelectedRequired idx -> do
-    let required = if idx == 0 then true else false
-    H.modify_ \s -> s { selectedRequired = required }
-    Console.log $ "Required: " <> show required
-    H.raise RaiseSelectionChanged
-
   CheckedIgnored weaponName ignored -> do
     H.raise $ RaiseCheckedIgnored weaponName ignored
 
@@ -181,14 +162,11 @@ updateMatchingWeapons state = do
 
 handleQuery :: forall action a m. Query a -> H.HalogenM State action () Output m (Maybe a)
 handleQuery = case _ of
-  GetFilterOpts reply -> do
+  GetFilter reply -> do
     state <- H.get
     case state.selectedEffectType of
       Just effectType -> pure $ Just $ reply
-        { filter:
-            { effectType
-            , range: state.selectedRange
-            }
-        , required: state.selectedRequired
+        { effectType
+        , range: state.selectedRange
         }
       Nothing -> pure Nothing

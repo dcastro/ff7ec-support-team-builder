@@ -35,7 +35,6 @@ combinationsSpec = do
       let
         combs = Search.combinations
           [ { filter: filter1
-            , required: true
             , matchingWeapons:
                 [ weapon11
                 , weapon12
@@ -43,14 +42,12 @@ combinationsSpec = do
                 ]
             }
           , { filter: filter2
-            , required: true
             , matchingWeapons:
                 [ weapon21
                 , weapon22
                 ]
             }
           , { filter: filter3
-            , required: true
             , matchingWeapons:
                 [ weapon31
                 ]
@@ -58,112 +55,58 @@ combinationsSpec = do
           ]
 
       combs `shouldEqualPretty`
-        [ [ { filter: filter1, required: true, weapon: Just weapon11 }
-          , { filter: filter2, required: true, weapon: Just weapon21 }
-          , { filter: filter3, required: true, weapon: Just weapon31 }
+        [ [ { filter: filter1, weapon: weapon11 }
+          , { filter: filter2, weapon: weapon21 }
+          , { filter: filter3, weapon: weapon31 }
           ]
-        , [ { filter: filter1, required: true, weapon: Just weapon11 }
-          , { filter: filter2, required: true, weapon: Just weapon22 }
-          , { filter: filter3, required: true, weapon: Just weapon31 }
+        , [ { filter: filter1, weapon: weapon11 }
+          , { filter: filter2, weapon: weapon22 }
+          , { filter: filter3, weapon: weapon31 }
           ]
-        , [ { filter: filter1, required: true, weapon: Just weapon12 }
-          , { filter: filter2, required: true, weapon: Just weapon21 }
-          , { filter: filter3, required: true, weapon: Just weapon31 }
+        , [ { filter: filter1, weapon: weapon12 }
+          , { filter: filter2, weapon: weapon21 }
+          , { filter: filter3, weapon: weapon31 }
           ]
-        , [ { filter: filter1, required: true, weapon: Just weapon12 }
-          , { filter: filter2, required: true, weapon: Just weapon22 }
-          , { filter: filter3, required: true, weapon: Just weapon31 }
+        , [ { filter: filter1, weapon: weapon12 }
+          , { filter: filter2, weapon: weapon22 }
+          , { filter: filter3, weapon: weapon31 }
           ]
-        , [ { filter: filter1, required: true, weapon: Just weapon13 }
-          , { filter: filter2, required: true, weapon: Just weapon21 }
-          , { filter: filter3, required: true, weapon: Just weapon31 }
+        , [ { filter: filter1, weapon: weapon13 }
+          , { filter: filter2, weapon: weapon21 }
+          , { filter: filter3, weapon: weapon31 }
           ]
-        , [ { filter: filter1, required: true, weapon: Just weapon13 }
-          , { filter: filter2, required: true, weapon: Just weapon22 }
-          , { filter: filter3, required: true, weapon: Just weapon31 }
+        , [ { filter: filter1, weapon: weapon13 }
+          , { filter: filter2, weapon: weapon22 }
+          , { filter: filter3, weapon: weapon31 }
           ]
         ]
     it "returns no combinations when a match is not found for a required effect" do
       let
         combs = Search.combinations
           [ { filter: filter1
-            , required: true
             , matchingWeapons:
                 [ weapon11
                 , weapon12
                 ]
             }
           , { filter: filter2
-            , required: true
             , matchingWeapons:
                 [ weapon21
                 , weapon22
                 ]
             }
           , { filter: filter3
-            , required: true
             , matchingWeapons:
                 [
                 ]
             }
           ]
       combs `shouldEqualPretty` []
-    it "returns partial combinations when a match is not found for an optional effect" do
-      let
-        combs = Search.combinations
-          [ { filter: filter1
-            , required: true
-            , matchingWeapons:
-                [ weapon11
-                , weapon12
-                , weapon13
-                ]
-            }
-          , { filter: filter2
-            , required: true
-            , matchingWeapons:
-                [ weapon21
-                , weapon22
-                ]
-            }
-          , { filter: filter3
-            , required: false
-            , matchingWeapons:
-                [
-                ]
-            }
-          ]
-      combs `shouldEqualPretty`
-        [ [ { filter: filter1, required: true, weapon: Just weapon11 }
-          , { filter: filter2, required: true, weapon: Just weapon21 }
-          , { filter: filter3, required: false, weapon: Nothing }
-          ]
-        , [ { filter: filter1, required: true, weapon: Just weapon11 }
-          , { filter: filter2, required: true, weapon: Just weapon22 }
-          , { filter: filter3, required: false, weapon: Nothing }
-          ]
-        , [ { filter: filter1, required: true, weapon: Just weapon12 }
-          , { filter: filter2, required: true, weapon: Just weapon21 }
-          , { filter: filter3, required: false, weapon: Nothing }
-          ]
-        , [ { filter: filter1, required: true, weapon: Just weapon12 }
-          , { filter: filter2, required: true, weapon: Just weapon22 }
-          , { filter: filter3, required: false, weapon: Nothing }
-          ]
-        , [ { filter: filter1, required: true, weapon: Just weapon13 }
-          , { filter: filter2, required: true, weapon: Just weapon21 }
-          , { filter: filter3, required: false, weapon: Nothing }
-          ]
-        , [ { filter: filter1, required: true, weapon: Just weapon13 }
-          , { filter: filter2, required: true, weapon: Just weapon22 }
-          , { filter: filter3, required: false, weapon: Nothing }
-          ]
-        ]
+
     it "discards ignored weapons" do
       let
         combs = Search.combinations
           [ { filter: filter1
-            , required: true
             , matchingWeapons:
                 [ weapon11 { ignored = true }
                 , weapon12
@@ -171,14 +114,12 @@ combinationsSpec = do
                 ]
             }
           , { filter: filter2
-            , required: true
             , matchingWeapons:
                 [ weapon21
                 , weapon22
                 ]
             }
           , { filter: filter3
-            , required: true
             , matchingWeapons:
                 [ weapon31
                 ]
@@ -186,55 +127,21 @@ combinationsSpec = do
           ]
 
       combs `shouldEqualPretty`
-        [ [ { filter: filter1, required: true, weapon: Just weapon12 }
-          , { filter: filter2, required: true, weapon: Just weapon21 }
-          , { filter: filter3, required: true, weapon: Just weapon31 }
+        [ [ { filter: filter1, weapon: weapon12 }
+          , { filter: filter2, weapon: weapon21 }
+          , { filter: filter3, weapon: weapon31 }
           ]
-        , [ { filter: filter1, required: true, weapon: Just weapon12 }
-          , { filter: filter2, required: true, weapon: Just weapon22 }
-          , { filter: filter3, required: true, weapon: Just weapon31 }
+        , [ { filter: filter1, weapon: weapon12 }
+          , { filter: filter2, weapon: weapon22 }
+          , { filter: filter3, weapon: weapon31 }
           ]
-        , [ { filter: filter1, required: true, weapon: Just weapon13 }
-          , { filter: filter2, required: true, weapon: Just weapon21 }
-          , { filter: filter3, required: true, weapon: Just weapon31 }
+        , [ { filter: filter1, weapon: weapon13 }
+          , { filter: filter2, weapon: weapon21 }
+          , { filter: filter3, weapon: weapon31 }
           ]
-        , [ { filter: filter1, required: true, weapon: Just weapon13 }
-          , { filter: filter2, required: true, weapon: Just weapon22 }
-          , { filter: filter3, required: true, weapon: Just weapon31 }
-          ]
-        ]
-    it "discards ignored weapons in optional filters" do
-      let
-        combs = Search.combinations
-          [ { filter: filter1
-            , required: false
-            , matchingWeapons:
-                [ weapon11 { ignored = true }
-                ]
-            }
-          , { filter: filter2
-            , required: true
-            , matchingWeapons:
-                [ weapon21
-                , weapon22
-                ]
-            }
-          , { filter: filter3
-            , required: true
-            , matchingWeapons:
-                [ weapon31
-                ]
-            }
-          ]
-
-      combs `shouldEqualPretty`
-        [ [ { filter: filter1, required: false, weapon: Nothing }
-          , { filter: filter2, required: true, weapon: Just weapon21 }
-          , { filter: filter3, required: true, weapon: Just weapon31 }
-          ]
-        , [ { filter: filter1, required: false, weapon: Nothing }
-          , { filter: filter2, required: true, weapon: Just weapon22 }
-          , { filter: filter3, required: true, weapon: Just weapon31 }
+        , [ { filter: filter1, weapon: weapon13 }
+          , { filter: filter2, weapon: weapon22 }
+          , { filter: filter3, weapon: weapon31 }
           ]
         ]
 
@@ -253,10 +160,10 @@ assignWeaponsToCharactersSpec = do
     it "assigns weapons correctly" do
       let
         combination =
-          [ { filter: filter1, required: true, weapon: Just tifaWeapon1 }
-          , { filter: filter2, required: true, weapon: Just tifaWeapon2 }
-          , { filter: filter3, required: true, weapon: Just vincentWeapon1 }
-          , { filter: filter4, required: true, weapon: Just vincentWeapon2 }
+          [ { filter: filter1, weapon: tifaWeapon1 }
+          , { filter: filter2, weapon: tifaWeapon2 }
+          , { filter: filter3, weapon: vincentWeapon1 }
+          , { filter: filter4, weapon: vincentWeapon2 }
           ]
 
       Search.assignWeaponsToCharacters 3 combination `shouldEqualPretty`
@@ -287,17 +194,16 @@ assignWeaponsToCharactersSpec = do
                       }
                   ]
               )
-          , missedFilters: []
           }
 
     it "handles a weapon matching on 2 or more effects" do
       let
         combination =
-          [ { filter: filter1, required: true, weapon: Just tifaWeapon1 }
-          , { filter: filter2, required: true, weapon: Just tifaWeapon1 }
-          , { filter: filter3, required: true, weapon: Just tifaWeapon2 }
-          , { filter: filter4, required: true, weapon: Just tifaWeapon2 }
-          , { filter: filter5, required: true, weapon: Just vincentWeapon1 }
+          [ { filter: filter1, weapon: tifaWeapon1 }
+          , { filter: filter2, weapon: tifaWeapon1 }
+          , { filter: filter3, weapon: tifaWeapon2 }
+          , { filter: filter4, weapon: tifaWeapon2 }
+          , { filter: filter5, weapon: vincentWeapon1 }
           ]
 
       Search.assignWeaponsToCharacters 3 combination `shouldEqualPretty`
@@ -325,15 +231,14 @@ assignWeaponsToCharactersSpec = do
                       }
                   ]
               )
-          , missedFilters: []
           }
 
     it "fails if more than 2 weapons were selected for the same character" do
       let
         combination =
-          [ { filter: filter1, required: true, weapon: Just tifaWeapon1 }
-          , { filter: filter2, required: true, weapon: Just tifaWeapon2 }
-          , { filter: filter3, required: true, weapon: Just tifaWeapon3 }
+          [ { filter: filter1, weapon: tifaWeapon1 }
+          , { filter: filter2, weapon: tifaWeapon2 }
+          , { filter: filter3, weapon: tifaWeapon3 }
           ]
 
       Null.toNullable (Search.assignWeaponsToCharacters 3 combination) `shouldEqualPretty` null
@@ -341,9 +246,9 @@ assignWeaponsToCharactersSpec = do
     it "fails if more than 2 characters were selected" do
       let
         combination =
-          [ { filter: filter1, required: true, weapon: Just tifaWeapon1 }
-          , { filter: filter2, required: true, weapon: Just vincentWeapon1 }
-          , { filter: filter3, required: true, weapon: Just redWeapon1 }
+          [ { filter: filter1, weapon: tifaWeapon1 }
+          , { filter: filter2, weapon: vincentWeapon1 }
+          , { filter: filter3, weapon: redWeapon1 }
           ]
 
       Null.toNullable (Search.assignWeaponsToCharacters 2 combination) `shouldEqualPretty` null

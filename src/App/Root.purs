@@ -4,10 +4,10 @@ import Prelude
 
 import App.EffectSelector as EffectSelector
 import App.Results as Results
-import Core.Armory (Armory, FilterEffectType(..))
+import Core.Armory (Armory, FilterEffectType(..), Filter)
 import Core.Armory as Armory
 import Core.Display (display)
-import Core.Weapons.Search (AssignmentResult, FilterOpts)
+import Core.Weapons.Search (AssignmentResult)
 import Core.Weapons.Search as Search
 import Data.Array as Arr
 import Data.Map as Map
@@ -159,9 +159,9 @@ updateTeams :: forall o. State -> H.HalogenM State Action Slots o Aff State
 updateTeams state = do
   let loadedState = assumeLoaded state
   -- Calculate all possible teams
-  responses <- H.requestAll _effectSelector EffectSelector.GetFilterOpts
-  let filterOpts = Arr.fromFoldable $ Map.values responses :: Array FilterOpts
-  let teams = Search.search loadedState.maxCharacterCount filterOpts loadedState.armory
+  responses <- H.requestAll _effectSelector EffectSelector.GetFilter
+  let filters = Arr.fromFoldable $ Map.values responses :: Array Filter
+  let teams = Search.search loadedState.maxCharacterCount filters loadedState.armory
 
   -- Console.log "-----------------------------------------"
   -- Console.log "-----------------------------------------"

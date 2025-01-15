@@ -176,7 +176,7 @@ updateMatchingWeapons state = do
     Just effectType -> do
       let filter = { effectType, range: state.selectedRange } :: Filter
       let filterResult = Search.findMatchingWeapons filter state.armory
-      let matchingWeapons = filterResult.matchingWeaponsAndPotencies <#> \{ weapon } -> weapon
+      let matchingWeapons = filterResult.matchingWeapons <#> \{ weapon } -> weapon
       state { matchingWeapons = matchingWeapons }
     Nothing -> state { matchingWeapons = [] }
 

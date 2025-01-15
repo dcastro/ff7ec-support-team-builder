@@ -5,28 +5,72 @@
       "effectType": "FilterHeal"
     },
     [
-      "Bahamut Rod",
-      "Crimson Staff",
-      "Egg Staff",
-      "Fairy Tale",
-      "Floral Wand",
-      "Kamura Wand",
-      "Snowflake",
-      "Terra's Rod",
-      "Umbrella",
-      "Microlaser",
-      "Crystal Sword",
-      "Bramble Spine",
-      "Centipede",
-      "Foam Sword",
-      "Luminary Sword",
-      "Prime Number",
-      "Syringe Rapier",
-      "Headphones",
-      "Pilot's Collar",
-      "Silver Collar",
-      "Lifeguard Wraps",
-      "Twinkling Star"
+      {
+        "weaponName": "Bahamut Rod"
+      },
+      {
+        "weaponName": "Crimson Staff"
+      },
+      {
+        "weaponName": "Egg Staff"
+      },
+      {
+        "weaponName": "Fairy Tale"
+      },
+      {
+        "weaponName": "Floral Wand"
+      },
+      {
+        "weaponName": "Kamura Wand"
+      },
+      {
+        "weaponName": "Snowflake"
+      },
+      {
+        "weaponName": "Terra's Rod"
+      },
+      {
+        "weaponName": "Umbrella"
+      },
+      {
+        "weaponName": "Microlaser"
+      },
+      {
+        "weaponName": "Crystal Sword"
+      },
+      {
+        "weaponName": "Bramble Spine"
+      },
+      {
+        "weaponName": "Centipede"
+      },
+      {
+        "weaponName": "Foam Sword"
+      },
+      {
+        "weaponName": "Luminary Sword"
+      },
+      {
+        "weaponName": "Prime Number"
+      },
+      {
+        "weaponName": "Syringe Rapier"
+      },
+      {
+        "weaponName": "Headphones"
+      },
+      {
+        "weaponName": "Pilot's Collar"
+      },
+      {
+        "weaponName": "Silver Collar"
+      },
+      {
+        "weaponName": "Lifeguard Wraps"
+      },
+      {
+        "weaponName": "Twinkling Star"
+      }
     ]
   ],
   [
@@ -35,17 +79,39 @@
       "effectType": "FilterHeal"
     },
     [
-      "Bahamut Rod",
-      "Fairy Tale",
-      "Umbrella",
-      "Crystal Sword",
-      "Centipede",
-      "Espee Rapiere Next-G",
-      "Prime Number",
-      "Pilot's Collar",
-      "Rubber Collar",
-      "Lifeguard Wraps",
-      "Enhance Sword (Z)"
+      {
+        "weaponName": "Bahamut Rod"
+      },
+      {
+        "weaponName": "Fairy Tale"
+      },
+      {
+        "weaponName": "Umbrella"
+      },
+      {
+        "weaponName": "Crystal Sword"
+      },
+      {
+        "weaponName": "Centipede"
+      },
+      {
+        "weaponName": "Espee Rapiere Next-G"
+      },
+      {
+        "weaponName": "Prime Number"
+      },
+      {
+        "weaponName": "Pilot's Collar"
+      },
+      {
+        "weaponName": "Rubber Collar"
+      },
+      {
+        "weaponName": "Lifeguard Wraps"
+      },
+      {
+        "weaponName": "Enhance Sword (Z)"
+      }
     ]
   ],
   [
@@ -54,19 +120,45 @@
       "effectType": "FilterHeal"
     },
     [
-      "Bahamut Rod",
-      "Fairy Tale",
-      "Umbrella",
-      "Crystal Sword",
-      "Tranquilizer Gun",
-      "Centipede",
-      "Espee Rapiere Next-G",
-      "Prime Number",
-      "Pilot's Collar",
-      "Rubber Collar",
-      "Grand Gloves",
-      "Lifeguard Wraps",
-      "Enhance Sword (Z)"
+      {
+        "weaponName": "Bahamut Rod"
+      },
+      {
+        "weaponName": "Fairy Tale"
+      },
+      {
+        "weaponName": "Umbrella"
+      },
+      {
+        "weaponName": "Crystal Sword"
+      },
+      {
+        "weaponName": "Tranquilizer Gun"
+      },
+      {
+        "weaponName": "Centipede"
+      },
+      {
+        "weaponName": "Espee Rapiere Next-G"
+      },
+      {
+        "weaponName": "Prime Number"
+      },
+      {
+        "weaponName": "Pilot's Collar"
+      },
+      {
+        "weaponName": "Rubber Collar"
+      },
+      {
+        "weaponName": "Grand Gloves"
+      },
+      {
+        "weaponName": "Lifeguard Wraps"
+      },
+      {
+        "weaponName": "Enhance Sword (Z)"
+      }
     ]
   ],
   [
@@ -75,10 +167,18 @@
       "effectType": "FilterVeil"
     },
     [
-      "Greatsword (A)",
-      "Shinra Greatsword: Model I",
-      "Tranquility",
-      "Volcanic Heat"
+      {
+        "weaponName": "Greatsword (A)"
+      },
+      {
+        "weaponName": "Shinra Greatsword: Model I"
+      },
+      {
+        "weaponName": "Tranquility"
+      },
+      {
+        "weaponName": "Volcanic Heat"
+      }
     ]
   ],
   [
@@ -87,10 +187,18 @@
       "effectType": "FilterProvoke"
     },
     [
-      "Gargantuan Monolith",
-      "Orchard Shovel",
-      "Tranquility",
-      "Type-90 Longsword"
+      {
+        "weaponName": "Gargantuan Monolith"
+      },
+      {
+        "weaponName": "Orchard Shovel"
+      },
+      {
+        "weaponName": "Tranquility"
+      },
+      {
+        "weaponName": "Type-90 Longsword"
+      }
     ]
   ],
   [
@@ -99,10 +207,34 @@
       "effectType": "FilterPatkUp"
     },
     [
-      "Kamura Wand",
-      "Stalwart Integrity",
-      "Quina Megaphone",
-      "Trumpet Shell"
+      {
+        "weaponName": "Kamura Wand",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Stalwart Integrity",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Quina Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Trumpet Shell",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -111,19 +243,97 @@
       "effectType": "FilterPatkUp"
     },
     [
-      "Kamura Wand",
-      "Stalwart Integrity",
-      "Rhad Cannon",
-      "Catsmegaphone",
-      "Marching Horn",
-      "Quina Megaphone",
-      "Trumpet Shell",
-      "Pumpkin Lamppost",
-      "Bramble Spine",
-      "Giant Fork",
-      "Oven Mitts",
-      "Rhad Gun",
-      "Arctic Star"
+      {
+        "weaponName": "Kamura Wand",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Stalwart Integrity",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Rhad Cannon",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Catsmegaphone",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Marching Horn",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Quina Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Trumpet Shell",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Pumpkin Lamppost",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Bramble Spine",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Giant Fork",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Oven Mitts",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Rhad Gun",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Arctic Star",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -132,25 +342,146 @@
       "effectType": "FilterPatkUp"
     },
     [
-      "Kamura Wand",
-      "Stalwart Integrity",
-      "Rhad Cannon",
-      "Catsmegaphone",
-      "Marching Horn",
-      "Quina Megaphone",
-      "Trumpet Shell",
-      "Glavenus Sword",
-      "Pumpkin Lamppost",
-      "Bramble Spine",
-      "Giant Fork",
-      "Shinra Military Sword",
-      "Amarant's Claws",
-      "Oven Mitts",
-      "Sabin's Claws",
-      "Work Gloves",
-      "Rhad Gun",
-      "Arctic Star",
-      "Ceremonial Sword (Z)"
+      {
+        "weaponName": "Kamura Wand",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Stalwart Integrity",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Rhad Cannon",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Catsmegaphone",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Marching Horn",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Quina Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Trumpet Shell",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Glavenus Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Pumpkin Lamppost",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Bramble Spine",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Giant Fork",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Shinra Military Sword",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Amarant's Claws",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Oven Mitts",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Sabin's Claws",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Work Gloves",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Rhad Gun",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Arctic Star",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Arctic Star",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Ceremonial Sword (Z)",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -159,11 +490,41 @@
       "effectType": "FilterMatkUp"
     },
     [
-      "Crimson Staff",
-      "Escutcheon Cannon",
-      "Trumpet Shell",
-      "Luminary Sword",
-      "Bahamut Fangs"
+      {
+        "weaponName": "Crimson Staff",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Escutcheon Cannon",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Trumpet Shell",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Luminary Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Bahamut Fangs",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -172,16 +533,76 @@
       "effectType": "FilterMatkUp"
     },
     [
-      "Citric Wand",
-      "Crimson Staff",
-      "Garnet's Rod",
-      "Escutcheon Cannon",
-      "Microlaser",
-      "Flower Vase",
-      "Trumpet Shell",
-      "Luminary Sword",
-      "Bahamut Fangs",
-      "Crystal Cross"
+      {
+        "weaponName": "Citric Wand",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Crimson Staff",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Garnet's Rod",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Escutcheon Cannon",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Microlaser",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Flower Vase",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Trumpet Shell",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Luminary Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Bahamut Fangs",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Crystal Cross",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -190,21 +611,111 @@
       "effectType": "FilterMatkUp"
     },
     [
-      "Citric Wand",
-      "Crimson Staff",
-      "Garnet's Rod",
-      "Escutcheon Cannon",
-      "Microlaser",
-      "Flower Vase",
-      "Trumpet Shell",
-      "Luminary Sword",
-      "Aonibi",
-      "Bahamut Fangs",
-      "Bunny Gloves",
-      "Kirin Gloves",
-      "Sabin's Claws",
-      "Sawed-Off GS",
-      "Crystal Cross"
+      {
+        "weaponName": "Citric Wand",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Crimson Staff",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Garnet's Rod",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Escutcheon Cannon",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Microlaser",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Flower Vase",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Trumpet Shell",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Luminary Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Aonibi",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Bahamut Fangs",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Bunny Gloves",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Kirin Gloves",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Sabin's Claws",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Sawed-Off GS",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Crystal Cross",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -213,14 +724,62 @@
       "effectType": "FilterPdefUp"
     },
     [
-      "Bahamut Rod",
-      "Mythril Rod",
-      "Stalwart Integrity",
-      "Assault Gun",
-      "Quina Megaphone",
-      "Hardcore Squad",
-      "Centipede",
-      "Syringe Rapier"
+      {
+        "weaponName": "Bahamut Rod",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Mythril Rod",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Stalwart Integrity",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Assault Gun",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Quina Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Hardcore Squad",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Centipede",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Syringe Rapier",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -229,19 +788,97 @@
       "effectType": "FilterPdefUp"
     },
     [
-      "Bahamut Rod",
-      "Mythril Rod",
-      "Stalwart Integrity",
-      "Assault Gun",
-      "Lefko Kypseli",
-      "Crystal Megaphone",
-      "Quina Megaphone",
-      "Butterfly Edge",
-      "Hardcore Squad",
-      "Centipede",
-      "Syringe Rapier",
-      "Torn Wing",
-      "Defender"
+      {
+        "weaponName": "Bahamut Rod",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Mythril Rod",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Stalwart Integrity",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Assault Gun",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Lefko Kypseli",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Crystal Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Quina Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Butterfly Edge",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Hardcore Squad",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Centipede",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Syringe Rapier",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Torn Wing",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Defender",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -250,21 +887,111 @@
       "effectType": "FilterPdefUp"
     },
     [
-      "Bahamut Rod",
-      "Mythril Rod",
-      "Stalwart Integrity",
-      "Assault Gun",
-      "Lefko Kypseli",
-      "Crystal Megaphone",
-      "Quina Megaphone",
-      "Butterfly Edge",
-      "Hardcore Squad",
-      "Centipede",
-      "Syringe Rapier",
-      "Mythril Type-0 Katana",
-      "Torn Wing",
-      "Work Gloves",
-      "Defender"
+      {
+        "weaponName": "Bahamut Rod",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Mythril Rod",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Stalwart Integrity",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Assault Gun",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Lefko Kypseli",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Crystal Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Quina Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Butterfly Edge",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Hardcore Squad",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Centipede",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Syringe Rapier",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Mythril Type-0 Katana",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Torn Wing",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Work Gloves",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Defender",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -273,16 +1000,76 @@
       "effectType": "FilterMdefUp"
     },
     [
-      "Kamura Wand",
-      "Mythril Rod",
-      "Escutcheon Cannon",
-      "Bandaged Sword",
-      "Hardcore Squad",
-      "Core Defender",
-      "Syringe Rapier",
-      "Pilot's Collar",
-      "Sleek Collar",
-      "Bahamut Cutter"
+      {
+        "weaponName": "Kamura Wand",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Mythril Rod",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Escutcheon Cannon",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Bandaged Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Hardcore Squad",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Core Defender",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Syringe Rapier",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Pilot's Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Sleek Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Bahamut Cutter",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -291,21 +1078,111 @@
       "effectType": "FilterMdefUp"
     },
     [
-      "Chocobo Staff",
-      "Guard Stick",
-      "Kamura Wand",
-      "Mythril Rod",
-      "Escutcheon Cannon",
-      "Heavy Vulcan",
-      "Bandaged Sword",
-      "Hardcore Squad",
-      "Pumpkin Blaster",
-      "SSR1976",
-      "Core Defender",
-      "Syringe Rapier",
-      "Pilot's Collar",
-      "Sleek Collar",
-      "Bahamut Cutter"
+      {
+        "weaponName": "Chocobo Staff",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Guard Stick",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Kamura Wand",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Mythril Rod",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Escutcheon Cannon",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Heavy Vulcan",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Bandaged Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Hardcore Squad",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Pumpkin Blaster",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "SSR1976",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Core Defender",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Syringe Rapier",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Pilot's Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Sleek Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Bahamut Cutter",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -314,23 +1191,125 @@
       "effectType": "FilterMdefUp"
     },
     [
-      "Chocobo Staff",
-      "Guard Stick",
-      "Kamura Wand",
-      "Mythril Rod",
-      "Gargantuan Monolith",
-      "Escutcheon Cannon",
-      "Heavy Vulcan",
-      "Bandaged Sword",
-      "Hardcore Squad",
-      "Pumpkin Blaster",
-      "SSR1976",
-      "Core Defender",
-      "Syringe Rapier",
-      "Pilot's Collar",
-      "Sleek Collar",
-      "Sawed-Off GS",
-      "Bahamut Cutter"
+      {
+        "weaponName": "Chocobo Staff",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Guard Stick",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Kamura Wand",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Mythril Rod",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Gargantuan Monolith",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Escutcheon Cannon",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Heavy Vulcan",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Bandaged Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Hardcore Squad",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Pumpkin Blaster",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "SSR1976",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Core Defender",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Syringe Rapier",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Pilot's Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Sleek Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Sawed-Off GS",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Bahamut Cutter",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -339,7 +1318,13 @@
       "effectType": "FilterFireDamageUp"
     },
     [
-      "Luminary Sword"
+      {
+        "weaponName": "Luminary Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      }
     ]
   ],
   [
@@ -348,7 +1333,13 @@
       "effectType": "FilterFireDamageUp"
     },
     [
-      "Luminary Sword"
+      {
+        "weaponName": "Luminary Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      }
     ]
   ],
   [
@@ -357,9 +1348,27 @@
       "effectType": "FilterFireDamageUp"
     },
     [
-      "Locke's Sword",
-      "Luminary Sword",
-      "Striped Moogle Float"
+      {
+        "weaponName": "Locke's Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Luminary Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Striped Moogle Float",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      }
     ]
   ],
   [
@@ -368,7 +1377,13 @@
       "effectType": "FilterIceDamageUp"
     },
     [
-      "Citric Wand"
+      {
+        "weaponName": "Citric Wand",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -377,8 +1392,20 @@
       "effectType": "FilterIceDamageUp"
     },
     [
-      "Citric Wand",
-      "Locke's Sword"
+      {
+        "weaponName": "Citric Wand",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Locke's Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -387,7 +1414,13 @@
       "effectType": "FilterThunderDamageUp"
     },
     [
-      "Locke's Sword"
+      {
+        "weaponName": "Locke's Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -396,7 +1429,13 @@
       "effectType": "FilterEarthDamageUp"
     },
     [
-      "Kugelblitz"
+      {
+        "weaponName": "Kugelblitz",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -405,8 +1444,20 @@
       "effectType": "FilterWaterDamageUp"
     },
     [
-      "Slay the Day",
-      "Feathered Gloves"
+      {
+        "weaponName": "Slay the Day",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Feathered Gloves",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -415,7 +1466,13 @@
       "effectType": "FilterWindDamageUp"
     },
     [
-      "Shinra Military Sword"
+      {
+        "weaponName": "Shinra Military Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -424,15 +1481,69 @@
       "effectType": "FilterPatkDown"
     },
     [
-      "Full Metal Staff",
-      "Turks' Blade",
-      "Electrocannon",
-      "Battle Trumpet",
-      "Iron Blade",
-      "Marine Shooter",
-      "Kuja's Spirit Blade",
-      "S1976C",
-      "4-Point Shuriken"
+      {
+        "weaponName": "Full Metal Staff",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Turks' Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Electrocannon",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Battle Trumpet",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Iron Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Marine Shooter",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Kuja's Spirit Blade",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "S1976C",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "4-Point Shuriken",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -441,23 +1552,125 @@
       "effectType": "FilterPatkDown"
     },
     [
-      "Full Metal Staff",
-      "Turks' Blade",
-      "Type-91 Two-Hander",
-      "Electrocannon",
-      "Battle Trumpet",
-      "Iron Blade",
-      "Steiner's Blade",
-      "Featherscatter",
-      "Marine Shooter",
-      "Slick Beetle",
-      "Steward Collar",
-      "Kuja's Spirit Blade",
-      "Northern Lights",
-      "Leather Gloves",
-      "Steward Gloves",
-      "S1976C",
-      "4-Point Shuriken"
+      {
+        "weaponName": "Full Metal Staff",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Turks' Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Type-91 Two-Hander",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Electrocannon",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Battle Trumpet",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Iron Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Steiner's Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Featherscatter",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Marine Shooter",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Slick Beetle",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Steward Collar",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Kuja's Spirit Blade",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Northern Lights",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Leather Gloves",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Steward Gloves",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "S1976C",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "4-Point Shuriken",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -466,23 +1679,125 @@
       "effectType": "FilterPatkDown"
     },
     [
-      "Full Metal Staff",
-      "Turks' Blade",
-      "Type-91 Two-Hander",
-      "Electrocannon",
-      "Battle Trumpet",
-      "Iron Blade",
-      "Steiner's Blade",
-      "Featherscatter",
-      "Marine Shooter",
-      "Slick Beetle",
-      "Steward Collar",
-      "Kuja's Spirit Blade",
-      "Northern Lights",
-      "Leather Gloves",
-      "Steward Gloves",
-      "S1976C",
-      "4-Point Shuriken"
+      {
+        "weaponName": "Full Metal Staff",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Turks' Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Type-91 Two-Hander",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Electrocannon",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Battle Trumpet",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Iron Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Steiner's Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Featherscatter",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Marine Shooter",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Slick Beetle",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Steward Collar",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Kuja's Spirit Blade",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Northern Lights",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Leather Gloves",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Steward Gloves",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "S1976C",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "4-Point Shuriken",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -491,10 +1806,34 @@
       "effectType": "FilterMatkDown"
     },
     [
-      "Electrocannon",
-      "Battle Trumpet",
-      "Kuja's Spirit Blade",
-      "S1976C"
+      {
+        "weaponName": "Electrocannon",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Battle Trumpet",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Kuja's Spirit Blade",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "S1976C",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -503,18 +1842,90 @@
       "effectType": "FilterMatkDown"
     },
     [
-      "Type-91 Two-Hander",
-      "Electrocannon",
-      "Solid Bazooka",
-      "Battle Trumpet",
-      "Gold Megaphone",
-      "Mad Minute",
-      "Junk Collar",
-      "Kuja's Spirit Blade",
-      "Amarant's Claws",
-      "Tiger Fangs",
-      "S1976C",
-      "Twinkling Star"
+      {
+        "weaponName": "Type-91 Two-Hander",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Electrocannon",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Solid Bazooka",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Battle Trumpet",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Gold Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Mad Minute",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Junk Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Kuja's Spirit Blade",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Amarant's Claws",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Tiger Fangs",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "S1976C",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Twinkling Star",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -523,18 +1934,90 @@
       "effectType": "FilterMatkDown"
     },
     [
-      "Type-91 Two-Hander",
-      "Electrocannon",
-      "Solid Bazooka",
-      "Battle Trumpet",
-      "Gold Megaphone",
-      "Mad Minute",
-      "Junk Collar",
-      "Kuja's Spirit Blade",
-      "Amarant's Claws",
-      "Tiger Fangs",
-      "S1976C",
-      "Twinkling Star"
+      {
+        "weaponName": "Type-91 Two-Hander",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Electrocannon",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Solid Bazooka",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Battle Trumpet",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Gold Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Mad Minute",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Junk Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Kuja's Spirit Blade",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Amarant's Claws",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Tiger Fangs",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "S1976C",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Twinkling Star",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -543,7 +2026,13 @@
       "effectType": "FilterPdefDown"
     },
     [
-      "Greatsword (A)"
+      {
+        "weaponName": "Greatsword (A)",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -552,26 +2041,153 @@
       "effectType": "FilterPdefDown"
     },
     [
-      "Dawn's Prayers",
-      "Floral Wand",
-      "Sun Umbrella",
-      "Greatsword (A)",
-      "W Machine",
-      "Silver Megaphone",
-      "Glavenus Sword",
-      "Hardedge",
-      "Best Wishes",
-      "Piece of Cake",
-      "Slay the Day",
-      "Nightjar",
-      "Turks' Rifle",
-      "Iron Collar",
-      "Radiant Edge",
-      "Turks' Gloves",
-      "Black Whiskers",
-      "Cutlass",
-      "Iron Greatsword",
-      "Twinkling Star"
+      {
+        "weaponName": "Dawn's Prayers",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Floral Wand",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Sun Umbrella",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Greatsword (A)",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "W Machine",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Silver Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Silver Megaphone",
+        "potenciesAtOb10": {
+          "max": "Low",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Glavenus Sword",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Hardedge",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Best Wishes",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Piece of Cake",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Slay the Day",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Nightjar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Turks' Rifle",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Iron Collar",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Radiant Edge",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Turks' Gloves",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Black Whiskers",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Cutlass",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Iron Greatsword",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Twinkling Star",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -580,26 +2196,153 @@
       "effectType": "FilterPdefDown"
     },
     [
-      "Dawn's Prayers",
-      "Floral Wand",
-      "Sun Umbrella",
-      "Greatsword (A)",
-      "W Machine",
-      "Silver Megaphone",
-      "Glavenus Sword",
-      "Hardedge",
-      "Best Wishes",
-      "Piece of Cake",
-      "Slay the Day",
-      "Nightjar",
-      "Turks' Rifle",
-      "Iron Collar",
-      "Radiant Edge",
-      "Turks' Gloves",
-      "Black Whiskers",
-      "Cutlass",
-      "Iron Greatsword",
-      "Twinkling Star"
+      {
+        "weaponName": "Dawn's Prayers",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Floral Wand",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Sun Umbrella",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Greatsword (A)",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "W Machine",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Silver Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Silver Megaphone",
+        "potenciesAtOb10": {
+          "max": "Low",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Glavenus Sword",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Hardedge",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Best Wishes",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Piece of Cake",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Slay the Day",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Nightjar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Turks' Rifle",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Iron Collar",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Radiant Edge",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Turks' Gloves",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Black Whiskers",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Cutlass",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Iron Greatsword",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Twinkling Star",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -608,10 +2351,34 @@
       "effectType": "FilterMdefDown"
     },
     [
-      "Crimson Staff",
-      "Canyon Collar",
-      "Gold Collar",
-      "Kugelblitz"
+      {
+        "weaponName": "Crimson Staff",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Canyon Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Gold Collar",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Kugelblitz",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -620,24 +2387,132 @@
       "effectType": "FilterMdefDown"
     },
     [
-      "Crimson Staff",
-      "Snowflake",
-      "Sun Umbrella",
-      "Hell House Cannon",
-      "Witch's Broom",
-      "Nightjar",
-      "Rose Musket",
-      "Thunderbird",
-      "Stingray",
-      "Canyon Collar",
-      "Gold Collar",
-      "Hell House Collar",
-      "Nameless",
-      "Feathered Gloves",
-      "Kaiser Knuckles",
-      "Kugelblitz",
-      "Holiday Bell",
-      "Arc Sword"
+      {
+        "weaponName": "Crimson Staff",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Snowflake",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Sun Umbrella",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Hell House Cannon",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Witch's Broom",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Nightjar",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Rose Musket",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Thunderbird",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Stingray",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Canyon Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Gold Collar",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Hell House Collar",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Nameless",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Feathered Gloves",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Kaiser Knuckles",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Kugelblitz",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Holiday Bell",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Arc Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -646,24 +2521,132 @@
       "effectType": "FilterMdefDown"
     },
     [
-      "Crimson Staff",
-      "Snowflake",
-      "Sun Umbrella",
-      "Hell House Cannon",
-      "Witch's Broom",
-      "Nightjar",
-      "Rose Musket",
-      "Thunderbird",
-      "Stingray",
-      "Canyon Collar",
-      "Gold Collar",
-      "Hell House Collar",
-      "Nameless",
-      "Feathered Gloves",
-      "Kaiser Knuckles",
-      "Kugelblitz",
-      "Holiday Bell",
-      "Arc Sword"
+      {
+        "weaponName": "Crimson Staff",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Snowflake",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Sun Umbrella",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Hell House Cannon",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Witch's Broom",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Nightjar",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Rose Musket",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Thunderbird",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Stingray",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Canyon Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Gold Collar",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Hell House Collar",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Nameless",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Feathered Gloves",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Kaiser Knuckles",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Kugelblitz",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Holiday Bell",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Arc Sword",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -672,11 +2655,41 @@
       "effectType": "FilterFireResistDown"
     },
     [
-      "Terra's Rod",
-      "Chocobo Paddle",
-      "Marine Shooter",
-      "Shinra Wyvern Blade",
-      "Mallet of Luck"
+      {
+        "weaponName": "Terra's Rod",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Chocobo Paddle",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Marine Shooter",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Shinra Wyvern Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Mallet of Luck",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      }
     ]
   ],
   [
@@ -685,20 +2698,104 @@
       "effectType": "FilterFireResistDown"
     },
     [
-      "Terra's Rod",
-      "Volcanic Heat",
-      "Sharkslayer",
-      "Gold Megaphone",
-      "Chocobo Paddle",
-      "Marine Shooter",
-      "Flame Dragon's Band",
-      "Ivy Collar",
-      "Flame Dragon Blade",
-      "Radiant Edge",
-      "Shinra Wyvern Blade",
-      "Withering Blaze",
-      "Boomerang",
-      "Mallet of Luck"
+      {
+        "weaponName": "Terra's Rod",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Volcanic Heat",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Sharkslayer",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Gold Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Chocobo Paddle",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Marine Shooter",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Flame Dragon's Band",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Ivy Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Flame Dragon Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Radiant Edge",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Shinra Wyvern Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Withering Blaze",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Boomerang",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Mallet of Luck",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      }
     ]
   ],
   [
@@ -707,20 +2804,104 @@
       "effectType": "FilterFireResistDown"
     },
     [
-      "Terra's Rod",
-      "Volcanic Heat",
-      "Sharkslayer",
-      "Gold Megaphone",
-      "Chocobo Paddle",
-      "Marine Shooter",
-      "Flame Dragon's Band",
-      "Ivy Collar",
-      "Flame Dragon Blade",
-      "Radiant Edge",
-      "Shinra Wyvern Blade",
-      "Withering Blaze",
-      "Boomerang",
-      "Mallet of Luck"
+      {
+        "weaponName": "Terra's Rod",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Volcanic Heat",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Sharkslayer",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Gold Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Chocobo Paddle",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Marine Shooter",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Flame Dragon's Band",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Ivy Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Flame Dragon Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Radiant Edge",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Shinra Wyvern Blade",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Withering Blaze",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Boomerang",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Mallet of Luck",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      }
     ]
   ],
   [
@@ -729,7 +2910,13 @@
       "effectType": "FilterIceResistDown"
     },
     [
-      "Terra's Rod"
+      {
+        "weaponName": "Terra's Rod",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -738,13 +2925,55 @@
       "effectType": "FilterIceResistDown"
     },
     [
-      "Terra's Rod",
-      "Icebolt Megaphone",
-      "Bald Eagle",
-      "Ivy Collar",
-      "Icebolt Shooter",
-      "Pinwheel",
-      "Pressure Ridge"
+      {
+        "weaponName": "Terra's Rod",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Icebolt Megaphone",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Bald Eagle",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Ivy Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Icebolt Shooter",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Pinwheel",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Pressure Ridge",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -753,13 +2982,55 @@
       "effectType": "FilterIceResistDown"
     },
     [
-      "Terra's Rod",
-      "Icebolt Megaphone",
-      "Bald Eagle",
-      "Ivy Collar",
-      "Icebolt Shooter",
-      "Pinwheel",
-      "Pressure Ridge"
+      {
+        "weaponName": "Terra's Rod",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Icebolt Megaphone",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Bald Eagle",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Ivy Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Icebolt Shooter",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Pinwheel",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Pressure Ridge",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -768,7 +3039,13 @@
       "effectType": "FilterThunderResistDown"
     },
     [
-      "Terra's Rod"
+      {
+        "weaponName": "Terra's Rod",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -777,12 +3054,48 @@
       "effectType": "FilterThunderResistDown"
     },
     [
-      "Terra's Rod",
-      "Icebolt Megaphone",
-      "Witch's Broom",
-      "Seaside Collar",
-      "Icebolt Shooter",
-      "Wind Slash"
+      {
+        "weaponName": "Terra's Rod",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Icebolt Megaphone",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Witch's Broom",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Seaside Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Icebolt Shooter",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Wind Slash",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -791,12 +3104,48 @@
       "effectType": "FilterThunderResistDown"
     },
     [
-      "Terra's Rod",
-      "Icebolt Megaphone",
-      "Witch's Broom",
-      "Seaside Collar",
-      "Icebolt Shooter",
-      "Wind Slash"
+      {
+        "weaponName": "Terra's Rod",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Icebolt Megaphone",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Witch's Broom",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Seaside Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Icebolt Shooter",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Wind Slash",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -805,9 +3154,27 @@
       "effectType": "FilterEarthResistDown"
     },
     [
-      "Shinra Greatsword: Model I",
-      "Blue Bramble",
-      "Chiron"
+      {
+        "weaponName": "Shinra Greatsword: Model I",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Blue Bramble",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Chiron",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -816,9 +3183,27 @@
       "effectType": "FilterEarthResistDown"
     },
     [
-      "Shinra Greatsword: Model I",
-      "Blue Bramble",
-      "Chiron"
+      {
+        "weaponName": "Shinra Greatsword: Model I",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Blue Bramble",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Chiron",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      }
     ]
   ],
   [
@@ -827,11 +3212,41 @@
       "effectType": "FilterWaterResistDown"
     },
     [
-      "Sharkslayer",
-      "Green Megaphone",
-      "Silver Collar",
-      "Tempest",
-      "Black Whiskers"
+      {
+        "weaponName": "Sharkslayer",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Green Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Silver Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Tempest",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Black Whiskers",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -840,11 +3255,41 @@
       "effectType": "FilterWaterResistDown"
     },
     [
-      "Sharkslayer",
-      "Green Megaphone",
-      "Silver Collar",
-      "Tempest",
-      "Black Whiskers"
+      {
+        "weaponName": "Sharkslayer",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Green Megaphone",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Silver Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Tempest",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Black Whiskers",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
     ]
   ],
   [
@@ -853,9 +3298,27 @@
       "effectType": "FilterWindResistDown"
     },
     [
-      "Floral Wand",
-      "Silver Collar",
-      "Holiday Bell"
+      {
+        "weaponName": "Floral Wand",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Silver Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Holiday Bell",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      }
     ]
   ],
   [
@@ -864,9 +3327,27 @@
       "effectType": "FilterWindResistDown"
     },
     [
-      "Floral Wand",
-      "Silver Collar",
-      "Holiday Bell"
+      {
+        "weaponName": "Floral Wand",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Silver Collar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Holiday Bell",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Low"
+        }
+      }
     ]
   ]
 ]

@@ -5,7 +5,7 @@ import Test.Spec
 
 import Core.Armory (Filter, FilterEffectType(..), FilterRange(..), ArmoryWeapon)
 import Core.Weapons.Search as Search
-import Core.Weapons.Types (CharacterName(..), WeaponName(..))
+import Core.Weapons.Types (CharacterName(..), Potency(..), WeaponName(..))
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Nullable (null)
@@ -31,68 +31,76 @@ combinationsSpec = do
       weapon22 = mkWeapon (nes @"22") (nes @" ")
       weapon31 = mkWeapon (nes @"31") (nes @" ")
 
+      potencies11 = Just { base: Low, max: Low }
+      potencies12 = Just { base: Low, max: Mid }
+      potencies13 = Just { base: Low, max: High }
+      potencies21 = Just { base: Mid, max: Mid }
+      potencies22 = Just { base: Mid, max: High }
+      potencies31 = Just { base: High, max: High }
+
     it "finds all possible combinations" do
       let
         combs = Search.combinations
           [ { filter: filter1
             , matchingWeapons:
-                [ weapon11
-                , weapon12
-                , weapon13
+                [ { weapon: weapon11, potenciesAtOb10: potencies11 }
+                , { weapon: weapon12, potenciesAtOb10: potencies12 }
+                , { weapon: weapon13, potenciesAtOb10: potencies13 }
                 ]
             }
           , { filter: filter2
             , matchingWeapons:
-                [ weapon21
-                , weapon22
+                [ { weapon: weapon21, potenciesAtOb10: potencies21 }
+                , { weapon: weapon22, potenciesAtOb10: potencies22 }
                 ]
             }
           , { filter: filter3
             , matchingWeapons:
-                [ weapon31
+                [ { weapon: weapon31, potenciesAtOb10: potencies31 }
                 ]
             }
           ]
 
       combs `shouldEqualPretty`
-        [ [ { filter: filter1, weapon: weapon11 }
-          , { filter: filter2, weapon: weapon21 }
-          , { filter: filter3, weapon: weapon31 }
+        [ [ { filter: filter1, weapon: weapon11, potenciesAtOb10: potencies11 }
+          , { filter: filter2, weapon: weapon21, potenciesAtOb10: potencies21 }
+          , { filter: filter3, weapon: weapon31, potenciesAtOb10: potencies31 }
           ]
-        , [ { filter: filter1, weapon: weapon11 }
-          , { filter: filter2, weapon: weapon22 }
-          , { filter: filter3, weapon: weapon31 }
+        , [ { filter: filter1, weapon: weapon11, potenciesAtOb10: potencies11 }
+          , { filter: filter2, weapon: weapon22, potenciesAtOb10: potencies22 }
+          , { filter: filter3, weapon: weapon31, potenciesAtOb10: potencies31 }
           ]
-        , [ { filter: filter1, weapon: weapon12 }
-          , { filter: filter2, weapon: weapon21 }
-          , { filter: filter3, weapon: weapon31 }
+        , [ { filter: filter1, weapon: weapon12, potenciesAtOb10: potencies12 }
+          , { filter: filter2, weapon: weapon21, potenciesAtOb10: potencies21 }
+          , { filter: filter3, weapon: weapon31, potenciesAtOb10: potencies31 }
           ]
-        , [ { filter: filter1, weapon: weapon12 }
-          , { filter: filter2, weapon: weapon22 }
-          , { filter: filter3, weapon: weapon31 }
+        , [ { filter: filter1, weapon: weapon12, potenciesAtOb10: potencies12 }
+          , { filter: filter2, weapon: weapon22, potenciesAtOb10: potencies22 }
+          , { filter: filter3, weapon: weapon31, potenciesAtOb10: potencies31 }
           ]
-        , [ { filter: filter1, weapon: weapon13 }
-          , { filter: filter2, weapon: weapon21 }
-          , { filter: filter3, weapon: weapon31 }
+        , [ { filter: filter1, weapon: weapon13, potenciesAtOb10: potencies13 }
+          , { filter: filter2, weapon: weapon21, potenciesAtOb10: potencies21 }
+          , { filter: filter3, weapon: weapon31, potenciesAtOb10: potencies31 }
           ]
-        , [ { filter: filter1, weapon: weapon13 }
-          , { filter: filter2, weapon: weapon22 }
-          , { filter: filter3, weapon: weapon31 }
+        , [ { filter: filter1, weapon: weapon13, potenciesAtOb10: potencies13 }
+          , { filter: filter2, weapon: weapon22, potenciesAtOb10: potencies22 }
+          , { filter: filter3, weapon: weapon31, potenciesAtOb10: potencies31 }
           ]
         ]
+
     it "returns no combinations when a match is not found for a required effect" do
       let
         combs = Search.combinations
           [ { filter: filter1
             , matchingWeapons:
-                [ weapon11
-                , weapon12
+                [ { weapon: weapon11, potenciesAtOb10: potencies11 }
+                , { weapon: weapon12, potenciesAtOb10: potencies12 }
                 ]
             }
           , { filter: filter2
             , matchingWeapons:
-                [ weapon21
-                , weapon22
+                [ { weapon: weapon21, potenciesAtOb10: potencies21 }
+                , { weapon: weapon22, potenciesAtOb10: potencies22 }
                 ]
             }
           , { filter: filter3
@@ -108,40 +116,40 @@ combinationsSpec = do
         combs = Search.combinations
           [ { filter: filter1
             , matchingWeapons:
-                [ weapon11 { ignored = true }
-                , weapon12
-                , weapon13
+                [ { weapon: weapon11 { ignored = true }, potenciesAtOb10: potencies11 }
+                , { weapon: weapon12, potenciesAtOb10: potencies12 }
+                , { weapon: weapon13, potenciesAtOb10: potencies13 }
                 ]
             }
           , { filter: filter2
             , matchingWeapons:
-                [ weapon21
-                , weapon22
+                [ { weapon: weapon21, potenciesAtOb10: potencies21 }
+                , { weapon: weapon22, potenciesAtOb10: potencies22 }
                 ]
             }
           , { filter: filter3
             , matchingWeapons:
-                [ weapon31
+                [ { weapon: weapon31, potenciesAtOb10: potencies31 }
                 ]
             }
           ]
 
       combs `shouldEqualPretty`
-        [ [ { filter: filter1, weapon: weapon12 }
-          , { filter: filter2, weapon: weapon21 }
-          , { filter: filter3, weapon: weapon31 }
+        [ [ { filter: filter1, weapon: weapon12, potenciesAtOb10: potencies12 }
+          , { filter: filter2, weapon: weapon21, potenciesAtOb10: potencies21 }
+          , { filter: filter3, weapon: weapon31, potenciesAtOb10: potencies31 }
           ]
-        , [ { filter: filter1, weapon: weapon12 }
-          , { filter: filter2, weapon: weapon22 }
-          , { filter: filter3, weapon: weapon31 }
+        , [ { filter: filter1, weapon: weapon12, potenciesAtOb10: potencies12 }
+          , { filter: filter2, weapon: weapon22, potenciesAtOb10: potencies22 }
+          , { filter: filter3, weapon: weapon31, potenciesAtOb10: potencies31 }
           ]
-        , [ { filter: filter1, weapon: weapon13 }
-          , { filter: filter2, weapon: weapon21 }
-          , { filter: filter3, weapon: weapon31 }
+        , [ { filter: filter1, weapon: weapon13, potenciesAtOb10: potencies13 }
+          , { filter: filter2, weapon: weapon21, potenciesAtOb10: potencies21 }
+          , { filter: filter3, weapon: weapon31, potenciesAtOb10: potencies31 }
           ]
-        , [ { filter: filter1, weapon: weapon13 }
-          , { filter: filter2, weapon: weapon22 }
-          , { filter: filter3, weapon: weapon31 }
+        , [ { filter: filter1, weapon: weapon13, potenciesAtOb10: potencies13 }
+          , { filter: filter2, weapon: weapon22, potenciesAtOb10: potencies22 }
+          , { filter: filter3, weapon: weapon31, potenciesAtOb10: potencies31 }
           ]
         ]
 
@@ -157,13 +165,19 @@ assignWeaponsToCharactersSpec = do
 
     let redWeapon1 = mkWeapon (nes @"Red XIII 1") (nes @"Red XIII")
 
+    let potencies1 = Just { base: Low, max: Low }
+    let potencies2 = Just { base: Low, max: Mid }
+    let potencies3 = Just { base: Low, max: High }
+    let potencies4 = Just { base: Mid, max: Mid }
+    let potencies5 = Just { base: Mid, max: High }
+
     it "assigns weapons correctly" do
       let
         combination =
-          [ { filter: filter1, weapon: tifaWeapon1 }
-          , { filter: filter2, weapon: tifaWeapon2 }
-          , { filter: filter3, weapon: vincentWeapon1 }
-          , { filter: filter4, weapon: vincentWeapon2 }
+          [ { filter: filter1, weapon: tifaWeapon1, potenciesAtOb10: potencies1 }
+          , { filter: filter2, weapon: tifaWeapon2, potenciesAtOb10: potencies2 }
+          , { filter: filter3, weapon: vincentWeapon1, potenciesAtOb10: potencies3 }
+          , { filter: filter4, weapon: vincentWeapon2, potenciesAtOb10: potencies4 }
           ]
 
       Search.assignWeaponsToCharacters 3 combination `shouldEqualPretty`
@@ -174,22 +188,22 @@ assignWeaponsToCharactersSpec = do
                       { name: CharacterName $ nes @"Tifa"
                       , mainHand:
                           { weapon: tifaWeapon1
-                          , matchedFilters: [ filter1 ]
+                          , matchedFilters: [ { filter: filter1, potenciesAtOb10: potencies1 } ]
                           }
                       , offHand: Just
                           { weapon: tifaWeapon2
-                          , matchedFilters: [ filter2 ]
+                          , matchedFilters: [ { filter: filter2, potenciesAtOb10: potencies2 } ]
                           }
                       }
                   , Tuple "Vincent"
                       { name: CharacterName $ nes @"Vincent"
                       , mainHand:
                           { weapon: vincentWeapon1
-                          , matchedFilters: [ filter3 ]
+                          , matchedFilters: [ { filter: filter3, potenciesAtOb10: potencies3 } ]
                           }
                       , offHand: Just
                           { weapon: vincentWeapon2
-                          , matchedFilters: [ filter4 ]
+                          , matchedFilters: [ { filter: filter4, potenciesAtOb10: potencies4 } ]
                           }
                       }
                   ]
@@ -199,11 +213,11 @@ assignWeaponsToCharactersSpec = do
     it "handles a weapon matching on 2 or more effects" do
       let
         combination =
-          [ { filter: filter1, weapon: tifaWeapon1 }
-          , { filter: filter2, weapon: tifaWeapon1 }
-          , { filter: filter3, weapon: tifaWeapon2 }
-          , { filter: filter4, weapon: tifaWeapon2 }
-          , { filter: filter5, weapon: vincentWeapon1 }
+          [ { filter: filter1, weapon: tifaWeapon1, potenciesAtOb10: potencies1 }
+          , { filter: filter2, weapon: tifaWeapon1, potenciesAtOb10: potencies2 }
+          , { filter: filter3, weapon: tifaWeapon2, potenciesAtOb10: potencies3 }
+          , { filter: filter4, weapon: tifaWeapon2, potenciesAtOb10: potencies4 }
+          , { filter: filter5, weapon: vincentWeapon1, potenciesAtOb10: potencies5 }
           ]
 
       Search.assignWeaponsToCharacters 3 combination `shouldEqualPretty`
@@ -214,18 +228,26 @@ assignWeaponsToCharactersSpec = do
                       { name: CharacterName $ nes @"Tifa"
                       , mainHand:
                           { weapon: tifaWeapon1
-                          , matchedFilters: [ filter2, filter1 ]
+                          , matchedFilters:
+                              [ { filter: filter2, potenciesAtOb10: potencies2 }
+                              , { filter: filter1, potenciesAtOb10: potencies1 }
+                              ]
                           }
                       , offHand: Just
                           { weapon: tifaWeapon2
-                          , matchedFilters: [ filter4, filter3 ]
+                          , matchedFilters:
+                              [ { filter: filter4, potenciesAtOb10: potencies4 }
+                              , { filter: filter3, potenciesAtOb10: potencies3 }
+                              ]
                           }
                       }
                   , Tuple "Vincent"
                       { name: CharacterName $ nes @"Vincent"
                       , mainHand:
                           { weapon: vincentWeapon1
-                          , matchedFilters: [ filter5 ]
+                          , matchedFilters:
+                              [ { filter: filter5, potenciesAtOb10: potencies5 }
+                              ]
                           }
                       , offHand: Nothing
                       }
@@ -236,9 +258,9 @@ assignWeaponsToCharactersSpec = do
     it "fails if more than 2 weapons were selected for the same character" do
       let
         combination =
-          [ { filter: filter1, weapon: tifaWeapon1 }
-          , { filter: filter2, weapon: tifaWeapon2 }
-          , { filter: filter3, weapon: tifaWeapon3 }
+          [ { filter: filter1, weapon: tifaWeapon1, potenciesAtOb10: potencies1 }
+          , { filter: filter2, weapon: tifaWeapon2, potenciesAtOb10: potencies2 }
+          , { filter: filter3, weapon: tifaWeapon3, potenciesAtOb10: potencies3 }
           ]
 
       Null.toNullable (Search.assignWeaponsToCharacters 3 combination) `shouldEqualPretty` null
@@ -246,9 +268,9 @@ assignWeaponsToCharactersSpec = do
     it "fails if more than 2 characters were selected" do
       let
         combination =
-          [ { filter: filter1, weapon: tifaWeapon1 }
-          , { filter: filter2, weapon: vincentWeapon1 }
-          , { filter: filter3, weapon: redWeapon1 }
+          [ { filter: filter1, weapon: tifaWeapon1, potenciesAtOb10: potencies1 }
+          , { filter: filter2, weapon: vincentWeapon1, potenciesAtOb10: potencies2 }
+          , { filter: filter3, weapon: redWeapon1, potenciesAtOb10: potencies3 }
           ]
 
       Null.toNullable (Search.assignWeaponsToCharacters 2 combination) `shouldEqualPretty` null

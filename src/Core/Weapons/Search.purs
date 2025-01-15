@@ -3,7 +3,7 @@ module Core.Weapons.Search where
 import Core.Weapons.Types
 import Prelude
 
-import Core.Armory (Armory, ArmoryWeapon, Filter, FilterEffectType(..), GroupedWeapon)
+import Core.Armory (Armory, ArmoryWeapon, Filter, GroupedWeapon)
 import Core.Display (display)
 import Data.Array as Arr
 import Data.Function (on)
@@ -16,15 +16,17 @@ import Utils (unsafeFromJust)
 
 type FilterResult =
   { filter :: Filter
-  , matchingWeaponsAndPotencies :: Array WeaponAndPotency
+  , matchingWeapons :: Array FilterResultWeapon
   }
 
-type WeaponAndPotency =
+type FilterResultWeapon =
   { weapon :: ArmoryWeapon
   , potenciesAtOb10 :: Maybe Potencies
   }
 
-type Combination = Array
+type Combination = Array CombinationItem
+
+type CombinationItem =
   { filter :: Filter
   , weapon :: ArmoryWeapon
   , potenciesAtOb10 :: Maybe Potencies
@@ -33,15 +35,15 @@ type Combination = Array
 findMatchingWeapons :: Filter -> Armory -> FilterResult
 findMatchingWeapons filter armory = do
   let
-    matchingWeapons = Map.lookup filter armory.groupedByEffect # fromMaybe [] :: Array GroupedWeapon
+    matchingGroupedWeapons = Map.lookup filter armory.groupedByEffect # fromMaybe [] :: Array GroupedWeapon
 
-    matchingWeaponsAndPotencies = matchingWeapons <#> \{ weaponName, potenciesAtOb10 } -> do
+    matchingWeapons = matchingGroupedWeapons <#> \{ weaponName, potenciesAtOb10 } -> do
       let weapon = Map.lookup weaponName armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
       { weapon
       , potenciesAtOb10
       }
   { filter
-  , matchingWeaponsAndPotencies
+  , matchingWeapons
   }
 
 search :: Int -> Array Filter -> Armory -> Array AssignmentResult
@@ -58,16 +60,23 @@ combinations results =
     # Arr.nubBy (compare `on` _.filter)
     # Arr.foldr
         ( \(filterResult :: FilterResult) (combinations :: Array Combination) -> do
-            { weapon, potenciesAtOb10 } <- filterResult.matchingWeaponsAndPotencies
+            { weapon, potenciesAtOb10 } <- filterResult.matchingWeapons
               # discardIgnored
             (combination :: Combination) <- combinations
 
-            [ Arr.cons { filter: filterResult.filter, weapon, potenciesAtOb10 } combination ]
+            let combinationItem = { filter: filterResult.filter, weapon, potenciesAtOb10 }
+
+            [ Arr.cons combinationItem combination ]
         )
         ([ [] ] :: Array Combination)
   where
-  discardIgnored :: Array WeaponAndPotency -> Array WeaponAndPotency
+  discardIgnored :: Array FilterResultWeapon -> Array FilterResultWeapon
   discardIgnored = Arr.filter \{ weapon } -> not weapon.ignored
+
+type AssignmentResult =
+  { -- | Characters indexed by their name.
+    characters :: Map String Character
+  }
 
 type Character =
   { name :: CharacterName
@@ -78,12 +87,12 @@ type Character =
 type EquipedWeapon =
   { weapon :: ArmoryWeapon
   -- The filters that this weapon matched on.
-  , matchedFilters :: Array Filter
+  , matchedFilters :: Array EquipedWeaponFilter
   }
 
-type AssignmentResult =
-  { -- | Characters indexed by their name.
-    characters :: Map String Character
+type EquipedWeaponFilter =
+  { filter :: Filter
+  , potenciesAtOb10 :: Maybe Potencies
   }
 
 -- Attempts to equip the selected weapons to, at maximum, `n` characters.
@@ -95,8 +104,8 @@ assignWeaponsToCharacters :: Int -> Combination -> Maybe AssignmentResult
 assignWeaponsToCharacters maxCharacterCount combs =
   combs
     # Arr.foldRecM
-        ( \assignments { filter, weapon } ->
-            assignWeapon filter weapon assignments
+        ( \assignments { filter, weapon, potenciesAtOb10 } ->
+            assignWeapon { filter, potenciesAtOb10 } weapon assignments
         )
         { characters: Map.empty }
   where
@@ -104,7 +113,7 @@ assignWeaponsToCharacters maxCharacterCount combs =
   -- Returns `Nothing` if:
   --  * There are more than 2 weapons for any character.
   --  * The selected weapons belong to more than `n` characters.
-  assignWeapon :: Filter -> ArmoryWeapon -> AssignmentResult -> Maybe AssignmentResult
+  assignWeapon :: EquipedWeaponFilter -> ArmoryWeapon -> AssignmentResult -> Maybe AssignmentResult
   assignWeapon filter weapon assignments = do
     let
       characterName = weapon.character :: CharacterName
@@ -121,7 +130,7 @@ assignWeaponsToCharacters maxCharacterCount combs =
           pure $ Map.insert characterName' updatedCharacter assignments.characters
     Just $ assignments { characters = updatedCharacters }
 
-  mkCharacter :: CharacterName -> ArmoryWeapon -> Filter -> Character
+  mkCharacter :: CharacterName -> ArmoryWeapon -> EquipedWeaponFilter -> Character
   mkCharacter name mainHandWeapon matchedFilter =
     { name
     , mainHand:
@@ -131,7 +140,7 @@ assignWeaponsToCharacters maxCharacterCount combs =
     , offHand: Nothing
     }
 
-  equipWeapon :: ArmoryWeapon -> Filter -> Character -> Maybe Character
+  equipWeapon :: ArmoryWeapon -> EquipedWeaponFilter -> Character -> Maybe Character
   equipWeapon weapon filter character = do
     -- If this weapon is already equiped in the main hand, simply update `matchedFilters`
     if character.mainHand.weapon.name == weapon.name then Just character { mainHand = addMatchedFilter filter character.mainHand }
@@ -152,7 +161,7 @@ assignWeaponsToCharacters maxCharacterCount combs =
                 }
             }
 
-  addMatchedFilter :: Filter -> EquipedWeapon -> EquipedWeapon
+  addMatchedFilter :: EquipedWeaponFilter -> EquipedWeapon -> EquipedWeapon
   addMatchedFilter matchedFilter weapon =
     weapon { matchedFilters = Arr.cons matchedFilter weapon.matchedFilters }
 

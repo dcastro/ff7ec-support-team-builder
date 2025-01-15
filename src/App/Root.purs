@@ -68,7 +68,7 @@ render state =
     Loaded { armory, teams, maxCharacterCount } ->
       HH.div_
         [ HH.section [ classes' "section" ]
-            [ HH.div [ classes' "fixed-grid has-3-cols has-1-cols-mobile" ]
+            [ HH.div [ classes' "fixed-grid has-3-cols-widescreen has-2-cols-tablet has-1-cols-mobile" ]
                 [ HH.div [ classes' "grid" ]
                     [ HH.div [ classes' "cell" ] [ HH.slot _effectSelector 0 EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector ]
                     , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 1 EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector ]

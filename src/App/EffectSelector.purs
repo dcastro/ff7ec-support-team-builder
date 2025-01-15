@@ -70,47 +70,62 @@ component =
 render :: forall cs m. State -> H.ComponentHTML Action cs m
 render state =
   HH.div [ classes' "box" ]
-    [ HH.div [ classes' "select" ]
-        [ HH.select
-            [ HE.onSelectedIndexChange SelectedEffectType
-            ]
-            ( [ HH.option_ [ HH.text "Select a weapon effect..." ] ]
-                <>
-                  ( Armory.allFilterEffectTypes <#> \effectType -> do
-                      let selected = state.selectedEffectType == Just effectType
-                      HH.option [ HP.selected selected ] [ HH.text $ display effectType ]
-                  )
-            )
-        ]
-    , HH.div [ classes' "select" ]
-        [ HH.select
-            [ HE.onSelectedIndexChange SelectedRange
-            ]
-            ( Armory.allFilterRanges <#> \filterRange ->
-                HH.option_ [ HH.text $ display filterRange ]
-            )
-        ]
+    [ HH.div [ classes' "columns is-mobile is-centered" ]
+        [ HH.div [ classes' "column is-narrow" ]
+            [ HH.div [ classes' "select" ]
+                [ HH.select
+                    [ HE.onSelectedIndexChange SelectedEffectType
+                    ]
+                    ( [ HH.option_ [ HH.text "Select a weapon effect..." ] ]
+                        <>
+                          ( Armory.allFilterEffectTypes <#> \effectType -> do
+                              let selected = state.selectedEffectType == Just effectType
+                              HH.option [ HP.selected selected ] [ HH.text $ display effectType ]
+                          )
+                    )
+                ]
+            , HH.div [ classes' "select" ]
+                [ HH.select
+                    [ HE.onSelectedIndexChange SelectedRange
+                    ]
+                    ( Armory.allFilterRanges <#> \filterRange ->
+                        HH.option_ [ HH.text $ display filterRange ]
+                    )
+                ]
 
-    , HH.div_
-        [ HH.table [ classes' "table" ]
-            [ HH.tbody_ $
-                state.matchingWeapons <#> \weapon ->
-                  HH.tr_
-                    [ HH.img [ HP.src (display weapon.image), classes' "image is-32x32" ]
-                    , HH.td
-                        [ tooltip (mkTooltipForWeapon weapon), classes' "has-tooltip-right" ]
-                        [ HH.text $ display weapon.name ]
-                    , HH.td_ [ HH.text $ display weapon.character ]
-                    , HH.td_
-                        [ HH.span [ classes' "checkbox " ]
-                            [ HH.input
-                                [ HP.type_ InputCheckbox
-                                , HP.checked weapon.ignored
-                                , HE.onChecked \ignored -> CheckedIgnored weapon.name ignored
+            , HH.div [ classes' "columns is-mobile is-centered" ]
+                [ HH.div [ classes' "column is-narrow" ]
+                    [ HH.table [ classes' "table" ]
+                        [ HH.tbody_ $
+                            [ HH.tr_
+                                [ HH.th_ []
+                                , HH.th_ [ HH.text "Weapon" ]
+                                , HH.th_ [ HH.text "Character" ]
+                                , HH.th_ [ HH.text "Ignored?" ]
                                 ]
                             ]
+                              <>
+                                ( state.matchingWeapons <#> \weapon ->
+                                    HH.tr_
+                                      [ HH.img [ HP.src (display weapon.image), classes' "image is-32x32" ]
+                                      , HH.td
+                                          [ tooltip (mkTooltipForWeapon weapon), classes' "has-tooltip-right" ]
+                                          [ HH.text $ display weapon.name ]
+                                      , HH.td_ [ HH.text $ display weapon.character ]
+                                      , HH.td_
+                                          [ HH.span [ classes' "checkbox " ]
+                                              [ HH.input
+                                                  [ HP.type_ InputCheckbox
+                                                  , HP.checked weapon.ignored
+                                                  , HE.onChecked \ignored -> CheckedIgnored weapon.name ignored
+                                                  ]
+                                              ]
+                                          ]
+                                      ]
+                                )
                         ]
                     ]
+                ]
             ]
         ]
     ]

@@ -54,8 +54,8 @@ component =
 
 render :: forall cs m. State -> H.ComponentHTML Action cs m
 render state =
-  HH.div [ classes' "columns" ]
-    [ HH.div [ classes' "column is-half-desktop is-offset-one-quarter-desktop" ] $
+  HH.div [ classes' "columns is-centered" ]
+    [ HH.div [ classes' "column is-half-desktop" ] $
         state.teams <#> \team ->
           HH.div [ classes' "box" ] $
             Map.values team.characters # Arr.fromFoldable <#> \character ->

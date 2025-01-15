@@ -175,7 +175,9 @@ updateMatchingWeapons state = do
   case state.selectedEffectType of
     Just effectType -> do
       let filter = { effectType, range: state.selectedRange } :: Filter
-      state { matchingWeapons = Search.findMatchingWeapons filter state.armory }
+      let filterResult = Search.findMatchingWeapons filter state.armory
+      let matchingWeapons = filterResult.matchingWeaponsAndPotencies <#> \{ weapon } -> weapon
+      state { matchingWeapons = matchingWeapons }
     Nothing -> state { matchingWeapons = [] }
 
 handleQuery :: forall action a m. Query a -> H.HalogenM State action () Output m (Maybe a)

@@ -43,13 +43,23 @@ import Yoga.JSON.Generics.EnumSumRep as Enum
 
 type Armory =
   { allWeapons :: Map WeaponName ArmoryWeapon
-  , groupedByEffect :: Map Filter (Array WeaponName)
-
+  , groupedByEffect :: Map Filter (Array GroupedWeapon)
   }
 
 type SerializableArmory =
   { allWeapons :: MapAsArray WeaponName ArmoryWeapon
-  , groupedByEffect :: MapAsArray Filter (Array WeaponName)
+  , groupedByEffect :: MapAsArray Filter (Array GroupedWeapon)
+  }
+
+type GroupedWeapon =
+  { weaponName :: WeaponName
+  , potenciesAtOb10 :: Maybe Potencies
+  }
+
+type GroupEntry =
+  { filter :: Filter
+  , weaponName :: WeaponName
+  , potenciesAtOb10 :: Maybe Potencies
   }
 
 type ArmoryWeapon =
@@ -225,35 +235,35 @@ insertWeapon weapon existingWeapons armory =
       armory
       matchingFilters
 
-  matchingEffectType :: EffectType -> Maybe FilterEffectType
+  matchingEffectType :: EffectType -> Maybe { effectType :: FilterEffectType, potencies :: Maybe Potencies }
   matchingEffectType = case _ of
     Heal { percentage } ->
-      if unwrap percentage >= 35 then Just FilterHeal
+      if unwrap percentage >= 35 then Just { effectType: FilterHeal, potencies: Nothing }
       else Nothing
     -- Buffs
-    Veil -> Just FilterVeil
-    Provoke -> Just FilterProvoke
-    PatkUp _ -> Just FilterPatkUp
-    MatkUp _ -> Just FilterMatkUp
-    PdefUp _ -> Just FilterPdefUp
-    MdefUp _ -> Just FilterMdefUp
-    FireDamageUp _ -> Just FilterFireDamageUp
-    IceDamageUp _ -> Just FilterIceDamageUp
-    ThunderDamageUp _ -> Just FilterThunderDamageUp
-    EarthDamageUp _ -> Just FilterEarthDamageUp
-    WaterDamageUp _ -> Just FilterWaterDamageUp
-    WindDamageUp _ -> Just FilterWindDamageUp
+    Veil -> Just { effectType: FilterVeil, potencies: Nothing }
+    Provoke -> Just { effectType: FilterProvoke, potencies: Nothing }
+    PatkUp potencies -> Just { effectType: FilterPatkUp, potencies: Just potencies }
+    MatkUp potencies -> Just { effectType: FilterMatkUp, potencies: Just potencies }
+    PdefUp potencies -> Just { effectType: FilterPdefUp, potencies: Just potencies }
+    MdefUp potencies -> Just { effectType: FilterMdefUp, potencies: Just potencies }
+    FireDamageUp potencies -> Just { effectType: FilterFireDamageUp, potencies: Just potencies }
+    IceDamageUp potencies -> Just { effectType: FilterIceDamageUp, potencies: Just potencies }
+    ThunderDamageUp potencies -> Just { effectType: FilterThunderDamageUp, potencies: Just potencies }
+    EarthDamageUp potencies -> Just { effectType: FilterEarthDamageUp, potencies: Just potencies }
+    WaterDamageUp potencies -> Just { effectType: FilterWaterDamageUp, potencies: Just potencies }
+    WindDamageUp potencies -> Just { effectType: FilterWindDamageUp, potencies: Just potencies }
     -- Debuffs
-    PatkDown _ -> Just FilterPatkDown
-    MatkDown _ -> Just FilterMatkDown
-    PdefDown _ -> Just FilterPdefDown
-    MdefDown _ -> Just FilterMdefDown
-    FireResistDown _ -> Just FilterFireResistDown
-    IceResistDown _ -> Just FilterIceResistDown
-    ThunderResistDown _ -> Just FilterThunderResistDown
-    EarthResistDown _ -> Just FilterEarthResistDown
-    WaterResistDown _ -> Just FilterWaterResistDown
-    WindResistDown _ -> Just FilterWindResistDown
+    PatkDown potencies -> Just { effectType: FilterPatkDown, potencies: Just potencies }
+    MatkDown potencies -> Just { effectType: FilterMatkDown, potencies: Just potencies }
+    PdefDown potencies -> Just { effectType: FilterPdefDown, potencies: Just potencies }
+    MdefDown potencies -> Just { effectType: FilterMdefDown, potencies: Just potencies }
+    FireResistDown potencies -> Just { effectType: FilterFireResistDown, potencies: Just potencies }
+    IceResistDown potencies -> Just { effectType: FilterIceResistDown, potencies: Just potencies }
+    ThunderResistDown potencies -> Just { effectType: FilterThunderResistDown, potencies: Just potencies }
+    EarthResistDown potencies -> Just { effectType: FilterEarthResistDown, potencies: Just potencies }
+    WaterResistDown potencies -> Just { effectType: FilterWaterResistDown, potencies: Just potencies }
+    WindResistDown potencies -> Just { effectType: FilterWindResistDown, potencies: Just potencies }
 
   matchingRanges :: Range -> Array FilterRange
   matchingRanges = case _ of
@@ -261,26 +271,37 @@ insertWeapon weapon existingWeapons armory =
     SingleTarget -> [ FilterSelfOrSingleTargetOrAll, FilterSingleTargetOrAll ]
     All -> [ FilterSelfOrSingleTargetOrAll, FilterSingleTargetOrAll, FilterAll ]
 
-  matchingFilters' :: WeaponEffect -> Array Filter
+  matchingFilters' :: WeaponEffect -> Array GroupEntry
   matchingFilters' { effectType, range } = do
     range <- matchingRanges range
-    effectType <- Unfoldable.fromMaybe $ matchingEffectType effectType
-    pure { effectType, range }
+    { effectType, potencies } <- Unfoldable.fromMaybe $ matchingEffectType effectType
+    pure
+      { filter: { effectType, range }
+      , weaponName: weapon.name
+      , potenciesAtOb10: potencies
+      }
 
-  matchingFilters :: Set Filter
+  matchingFilters :: Set GroupEntry
   matchingFilters = do
-    let filters = Set.fromFoldable $ weapon.ob10.effects >>= \effect -> matchingFilters' effect
-    if weapon.cureAllAbility then
-      Set.insert { effectType: FilterHeal, range: FilterAll } filters
-    else filters
+    let groupEntries = Set.fromFoldable $ weapon.ob10.effects >>= \effect -> matchingFilters' effect
 
-  addToGroup :: Filter -> Armory -> Armory
-  addToGroup filter armory = do
+    if weapon.cureAllAbility then
+      Set.insert
+        { filter: { effectType: FilterHeal, range: FilterAll }
+        , weaponName: weapon.name
+        , potenciesAtOb10: Nothing
+        }
+        groupEntries
+    else groupEntries
+
+  addToGroup :: GroupEntry -> Armory -> Armory
+  addToGroup { filter, weaponName, potenciesAtOb10 } armory = do
     let
+      groupedWeapon = { weaponName, potenciesAtOb10 } :: GroupedWeapon
       groupedByEffect = Map.alter
         ( case _ of
-            Just weapons -> Just $ Arr.snoc weapons weapon.name
-            Nothing -> Just [ weapon.name ]
+            Just weapons -> Just $ Arr.snoc weapons groupedWeapon
+            Nothing -> Just [ groupedWeapon ]
         )
         filter
         armory.groupedByEffect

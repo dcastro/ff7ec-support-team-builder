@@ -95,6 +95,7 @@ derive newtype instance Eq Percentage
 derive newtype instance Eq CharacterName
 derive newtype instance Eq WeaponName
 
+derive instance Ord Potency
 derive newtype instance Ord WeaponName
 
 derive instance Newtype Percentage _

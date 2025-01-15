@@ -3,7 +3,7 @@ module Core.Weapons.Search where
 import Core.Weapons.Types
 import Prelude
 
-import Core.Armory (ArmoryWeapon, Filter, Armory)
+import Core.Armory (Armory, ArmoryWeapon, Filter, FilterEffectType(..), GroupedWeapon)
 import Core.Display (display)
 import Data.Array as Arr
 import Data.Function (on)
@@ -16,27 +16,37 @@ import Utils (unsafeFromJust)
 
 type FilterResult =
   { filter :: Filter
-  , matchingWeapons :: Array ArmoryWeapon
+  , matchingWeaponsAndPotencies :: Array WeaponAndPotency
+  }
+
+type WeaponAndPotency =
+  { weapon :: ArmoryWeapon
+  , potenciesAtOb10 :: Maybe Potencies
   }
 
 type Combination = Array
   { filter :: Filter
   , weapon :: ArmoryWeapon
+  , potenciesAtOb10 :: Maybe Potencies
   }
 
-findMatchingWeapons :: Filter -> Armory -> Array ArmoryWeapon
+findMatchingWeapons :: Filter -> Armory -> FilterResult
 findMatchingWeapons filter armory = do
-  let matchingWeaponNames = Map.lookup filter armory.groupedByEffect # fromMaybe [] :: Array WeaponName
-  matchingWeaponNames <#> \weaponName ->
-    Map.lookup weaponName armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
+  let
+    matchingWeapons = Map.lookup filter armory.groupedByEffect # fromMaybe [] :: Array GroupedWeapon
+
+    matchingWeaponsAndPotencies = matchingWeapons <#> \{ weaponName, potenciesAtOb10 } -> do
+      let weapon = Map.lookup weaponName armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
+      { weapon
+      , potenciesAtOb10
+      }
+  { filter
+  , matchingWeaponsAndPotencies
+  }
 
 search :: Int -> Array Filter -> Armory -> Array AssignmentResult
 search maxCharacterCount filters armory = do
-  let
-    filterResults = filters <#> \filter ->
-      { filter
-      , matchingWeapons: findMatchingWeapons filter armory
-      } :: FilterResult
+  let filterResults = filters <#> \filter -> findMatchingWeapons filter armory
 
   let combs = combinations filterResults :: Array Combination
 
@@ -48,15 +58,16 @@ combinations results =
     # Arr.nubBy (compare `on` _.filter)
     # Arr.foldr
         ( \(filterResult :: FilterResult) (combinations :: Array Combination) -> do
-            (weapon :: ArmoryWeapon) <- filterResult.matchingWeapons
+            { weapon, potenciesAtOb10 } <- filterResult.matchingWeaponsAndPotencies
               # discardIgnored
             (combination :: Combination) <- combinations
-            [ Arr.cons { filter: filterResult.filter, weapon } combination ]
+
+            [ Arr.cons { filter: filterResult.filter, weapon, potenciesAtOb10 } combination ]
         )
         ([ [] ] :: Array Combination)
   where
-  discardIgnored :: Array ArmoryWeapon -> Array ArmoryWeapon
-  discardIgnored = Arr.filter \weapon -> not weapon.ignored
+  discardIgnored :: Array WeaponAndPotency -> Array WeaponAndPotency
+  discardIgnored = Arr.filter \{ weapon } -> not weapon.ignored
 
 type Character =
   { name :: CharacterName

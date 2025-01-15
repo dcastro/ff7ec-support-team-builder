@@ -81,11 +81,12 @@ render state =
             ]
         , HH.section [ classes' "section" ]
             [ HH.h1 [ classes' "title is-2 has-text-centered" ] [ HH.text "Teams " ]
-            , HH.div_
-                [ HH.label []
-                    [ HH.text
-                        "Maximum number of characters: "
-                    , HH.div [ classes' "select" ]
+            , HH.div [ classes' "columns is-mobile is-centered is-vcentered" ]
+                [ HH.div [ classes' "column is-narrow" ]
+                    [ HH.text "Maximum number of characters: "
+                    ]
+                , HH.div [ classes' "column is-narrow" ]
+                    [ HH.div [ classes' "select" ]
                         [ HH.select
                             [ HE.onSelectedIndexChange SelectedMaxCharacterCount
                             ]

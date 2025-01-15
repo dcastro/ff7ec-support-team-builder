@@ -2,8 +2,9 @@ module Core.Weapons.Types where
 
 import Prelude
 
+import Core.Display (class Display, display)
 import Data.Generic.Rep (class Generic)
-import Data.Newtype (class Newtype)
+import Data.Newtype (class Newtype, unwrap)
 import Data.Show.Generic (genericShow)
 import Data.String.NonEmpty (NonEmptyString)
 import Yoga.JSON (class ReadForeign, class WriteForeign)
@@ -140,3 +141,9 @@ instance ReadForeign Potency where
 derive newtype instance ReadForeign Percentage
 derive newtype instance ReadForeign CharacterName
 derive newtype instance ReadForeign WeaponName
+
+instance Display WeaponName where
+  display = display <<< unwrap
+
+instance Display CharacterName where
+  display = display <<< unwrap

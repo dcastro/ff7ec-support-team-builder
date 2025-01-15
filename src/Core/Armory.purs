@@ -6,6 +6,7 @@ import Prelude
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Control.Monad.Except (runExceptT)
 import Control.Monad.Rec.Class (class MonadRec)
+import Core.Display (class Display, display)
 import Core.Weapons.Parser as P
 import Core.WebStorage as WS
 import Data.Array as Arr
@@ -100,6 +101,12 @@ instance ReadForeign FilterRange where
 allFilterRanges :: Array FilterRange
 allFilterRanges = Utils.listEnum
 
+instance Display FilterRange where
+  display = case _ of
+    FilterAll -> "All"
+    FilterSingleTargetOrAll -> "Single Target / All"
+    FilterSelfOrSingleTargetOrAll -> "Self / Single Target / All"
+
 data FilterEffectType
   = FilterHeal
   -- Buffs
@@ -141,6 +148,34 @@ instance ReadForeign FilterEffectType where
 
 allFilterEffectTypes :: Array FilterEffectType
 allFilterEffectTypes = Utils.listEnum
+
+instance Display FilterEffectType where
+  display = case _ of
+    FilterHeal -> "Heal"
+    -- Buffs
+    FilterPatkUp -> "PATK up"
+    FilterMatkUp -> "MATK up"
+    FilterPdefUp -> "PDEF up"
+    FilterMdefUp -> "MDEF up"
+    FilterFireDamageUp -> "Fire damage up"
+    FilterIceDamageUp -> "Ice damage up"
+    FilterThunderDamageUp -> "Thunder damage up"
+    FilterEarthDamageUp -> "Earth damage up"
+    FilterWaterDamageUp -> "Water damage up"
+    FilterWindDamageUp -> "Wind damage up"
+    FilterVeil -> "Veil"
+    FilterProvoke -> "Provoke"
+    -- Debuffs
+    FilterPatkDown -> "PATK down"
+    FilterMatkDown -> "MATK down"
+    FilterPdefDown -> "PDEF down"
+    FilterMdefDown -> "MDEF down"
+    FilterFireResistDown -> "Fire resist down"
+    FilterIceResistDown -> "Ice resist down"
+    FilterThunderResistDown -> "Thunder resist down"
+    FilterEarthResistDown -> "Earth resist down"
+    FilterWaterResistDown -> "Water resist down"
+    FilterWindResistDown -> "Wind resist down"
 
 init :: Aff (Maybe Armory)
 init = do
@@ -205,12 +240,12 @@ insertWeapon
 insertWeapon weapon existingWeapons armory =
   case Map.lookup weapon.name existingWeapons of
     Just existingWeapon -> do
-      Console.log $ "Weapon already exists, replacing it: " <> show weapon.name
+      Console.log $ "Weapon already exists, replacing it: " <> display weapon.name
       pure $ armory
         # mergeWithExisting existingWeapon
         # insertIntoGroups
     Nothing -> do
-      Console.log $ "Weapon added: " <> show weapon.name
+      Console.log $ "Weapon added: " <> display weapon.name
       pure $ armory
         # insert
         # insertIntoGroups

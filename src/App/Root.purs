@@ -79,8 +79,7 @@ render state =
                       [ HH.div [ classes' "cell" ]
                           [ HH.div [ classes' "box", HE.onClick AddEffectSelector ]
                               [ HH.div [ classes' "columns is-mobile is-centered" ]
-                                  [ HH.div [ classes' "column is-narrow" ]
-
+                                  [ HH.button [ classes' "column button" ]
                                       [ HH.span [ classes' "icon is-large" ]
                                           [ HH.i [ classes' "fas fa-plus fa-2x" ] []
                                           ]

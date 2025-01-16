@@ -6,11 +6,13 @@ import Prelude
 import Core.Armory (Armory, ArmoryWeapon, Filter, GroupedWeapon)
 import Core.Display (display)
 import Data.Array as Arr
+import Data.Foldable as F
 import Data.Function (on)
 import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Newtype (unwrap)
+import Data.Ord.Down (Down(..))
 import Data.String.NonEmpty as NES
 import Utils (unsafeFromJust)
 
@@ -52,7 +54,9 @@ search maxCharacterCount filters armory = do
 
   let combs = combinations filterResults :: Array Combination
 
-  combs # Arr.mapMaybe (assignWeaponsToCharacters maxCharacterCount)
+  combs
+    # Arr.mapMaybe (assignWeaponsToCharacters maxCharacterCount)
+    # Arr.sortBy (comparing $ scoreTeam >>> Down)
 
 combinations :: Array FilterResult -> Array Combination
 combinations results =
@@ -170,3 +174,50 @@ getEquipedWeapons char =
   case char.offHand of
     Just offHand -> [ char.mainHand, offHand ]
     Nothing -> [ char.mainHand ]
+
+data TeamScore = TeamScore
+  { maxPotenciesScore :: Int
+  , basePotenciesScore :: Int
+  , characterCountScore :: Int
+  , weaponCountScore :: Int
+  }
+
+derive instance Eq TeamScore
+
+instance Ord TeamScore where
+  compare (TeamScore x) (TeamScore y) = go x y
+    where
+    go =
+      -- NOTE: the order of these checks determines their precedence.
+      -- I.e. criteria are listed in order from most to least important.
+      Arr.fold
+        [ compare `on` _.maxPotenciesScore
+        , compare `on` _.basePotenciesScore
+        , compare `on` _.characterCountScore
+        , compare `on` _.weaponCountScore
+        ]
+
+scoreTeam :: AssignmentResult -> TeamScore
+scoreTeam { characters } = do
+  TeamScore
+    { maxPotenciesScore: allPotencies <#> (\pots -> scorePotency pots.max) # F.sum
+    , basePotenciesScore: allPotencies <#> (\pots -> scorePotency pots.base) # F.sum
+    , characterCountScore: negate characterCount
+    , weaponCountScore: negate weaponCount
+    }
+  where
+  allPotencies = Arr.fromFoldable (Map.values characters)
+    >>= getEquipedWeapons
+    >>= _.matchedFilters
+    # Arr.mapMaybe _.potenciesAtOb10
+
+  characterCount = Map.size characters
+
+  weaponCount = Map.values characters <#> (\char -> Arr.length $ getEquipedWeapons char) # F.sum
+
+  scorePotency :: Potency -> Int
+  scorePotency = case _ of
+    Low -> 1
+    Mid -> 2
+    High -> 3
+    ExtraHigh -> 4

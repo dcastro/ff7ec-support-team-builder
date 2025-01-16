@@ -71,31 +71,30 @@ render state =
     Loaded { armory, teams, maxCharacterCount, effectSelectorCount } ->
       HH.div_
         [ HH.section [ classes' "section" ]
-
-            [ HH.div [ classes' "columns is-mobile is-centered" ]
-                [ HH.div [ classes' "column" ]
-                    [ HH.div [ classes' "columns is-multiline" ] $
-                        ( Arr.range 0 (effectSelectorCount - 1) <#> \index ->
-                            HH.div [ classes' "column is-one-third-fullhd is-half-widescreen is-half-desktop is-full-tablet is-full-mobile" ]
-                              [ HH.div [ classes' "box", HP.style "height: 100%" ]
-                                  [ HH.slot _effectSelector index EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector
-                                  ]
-                              ]
-                        ) <>
-                          [ HH.div [ classes' "column is-one-third-fullhd is-half-widescreen is-half-desktop is-full-tablet is-full-mobile" ]
-                              [ HH.div [ classes' "box" ]
-                                  [ HH.div [ classes' "columns is-mobile is-centered" ]
-                                      [ HH.button [ classes' "column button", HE.onClick AddEffectSelector ]
-                                          [ HH.span [ classes' "icon is-large" ]
-                                              [ HH.i [ classes' "fas fa-plus fa-2x" ] []
-                                              ]
-                                          ]
+            -- Contains all the effect selectors + the plus button
+            [ HH.div [ classes' "columns is-mobile is-multiline" ] $
+                ( Arr.range 0 (effectSelectorCount - 1) <#> \index ->
+                    -- Contains an effect selector
+                    HH.div [ classes' "column is-one-third-fullhd is-half-widescreen is-half-desktop is-full-tablet is-full-mobile" ]
+                      [ HH.div [ classes' "box", HP.style "height: 100%" ]
+                          [ HH.slot _effectSelector index EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector
+                          ]
+                      ]
+                ) <>
+                  -- Contains the plus button
+                  [ HH.div [ classes' "column is-one-third-fullhd is-half-widescreen is-half-desktop is-full-tablet is-full-mobile" ]
+                      [ HH.div [ classes' "box" ]
+                          -- Single column used to center the plus button
+                          [ HH.div [ classes' "columns is-mobile is-centered" ]
+                              [ HH.button [ classes' "column button", HE.onClick AddEffectSelector ]
+                                  [ HH.span [ classes' "icon is-large" ]
+                                      [ HH.i [ classes' "fas fa-plus fa-2x" ] []
                                       ]
                                   ]
                               ]
                           ]
-                    ]
-                ]
+                      ]
+                  ]
             ]
         , HH.section [ classes' "section" ]
             [ HH.h1 [ classes' "title is-2 has-text-centered" ] [ HH.text "Teams " ]

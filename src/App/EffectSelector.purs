@@ -17,7 +17,7 @@ import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties (InputType(..))
 import Halogen.HTML.Properties as HP
-import HtmlUtils (classes', mkTooltipForWeapon, tooltip)
+import HtmlUtils (classes', displayIf, mkTooltipForWeapon, tooltip)
 import Utils (unsafeFromJust)
 
 type Slot id = H.Slot Query Output id
@@ -69,77 +69,81 @@ component =
 
 render :: forall cs m. State -> H.ComponentHTML Action cs m
 render state =
-  HH.div [ classes' "" ]
-    [ HH.div [ classes' "columns is-mobile is-centered" ]
-        [ HH.div [ classes' "column is-narrow" ]
-
-            [ HH.div [ classes' "columns is-mobile is-centered is-vcentered" ]
-                [ HH.div [ classes' "column is-narrow" ]
-
-                    [ HH.div [ classes' "columns is-centered" ]
-                        [ HH.div [ classes' "column is-narrow" ]
-                            [ HH.div [ classes' "select" ]
-                                [ HH.select
-                                    [ HE.onSelectedIndexChange SelectedEffectType
-                                    ]
-                                    ( [ HH.option_ [ HH.text "Select a weapon effect..." ] ]
-                                        <>
-                                          ( Armory.allFilterEffectTypes <#> \effectType -> do
-                                              let selected = state.selectedEffectType == Just effectType
-                                              HH.option [ HP.selected selected ] [ HH.text $ display effectType ]
-                                          )
-                                    )
+  HH.div [ classes' "columns is-mobile is-centered" ]
+    -- Single column used to center the entire contents of the effect selector
+    [ HH.div [ classes' "column is-narrow" ]
+        -- Contains 2 columns: one for the 2 selects + another for the delete button
+        -- vcentered so the delete button appears in line with the selects
+        [ HH.div [ classes' "columns is-mobile is-centered is-vcentered" ]
+            -- A column for the 2 selects
+            [ HH.div [ classes' "column is-narrow" ]
+                -- This `columns` is used to display the 2 selects side by side on wide screens
+                -- and stacked vertically on mobile
+                [ HH.div [ classes' "columns is-centered" ]
+                    [ HH.div [ classes' "column is-narrow" ]
+                        [ HH.div [ classes' "select" ]
+                            [ HH.select
+                                [ HE.onSelectedIndexChange SelectedEffectType
                                 ]
-                            ]
-                        , HH.div [ classes' "column is-narrow" ]
-                            [ HH.div [ classes' "select" ]
-                                [ HH.select
-                                    [ HE.onSelectedIndexChange SelectedRange
-                                    ]
-                                    ( Armory.allFilterRanges <#> \filterRange ->
-                                        HH.option_ [ HH.text $ display filterRange ]
-                                    )
-                                ]
+                                ( [ HH.option_ [ HH.text "Select a weapon effect..." ] ]
+                                    <>
+                                      ( Armory.allFilterEffectTypes <#> \effectType -> do
+                                          let selected = state.selectedEffectType == Just effectType
+                                          HH.option [ HP.selected selected ] [ HH.text $ display effectType ]
+                                      )
+                                )
                             ]
                         ]
-                    ]
-
-                , HH.div [ classes' "column is-narrow" ]
-                    [ HH.button [ classes' "delete is-medium" ] []
+                    , HH.div [ classes' "column is-narrow" ]
+                        [ HH.div [ classes' "select" ]
+                            [ HH.select
+                                [ HE.onSelectedIndexChange SelectedRange
+                                ]
+                                ( Armory.allFilterRanges <#> \filterRange ->
+                                    HH.option_ [ HH.text $ display filterRange ]
+                                )
+                            ]
+                        ]
                     ]
                 ]
 
-            , HH.div [ classes' "columns is-mobile is-centered" ]
-                [ HH.div [ classes' "column is-narrow" ]
-                    [ HH.table [ classes' "table" ]
-                        [ HH.tbody_ $
-                            [ HH.tr_
-                                [ HH.th_ []
-                                , HH.th_ [ HH.text "Weapon" ]
-                                , HH.th_ [ HH.text "Character" ]
-                                , HH.th_ [ HH.text "Ignored?" ]
-                                ]
+            -- A column for the delete button
+            , HH.div [ classes' "column is-narrow" ]
+                [ HH.button [ classes' "delete is-medium" ] []
+                ]
+            ]
+
+        -- Used to center the table
+        , HH.div [ classes' "columns is-mobile is-centered" ]
+            [ HH.div [ classes' "column is-narrow" ]
+                [ displayIf (not $ Arr.null state.matchingWeapons) $ HH.table [ classes' "table" ]
+                    [ HH.tbody_ $
+                        [ HH.tr_
+                            [ HH.th_ []
+                            , HH.th_ [ HH.text "Weapon" ]
+                            , HH.th_ [ HH.text "Character" ]
+                            , HH.th_ [ HH.text "Ignored?" ]
                             ]
-                              <>
-                                ( state.matchingWeapons <#> \weapon ->
-                                    HH.tr_
-                                      [ HH.img [ HP.src (display weapon.image), classes' "image is-32x32" ]
-                                      , HH.td
-                                          [ tooltip (mkTooltipForWeapon weapon), classes' "has-tooltip-right" ]
-                                          [ HH.text $ display weapon.name ]
-                                      , HH.td_ [ HH.text $ display weapon.character ]
-                                      , HH.td_
-                                          [ HH.span [ classes' "checkbox " ]
-                                              [ HH.input
-                                                  [ HP.type_ InputCheckbox
-                                                  , HP.checked weapon.ignored
-                                                  , HE.onChecked \ignored -> CheckedIgnored weapon.name ignored
-                                                  ]
+                        ]
+                          <>
+                            ( state.matchingWeapons <#> \weapon ->
+                                HH.tr_
+                                  [ HH.img [ HP.src (display weapon.image), classes' "image is-32x32" ]
+                                  , HH.td
+                                      [ tooltip (mkTooltipForWeapon weapon), classes' "has-tooltip-right" ]
+                                      [ HH.text $ display weapon.name ]
+                                  , HH.td_ [ HH.text $ display weapon.character ]
+                                  , HH.td_
+                                      [ HH.span [ classes' "checkbox " ]
+                                          [ HH.input
+                                              [ HP.type_ InputCheckbox
+                                              , HP.checked weapon.ignored
+                                              , HE.onChecked \ignored -> CheckedIgnored weapon.name ignored
                                               ]
                                           ]
                                       ]
-                                )
-                        ]
+                                  ]
+                            )
                     ]
                 ]
             ]

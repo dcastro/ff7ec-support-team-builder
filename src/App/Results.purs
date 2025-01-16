@@ -76,6 +76,7 @@ render state =
                                       [ tooltip (mkTooltipForWeapon weapon.weapon), classes' "has-tooltip-top" ]
                                       [ HH.text (display weapon.weapon.name)
                                       ]
+                                  -- TODO: display the applied effects next to each weapon
                                   ]
                               ]
                           ]

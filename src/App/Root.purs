@@ -71,8 +71,8 @@ render state =
     Loaded { armory, teams, maxCharacterCount, effectSelectorCount } ->
       HH.div_
         [ HH.section [ classes' "section" ]
-            [ HH.div [ classes' "fixed-grid has-3-cols-widescreen has-2-cols-tablet has-1-cols-mobile" ]
-                [ HH.div [ classes' "grid" ] $
+            [ HH.div [ classes' "" ]
+                [ HH.div [ classes' "grid is-col-min-25" ] $
                     ( Arr.range 0 (effectSelectorCount - 1) <#> \index ->
                         HH.slot _effectSelector index EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector
                     ) <>
@@ -108,7 +108,6 @@ render state =
                         ]
 
                     ]
-
                 ]
             , HH.slot_ _results unit Results.component teams
             ]

@@ -69,32 +69,38 @@ component =
 
 render :: forall cs m. State -> H.ComponentHTML Action cs m
 render state =
-  HH.div [ classes' "cell box" ]
+  HH.div [ classes' "" ]
     [ HH.div [ classes' "columns is-mobile is-centered" ]
         [ HH.div [ classes' "column is-narrow" ]
-            [ HH.div [ classes' "columns is-centered is-vcentered" ]
+
+            [ HH.div [ classes' "columns is-mobile is-centered is-vcentered" ]
                 [ HH.div [ classes' "column is-narrow" ]
-                    [ HH.div [ classes' "select" ]
-                        [ HH.select
-                            [ HE.onSelectedIndexChange SelectedEffectType
+
+                    [ HH.div [ classes' "columns is-centered" ]
+                        [ HH.div [ classes' "column is-narrow" ]
+                            [ HH.div [ classes' "select" ]
+                                [ HH.select
+                                    [ HE.onSelectedIndexChange SelectedEffectType
+                                    ]
+                                    ( [ HH.option_ [ HH.text "Select a weapon effect..." ] ]
+                                        <>
+                                          ( Armory.allFilterEffectTypes <#> \effectType -> do
+                                              let selected = state.selectedEffectType == Just effectType
+                                              HH.option [ HP.selected selected ] [ HH.text $ display effectType ]
+                                          )
+                                    )
+                                ]
                             ]
-                            ( [ HH.option_ [ HH.text "Select a weapon effect..." ] ]
-                                <>
-                                  ( Armory.allFilterEffectTypes <#> \effectType -> do
-                                      let selected = state.selectedEffectType == Just effectType
-                                      HH.option [ HP.selected selected ] [ HH.text $ display effectType ]
-                                  )
-                            )
-                        ]
-                    ]
-                , HH.div [ classes' "column is-narrow" ]
-                    [ HH.div [ classes' "select" ]
-                        [ HH.select
-                            [ HE.onSelectedIndexChange SelectedRange
+                        , HH.div [ classes' "column is-narrow" ]
+                            [ HH.div [ classes' "select" ]
+                                [ HH.select
+                                    [ HE.onSelectedIndexChange SelectedRange
+                                    ]
+                                    ( Armory.allFilterRanges <#> \filterRange ->
+                                        HH.option_ [ HH.text $ display filterRange ]
+                                    )
+                                ]
                             ]
-                            ( Armory.allFilterRanges <#> \filterRange ->
-                                HH.option_ [ HH.text $ display filterRange ]
-                            )
                         ]
                     ]
 

@@ -71,23 +71,30 @@ render state =
     Loaded { armory, teams, maxCharacterCount, effectSelectorCount } ->
       HH.div_
         [ HH.section [ classes' "section" ]
-            [ HH.div [ classes' "" ]
-                [ HH.div [ classes' "grid is-col-min-25" ] $
-                    ( Arr.range 0 (effectSelectorCount - 1) <#> \index ->
-                        HH.slot _effectSelector index EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector
-                    ) <>
-                      [ HH.div [ classes' "cell" ]
-                          [ HH.div [ classes' "box", HE.onClick AddEffectSelector ]
-                              [ HH.div [ classes' "columns is-mobile is-centered" ]
-                                  [ HH.button [ classes' "column button" ]
-                                      [ HH.span [ classes' "icon is-large" ]
-                                          [ HH.i [ classes' "fas fa-plus fa-2x" ] []
+
+            [ HH.div [ classes' "columns is-mobile is-centered" ]
+                [ HH.div [ classes' "column" ]
+                    [ HH.div [ classes' "columns is-multiline is-align-items-stretch is-align-content-stretch" ] $
+                        ( Arr.range 0 (effectSelectorCount - 1) <#> \index ->
+                            HH.div [ classes' "column is-half-desktop is-half-widescreen is-half-tablet is-full-mobile" ]
+                              [ HH.div [ classes' "box", HP.style "height: 100%" ]
+                                  [ HH.slot _effectSelector index EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector
+                                  ]
+                              ]
+                        ) <>
+                          [ HH.div [ classes' "column is-half-desktop is-half-widescreen is-half-tablet is-full-mobile" ]
+                              [ HH.div [ classes' "box" ]
+                                  [ HH.div [ classes' "columns is-mobile is-centered" ]
+                                      [ HH.button [ classes' "column button", HE.onClick AddEffectSelector ]
+                                          [ HH.span [ classes' "icon is-large" ]
+                                              [ HH.i [ classes' "fas fa-plus fa-2x" ] []
+                                              ]
                                           ]
                                       ]
                                   ]
                               ]
                           ]
-                      ]
+                    ]
                 ]
             ]
         , HH.section [ classes' "section" ]

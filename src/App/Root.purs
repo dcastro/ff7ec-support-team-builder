@@ -74,15 +74,15 @@ render state =
 
             [ HH.div [ classes' "columns is-mobile is-centered" ]
                 [ HH.div [ classes' "column" ]
-                    [ HH.div [ classes' "columns is-multiline is-align-items-stretch is-align-content-stretch" ] $
+                    [ HH.div [ classes' "columns is-multiline" ] $
                         ( Arr.range 0 (effectSelectorCount - 1) <#> \index ->
-                            HH.div [ classes' "column is-half-desktop is-half-widescreen is-half-tablet is-full-mobile" ]
+                            HH.div [ classes' "column is-one-third-fullhd is-half-widescreen is-half-desktop is-full-tablet is-full-mobile" ]
                               [ HH.div [ classes' "box", HP.style "height: 100%" ]
                                   [ HH.slot _effectSelector index EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector
                                   ]
                               ]
                         ) <>
-                          [ HH.div [ classes' "column is-half-desktop is-half-widescreen is-half-tablet is-full-mobile" ]
+                          [ HH.div [ classes' "column is-one-third-fullhd is-half-widescreen is-half-desktop is-full-tablet is-full-mobile" ]
                               [ HH.div [ classes' "box" ]
                                   [ HH.div [ classes' "columns is-mobile is-centered" ]
                                       [ HH.button [ classes' "column button", HE.onClick AddEffectSelector ]

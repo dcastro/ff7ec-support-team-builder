@@ -69,7 +69,7 @@ component =
 
 render :: forall cs m. State -> H.ComponentHTML Action cs m
 render state =
-  HH.div [ classes' "box" ]
+  HH.div [ classes' "cell box" ]
     [ HH.div [ classes' "columns is-mobile is-centered" ]
         [ HH.div [ classes' "column is-narrow" ]
             [ HH.div [ classes' "select" ]

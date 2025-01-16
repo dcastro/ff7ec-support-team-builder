@@ -21,6 +21,7 @@ import Halogen.HTML.Properties as HP
 import HtmlUtils (classes')
 import Partial.Unsafe (unsafeCrashWith)
 import Type.Proxy (Proxy(..))
+import Web.UIEvent.MouseEvent (MouseEvent)
 
 type Slots =
   ( effectSelector :: EffectSelector.Slot Int
@@ -39,12 +40,14 @@ type LoadedState =
   { armory :: Armory
   , teams :: Array AssignmentResult
   , maxCharacterCount :: Int
+  , effectSelectorCount :: Int
   }
 
 data Action
   = Initialize
   | HandleEffectSelector EffectSelector.Output
   | SelectedMaxCharacterCount Int
+  | AddEffectSelector MouseEvent
 
 component :: forall q i o. H.Component q i o Aff
 component =
@@ -65,18 +68,27 @@ render state =
       HH.div_
         [ HH.text "Failed to load"
         ]
-    Loaded { armory, teams, maxCharacterCount } ->
+    Loaded { armory, teams, maxCharacterCount, effectSelectorCount } ->
       HH.div_
         [ HH.section [ classes' "section" ]
             [ HH.div [ classes' "fixed-grid has-3-cols-widescreen has-2-cols-tablet has-1-cols-mobile" ]
-                [ HH.div [ classes' "grid" ]
-                    [ HH.div [ classes' "cell" ] [ HH.slot _effectSelector 0 EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector ]
-                    , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 1 EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector ]
-                    , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 2 EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector ]
-                    , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 3 EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector ]
-                    , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 4 EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector ]
-                    , HH.div [ classes' "cell" ] [ HH.slot _effectSelector 5 EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector ]
-                    ]
+                [ HH.div [ classes' "grid" ] $
+                    ( Arr.range 0 (effectSelectorCount - 1) <#> \index ->
+                        HH.slot _effectSelector index EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector
+                    ) <>
+                      [ HH.div [ classes' "cell" ]
+                          [ HH.div [ classes' "box", HE.onClick AddEffectSelector ]
+                              [ HH.div [ classes' "columns is-mobile is-centered" ]
+                                  [ HH.div [ classes' "column is-narrow" ]
+
+                                      [ HH.span [ classes' "icon is-large" ]
+                                          [ HH.i [ classes' "fas fa-plus fa-2x" ] []
+                                          ]
+                                      ]
+                                  ]
+                              ]
+                          ]
+                      ]
                 ]
             ]
         , HH.section [ classes' "section" ]
@@ -113,6 +125,7 @@ handleAction = case _ of
             { armory
             , teams: []
             , maxCharacterCount: 2
+            , effectSelectorCount: 4
             }
         Loaded initialState # updateTeams >>= H.put
       Nothing -> H.put FailedToLoad
@@ -149,6 +162,10 @@ handleAction = case _ of
     Loaded (state { maxCharacterCount = maxCharacterCount })
       # updateTeams
       >>= H.put
+
+  AddEffectSelector _ -> do
+    state <- assumeLoaded <$> H.get
+    H.put $ Loaded $ state { effectSelectorCount = state.effectSelectorCount + 1 }
 
 assumeLoaded :: State -> LoadedState
 assumeLoaded = case _ of

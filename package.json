@@ -9,7 +9,6 @@
   "scripts": {
     "build": "spago build",
     "test": "spago test",
-    "serve": "parcel dev/index.html --open",
-    "build-prod": "rm -rf prod && mkdir -p prod && cp dev/index.html prod/ && spago bundle --outfile prod/index.js && parcel build prod/index.html --dist-dir docs --public-url '.'"
+    "serve": "parcel dev/index.html --open"
   }
 }

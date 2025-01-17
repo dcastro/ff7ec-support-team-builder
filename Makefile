@@ -7,8 +7,21 @@ build:
 
 build-prod:
 	rm -rf docs
+	rm -rf prod
 	npm i
-	npm run build-prod
+	mkdir -p prod
+	cp dev/index.html prod/
+	spago bundle --outfile prod/index.js
+	parcel build prod/index.html --dist-dir docs --public-url '.'
+
+build-staging:
+	rm -rf docs/staging
+	rm -rf prod
+	npm i
+	mkdir -p prod
+	cp dev/index.html prod/
+	spago bundle --outfile prod/index.js
+	parcel build prod/index.html --dist-dir docs/staging --public-url '.'
 
 run:
 	npm run serve

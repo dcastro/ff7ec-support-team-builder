@@ -6,6 +6,8 @@ build:
 	spago build
 
 build-prod:
+	rm -rf docs
+	npm i
 	npm run build-prod
 
 run:

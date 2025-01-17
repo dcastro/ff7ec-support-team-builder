@@ -25,6 +25,7 @@ type Slot id = H.Slot Query Output id
 type Input =
   { armory :: Armory
   , effectTypeMb :: Maybe FilterEffectType
+  , canBeDeleted :: Boolean
   }
 
 type State =
@@ -33,6 +34,7 @@ type State =
   , selectedEffectType :: Maybe FilterEffectType
   , selectedRange :: FilterRange
   , matchingWeapons :: Array ArmoryWeapon
+  , canBeDeleted :: Boolean
   }
 
 data Output
@@ -51,12 +53,13 @@ data Query a = GetFilter (Filter -> a)
 component :: H.Component Query Input Output Aff
 component =
   H.mkComponent
-    { initialState: \{ armory, effectTypeMb } ->
+    { initialState: \{ armory, effectTypeMb, canBeDeleted } ->
         updateMatchingWeapons
           { armory
           , selectedEffectType: effectTypeMb
           , selectedRange: genericBottom
           , matchingWeapons: []
+          , canBeDeleted
           }
     , render
     , eval: H.mkEval H.defaultEval
@@ -109,7 +112,8 @@ render state =
 
             -- A column for the delete button
             , HH.div [ classes' "column is-narrow" ]
-                [ HH.button [ classes' "delete is-medium" ] []
+                [ displayIf state.canBeDeleted $
+                    HH.button [ classes' "delete is-medium" ] []
                 ]
             ]
 
@@ -188,7 +192,11 @@ handleAction = case _ of
       Nothing -> pure unit
 
   Receive input -> do
-    H.modify_ \state -> updateMatchingWeapons $ state { armory = input.armory }
+    H.modify_ \state ->
+      updateMatchingWeapons $ state
+        { armory = input.armory
+        , canBeDeleted = input.canBeDeleted
+        }
 
 updateMatchingWeapons :: State -> State
 updateMatchingWeapons state = do

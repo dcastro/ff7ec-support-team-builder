@@ -18,7 +18,7 @@ import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
-import HtmlUtils (classes')
+import HtmlUtils (classes', displayIf)
 import Partial.Unsafe (unsafeCrashWith)
 import Type.Proxy (Proxy(..))
 import Web.UIEvent.MouseEvent (MouseEvent)
@@ -77,23 +77,29 @@ render state =
                     -- Contains an effect selector
                     HH.div [ classes' "column is-one-third-fullhd is-half-widescreen is-half-desktop is-full-tablet is-full-mobile" ]
                       [ HH.div [ classes' "box", HP.style "height: 100%" ]
-                          [ HH.slot _effectSelector index EffectSelector.component { armory, effectTypeMb: Nothing } HandleEffectSelector
+                          [ HH.slot
+                              _effectSelector
+                              index
+                              EffectSelector.component
+                              { armory, effectTypeMb: Nothing, canBeDeleted: effectSelectorCount > 1 }
+                              HandleEffectSelector
                           ]
                       ]
                 ) <>
                   -- Contains the plus button
-                  [ HH.div [ classes' "column is-one-third-fullhd is-half-widescreen is-half-desktop is-full-tablet is-full-mobile" ]
-                      [ HH.div [ classes' "box" ]
-                          -- Single column used to center the plus button
-                          [ HH.div [ classes' "columns is-mobile is-centered" ]
-                              [ HH.button [ classes' "column button", HE.onClick AddEffectSelector ]
-                                  [ HH.span [ classes' "icon is-large" ]
-                                      [ HH.i [ classes' "fas fa-plus fa-2x" ] []
-                                      ]
-                                  ]
-                              ]
-                          ]
-                      ]
+                  [ displayIf (effectSelectorCount <= 10) $
+                      HH.div [ classes' "column is-one-third-fullhd is-half-widescreen is-half-desktop is-full-tablet is-full-mobile" ]
+                        [ HH.div [ classes' "box" ]
+                            -- Single column used to center the plus button
+                            [ HH.div [ classes' "columns is-mobile is-centered" ]
+                                [ HH.button [ classes' "column button", HE.onClick AddEffectSelector ]
+                                    [ HH.span [ classes' "icon is-large" ]
+                                        [ HH.i [ classes' "fas fa-plus fa-2x" ] []
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
                   ]
             ]
         , HH.section [ classes' "section" ]

@@ -13,6 +13,8 @@ import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Newtype (class Newtype)
+import Data.Set (Set)
+import Data.Set as Set
 import Data.Tuple (Tuple(..))
 import Data.Unfoldable (unfoldr)
 import Effect.Class (class MonadEffect)
@@ -74,3 +76,15 @@ instance (ReadForeign (Tuple k v), Ord k) => ReadForeign (MapAsArray k v) where
     pure $ MapAsArray $ Map.fromFoldable arr
 
 derive instance Newtype (MapAsArray k v) _
+
+newtype SetAsArray a = SetAsArray (Set a)
+
+instance WriteForeign a => WriteForeign (SetAsArray a) where
+  writeImpl (SetAsArray x) = J.writeImpl (Set.toUnfoldable x :: Array a)
+
+instance (ReadForeign a, Ord a) => ReadForeign (SetAsArray a) where
+  readImpl json = do
+    arr <- J.readImpl json :: _ (Array a)
+    pure $ SetAsArray $ Set.fromFoldable arr
+
+derive instance Newtype (SetAsArray a) _

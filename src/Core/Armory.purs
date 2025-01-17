@@ -35,7 +35,7 @@ import Effect.Now as Now
 import Google.SheetsApi as SheetsApi
 import Record as Record
 import Type.Proxy (Proxy(..))
-import Utils (MapAsArray(..), logOnLeft, renderJsonErr, throwOnNothing, whenJust)
+import Utils (MapAsArray(..), SetAsArray(..), logOnLeft, renderJsonErr, throwOnNothing, whenJust)
 import Utils as Utils
 import Yoga.JSON (class ReadForeign, class WriteForeign)
 import Yoga.JSON as J
@@ -45,11 +45,13 @@ import Yoga.JSON.Generics.EnumSumRep as Enum
 type Armory =
   { allWeapons :: Map WeaponName ArmoryWeapon
   , groupedByEffect :: Map Filter (Array GroupedWeapon)
+  , allCharacterNames :: Set CharacterName
   }
 
 type SerializableArmory =
   { allWeapons :: MapAsArray WeaponName ArmoryWeapon
   , groupedByEffect :: MapAsArray Filter (Array GroupedWeapon)
+  , allCharacterNames :: SetAsArray CharacterName
   }
 
 type GroupedWeapon =
@@ -221,6 +223,7 @@ newArmory :: Armory
 newArmory =
   { allWeapons: Map.empty
   , groupedByEffect: Map.empty
+  , allCharacterNames: Set.empty
   }
 
 createArmory :: forall m. MonadEffect m => MonadRec m => Array Weapon -> Map WeaponName ArmoryWeapon -> m Armory
@@ -249,6 +252,7 @@ insertWeapon weapon existingWeapons armory =
       pure $ armory
         # insert
         # insertIntoGroups
+        # insertCharacterName
   where
 
   insert :: Armory -> Armory
@@ -342,6 +346,10 @@ insertWeapon weapon existingWeapons armory =
         armory.groupedByEffect
     armory { groupedByEffect = groupedByEffect }
 
+  insertCharacterName :: Armory -> Armory
+  insertCharacterName armory =
+    armory { allCharacterNames = Set.insert weapon.character armory.allCharacterNames }
+
 -- Throws if the cache is empty OR the cache data is corrupted.
 readFromCache :: forall m. MonadThrow Unit m => MonadAff m => m { armory :: Armory, hasExpired :: Boolean }
 readFromCache = do
@@ -362,6 +370,7 @@ readFromCache = do
   fromSerializable armory =
     { allWeapons: unwrap armory.allWeapons
     , groupedByEffect: unwrap armory.groupedByEffect
+    , allCharacterNames: unwrap armory.allCharacterNames
     }
 
 writeToCache :: forall m. MonadAff m => Armory -> m Unit
@@ -376,4 +385,5 @@ writeToCache armory = do
   toSerializable armory =
     { allWeapons: MapAsArray armory.allWeapons
     , groupedByEffect: MapAsArray armory.groupedByEffect
+    , allCharacterNames: SetAsArray armory.allCharacterNames
     }

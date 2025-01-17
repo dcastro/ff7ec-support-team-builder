@@ -4,14 +4,16 @@ import Prelude
 
 import App.EffectSelector as EffectSelector
 import App.Results as Results
-import Core.Armory (Armory, Filter)
+import Core.Armory (Armory)
 import Core.Armory as Armory
 import Core.Display (display)
 import Core.Weapons.Search (AssignmentResult)
 import Core.Weapons.Search as Search
-import Data.Array as Arr
+import Data.Array.NonEmpty (NonEmptyArray)
+import Data.Array.NonEmpty as NA
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
+import Data.Traversable (for)
 import Effect.Aff (Aff)
 import Effect.Class.Console as Console
 import Halogen as H
@@ -21,6 +23,7 @@ import Halogen.HTML.Properties as HP
 import HtmlUtils (classes', displayIf)
 import Partial.Unsafe (unsafeCrashWith)
 import Type.Proxy (Proxy(..))
+import Utils (unsafeFromJust)
 import Web.UIEvent.MouseEvent (MouseEvent)
 
 type Slots =
@@ -40,12 +43,22 @@ type LoadedState =
   { armory :: Armory
   , teams :: Array AssignmentResult
   , maxCharacterCount :: Int
-  , effectSelectorCount :: Int
+  , effectSelectorIds :: NonEmptyArray Int
   }
+
+mkInitialLoadedState :: Armory -> LoadedState
+mkInitialLoadedState armory =
+  { armory
+  , teams: []
+  , maxCharacterCount: 2
+  , effectSelectorIds: NA.range 0 (effectSelectorCount - 1)
+  }
+  where
+  effectSelectorCount = 4
 
 data Action
   = Initialize
-  | HandleEffectSelector EffectSelector.Output
+  | HandleEffectSelector Int EffectSelector.Output
   | SelectedMaxCharacterCount Int
   | AddEffectSelector MouseEvent
 
@@ -68,26 +81,29 @@ render state =
       HH.div_
         [ HH.text "Failed to load"
         ]
-    Loaded { armory, teams, maxCharacterCount, effectSelectorCount } ->
+    Loaded { armory, teams, maxCharacterCount, effectSelectorIds } ->
       HH.div_
         [ HH.section [ classes' "section" ]
             -- Contains all the effect selectors + the plus button
             [ HH.div [ classes' "columns is-mobile is-multiline" ] $
-                ( Arr.range 0 (effectSelectorCount - 1) <#> \index ->
+                ( NA.toArray effectSelectorIds <#> \effectSelectorId ->
                     -- Contains an effect selector
                     HH.div [ classes' "column is-one-third-fullhd is-half-widescreen is-half-desktop is-full-tablet is-full-mobile" ]
                       [ HH.div [ classes' "box", HP.style "height: 100%" ]
                           [ HH.slot
                               _effectSelector
-                              index
+                              effectSelectorId
                               EffectSelector.component
-                              { armory, effectTypeMb: Nothing, canBeDeleted: effectSelectorCount > 1 }
-                              HandleEffectSelector
+                              { armory
+                              , effectTypeMb: Nothing
+                              , canBeDeleted: NA.length effectSelectorIds > 1
+                              }
+                              (HandleEffectSelector effectSelectorId)
                           ]
                       ]
                 ) <>
                   -- Contains the plus button
-                  [ displayIf (effectSelectorCount <= 10) $
+                  [ displayIf (NA.length effectSelectorIds <= 10) $
                       HH.div [ classes' "column is-one-third-fullhd is-half-widescreen is-half-desktop is-full-tablet is-full-mobile" ]
                         [ HH.div [ classes' "box" ]
                             -- Single column used to center the plus button
@@ -130,16 +146,10 @@ handleAction = case _ of
   Initialize -> do
     H.liftAff Armory.init >>= case _ of
       Just armory -> do
-        let
-          initialState =
-            { armory
-            , teams: []
-            , maxCharacterCount: 2
-            , effectSelectorCount: 4
-            }
+        let initialState = mkInitialLoadedState armory
         Loaded initialState # updateTeams >>= H.put
       Nothing -> H.put FailedToLoad
-  HandleEffectSelector output ->
+  HandleEffectSelector effectSelectorId output ->
     case output of
       EffectSelector.RaiseSelectionChanged -> do
         Console.log "Selection changed"
@@ -165,6 +175,18 @@ handleAction = case _ of
             updateTeams (Loaded state') >>= H.put
           _ ->
             unsafeCrashWith "Attempted to set 'ignored' flag before app has loaded"
+
+      EffectSelector.RaiseClosed -> do
+        s <- assumeLoaded <$> H.get
+
+        let
+          effectSelectorIds =
+            ( NA.delete effectSelectorId s.effectSelectorIds
+                # NA.fromArray
+            ) `unsafeFromJust` "Deleted the last effect selector"
+        Loaded (s { effectSelectorIds = effectSelectorIds })
+          # updateTeams
+          >>= H.put
   SelectedMaxCharacterCount idx -> do
     let maxCharacterCount = idx + 1
     Console.log $ "Maximum number of characters: " <> show maxCharacterCount
@@ -175,7 +197,11 @@ handleAction = case _ of
 
   AddEffectSelector _ -> do
     state <- assumeLoaded <$> H.get
-    H.put $ Loaded $ state { effectSelectorCount = state.effectSelectorCount + 1 }
+    let newId = NA.last state.effectSelectorIds + 1
+    let effectSelectorIds = NA.snoc state.effectSelectorIds newId
+    Loaded (state { effectSelectorIds = effectSelectorIds })
+      # updateTeams
+      >>= H.put
 
 assumeLoaded :: State -> LoadedState
 assumeLoaded = case _ of
@@ -187,8 +213,10 @@ updateTeams :: forall o. State -> H.HalogenM State Action Slots o Aff State
 updateTeams state = do
   let loadedState = assumeLoaded state
   -- Calculate all possible teams
-  responses <- H.requestAll _effectSelector EffectSelector.GetFilter
-  let filters = Arr.fromFoldable $ Map.values responses :: Array Filter
+  filters <-
+    NA.catMaybes <$>
+      for loadedState.effectSelectorIds \effectSelectorId -> do
+        H.request _effectSelector effectSelectorId EffectSelector.GetFilter
   let teams = Search.search loadedState.maxCharacterCount filters loadedState.armory
 
   -- Console.log "-----------------------------------------"

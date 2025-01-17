@@ -19,6 +19,7 @@ import Halogen.HTML.Properties (InputType(..))
 import Halogen.HTML.Properties as HP
 import HtmlUtils (classes', displayIf, mkTooltipForWeapon, tooltip)
 import Utils (unsafeFromJust)
+import Web.UIEvent.MouseEvent (MouseEvent)
 
 type Slot id = H.Slot Query Output id
 
@@ -40,6 +41,7 @@ type State =
 data Output
   = RaiseSelectionChanged
   | RaiseCheckedIgnored WeaponName Boolean
+  | RaiseClosed
 
 data Action
   = SelectedEffectType Int
@@ -47,6 +49,7 @@ data Action
   | CheckedIgnored WeaponName Boolean
   | Initialize
   | Receive Input
+  | Close MouseEvent
 
 data Query a = GetFilter (Filter -> a)
 
@@ -113,7 +116,7 @@ render state =
             -- A column for the delete button
             , HH.div [ classes' "column is-narrow" ]
                 [ displayIf state.canBeDeleted $
-                    HH.button [ classes' "delete is-medium" ] []
+                    HH.button [ classes' "delete is-medium", HE.onClick Close ] []
                 ]
             ]
 
@@ -197,6 +200,9 @@ handleAction = case _ of
         { armory = input.armory
         , canBeDeleted = input.canBeDeleted
         }
+
+  Close _ -> do
+    H.raise RaiseClosed
 
 updateMatchingWeapons :: State -> State
 updateMatchingWeapons state = do

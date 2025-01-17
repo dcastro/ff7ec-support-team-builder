@@ -82,7 +82,7 @@ render state =
         [ HH.text "Failed to load"
         ]
     Loaded { armory, teams, maxCharacterCount, effectSelectorIds } ->
-      HH.div_
+      HH.section [ classes' "hero is-fullheight" ]
         [ HH.section [ classes' "section" ]
             -- Contains all the effect selectors + the plus button
             [ HH.div [ classes' "columns is-mobile is-multiline" ] $
@@ -138,6 +138,30 @@ render state =
                     ]
                 ]
             , HH.slot_ _results unit Results.component teams
+            ]
+
+        , HH.div [ classes' "footer" ]
+            [ HH.div [ classes' "content has-text-centered" ]
+                [ HH.p_
+                    [ HH.text "Thanks to UnknownX for the datamines and u/doxcyn for maintaining the "
+                    , HH.a
+                        [ HP.href "https://docs.google.com/spreadsheets/d/1evoNzTA9veDRTvYJEMe-9F81QQ-CxUWN4mrd93kn2W4/edit?usp=sharing"
+                        , HP.target "_blank"
+                        ]
+                        [ HH.text "Resources spreadsheet" ]
+                    , HH.text "."
+                    ]
+                , HH.p_
+                    [ HH.text "If you find a bug or would like to make a suggestion, open a New Issue "
+                    , HH.a
+                        [ HP.href "https://github.com/dcastro/ff7ec-team-builder/issues"
+                        , HP.target "_blank"
+                        ]
+                        [ HH.text "here" ]
+                    , HH.text "."
+                    ]
+
+                ]
             ]
         ]
 

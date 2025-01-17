@@ -6,7 +6,7 @@ build:
 	spago build
 
 build-prod:
-	rm -rf docs
+	find docs -maxdepth 1 -type f -delete
 	rm -rf prod
 	npm i
 	mkdir -p prod
@@ -16,12 +16,12 @@ build-prod:
 
 build-staging:
 	rm -rf docs/staging
-	rm -rf prod
+	rm -rf staging
 	npm i
-	mkdir -p prod
-	cp dev/index.html prod/
-	spago bundle --outfile prod/index.js
-	parcel build prod/index.html --dist-dir docs/staging --public-url '.'
+	mkdir -p staging
+	cp dev/index.html staging/
+	spago bundle --outfile staging/index.js
+	parcel build staging/index.html --dist-dir docs/staging --public-url '.'
 
 run:
 	npm run serve

@@ -42,6 +42,9 @@ import Yoga.JSON as J
 import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
 
+currentDbVersion :: Int
+currentDbVersion = 1
+
 type Armory =
   { allWeapons :: Map WeaponName ArmoryWeapon
   , groupedByEffect :: Map Filter (Array GroupedWeapon)
@@ -377,9 +380,11 @@ writeToCache :: forall m. MonadAff m => Armory -> m Unit
 writeToCache armory = do
   let armoryStr = J.writeJSON $ toSerializable armory
   lastUpdatedStr <- J.writeJSON <$> liftEffect Now.nowDateTime
+  let currentDbVersionStr = J.writeJSON currentDbVersion
 
   WS.setItem "armory" armoryStr
   WS.setItem "last_updated" lastUpdatedStr
+  WS.setItem "db_version" currentDbVersionStr
   where
   toSerializable :: Armory -> SerializableArmory
   toSerializable armory =

@@ -6,16 +6,18 @@ import Core.Armory (ArmoryWeapon)
 import Core.Display (display)
 import Core.Weapons.Search (AssignmentResult)
 import Core.Weapons.Search as Search
+import Core.Weapons.Types (WeaponName)
 import Data.Array as Arr
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Effect.Aff (Aff)
 import Halogen as H
 import Halogen.HTML as HH
+import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
 import HtmlUtils (classes', mkTooltipForWeapon, tooltip)
 
-type Slot id = forall query. H.Slot query Void id
+type Slot id = forall query. H.Slot query Output id
 
 type State =
   { teams :: Array AssignmentResult
@@ -23,10 +25,13 @@ type State =
 
 type Input = Array AssignmentResult
 
-data Action =
-  Receive Input
+data Output = RaiseIgnoreWeapon WeaponName
 
-component :: forall q o. H.Component q Input o Aff
+data Action
+  = Receive Input
+  | IgnoreWeapon WeaponName
+
+component :: forall q. H.Component q Input Output Aff
 component =
   H.mkComponent
     { initialState: \teams ->
@@ -63,7 +68,13 @@ render state =
                                       [ tooltip (mkTooltipForWeapon weapon.weapon), classes' "has-tooltip-top" ]
                                       [ HH.text (display weapon.weapon.name)
                                       ]
-                                  -- TODO: display the applied effects next to each weapon
+                                  , HH.span
+                                      [ tooltip "Ignore weapon", HE.onClick \_ -> IgnoreWeapon weapon.weapon.name ]
+                                      [ HH.i
+                                          [ classes' "fas fa-delete-left ml-2"
+                                          ]
+                                          []
+                                      ]
                                   ]
                               ]
                           ]
@@ -76,6 +87,7 @@ mkTooltip weapon =
     <> "\n\nOB6:\n"
     <> display weapon.ob6.description
 
-handleAction :: forall cs o. Action → H.HalogenM State Action cs o Aff Unit
+handleAction :: forall cs. Action → H.HalogenM State Action cs Output Aff Unit
 handleAction = case _ of
   Receive teams -> H.put { teams }
+  IgnoreWeapon weaponName -> H.raise $ RaiseIgnoreWeapon weaponName

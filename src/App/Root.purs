@@ -3,13 +3,14 @@ module App.Root where
 import Prelude
 
 import App.EffectSelector as EffectSelector
+import App.Results as Result
 import App.Results as Results
-import Core.Armory (Armory)
+import Core.Armory (Armory, FilterEffectType(..))
 import Core.Armory as Armory
 import Core.Display (display)
 import Core.Weapons.Search (AssignmentResult)
 import Core.Weapons.Search as Search
-import Core.Weapons.Types (CharacterName)
+import Core.Weapons.Types (CharacterName, WeaponName)
 import Data.Array as Arr
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Array.NonEmpty as NA
@@ -19,6 +20,7 @@ import Data.Set (Set)
 import Data.Set as Set
 import Data.Traversable (for)
 import Effect.Aff (Aff)
+import Effect.Aff.Class (class MonadAff)
 import Effect.Class.Console as Console
 import Halogen as H
 import Halogen.HTML as HH
@@ -66,6 +68,7 @@ mkInitialLoadedState armory =
 data Action
   = Initialize
   | HandleEffectSelector Int EffectSelector.Output
+  | HandleResultsOutput Results.Output
   | SelectedMaxCharacterCount Int
   | AddEffectSelector MouseEvent
   | CheckedMustHaveChar CharacterName Boolean
@@ -164,7 +167,7 @@ render state =
                         ]
                   )
 
-            , HH.slot_ _results unit Results.component teams
+            , HH.slot _results unit Results.component teams HandleResultsOutput
             ]
 
         , HH.div [ classes' "footer" ]
@@ -211,22 +214,8 @@ handleAction = case _ of
         modifyLoadedState updateTeams
       EffectSelector.RaiseCheckedIgnored weaponName ignored -> do
         modifyLoadedState \state -> do
-          Console.log $ "Weapon " <> display weaponName <> " ignored: " <> show ignored
-          let
-            updatedAllWeapons =
-              Map.alter
-                ( case _ of
-                    Just existingWeapon -> Just existingWeapon { ignored = ignored }
-                    Nothing -> unsafeCrashWith $ "Attempted to set 'ignored' flag, but weapon was not found: " <> display weaponName
-                )
-                weaponName
-                state.armory.allWeapons
-
-          let state' = state { armory { allWeapons = updatedAllWeapons } }
-          Console.log "Saving armory to cache"
-          Armory.writeToCache state'.armory
-
-          updateTeams state'
+          state <- setWeaponIgnored weaponName ignored state
+          updateTeams state
 
       EffectSelector.RaiseClosed -> do
         modifyLoadedState \state -> do
@@ -236,6 +225,13 @@ handleAction = case _ of
                   # NA.fromArray
               ) `unsafeFromJust` "Deleted the last effect selector"
           updateTeams $ state { effectSelectorIds = effectSelectorIds }
+
+  HandleResultsOutput output -> do
+    case output of
+      Result.RaiseIgnoreWeapon weaponName -> do
+        modifyLoadedState \state -> do
+          state <- setWeaponIgnored weaponName true state
+          updateTeams state
 
   SelectedMaxCharacterCount idx -> do
     modifyLoadedState \state -> do
@@ -295,3 +291,21 @@ updateTeams state = do
   --   pure unit
 
   pure $ state { teams = teams }
+
+setWeaponIgnored :: forall m. MonadAff m => WeaponName -> Boolean -> LoadedState -> m LoadedState
+setWeaponIgnored weaponName ignored state = do
+  Console.log $ "Weapon " <> display weaponName <> " ignored: " <> show ignored
+  let
+    updatedAllWeapons =
+      Map.alter
+        ( case _ of
+            Just existingWeapon -> Just existingWeapon { ignored = ignored }
+            Nothing -> unsafeCrashWith $ "Attempted to set 'ignored' flag, but weapon was not found: " <> display weaponName
+        )
+        weaponName
+        state.armory.allWeapons
+
+  let state' = state { armory { allWeapons = updatedAllWeapons } }
+  Console.log "Saving armory to cache"
+  Armory.writeToCache state'.armory
+  pure state'

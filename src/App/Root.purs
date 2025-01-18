@@ -9,16 +9,21 @@ import Core.Armory as Armory
 import Core.Display (display)
 import Core.Weapons.Search (AssignmentResult)
 import Core.Weapons.Search as Search
+import Core.Weapons.Types (CharacterName)
+import Data.Array as Arr
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Array.NonEmpty as NA
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
+import Data.Set (Set)
+import Data.Set as Set
 import Data.Traversable (for)
 import Effect.Aff (Aff)
 import Effect.Class.Console as Console
 import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
+import Halogen.HTML.Properties (InputType(..))
 import Halogen.HTML.Properties as HP
 import HtmlUtils (classes', displayIf)
 import Partial.Unsafe (unsafeCrashWith)
@@ -44,6 +49,7 @@ type LoadedState =
   , teams :: Array AssignmentResult
   , maxCharacterCount :: Int
   , effectSelectorIds :: NonEmptyArray Int
+  , mustHaveChars :: Set CharacterName
   }
 
 mkInitialLoadedState :: Armory -> LoadedState
@@ -52,6 +58,7 @@ mkInitialLoadedState armory =
   , teams: []
   , maxCharacterCount: 2
   , effectSelectorIds: NA.range 0 (effectSelectorCount - 1)
+  , mustHaveChars: Set.empty
   }
   where
   effectSelectorCount = 4
@@ -61,6 +68,7 @@ data Action
   | HandleEffectSelector Int EffectSelector.Output
   | SelectedMaxCharacterCount Int
   | AddEffectSelector MouseEvent
+  | CheckedMustHaveChar CharacterName Boolean
 
 component :: forall q i o. H.Component q i o Aff
 component =
@@ -121,7 +129,7 @@ render state =
         , HH.section [ classes' "section" ]
             [ HH.h1 [ classes' "title is-2 has-text-centered" ] [ HH.text "Teams " ]
             , HH.div [ classes' "columns is-mobile is-centered is-vcentered" ]
-                [ HH.div [ classes' "column is-narrow" ]
+                [ HH.div [ classes' "column is-narrow has-text-weight-semibold" ]
                     [ HH.text "Maximum number of characters: "
                     ]
                 , HH.div [ classes' "column is-narrow" ]
@@ -137,6 +145,25 @@ render state =
 
                     ]
                 ]
+            , HH.div [ classes' "columns is-mobile is-centered is-multiline" ] $
+                [ HH.div [ classes' "column is-narrow has-text-weight-semibold" ]
+                    [ HH.text "Must have: "
+                    ]
+                ] <>
+                  ( armory.allCharacterNames # Arr.fromFoldable <#> \name ->
+                      HH.div [ classes' "column is-narrow" ]
+                        [ HH.label [ classes' "checkbox" ]
+                            [ HH.input
+                                [ HP.type_ InputCheckbox
+                                , HP.name "must-have-char"
+                                , classes' "mr-1"
+                                , HE.onChecked (CheckedMustHaveChar name)
+                                ]
+                            , HH.text (display name)
+                            ]
+                        ]
+                  )
+
             , HH.slot_ _results unit Results.component teams
             ]
 
@@ -160,6 +187,11 @@ render state =
                         [ HH.text "here" ]
                     , HH.text "."
                     ]
+                , HH.p_
+                    [ HH.text "Find me as "
+                    , HH.code_ [ HH.text "dc" ]
+                    , HH.text " on Discord."
+                    ]
 
                 ]
             ]
@@ -171,61 +203,67 @@ handleAction = case _ of
     H.liftAff Armory.init >>= case _ of
       Just armory -> do
         let initialState = mkInitialLoadedState armory
-        Loaded initialState # updateTeams >>= H.put
+        updateTeams initialState <#> Loaded >>= H.put
       Nothing -> H.put FailedToLoad
   HandleEffectSelector effectSelectorId output ->
     case output of
       EffectSelector.RaiseSelectionChanged -> do
-        Console.log "Selection changed"
-        H.get >>= updateTeams >>= H.put
+        modifyLoadedState updateTeams
       EffectSelector.RaiseCheckedIgnored weaponName ignored -> do
-        H.get >>= case _ of
-          Loaded state -> do
-            Console.log $ "Weapon " <> display weaponName <> " ignored: " <> show ignored
-            let
-              updatedAllWeapons =
-                Map.alter
-                  ( case _ of
-                      Just existingWeapon -> Just existingWeapon { ignored = ignored }
-                      Nothing -> unsafeCrashWith $ "Attempted to set 'ignored' flag, but weapon was not found: " <> display weaponName
-                  )
-                  weaponName
-                  state.armory.allWeapons
+        modifyLoadedState \state -> do
+          Console.log $ "Weapon " <> display weaponName <> " ignored: " <> show ignored
+          let
+            updatedAllWeapons =
+              Map.alter
+                ( case _ of
+                    Just existingWeapon -> Just existingWeapon { ignored = ignored }
+                    Nothing -> unsafeCrashWith $ "Attempted to set 'ignored' flag, but weapon was not found: " <> display weaponName
+                )
+                weaponName
+                state.armory.allWeapons
 
-            let state' = state { armory { allWeapons = updatedAllWeapons } }
-            Console.log "Saving armory to cache"
-            Armory.writeToCache state'.armory
+          let state' = state { armory { allWeapons = updatedAllWeapons } }
+          Console.log "Saving armory to cache"
+          Armory.writeToCache state'.armory
 
-            updateTeams (Loaded state') >>= H.put
-          _ ->
-            unsafeCrashWith "Attempted to set 'ignored' flag before app has loaded"
+          updateTeams state'
 
       EffectSelector.RaiseClosed -> do
-        s <- assumeLoaded <$> H.get
+        modifyLoadedState \state -> do
+          let
+            effectSelectorIds =
+              ( NA.delete effectSelectorId state.effectSelectorIds
+                  # NA.fromArray
+              ) `unsafeFromJust` "Deleted the last effect selector"
+          updateTeams $ state { effectSelectorIds = effectSelectorIds }
 
-        let
-          effectSelectorIds =
-            ( NA.delete effectSelectorId s.effectSelectorIds
-                # NA.fromArray
-            ) `unsafeFromJust` "Deleted the last effect selector"
-        Loaded (s { effectSelectorIds = effectSelectorIds })
-          # updateTeams
-          >>= H.put
   SelectedMaxCharacterCount idx -> do
-    let maxCharacterCount = idx + 1
-    Console.log $ "Maximum number of characters: " <> show maxCharacterCount
-    state <- assumeLoaded <$> H.get
-    Loaded (state { maxCharacterCount = maxCharacterCount })
-      # updateTeams
-      >>= H.put
+    modifyLoadedState \state -> do
+      let maxCharacterCount = idx + 1
+      Console.log $ "Maximum number of characters: " <> show maxCharacterCount
+      updateTeams $ state { maxCharacterCount = maxCharacterCount }
 
   AddEffectSelector _ -> do
-    state <- assumeLoaded <$> H.get
-    let newId = NA.last state.effectSelectorIds + 1
-    let effectSelectorIds = NA.snoc state.effectSelectorIds newId
-    Loaded (state { effectSelectorIds = effectSelectorIds })
-      # updateTeams
-      >>= H.put
+    modifyLoadedState \state -> do
+      let newId = NA.last state.effectSelectorIds + 1
+      let effectSelectorIds = NA.snoc state.effectSelectorIds newId
+      updateTeams $ state { effectSelectorIds = effectSelectorIds }
+
+  CheckedMustHaveChar charName checked -> do
+    modifyLoadedState \state -> do
+      if checked then
+        updateTeams $ state { mustHaveChars = Set.insert charName state.mustHaveChars }
+      else
+        updateTeams $ state { mustHaveChars = Set.delete charName state.mustHaveChars }
+
+modifyLoadedState
+  :: forall o
+   . (LoadedState -> H.HalogenM State Action Slots o Aff LoadedState)
+  -> H.HalogenM State Action Slots o Aff Unit
+modifyLoadedState f = do
+  state <- assumeLoaded <$> H.get
+  state <- f state
+  H.put $ Loaded state
 
 assumeLoaded :: State -> LoadedState
 assumeLoaded = case _ of
@@ -233,15 +271,16 @@ assumeLoaded = case _ of
   Loading -> unsafeCrashWith "Expected state to be `Loaded`, but was `Loading`"
   FailedToLoad -> unsafeCrashWith "Expected state to be `Loaded`, but was `FailedToLoad`"
 
-updateTeams :: forall o. State -> H.HalogenM State Action Slots o Aff State
+updateTeams :: forall o st action. LoadedState -> H.HalogenM st action Slots o Aff LoadedState
 updateTeams state = do
-  let loadedState = assumeLoaded state
   -- Calculate all possible teams
   filters <-
     NA.catMaybes <$>
-      for loadedState.effectSelectorIds \effectSelectorId -> do
+      for state.effectSelectorIds \effectSelectorId -> do
         H.request _effectSelector effectSelectorId EffectSelector.GetFilter
-  let teams = Search.search loadedState.maxCharacterCount filters loadedState.armory
+  let
+    teams = Search.search state.maxCharacterCount filters state.armory
+      # Search.filterMustHaveChars state.mustHaveChars
 
   -- Console.log "-----------------------------------------"
   -- Console.log "-----------------------------------------"
@@ -254,4 +293,4 @@ updateTeams state = do
   --       Nothing -> Console.log $ display char.name <> ": " <> display char.mainHand.weapon.name
   --   pure unit
 
-  pure $ Loaded $ loadedState { teams = teams }
+  pure $ state { teams = teams }

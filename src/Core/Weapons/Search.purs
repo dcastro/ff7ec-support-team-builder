@@ -13,6 +13,8 @@ import Data.Map as Map
 import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Newtype (unwrap)
 import Data.Ord.Down (Down(..))
+import Data.Set (Set)
+import Data.Set as Set
 import Data.String.NonEmpty as NES
 import Utils (unsafeFromJust)
 
@@ -175,6 +177,12 @@ getEquipedWeapons char =
     Just offHand -> [ char.mainHand, offHand ]
     Nothing -> [ char.mainHand ]
 
+getCharacterNames :: AssignmentResult -> Set CharacterName
+getCharacterNames team =
+  Map.values team.characters
+    <#> (\char -> char.name)
+    # Set.fromFoldable
+
 data TeamScore = TeamScore
   { maxPotenciesScore :: Int
   , basePotenciesScore :: Int
@@ -221,3 +229,8 @@ scoreTeam { characters } = do
     Mid -> 2
     High -> 3
     ExtraHigh -> 4
+
+filterMustHaveChars :: Set CharacterName -> Array AssignmentResult -> Array AssignmentResult
+filterMustHaveChars mustHaveChars teams =
+  teams
+    # Arr.filter \team -> mustHaveChars `Set.subset` getCharacterNames team

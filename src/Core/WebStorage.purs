@@ -3,7 +3,6 @@ module Core.WebStorage where
 import Prelude
 
 import Data.Maybe (Maybe)
-import Effect (Effect)
 import Effect.Class (class MonadEffect, liftEffect)
 import Web.HTML (window)
 import Web.HTML.Window (localStorage)

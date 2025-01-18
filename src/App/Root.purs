@@ -173,7 +173,11 @@ render state =
         , HH.div [ classes' "footer" ]
             [ HH.div [ classes' "content has-text-centered" ]
                 [ HH.p_
-                    [ HH.text "Thanks to UnknownX for the datamines and u/doxcyn for maintaining the "
+                    [ HH.text "Thanks to "
+                    , HH.code_ [ HH.text "unknownx" ]
+                    , HH.text " for the datamines and "
+                    , HH.code_ [ HH.text "doxcyn" ]
+                    , HH.text " for maintaining the "
                     , HH.a
                         [ HP.href "https://docs.google.com/spreadsheets/d/1evoNzTA9veDRTvYJEMe-9F81QQ-CxUWN4mrd93kn2W4/edit?usp=sharing"
                         , HP.target "_blank"

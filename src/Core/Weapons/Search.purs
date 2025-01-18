@@ -177,6 +177,14 @@ getEquipedWeapons char =
     Just offHand -> [ char.mainHand, offHand ]
     Nothing -> [ char.mainHand ]
 
+getTeamWeaponNames :: AssignmentResult -> Set WeaponName
+getTeamWeaponNames team =
+  Map.values team.characters
+    # Arr.fromFoldable
+    >>= getEquipedWeapons
+    <#> (\weapon -> weapon.weapon.name)
+    # Set.fromFoldable
+
 getCharacterNames :: AssignmentResult -> Set CharacterName
 getCharacterNames team =
   Map.values team.characters
@@ -234,3 +242,13 @@ filterMustHaveChars :: Set CharacterName -> Array AssignmentResult -> Array Assi
 filterMustHaveChars mustHaveChars teams =
   teams
     # Arr.filter \team -> mustHaveChars `Set.subset` getCharacterNames team
+
+-- This is used to filter out teams where they may have been assigned the same weapons, but for different roles.
+-- E.g. selecting Patk Up All + Matk Up All + Heal All, would return:
+--     * Crimson Staff (Matk Up All + Heal All) + Kamura Wand (Patk Up All)
+--     * Crimson Staff (Matk Up All) + Kamura Wand (Patk Up All + Heal All)
+--
+-- Displaying both is redundant, so this function will eliminate one of them.
+filterDuplicates :: Array AssignmentResult -> Array AssignmentResult
+filterDuplicates =
+  Arr.nubBy (compare `on` getTeamWeaponNames)

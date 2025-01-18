@@ -281,6 +281,7 @@ updateTeams state = do
   let
     teams = Search.search state.maxCharacterCount filters state.armory
       # Search.filterMustHaveChars state.mustHaveChars
+      # Search.filterDuplicates
 
   -- Console.log "-----------------------------------------"
   -- Console.log "-----------------------------------------"

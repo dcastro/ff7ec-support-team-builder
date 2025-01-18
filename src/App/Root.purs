@@ -22,6 +22,7 @@ import Data.Traversable (for)
 import Effect.Aff (Aff)
 import Effect.Aff.Class (class MonadAff)
 import Effect.Class.Console as Console
+import Google.SheetsApi as SheetsApi
 import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
@@ -207,6 +208,7 @@ render state =
 handleAction :: forall o. Action → H.HalogenM State Action Slots o Aff Unit
 handleAction = case _ of
   Initialize -> do
+    H.liftAff SheetsApi.load
     H.liftAff Armory.init >>= case _ of
       Just armory -> do
         let initialState = mkInitialLoadedState armory

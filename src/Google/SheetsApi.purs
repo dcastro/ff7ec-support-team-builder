@@ -11,10 +11,15 @@ import Effect.Aff (Aff)
   * https://book.purescript.org/chapter10.html
 -}
 foreign import _getSheet :: String -> Effect (Promise (Response GetSheetResult))
+foreign import _loadGoogleApi :: Effect (Promise Unit)
 
 getSheet :: String -> Aff (Response GetSheetResult)
 getSheet range = do
   toAffE $ _getSheet range
+
+load :: Aff Unit
+load = do
+  toAffE _loadGoogleApi
 
 type Response r =
   { status :: Int

@@ -1,0 +1,77 @@
+[
+  {
+    "weaponName": "Black Whiskers",
+    "obYEffect": {
+      "range": "SingleTarget",
+      "effectType": {
+        "type": "WaterResistDown",
+        "value": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
+    },
+    "obY": "OB10",
+    "obXEffect": {
+      "range": "SingleTarget",
+      "effectType": {
+        "type": "WaterResistDown",
+        "value": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      }
+    },
+    "obX": "OB6"
+  },
+  {
+    "weaponName": "Crystal Megaphone",
+    "obYEffect": {
+      "range": "SingleTarget",
+      "effectType": {
+        "type": "PdefUp",
+        "value": {
+          "max": "High",
+          "base": "Mid"
+        }
+      }
+    },
+    "obY": "OB1",
+    "obXEffect": {
+      "range": "SingleTarget",
+      "effectType": {
+        "type": "PdefUp",
+        "value": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      }
+    },
+    "obX": "OB0"
+  },
+  {
+    "weaponName": "Gold Megaphone",
+    "obYEffect": {
+      "range": "SingleTarget",
+      "effectType": {
+        "type": "MatkDown",
+        "value": {
+          "max": "High",
+          "base": "High"
+        }
+      }
+    },
+    "obY": "OB10",
+    "obXEffect": {
+      "range": "SingleTarget",
+      "effectType": {
+        "type": "MatkDown",
+        "value": {
+          "max": "Mid",
+          "base": "Mid"
+        }
+      }
+    },
+    "obX": "OB6"
+  }
+]

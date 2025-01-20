@@ -65,4 +65,4 @@ spec =
             $ "Failed to read `resources/weapons.json`: \n"
                 <> Utils.renderJsonErr errs
       let parseResult = parseWeapons sourceWeapons
-      T.goldenTest "resources/weapons.snap" parseResult
+      T.goldenTest "snaps/weapons.snap" parseResult

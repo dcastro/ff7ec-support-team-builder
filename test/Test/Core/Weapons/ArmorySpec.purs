@@ -38,7 +38,7 @@ spec =
 
       armory <- Armory.createArmory weapons Map.empty
 
-      T.goldenTest "resources/grouped_weapons.snap" $ MapAsArray armory.groupedByEffect
+      T.goldenTest "snaps/grouped_weapons.snap" $ MapAsArray armory.groupedByEffect
 
     it "check differences in OB potencies" do
       -- A script to find out whether all weapons have the same effects at OB0 as they do at OB1,

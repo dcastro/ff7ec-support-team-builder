@@ -250,6 +250,7 @@ insertWeapon weapon existingWeapons armory =
       pure $ armory
         # mergeWithExisting existingWeapon
         # insertIntoGroups
+        # insertCharacterName
     Nothing -> do
       Console.log $ "Weapon added: " <> display weapon.name
       pure $ armory

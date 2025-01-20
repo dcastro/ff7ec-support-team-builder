@@ -72,6 +72,7 @@ data EffectType
   | EarthResistDown Potencies
   | WaterResistDown Potencies
   | WindResistDown Potencies
+  | Enfeeble
 
 type WeaponEffect =
   { effectType ::

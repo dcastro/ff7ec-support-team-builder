@@ -17033,6 +17033,12 @@
           {
             "range": "SingleTarget",
             "effectType": {
+              "type": "Enfeeble"
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
               "type": "IceResistDown",
               "value": {
                 "max": "High",
@@ -17045,6 +17051,12 @@
       },
       "ob10": {
         "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Enfeeble"
+            }
+          },
           {
             "range": "SingleTarget",
             "effectType": {
@@ -17063,6 +17075,12 @@
           {
             "range": "SingleTarget",
             "effectType": {
+              "type": "Enfeeble"
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
               "type": "IceResistDown",
               "value": {
                 "max": "Mid",
@@ -17075,6 +17093,12 @@
       },
       "ob0": {
         "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Enfeeble"
+            }
+          },
           {
             "range": "SingleTarget",
             "effectType": {

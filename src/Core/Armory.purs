@@ -114,9 +114,11 @@ instance Display FilterRange where
 
 data FilterEffectType
   = FilterHeal
-  -- Buffs
+
   | FilterVeil
   | FilterProvoke
+  | FilterEnfeeble
+
   | FilterPatkUp
   | FilterMatkUp
   | FilterPdefUp
@@ -127,7 +129,7 @@ data FilterEffectType
   | FilterEarthDamageUp
   | FilterWaterDamageUp
   | FilterWindDamageUp
-  -- Debuffs
+
   | FilterPatkDown
   | FilterMatkDown
   | FilterPdefDown
@@ -157,7 +159,11 @@ allFilterEffectTypes = Utils.listEnum
 instance Display FilterEffectType where
   display = case _ of
     FilterHeal -> "Heal"
-    -- Buffs
+
+    FilterVeil -> "Veil"
+    FilterProvoke -> "Provoke"
+    FilterEnfeeble -> "Enfeeble"
+
     FilterPatkUp -> "PATK up"
     FilterMatkUp -> "MATK up"
     FilterPdefUp -> "PDEF up"
@@ -168,9 +174,7 @@ instance Display FilterEffectType where
     FilterEarthDamageUp -> "Earth damage up"
     FilterWaterDamageUp -> "Water damage up"
     FilterWindDamageUp -> "Wind damage up"
-    FilterVeil -> "Veil"
-    FilterProvoke -> "Provoke"
-    -- Debuffs
+
     FilterPatkDown -> "PATK down"
     FilterMatkDown -> "MATK down"
     FilterPdefDown -> "PDEF down"
@@ -283,9 +287,11 @@ insertWeapon weapon existingWeapons armory =
     Heal { percentage } ->
       if unwrap percentage >= 35 then Just { effectType: FilterHeal, potencies: Nothing }
       else Nothing
-    -- Buffs
+
     Veil -> Just { effectType: FilterVeil, potencies: Nothing }
     Provoke -> Just { effectType: FilterProvoke, potencies: Nothing }
+    Enfeeble -> Just { effectType: FilterEnfeeble, potencies: Nothing }
+
     PatkUp potencies -> Just { effectType: FilterPatkUp, potencies: Just potencies }
     MatkUp potencies -> Just { effectType: FilterMatkUp, potencies: Just potencies }
     PdefUp potencies -> Just { effectType: FilterPdefUp, potencies: Just potencies }
@@ -296,7 +302,7 @@ insertWeapon weapon existingWeapons armory =
     EarthDamageUp potencies -> Just { effectType: FilterEarthDamageUp, potencies: Just potencies }
     WaterDamageUp potencies -> Just { effectType: FilterWaterDamageUp, potencies: Just potencies }
     WindDamageUp potencies -> Just { effectType: FilterWindDamageUp, potencies: Just potencies }
-    -- Debuffs
+
     PatkDown potencies -> Just { effectType: FilterPatkDown, potencies: Just potencies }
     MatkDown potencies -> Just { effectType: FilterMatkDown, potencies: Just potencies }
     PdefDown potencies -> Just { effectType: FilterPdefDown, potencies: Just potencies }

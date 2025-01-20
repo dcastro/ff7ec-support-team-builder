@@ -203,6 +203,28 @@
   ],
   [
     {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterEnfeeble"
+    },
+    [
+      {
+        "weaponName": "Rocket Lance"
+      }
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterEnfeeble"
+    },
+    [
+      {
+        "weaponName": "Rocket Lance"
+      }
+    ]
+  ],
+  [
+    {
       "range": "FilterAll",
       "effectType": "FilterPatkUp"
     },

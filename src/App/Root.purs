@@ -5,7 +5,7 @@ import Prelude
 import App.EffectSelector as EffectSelector
 import App.Results as Result
 import App.Results as Results
-import Core.Armory (Armory, FilterEffectType(..))
+import Core.Armory (Armory)
 import Core.Armory as Armory
 import Core.Display (display)
 import Core.Weapons.Search (AssignmentResult)

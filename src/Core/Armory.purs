@@ -195,13 +195,11 @@ insertWeapon weapon existingWeapons armory =
   matchingFilters = do
     let groupEntries = Set.fromFoldable $ weapon.ob10.effects >>= \effect -> matchingFilters' effect
 
-    if weapon.cureAllAbility then
-      Set.insert
-        { filter: { effectType: FilterHeal, range: FilterAll }
-        , weaponName: weapon.name
-        , potenciesAtOb10: Nothing
-        }
-        groupEntries
+    if weapon.cureAllAbility then do
+      -- Assuming a 5* Cura materia (100% heal) with a -40% penalty
+      let healAll = { effectType: Heal { percentage: Percentage 60 }, range: All }
+      Set.union groupEntries (Set.fromFoldable $ matchingFilters' healAll)
+
     else groupEntries
 
   addToGroup :: GroupEntry -> Armory -> Armory

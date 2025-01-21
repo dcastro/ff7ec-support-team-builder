@@ -83,13 +83,37 @@
         "weaponName": "Bahamut Rod"
       },
       {
+        "weaponName": "Crimson Staff"
+      },
+      {
+        "weaponName": "Egg Staff"
+      },
+      {
         "weaponName": "Fairy Tale"
+      },
+      {
+        "weaponName": "Floral Wand"
+      },
+      {
+        "weaponName": "Kamura Wand"
+      },
+      {
+        "weaponName": "Snowflake"
+      },
+      {
+        "weaponName": "Terra's Rod"
       },
       {
         "weaponName": "Umbrella"
       },
       {
+        "weaponName": "Microlaser"
+      },
+      {
         "weaponName": "Crystal Sword"
+      },
+      {
+        "weaponName": "Bramble Spine"
       },
       {
         "weaponName": "Centipede"
@@ -98,7 +122,19 @@
         "weaponName": "Espee Rapiere Next-G"
       },
       {
+        "weaponName": "Foam Sword"
+      },
+      {
+        "weaponName": "Luminary Sword"
+      },
+      {
         "weaponName": "Prime Number"
+      },
+      {
+        "weaponName": "Syringe Rapier"
+      },
+      {
+        "weaponName": "Headphones"
       },
       {
         "weaponName": "Pilot's Collar"
@@ -107,10 +143,16 @@
         "weaponName": "Rubber Collar"
       },
       {
+        "weaponName": "Silver Collar"
+      },
+      {
         "weaponName": "Lifeguard Wraps"
       },
       {
         "weaponName": "Enhance Sword (Z)"
+      },
+      {
+        "weaponName": "Twinkling Star"
       }
     ]
   ],
@@ -124,10 +166,31 @@
         "weaponName": "Bahamut Rod"
       },
       {
+        "weaponName": "Crimson Staff"
+      },
+      {
+        "weaponName": "Egg Staff"
+      },
+      {
         "weaponName": "Fairy Tale"
       },
       {
+        "weaponName": "Floral Wand"
+      },
+      {
+        "weaponName": "Kamura Wand"
+      },
+      {
+        "weaponName": "Snowflake"
+      },
+      {
+        "weaponName": "Terra's Rod"
+      },
+      {
         "weaponName": "Umbrella"
+      },
+      {
+        "weaponName": "Microlaser"
       },
       {
         "weaponName": "Crystal Sword"
@@ -136,19 +199,37 @@
         "weaponName": "Tranquilizer Gun"
       },
       {
+        "weaponName": "Bramble Spine"
+      },
+      {
         "weaponName": "Centipede"
       },
       {
         "weaponName": "Espee Rapiere Next-G"
       },
       {
+        "weaponName": "Foam Sword"
+      },
+      {
+        "weaponName": "Luminary Sword"
+      },
+      {
         "weaponName": "Prime Number"
+      },
+      {
+        "weaponName": "Syringe Rapier"
+      },
+      {
+        "weaponName": "Headphones"
       },
       {
         "weaponName": "Pilot's Collar"
       },
       {
         "weaponName": "Rubber Collar"
+      },
+      {
+        "weaponName": "Silver Collar"
       },
       {
         "weaponName": "Grand Gloves"
@@ -158,6 +239,9 @@
       },
       {
         "weaponName": "Enhance Sword (Z)"
+      },
+      {
+        "weaponName": "Twinkling Star"
       }
     ]
   ],

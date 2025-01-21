@@ -219,6 +219,8 @@ parseEffectType percentageOpt =
     <|> withPotencies "Water Resistance Down" WaterResistDown
     <|> withPotencies "Wind Resistance Down" WindResistDown
     <|> withoutPotencies "Enfeeble" Enfeeble
+    <|> withoutPotencies "Stop" Stop
+    <|> withoutPotencies "WeaknessAttackUp" ExploitWeakness
     <|> parseHeal
   where
   withPotencies :: String -> (Potencies -> EffectType) -> Parser EffectType

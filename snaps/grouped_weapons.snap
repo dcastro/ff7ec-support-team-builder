@@ -226,6 +226,68 @@
   [
     {
       "range": "FilterAll",
+      "effectType": "FilterStop"
+    },
+    [
+      {
+        "weaponName": "Mop"
+      }
+    ]
+  ],
+  [
+    {
+      "range": "FilterSingleTargetOrAll",
+      "effectType": "FilterStop"
+    },
+    [
+      {
+        "weaponName": "Mop"
+      },
+      {
+        "weaponName": "Spear"
+      },
+      {
+        "weaponName": "Trident"
+      },
+      {
+        "weaponName": "Flayer"
+      }
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterStop"
+    },
+    [
+      {
+        "weaponName": "Mop"
+      },
+      {
+        "weaponName": "Spear"
+      },
+      {
+        "weaponName": "Trident"
+      },
+      {
+        "weaponName": "Flayer"
+      }
+    ]
+  ],
+  [
+    {
+      "range": "FilterSelfOrSingleTargetOrAll",
+      "effectType": "FilterExploitWeakness"
+    },
+    [
+      {
+        "weaponName": "Blue Daffodil Gloves"
+      }
+    ]
+  ],
+  [
+    {
+      "range": "FilterAll",
       "effectType": "FilterPatkUp"
     },
     [

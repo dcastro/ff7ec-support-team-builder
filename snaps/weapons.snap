@@ -12728,19 +12728,47 @@
     {
       "source": "Gacha (Limit Break)",
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "ExploitWeakness"
+            }
+          }
+        ],
         "description": "Blue Florescent Flurry+ (4 ATB)\n1000% Phys. Non-elem. Damage [Range: Single Enemy]\n50s 40% WeaknessAttackUp (+10s) [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "ExploitWeakness"
+            }
+          }
+        ],
         "description": "Blue Florescent Flurry++ (4 ATB)\n1100% Phys. Non-elem. Damage [Range: Single Enemy]\n70s 40% WeaknessAttackUp (+14s) [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "ExploitWeakness"
+            }
+          }
+        ],
         "description": "Blue Florescent Flurry (4 ATB)\n720% Phys. Non-elem. Damage [Range: Single Enemy]\n50s 25% WeaknessAttackUp (+10s) [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "ExploitWeakness"
+            }
+          }
+        ],
         "description": "Blue Florescent Flurry (4 ATB)\n600% Phys. Non-elem. Damage [Range: Single Enemy]\n45s 25% WeaknessAttackUp (+9s) [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Blue Daffodil Gloves",
@@ -17120,19 +17148,47 @@
     {
       "source": "Guild Exchange",
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Cleaning Mop+ (4 ATB)\n480% Phys. Non-elem. Damage [Range: All Enemies]\n4s Stop (+3s) [Range: All Enemies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Cleaning Mop++ (4 ATB)\n540% Phys. Non-elem. Damage [Range: All Enemies]\n5s Stop (+3s) [Range: All Enemies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Cleaning Mop (4 ATB)\n390% Phys. Non-elem. Damage [Range: All Enemies]\n3s Stop (+3s) [Range: All Enemies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Cleaning Mop (4 ATB)\n340% Phys. Non-elem. Damage [Range: All Enemies]\n3s Stop (+3s) [Range: All Enemies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "name": "Mop",
@@ -17143,19 +17199,47 @@
     {
       "source": "Gacha",
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Quadspike+ (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n6s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Quadspike++ (4 ATB)\n750% Phys. Non-elem. Damage [Range: Single Enemy]\n8s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Quadspike (4 ATB)\n480% Phys. Non-elem. Damage [Range: Single Enemy]\n4s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Quadspike (4 ATB)\n400% Phys. Non-elem. Damage [Range: Single Enemy]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Spear",
@@ -17233,19 +17317,47 @@
     {
       "source": "Gacha",
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Rising Harpoon+ (4 ATB)\n550% Phys. Non-elem. Damage [Range: Single Enemy]\n26s Poison (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]\n4s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Rising Harpoon++ (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n30s Poison (+7s) [Range: Single Enemy] [Condition: Self 70-100% HP]\n5s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Rising Harpoon (4 ATB)\n450% Phys. Non-elem. Damage [Range: Single Enemy]\n26s Poison (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Rising Harpoon (4 ATB)\n390% Phys. Non-elem. Damage [Range: Single Enemy]\n24s Poison (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Trident",
@@ -17735,19 +17847,47 @@
     {
       "source": "Gacha",
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Heavy Swing+ [Sigils: 1 \\◆] (3 ATB)\n360% Phys. Non-elem. Damage [Range: Single Enemy]\n4s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Heavy Swing++ [Sigils: 1 \\◆] (3 ATB)\n420% Phys. Non-elem. Damage [Range: Single Enemy]\n5s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Heavy Swing [Sigils: 1 \\◆] (3 ATB)\n300% Phys. Non-elem. Damage [Range: Single Enemy]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
         "description": "Heavy Swing [Sigils: 1 \\◆] (3 ATB)\n260% Phys. Non-elem. Damage [Range: Single Enemy]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Flayer",

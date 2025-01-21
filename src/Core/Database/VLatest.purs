@@ -96,6 +96,8 @@ data EffectType
   | WaterResistDown Potencies
   | WindResistDown Potencies
   | Enfeeble
+  | Stop
+  | ExploitWeakness
 
 type WeaponEffect =
   { effectType ::
@@ -125,6 +127,8 @@ data FilterEffectType
   | FilterVeil
   | FilterProvoke
   | FilterEnfeeble
+  | FilterStop
+  | FilterExploitWeakness
 
   | FilterPatkUp
   | FilterMatkUp
@@ -249,6 +253,8 @@ instance Display FilterEffectType where
     FilterVeil -> "Veil"
     FilterProvoke -> "Provoke"
     FilterEnfeeble -> "Enfeeble"
+    FilterStop -> "Stop"
+    FilterExploitWeakness -> "Exploit Weakness"
 
     FilterPatkUp -> "PATK up"
     FilterMatkUp -> "MATK up"

@@ -150,6 +150,8 @@ insertWeapon weapon existingWeapons armory =
     Veil -> Just { effectType: FilterVeil, potencies: Nothing }
     Provoke -> Just { effectType: FilterProvoke, potencies: Nothing }
     Enfeeble -> Just { effectType: FilterEnfeeble, potencies: Nothing }
+    Stop -> Just { effectType: FilterStop, potencies: Nothing }
+    ExploitWeakness -> Just { effectType: FilterExploitWeakness, potencies: Nothing }
 
     PatkUp potencies -> Just { effectType: FilterPatkUp, potencies: Just potencies }
     MatkUp potencies -> Just { effectType: FilterMatkUp, potencies: Just potencies }

@@ -5,9 +5,8 @@ import Prelude
 import Test.Spec
 
 import Control.Monad.Error.Class (throwError)
-import Core.Armory (ArmoryWeapon)
 import Core.Armory as Armory
-import Core.Weapons.Types (EffectType(..), WeaponEffect, WeaponName)
+import Core.Database.VLatest
 import Data.Array as Arr
 import Data.Either (Either(..))
 import Data.List.Lazy as LazyList

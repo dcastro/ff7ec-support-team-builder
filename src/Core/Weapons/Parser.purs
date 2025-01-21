@@ -1,9 +1,9 @@
 module Core.Weapons.Parser where
 
-import Core.Weapons.Types
 import Prelude
 
 import Control.Alt ((<|>))
+import Core.Database.VLatest
 import Data.Array as Arr
 import Data.Either (Either(..), hush)
 import Data.FoldableWithIndex as F
@@ -23,6 +23,18 @@ type ParseResult =
   { weapons ::
       Array Weapon
   , errors :: Array String
+  }
+
+type Weapon =
+  { name :: WeaponName
+  , character :: CharacterName
+  , source :: NonEmptyString
+  , image :: NonEmptyString
+  , ob0 :: ObLevel
+  , ob1 :: ObLevel
+  , ob6 :: ObLevel
+  , ob10 :: ObLevel
+  , cureAllAbility :: Boolean
   }
 
 parseWeapons :: Array (Array String) -> ParseResult

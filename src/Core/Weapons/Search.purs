@@ -1,9 +1,8 @@
 module Core.Weapons.Search where
 
-import Core.Weapons.Types
 import Prelude
 
-import Core.Armory (Armory, ArmoryWeapon, Filter, GroupedWeapon)
+import Core.Database.VLatest
 import Core.Display (display)
 import Data.Array as Arr
 import Data.Foldable as F

@@ -2,11 +2,10 @@ module App.EffectSelector where
 
 import Prelude
 
-import Core.Armory (Armory, ArmoryWeapon, Filter, FilterEffectType, FilterRange)
-import Core.Armory as Armory
 import Core.Display (display)
 import Core.Weapons.Search as Search
-import Core.Weapons.Types (WeaponName)
+import Core.Database.VLatest
+import Core.Database.VLatest as Db
 import Data.Array as Arr
 import Data.Bounded.Generic (genericBottom)
 import Data.Maybe (Maybe(..))
@@ -93,7 +92,7 @@ render state =
                                 ]
                                 ( [ HH.option_ [ HH.text "Select a weapon effect..." ] ]
                                     <>
-                                      ( Armory.allFilterEffectTypes <#> \effectType -> do
+                                      ( Db.allFilterEffectTypes <#> \effectType -> do
                                           let selected = state.selectedEffectType == Just effectType
                                           HH.option [ HP.selected selected ] [ HH.text $ display effectType ]
                                       )
@@ -105,7 +104,7 @@ render state =
                             [ HH.select
                                 [ HE.onSelectedIndexChange SelectedRange
                                 ]
-                                ( Armory.allFilterRanges <#> \filterRange ->
+                                ( Db.allFilterRanges <#> \filterRange ->
                                     HH.option_ [ HH.text $ display filterRange ]
                                 )
                             ]
@@ -169,7 +168,7 @@ handleAction = case _ of
       -- Find the correct filter
       let arrayIndex = idx - 1
       let
-        effectType = Arr.index Armory.allFilterEffectTypes arrayIndex `unsafeFromJust`
+        effectType = Arr.index Db.allFilterEffectTypes arrayIndex `unsafeFromJust`
           ("Invalid effect type index: " <> show arrayIndex)
 
       Console.log $ "idx " <> show idx <> ", selected: " <> display effectType
@@ -178,7 +177,7 @@ handleAction = case _ of
     H.raise RaiseSelectionChanged
 
   SelectedRange idx -> do
-    let filterRange = Arr.index Armory.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
+    let filterRange = Arr.index Db.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
     Console.log $ "idx " <> show idx <> ", selected: " <> display filterRange
     H.modify_ \s -> s { selectedRange = filterRange }
       # updateMatchingWeapons

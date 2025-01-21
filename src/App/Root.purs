@@ -5,12 +5,11 @@ import Prelude
 import App.EffectSelector as EffectSelector
 import App.Results as Result
 import App.Results as Results
-import Core.Armory (Armory)
+import Core.Database.VLatest
 import Core.Armory as Armory
 import Core.Display (display)
 import Core.Weapons.Search (AssignmentResult)
 import Core.Weapons.Search as Search
-import Core.Weapons.Types (CharacterName, WeaponName)
 import Data.Array as Arr
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Array.NonEmpty as NA

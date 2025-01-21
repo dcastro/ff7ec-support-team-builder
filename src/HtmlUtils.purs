@@ -2,7 +2,7 @@ module HtmlUtils where
 
 import Prelude
 
-import Core.Armory (ArmoryWeapon)
+import Core.Database.VLatest (ArmoryWeapon)
 import Core.Display (display)
 import Data.String.Utils as String
 import Halogen (AttrName(..), ClassName(..))

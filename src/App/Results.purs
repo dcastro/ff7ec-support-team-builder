@@ -2,11 +2,10 @@ module App.Results where
 
 import Prelude
 
-import Core.Armory (ArmoryWeapon)
+import Core.Database.VLatest
 import Core.Display (display)
 import Core.Weapons.Search (AssignmentResult)
 import Core.Weapons.Search as Search
-import Core.Weapons.Types (WeaponName)
 import Data.Array as Arr
 import Data.Map as Map
 import Data.Maybe (Maybe(..))

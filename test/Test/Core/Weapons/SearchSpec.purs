@@ -3,9 +3,8 @@ module Test.Core.Weapons.SearchSpec (spec) where
 import Prelude
 import Test.Spec
 
-import Core.Armory (Filter, FilterEffectType(..), FilterRange(..), ArmoryWeapon)
+import Core.Database.VLatest
 import Core.Weapons.Search as Search
-import Core.Weapons.Types (CharacterName(..), Potency(..), WeaponName(..))
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Nullable (null)

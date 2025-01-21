@@ -1,12 +1,13 @@
 module Core.Armory where
 
-import Core.Weapons.Types
+import Core.Database.VLatest
 import Prelude
 
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Control.Monad.Except (runExceptT)
 import Control.Monad.Rec.Class (class MonadRec)
-import Core.Display (class Display, display)
+import Core.Display (display)
+import Core.Weapons.Parser (Weapon)
 import Core.Weapons.Parser as P
 import Core.WebStorage as WS
 import Data.Array as Arr
@@ -15,16 +16,13 @@ import Data.DateTime as DateTime
 import Data.Either (Either(..), hush)
 import Data.Foldable (for_)
 import Data.Foldable as F
-import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Newtype (unwrap)
 import Data.Set (Set)
 import Data.Set as Set
-import Data.Show.Generic (genericShow)
 import Data.String.NonEmpty as NES
-import Data.String.NonEmpty.Internal (NonEmptyString)
 import Data.Time.Duration (Hours(..))
 import Data.Unfoldable as Unfoldable
 import Effect.Aff (Aff)
@@ -36,155 +34,16 @@ import Google.SheetsApi as SheetsApi
 import Record as Record
 import Type.Proxy (Proxy(..))
 import Utils (MapAsArray(..), SetAsArray(..), logOnLeft, renderJsonErr, throwOnNothing, whenJust)
-import Utils as Utils
-import Yoga.JSON (class ReadForeign, class WriteForeign)
 import Yoga.JSON as J
-import Yoga.JSON.Generics as J
-import Yoga.JSON.Generics.EnumSumRep as Enum
 
 currentDbVersion :: Int
 currentDbVersion = 1
-
-type Armory =
-  { allWeapons :: Map WeaponName ArmoryWeapon
-  , groupedByEffect :: Map Filter (Array GroupedWeapon)
-  , allCharacterNames :: Set CharacterName
-  }
-
-type SerializableArmory =
-  { allWeapons :: MapAsArray WeaponName ArmoryWeapon
-  , groupedByEffect :: MapAsArray Filter (Array GroupedWeapon)
-  , allCharacterNames :: SetAsArray CharacterName
-  }
-
-type GroupedWeapon =
-  { weaponName :: WeaponName
-  , potenciesAtOb10 :: Maybe Potencies
-  }
 
 type GroupEntry =
   { filter :: Filter
   , weaponName :: WeaponName
   , potenciesAtOb10 :: Maybe Potencies
   }
-
-type ArmoryWeapon =
-  { name :: WeaponName
-  , character :: CharacterName
-  , source :: NonEmptyString
-  , image :: NonEmptyString
-  , ob0 :: ObLevel
-  , ob1 :: ObLevel
-  , ob6 :: ObLevel
-  , ob10 :: ObLevel
-  , cureAllAbility :: Boolean
-  , ignored :: Boolean
-  }
-
-type Filter =
-  { effectType :: FilterEffectType
-  , range :: FilterRange
-  }
-
-data FilterRange
-  = FilterAll
-  | FilterSingleTargetOrAll
-  | FilterSelfOrSingleTargetOrAll
-
-derive instance Generic FilterRange _
-derive instance Eq FilterRange
-derive instance Ord FilterRange
-instance Show FilterRange where
-  show = genericShow
-
-instance WriteForeign FilterRange where
-  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
-
-instance ReadForeign FilterRange where
-  readImpl = J.genericReadForeignEnum Enum.defaultOptions
-
-allFilterRanges :: Array FilterRange
-allFilterRanges = Utils.listEnum
-
-instance Display FilterRange where
-  display = case _ of
-    FilterAll -> "All"
-    FilterSingleTargetOrAll -> "Single Target / All"
-    FilterSelfOrSingleTargetOrAll -> "Self / Single Target / All"
-
-data FilterEffectType
-  = FilterHeal
-
-  | FilterVeil
-  | FilterProvoke
-  | FilterEnfeeble
-
-  | FilterPatkUp
-  | FilterMatkUp
-  | FilterPdefUp
-  | FilterMdefUp
-  | FilterFireDamageUp
-  | FilterIceDamageUp
-  | FilterThunderDamageUp
-  | FilterEarthDamageUp
-  | FilterWaterDamageUp
-  | FilterWindDamageUp
-
-  | FilterPatkDown
-  | FilterMatkDown
-  | FilterPdefDown
-  | FilterMdefDown
-  | FilterFireResistDown
-  | FilterIceResistDown
-  | FilterThunderResistDown
-  | FilterEarthResistDown
-  | FilterWaterResistDown
-  | FilterWindResistDown
-
-derive instance Generic FilterEffectType _
-derive instance Eq FilterEffectType
-derive instance Ord FilterEffectType
-instance Show FilterEffectType where
-  show = genericShow
-
-instance WriteForeign FilterEffectType where
-  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
-
-instance ReadForeign FilterEffectType where
-  readImpl = J.genericReadForeignEnum Enum.defaultOptions
-
-allFilterEffectTypes :: Array FilterEffectType
-allFilterEffectTypes = Utils.listEnum
-
-instance Display FilterEffectType where
-  display = case _ of
-    FilterHeal -> "Heal"
-
-    FilterVeil -> "Veil"
-    FilterProvoke -> "Provoke"
-    FilterEnfeeble -> "Enfeeble"
-
-    FilterPatkUp -> "PATK up"
-    FilterMatkUp -> "MATK up"
-    FilterPdefUp -> "PDEF up"
-    FilterMdefUp -> "MDEF up"
-    FilterFireDamageUp -> "Fire damage up"
-    FilterIceDamageUp -> "Ice damage up"
-    FilterThunderDamageUp -> "Thunder damage up"
-    FilterEarthDamageUp -> "Earth damage up"
-    FilterWaterDamageUp -> "Water damage up"
-    FilterWindDamageUp -> "Wind damage up"
-
-    FilterPatkDown -> "PATK down"
-    FilterMatkDown -> "MATK down"
-    FilterPdefDown -> "PDEF down"
-    FilterMdefDown -> "MDEF down"
-    FilterFireResistDown -> "Fire resist down"
-    FilterIceResistDown -> "Ice resist down"
-    FilterThunderResistDown -> "Thunder resist down"
-    FilterEarthResistDown -> "Earth resist down"
-    FilterWaterResistDown -> "Water resist down"
-    FilterWindResistDown -> "Wind resist down"
 
 init :: Aff (Maybe Armory)
 init = do

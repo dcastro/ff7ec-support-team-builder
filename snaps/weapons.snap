@@ -5344,6 +5344,73 @@
       "character": "Cait Sith"
     },
     {
+      "source": "Event",
+      "ob6": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Deblizzara Surge A+ (4 ATB)\n240% Mag. Non-elem. Damage [Range: All Enemies]\n30s Ice Resistance Down (+7s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Deblizzara Surge A++ (4 ATB)\n250% Mag. Non-elem. Damage [Range: All Enemies]\n35s Ice Resistance Down (+8s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Deblizzara Surge A (4 ATB)\n210% Mag. Non-elem. Damage [Range: All Enemies]\n25s Ice Resistance Down (+6s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Deblizzara Surge A (4 ATB)\n180% Mag. Non-elem. Damage [Range: All Enemies]\n20s Ice Resistance Down (+5s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "name": "Stilva Megaphone",
+      "image": "https://i.imgur.com/qcPKhkV.png",
+      "cureAllAbility": false,
+      "character": "Cait Sith"
+    },
+    {
       "source": "Guild Exchange",
       "ob6": {
         "effects": [
@@ -5615,6 +5682,847 @@
       "image": "https://i.imgur.com/ORGI6Xu.png",
       "cureAllAbility": false,
       "character": "Cait Sith"
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Heavy Swing+ [Sigils: 1 \\◆] (3 ATB)\n360% Phys. Non-elem. Damage [Range: Single Enemy]\n4s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Heavy Swing++ [Sigils: 1 \\◆] (3 ATB)\n420% Phys. Non-elem. Damage [Range: Single Enemy]\n5s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Heavy Swing [Sigils: 1 \\◆] (3 ATB)\n300% Phys. Non-elem. Damage [Range: Single Enemy]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Heavy Swing [Sigils: 1 \\◆] (3 ATB)\n260% Phys. Non-elem. Damage [Range: Single Enemy]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "name": "Flayer",
+      "image": "https://i.imgur.com/lV7oorM.png",
+      "cureAllAbility": false,
+      "character": "Cid"
+    },
+    {
+      "source": "Guild Exchange",
+      "ob6": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Cleaning Mop+ (4 ATB)\n480% Phys. Non-elem. Damage [Range: All Enemies]\n4s Stop (+3s) [Range: All Enemies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Cleaning Mop++ (4 ATB)\n540% Phys. Non-elem. Damage [Range: All Enemies]\n5s Stop (+3s) [Range: All Enemies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Cleaning Mop (4 ATB)\n390% Phys. Non-elem. Damage [Range: All Enemies]\n3s Stop (+3s) [Range: All Enemies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Cleaning Mop (4 ATB)\n340% Phys. Non-elem. Damage [Range: All Enemies]\n3s Stop (+3s) [Range: All Enemies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "name": "Mop",
+      "image": "https://i.imgur.com/ri1NRRr.png",
+      "cureAllAbility": false,
+      "character": "Cid"
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
+        "effects": [],
+        "description": "Aeroga A+ (4 ATB)\n440% Mag. Wind Damage [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [],
+        "description": "Aeroga A++ (4 ATB)\n520% Mag. Wind Damage [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [],
+        "description": "Aeroga A (4 ATB)\n340% Mag. Wind Damage [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [],
+        "description": "Aeroga A (4 ATB)\n280% Mag. Wind Damage [Range: All Enemies]"
+      },
+      "name": "Partisan",
+      "image": "https://i.imgur.com/dZ6EmxF.png",
+      "cureAllAbility": false,
+      "character": "Cid"
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PatkDown",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "MatkDown",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Sharp Sonic+ (4 ATB)\n480% Phys. Non-elem. Damage [Range: All Enemies]\n20s PATK Down (+6s) (Mid -> High) [Range: All Enemies]\n20s MATK Down (+6s) (Mid -> High) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PatkDown",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "MatkDown",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Sharp Sonic++ (4 ATB)\n540% Phys. Non-elem. Damage [Range: All Enemies]\n25s PATK Down (+8s) (Mid -> High) [Range: All Enemies]\n25s MATK Down (+8s) (Mid -> High) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PatkDown",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "MatkDown",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Sharp Sonic (4 ATB)\n390% Phys. Non-elem. Damage [Range: All Enemies]\n20s PATK Down (+6s) (Mid) [Range: All Enemies]\n20s MATK Down (+6s) (Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PatkDown",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "MatkDown",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Sharp Sonic (4 ATB)\n340% Phys. Non-elem. Damage [Range: All Enemies]\n18s PATK Down (+6s) (Mid) [Range: All Enemies]\n18s MATK Down (+6s) (Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "name": "Pole Axe",
+      "image": "https://i.imgur.com/Wf6lAxp.png",
+      "cureAllAbility": false,
+      "character": "Cid"
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
+        "effects": [],
+        "description": "Flying Spiral+ (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n+20% Stance Gauge\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob10": {
+        "effects": [],
+        "description": "Flying Spiral++ (4 ATB)\n750% Phys. Non-elem. Damage [Range: Single Enemy]\n+20% Stance Gauge\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob1": {
+        "effects": [],
+        "description": "Flying Spiral (4 ATB)\n480% Phys. Non-elem. Damage [Range: Single Enemy]\n+10% Stance Gauge\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob0": {
+        "effects": [],
+        "description": "Flying Spiral (4 ATB)\n400% Phys. Non-elem. Damage [Range: Single Enemy]\n+10% Stance Gauge\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "name": "Radiant Lance",
+      "image": "https://i.imgur.com/zuVyvjz.png",
+      "cureAllAbility": false,
+      "character": "Cid"
+    },
+    {
+      "source": "Gacha (Limit Break)",
+      "ob6": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Enfeeble"
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          }
+        ],
+        "description": "Cosmic Burst+ (4 ATB)\n550% Mag. Non-elem. Damage [Range: Single Enemy]\n50s Enfeeble (+10s) [Range: Single Enemy]\n25s Ice Resistance Down (+8s) (High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Enfeeble"
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          }
+        ],
+        "description": "Cosmic Burst++ (4 ATB)\n620% Mag. Non-elem. Damage [Range: Single Enemy]\n70s Enfeeble (+14s) [Range: Single Enemy]\n35s Ice Resistance Down (+11s) (High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Enfeeble"
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Cosmic Burst (4 ATB)\n450% Mag. Non-elem. Damage [Range: Single Enemy]\n45s Enfeeble (+9s) [Range: Single Enemy]\n25s Ice Resistance Down (+8s) (Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Enfeeble"
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Cosmic Burst (4 ATB)\n390% Mag. Non-elem. Damage [Range: Single Enemy]\n40s Enfeeble (+8s) [Range: Single Enemy]\n20s Ice Resistance Down (+6s) (Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "name": "Rocket Lance",
+      "image": "https://i.imgur.com/ee06twq.png",
+      "cureAllAbility": false,
+      "character": "Cid"
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "PatkUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "MatkUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "IceDamageUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 12
+              }
+            }
+          }
+        ],
+        "description": "Dragon's Spirit+ (4 ATB)\n26s PATK Up (+8s) (Mid -> High) [Range: Single Ally]\n26s MATK Up (+8s) (Mid -> High) [Range: Single Ally]\n26s Ice Damage Up (+8s) (Mid -> High) [Range: Single Ally]\n12% Heal [Range: Single Ally]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "PatkUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "MatkUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "IceDamageUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 13
+              }
+            }
+          }
+        ],
+        "description": "Dragon's Spirit++ (4 ATB)\n30s PATK Up (+10s) (Mid -> High) [Range: Single Ally]\n30s MATK Up (+10s) (Mid -> High) [Range: Single Ally]\n30s Ice Damage Up (+10s) (Mid -> High) [Range: Single Ally]\n13% Heal [Range: Single Ally]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "PatkUp",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "MatkUp",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "IceDamageUp",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 11
+              }
+            }
+          }
+        ],
+        "description": "Dragon's Spirit (4 ATB)\n26s PATK Up (+8s) (Mid) [Range: Single Ally]\n26s MATK Up (+8s) (Mid) [Range: Single Ally]\n26s Ice Damage Up (+8s) (Mid) [Range: Single Ally]\n11% Heal [Range: Single Ally]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "PatkUp",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "MatkUp",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "IceDamageUp",
+              "value": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 9
+              }
+            }
+          }
+        ],
+        "description": "Dragon's Spirit (4 ATB)\n24s PATK Up (+8s) (Mid) [Range: Single Ally]\n24s MATK Up (+8s) (Mid) [Range: Single Ally]\n24s Ice Damage Up (+8s) (Mid) [Range: Single Ally]\n9% Heal [Range: Single Ally]"
+      },
+      "name": "Scimitar",
+      "image": "https://i.imgur.com/FtmNLjJ.png",
+      "cureAllAbility": false,
+      "character": "Cid"
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefUp",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          }
+        ],
+        "description": "Thunder Slam+ (4 ATB)\n480% Phys. Non-elem. Damage [Range: All Enemies]\n16s PDEF Up (+5s) (High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefUp",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          }
+        ],
+        "description": "Thunder Slam++ (4 ATB)\n540% Phys. Non-elem. Damage [Range: All Enemies]\n20s PDEF Up (+6s) (High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Thunder Slam (4 ATB)\n390% Phys. Non-elem. Damage [Range: All Enemies]\n16s PDEF Up (+5s) (Mid -> High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Thunder Slam (4 ATB)\n340% Phys. Non-elem. Damage [Range: All Enemies]\n12s PDEF Up (+4s) (Mid -> High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "name": "Slash Lance",
+      "image": "https://i.imgur.com/aZeNoOu.png",
+      "cureAllAbility": false,
+      "character": "Cid"
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Quadspike+ (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n6s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Quadspike++ (4 ATB)\n750% Phys. Non-elem. Damage [Range: Single Enemy]\n8s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Quadspike (4 ATB)\n480% Phys. Non-elem. Damage [Range: Single Enemy]\n4s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Quadspike (4 ATB)\n400% Phys. Non-elem. Damage [Range: Single Enemy]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "name": "Spear",
+      "image": "https://i.imgur.com/svvGQA8.png",
+      "cureAllAbility": false,
+      "character": "Cid"
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Rising Harpoon+ (4 ATB)\n550% Phys. Non-elem. Damage [Range: Single Enemy]\n26s Poison (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]\n4s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Rising Harpoon++ (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n30s Poison (+7s) [Range: Single Enemy] [Condition: Self 70-100% HP]\n5s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Rising Harpoon (4 ATB)\n450% Phys. Non-elem. Damage [Range: Single Enemy]\n26s Poison (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "Stop"
+            }
+          }
+        ],
+        "description": "Rising Harpoon (4 ATB)\n390% Phys. Non-elem. Damage [Range: Single Enemy]\n24s Poison (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "name": "Trident",
+      "image": "https://i.imgur.com/ph81nYG.png",
+      "cureAllAbility": false,
+      "character": "Cid"
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "PdefUp",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "MdefUp",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 14
+              }
+            }
+          }
+        ],
+        "description": "Imposing Stance+ (4 ATB)\n34s PDEF Up (+11s) (High) [Range: Self]\n34s MDEF Up (+11s) (High) [Range: Self]\n14% Heal [Range: Self]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "PdefUp",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "MdefUp",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 15
+              }
+            }
+          }
+        ],
+        "description": "Imposing Stance++ (4 ATB)\n38s PDEF Up (+12s) (High) [Range: Self]\n38s MDEF Up (+12s) (High) [Range: Self]\n15% Heal [Range: Self]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "PdefUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "MdefUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 13
+              }
+            }
+          }
+        ],
+        "description": "Imposing Stance (4 ATB)\n34s PDEF Up (+11s) (Mid -> High) [Range: Self]\n34s MDEF Up (+11s) (Mid -> High) [Range: Self]\n13% Heal [Range: Self]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "PdefUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "MdefUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 11
+              }
+            }
+          }
+        ],
+        "description": "Imposing Stance (4 ATB)\n30s PDEF Up (+10s) (Mid -> High) [Range: Self]\n30s MDEF Up (+10s) (Mid -> High) [Range: Self]\n11% Heal [Range: Self]"
+      },
+      "name": "Viper Halberd",
+      "image": "https://i.imgur.com/738XBiz.png",
+      "cureAllAbility": false,
+      "character": "Cid"
     },
     {
       "source": "Gacha",
@@ -6847,6 +7755,57 @@
     {
       "source": "Gacha",
       "ob6": {
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Provoke"
+            }
+          }
+        ],
+        "description": "Frost Slash+ (4 ATB)\n780% Phys. Ice Damage [Range: Single Enemy]\n60s Provoke (+0s) [Range: Self]\n+20% Stance Gauge"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Provoke"
+            }
+          }
+        ],
+        "description": "Frost Slash++ (4 ATB)\n940% Phys. Ice Damage [Range: Single Enemy]\n60s Provoke (+0s) [Range: Self]\n+20% Stance Gauge"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Provoke"
+            }
+          }
+        ],
+        "description": "Frost Slash (4 ATB)\n620% Phys. Ice Damage [Range: Single Enemy]\n60s Provoke (+0s) [Range: Self]\n+10% Stance Gauge"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Provoke"
+            }
+          }
+        ],
+        "description": "Frost Slash (4 ATB)\n520% Phys. Ice Damage [Range: Single Enemy]\n60s Provoke (+0s) [Range: Self]\n+10% Stance Gauge"
+      },
+      "name": "Blade of Ruin",
+      "image": "https://i.imgur.com/TQH4K9w.png",
+      "cureAllAbility": false,
+      "character": "Glenn"
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
         "effects": [],
         "description": "Spinning Blaze+ (4 ATB)\n620% Phys. Fire Damage [Range: Single Enemy]"
       },
@@ -7535,6 +8494,73 @@
       },
       "name": "Steiner's Blade",
       "image": "https://i.imgur.com/wlGu76D.png",
+      "cureAllAbility": false,
+      "character": "Glenn"
+    },
+    {
+      "source": "Event",
+      "ob6": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Deblizzara Surge A+ (4 ATB)\n240% Mag. Non-elem. Damage [Range: All Enemies]\n30s Ice Resistance Down (+7s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Deblizzara Surge A++ (4 ATB)\n250% Mag. Non-elem. Damage [Range: All Enemies]\n35s Ice Resistance Down (+8s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Deblizzara Surge A (4 ATB)\n210% Mag. Non-elem. Damage [Range: All Enemies]\n25s Ice Resistance Down (+6s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Deblizzara Surge A (4 ATB)\n180% Mag. Non-elem. Damage [Range: All Enemies]\n20s Ice Resistance Down (+5s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "name": "Stilva Glaive",
+      "image": "https://i.imgur.com/BKqFc28.png",
       "cureAllAbility": false,
       "character": "Glenn"
     },
@@ -9544,6 +10570,113 @@
       },
       "name": "Luminary Sword",
       "image": "https://i.imgur.com/mgK3dMx.png",
+      "cureAllAbility": true,
+      "character": "Matt"
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "ThunderResistDown",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          }
+        ],
+        "description": "Spiral Edge+ [Sigils: 1 \\◆] (3 ATB)\n360% Phys. Non-elem. Damage [Range: Single Enemy]\n20s Ice Resistance Down (+6s) (High) [Range: Single Enemy]\n20s Thunder Resistance Down (+6s) (High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "ThunderResistDown",
+              "value": {
+                "max": "High",
+                "base": "High"
+              }
+            }
+          }
+        ],
+        "description": "Spiral Edge++ [Sigils: 1 \\◆] (3 ATB)\n420% Phys. Non-elem. Damage [Range: Single Enemy]\n24s Ice Resistance Down (+8s) (High) [Range: Single Enemy]\n24s Thunder Resistance Down (+8s) (High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "ThunderResistDown",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Spiral Edge [Sigils: 1 \\◆] (3 ATB)\n300% Phys. Non-elem. Damage [Range: Single Enemy]\n18s Ice Resistance Down (+6s) (Mid -> High) [Range: Single Enemy]\n18s Thunder Resistance Down (+6s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "IceResistDown",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "ThunderResistDown",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Spiral Edge [Sigils: 1 \\◆] (3 ATB)\n260% Phys. Non-elem. Damage [Range: Single Enemy]\n16s Ice Resistance Down (+5s) (Mid -> High) [Range: Single Enemy]\n16s Thunder Resistance Down (+5s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "name": "Nautilus Spiral",
+      "image": "https://i.imgur.com/dBCxFk0.png",
       "cureAllAbility": true,
       "character": "Matt"
     },
@@ -17053,917 +18186,7 @@
       "image": "https://i.imgur.com/SjD1vvD.png",
       "cureAllAbility": false,
       "character": "Zack"
-    },
-    {
-      "source": "Gacha (Limit Break)",
-      "ob6": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Enfeeble"
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "IceResistDown",
-              "value": {
-                "max": "High",
-                "base": "High"
-              }
-            }
-          }
-        ],
-        "description": "Cosmic Burst+ (4 ATB)\n550% Mag. Non-elem. Damage [Range: Single Enemy]\n50s Enfeeble (+10s) [Range: Single Enemy]\n25s Ice Resistance Down (+8s) (High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob10": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Enfeeble"
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "IceResistDown",
-              "value": {
-                "max": "High",
-                "base": "High"
-              }
-            }
-          }
-        ],
-        "description": "Cosmic Burst++ (4 ATB)\n620% Mag. Non-elem. Damage [Range: Single Enemy]\n70s Enfeeble (+14s) [Range: Single Enemy]\n35s Ice Resistance Down (+11s) (High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob1": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Enfeeble"
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "IceResistDown",
-              "value": {
-                "max": "Mid",
-                "base": "Mid"
-              }
-            }
-          }
-        ],
-        "description": "Cosmic Burst (4 ATB)\n450% Mag. Non-elem. Damage [Range: Single Enemy]\n45s Enfeeble (+9s) [Range: Single Enemy]\n25s Ice Resistance Down (+8s) (Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob0": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Enfeeble"
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "IceResistDown",
-              "value": {
-                "max": "Mid",
-                "base": "Mid"
-              }
-            }
-          }
-        ],
-        "description": "Cosmic Burst (4 ATB)\n390% Mag. Non-elem. Damage [Range: Single Enemy]\n40s Enfeeble (+8s) [Range: Single Enemy]\n20s Ice Resistance Down (+6s) (Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "name": "Rocket Lance",
-      "image": "https://i.imgur.com/ee06twq.png",
-      "cureAllAbility": false,
-      "character": "Cid"
-    },
-    {
-      "source": "Guild Exchange",
-      "ob6": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Cleaning Mop+ (4 ATB)\n480% Phys. Non-elem. Damage [Range: All Enemies]\n4s Stop (+3s) [Range: All Enemies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "ob10": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Cleaning Mop++ (4 ATB)\n540% Phys. Non-elem. Damage [Range: All Enemies]\n5s Stop (+3s) [Range: All Enemies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "ob1": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Cleaning Mop (4 ATB)\n390% Phys. Non-elem. Damage [Range: All Enemies]\n3s Stop (+3s) [Range: All Enemies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "ob0": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Cleaning Mop (4 ATB)\n340% Phys. Non-elem. Damage [Range: All Enemies]\n3s Stop (+3s) [Range: All Enemies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "name": "Mop",
-      "image": "https://i.imgur.com/ri1NRRr.png",
-      "cureAllAbility": false,
-      "character": "Cid"
-    },
-    {
-      "source": "Gacha",
-      "ob6": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Quadspike+ (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n6s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob10": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Quadspike++ (4 ATB)\n750% Phys. Non-elem. Damage [Range: Single Enemy]\n8s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob1": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Quadspike (4 ATB)\n480% Phys. Non-elem. Damage [Range: Single Enemy]\n4s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob0": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Quadspike (4 ATB)\n400% Phys. Non-elem. Damage [Range: Single Enemy]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "name": "Spear",
-      "image": "https://i.imgur.com/svvGQA8.png",
-      "cureAllAbility": false,
-      "character": "Cid"
-    },
-    {
-      "source": "Gacha",
-      "ob6": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "PdefUp",
-              "value": {
-                "max": "High",
-                "base": "High"
-              }
-            }
-          }
-        ],
-        "description": "Thunder Slam+ (4 ATB)\n480% Phys. Non-elem. Damage [Range: All Enemies]\n16s PDEF Up (+5s) (High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "ob10": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "PdefUp",
-              "value": {
-                "max": "High",
-                "base": "High"
-              }
-            }
-          }
-        ],
-        "description": "Thunder Slam++ (4 ATB)\n540% Phys. Non-elem. Damage [Range: All Enemies]\n20s PDEF Up (+6s) (High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "ob1": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "PdefUp",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          }
-        ],
-        "description": "Thunder Slam (4 ATB)\n390% Phys. Non-elem. Damage [Range: All Enemies]\n16s PDEF Up (+5s) (Mid -> High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "ob0": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "PdefUp",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          }
-        ],
-        "description": "Thunder Slam (4 ATB)\n340% Phys. Non-elem. Damage [Range: All Enemies]\n12s PDEF Up (+4s) (Mid -> High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "name": "Slash Lance",
-      "image": "https://i.imgur.com/aZeNoOu.png",
-      "cureAllAbility": false,
-      "character": "Cid"
-    },
-    {
-      "source": "Gacha",
-      "ob6": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Rising Harpoon+ (4 ATB)\n550% Phys. Non-elem. Damage [Range: Single Enemy]\n26s Poison (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]\n4s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob10": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Rising Harpoon++ (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n30s Poison (+7s) [Range: Single Enemy] [Condition: Self 70-100% HP]\n5s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob1": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Rising Harpoon (4 ATB)\n450% Phys. Non-elem. Damage [Range: Single Enemy]\n26s Poison (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob0": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Rising Harpoon (4 ATB)\n390% Phys. Non-elem. Damage [Range: Single Enemy]\n24s Poison (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "name": "Trident",
-      "image": "https://i.imgur.com/ph81nYG.png",
-      "cureAllAbility": false,
-      "character": "Cid"
-    },
-    {
-      "source": "Gacha",
-      "ob6": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "PatkDown",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "All",
-            "effectType": {
-              "type": "MatkDown",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          }
-        ],
-        "description": "Sharp Sonic+ (4 ATB)\n480% Phys. Non-elem. Damage [Range: All Enemies]\n20s PATK Down (+6s) (Mid -> High) [Range: All Enemies]\n20s MATK Down (+6s) (Mid -> High) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "ob10": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "PatkDown",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "All",
-            "effectType": {
-              "type": "MatkDown",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          }
-        ],
-        "description": "Sharp Sonic++ (4 ATB)\n540% Phys. Non-elem. Damage [Range: All Enemies]\n25s PATK Down (+8s) (Mid -> High) [Range: All Enemies]\n25s MATK Down (+8s) (Mid -> High) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "ob1": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "PatkDown",
-              "value": {
-                "max": "Mid",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "All",
-            "effectType": {
-              "type": "MatkDown",
-              "value": {
-                "max": "Mid",
-                "base": "Mid"
-              }
-            }
-          }
-        ],
-        "description": "Sharp Sonic (4 ATB)\n390% Phys. Non-elem. Damage [Range: All Enemies]\n20s PATK Down (+6s) (Mid) [Range: All Enemies]\n20s MATK Down (+6s) (Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "ob0": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "PatkDown",
-              "value": {
-                "max": "Mid",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "All",
-            "effectType": {
-              "type": "MatkDown",
-              "value": {
-                "max": "Mid",
-                "base": "Mid"
-              }
-            }
-          }
-        ],
-        "description": "Sharp Sonic (4 ATB)\n340% Phys. Non-elem. Damage [Range: All Enemies]\n18s PATK Down (+6s) (Mid) [Range: All Enemies]\n18s MATK Down (+6s) (Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "name": "Pole Axe",
-      "image": "https://i.imgur.com/Wf6lAxp.png",
-      "cureAllAbility": false,
-      "character": "Cid"
-    },
-    {
-      "source": "Gacha",
-      "ob6": {
-        "effects": [],
-        "description": "Aeroga A+ (4 ATB)\n440% Mag. Wind Damage [Range: All Enemies]"
-      },
-      "ob10": {
-        "effects": [],
-        "description": "Aeroga A++ (4 ATB)\n520% Mag. Wind Damage [Range: All Enemies]"
-      },
-      "ob1": {
-        "effects": [],
-        "description": "Aeroga A (4 ATB)\n340% Mag. Wind Damage [Range: All Enemies]"
-      },
-      "ob0": {
-        "effects": [],
-        "description": "Aeroga A (4 ATB)\n280% Mag. Wind Damage [Range: All Enemies]"
-      },
-      "name": "Partisan",
-      "image": "https://i.imgur.com/dZ6EmxF.png",
-      "cureAllAbility": false,
-      "character": "Cid"
-    },
-    {
-      "source": "Gacha",
-      "ob6": {
-        "effects": [
-          {
-            "range": "Self",
-            "effectType": {
-              "type": "PdefUp",
-              "value": {
-                "max": "High",
-                "base": "High"
-              }
-            }
-          },
-          {
-            "range": "Self",
-            "effectType": {
-              "type": "MdefUp",
-              "value": {
-                "max": "High",
-                "base": "High"
-              }
-            }
-          },
-          {
-            "range": "Self",
-            "effectType": {
-              "type": "Heal",
-              "value": {
-                "percentage": 14
-              }
-            }
-          }
-        ],
-        "description": "Imposing Stance+ (4 ATB)\n34s PDEF Up (+11s) (High) [Range: Self]\n34s MDEF Up (+11s) (High) [Range: Self]\n14% Heal [Range: Self]"
-      },
-      "ob10": {
-        "effects": [
-          {
-            "range": "Self",
-            "effectType": {
-              "type": "PdefUp",
-              "value": {
-                "max": "High",
-                "base": "High"
-              }
-            }
-          },
-          {
-            "range": "Self",
-            "effectType": {
-              "type": "MdefUp",
-              "value": {
-                "max": "High",
-                "base": "High"
-              }
-            }
-          },
-          {
-            "range": "Self",
-            "effectType": {
-              "type": "Heal",
-              "value": {
-                "percentage": 15
-              }
-            }
-          }
-        ],
-        "description": "Imposing Stance++ (4 ATB)\n38s PDEF Up (+12s) (High) [Range: Self]\n38s MDEF Up (+12s) (High) [Range: Self]\n15% Heal [Range: Self]"
-      },
-      "ob1": {
-        "effects": [
-          {
-            "range": "Self",
-            "effectType": {
-              "type": "PdefUp",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "Self",
-            "effectType": {
-              "type": "MdefUp",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "Self",
-            "effectType": {
-              "type": "Heal",
-              "value": {
-                "percentage": 13
-              }
-            }
-          }
-        ],
-        "description": "Imposing Stance (4 ATB)\n34s PDEF Up (+11s) (Mid -> High) [Range: Self]\n34s MDEF Up (+11s) (Mid -> High) [Range: Self]\n13% Heal [Range: Self]"
-      },
-      "ob0": {
-        "effects": [
-          {
-            "range": "Self",
-            "effectType": {
-              "type": "PdefUp",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "Self",
-            "effectType": {
-              "type": "MdefUp",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "Self",
-            "effectType": {
-              "type": "Heal",
-              "value": {
-                "percentage": 11
-              }
-            }
-          }
-        ],
-        "description": "Imposing Stance (4 ATB)\n30s PDEF Up (+10s) (Mid -> High) [Range: Self]\n30s MDEF Up (+10s) (Mid -> High) [Range: Self]\n11% Heal [Range: Self]"
-      },
-      "name": "Viper Halberd",
-      "image": "https://i.imgur.com/738XBiz.png",
-      "cureAllAbility": false,
-      "character": "Cid"
-    },
-    {
-      "source": "Gacha",
-      "ob6": {
-        "effects": [],
-        "description": "Flying Spiral+ (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n+20% Stance Gauge\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob10": {
-        "effects": [],
-        "description": "Flying Spiral++ (4 ATB)\n750% Phys. Non-elem. Damage [Range: Single Enemy]\n+20% Stance Gauge\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob1": {
-        "effects": [],
-        "description": "Flying Spiral (4 ATB)\n480% Phys. Non-elem. Damage [Range: Single Enemy]\n+10% Stance Gauge\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob0": {
-        "effects": [],
-        "description": "Flying Spiral (4 ATB)\n400% Phys. Non-elem. Damage [Range: Single Enemy]\n+10% Stance Gauge\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "name": "Radiant Lance",
-      "image": "https://i.imgur.com/zuVyvjz.png",
-      "cureAllAbility": false,
-      "character": "Cid"
-    },
-    {
-      "source": "Gacha",
-      "ob6": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "PatkUp",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "MatkUp",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "IceDamageUp",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Heal",
-              "value": {
-                "percentage": 12
-              }
-            }
-          }
-        ],
-        "description": "Dragon's Spirit+ (4 ATB)\n26s PATK Up (+8s) (Mid -> High) [Range: Single Ally]\n26s MATK Up (+8s) (Mid -> High) [Range: Single Ally]\n26s Ice Damage Up (+8s) (Mid -> High) [Range: Single Ally]\n12% Heal [Range: Single Ally]"
-      },
-      "ob10": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "PatkUp",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "MatkUp",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "IceDamageUp",
-              "value": {
-                "max": "High",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Heal",
-              "value": {
-                "percentage": 13
-              }
-            }
-          }
-        ],
-        "description": "Dragon's Spirit++ (4 ATB)\n30s PATK Up (+10s) (Mid -> High) [Range: Single Ally]\n30s MATK Up (+10s) (Mid -> High) [Range: Single Ally]\n30s Ice Damage Up (+10s) (Mid -> High) [Range: Single Ally]\n13% Heal [Range: Single Ally]"
-      },
-      "ob1": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "PatkUp",
-              "value": {
-                "max": "Mid",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "MatkUp",
-              "value": {
-                "max": "Mid",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "IceDamageUp",
-              "value": {
-                "max": "Mid",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Heal",
-              "value": {
-                "percentage": 11
-              }
-            }
-          }
-        ],
-        "description": "Dragon's Spirit (4 ATB)\n26s PATK Up (+8s) (Mid) [Range: Single Ally]\n26s MATK Up (+8s) (Mid) [Range: Single Ally]\n26s Ice Damage Up (+8s) (Mid) [Range: Single Ally]\n11% Heal [Range: Single Ally]"
-      },
-      "ob0": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "PatkUp",
-              "value": {
-                "max": "Mid",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "MatkUp",
-              "value": {
-                "max": "Mid",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "IceDamageUp",
-              "value": {
-                "max": "Mid",
-                "base": "Mid"
-              }
-            }
-          },
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Heal",
-              "value": {
-                "percentage": 9
-              }
-            }
-          }
-        ],
-        "description": "Dragon's Spirit (4 ATB)\n24s PATK Up (+8s) (Mid) [Range: Single Ally]\n24s MATK Up (+8s) (Mid) [Range: Single Ally]\n24s Ice Damage Up (+8s) (Mid) [Range: Single Ally]\n9% Heal [Range: Single Ally]"
-      },
-      "name": "Scimitar",
-      "image": "https://i.imgur.com/FtmNLjJ.png",
-      "cureAllAbility": false,
-      "character": "Cid"
-    },
-    {
-      "source": "Gacha",
-      "ob6": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Heavy Swing+ [Sigils: 1 \\◆] (3 ATB)\n360% Phys. Non-elem. Damage [Range: Single Enemy]\n4s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob10": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Heavy Swing++ [Sigils: 1 \\◆] (3 ATB)\n420% Phys. Non-elem. Damage [Range: Single Enemy]\n5s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob1": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Heavy Swing [Sigils: 1 \\◆] (3 ATB)\n300% Phys. Non-elem. Damage [Range: Single Enemy]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "ob0": {
-        "effects": [
-          {
-            "range": "SingleTarget",
-            "effectType": {
-              "type": "Stop"
-            }
-          }
-        ],
-        "description": "Heavy Swing [Sigils: 1 \\◆] (3 ATB)\n260% Phys. Non-elem. Damage [Range: Single Enemy]\n3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
-      },
-      "name": "Flayer",
-      "image": "https://i.imgur.com/lV7oorM.png",
-      "cureAllAbility": false,
-      "character": "Cid"
-    },
-    {
-      "source": "Event",
-      "ob6": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "IceResistDown",
-              "value": {
-                "max": "Mid",
-                "base": "Low"
-              }
-            }
-          }
-        ],
-        "description": "Deblizzara Surge A+ (4 ATB)\n240% Mag. Non-elem. Damage [Range: All Enemies]\n30s Ice Resistance Down (+7s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "ob10": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "IceResistDown",
-              "value": {
-                "max": "Mid",
-                "base": "Low"
-              }
-            }
-          }
-        ],
-        "description": "Deblizzara Surge A++ (4 ATB)\n250% Mag. Non-elem. Damage [Range: All Enemies]\n35s Ice Resistance Down (+8s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "ob1": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "IceResistDown",
-              "value": {
-                "max": "Mid",
-                "base": "Low"
-              }
-            }
-          }
-        ],
-        "description": "Deblizzara Surge A (4 ATB)\n210% Mag. Non-elem. Damage [Range: All Enemies]\n25s Ice Resistance Down (+6s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "ob0": {
-        "effects": [
-          {
-            "range": "All",
-            "effectType": {
-              "type": "IceResistDown",
-              "value": {
-                "max": "Mid",
-                "base": "Low"
-              }
-            }
-          }
-        ],
-        "description": "Deblizzara Surge A (4 ATB)\n180% Mag. Non-elem. Damage [Range: All Enemies]\n20s Ice Resistance Down (+5s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
-      },
-      "name": "Stilva Glaive",
-      "image": "https://i.imgur.com/BKqFc28.png",
-      "cureAllAbility": false,
-      "character": "Glenn"
     }
   ],
-  "errors": [
-    "Cell at 311:1 is empty"
-  ]
+  "errors": []
 }

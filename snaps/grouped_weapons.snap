@@ -51,6 +51,9 @@
         "weaponName": "Luminary Sword"
       },
       {
+        "weaponName": "Nautilus Spiral"
+      },
+      {
         "weaponName": "Prime Number"
       },
       {
@@ -126,6 +129,9 @@
       },
       {
         "weaponName": "Luminary Sword"
+      },
+      {
+        "weaponName": "Nautilus Spiral"
       },
       {
         "weaponName": "Prime Number"
@@ -214,6 +220,9 @@
         "weaponName": "Luminary Sword"
       },
       {
+        "weaponName": "Nautilus Spiral"
+      },
+      {
         "weaponName": "Prime Number"
       },
       {
@@ -282,6 +291,9 @@
       },
       {
         "weaponName": "Type-90 Longsword"
+      },
+      {
+        "weaponName": "Blade of Ruin"
       }
     ]
   ],
@@ -325,6 +337,9 @@
     },
     [
       {
+        "weaponName": "Flayer"
+      },
+      {
         "weaponName": "Mop"
       },
       {
@@ -332,9 +347,6 @@
       },
       {
         "weaponName": "Trident"
-      },
-      {
-        "weaponName": "Flayer"
       }
     ]
   ],
@@ -345,6 +357,9 @@
     },
     [
       {
+        "weaponName": "Flayer"
+      },
+      {
         "weaponName": "Mop"
       },
       {
@@ -352,9 +367,6 @@
       },
       {
         "weaponName": "Trident"
-      },
-      {
-        "weaponName": "Flayer"
       }
     ]
   ],
@@ -461,6 +473,13 @@
         }
       },
       {
+        "weaponName": "Scimitar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
         "weaponName": "Pumpkin Lamppost",
         "potenciesAtOb10": {
           "max": "High",
@@ -500,13 +519,6 @@
         "potenciesAtOb10": {
           "max": "High",
           "base": "High"
-        }
-      },
-      {
-        "weaponName": "Scimitar",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "Mid"
         }
       }
     ]
@@ -563,6 +575,13 @@
         "weaponName": "Trumpet Shell",
         "potenciesAtOb10": {
           "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Scimitar",
+        "potenciesAtOb10": {
+          "max": "High",
           "base": "Mid"
         }
       },
@@ -656,13 +675,6 @@
           "max": "High",
           "base": "High"
         }
-      },
-      {
-        "weaponName": "Scimitar",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "Mid"
-        }
       }
     ]
   ],
@@ -765,6 +777,13 @@
         }
       },
       {
+        "weaponName": "Scimitar",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
         "weaponName": "Luminary Sword",
         "potenciesAtOb10": {
           "max": "High",
@@ -783,13 +802,6 @@
         "potenciesAtOb10": {
           "max": "High",
           "base": "High"
-        }
-      },
-      {
-        "weaponName": "Scimitar",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "Mid"
         }
       }
     ]
@@ -846,6 +858,13 @@
         "weaponName": "Trumpet Shell",
         "potenciesAtOb10": {
           "max": "Mid",
+          "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Scimitar",
+        "potenciesAtOb10": {
+          "max": "High",
           "base": "Mid"
         }
       },
@@ -904,13 +923,6 @@
           "max": "High",
           "base": "High"
         }
-      },
-      {
-        "weaponName": "Scimitar",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "Mid"
-        }
       }
     ]
   ],
@@ -956,6 +968,13 @@
         }
       },
       {
+        "weaponName": "Slash Lance",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
         "weaponName": "Hardcore Squad",
         "potenciesAtOb10": {
           "max": "Mid",
@@ -974,13 +993,6 @@
         "potenciesAtOb10": {
           "max": "High",
           "base": "Mid"
-        }
-      },
-      {
-        "weaponName": "Slash Lance",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "High"
         }
       }
     ]
@@ -1041,6 +1053,13 @@
         }
       },
       {
+        "weaponName": "Slash Lance",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
         "weaponName": "Butterfly Edge",
         "potenciesAtOb10": {
           "max": "High",
@@ -1077,13 +1096,6 @@
       },
       {
         "weaponName": "Defender",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "High"
-        }
-      },
-      {
-        "weaponName": "Slash Lance",
         "potenciesAtOb10": {
           "max": "High",
           "base": "High"
@@ -1147,6 +1159,20 @@
         }
       },
       {
+        "weaponName": "Slash Lance",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Viper Halberd",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
         "weaponName": "Butterfly Edge",
         "potenciesAtOb10": {
           "max": "High",
@@ -1197,20 +1223,6 @@
       },
       {
         "weaponName": "Defender",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "High"
-        }
-      },
-      {
-        "weaponName": "Slash Lance",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "High"
-        }
-      },
-      {
-        "weaponName": "Viper Halberd",
         "potenciesAtOb10": {
           "max": "High",
           "base": "High"
@@ -1465,6 +1477,13 @@
         }
       },
       {
+        "weaponName": "Viper Halberd",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
         "weaponName": "Bandaged Sword",
         "potenciesAtOb10": {
           "max": "High",
@@ -1532,13 +1551,6 @@
         "potenciesAtOb10": {
           "max": "High",
           "base": "Mid"
-        }
-      },
-      {
-        "weaponName": "Viper Halberd",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "High"
         }
       }
     ]
@@ -1638,14 +1650,14 @@
         }
       },
       {
-        "weaponName": "Locke's Sword",
+        "weaponName": "Scimitar",
         "potenciesAtOb10": {
           "max": "High",
           "base": "Mid"
         }
       },
       {
-        "weaponName": "Scimitar",
+        "weaponName": "Locke's Sword",
         "potenciesAtOb10": {
           "max": "High",
           "base": "Mid"
@@ -1755,6 +1767,13 @@
         }
       },
       {
+        "weaponName": "Pole Axe",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
         "weaponName": "Iron Blade",
         "potenciesAtOb10": {
           "max": "Mid",
@@ -1786,13 +1805,6 @@
         "weaponName": "4-Point Shuriken",
         "potenciesAtOb10": {
           "max": "Mid",
-          "base": "Mid"
-        }
-      },
-      {
-        "weaponName": "Pole Axe",
-        "potenciesAtOb10": {
-          "max": "High",
           "base": "Mid"
         }
       }
@@ -1840,6 +1852,13 @@
         }
       },
       {
+        "weaponName": "Pole Axe",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
         "weaponName": "Iron Blade",
         "potenciesAtOb10": {
           "max": "Mid",
@@ -1920,13 +1939,6 @@
         "weaponName": "4-Point Shuriken",
         "potenciesAtOb10": {
           "max": "Mid",
-          "base": "Mid"
-        }
-      },
-      {
-        "weaponName": "Pole Axe",
-        "potenciesAtOb10": {
-          "max": "High",
           "base": "Mid"
         }
       }
@@ -1974,6 +1986,13 @@
         }
       },
       {
+        "weaponName": "Pole Axe",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
         "weaponName": "Iron Blade",
         "potenciesAtOb10": {
           "max": "Mid",
@@ -2054,13 +2073,6 @@
         "weaponName": "4-Point Shuriken",
         "potenciesAtOb10": {
           "max": "Mid",
-          "base": "Mid"
-        }
-      },
-      {
-        "weaponName": "Pole Axe",
-        "potenciesAtOb10": {
-          "max": "High",
           "base": "Mid"
         }
       }
@@ -2087,6 +2099,13 @@
         }
       },
       {
+        "weaponName": "Pole Axe",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
         "weaponName": "Kuja's Spirit Blade",
         "potenciesAtOb10": {
           "max": "High",
@@ -2095,13 +2114,6 @@
       },
       {
         "weaponName": "S1976C",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "Mid"
-        }
-      },
-      {
-        "weaponName": "Pole Axe",
         "potenciesAtOb10": {
           "max": "High",
           "base": "Mid"
@@ -2151,6 +2163,13 @@
         }
       },
       {
+        "weaponName": "Pole Axe",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
         "weaponName": "Mad Minute",
         "potenciesAtOb10": {
           "max": "High",
@@ -2194,13 +2213,6 @@
       },
       {
         "weaponName": "Twinkling Star",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "Mid"
-        }
-      },
-      {
-        "weaponName": "Pole Axe",
         "potenciesAtOb10": {
           "max": "High",
           "base": "Mid"
@@ -2250,6 +2262,13 @@
         }
       },
       {
+        "weaponName": "Pole Axe",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
         "weaponName": "Mad Minute",
         "potenciesAtOb10": {
           "max": "High",
@@ -2293,13 +2312,6 @@
       },
       {
         "weaponName": "Twinkling Star",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "Mid"
-        }
-      },
-      {
-        "weaponName": "Pole Axe",
         "potenciesAtOb10": {
           "max": "High",
           "base": "Mid"
@@ -3205,6 +3217,13 @@
         }
       },
       {
+        "weaponName": "Stilva Megaphone",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
         "weaponName": "Stilva Glaive",
         "potenciesAtOb10": {
           "max": "Mid",
@@ -3234,7 +3253,35 @@
         }
       },
       {
+        "weaponName": "Stilva Megaphone",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Rocket Lance",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Stilva Glaive",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
         "weaponName": "Bald Eagle",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Nautilus Spiral",
         "potenciesAtOb10": {
           "max": "High",
           "base": "High"
@@ -3266,20 +3313,6 @@
         "potenciesAtOb10": {
           "max": "High",
           "base": "High"
-        }
-      },
-      {
-        "weaponName": "Rocket Lance",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "High"
-        }
-      },
-      {
-        "weaponName": "Stilva Glaive",
-        "potenciesAtOb10": {
-          "max": "Mid",
-          "base": "Low"
         }
       }
     ]
@@ -3305,7 +3338,35 @@
         }
       },
       {
+        "weaponName": "Stilva Megaphone",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
+        "weaponName": "Rocket Lance",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Stilva Glaive",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
+      },
+      {
         "weaponName": "Bald Eagle",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Nautilus Spiral",
         "potenciesAtOb10": {
           "max": "High",
           "base": "High"
@@ -3337,20 +3398,6 @@
         "potenciesAtOb10": {
           "max": "High",
           "base": "High"
-        }
-      },
-      {
-        "weaponName": "Rocket Lance",
-        "potenciesAtOb10": {
-          "max": "High",
-          "base": "High"
-        }
-      },
-      {
-        "weaponName": "Stilva Glaive",
-        "potenciesAtOb10": {
-          "max": "Mid",
-          "base": "Low"
         }
       }
     ]
@@ -3392,6 +3439,13 @@
       },
       {
         "weaponName": "Witch's Broom",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Nautilus Spiral",
         "potenciesAtOb10": {
           "max": "High",
           "base": "High"
@@ -3442,6 +3496,13 @@
       },
       {
         "weaponName": "Witch's Broom",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "High"
+        }
+      },
+      {
+        "weaponName": "Nautilus Spiral",
         "potenciesAtOb10": {
           "max": "High",
           "base": "High"

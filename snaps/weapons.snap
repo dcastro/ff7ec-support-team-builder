@@ -797,6 +797,110 @@
       "ob6": {
         "effects": [
           {
+            "range": "All",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 54
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PatkUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Paeon+ (5 ATB)\n54% Heal [Range: All Allies]\n12s PATK Up (+4s) (Mid -> High) [Range: All Allies]\n+1 ATB [Range: Other Allies] [Condition: Self 0-70% HP]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 59
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PatkUp",
+              "value": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          }
+        ],
+        "description": "Paeon++ (5 ATB)\n59% Heal [Range: All Allies]\n16s PATK Up (+5s) (Mid -> High) [Range: All Allies]\n+1 ATB [Range: Other Allies] [Condition: Self 0-90% HP]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 50
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PatkUp",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Paeon (5 ATB)\n50% Heal [Range: All Allies]\n12s PATK Up (+4s) (Low -> Mid) [Range: All Allies]\n+1 ATB [Range: Other Allies] [Condition: Self 0-50% HP]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 42
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PatkUp",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Paeon (5 ATB)\n42% Heal [Range: All Allies]\n12s PATK Up (+4s) (Low -> Mid) [Range: All Allies]\n+1 ATB [Range: Other Allies] [Condition: Self 0-40% HP]"
+      },
+      "name": "Gambanteinn",
+      "image": "https://i.imgur.com/Oc0JlfT.png",
+      "cureAllAbility": false,
+      "character": "Aerith",
+      "atbCost": 5
+    },
+    {
+      "source": "Gacha (Collab)",
+      "ob6": {
+        "effects": [
+          {
             "range": "SingleTarget",
             "effectType": {
               "type": "MatkUp",
@@ -7704,6 +7808,74 @@
       },
       "name": "Skysplitter",
       "image": "https://i.imgur.com/vQ2T5hD.png",
+      "cureAllAbility": false,
+      "character": "Cloud",
+      "atbCost": 4
+    },
+    {
+      "source": "Event",
+      "ob6": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Armora Breach Surge A+ (4 ATB)\n240% Mag. Non-elem. Damage [Range: All Enemies]\n30s PDEF Down (+7s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Armora Breach Surge A++ (4 ATB)\n250% Mag. Non-elem. Damage [Range: All Enemies]\n35s PDEF Down (+8s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Armora Breach Surge A (4 ATB)\n210% Mag. Non-elem. Damage [Range: All Enemies]\n25s PDEF Down (+6s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefDown",
+              "value": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ],
+        "description": "Armora Breach Surge A (4 ATB)\n180% Mag. Non-elem. Damage [Range: All Enemies]\n20s PDEF Down (+5s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "name": "Sleek Saber",
+      "image": "https://i.imgur.com/zgvMIZk.png",
       "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4

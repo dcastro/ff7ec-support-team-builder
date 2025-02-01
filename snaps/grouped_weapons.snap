@@ -21,6 +21,9 @@
         "weaponName": "Floral Wand"
       },
       {
+        "weaponName": "Gambanteinn"
+      },
+      {
         "weaponName": "Kamura Wand"
       },
       {
@@ -96,6 +99,9 @@
       },
       {
         "weaponName": "Floral Wand"
+      },
+      {
+        "weaponName": "Gambanteinn"
       },
       {
         "weaponName": "Kamura Wand"
@@ -182,6 +188,9 @@
       },
       {
         "weaponName": "Floral Wand"
+      },
+      {
+        "weaponName": "Gambanteinn"
       },
       {
         "weaponName": "Kamura Wand"
@@ -388,6 +397,13 @@
     },
     [
       {
+        "weaponName": "Gambanteinn",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
+      {
         "weaponName": "Kamura Wand",
         "potenciesAtOb10": {
           "max": "High",
@@ -423,6 +439,13 @@
       "effectType": "FilterPatkUp"
     },
     [
+      {
+        "weaponName": "Gambanteinn",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
       {
         "weaponName": "Kamura Wand",
         "potenciesAtOb10": {
@@ -529,6 +552,13 @@
       "effectType": "FilterPatkUp"
     },
     [
+      {
+        "weaponName": "Gambanteinn",
+        "potenciesAtOb10": {
+          "max": "High",
+          "base": "Mid"
+        }
+      },
       {
         "weaponName": "Kamura Wand",
         "potenciesAtOb10": {
@@ -2331,6 +2361,13 @@
           "max": "High",
           "base": "High"
         }
+      },
+      {
+        "weaponName": "Sleek Saber",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
       }
     ]
   ],
@@ -2401,6 +2438,13 @@
         "potenciesAtOb10": {
           "max": "High",
           "base": "High"
+        }
+      },
+      {
+        "weaponName": "Sleek Saber",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
         }
       },
       {
@@ -2556,6 +2600,13 @@
         "potenciesAtOb10": {
           "max": "High",
           "base": "High"
+        }
+      },
+      {
+        "weaponName": "Sleek Saber",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
         }
       },
       {

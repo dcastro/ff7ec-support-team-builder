@@ -6,8 +6,14 @@
       "effectType": {
         "type": "WaterResistDown",
         "value": {
-          "max": "High",
-          "base": "Mid"
+          "potencies": {
+            "max": "High",
+            "base": "Mid"
+          },
+          "durExt": {
+            "extension": 10,
+            "duration": 30
+          }
         }
       }
     },
@@ -17,8 +23,14 @@
       "effectType": {
         "type": "WaterResistDown",
         "value": {
-          "max": "Mid",
-          "base": "Mid"
+          "potencies": {
+            "max": "Mid",
+            "base": "Mid"
+          },
+          "durExt": {
+            "extension": 8,
+            "duration": 26
+          }
         }
       }
     },
@@ -31,8 +43,14 @@
       "effectType": {
         "type": "PdefUp",
         "value": {
-          "max": "High",
-          "base": "Mid"
+          "potencies": {
+            "max": "High",
+            "base": "Mid"
+          },
+          "durExt": {
+            "extension": 11,
+            "duration": 34
+          }
         }
       }
     },
@@ -42,8 +60,14 @@
       "effectType": {
         "type": "PdefUp",
         "value": {
-          "max": "Mid",
-          "base": "Mid"
+          "potencies": {
+            "max": "Mid",
+            "base": "Mid"
+          },
+          "durExt": {
+            "extension": 10,
+            "duration": 30
+          }
         }
       }
     },
@@ -56,8 +80,14 @@
       "effectType": {
         "type": "MatkDown",
         "value": {
-          "max": "High",
-          "base": "High"
+          "potencies": {
+            "max": "High",
+            "base": "High"
+          },
+          "durExt": {
+            "extension": 20,
+            "duration": 60
+          }
         }
       }
     },
@@ -67,8 +97,14 @@
       "effectType": {
         "type": "MatkDown",
         "value": {
-          "max": "Mid",
-          "base": "Mid"
+          "potencies": {
+            "max": "Mid",
+            "base": "Mid"
+          },
+          "durExt": {
+            "extension": 17,
+            "duration": 52
+          }
         }
       }
     },

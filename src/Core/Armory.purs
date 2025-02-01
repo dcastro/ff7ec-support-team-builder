@@ -147,33 +147,33 @@ insertWeapon weapon existingWeapons armory =
       if unwrap percentage >= 35 then Just { effectType: FilterHeal, potencies: Nothing }
       else Nothing
 
-    Veil -> Just { effectType: FilterVeil, potencies: Nothing }
-    Provoke -> Just { effectType: FilterProvoke, potencies: Nothing }
-    Enfeeble -> Just { effectType: FilterEnfeeble, potencies: Nothing }
-    Stop -> Just { effectType: FilterStop, potencies: Nothing }
-    ExploitWeakness -> Just { effectType: FilterExploitWeakness, potencies: Nothing }
+    Veil _ -> Just { effectType: FilterVeil, potencies: Nothing }
+    Provoke _ -> Just { effectType: FilterProvoke, potencies: Nothing }
+    Enfeeble _ -> Just { effectType: FilterEnfeeble, potencies: Nothing }
+    Stop _ -> Just { effectType: FilterStop, potencies: Nothing }
+    ExploitWeakness _ -> Just { effectType: FilterExploitWeakness, potencies: Nothing }
 
-    PatkUp potencies -> Just { effectType: FilterPatkUp, potencies: Just potencies }
-    MatkUp potencies -> Just { effectType: FilterMatkUp, potencies: Just potencies }
-    PdefUp potencies -> Just { effectType: FilterPdefUp, potencies: Just potencies }
-    MdefUp potencies -> Just { effectType: FilterMdefUp, potencies: Just potencies }
-    FireDamageUp potencies -> Just { effectType: FilterFireDamageUp, potencies: Just potencies }
-    IceDamageUp potencies -> Just { effectType: FilterIceDamageUp, potencies: Just potencies }
-    ThunderDamageUp potencies -> Just { effectType: FilterThunderDamageUp, potencies: Just potencies }
-    EarthDamageUp potencies -> Just { effectType: FilterEarthDamageUp, potencies: Just potencies }
-    WaterDamageUp potencies -> Just { effectType: FilterWaterDamageUp, potencies: Just potencies }
-    WindDamageUp potencies -> Just { effectType: FilterWindDamageUp, potencies: Just potencies }
+    PatkUp { potencies } -> Just { effectType: FilterPatkUp, potencies: Just potencies }
+    MatkUp { potencies } -> Just { effectType: FilterMatkUp, potencies: Just potencies }
+    PdefUp { potencies } -> Just { effectType: FilterPdefUp, potencies: Just potencies }
+    MdefUp { potencies } -> Just { effectType: FilterMdefUp, potencies: Just potencies }
+    FireDamageUp { potencies } -> Just { effectType: FilterFireDamageUp, potencies: Just potencies }
+    IceDamageUp { potencies } -> Just { effectType: FilterIceDamageUp, potencies: Just potencies }
+    ThunderDamageUp { potencies } -> Just { effectType: FilterThunderDamageUp, potencies: Just potencies }
+    EarthDamageUp { potencies } -> Just { effectType: FilterEarthDamageUp, potencies: Just potencies }
+    WaterDamageUp { potencies } -> Just { effectType: FilterWaterDamageUp, potencies: Just potencies }
+    WindDamageUp { potencies } -> Just { effectType: FilterWindDamageUp, potencies: Just potencies }
 
-    PatkDown potencies -> Just { effectType: FilterPatkDown, potencies: Just potencies }
-    MatkDown potencies -> Just { effectType: FilterMatkDown, potencies: Just potencies }
-    PdefDown potencies -> Just { effectType: FilterPdefDown, potencies: Just potencies }
-    MdefDown potencies -> Just { effectType: FilterMdefDown, potencies: Just potencies }
-    FireResistDown potencies -> Just { effectType: FilterFireResistDown, potencies: Just potencies }
-    IceResistDown potencies -> Just { effectType: FilterIceResistDown, potencies: Just potencies }
-    ThunderResistDown potencies -> Just { effectType: FilterThunderResistDown, potencies: Just potencies }
-    EarthResistDown potencies -> Just { effectType: FilterEarthResistDown, potencies: Just potencies }
-    WaterResistDown potencies -> Just { effectType: FilterWaterResistDown, potencies: Just potencies }
-    WindResistDown potencies -> Just { effectType: FilterWindResistDown, potencies: Just potencies }
+    PatkDown { potencies } -> Just { effectType: FilterPatkDown, potencies: Just potencies }
+    MatkDown { potencies } -> Just { effectType: FilterMatkDown, potencies: Just potencies }
+    PdefDown { potencies } -> Just { effectType: FilterPdefDown, potencies: Just potencies }
+    MdefDown { potencies } -> Just { effectType: FilterMdefDown, potencies: Just potencies }
+    FireResistDown { potencies } -> Just { effectType: FilterFireResistDown, potencies: Just potencies }
+    IceResistDown { potencies } -> Just { effectType: FilterIceResistDown, potencies: Just potencies }
+    ThunderResistDown { potencies } -> Just { effectType: FilterThunderResistDown, potencies: Just potencies }
+    EarthResistDown { potencies } -> Just { effectType: FilterEarthResistDown, potencies: Just potencies }
+    WaterResistDown { potencies } -> Just { effectType: FilterWaterResistDown, potencies: Just potencies }
+    WindResistDown { potencies } -> Just { effectType: FilterWindResistDown, potencies: Just potencies }
 
   matchingRanges :: Range -> Array FilterRange
   matchingRanges = case _ of

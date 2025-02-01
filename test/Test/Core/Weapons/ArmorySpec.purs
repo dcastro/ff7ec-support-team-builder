@@ -65,29 +65,26 @@ spec =
 makeDiff :: WeaponInfo -> Array ObDiff
 makeDiff { name, effects } =
   effects >>= \effect ->
-    case effect.ob0.effectType of
-      Heal _ -> []
-      _ ->
-        Arr.catMaybes
-          [ if effect.ob0 /= effect.ob1 then Just
-              { weaponName: name
-              , obX: "OB0"
-              , obY: "OB1"
-              , obXEffect: effect.ob0
-              , obYEffect: effect.ob1
-              }
-            else
-              Nothing
-          , if effect.ob6 /= effect.ob10 then Just
-              { weaponName: name
-              , obX: "OB6"
-              , obY: "OB10"
-              , obXEffect: effect.ob6
-              , obYEffect: effect.ob10
-              }
-            else
-              Nothing
-          ]
+    Arr.catMaybes
+      [ if getPotencies effect.ob0.effectType /= getPotencies effect.ob1.effectType then Just
+          { weaponName: name
+          , obX: "OB0"
+          , obY: "OB1"
+          , obXEffect: effect.ob0
+          , obYEffect: effect.ob1
+          }
+        else
+          Nothing
+      , if getPotencies effect.ob6.effectType /= getPotencies effect.ob10.effectType then Just
+          { weaponName: name
+          , obX: "OB6"
+          , obY: "OB10"
+          , obXEffect: effect.ob6
+          , obYEffect: effect.ob10
+          }
+        else
+          Nothing
+      ]
 
 type ObDiff =
   { weaponName :: WeaponName
@@ -126,3 +123,57 @@ groupEffects weapon =
       , ob6
       , ob10
       }
+
+-- Similar to `EffectType`, but we discard all information except potencies.
+data EffectTypeAndPotencies
+  = PatkUp' Potencies
+  | MatkUp' Potencies
+  | PdefUp' Potencies
+  | MdefUp' Potencies
+  | FireDamageUp' Potencies
+  | IceDamageUp' Potencies
+  | ThunderDamageUp' Potencies
+  | EarthDamageUp' Potencies
+  | WaterDamageUp' Potencies
+  | WindDamageUp' Potencies
+  | PatkDown' Potencies
+  | MatkDown' Potencies
+  | PdefDown' Potencies
+  | MdefDown' Potencies
+  | FireResistDown' Potencies
+  | IceResistDown' Potencies
+  | ThunderResistDown' Potencies
+  | EarthResistDown' Potencies
+  | WaterResistDown' Potencies
+  | WindResistDown' Potencies
+
+derive instance Eq EffectTypeAndPotencies
+
+getPotencies :: EffectType -> Maybe EffectTypeAndPotencies
+getPotencies = case _ of
+  Heal {} -> Nothing
+  PatkUp { potencies } -> Just $ PatkUp' potencies
+  MatkUp { potencies } -> Just $ MatkUp' potencies
+  PdefUp { potencies } -> Just $ PdefUp' potencies
+  MdefUp { potencies } -> Just $ MdefUp' potencies
+  FireDamageUp { potencies } -> Just $ FireDamageUp' potencies
+  IceDamageUp { potencies } -> Just $ IceDamageUp' potencies
+  ThunderDamageUp { potencies } -> Just $ ThunderDamageUp' potencies
+  EarthDamageUp { potencies } -> Just $ EarthDamageUp' potencies
+  WaterDamageUp { potencies } -> Just $ WaterDamageUp' potencies
+  WindDamageUp { potencies } -> Just $ WindDamageUp' potencies
+  Veil {} -> Nothing
+  Provoke {} -> Nothing
+  PatkDown { potencies } -> Just $ PatkDown' potencies
+  MatkDown { potencies } -> Just $ MatkDown' potencies
+  PdefDown { potencies } -> Just $ PdefDown' potencies
+  MdefDown { potencies } -> Just $ MdefDown' potencies
+  FireResistDown { potencies } -> Just $ FireResistDown' potencies
+  IceResistDown { potencies } -> Just $ IceResistDown' potencies
+  ThunderResistDown { potencies } -> Just $ ThunderResistDown' potencies
+  EarthResistDown { potencies } -> Just $ EarthResistDown' potencies
+  WaterResistDown { potencies } -> Just $ WaterResistDown' potencies
+  WindResistDown { potencies } -> Just $ WindResistDown' potencies
+  Enfeeble {} -> Nothing
+  Stop {} -> Nothing
+  ExploitWeakness {} -> Nothing

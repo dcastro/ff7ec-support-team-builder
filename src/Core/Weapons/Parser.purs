@@ -136,8 +136,6 @@ parseDescription coords description = do
 
 type Parser = P.Parser String
 
--- parseAtbCost :: Coords -> NonEmptyString -> Result Int
--- parseAtbCost coords description = do
 parseAtbCost :: Coords -> Parser Int
 parseAtbCost coords = do
   inContext ("Coords " <> show coords) do
@@ -148,9 +146,7 @@ parseAtbCost coords = do
 parseWeaponEffect :: Coords -> Parser WeaponEffect
 parseWeaponEffect coords =
   inContext ("Coords " <> show coords) do
-    _ <- P.optional $ P.try $ parseDuration <* space
-    percentageOpt <- P.optionMaybe (parsePercentage <* space)
-    effectType <- parseEffectType percentageOpt <* space
+    effectType <- parseEffectType <* space
     range <- parseRange
     pure
       { effectType
@@ -161,8 +157,8 @@ space :: Parser Unit
 space = void $ P.char ' '
 
 -- E.g. `30s`
-parseDuration :: Parser Int
-parseDuration = inContext "Duration" $ P.intDecimal <* P.char 's'
+parseDuration :: Parser Duration
+parseDuration = inContext "Duration" $ Duration <$> P.intDecimal <* P.char 's'
 
 -- Some buffs (like Veil) have a percentage specifier
 -- E.g. `30%`
@@ -170,8 +166,12 @@ parsePercentage :: Parser Percentage
 parsePercentage = inContext "Percentage" $ Percentage <$> P.intDecimal <* P.char '%'
 
 -- E.g. `(+30s)`
-parseExtension :: Parser Int
-parseExtension = inContext "Extension" do inParens $ (P.char '+' *> parseDuration)
+parseExtension :: Parser Extension
+parseExtension =
+  inContext "Extension" do
+    Extension <$>
+      inParens do
+        (P.char '+' *> P.intDecimal <* P.char 's')
 
 {-
 
@@ -221,58 +221,69 @@ parsePotencies =
 -- * `PATK Down (+7s) (Low -> Mid)`
 -- * `Veil (+8s)`
 -- * `Heal`
-parseEffectType :: Maybe Percentage -> Parser EffectType
-parseEffectType percentageOpt =
+parseEffectType :: Parser EffectType
+parseEffectType =
   inContext "EffectType" do
-    withPotencies "PATK Up" PatkUp
-    <|> withPotencies "MATK Up" MatkUp
-    <|> withPotencies "PDEF Up" PdefUp
-    <|> withPotencies "MDEF Up" MdefUp
-    <|> withPotencies "Fire Damage Up" FireDamageUp
-    <|> withPotencies "Ice Damage Up" IceDamageUp
-    <|> withPotencies "Thunder Damage Up" ThunderDamageUp
-    <|> withPotencies "Earth Damage Up" EarthDamageUp
-    <|> withPotencies "Water Damage Up" WaterDamageUp
-    <|> withPotencies "Wind Damage Up" WindDamageUp
-    <|> withoutPotencies "Veil" Veil
-    <|> withoutPotencies "Provoke" Provoke
-    <|> withPotencies "PATK Down" PatkDown
-    <|> withPotencies "MATK Down" MatkDown
-    <|> withPotencies "PDEF Down" PdefDown
-    <|> withPotencies "MDEF Down" MdefDown
-    <|> withPotencies "Fire Resistance Down" FireResistDown
-    <|> withPotencies "Ice Resistance Down" IceResistDown
-    <|> withPotencies "Thunder Resistance Down" ThunderResistDown
-    <|> withPotencies "Earth Resistance Down" EarthResistDown
-    <|> withPotencies "Water Resistance Down" WaterResistDown
-    <|> withPotencies "Wind Resistance Down" WindResistDown
-    <|> withoutPotencies "Enfeeble" Enfeeble
-    <|> withoutPotencies "Stop" Stop
-    <|> withoutPotencies "WeaknessAttackUp" ExploitWeakness
-    <|> parseHeal
+    P.try (withPercentage "Heal" Heal)
+    <|> P.try (withDurExtPotencies "PATK Up" PatkUp)
+    <|> P.try (withDurExtPotencies "MATK Up" MatkUp)
+    <|> P.try (withDurExtPotencies "PDEF Up" PdefUp)
+    <|> P.try (withDurExtPotencies "MDEF Up" MdefUp)
+    <|> P.try (withDurExtPotencies "Fire Damage Up" FireDamageUp)
+    <|> P.try (withDurExtPotencies "Ice Damage Up" IceDamageUp)
+    <|> P.try (withDurExtPotencies "Thunder Damage Up" ThunderDamageUp)
+    <|> P.try (withDurExtPotencies "Earth Damage Up" EarthDamageUp)
+    <|> P.try (withDurExtPotencies "Water Damage Up" WaterDamageUp)
+    <|> P.try (withDurExtPotencies "Wind Damage Up" WindDamageUp)
+    <|> P.try (withDurExtPercentage "Veil" Veil)
+    <|> P.try (withDurExt "Provoke" Provoke)
+    <|> P.try (withDurExtPotencies "PATK Down" PatkDown)
+    <|> P.try (withDurExtPotencies "MATK Down" MatkDown)
+    <|> P.try (withDurExtPotencies "PDEF Down" PdefDown)
+    <|> P.try (withDurExtPotencies "MDEF Down" MdefDown)
+    <|> P.try (withDurExtPotencies "Fire Resistance Down" FireResistDown)
+    <|> P.try (withDurExtPotencies "Ice Resistance Down" IceResistDown)
+    <|> P.try (withDurExtPotencies "Thunder Resistance Down" ThunderResistDown)
+    <|> P.try (withDurExtPotencies "Earth Resistance Down" EarthResistDown)
+    <|> P.try (withDurExtPotencies "Water Resistance Down" WaterResistDown)
+    <|> P.try (withDurExtPotencies "Wind Resistance Down" WindResistDown)
+    <|> P.try (withDurExt "Enfeeble" Enfeeble)
+    <|> P.try (withDurExt "Stop" Stop)
+    <|> withDurExtPercentage "WeaknessAttackUp" ExploitWeakness
+
   where
-  withPotencies :: String -> (Potencies -> EffectType) -> Parser EffectType
-  withPotencies effectName constructor =
+  withPercentage :: String -> ({ percentage :: Percentage } -> EffectType) -> Parser EffectType
+  withPercentage effectName constructor = do
     inContext effectName do
-      _ <- P.string effectName <* space
-      _ <- parseExtension <* space
-      pots <- parsePotencies
-      pure $ constructor pots
+      percentage <- parsePercentage <* space
+      _ <- P.string effectName
+      pure $ constructor $ { percentage }
 
-  withoutPotencies :: String -> EffectType -> Parser EffectType
-  withoutPotencies effectName buffType =
+  withDurExt :: String -> ({ durExt :: DurExt } -> EffectType) -> Parser EffectType
+  withDurExt effectName constructor = do
     inContext effectName do
+      duration <- parseDuration <* space
       _ <- P.string effectName <* space
-      _ <- parseExtension
-      pure $ buffType
+      extension <- parseExtension
+      pure $ constructor $ { durExt: { duration, extension } }
 
-  parseHeal :: Parser EffectType
-  parseHeal = do
-    inContext "Heal" do
-      _ <- P.string "Heal"
-      case percentageOpt of
-        Nothing -> P.fail $ "Expected 'Heal' to have a percentage"
-        Just percentage -> pure $ Heal { percentage: percentage }
+  withDurExtPercentage :: String -> ({ durExt :: DurExt, percentage :: Percentage } -> EffectType) -> Parser EffectType
+  withDurExtPercentage effectName constructor = do
+    inContext effectName do
+      duration <- parseDuration <* space
+      percentage <- parsePercentage <* space
+      _ <- P.string effectName <* space
+      extension <- parseExtension
+      pure $ constructor $ { durExt: { duration, extension }, percentage }
+
+  withDurExtPotencies :: String -> ({ durExt :: DurExt, potencies :: Potencies } -> EffectType) -> Parser EffectType
+  withDurExtPotencies effectName constructor = do
+    inContext effectName do
+      duration <- parseDuration <* space
+      _ <- P.string effectName <* space
+      extension <- parseExtension <* space
+      potencies <- parsePotencies
+      pure $ constructor $ { durExt: { duration, extension }, potencies }
 
 inContext :: forall a. String -> Parser a -> Parser a
 inContext context =

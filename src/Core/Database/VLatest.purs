@@ -69,36 +69,43 @@ data Range
   | Self
 
 newtype Percentage = Percentage Int
+newtype Duration = Duration Int
+newtype Extension = Extension Int
+
+type DurExt =
+  { duration :: Duration
+  , extension :: Extension
+  }
 
 data EffectType
   = Heal { percentage :: Percentage }
   -- Buffs
-  | PatkUp Potencies
-  | MatkUp Potencies
-  | PdefUp Potencies
-  | MdefUp Potencies
-  | FireDamageUp Potencies
-  | IceDamageUp Potencies
-  | ThunderDamageUp Potencies
-  | EarthDamageUp Potencies
-  | WaterDamageUp Potencies
-  | WindDamageUp Potencies
-  | Veil
-  | Provoke
+  | PatkUp { durExt :: DurExt, potencies :: Potencies }
+  | MatkUp { durExt :: DurExt, potencies :: Potencies }
+  | PdefUp { durExt :: DurExt, potencies :: Potencies }
+  | MdefUp { durExt :: DurExt, potencies :: Potencies }
+  | FireDamageUp { durExt :: DurExt, potencies :: Potencies }
+  | IceDamageUp { durExt :: DurExt, potencies :: Potencies }
+  | ThunderDamageUp { durExt :: DurExt, potencies :: Potencies }
+  | EarthDamageUp { durExt :: DurExt, potencies :: Potencies }
+  | WaterDamageUp { durExt :: DurExt, potencies :: Potencies }
+  | WindDamageUp { durExt :: DurExt, potencies :: Potencies }
+  | Veil { durExt :: DurExt, percentage :: Percentage }
+  | Provoke { durExt :: DurExt }
   -- Debuffs
-  | PatkDown Potencies
-  | MatkDown Potencies
-  | PdefDown Potencies
-  | MdefDown Potencies
-  | FireResistDown Potencies
-  | IceResistDown Potencies
-  | ThunderResistDown Potencies
-  | EarthResistDown Potencies
-  | WaterResistDown Potencies
-  | WindResistDown Potencies
-  | Enfeeble
-  | Stop
-  | ExploitWeakness
+  | PatkDown { durExt :: DurExt, potencies :: Potencies }
+  | MatkDown { durExt :: DurExt, potencies :: Potencies }
+  | PdefDown { durExt :: DurExt, potencies :: Potencies }
+  | MdefDown { durExt :: DurExt, potencies :: Potencies }
+  | FireResistDown { durExt :: DurExt, potencies :: Potencies }
+  | IceResistDown { durExt :: DurExt, potencies :: Potencies }
+  | ThunderResistDown { durExt :: DurExt, potencies :: Potencies }
+  | EarthResistDown { durExt :: DurExt, potencies :: Potencies }
+  | WaterResistDown { durExt :: DurExt, potencies :: Potencies }
+  | WindResistDown { durExt :: DurExt, potencies :: Potencies }
+  | Enfeeble { durExt :: DurExt }
+  | Stop { durExt :: DurExt }
+  | ExploitWeakness { durExt :: DurExt, percentage :: Percentage }
 
 type WeaponEffect =
   { effectType ::
@@ -165,6 +172,8 @@ derive instance Eq Potency
 derive instance Eq FilterEffectType
 derive instance Eq FilterRange
 derive newtype instance Eq Percentage
+derive newtype instance Eq Duration
+derive newtype instance Eq Extension
 derive newtype instance Eq CharacterName
 derive newtype instance Eq WeaponName
 
@@ -175,6 +184,8 @@ derive newtype instance Ord CharacterName
 derive newtype instance Ord WeaponName
 
 derive instance Newtype Percentage _
+derive instance Newtype Duration _
+derive instance Newtype Extension _
 derive instance Newtype CharacterName _
 derive instance Newtype WeaponName _
 
@@ -194,6 +205,8 @@ instance Show FilterRange where
   show = genericShow
 
 derive newtype instance Show Percentage
+derive newtype instance Show Duration
+derive newtype instance Show Extension
 derive newtype instance Show CharacterName
 derive newtype instance Show WeaponName
 
@@ -213,6 +226,8 @@ instance WriteForeign FilterEffectType where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
 derive newtype instance WriteForeign Percentage
+derive newtype instance WriteForeign Duration
+derive newtype instance WriteForeign Extension
 derive newtype instance WriteForeign CharacterName
 derive newtype instance WriteForeign WeaponName
 
@@ -232,6 +247,8 @@ instance ReadForeign FilterEffectType where
   readImpl = J.genericReadForeignEnum Enum.defaultOptions
 
 derive newtype instance ReadForeign Percentage
+derive newtype instance ReadForeign Duration
+derive newtype instance ReadForeign Extension
 derive newtype instance ReadForeign CharacterName
 derive newtype instance ReadForeign WeaponName
 

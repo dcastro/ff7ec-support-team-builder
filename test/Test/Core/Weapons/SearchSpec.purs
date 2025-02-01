@@ -280,6 +280,7 @@ mkWeapon id character =
   , character: CharacterName character
   , source: nes @"Gacha"
   , image: nes @" "
+  , atbCost: 3
   , ob0: { description: nes @" ", effects: [] }
   , ob1: { description: nes @" ", effects: [] }
   , ob6: { description: nes @" ", effects: [] }

@@ -42,6 +42,7 @@ type ArmoryWeapon =
   , character :: CharacterName
   , source :: NonEmptyString
   , image :: NonEmptyString
+  , atbCost :: Int
   , ob0 :: ObLevel
   , ob1 :: ObLevel
   , ob6 :: ObLevel

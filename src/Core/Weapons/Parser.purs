@@ -1,21 +1,24 @@
 module Core.Weapons.Parser where
 
+import Core.Database.VLatest
 import Prelude
 
 import Control.Alt ((<|>))
-import Core.Database.VLatest
 import Data.Array as Arr
+import Data.Bifunctor (lmap)
 import Data.Either (Either(..), hush)
 import Data.FoldableWithIndex as F
 import Data.Maybe (Maybe(..))
 import Data.String.NonEmpty (NonEmptyString)
 import Data.String.NonEmpty as NES
 import Data.String.Utils as String
+import Data.Tuple (Tuple(..))
 import Parsing (runParser)
 import Parsing as P
 import Parsing.Combinators as P
 import Parsing.String as P
 import Parsing.String.Basic as P
+import Utils (unsafeFromJust)
 
 type Result a = Either String a
 
@@ -30,6 +33,7 @@ type Weapon =
   , character :: CharacterName
   , source :: NonEmptyString
   , image :: NonEmptyString
+  , atbCost :: Int
   , ob0 :: ObLevel
   , ob1 :: ObLevel
   , ob6 :: ObLevel
@@ -52,10 +56,10 @@ parseWeapon rowIndex row = do
   name <- WeaponName <$> getCell 0
   character <- CharacterName <$> getCell 1
   source <- getCell 2
-  ob0 <- getObLevel 18
-  ob1 <- getObLevel 19
-  ob6 <- getObLevel 20
-  ob10 <- getObLevel 21
+  { obLevel: ob0 } <- getDescription 18
+  { obLevel: ob1 } <- getDescription 19
+  { obLevel: ob6 } <- getDescription 20
+  { obLevel: ob10, atbCost } <- getDescription 21
   image <- getCell 22
   -- Check if the 3rd S.Ability is a "cure all" slot
   thirdSupportAbility <- getCell 25
@@ -66,6 +70,7 @@ parseWeapon rowIndex row = do
     , character
     , source
     , image
+    , atbCost
     , ob0
     , ob1
     , ob6
@@ -75,11 +80,11 @@ parseWeapon rowIndex row = do
   where
   rowId = rowIndex + 1
 
-  getObLevel :: Int -> Result ObLevel
-  getObLevel columnIndex = do
+  getDescription :: Int -> Result ParsedDescription
+  getDescription columnIndex = do
     let
       columnId = columnIndex + 1
-    getCell columnIndex >>= parseObLevel { rowId, columnId }
+    getCell columnIndex >>= parseDescription { rowId, columnId }
 
   getCell :: Int -> Result NonEmptyString
   getCell columnIndex = do
@@ -102,20 +107,41 @@ onErr ma err = case ma of
 
 type Coords = { rowId :: Int, columnId :: Int }
 
-parseObLevel :: Coords -> NonEmptyString -> Result ObLevel
-parseObLevel coords description = do
+type ParsedDescription =
+  { atbCost :: Int
+  , obLevel :: ObLevel
+  }
+
+parseDescription :: Coords -> NonEmptyString -> Result ParsedDescription
+parseDescription coords description = do
   let
     lines = description # NES.toString # String.lines
+    firstLine = Arr.head lines `unsafeFromJust` "String.lines returned empty list"
   let
     effects =
       lines
         # Arr.mapMaybe \line -> hush $ runParser line (parseWeaponEffect coords)
+  atbCost <- runParser firstLine (parseAtbCost coords) #
+    lmap P.parseErrorMessage
+
   pure
-    { description
-    , effects
+    { atbCost
+    , obLevel:
+        { description
+        , effects
+        }
     }
 
 type Parser = P.Parser String
+
+-- parseAtbCost :: Coords -> NonEmptyString -> Result Int
+-- parseAtbCost coords description = do
+parseAtbCost :: Coords -> Parser Int
+parseAtbCost coords = do
+  inContext ("Coords " <> show coords) do
+    Tuple _ atbCost <- P.manyTill_ P.anyChar do
+      P.char '(' *> P.intDecimal <* P.string " ATB)"
+    pure atbCost
 
 parseWeaponEffect :: Coords -> Parser WeaponEffect
 parseWeaponEffect coords =

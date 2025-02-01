@@ -18477,7 +18477,5 @@
       "atbCost": 4
     }
   ],
-  "errors": [
-    "Coords { columnId: 19, rowId: 1 }: Unexpected EOF"
-  ]
+  "errors": []
 }

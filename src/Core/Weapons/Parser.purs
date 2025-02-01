@@ -42,14 +42,16 @@ type Weapon =
   }
 
 parseWeapons :: Array (Array String) -> ParseResult
-parseWeapons =
-  F.foldlWithIndex
-    ( \rowIndex result row ->
-        case parseWeapon rowIndex row of
-          Right weapon -> result { weapons = Arr.snoc result.weapons weapon }
-          Left err -> result { errors = Arr.snoc result.errors err }
-    )
-    { weapons: [], errors: [] }
+parseWeapons lines =
+  lines
+    # Arr.drop 1 -- Skip the 1st row with the column headers
+    # F.foldlWithIndex
+        ( \rowIndex result row ->
+            case parseWeapon rowIndex row of
+              Right weapon -> result { weapons = Arr.snoc result.weapons weapon }
+              Left err -> result { errors = Arr.snoc result.errors err }
+        )
+        { weapons: [], errors: [] }
 
 parseWeapon :: Int -> Array String -> Result Weapon
 parseWeapon rowIndex row = do

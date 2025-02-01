@@ -56,6 +56,21 @@ spec =
           { effectType: IceDamageUp { base: Mid, max: Mid }
           , range: SingleTarget
           }
+      "3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]"
+        `shouldParse`
+          { effectType: Stop
+          , range: SingleTarget
+          }
+      "40s Enfeeble (+8s) [Range: Single Enemy]"
+        `shouldParse`
+          { effectType: Enfeeble
+          , range: SingleTarget
+          }
+      "45s 25% WeaknessAttackUp (+9s) [Range: Self]"
+        `shouldParse`
+          { effectType: ExploitWeakness
+          , range: Self
+          }
     it "parses all weapons" do
       sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
       sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of

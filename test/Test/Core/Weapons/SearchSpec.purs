@@ -4,20 +4,25 @@ import Prelude
 import Test.Spec
 
 import Core.Database.VLatest
+import Core.Weapons.Search (AssignmentResult)
 import Core.Weapons.Search as Search
+import Data.Array as Arr
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Nullable (null)
 import Data.Nullable as Null
+import Data.Set as Set
 import Data.String.NonEmpty (NonEmptyString)
 import Data.Tuple (Tuple(..))
 import Test.Utils (nes, shouldEqualPretty)
+import Test.Utils as T
 
 spec :: Spec Unit
 spec =
   describe "search" do
     combinationsSpec
     assignWeaponsToCharactersSpec
+    searchExamplesSpec
 
 combinationsSpec :: Spec Unit
 combinationsSpec = do
@@ -273,6 +278,56 @@ assignWeaponsToCharactersSpec = do
           ]
 
       Null.toNullable (Search.assignWeaponsToCharacters 2 combination) `shouldEqualPretty` null
+
+searchExamplesSpec :: Spec Unit
+searchExamplesSpec = do
+  describe "search examples" do
+    it "example 1" do
+      armory <- T.loadTestDb
+      let
+        filters =
+          [ { effectType: FilterHeal, range: FilterAll }
+          , { effectType: FilterPatkUp, range: FilterAll }
+          , { effectType: FilterPatkDown, range: FilterAll }
+          ]
+        maxCharacterCount = 1
+        mustHaveChars = Set.empty
+        results = Search.search maxCharacterCount filters armory
+          # Search.filterMustHaveChars mustHaveChars
+          # Search.filterDuplicates
+      T.goldenTest "snaps/search-example-1.snap" $ teamSummary <$> results
+    it "example 2" do
+      armory <- T.loadTestDb
+      let
+        filters =
+          [ { effectType: FilterHeal, range: FilterAll }
+          , { effectType: FilterMatkUp, range: FilterAll }
+          , { effectType: FilterMdefDown, range: FilterAll }
+          , { effectType: FilterFireResistDown, range: FilterSingleTargetOrAll }
+          , { effectType: FilterMdefUp, range: FilterAll }
+          ]
+        maxCharacterCount = 2
+        mustHaveChars = Set.empty
+        results = Search.search maxCharacterCount filters armory
+          # Search.filterMustHaveChars mustHaveChars
+          # Search.filterDuplicates
+      T.goldenTest "snaps/search-example-2.snap" $ teamSummary <$> results
+  where
+  teamSummary :: AssignmentResult -> _
+  teamSummary team =
+    team.characters
+      # Map.values
+      # Arr.fromFoldable
+      <#> \character -> do
+        let
+          weapons = Arr.catMaybes
+            [ Just character.mainHand.weapon.name
+            , character.offHand <#> _.weapon.name
+            ]
+
+        { character: character.name
+        , weapons
+        }
 
 mkWeapon :: NonEmptyString -> NonEmptyString -> ArmoryWeapon
 mkWeapon id character =

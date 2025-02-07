@@ -1,57 +1,28 @@
 module Test.Core.Weapons.ArmorySpec where
 
-import Core.Weapons.Parser
+import Core.Database.VLatest
 import Prelude
 import Test.Spec
 
-import Control.Monad.Error.Class (throwError)
-import Core.Armory as Armory
-import Core.Database.VLatest
 import Data.Array as Arr
-import Data.Either (Either(..))
 import Data.List.Lazy as LazyList
 import Data.List.ZipList (ZipList(..))
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
-import Effect.Aff (error)
-import Google.SheetsApi (GetSheetResult)
-import Node.Encoding as Node
-import Node.FS.Aff as Node
 import Test.Utils as T
 import Utils (MapAsArray(..))
-import Utils as Utils
-import Yoga.JSON as J
 
 spec :: Spec Unit
 spec =
   describe "armory" do
     it "groups weapons" do
-      sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
-      sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of
-        Right res -> pure res.values
-        Left errs ->
-          throwError $ error
-            $ "Failed to read `resources/weapons.json`: \n"
-                <> Utils.renderJsonErr errs
-      let { weapons, errors: _ } = parseWeapons sourceWeapons
-
-      armory <- Armory.createArmory weapons Map.empty
-
+      armory <- T.loadTestDb
       T.goldenTest "snaps/grouped_weapons.snap" $ MapAsArray armory.groupedByEffect
 
     it "check differences in OB potencies" do
       -- A script to find out whether all weapons have the same effects at OB0 as they do at OB1,
       -- and the same effects at OB6 as they do at OB10.
-      sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
-      sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of
-        Right res -> pure res.values
-        Left errs ->
-          throwError $ error
-            $ "Failed to read `resources/weapons.json`: \n"
-                <> Utils.renderJsonErr errs
-      let { weapons, errors: _ } = parseWeapons sourceWeapons
-
-      armory <- Armory.createArmory weapons Map.empty
+      armory <- T.loadTestDb
 
       let
         obDiffs =

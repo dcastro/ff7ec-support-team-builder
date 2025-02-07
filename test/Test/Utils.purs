@@ -2,16 +2,21 @@ module Test.Utils where
 
 import Core.Weapons.Parser
 import Prelude
-import Control.Monad.Error.Class (class MonadThrow)
+
+import Control.Monad.Error.Class (class MonadThrow, throwError)
+import Core.Armory as Armory
+import Core.Database.VLatest (Armory)
 import Data.Either (Either(..))
+import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.String.NonEmpty (NonEmptyString)
 import Data.String.NonEmpty as NES
-import Effect.Aff (Aff)
+import Effect.Aff (Aff, error)
 import Effect.Aff as Aff
 import Effect.Class (liftEffect)
 import Effect.Class.Console as Console
 import Effect.Exception (Error)
+import Google.SheetsApi (GetSheetResult)
 import Node.Encoding as Node
 import Node.FS.Aff as Node
 import Node.FS.Perms as Node
@@ -22,9 +27,10 @@ import Node.Path (FilePath)
 import Node.Path as Path
 import Parsing (runParser)
 import Test.Spec.Assertions (fail, shouldEqual)
+import Type.Proxy (Proxy(..))
+import Utils as Utils
 import Yoga.JSON (class WriteForeign)
 import Yoga.JSON as J
-import Type.Proxy (Proxy(..))
 
 shouldEqualPretty :: forall a. WriteForeign a => a -> a -> Aff Unit
 shouldEqualPretty actual expected = do
@@ -93,3 +99,16 @@ shouldEqualFile actual expectedFilePath = do
 nes :: forall (@a :: Symbol). NES.MakeNonEmpty a => NonEmptyString
 nes =
   NES.nes (Proxy :: Proxy a)
+
+loadTestDb :: Aff Armory
+loadTestDb = do
+  sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
+  sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of
+    Right res -> pure res.values
+    Left errs ->
+      throwError $ error
+        $ "Failed to read `resources/weapons.json`: \n"
+            <> Utils.renderJsonErr errs
+  let { weapons, errors: _ } = parseWeapons sourceWeapons
+
+  Armory.createArmory weapons Map.empty

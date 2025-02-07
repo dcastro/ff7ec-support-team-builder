@@ -1,0 +1,2448 @@
+[
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Core Defender"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Marine Shooter"
+      ],
+      "character": "Lucia"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Egg Staff",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Egg Staff",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Fairy Tale",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Fairy Tale",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gambanteinn",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gambanteinn",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Snowflake",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Snowflake",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Terra's Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Terra's Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Umbrella",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Umbrella",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Microlaser",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Microlaser",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Crystal Sword",
+        "Bandaged Sword"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bramble Spine",
+        "Core Defender"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Centipede",
+        "Core Defender"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Foam Sword",
+        "Core Defender"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Core Defender"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Nautilus Spiral",
+        "Core Defender"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Prime Number",
+        "Core Defender"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Syringe Rapier",
+        "Core Defender"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Headphones",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Headphones",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Silver Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Silver Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang",
+        "Bahamut Cutter"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang",
+        "Bahamut Cutter"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Egg Staff",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Egg Staff",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang",
+        "Bahamut Cutter"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Fairy Tale",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Fairy Tale",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang",
+        "Bahamut Cutter"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang",
+        "Bahamut Cutter"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gambanteinn",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gambanteinn",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang",
+        "Bahamut Cutter"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang",
+        "Bahamut Cutter"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Snowflake",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Snowflake",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang",
+        "Bahamut Cutter"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Terra's Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Terra's Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang",
+        "Bahamut Cutter"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Umbrella",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Umbrella",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang",
+        "Bahamut Cutter"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Microlaser",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bramble Spine",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Centipede",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Foam Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Nautilus Spiral",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Prime Number",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Headphones",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Headphones",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Silver Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Silver Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Core Defender"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Marine Shooter"
+      ],
+      "character": "Lucia"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Trumpet Shell",
+        "Gold Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Egg Staff",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Fairy Tale",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gambanteinn",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Snowflake",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Terra's Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Umbrella",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Microlaser",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Microlaser",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Headphones",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Headphones",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Headphones",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Silver Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Silver Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Silver Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Egg Staff",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Fairy Tale",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gambanteinn",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Snowflake",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Terra's Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Umbrella",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Microlaser",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Core Defender"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Trumpet Shell",
+        "Gold Megaphone"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Core Defender"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Trumpet Shell",
+        "Gold Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Microlaser",
+        "Escutcheon Cannon"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Headphones",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Silver Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Trumpet Shell",
+        "Gold Megaphone"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Core Defender"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ]
+]

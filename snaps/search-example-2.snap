@@ -98,8 +98,8 @@
     },
     {
       "weapons": [
-        "Sharkslayer",
-        "Escutcheon Cannon"
+        "Escutcheon Cannon",
+        "Sharkslayer"
       ],
       "character": "Barret"
     }
@@ -204,8 +204,8 @@
     },
     {
       "weapons": [
-        "Sharkslayer",
-        "Escutcheon Cannon"
+        "Escutcheon Cannon",
+        "Sharkslayer"
       ],
       "character": "Barret"
     }
@@ -245,15 +245,15 @@
   [
     {
       "weapons": [
-        "Egg Staff",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Egg Staff"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Sharkslayer",
-        "Escutcheon Cannon"
+        "Escutcheon Cannon",
+        "Sharkslayer"
       ],
       "character": "Barret"
     }
@@ -261,8 +261,8 @@
   [
     {
       "weapons": [
-        "Egg Staff",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Egg Staff"
       ],
       "character": "Aerith"
     },
@@ -277,15 +277,15 @@
   [
     {
       "weapons": [
-        "Fairy Tale",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Fairy Tale"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Sharkslayer",
-        "Escutcheon Cannon"
+        "Escutcheon Cannon",
+        "Sharkslayer"
       ],
       "character": "Barret"
     }
@@ -293,8 +293,8 @@
   [
     {
       "weapons": [
-        "Fairy Tale",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Fairy Tale"
       ],
       "character": "Aerith"
     },
@@ -309,15 +309,15 @@
   [
     {
       "weapons": [
-        "Floral Wand",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Floral Wand"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Sharkslayer",
-        "Escutcheon Cannon"
+        "Escutcheon Cannon",
+        "Sharkslayer"
       ],
       "character": "Barret"
     }
@@ -325,8 +325,8 @@
   [
     {
       "weapons": [
-        "Floral Wand",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Floral Wand"
       ],
       "character": "Aerith"
     },
@@ -341,15 +341,15 @@
   [
     {
       "weapons": [
-        "Gambanteinn",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Gambanteinn"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Sharkslayer",
-        "Escutcheon Cannon"
+        "Escutcheon Cannon",
+        "Sharkslayer"
       ],
       "character": "Barret"
     }
@@ -357,8 +357,8 @@
   [
     {
       "weapons": [
-        "Gambanteinn",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Gambanteinn"
       ],
       "character": "Aerith"
     },
@@ -373,8 +373,8 @@
   [
     {
       "weapons": [
-        "Kamura Wand",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Kamura Wand"
       ],
       "character": "Aerith"
     },
@@ -389,15 +389,15 @@
   [
     {
       "weapons": [
-        "Snowflake",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Snowflake"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Sharkslayer",
-        "Escutcheon Cannon"
+        "Escutcheon Cannon",
+        "Sharkslayer"
       ],
       "character": "Barret"
     }
@@ -405,72 +405,8 @@
   [
     {
       "weapons": [
-        "Snowflake",
-        "Crimson Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Ivy Collar",
-        "Sleek Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Terra's Rod",
-        "Crimson Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sharkslayer",
-        "Escutcheon Cannon"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Terra's Rod",
-        "Crimson Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Ivy Collar",
-        "Sleek Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Umbrella",
-        "Crimson Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sharkslayer",
-        "Escutcheon Cannon"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Umbrella",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Snowflake"
       ],
       "character": "Aerith"
     },
@@ -492,8 +428,72 @@
     },
     {
       "weapons": [
-        "Microlaser",
-        "Escutcheon Cannon"
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Microlaser"
       ],
       "character": "Barret"
     }
@@ -524,8 +524,8 @@
     },
     {
       "weapons": [
-        "Crystal Sword",
-        "Bandaged Sword"
+        "Bandaged Sword",
+        "Crystal Sword"
       ],
       "character": "Cloud"
     }
@@ -572,8 +572,8 @@
     },
     {
       "weapons": [
-        "Foam Sword",
-        "Core Defender"
+        "Core Defender",
+        "Foam Sword"
       ],
       "character": "Matt"
     }
@@ -588,8 +588,8 @@
     },
     {
       "weapons": [
-        "Luminary Sword",
-        "Core Defender"
+        "Core Defender",
+        "Luminary Sword"
       ],
       "character": "Matt"
     }
@@ -604,8 +604,8 @@
     },
     {
       "weapons": [
-        "Nautilus Spiral",
-        "Core Defender"
+        "Core Defender",
+        "Nautilus Spiral"
       ],
       "character": "Matt"
     }
@@ -620,8 +620,8 @@
     },
     {
       "weapons": [
-        "Prime Number",
-        "Core Defender"
+        "Core Defender",
+        "Prime Number"
       ],
       "character": "Matt"
     }
@@ -636,8 +636,8 @@
     },
     {
       "weapons": [
-        "Syringe Rapier",
-        "Core Defender"
+        "Core Defender",
+        "Syringe Rapier"
       ],
       "character": "Matt"
     }
@@ -700,8 +700,8 @@
     },
     {
       "weapons": [
-        "Pilot's Collar",
-        "Ivy Collar"
+        "Ivy Collar",
+        "Pilot's Collar"
       ],
       "character": "Red XIII"
     }
@@ -732,8 +732,8 @@
     },
     {
       "weapons": [
-        "Silver Collar",
-        "Ivy Collar"
+        "Ivy Collar",
+        "Silver Collar"
       ],
       "character": "Red XIII"
     }
@@ -807,8 +807,8 @@
     },
     {
       "weapons": [
-        "Boomerang",
-        "Bahamut Cutter"
+        "Bahamut Cutter",
+        "Boomerang"
       ],
       "character": "Yuffie"
     }
@@ -839,8 +839,8 @@
     },
     {
       "weapons": [
-        "Boomerang",
-        "Bahamut Cutter"
+        "Bahamut Cutter",
+        "Boomerang"
       ],
       "character": "Yuffie"
     }
@@ -880,8 +880,8 @@
   [
     {
       "weapons": [
-        "Egg Staff",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Egg Staff"
       ],
       "character": "Aerith"
     },
@@ -896,15 +896,15 @@
   [
     {
       "weapons": [
-        "Egg Staff",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Egg Staff"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Boomerang",
-        "Bahamut Cutter"
+        "Bahamut Cutter",
+        "Boomerang"
       ],
       "character": "Yuffie"
     }
@@ -912,8 +912,8 @@
   [
     {
       "weapons": [
-        "Fairy Tale",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Fairy Tale"
       ],
       "character": "Aerith"
     },
@@ -928,15 +928,15 @@
   [
     {
       "weapons": [
-        "Fairy Tale",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Fairy Tale"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Boomerang",
-        "Bahamut Cutter"
+        "Bahamut Cutter",
+        "Boomerang"
       ],
       "character": "Yuffie"
     }
@@ -944,8 +944,8 @@
   [
     {
       "weapons": [
-        "Floral Wand",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Floral Wand"
       ],
       "character": "Aerith"
     },
@@ -960,15 +960,15 @@
   [
     {
       "weapons": [
-        "Floral Wand",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Floral Wand"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Boomerang",
-        "Bahamut Cutter"
+        "Bahamut Cutter",
+        "Boomerang"
       ],
       "character": "Yuffie"
     }
@@ -976,8 +976,8 @@
   [
     {
       "weapons": [
-        "Gambanteinn",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Gambanteinn"
       ],
       "character": "Aerith"
     },
@@ -992,15 +992,15 @@
   [
     {
       "weapons": [
-        "Gambanteinn",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Gambanteinn"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Boomerang",
-        "Bahamut Cutter"
+        "Bahamut Cutter",
+        "Boomerang"
       ],
       "character": "Yuffie"
     }
@@ -1008,15 +1008,15 @@
   [
     {
       "weapons": [
-        "Kamura Wand",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Kamura Wand"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Boomerang",
-        "Bahamut Cutter"
+        "Bahamut Cutter",
+        "Boomerang"
       ],
       "character": "Yuffie"
     }
@@ -1024,8 +1024,8 @@
   [
     {
       "weapons": [
-        "Snowflake",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Snowflake"
       ],
       "character": "Aerith"
     },
@@ -1040,15 +1040,15 @@
   [
     {
       "weapons": [
-        "Snowflake",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Snowflake"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Boomerang",
-        "Bahamut Cutter"
+        "Bahamut Cutter",
+        "Boomerang"
       ],
       "character": "Yuffie"
     }
@@ -1056,8 +1056,8 @@
   [
     {
       "weapons": [
-        "Terra's Rod",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Terra's Rod"
       ],
       "character": "Aerith"
     },
@@ -1072,15 +1072,15 @@
   [
     {
       "weapons": [
-        "Terra's Rod",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Terra's Rod"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Boomerang",
-        "Bahamut Cutter"
+        "Bahamut Cutter",
+        "Boomerang"
       ],
       "character": "Yuffie"
     }
@@ -1088,8 +1088,8 @@
   [
     {
       "weapons": [
-        "Umbrella",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Umbrella"
       ],
       "character": "Aerith"
     },
@@ -1104,15 +1104,15 @@
   [
     {
       "weapons": [
-        "Umbrella",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Umbrella"
       ],
       "character": "Aerith"
     },
     {
       "weapons": [
-        "Boomerang",
-        "Bahamut Cutter"
+        "Bahamut Cutter",
+        "Boomerang"
       ],
       "character": "Yuffie"
     }
@@ -1120,8 +1120,8 @@
   [
     {
       "weapons": [
-        "Microlaser",
-        "Escutcheon Cannon"
+        "Escutcheon Cannon",
+        "Microlaser"
       ],
       "character": "Barret"
     },
@@ -1255,8 +1255,8 @@
     },
     {
       "weapons": [
-        "Headphones",
-        "Canyon Collar"
+        "Canyon Collar",
+        "Headphones"
       ],
       "character": "Red XIII"
     }
@@ -1271,8 +1271,8 @@
     },
     {
       "weapons": [
-        "Pilot's Collar",
-        "Canyon Collar"
+        "Canyon Collar",
+        "Pilot's Collar"
       ],
       "character": "Red XIII"
     }
@@ -1287,8 +1287,8 @@
     },
     {
       "weapons": [
-        "Silver Collar",
-        "Pilot's Collar"
+        "Pilot's Collar",
+        "Silver Collar"
       ],
       "character": "Red XIII"
     }
@@ -1303,8 +1303,8 @@
     },
     {
       "weapons": [
-        "Silver Collar",
-        "Canyon Collar"
+        "Canyon Collar",
+        "Silver Collar"
       ],
       "character": "Red XIII"
     }
@@ -1343,8 +1343,8 @@
   [
     {
       "weapons": [
-        "Luminary Sword",
-        "Core Defender"
+        "Core Defender",
+        "Luminary Sword"
       ],
       "character": "Matt"
     },
@@ -1611,8 +1611,8 @@
     },
     {
       "weapons": [
-        "Trumpet Shell",
-        "Gold Megaphone"
+        "Gold Megaphone",
+        "Trumpet Shell"
       ],
       "character": "Cait Sith"
     }
@@ -1620,8 +1620,8 @@
   [
     {
       "weapons": [
-        "Egg Staff",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Egg Staff"
       ],
       "character": "Aerith"
     },
@@ -1636,8 +1636,8 @@
   [
     {
       "weapons": [
-        "Fairy Tale",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Fairy Tale"
       ],
       "character": "Aerith"
     },
@@ -1652,8 +1652,8 @@
   [
     {
       "weapons": [
-        "Floral Wand",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Floral Wand"
       ],
       "character": "Aerith"
     },
@@ -1668,8 +1668,8 @@
   [
     {
       "weapons": [
-        "Gambanteinn",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Gambanteinn"
       ],
       "character": "Aerith"
     },
@@ -1684,8 +1684,8 @@
   [
     {
       "weapons": [
-        "Kamura Wand",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Kamura Wand"
       ],
       "character": "Aerith"
     },
@@ -1700,8 +1700,8 @@
   [
     {
       "weapons": [
-        "Snowflake",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Snowflake"
       ],
       "character": "Aerith"
     },
@@ -1716,8 +1716,8 @@
   [
     {
       "weapons": [
-        "Terra's Rod",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Terra's Rod"
       ],
       "character": "Aerith"
     },
@@ -1732,8 +1732,8 @@
   [
     {
       "weapons": [
-        "Umbrella",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Umbrella"
       ],
       "character": "Aerith"
     },
@@ -1764,8 +1764,8 @@
   [
     {
       "weapons": [
-        "Microlaser",
-        "Escutcheon Cannon"
+        "Escutcheon Cannon",
+        "Microlaser"
       ],
       "character": "Barret"
     },
@@ -1787,8 +1787,8 @@
     },
     {
       "weapons": [
-        "Headphones",
-        "Flame Dragon's Band"
+        "Flame Dragon's Band",
+        "Headphones"
       ],
       "character": "Red XIII"
     }
@@ -1819,8 +1819,8 @@
     },
     {
       "weapons": [
-        "Headphones",
-        "Gold Collar"
+        "Gold Collar",
+        "Headphones"
       ],
       "character": "Red XIII"
     }
@@ -1835,8 +1835,8 @@
     },
     {
       "weapons": [
-        "Pilot's Collar",
-        "Flame Dragon's Band"
+        "Flame Dragon's Band",
+        "Pilot's Collar"
       ],
       "character": "Red XIII"
     }
@@ -1851,8 +1851,8 @@
     },
     {
       "weapons": [
-        "Pilot's Collar",
-        "Ivy Collar"
+        "Ivy Collar",
+        "Pilot's Collar"
       ],
       "character": "Red XIII"
     }
@@ -1867,8 +1867,8 @@
     },
     {
       "weapons": [
-        "Pilot's Collar",
-        "Gold Collar"
+        "Gold Collar",
+        "Pilot's Collar"
       ],
       "character": "Red XIII"
     }
@@ -1883,8 +1883,8 @@
     },
     {
       "weapons": [
-        "Silver Collar",
-        "Flame Dragon's Band"
+        "Flame Dragon's Band",
+        "Silver Collar"
       ],
       "character": "Red XIII"
     }
@@ -1899,8 +1899,8 @@
     },
     {
       "weapons": [
-        "Silver Collar",
-        "Ivy Collar"
+        "Ivy Collar",
+        "Silver Collar"
       ],
       "character": "Red XIII"
     }
@@ -1915,8 +1915,8 @@
     },
     {
       "weapons": [
-        "Silver Collar",
-        "Gold Collar"
+        "Gold Collar",
+        "Silver Collar"
       ],
       "character": "Red XIII"
     }
@@ -2003,8 +2003,8 @@
   [
     {
       "weapons": [
-        "Egg Staff",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Egg Staff"
       ],
       "character": "Aerith"
     },
@@ -2019,8 +2019,8 @@
   [
     {
       "weapons": [
-        "Fairy Tale",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Fairy Tale"
       ],
       "character": "Aerith"
     },
@@ -2035,8 +2035,8 @@
   [
     {
       "weapons": [
-        "Floral Wand",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Floral Wand"
       ],
       "character": "Aerith"
     },
@@ -2051,8 +2051,8 @@
   [
     {
       "weapons": [
-        "Gambanteinn",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Gambanteinn"
       ],
       "character": "Aerith"
     },
@@ -2067,8 +2067,8 @@
   [
     {
       "weapons": [
-        "Snowflake",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Snowflake"
       ],
       "character": "Aerith"
     },
@@ -2083,8 +2083,8 @@
   [
     {
       "weapons": [
-        "Terra's Rod",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Terra's Rod"
       ],
       "character": "Aerith"
     },
@@ -2099,8 +2099,8 @@
   [
     {
       "weapons": [
-        "Umbrella",
-        "Crimson Staff"
+        "Crimson Staff",
+        "Umbrella"
       ],
       "character": "Aerith"
     },
@@ -2115,8 +2115,8 @@
   [
     {
       "weapons": [
-        "Microlaser",
-        "Escutcheon Cannon"
+        "Escutcheon Cannon",
+        "Microlaser"
       ],
       "character": "Barret"
     },
@@ -2146,8 +2146,8 @@
   [
     {
       "weapons": [
-        "Luminary Sword",
-        "Core Defender"
+        "Core Defender",
+        "Luminary Sword"
       ],
       "character": "Matt"
     },
@@ -2162,15 +2162,15 @@
   [
     {
       "weapons": [
-        "Trumpet Shell",
-        "Gold Megaphone"
+        "Gold Megaphone",
+        "Trumpet Shell"
       ],
       "character": "Cait Sith"
     },
     {
       "weapons": [
-        "Pilot's Collar",
-        "Canyon Collar"
+        "Canyon Collar",
+        "Pilot's Collar"
       ],
       "character": "Red XIII"
     }
@@ -2178,8 +2178,8 @@
   [
     {
       "weapons": [
-        "Luminary Sword",
-        "Core Defender"
+        "Core Defender",
+        "Luminary Sword"
       ],
       "character": "Matt"
     },
@@ -2263,8 +2263,8 @@
     },
     {
       "weapons": [
-        "Gold Collar",
-        "Flame Dragon's Band"
+        "Flame Dragon's Band",
+        "Gold Collar"
       ],
       "character": "Red XIII"
     }
@@ -2295,8 +2295,8 @@
     },
     {
       "weapons": [
-        "Trumpet Shell",
-        "Gold Megaphone"
+        "Gold Megaphone",
+        "Trumpet Shell"
       ],
       "character": "Cait Sith"
     }
@@ -2304,15 +2304,15 @@
   [
     {
       "weapons": [
-        "Microlaser",
-        "Escutcheon Cannon"
+        "Escutcheon Cannon",
+        "Microlaser"
       ],
       "character": "Barret"
     },
     {
       "weapons": [
-        "Gold Collar",
-        "Flame Dragon's Band"
+        "Flame Dragon's Band",
+        "Gold Collar"
       ],
       "character": "Red XIII"
     }
@@ -2327,8 +2327,8 @@
     },
     {
       "weapons": [
-        "Headphones",
-        "Flame Dragon's Band"
+        "Flame Dragon's Band",
+        "Headphones"
       ],
       "character": "Red XIII"
     }
@@ -2343,8 +2343,8 @@
     },
     {
       "weapons": [
-        "Pilot's Collar",
-        "Flame Dragon's Band"
+        "Flame Dragon's Band",
+        "Pilot's Collar"
       ],
       "character": "Red XIII"
     }
@@ -2359,8 +2359,8 @@
     },
     {
       "weapons": [
-        "Silver Collar",
-        "Flame Dragon's Band"
+        "Flame Dragon's Band",
+        "Silver Collar"
       ],
       "character": "Red XIII"
     }
@@ -2384,15 +2384,15 @@
   [
     {
       "weapons": [
-        "Trumpet Shell",
-        "Gold Megaphone"
+        "Gold Megaphone",
+        "Trumpet Shell"
       ],
       "character": "Cait Sith"
     },
     {
       "weapons": [
-        "Pilot's Collar",
-        "Gold Collar"
+        "Gold Collar",
+        "Pilot's Collar"
       ],
       "character": "Red XIII"
     }
@@ -2400,15 +2400,15 @@
   [
     {
       "weapons": [
-        "Luminary Sword",
-        "Core Defender"
+        "Core Defender",
+        "Luminary Sword"
       ],
       "character": "Matt"
     },
     {
       "weapons": [
-        "Gold Collar",
-        "Flame Dragon's Band"
+        "Flame Dragon's Band",
+        "Gold Collar"
       ],
       "character": "Red XIII"
     }
@@ -2423,8 +2423,8 @@
     },
     {
       "weapons": [
-        "Gold Collar",
-        "Flame Dragon's Band"
+        "Flame Dragon's Band",
+        "Gold Collar"
       ],
       "character": "Red XIII"
     }
@@ -2439,8 +2439,8 @@
     },
     {
       "weapons": [
-        "Gold Collar",
-        "Flame Dragon's Band"
+        "Flame Dragon's Band",
+        "Gold Collar"
       ],
       "character": "Red XIII"
     }

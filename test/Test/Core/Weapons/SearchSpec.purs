@@ -1,9 +1,9 @@
 module Test.Core.Weapons.SearchSpec (spec) where
 
+import Core.Database.VLatest
 import Prelude
 import Test.Spec
 
-import Core.Database.VLatest
 import Core.Weapons.Search (AssignmentResult)
 import Core.Weapons.Search as Search
 import Data.Array as Arr
@@ -318,16 +318,20 @@ searchExamplesSpec = do
     team.characters
       # Map.values
       # Arr.fromFoldable
-      <#> \character -> do
-        let
-          weapons = Arr.catMaybes
-            [ Just character.mainHand.weapon.name
-            , character.offHand <#> _.weapon.name
-            ]
+      <#>
+        ( \character ->
+            do
+              let
+                weapons = Arr.sort $ Arr.catMaybes
+                  [ Just character.mainHand.weapon.name
+                  , character.offHand <#> _.weapon.name
+                  ]
 
-        { character: character.name
-        , weapons
-        }
+              { character: character.name
+              , weapons
+              }
+        )
+      # Arr.sort
 
 mkWeapon :: NonEmptyString -> NonEmptyString -> ArmoryWeapon
 mkWeapon id character =

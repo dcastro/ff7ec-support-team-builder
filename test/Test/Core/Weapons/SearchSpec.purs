@@ -13,9 +13,11 @@ import Data.Nullable (null)
 import Data.Nullable as Null
 import Data.Set as Set
 import Data.String.NonEmpty (NonEmptyString)
+import Data.String.NonEmpty as NES
 import Data.Tuple (Tuple(..))
 import Test.Utils (nes, shouldEqualPretty)
 import Test.Utils as T
+import Utils (unsafeFromJust)
 
 spec :: Spec Unit
 spec =
@@ -156,6 +158,26 @@ combinationsSpec = do
           , { filter: filter3, weapon: weapon31, potenciesAtOb10: potencies31 }
           ]
         ]
+
+    it "stack safety" do
+      let
+        filters = Arr.range 0 5 <#> \i -> do
+          { filter:
+              { effectType: Arr.index allFilterEffectTypes i `unsafeFromJust` "aaa"
+              , range: FilterAll
+              }
+          , matchingWeapons: Arr.range 0 10 <#> \j -> do
+              let
+                weaponName = nes @"Weapon - "
+                  # flip NES.appendString (show i)
+                  # flip NES.appendString " - "
+                  # flip NES.appendString (show j)
+              { weapon: mkWeapon weaponName (nes @"Glenn")
+              , potenciesAtOb10: Nothing
+              }
+          }
+        _result = Search.combinations filters
+      pure unit
 
 assignWeaponsToCharactersSpec :: Spec Unit
 assignWeaponsToCharactersSpec = do

@@ -64,14 +64,16 @@ combinations results =
   results
     # Arr.nubBy (compare `on` _.filter)
     # Arr.foldr
-        ( \(filterResult :: FilterResult) (combinations :: Array Combination) -> do
+        -- NOTE: we're using Applicative's `ado` here because `bind` is not stack-safe for large arrays
+        -- https://discourse.purescript.org/t/stack-safe-cartesian-product/4841/3
+        ( \(filterResult :: FilterResult) (combinations :: Array Combination) -> ado
             { weapon, potenciesAtOb10 } <- filterResult.matchingWeapons
               # discardIgnored
             (combination :: Combination) <- combinations
 
             let combinationItem = { filter: filterResult.filter, weapon, potenciesAtOb10 }
 
-            [ Arr.cons combinationItem combination ]
+            in Arr.cons combinationItem combination
         )
         ([ [] ] :: Array Combination)
   where

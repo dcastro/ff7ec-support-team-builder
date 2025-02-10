@@ -1,0 +1,15 @@
+package:
+  name: ff7ec-team-builder-benchmarks
+  dependencies:
+    - benchotron
+    - ff7ec-team-builder
+    - quickcheck
+workspace:
+  packageSet:
+    registry: 62.2.5
+  extraPackages:
+    ff7ec-team-builder:
+      path: ..
+    benchotron:
+      git: https://github.com/Anteproperispomenon/purescript-benchotron.git
+      ref: 65e7ee2b08faf278df6b19ba222c208b86ac5a3c

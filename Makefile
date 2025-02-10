@@ -26,6 +26,10 @@ build-staging:
 run:
 	npm run serve
 
+# Runs benchmarks. The generated files can be uploaded to: https://harry.garrood.me/purescript-benchotron-svg-renderer/
+bench:
+	(cd benchmark; spago run -m BenchMain)
+
 test:
 	spago test
 

@@ -14,3 +14,5 @@ package-lock.json
 dist/
 prod/*
 staging/*
+
+benchmark/tmp/*

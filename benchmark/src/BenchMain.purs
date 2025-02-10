@@ -8,4 +8,7 @@ import Effect (Effect)
 
 main :: Effect Unit
 main = do
-  runSuite [ CartesianProduct.benchCartesianProduct ]
+  runSuite
+    [ CartesianProduct.benchCartesianProduct
+    , CartesianProduct.benchCartesianProductAndFilter
+    ]

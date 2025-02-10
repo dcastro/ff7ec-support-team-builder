@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "spago build",
+    "ts": "tsc -b",
     "test": "spago test",
     "serve": "parcel dev/index.html --open"
   }

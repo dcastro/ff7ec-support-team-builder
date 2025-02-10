@@ -3,6 +3,7 @@
 .PHONY: build build-prod run test test-filter clean regen-weapons
 
 build:
+	npm run ts
 	spago build
 
 build-prod:
@@ -11,6 +12,7 @@ build-prod:
 	npm i
 	mkdir -p prod
 	cp dev/index.html prod/
+	npm run ts
 	spago bundle --outfile prod/index.js
 	parcel build prod/index.html --dist-dir docs --public-url '.'
 
@@ -20,22 +22,27 @@ build-staging:
 	npm i
 	mkdir -p staging
 	cp dev/index.html staging/
+	npm run ts
 	spago bundle --outfile staging/index.js
 	parcel build staging/index.html --dist-dir docs/staging --public-url '.'
 
 run:
+	npm run ts
 	npm run serve
 
 # Runs benchmarks. The generated files can be uploaded to: https://harry.garrood.me/purescript-benchotron-svg-renderer/
 bench:
+	npm run ts
 	spago run -m BenchMain -p ff7ec-team-builder-benchmarks
 
 test:
+	npm run ts
 	spago test
 
 # Usage:
 #  * make test-filter FILTER="MyTest"
 test-filter:
+	npm run ts
 	spago test -- --example "$(FILTER)"
 
 format:

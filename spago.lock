@@ -209,6 +209,118 @@
             "unsafe-reference"
           ]
         }
+      },
+      "ff7ec-team-builder-benchmarks": {
+        "path": "benchmark",
+        "core": {
+          "dependencies": [
+            "benchotron",
+            "ff7ec-team-builder",
+            "quickcheck"
+          ],
+          "build_plan": [
+            "aff",
+            "aff-promise",
+            "arraybuffer-types",
+            "arrays",
+            "avar",
+            "benchotron",
+            "bifunctors",
+            "catenable-lists",
+            "console",
+            "const",
+            "contravariant",
+            "control",
+            "datetime",
+            "debug",
+            "distributive",
+            "dom-indexed",
+            "effect",
+            "either",
+            "enums",
+            "exceptions",
+            "exists",
+            "ff7ec-team-builder",
+            "foldable-traversable",
+            "foreign",
+            "foreign-object",
+            "fork",
+            "free",
+            "freeap",
+            "functions",
+            "functors",
+            "gen",
+            "halogen",
+            "halogen-subscriptions",
+            "halogen-vdom",
+            "identity",
+            "integers",
+            "invariant",
+            "js-bigints",
+            "js-date",
+            "js-promise",
+            "lazy",
+            "lcg",
+            "lists",
+            "maybe",
+            "media-types",
+            "newtype",
+            "node-buffer",
+            "node-event-emitter",
+            "node-fs",
+            "node-path",
+            "node-process",
+            "node-readline",
+            "node-streams",
+            "nonempty",
+            "now",
+            "nullable",
+            "numbers",
+            "options",
+            "ordered-collections",
+            "orders",
+            "parallel",
+            "parsing",
+            "partial",
+            "posix-types",
+            "prelude",
+            "profunctor",
+            "psci-support",
+            "quickcheck",
+            "random",
+            "record",
+            "refs",
+            "safe-coerce",
+            "st",
+            "strings",
+            "stringutils",
+            "tailrec",
+            "transformers",
+            "tuples",
+            "type-equality",
+            "typelevel-prelude",
+            "unfoldable",
+            "unicode",
+            "unsafe-coerce",
+            "unsafe-reference",
+            "variant",
+            "web-clipboard",
+            "web-dom",
+            "web-events",
+            "web-file",
+            "web-html",
+            "web-pointerevents",
+            "web-storage",
+            "web-touchevents",
+            "web-uievents",
+            "yoga-json",
+            "yoga-tree"
+          ]
+        },
+        "test": {
+          "dependencies": [],
+          "build_plan": []
+        }
       }
     },
     "package_set": {
@@ -733,7 +845,12 @@
         "zipperarray": "2.0.0"
       }
     },
-    "extra_packages": {}
+    "extra_packages": {
+      "benchotron": {
+        "git": "https://github.com/Anteproperispomenon/purescript-benchotron.git",
+        "ref": "65e7ee2b08faf278df6b19ba222c208b86ac5a3c"
+      }
+    }
   },
   "packages": {
     "aff": {
@@ -852,6 +969,38 @@
         "exceptions",
         "functions",
         "maybe"
+      ]
+    },
+    "benchotron": {
+      "type": "git",
+      "url": "https://github.com/Anteproperispomenon/purescript-benchotron.git",
+      "rev": "65e7ee2b08faf278df6b19ba222c208b86ac5a3c",
+      "dependencies": [
+        "arrays",
+        "console",
+        "datetime",
+        "effect",
+        "exceptions",
+        "exists",
+        "foldable-traversable",
+        "identity",
+        "integers",
+        "js-date",
+        "lcg",
+        "maybe",
+        "node-buffer",
+        "node-fs",
+        "node-readline",
+        "now",
+        "partial",
+        "prelude",
+        "profunctor",
+        "psci-support",
+        "quickcheck",
+        "strings",
+        "transformers",
+        "tuples",
+        "unfoldable"
       ]
     },
     "bifunctors": {
@@ -1322,6 +1471,19 @@
         "prelude"
       ]
     },
+    "lcg": {
+      "type": "registry",
+      "version": "4.0.0",
+      "integrity": "sha256-h7ME5cthLfbgJOJdsZcSfFpwXsx4rf8YmhebU+3iSYg=",
+      "dependencies": [
+        "effect",
+        "integers",
+        "maybe",
+        "partial",
+        "prelude",
+        "random"
+      ]
+    },
     "lists": {
       "type": "registry",
       "version": "7.0.0",
@@ -1557,6 +1719,20 @@
         "unsafe-coerce"
       ]
     },
+    "node-readline": {
+      "type": "registry",
+      "version": "8.1.1",
+      "integrity": "sha256-ZaMhfptiCquFZiDtUpH/dSBq0dPSMwQOSje5XzSAbbo=",
+      "dependencies": [
+        "effect",
+        "foreign",
+        "node-event-emitter",
+        "node-process",
+        "node-streams",
+        "options",
+        "prelude"
+      ]
+    },
     "node-streams": {
       "type": "registry",
       "version": "9.0.0",
@@ -1626,6 +1802,18 @@
         "partial",
         "prelude",
         "strings",
+        "tuples"
+      ]
+    },
+    "options": {
+      "type": "registry",
+      "version": "7.0.0",
+      "integrity": "sha256-treC6h+jvzcWhplPaF/aMENCOx+JGk+ysa5pL1BGHtg=",
+      "dependencies": [
+        "contravariant",
+        "foreign",
+        "foreign-object",
+        "maybe",
         "tuples"
       ]
     },
@@ -1791,6 +1979,50 @@
         "newtype",
         "prelude",
         "tuples"
+      ]
+    },
+    "psci-support": {
+      "type": "registry",
+      "version": "6.0.0",
+      "integrity": "sha256-C6ql4P9TEP06hft/1Z5QumPA4yARR4VIxDdhmL1EO+Y=",
+      "dependencies": [
+        "console",
+        "effect",
+        "prelude"
+      ]
+    },
+    "quickcheck": {
+      "type": "registry",
+      "version": "8.0.1",
+      "integrity": "sha256-ZvpccKQCvgslTXZCNmpYW4bUsFzhZd/kQUr2WmxFTGY=",
+      "dependencies": [
+        "arrays",
+        "console",
+        "control",
+        "effect",
+        "either",
+        "enums",
+        "exceptions",
+        "foldable-traversable",
+        "gen",
+        "identity",
+        "integers",
+        "lazy",
+        "lcg",
+        "lists",
+        "maybe",
+        "newtype",
+        "nonempty",
+        "numbers",
+        "partial",
+        "prelude",
+        "record",
+        "st",
+        "strings",
+        "tailrec",
+        "transformers",
+        "tuples",
+        "unfoldable"
       ]
     },
     "random": {

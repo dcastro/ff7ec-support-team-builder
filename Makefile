@@ -28,7 +28,7 @@ run:
 
 # Runs benchmarks. The generated files can be uploaded to: https://harry.garrood.me/purescript-benchotron-svg-renderer/
 bench:
-	(cd benchmark; spago run -m BenchMain)
+	spago run -m BenchMain -p ff7ec-team-builder-benchmarks
 
 test:
 	spago test

@@ -47,6 +47,9 @@ package:
       - ShadowedName
 
 workspace:
-  extraPackages: {}
+  extraPackages:
+    benchotron:
+      git: https://github.com/Anteproperispomenon/purescript-benchotron.git
+      ref: 65e7ee2b08faf278df6b19ba222c208b86ac5a3c
   packageSet:
     registry: 62.2.5

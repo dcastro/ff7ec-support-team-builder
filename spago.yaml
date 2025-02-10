@@ -1,4 +1,5 @@
 package:
+  name: ff7ec-team-builder
   dependencies:
     - aff
     - aff-promise
@@ -28,7 +29,6 @@ package:
     - web-html
     - web-storage
     - yoga-json
-  name: ff7ec-team-builder
   test:
     main: Test.Main
     dependencies:

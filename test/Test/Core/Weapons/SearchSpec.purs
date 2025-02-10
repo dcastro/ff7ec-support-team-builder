@@ -334,6 +334,23 @@ searchExamplesSpec = do
           # Search.filterMustHaveChars mustHaveChars
           # Search.filterDuplicates
       T.goldenTest "snaps/search-example-2.snap" $ teamSummary <$> results
+    it "example 3" do
+      armory <- T.loadTestDb
+      let
+        filters =
+          [ { effectType: FilterPdefDown, range: FilterSingleTargetOrAll }
+          , { effectType: FilterPatkUp, range: FilterSingleTargetOrAll }
+          , { effectType: FilterHeal, range: FilterAll }
+          , { effectType: FilterWaterResistDown, range: FilterSingleTargetOrAll }
+          , { effectType: FilterPatkDown, range: FilterSingleTargetOrAll }
+          , { effectType: FilterMatkDown, range: FilterSingleTargetOrAll }
+          ]
+        maxCharacterCount = 2
+        mustHaveChars = Set.empty
+        results = Search.search maxCharacterCount filters armory
+          # Search.filterMustHaveChars mustHaveChars
+          # Search.filterDuplicates
+      T.goldenTest "snaps/search-example-3.snap" $ teamSummary <$> results
   where
   teamSummary :: AssignmentResult -> _
   teamSummary team =

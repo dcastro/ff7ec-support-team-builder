@@ -4,3 +4,8 @@ package:
     - benchotron
     - ff7ec-team-builder
     - quickcheck
+  build:
+    censorProjectWarnings:
+      - ImplicitImport
+      - ImplicitQualifiedImport
+      - ShadowedName

@@ -212,7 +212,7 @@ assignWeaponsToCharactersSpec = do
               ( Map.fromFoldable
                   [ Tuple "Tifa"
                       { name: CharacterName $ nes @"Tifa"
-                      , mainHand:
+                      , mainHand: Just
                           { weapon: tifaWeapon1
                           , matchedFilters: [ { filter: filter1, potenciesAtOb10: potencies1 } ]
                           }
@@ -223,7 +223,7 @@ assignWeaponsToCharactersSpec = do
                       }
                   , Tuple "Vincent"
                       { name: CharacterName $ nes @"Vincent"
-                      , mainHand:
+                      , mainHand: Just
                           { weapon: vincentWeapon1
                           , matchedFilters: [ { filter: filter3, potenciesAtOb10: potencies3 } ]
                           }
@@ -252,7 +252,7 @@ assignWeaponsToCharactersSpec = do
               ( Map.fromFoldable
                   [ Tuple "Tifa"
                       { name: CharacterName $ nes @"Tifa"
-                      , mainHand:
+                      , mainHand: Just
                           { weapon: tifaWeapon1
                           , matchedFilters:
                               [ { filter: filter2, potenciesAtOb10: potencies2 }
@@ -269,7 +269,7 @@ assignWeaponsToCharactersSpec = do
                       }
                   , Tuple "Vincent"
                       { name: CharacterName $ nes @"Vincent"
-                      , mainHand:
+                      , mainHand: Just
                           { weapon: vincentWeapon1
                           , matchedFilters:
                               [ { filter: filter5, potenciesAtOb10: potencies5 }
@@ -314,7 +314,7 @@ searchExamplesSpec = do
           ]
         maxCharacterCount = 1
         mustHaveChars = Set.empty
-        results = Search.search maxCharacterCount filters armory
+        results = Search.search2 maxCharacterCount filters armory
           # Search.filterMustHaveChars mustHaveChars
           # Search.filterDuplicates
       T.goldenTest "snaps/search-example-1.snap" $ teamSummary <$> results
@@ -330,7 +330,7 @@ searchExamplesSpec = do
           ]
         maxCharacterCount = 2
         mustHaveChars = Set.empty
-        results = Search.search maxCharacterCount filters armory
+        results = Search.search2 maxCharacterCount filters armory
           # Search.filterMustHaveChars mustHaveChars
           # Search.filterDuplicates
       T.goldenTest "snaps/search-example-2.snap" $ teamSummary <$> results
@@ -347,7 +347,7 @@ searchExamplesSpec = do
           ]
         maxCharacterCount = 2
         mustHaveChars = Set.empty
-        results = Search.search maxCharacterCount filters armory
+        results = Search.search2 maxCharacterCount filters armory
           # Search.filterMustHaveChars mustHaveChars
           # Search.filterDuplicates
       T.goldenTest "snaps/search-example-3.snap" $ teamSummary <$> results
@@ -362,7 +362,7 @@ searchExamplesSpec = do
             do
               let
                 weapons = Arr.sort $ Arr.catMaybes
-                  [ Just character.mainHand.weapon.name
+                  [ character.mainHand <#> _.weapon.name
                   , character.offHand <#> _.weapon.name
                   ]
 

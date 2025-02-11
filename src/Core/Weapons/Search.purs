@@ -1,8 +1,8 @@
 module Core.Weapons.Search where
 
+import Core.Database.VLatest
 import Prelude
 
-import Core.Database.VLatest
 import Core.Display (display)
 import Data.Array as Arr
 import Data.Foldable as F
@@ -59,6 +59,38 @@ search maxCharacterCount filters armory = do
     # Arr.mapMaybe (assignWeaponsToCharacters maxCharacterCount)
     # Arr.sortBy (comparing $ scoreTeam >>> Down)
 
+search2 :: Int -> Array Filter -> Armory -> Array AssignmentResult
+search2 maxCharacterCount filters armory = do
+  let filterResults = filters <#> \filter -> findMatchingWeapons filter armory
+
+  let teams = combinations maxCharacterCount filterResults :: Array AssignmentResult
+
+  teams
+    # Arr.sortBy (comparing $ scoreTeam >>> Down)
+  where
+  combinations :: Int -> Array FilterResult -> Array AssignmentResult
+  combinations maxCharacterCount results =
+    results
+      # Arr.nubBy (compare `on` _.filter)
+      # Arr.foldr
+          ( \(filterResult :: FilterResult) (teams :: Array AssignmentResult) -> do
+              { weapon, potenciesAtOb10 } <- filterResult.matchingWeapons
+                # discardIgnored
+
+              (team :: AssignmentResult) <- teams
+
+              case assignWeapon maxCharacterCount { filter: filterResult.filter, potenciesAtOb10 } weapon team of
+                Just team -> [ team ]
+                Nothing -> []
+          )
+          ([ emptyTeam ] :: Array AssignmentResult)
+    where
+    emptyTeam :: AssignmentResult
+    emptyTeam = { characters: Map.empty }
+
+    discardIgnored :: Array FilterResultWeapon -> Array FilterResultWeapon
+    discardIgnored = Arr.filter \{ weapon } -> not weapon.ignored
+
 combinations :: Array FilterResult -> Array Combination
 combinations results =
   results
@@ -87,7 +119,7 @@ type AssignmentResult =
 
 type Character =
   { name :: CharacterName
-  , mainHand :: EquipedWeapon
+  , mainHand :: Maybe EquipedWeapon
   , offHand :: Maybe EquipedWeapon
   }
 
@@ -112,35 +144,35 @@ assignWeaponsToCharacters maxCharacterCount combs =
   combs
     # Arr.foldRecM
         ( \assignments { filter, weapon, potenciesAtOb10 } ->
-            assignWeapon { filter, potenciesAtOb10 } weapon assignments
+            assignWeapon maxCharacterCount { filter, potenciesAtOb10 } weapon assignments
         )
         { characters: Map.empty }
-  where
 
-  -- Returns `Nothing` if:
-  --  * There are more than 2 weapons for any character.
-  --  * The selected weapons belong to more than `n` characters.
-  assignWeapon :: EquipedWeaponFilter -> ArmoryWeapon -> AssignmentResult -> Maybe AssignmentResult
-  assignWeapon filter weapon assignments = do
-    let
-      characterName = weapon.character :: CharacterName
-      characterName' = NES.toString (unwrap characterName)
-    updatedCharacters <-
-      case Map.lookup characterName' assignments.characters of
-        Nothing ->
-          -- This character hasn't been created yet, so we attempt to create it.
-          if Map.size assignments.characters >= maxCharacterCount then Nothing
-          else Just $ Map.insert characterName' (mkCharacter characterName weapon filter) assignments.characters
-        Just existingCharacter -> do
-          -- This character already exists, so we attempt to equip this weapon.
-          updatedCharacter <- equipWeapon weapon filter existingCharacter
-          pure $ Map.insert characterName' updatedCharacter assignments.characters
-    Just $ assignments { characters = updatedCharacters }
+-- Returns `Nothing` if:
+--  * There are more than 2 weapons for any character.
+--  * The selected weapons belong to more than `n` characters.
+assignWeapon :: Int -> EquipedWeaponFilter -> ArmoryWeapon -> AssignmentResult -> Maybe AssignmentResult
+assignWeapon maxCharacterCount filter weapon assignments = do
+  let
+    characterName = weapon.character :: CharacterName
+    characterName' = NES.toString (unwrap characterName)
+  updatedCharacters <-
+    case Map.lookup characterName' assignments.characters of
+      Nothing ->
+        -- This character hasn't been created yet, so we attempt to create it.
+        if Map.size assignments.characters >= maxCharacterCount then Nothing
+        else Just $ Map.insert characterName' (mkCharacter characterName weapon filter) assignments.characters
+      Just existingCharacter -> do
+        -- This character already exists, so we attempt to equip this weapon.
+        updatedCharacter <- equipWeapon weapon filter existingCharacter
+        pure $ Map.insert characterName' updatedCharacter assignments.characters
+  Just $ assignments { characters = updatedCharacters }
+  where
 
   mkCharacter :: CharacterName -> ArmoryWeapon -> EquipedWeaponFilter -> Character
   mkCharacter name mainHandWeapon matchedFilter =
     { name
-    , mainHand:
+    , mainHand: Just
         { weapon: mainHandWeapon
         , matchedFilters: [ matchedFilter ]
         }
@@ -149,24 +181,33 @@ assignWeaponsToCharacters maxCharacterCount combs =
 
   equipWeapon :: ArmoryWeapon -> EquipedWeaponFilter -> Character -> Maybe Character
   equipWeapon weapon filter character = do
-    -- If this weapon is already equiped in the main hand, simply update `matchedFilters`
-    if character.mainHand.weapon.name == weapon.name then Just character { mainHand = addMatchedFilter filter character.mainHand }
-    else
-      case character.offHand of
-        Just offHand | offHand.weapon.name == weapon.name -> do
-          -- If this weapon is already equiped in the off hand, simply update `matchedFilters`
-          pure $ character { offHand = Just $ addMatchedFilter filter offHand }
-        Just _ ->
-          -- If both hands are already equiped, we can't equip any more weapons - this function fails.
-          Nothing
-        Nothing ->
-          -- The off hand is free, we can equip this weapon in the off hand.
-          pure $ character
-            { offHand = Just
-                { weapon
-                , matchedFilters: [ filter ]
-                }
+    case character.mainHand of
+      Nothing -> Just character
+        { mainHand = Just
+            { weapon
+            , matchedFilters: [ filter ]
             }
+        }
+      Just mainHand ->
+        if mainHand.weapon.name == weapon.name
+        -- If this weapon is already equiped in the main hand, simply update `matchedFilters`
+        then Just character { mainHand = Just $ addMatchedFilter filter mainHand }
+        else
+          case character.offHand of
+            Just offHand | offHand.weapon.name == weapon.name -> do
+              -- If this weapon is already equiped in the off hand, simply update `matchedFilters`
+              pure $ character { offHand = Just $ addMatchedFilter filter offHand }
+            Just _ ->
+              -- If both hands are already equiped, we can't equip any more weapons - this function fails.
+              Nothing
+            Nothing ->
+              -- The off hand is free, we can equip this weapon in the off hand.
+              pure $ character
+                { offHand = Just
+                    { weapon
+                    , matchedFilters: [ filter ]
+                    }
+                }
 
   addMatchedFilter :: EquipedWeaponFilter -> EquipedWeapon -> EquipedWeapon
   addMatchedFilter matchedFilter weapon =
@@ -174,9 +215,7 @@ assignWeaponsToCharacters maxCharacterCount combs =
 
 getEquipedWeapons :: Character -> Array EquipedWeapon
 getEquipedWeapons char =
-  case char.offHand of
-    Just offHand -> [ char.mainHand, offHand ]
-    Nothing -> [ char.mainHand ]
+  Arr.fromFoldable char.mainHand <> Arr.fromFoldable char.offHand
 
 getTeamWeaponNames :: AssignmentResult -> Set WeaponName
 getTeamWeaponNames team =

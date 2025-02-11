@@ -280,9 +280,11 @@ updateTeams state = do
       for state.effectSelectorIds \effectSelectorId -> do
         H.request _effectSelector effectSelectorId EffectSelector.GetFilter
   let
-    teams = Search.search state.maxCharacterCount filters state.armory
-      # Search.filterMustHaveChars state.mustHaveChars
-      # Search.filterDuplicates
+    teams =
+      Search.applyFilters filters state.armory
+        # Search.search state.maxCharacterCount
+        # Search.filterMustHaveChars state.mustHaveChars
+        # Search.filterDuplicates
 
   -- Console.log "-----------------------------------------"
   -- Console.log "-----------------------------------------"

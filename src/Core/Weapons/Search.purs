@@ -27,14 +27,6 @@ type FilterResultWeapon =
   , potenciesAtOb10 :: Maybe Potencies
   }
 
-type Combination = Array CombinationItem
-
-type CombinationItem =
-  { filter :: Filter
-  , weapon :: ArmoryWeapon
-  , potenciesAtOb10 :: Maybe Potencies
-  }
-
 findMatchingWeapons :: Filter -> Armory -> FilterResult
 findMatchingWeapons filter armory = do
   let
@@ -51,16 +43,6 @@ findMatchingWeapons filter armory = do
 
 search :: Int -> Array Filter -> Armory -> Array AssignmentResult
 search maxCharacterCount filters armory = do
-  let filterResults = filters <#> \filter -> findMatchingWeapons filter armory
-
-  let combs = combinations filterResults :: Array Combination
-
-  combs
-    # Arr.mapMaybe (assignWeaponsToCharacters maxCharacterCount)
-    # Arr.sortBy (comparing $ scoreTeam >>> Down)
-
-search2 :: Int -> Array Filter -> Armory -> Array AssignmentResult
-search2 maxCharacterCount filters armory = do
   let filterResults = filters <#> \filter -> findMatchingWeapons filter armory
 
   let teams = combinations maxCharacterCount filterResults :: Array AssignmentResult
@@ -91,27 +73,6 @@ search2 maxCharacterCount filters armory = do
     discardIgnored :: Array FilterResultWeapon -> Array FilterResultWeapon
     discardIgnored = Arr.filter \{ weapon } -> not weapon.ignored
 
-combinations :: Array FilterResult -> Array Combination
-combinations results =
-  results
-    # Arr.nubBy (compare `on` _.filter)
-    # Arr.foldr
-        -- NOTE: we're using Applicative's `ado` here because `bind` is not stack-safe for large arrays
-        -- https://discourse.purescript.org/t/stack-safe-cartesian-product/4841/3
-        ( \(filterResult :: FilterResult) (combinations :: Array Combination) -> ado
-            { weapon, potenciesAtOb10 } <- filterResult.matchingWeapons
-              # discardIgnored
-            (combination :: Combination) <- combinations
-
-            let combinationItem = { filter: filterResult.filter, weapon, potenciesAtOb10 }
-
-            in Arr.cons combinationItem combination
-        )
-        ([ [] ] :: Array Combination)
-  where
-  discardIgnored :: Array FilterResultWeapon -> Array FilterResultWeapon
-  discardIgnored = Arr.filter \{ weapon } -> not weapon.ignored
-
 type AssignmentResult =
   { -- | Characters indexed by their name.
     characters :: Map String Character
@@ -133,20 +94,6 @@ type EquipedWeaponFilter =
   { filter :: Filter
   , potenciesAtOb10 :: Maybe Potencies
   }
-
--- Attempts to equip the selected weapons to, at maximum, `n` characters.
---
--- Returns `Nothing` if:
---  * There are more than 2 weapons for any character.
---  * The selected weapons belong to more than `n` characters.
-assignWeaponsToCharacters :: Int -> Combination -> Maybe AssignmentResult
-assignWeaponsToCharacters maxCharacterCount combs =
-  combs
-    # Arr.foldRecM
-        ( \assignments { filter, weapon, potenciesAtOb10 } ->
-            assignWeapon maxCharacterCount { filter, potenciesAtOb10 } weapon assignments
-        )
-        { characters: Map.empty }
 
 -- Returns `Nothing` if:
 --  * There are more than 2 weapons for any character.

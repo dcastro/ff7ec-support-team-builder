@@ -32,7 +32,6 @@ benchSearch = do
     , gen: \_ -> pure input
     , functions:
         [ benchFn "search1" $ search1 db
-        , benchFn "search2" $ search2 db
         ]
     }
 
@@ -52,15 +51,6 @@ search1 armory filters = do
     maxCharacterCount = 2
     mustHaveChars = Set.empty
   Search.search maxCharacterCount filters armory
-    # Search.filterMustHaveChars mustHaveChars
-    # Search.filterDuplicates
-
-search2 :: Armory -> Array Filter -> Array AssignmentResult
-search2 armory filters = do
-  let
-    maxCharacterCount = 2
-    mustHaveChars = Set.empty
-  Search.search2 maxCharacterCount filters armory
     # Search.filterMustHaveChars mustHaveChars
     # Search.filterDuplicates
 

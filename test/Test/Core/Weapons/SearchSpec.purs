@@ -131,6 +131,56 @@ combinationsSpec = do
     it "returns no combinations when no effects were selected" do
       Search.search 3 [] `shouldEqualPretty` []
 
+    it "discards ignored weapons" do
+      let
+        teams = Search.search 3
+          [ { filter: filter1
+            , matchingWeapons:
+                [ { weapon: weapon11 { ignored = true }, potenciesAtOb10: potencies11 }
+                , { weapon: weapon12, potenciesAtOb10: potencies12 }
+                , { weapon: weapon13, potenciesAtOb10: potencies13 }
+                ]
+            }
+          , { filter: filter2
+            , matchingWeapons:
+                [ { weapon: weapon21, potenciesAtOb10: potencies21 }
+                , { weapon: weapon22, potenciesAtOb10: potencies22 }
+                ]
+            }
+          , { filter: filter3
+            , matchingWeapons:
+                [ { weapon: weapon31, potenciesAtOb10: potencies31 }
+                ]
+            }
+          ]
+
+      setAsArray teams `shouldEqualPretty` setAsArray
+        [ { characters: Map.fromFoldable
+              [ mkCharacter1 aerith weapon12 filter1 potencies12
+              , mkCharacter1 matt weapon21 filter2 potencies21
+              , mkCharacter1 lucia weapon31 filter3 potencies31
+              ]
+          }
+        , { characters: Map.fromFoldable
+              [ mkCharacter1 aerith weapon12 filter1 potencies12
+              , mkCharacter1 matt weapon22 filter2 potencies22
+              , mkCharacter1 lucia weapon31 filter3 potencies31
+              ]
+          }
+        , { characters: Map.fromFoldable
+              [ mkCharacter1 aerith weapon13 filter1 potencies13
+              , mkCharacter1 matt weapon21 filter2 potencies21
+              , mkCharacter1 lucia weapon31 filter3 potencies31
+              ]
+          }
+        , { characters: Map.fromFoldable
+              [ mkCharacter1 aerith weapon13 filter1 potencies13
+              , mkCharacter1 matt weapon22 filter2 potencies22
+              , mkCharacter1 lucia weapon31 filter3 potencies31
+              ]
+          }
+        ]
+
 assignWeaponSpec :: Spec Unit
 assignWeaponSpec = do
   describe "assign weapon" do

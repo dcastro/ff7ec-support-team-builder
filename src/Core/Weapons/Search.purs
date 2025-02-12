@@ -30,18 +30,13 @@ type FilterResultWeapon =
 findMatchingWeapons :: Filter -> Armory -> FilterResult
 findMatchingWeapons filter armory = do
   let
-    matchingGroupedWeapons :: Array GroupedWeapon
-    matchingGroupedWeapons = Map.lookup filter armory.groupedByEffect # fromMaybe []
+    matchingGroupedWeapons = Map.lookup filter armory.groupedByEffect # fromMaybe [] :: Array GroupedWeapon
 
-    matchingWeapons :: Array FilterResultWeapon
-    matchingWeapons = matchingGroupedWeapons
-      # Arr.mapMaybe \{ weaponName, potenciesAtOb10 } -> do
-          let weapon = Map.lookup weaponName armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
-          if weapon.ignored then Nothing
-          else Just
-            { weapon
-            , potenciesAtOb10
-            }
+    matchingWeapons = matchingGroupedWeapons <#> \{ weaponName, potenciesAtOb10 } -> do
+      let weapon = Map.lookup weaponName armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
+      { weapon
+      , potenciesAtOb10
+      }
   { filter
   , matchingWeapons
   }
@@ -58,6 +53,7 @@ search maxCharacterCount filterResults =
       # Arr.foldr
           ( \(filterResult :: FilterResult) (teams :: Array AssignmentResult) -> do
               { weapon, potenciesAtOb10 } <- filterResult.matchingWeapons
+                # discardIgnored
 
               (team :: AssignmentResult) <- teams
 
@@ -67,6 +63,9 @@ search maxCharacterCount filterResults =
           )
           ([ emptyTeam ] :: Array AssignmentResult)
       # Arr.sortBy (comparing $ scoreTeam >>> Down)
+  where
+  discardIgnored :: Array FilterResultWeapon -> Array FilterResultWeapon
+  discardIgnored = Arr.filter \{ weapon } -> not weapon.ignored
 
 emptyTeam :: AssignmentResult
 emptyTeam = { characters: Map.empty }

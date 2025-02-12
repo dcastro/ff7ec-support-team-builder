@@ -249,8 +249,10 @@ parseEffectType =
     <|> P.try (withDurExtPotencies "Wind Resistance Down" WindResistDown)
     <|> P.try (withDurExt "Enfeeble" Enfeeble)
     <|> P.try (withDurExt "Stop" Stop)
-    <|> withDurExtPercentage "WeaknessAttackUp" ExploitWeakness
-
+    -- NOTE: The effect on "Blue Daffodil Gloves" is named "WeaknessAttackUp",
+    -- but on "Bird of Prey" it's named "Exploit Weakness".
+    <|> P.try (withDurExtPercentage "WeaknessAttackUp" ExploitWeakness)
+    <|> P.try (withDurExtPercentage "Exploit Weakness" ExploitWeakness)
   where
   withPercentage :: String -> ({ percentage :: Percentage } -> EffectType) -> Parser EffectType
   withPercentage effectName constructor = do

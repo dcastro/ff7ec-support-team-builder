@@ -21591,19 +21591,75 @@
     {
       "source": "Gacha (Collab)",
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "ExploitWeakness",
+              "value": {
+                "percentage": 30,
+                "durExt": {
+                  "extension": 7,
+                  "duration": 35
+                }
+              }
+            }
+          }
+        ],
         "description": "Raging Torrent+ (4 ATB)\n780% Phys. Water Damage [Range: Single Enemy]\n35s 30% Exploit Weakness (+7s) [Range: Self]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "ExploitWeakness",
+              "value": {
+                "percentage": 30,
+                "durExt": {
+                  "extension": 9,
+                  "duration": 45
+                }
+              }
+            }
+          }
+        ],
         "description": "Raging Torrent++ (4 ATB)\n940% Phys. Water Damage [Range: Single Enemy]\n45s 30% Exploit Weakness (+9s) [Range: Self]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "ExploitWeakness",
+              "value": {
+                "percentage": 20,
+                "durExt": {
+                  "extension": 7,
+                  "duration": 35
+                }
+              }
+            }
+          }
+        ],
         "description": "Raging Torrent (4 ATB)\n620% Phys. Water Damage [Range: Single Enemy]\n35s 20% Exploit Weakness (+7s) [Range: Self]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "ExploitWeakness",
+              "value": {
+                "percentage": 20,
+                "durExt": {
+                  "extension": 6,
+                  "duration": 30
+                }
+              }
+            }
+          }
+        ],
         "description": "Raging Torrent (4 ATB)\n520% Phys. Water Damage [Range: Single Enemy]\n30s 20% Exploit Weakness (+6s) [Range: Self]"
       },
       "name": "Bird of Prey",

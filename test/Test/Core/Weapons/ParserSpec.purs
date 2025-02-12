@@ -71,6 +71,11 @@ spec =
           { effectType: ExploitWeakness { durExt: { duration: Duration 45, extension: Extension 9 }, percentage: Percentage 25 }
           , range: Self
           }
+      "45s 30% Exploit Weakness (+9s) [Range: Self]"
+        `shouldParse`
+          { effectType: ExploitWeakness { durExt: { duration: Duration 45, extension: Extension 9 }, percentage: Percentage 30 }
+          , range: Self
+          }
     it "parses all weapons" do
       sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
       sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of

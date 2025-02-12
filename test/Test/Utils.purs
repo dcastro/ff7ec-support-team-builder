@@ -5,8 +5,9 @@ import Prelude
 
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Core.Armory as Armory
-import Core.Database.VLatest (Armory)
+import Core.Database.VLatest (Armory, CharacterName(..))
 import Data.Either (Either(..))
+import Data.Foldable (class Foldable)
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.String.NonEmpty (NonEmptyString)
@@ -28,15 +29,22 @@ import Node.Path as Path
 import Parsing (runParser)
 import Test.Spec.Assertions (fail, shouldEqual)
 import Type.Proxy (Proxy(..))
+import Utils (SetAsArray(..))
+import Data.Set as Set
 import Utils as Utils
 import Yoga.JSON (class WriteForeign)
 import Yoga.JSON as J
 
+-- NOTE: when comparing against `Nothing`, we should convert both values to `Nullable a`, otherwise
+-- the test will fail with:
+--
+-- >   The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
 shouldEqualPretty :: forall a. WriteForeign a => a -> a -> Aff Unit
 shouldEqualPretty actual expected = do
   let actualJson = J.writePrettyJSON 2 actual
   let expectedJson = J.writePrettyJSON 2 expected
-  dir <- Node.mkdtemp "test"
+  mkDirRecursive "temp"
+  dir <- Node.mkdtemp "temp/test"
   Aff.finally (cleanup dir) do
     let actualFilePath = Path.concat [ dir, "actual.json" ]
     let expectedFilePath = Path.concat [ dir, "expected.json" ]
@@ -79,8 +87,7 @@ goldenTest expectedFilePath value = do
   overwriteSnapshotFile actualJson = do
     -- Create the parent directory if need be
     let dir = Path.dirname expectedFilePath
-    unlessM (liftEffect (NodeSync.exists dir)) do
-      Node.mkdir' dir { recursive: false, mode: Node.mkPerms Node.all Node.all Node.all }
+    mkDirRecursive dir
     Node.writeTextFile Node.UTF8 expectedFilePath (actualJson <> "\n")
 
 -- | Adapted from: https://github.com/jordanmartinez/purescript-spec-golden/blob/v1.0.0/src/Test/Spec/Golden/Assertions.purs#L29-L36
@@ -92,6 +99,11 @@ shouldEqualFile actual expectedFilePath = do
     Nothing -> fail "Failed to write `diff`'s stdin"
   result <- cp.getResult
   pure result
+
+mkDirRecursive :: FilePath -> Aff Unit
+mkDirRecursive dir =
+  unlessM (liftEffect (NodeSync.exists dir)) do
+    Node.mkdir' dir { recursive: false, mode: Node.mkPerms Node.all Node.all Node.all }
 
 -- Construct a non-empty string at compile-time.
 --
@@ -112,3 +124,27 @@ loadTestDb = do
   let { weapons, errors: _ } = parseWeapons sourceWeapons
 
   Armory.createArmory weapons Map.empty
+
+setAsArray :: forall f a. Foldable f => Ord a => f a -> SetAsArray a
+setAsArray = Set.fromFoldable >>> SetAsArray
+
+aerith :: CharacterName
+aerith = CharacterName $ nes @"aerith"
+
+matt :: CharacterName
+matt = CharacterName $ nes @"matt"
+
+lucia :: CharacterName
+lucia = CharacterName $ nes @"lucia"
+
+glenn :: CharacterName
+glenn = CharacterName $ nes @"glenn"
+
+red :: CharacterName
+red = CharacterName $ nes @"red"
+
+vincent :: CharacterName
+vincent = CharacterName $ nes @"vincent"
+
+tifa :: CharacterName
+tifa = CharacterName $ nes @"tifa"

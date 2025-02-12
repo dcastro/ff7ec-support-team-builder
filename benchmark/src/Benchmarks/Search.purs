@@ -50,7 +50,8 @@ search1 armory filters = do
   let
     maxCharacterCount = 2
     mustHaveChars = Set.empty
-  Search.search maxCharacterCount filters armory
+  Search.applyFilters filters armory
+    # Search.search maxCharacterCount
     # Search.filterMustHaveChars mustHaveChars
     # Search.filterDuplicates
 

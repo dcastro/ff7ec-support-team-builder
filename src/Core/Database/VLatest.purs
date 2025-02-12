@@ -178,8 +178,13 @@ derive newtype instance Eq CharacterName
 derive newtype instance Eq WeaponName
 
 derive instance Ord Potency
+derive instance Ord EffectType
+derive instance Ord Range
 derive instance Ord FilterEffectType
 derive instance Ord FilterRange
+derive newtype instance Ord Percentage
+derive newtype instance Ord Duration
+derive newtype instance Ord Extension
 derive newtype instance Ord CharacterName
 derive newtype instance Ord WeaponName
 

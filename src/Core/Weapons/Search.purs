@@ -62,11 +62,11 @@ search maxCharacterCount filterResults = do
         ([ emptyTeam ] :: Array AssignmentResult)
     # Arr.sortBy (comparing $ scoreTeam >>> Down)
   where
-  emptyTeam :: AssignmentResult
-  emptyTeam = { characters: Map.empty }
-
   discardIgnored :: Array FilterResultWeapon -> Array FilterResultWeapon
   discardIgnored = Arr.filter \{ weapon } -> not weapon.ignored
+
+emptyTeam :: AssignmentResult
+emptyTeam = { characters: Map.empty }
 
 type AssignmentResult =
   { -- | Characters indexed by their name.

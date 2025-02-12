@@ -2368,6 +2368,13 @@
           "max": "Mid",
           "base": "Low"
         }
+      },
+      {
+        "weaponName": "Járngreipr",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
+        }
       }
     ]
   ],
@@ -2494,6 +2501,13 @@
         "potenciesAtOb10": {
           "max": "Mid",
           "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Járngreipr",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
         }
       },
       {
@@ -2656,6 +2670,13 @@
         "potenciesAtOb10": {
           "max": "Mid",
           "base": "Mid"
+        }
+      },
+      {
+        "weaponName": "Járngreipr",
+        "potenciesAtOb10": {
+          "max": "Mid",
+          "base": "Low"
         }
       },
       {

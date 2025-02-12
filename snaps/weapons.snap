@@ -18701,6 +18701,98 @@
       "atbCost": 4
     },
     {
+      "source": "Event",
+      "ob6": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefDown",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Low"
+                },
+                "durExt": {
+                  "extension": 7,
+                  "duration": 30
+                }
+              }
+            }
+          }
+        ],
+        "description": "Armora Breach Surge A+ (4 ATB)\n240% Mag. Non-elem. Damage [Range: All Enemies]\n30s PDEF Down (+7s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefDown",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Low"
+                },
+                "durExt": {
+                  "extension": 8,
+                  "duration": 35
+                }
+              }
+            }
+          }
+        ],
+        "description": "Armora Breach Surge A++ (4 ATB)\n250% Mag. Non-elem. Damage [Range: All Enemies]\n35s PDEF Down (+8s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefDown",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Low"
+                },
+                "durExt": {
+                  "extension": 6,
+                  "duration": 25
+                }
+              }
+            }
+          }
+        ],
+        "description": "Armora Breach Surge A (4 ATB)\n210% Mag. Non-elem. Damage [Range: All Enemies]\n25s PDEF Down (+6s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefDown",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Low"
+                },
+                "durExt": {
+                  "extension": 5,
+                  "duration": 20
+                }
+              }
+            }
+          }
+        ],
+        "description": "Armora Breach Surge A (4 ATB)\n180% Mag. Non-elem. Damage [Range: All Enemies]\n20s PDEF Down (+5s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "name": "Járngreipr",
+      "image": "https://i.imgur.com/RqevOzl.png",
+      "cureAllAbility": false,
+      "character": "Tifa",
+      "atbCost": 4
+    },
+    {
       "source": "Gacha",
       "ob6": {
         "effects": [
@@ -21492,6 +21584,30 @@
       },
       "name": "Bamboo Ring",
       "image": "https://i.imgur.com/3BbocmH.png",
+      "cureAllAbility": false,
+      "character": "Yuffie",
+      "atbCost": 4
+    },
+    {
+      "source": "Gacha (Collab)",
+      "ob6": {
+        "effects": [],
+        "description": "Raging Torrent+ (4 ATB)\n780% Phys. Water Damage [Range: Single Enemy]\n35s 30% Exploit Weakness (+7s) [Range: Self]"
+      },
+      "ob10": {
+        "effects": [],
+        "description": "Raging Torrent++ (4 ATB)\n940% Phys. Water Damage [Range: Single Enemy]\n45s 30% Exploit Weakness (+9s) [Range: Self]"
+      },
+      "ob1": {
+        "effects": [],
+        "description": "Raging Torrent (4 ATB)\n620% Phys. Water Damage [Range: Single Enemy]\n35s 20% Exploit Weakness (+7s) [Range: Self]"
+      },
+      "ob0": {
+        "effects": [],
+        "description": "Raging Torrent (4 ATB)\n520% Phys. Water Damage [Range: Single Enemy]\n30s 20% Exploit Weakness (+6s) [Range: Self]"
+      },
+      "name": "Bird of Prey",
+      "image": "https://i.imgur.com/pXcOXpn.png",
       "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4

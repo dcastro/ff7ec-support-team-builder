@@ -45,22 +45,24 @@ applyFilters :: Array Filter -> Armory -> Array FilterResult
 applyFilters filters armory = filters <#> \filter -> findMatchingWeapons filter armory
 
 search :: Int -> Array FilterResult -> Array AssignmentResult
-search maxCharacterCount filterResults = do
-  filterResults
-    # Arr.nubBy (compare `on` _.filter)
-    # Arr.foldr
-        ( \(filterResult :: FilterResult) (teams :: Array AssignmentResult) -> do
-            { weapon, potenciesAtOb10 } <- filterResult.matchingWeapons
-              # discardIgnored
+search maxCharacterCount filterResults =
+  if Arr.null filterResults then []
+  else do
+    filterResults
+      # Arr.nubBy (compare `on` _.filter)
+      # Arr.foldr
+          ( \(filterResult :: FilterResult) (teams :: Array AssignmentResult) -> do
+              { weapon, potenciesAtOb10 } <- filterResult.matchingWeapons
+                # discardIgnored
 
-            (team :: AssignmentResult) <- teams
+              (team :: AssignmentResult) <- teams
 
-            case assignWeapon maxCharacterCount { filter: filterResult.filter, potenciesAtOb10 } weapon team of
-              Just team -> [ team ]
-              Nothing -> []
-        )
-        ([ emptyTeam ] :: Array AssignmentResult)
-    # Arr.sortBy (comparing $ scoreTeam >>> Down)
+              case assignWeapon maxCharacterCount { filter: filterResult.filter, potenciesAtOb10 } weapon team of
+                Just team -> [ team ]
+                Nothing -> []
+          )
+          ([ emptyTeam ] :: Array AssignmentResult)
+      # Arr.sortBy (comparing $ scoreTeam >>> Down)
   where
   discardIgnored :: Array FilterResultWeapon -> Array FilterResultWeapon
   discardIgnored = Arr.filter \{ weapon } -> not weapon.ignored

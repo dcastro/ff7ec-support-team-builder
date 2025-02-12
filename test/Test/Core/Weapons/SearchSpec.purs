@@ -128,6 +128,9 @@ combinationsSpec = do
           ]
       combs `shouldEqualPretty` []
 
+    it "returns no combinations when no effects were selected" do
+      Search.search 3 [] `shouldEqualPretty` []
+
     it "discards ignored weapons" do
       let
         teams = Search.search 3

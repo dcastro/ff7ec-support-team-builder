@@ -16,3 +16,5 @@ prod/*
 staging/*
 
 tmp/*
+
+tsconfig.tsbuildinfo

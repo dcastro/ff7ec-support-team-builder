@@ -13,7 +13,7 @@ build-prod:
 	mkdir -p prod
 	cp dev/index.html prod/
 	npm run ts
-	spago bundle --outfile prod/index.js
+	spago bundle --outfile prod/index.js -p ff7ec-team-builder
 	parcel build prod/index.html --dist-dir docs --public-url '.'
 
 build-staging:
@@ -23,7 +23,7 @@ build-staging:
 	mkdir -p staging
 	cp dev/index.html staging/
 	npm run ts
-	spago bundle --outfile staging/index.js
+	spago bundle --outfile staging/index.js -p ff7ec-team-builder
 	parcel build staging/index.html --dist-dir docs/staging --public-url '.'
 
 run:

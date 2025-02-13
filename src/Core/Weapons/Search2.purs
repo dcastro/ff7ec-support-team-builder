@@ -116,63 +116,63 @@ type Character =
   }
 
 type EquipedWeapon =
-  { weapon :: ArmoryWeapon
+  { weaponData :: WeaponData
   -- The filters that this weapon matched on.
   , matchedFilters :: Array EquipedWeaponFilter
   }
 
 type EquipedWeaponFilter =
   { filter :: Filter
-  , potenciesAtOb10 :: Maybe Potencies
+  , allPotencies :: Maybe AllPotencies
   }
 
 -- Returns `Nothing` if:
 --  * There are more than 2 weapons for any character.
 --  * The selected weapons belong to more than `n` characters.
-assignWeapon :: Int -> EquipedWeaponFilter -> ArmoryWeapon -> AssignmentResult -> Maybe AssignmentResult
-assignWeapon maxCharacterCount filter weapon assignments = do
+assignWeapon :: Int -> EquipedWeaponFilter -> WeaponData -> AssignmentResult -> Maybe AssignmentResult
+assignWeapon maxCharacterCount filter weaponData assignments = do
   let
-    characterName = weapon.character :: CharacterName
+    characterName = weaponData.weapon.character :: CharacterName
     characterName' = NES.toString (unwrap characterName)
   updatedCharacters <-
     case Map.lookup characterName' assignments.characters of
       Nothing ->
         -- This character hasn't been created yet, so we attempt to create it.
         if Map.size assignments.characters >= maxCharacterCount then Nothing
-        else Just $ Map.insert characterName' (mkCharacter characterName weapon filter) assignments.characters
+        else Just $ Map.insert characterName' (mkCharacter characterName weaponData filter) assignments.characters
       Just existingCharacter -> do
         -- This character already exists, so we attempt to equip this weapon.
-        updatedCharacter <- equipWeapon weapon filter existingCharacter
+        updatedCharacter <- equipWeapon weaponData filter existingCharacter
         pure $ Map.insert characterName' updatedCharacter assignments.characters
   Just $ assignments { characters = updatedCharacters }
   where
 
-  mkCharacter :: CharacterName -> ArmoryWeapon -> EquipedWeaponFilter -> Character
+  mkCharacter :: CharacterName -> WeaponData -> EquipedWeaponFilter -> Character
   mkCharacter name mainHandWeapon matchedFilter =
     { name
     , mainHand: Just
-        { weapon: mainHandWeapon
+        { weaponData: mainHandWeapon
         , matchedFilters: [ matchedFilter ]
         }
     , offHand: Nothing
     }
 
-  equipWeapon :: ArmoryWeapon -> EquipedWeaponFilter -> Character -> Maybe Character
-  equipWeapon weapon filter character = do
+  equipWeapon :: WeaponData -> EquipedWeaponFilter -> Character -> Maybe Character
+  equipWeapon weaponData filter character = do
     case character.mainHand of
       Nothing -> Just character
         { mainHand = Just
-            { weapon
+            { weaponData
             , matchedFilters: [ filter ]
             }
         }
       Just mainHand ->
-        if mainHand.weapon.name == weapon.name
+        if mainHand.weaponData.weapon.name == weaponData.weapon.name
         -- If this weapon is already equiped in the main hand, simply update `matchedFilters`
         then Just character { mainHand = Just $ addMatchedFilter filter mainHand }
         else
           case character.offHand of
-            Just offHand | offHand.weapon.name == weapon.name -> do
+            Just offHand | offHand.weaponData.weapon.name == weaponData.weapon.name -> do
               -- If this weapon is already equiped in the off hand, simply update `matchedFilters`
               pure $ character { offHand = Just $ addMatchedFilter filter offHand }
             Just _ ->
@@ -182,7 +182,7 @@ assignWeapon maxCharacterCount filter weapon assignments = do
               -- The off hand is free, we can equip this weapon in the off hand.
               pure $ character
                 { offHand = Just
-                    { weapon
+                    { weaponData
                     , matchedFilters: [ filter ]
                     }
                 }
@@ -200,7 +200,7 @@ getTeamWeaponNames team =
   Map.values team.characters
     # Arr.fromFoldable
     >>= getEquipedWeapons
-    <#> (\weapon -> weapon.weapon.name)
+    <#> (\equipedWeapon -> equipedWeapon.weaponData.weapon.name)
     # Set.fromFoldable
 
 getCharacterNames :: AssignmentResult -> Set CharacterName

@@ -1,6 +1,6 @@
 module Core.Weapons.Search2 where
 
-import Core.Database.VLatest
+import Core.Database.VLatest2
 import Prelude
 
 import Core.Display (display)
@@ -15,7 +15,18 @@ import Data.Ord.Down (Down(..))
 import Data.Set (Set)
 import Data.Set as Set
 import Data.String.NonEmpty as NES
+import Unsafe.Coerce (unsafeCoerce)
 import Utils (unsafeFromJust)
+
+type Filter =
+  { effectType :: FilterEffectType
+  , range :: FilterRange
+  }
+
+data FilterRange
+  = FilterAll
+  | FilterSingleTargetOrAll
+  | FilterSelfOrSingleTargetOrAll
 
 type FilterResult =
   { filter :: Filter
@@ -23,26 +34,49 @@ type FilterResult =
   }
 
 type FilterResultWeapon =
-  { weapon :: ArmoryWeapon
-  , potenciesAtOb10 :: Maybe Potencies
+  { weapon :: WeaponData
+  , allPotencies :: Maybe AllPotencies
   }
 
-findMatchingWeapons :: Filter -> Armory -> FilterResult
-findMatchingWeapons filter armory = do
+findMatchingWeapons :: Filter -> Db -> FilterResult
+findMatchingWeapons filter db = do
   let
-    matchingGroupedWeapons = Map.lookup filter armory.groupedByEffect # fromMaybe [] :: Array GroupedWeapon
+    (weaponsForEffectType :: Array GroupedWeapon) = Map.lookup filter.effectType db.groupedByEffect # fromMaybe []
 
-    matchingWeapons = matchingGroupedWeapons <#> \{ weaponName, potenciesAtOb10 } -> do
-      let weapon = Map.lookup weaponName armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
-      { weapon
-      , potenciesAtOb10
-      }
+    (matchingWeapons :: Array FilterResultWeapon) = weaponsForEffectType
+      # Arr.mapMaybe \{ weaponName, range, allPotencies } -> do
+          let
+            weapon = Map.lookup weaponName db.allWeapons
+              `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter.effectType <> "' not found.")
+
+          if matchRange filter.range range then Just
+            { weapon
+            , allPotencies
+
+            }
+          else Nothing
   { filter
   , matchingWeapons
   }
 
-applyFilters :: Array Filter -> Armory -> Array FilterResult
-applyFilters filters armory = filters <#> \filter -> findMatchingWeapons filter armory
+  where
+  matchRange :: FilterRange -> Range -> Boolean
+  matchRange =
+    case _, _ of
+      FilterAll, All -> true
+      FilterAll, SingleTarget -> false
+      FilterAll, Self -> false
+
+      FilterSingleTargetOrAll, All -> true
+      FilterSingleTargetOrAll, SingleTarget -> true
+      FilterSingleTargetOrAll, Self -> false
+
+      FilterSelfOrSingleTargetOrAll, All -> true
+      FilterSelfOrSingleTargetOrAll, SingleTarget -> true
+      FilterSelfOrSingleTargetOrAll, Self -> true
+
+applyFilters :: Array Filter -> Db -> Array FilterResult
+applyFilters filters db = filters <#> \filter -> findMatchingWeapons filter db
 
 search :: Int -> Array FilterResult -> Array AssignmentResult
 search maxCharacterCount filterResults =

@@ -202,7 +202,7 @@ groupsForWeapon weapon = do
             { weaponName: weapon.name
             -- INVARIANT: this assumes an effect has the same range at all overboost levels.
             , range: ob0.range
-            , potencies
+            , allPotencies: potencies
             }
         }
 
@@ -213,7 +213,7 @@ groupsForWeapon weapon = do
     -> WeaponEffect
     -> Maybe
          { effectType :: FilterEffectType
-         , potencies :: Maybe GroupedWeaponPotencies
+         , potencies :: Maybe AllPotencies
          }
   groupForWeaponEffect ob0 ob1 ob6 ob10 = do
     case ob0.effectType of

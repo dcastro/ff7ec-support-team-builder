@@ -75,10 +75,10 @@ type GroupedWeapon =
   { weaponName :: WeaponName
   , range :: Range
   -- This will be `None` for effects that don't have potencies (e.g. `Heal`)
-  , potencies :: Maybe GroupedWeaponPotencies
+  , allPotencies :: Maybe AllPotencies
   }
 
-type GroupedWeaponPotencies =
+type AllPotencies =
   { ob0 :: Potencies
   , ob1 :: Potencies
   , ob6 :: Potencies

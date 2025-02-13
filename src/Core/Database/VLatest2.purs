@@ -33,7 +33,7 @@ type WeaponData =
   -- because they have the same potencies between Ob0 and Ob5,
   -- and between Ob6 and Ob10.
   , distinctObs :: NonEmptyArray ObRange
-  , ownedOb :: ObRange
+  , ownedOb :: Maybe ObRange
   }
 
 type SerializableDb =
@@ -64,7 +64,7 @@ type ObRange =
   }
 
 data FromOb = FromOb0 | FromOb1 | FromOb6 | FromOb10
-data ToOb = ToOb5 | ToOb9
+data ToOb = ToOb5 | ToOb9 | ToOb10
 
 type ObLevel =
   { description :: NonEmptyString -- ^ The source text from which the buffs/debuffs were parsed.

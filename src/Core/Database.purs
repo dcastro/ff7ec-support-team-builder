@@ -1,4 +1,4 @@
-module Core.Database (init) where
+module Core.Database (init, createDb) where
 
 import Core.Database.VLatest2
 import Prelude
@@ -11,6 +11,7 @@ import Core.Weapons.Parser2 as P
 import Core.WebStorage as WS
 import Data.Array as Arr
 import Data.Array.NonEmpty (NonEmptyArray)
+import Data.Array.NonEmpty as NAR
 import Data.DateTime (DateTime)
 import Data.DateTime as DateTime
 import Data.Either (Either(..), hush)
@@ -30,7 +31,7 @@ import Effect.Class (class MonadEffect, liftEffect)
 import Effect.Class.Console as Console
 import Effect.Now as Now
 import Google.SheetsApi as SheetsApi
-import Unsafe.Coerce (unsafeCoerce)
+import Partial.Unsafe (unsafeCrashWith)
 import Utils (MapAsArray(..), SetAsArray(..), logOnLeft, renderJsonErr, throwOnNothing, whenJust)
 import Yoga.JSON as J
 
@@ -79,16 +80,20 @@ init = do
     pure weapons
 
 getDistinctObs :: Weapon -> NonEmptyArray ObRange
-getDistinctObs _ = do
-  unsafeCoerce "TODO"
+getDistinctObs _ =
+  -- TODO
+  NAR.singleton { from: FromOb0, to: Just ToOb5 }
+    # NAR.cons { from: FromOb6, to: Just ToOb10 }
 
 pickOb6 :: NonEmptyArray ObRange -> ObRange
 pickOb6 _ = do
-  unsafeCoerce "TODO"
+  -- TODO
+  { from: FromOb6, to: Just ToOb10 }
 
 pickOb :: ObRange -> NonEmptyArray ObRange -> ObRange
 pickOb _ = do
-  unsafeCoerce "TODO"
+  -- TODO
+  pickOb6
 
 createDb :: forall m. MonadEffect m => MonadRec m => Array Weapon -> Map WeaponName WeaponData -> m Db
 createDb newWeapons existingWeapons = do
@@ -135,7 +140,7 @@ insertWeapon weapon existingWeapons db =
         { weapon
         , ignored: false
         , distinctObs
-        , ownedOb: pickOb6 distinctObs
+        , ownedOb: Just $ pickOb6 distinctObs
         }
     db { allWeapons = Map.insert weapon.name newWeapon db.allWeapons }
 
@@ -147,7 +152,7 @@ insertWeapon weapon existingWeapons db =
         { weapon
         , ignored: existing.ignored
         , distinctObs
-        , ownedOb: pickOb existing.ownedOb distinctObs
+        , ownedOb: existing.ownedOb <#> \owned -> pickOb owned distinctObs
         }
     db { allWeapons = Map.insert weapon.name newWeapon db.allWeapons }
 
@@ -220,38 +225,68 @@ groupsForWeapon weapon = do
       Enfeeble _ -> Just { effectType: FilterEnfeeble, potencies: Nothing }
       Stop _ -> Just { effectType: FilterStop, potencies: Nothing }
       ExploitWeakness _ -> Just { effectType: FilterExploitWeakness, potencies: Nothing }
-      PatkUp { potencies: ob0Potencies } ->
-        case ob1.effectType, ob6.effectType, ob10.effectType of
-          PatkUp ob1, PatkUp ob6, PatkUp ob10 ->
-            Just
-              { effectType: FilterPatkUp
-              , potencies: Just
-                  { ob0: ob0Potencies
-                  , ob1: ob1.potencies
-                  , ob6: ob6.potencies
-                  , ob10: ob10.potencies
-                  }
-              }
-          _, _, _ -> unsafeCoerce "TODO"
-      MatkUp {} -> unsafeCoerce "TODO"
-      PdefUp {} -> unsafeCoerce "TODO"
-      MdefUp {} -> unsafeCoerce "TODO"
-      FireDamageUp {} -> unsafeCoerce "TODO"
-      IceDamageUp {} -> unsafeCoerce "TODO"
-      ThunderDamageUp {} -> unsafeCoerce "TODO"
-      EarthDamageUp {} -> unsafeCoerce "TODO"
-      WaterDamageUp {} -> unsafeCoerce "TODO"
-      WindDamageUp {} -> unsafeCoerce "TODO"
-      PatkDown {} -> unsafeCoerce "TODO"
-      MatkDown {} -> unsafeCoerce "TODO"
-      PdefDown {} -> unsafeCoerce "TODO"
-      MdefDown {} -> unsafeCoerce "TODO"
-      FireResistDown {} -> unsafeCoerce "TODO"
-      IceResistDown {} -> unsafeCoerce "TODO"
-      ThunderResistDown {} -> unsafeCoerce "TODO"
-      EarthResistDown {} -> unsafeCoerce "TODO"
-      WaterResistDown {} -> unsafeCoerce "TODO"
-      WindResistDown {} -> unsafeCoerce "TODO"
+      PatkUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        PatkUp ob1, PatkUp ob6, PatkUp ob10 -> Just { effectType: FilterPatkUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      MatkUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        MatkUp ob1, MatkUp ob6, MatkUp ob10 -> Just { effectType: FilterMatkUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      PdefUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        PdefUp ob1, PdefUp ob6, PdefUp ob10 -> Just { effectType: FilterPdefUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      MdefUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        MdefUp ob1, MdefUp ob6, MdefUp ob10 -> Just { effectType: FilterMdefUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      FireDamageUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        FireDamageUp ob1, FireDamageUp ob6, FireDamageUp ob10 -> Just { effectType: FilterFireDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      IceDamageUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        IceDamageUp ob1, IceDamageUp ob6, IceDamageUp ob10 -> Just { effectType: FilterIceDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      ThunderDamageUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        ThunderDamageUp ob1, ThunderDamageUp ob6, ThunderDamageUp ob10 -> Just { effectType: FilterThunderDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      EarthDamageUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        EarthDamageUp ob1, EarthDamageUp ob6, EarthDamageUp ob10 -> Just { effectType: FilterEarthDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      WaterDamageUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        WaterDamageUp ob1, WaterDamageUp ob6, WaterDamageUp ob10 -> Just { effectType: FilterWaterDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      WindDamageUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        WindDamageUp ob1, WindDamageUp ob6, WindDamageUp ob10 -> Just { effectType: FilterWindDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      PatkDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        PatkDown ob1, PatkDown ob6, PatkDown ob10 -> Just { effectType: FilterPatkDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      MatkDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        MatkDown ob1, MatkDown ob6, MatkDown ob10 -> Just { effectType: FilterMatkDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      PdefDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        PdefDown ob1, PdefDown ob6, PdefDown ob10 -> Just { effectType: FilterPdefDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      MdefDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        MdefDown ob1, MdefDown ob6, MdefDown ob10 -> Just { effectType: FilterMdefDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      FireResistDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        FireResistDown ob1, FireResistDown ob6, FireResistDown ob10 -> Just { effectType: FilterFireResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      IceResistDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        IceResistDown ob1, IceResistDown ob6, IceResistDown ob10 -> Just { effectType: FilterIceResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      ThunderResistDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        ThunderResistDown ob1, ThunderResistDown ob6, ThunderResistDown ob10 -> Just { effectType: FilterThunderResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      EarthResistDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        EarthResistDown ob1, EarthResistDown ob6, EarthResistDown ob10 -> Just { effectType: FilterEarthResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      WaterResistDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        WaterResistDown ob1, WaterResistDown ob6, WaterResistDown ob10 -> Just { effectType: FilterWaterResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      WindResistDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
+        WindResistDown ob1, WindResistDown ob6, WindResistDown ob10 -> Just { effectType: FilterWindResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+
+  crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
 
 -- Throws if the cache is empty OR the cache data is corrupted.
 readFromCache :: forall m. MonadThrow Unit m => MonadAff m => m { db :: Db, hasExpired :: Boolean }

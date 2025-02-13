@@ -1,76 +1,69 @@
-module Core.Database where
+module Core.Database (init) where
 
-import Core.Database.VLatest
+import Core.Database.VLatest2
 import Prelude
 
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Control.Monad.Except (runExceptT)
 import Control.Monad.Rec.Class (class MonadRec)
 import Core.Display (display)
-import Core.Weapons.Parser (Weapon)
-import Core.Weapons.Parser as P
+import Core.Weapons.Parser2 as P
 import Core.WebStorage as WS
 import Data.Array as Arr
+import Data.Array.NonEmpty (NonEmptyArray)
 import Data.DateTime (DateTime)
 import Data.DateTime as DateTime
 import Data.Either (Either(..), hush)
-import Data.Foldable (for_)
 import Data.Foldable as F
+import Data.List.Lazy as LazyList
+import Data.List.ZipList (ZipList(..))
 import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Newtype (unwrap)
-import Data.Set (Set)
 import Data.Set as Set
-import Data.String.NonEmpty as NES
 import Data.Time.Duration (Hours(..))
-import Data.Unfoldable as Unfoldable
+import Data.Traversable (for_)
 import Effect.Aff (Aff)
 import Effect.Aff.Class (class MonadAff, liftAff)
 import Effect.Class (class MonadEffect, liftEffect)
 import Effect.Class.Console as Console
 import Effect.Now as Now
 import Google.SheetsApi as SheetsApi
-import Record as Record
-import Type.Proxy (Proxy(..))
+import Unsafe.Coerce (unsafeCoerce)
 import Utils (MapAsArray(..), SetAsArray(..), logOnLeft, renderJsonErr, throwOnNothing, whenJust)
 import Yoga.JSON as J
 
 currentDbVersion :: Int
 currentDbVersion = 1
 
-type GroupEntry =
-  { filter :: Filter
-  , weaponName :: WeaponName
-  , potenciesAtOb10 :: Maybe Potencies
-  }
-
-init :: Aff (Maybe Armory)
+init :: Aff (Maybe Db)
 init = do
   runExceptT readFromCache >>= case _ of
     Left _ -> do
-      Console.log "Armory not found in cache, loading it from the spreadsheet..."
-      armoryMb <- hush <$> runExceptT (loadAndCreateArmory Map.empty)
-      whenJust armoryMb $ writeToCache
-      pure armoryMb
-    Right { armory, hasExpired } | hasExpired -> do
-      Console.log "Armory found in cache but has expired, updating cache..."
-      hush <$> runExceptT (loadAndCreateArmory armory.allWeapons) >>= case _ of
-        Just updatedArmory -> do
-          writeToCache updatedArmory
-          pure $ Just updatedArmory
+      Console.log "Db not found in cache, loading it from the spreadsheet..."
+      dbMb <- hush <$> runExceptT (loadAndCreateDb Map.empty)
+      whenJust dbMb $ writeToCache
+      pure dbMb
+    Right { db, hasExpired } | hasExpired -> do
+      Console.log "Db found in cache but has expired, updating cache..."
+      hush <$> runExceptT (loadAndCreateDb db.allWeapons) >>= case _ of
+        Just updatedDb -> do
+          writeToCache updatedDb
+          pure $ Just updatedDb
         Nothing -> do
-          Console.log "Failed to updated armory"
-          pure $ Just armory
-    Right { armory, hasExpired: _ } -> do
-      Console.log "Armory found in cache."
-      pure $ Just armory
+          Console.log "Failed to update db"
+          pure $ Just db
+    Right { db, hasExpired: _ } -> do
+      Console.log "Db found in cache."
+      pure $ Just db
+
   where
-  -- Load the weapons from the spreadsheet, and updating the existing armory.
-  loadAndCreateArmory :: forall f. MonadAff f => MonadThrow Unit f => MonadRec f => Map WeaponName ArmoryWeapon -> f Armory
-  loadAndCreateArmory existingWeapons = do
+  -- Load the weapons from the spreadsheet, and updates the existing db.
+  loadAndCreateDb :: forall f. MonadAff f => MonadThrow Unit f => MonadRec f => Map WeaponName WeaponData -> f Db
+  loadAndCreateDb existingWeapons = do
     weapons <- loadFromSpreadsheet
-    createArmory weapons existingWeapons
+    createDb weapons existingWeapons
 
   -- Throws if we can't parse the Google Sheet.
   loadFromSpreadsheet :: forall f. MonadAff f => MonadThrow Unit f => f (Array Weapon)
@@ -85,176 +78,217 @@ init = do
       throwError unit
     pure weapons
 
-newArmory :: Armory
-newArmory =
-  { allWeapons: Map.empty
-  , groupedByEffect: Map.empty
-  , allCharacterNames: Set.empty
-  }
+getDistinctObs :: Weapon -> NonEmptyArray ObRange
+getDistinctObs _ = do
+  unsafeCoerce "TODO"
 
-createArmory :: forall m. MonadEffect m => MonadRec m => Array Weapon -> Map WeaponName ArmoryWeapon -> m Armory
-createArmory newWeapons existingWeapons = do
+pickOb6 :: NonEmptyArray ObRange -> ObRange
+pickOb6 _ = do
+  unsafeCoerce "TODO"
+
+pickOb :: ObRange -> NonEmptyArray ObRange -> ObRange
+pickOb _ = do
+  unsafeCoerce "TODO"
+
+createDb :: forall m. MonadEffect m => MonadRec m => Array Weapon -> Map WeaponName WeaponData -> m Db
+createDb newWeapons existingWeapons = do
   Arr.foldRecM
-    (\armory weapon -> insertWeapon weapon existingWeapons armory)
-    newArmory
+    (\db weapon -> insertWeapon weapon existingWeapons db)
+    newDb
     newWeapons
+  where
+  newDb :: Db
+  newDb =
+    { allWeapons: Map.empty
+    , groupedByEffect: Map.empty
+    , allCharacterNames: Set.empty
+    }
 
 insertWeapon
   :: forall m
    . MonadEffect m
   => Weapon
-  -> Map WeaponName ArmoryWeapon
-  -> Armory
-  -> m Armory
-insertWeapon weapon existingWeapons armory =
+  -> Map WeaponName WeaponData
+  -> Db
+  -> m Db
+insertWeapon weapon existingWeapons db =
   case Map.lookup weapon.name existingWeapons of
     Just existingWeapon -> do
       Console.log $ "Weapon already exists, replacing it: " <> display weapon.name
-      pure $ armory
+      pure $ db
         # mergeWithExisting existingWeapon
         # insertIntoGroups
         # insertCharacterName
     Nothing -> do
       Console.log $ "Weapon added: " <> display weapon.name
-      pure $ armory
+      pure $ db
         # insert
         # insertIntoGroups
         # insertCharacterName
   where
 
-  insert :: Armory -> Armory
-  insert armory = do
-    -- By default, we ignore only "Event" weapons.
-    let ignored = if NES.toString weapon.source == "Event" then true else false
-    let armoryWeapon = Record.insert (Proxy :: Proxy "ignored") ignored weapon
-    armory { allWeapons = Map.insert armoryWeapon.name armoryWeapon armory.allWeapons }
-
-  mergeWithExisting :: ArmoryWeapon -> Armory -> Armory
-  mergeWithExisting existing armory = do
-    let armoryWeapon = Record.insert (Proxy :: Proxy "ignored") existing.ignored weapon
-    armory { allWeapons = Map.insert armoryWeapon.name armoryWeapon armory.allWeapons }
-
-  insertIntoGroups :: Armory -> Armory
-  insertIntoGroups armory =
-    F.foldr
-      addToGroup
-      armory
-      matchingFilters
-
-  matchingEffectType :: EffectType -> Maybe { effectType :: FilterEffectType, potencies :: Maybe Potencies }
-  matchingEffectType = case _ of
-    Heal { percentage } ->
-      if unwrap percentage >= 35 then Just { effectType: FilterHeal, potencies: Nothing }
-      else Nothing
-
-    Veil _ -> Just { effectType: FilterVeil, potencies: Nothing }
-    Provoke _ -> Just { effectType: FilterProvoke, potencies: Nothing }
-    Enfeeble _ -> Just { effectType: FilterEnfeeble, potencies: Nothing }
-    Stop _ -> Just { effectType: FilterStop, potencies: Nothing }
-    ExploitWeakness _ -> Just { effectType: FilterExploitWeakness, potencies: Nothing }
-
-    PatkUp { potencies } -> Just { effectType: FilterPatkUp, potencies: Just potencies }
-    MatkUp { potencies } -> Just { effectType: FilterMatkUp, potencies: Just potencies }
-    PdefUp { potencies } -> Just { effectType: FilterPdefUp, potencies: Just potencies }
-    MdefUp { potencies } -> Just { effectType: FilterMdefUp, potencies: Just potencies }
-    FireDamageUp { potencies } -> Just { effectType: FilterFireDamageUp, potencies: Just potencies }
-    IceDamageUp { potencies } -> Just { effectType: FilterIceDamageUp, potencies: Just potencies }
-    ThunderDamageUp { potencies } -> Just { effectType: FilterThunderDamageUp, potencies: Just potencies }
-    EarthDamageUp { potencies } -> Just { effectType: FilterEarthDamageUp, potencies: Just potencies }
-    WaterDamageUp { potencies } -> Just { effectType: FilterWaterDamageUp, potencies: Just potencies }
-    WindDamageUp { potencies } -> Just { effectType: FilterWindDamageUp, potencies: Just potencies }
-
-    PatkDown { potencies } -> Just { effectType: FilterPatkDown, potencies: Just potencies }
-    MatkDown { potencies } -> Just { effectType: FilterMatkDown, potencies: Just potencies }
-    PdefDown { potencies } -> Just { effectType: FilterPdefDown, potencies: Just potencies }
-    MdefDown { potencies } -> Just { effectType: FilterMdefDown, potencies: Just potencies }
-    FireResistDown { potencies } -> Just { effectType: FilterFireResistDown, potencies: Just potencies }
-    IceResistDown { potencies } -> Just { effectType: FilterIceResistDown, potencies: Just potencies }
-    ThunderResistDown { potencies } -> Just { effectType: FilterThunderResistDown, potencies: Just potencies }
-    EarthResistDown { potencies } -> Just { effectType: FilterEarthResistDown, potencies: Just potencies }
-    WaterResistDown { potencies } -> Just { effectType: FilterWaterResistDown, potencies: Just potencies }
-    WindResistDown { potencies } -> Just { effectType: FilterWindResistDown, potencies: Just potencies }
-
-  matchingRanges :: Range -> Array FilterRange
-  matchingRanges = case _ of
-    Self -> [ FilterSelfOrSingleTargetOrAll ]
-    SingleTarget -> [ FilterSelfOrSingleTargetOrAll, FilterSingleTargetOrAll ]
-    All -> [ FilterSelfOrSingleTargetOrAll, FilterSingleTargetOrAll, FilterAll ]
-
-  matchingFilters' :: WeaponEffect -> Array GroupEntry
-  matchingFilters' { effectType, range } = do
-    range <- matchingRanges range
-    { effectType, potencies } <- Unfoldable.fromMaybe $ matchingEffectType effectType
-    pure
-      { filter: { effectType, range }
-      , weaponName: weapon.name
-      , potenciesAtOb10: potencies
-      }
-
-  matchingFilters :: Set GroupEntry
-  matchingFilters = do
-    let groupEntries = Set.fromFoldable $ weapon.ob10.effects >>= \effect -> matchingFilters' effect
-
-    if weapon.cureAllAbility then do
-      -- Assuming a 5* Cura materia (100% heal) with a -40% penalty
-      let healAll = { effectType: Heal { percentage: Percentage 60 }, range: All }
-      Set.union groupEntries (Set.fromFoldable $ matchingFilters' healAll)
-
-    else groupEntries
-
-  addToGroup :: GroupEntry -> Armory -> Armory
-  addToGroup { filter, weaponName, potenciesAtOb10 } armory = do
+  insert :: Db -> Db
+  insert db = do
+    let distinctObs = getDistinctObs weapon
     let
-      groupedWeapon = { weaponName, potenciesAtOb10 } :: GroupedWeapon
+      newWeapon =
+        { weapon
+        , ignored: false
+        , distinctObs
+        , ownedOb: pickOb6 distinctObs
+        }
+    db { allWeapons = Map.insert weapon.name newWeapon db.allWeapons }
+
+  mergeWithExisting :: WeaponData -> Db -> Db
+  mergeWithExisting existing db = do
+    let distinctObs = getDistinctObs weapon
+    let
+      newWeapon =
+        { weapon
+        , ignored: existing.ignored
+        , distinctObs
+        , ownedOb: pickOb existing.ownedOb distinctObs
+        }
+    db { allWeapons = Map.insert weapon.name newWeapon db.allWeapons }
+
+  insertIntoGroups :: Db -> Db
+  insertIntoGroups db =
+    F.foldr
+      insertIntoGroup
+      db
+      (groupsForWeapon weapon)
+
+  insertIntoGroup :: GroupEntry -> Db -> Db
+  insertIntoGroup { effectType, groupedWeapon } db = do
+    let
       groupedByEffect = Map.alter
         ( case _ of
             Just weapons -> Just $ Arr.snoc weapons groupedWeapon
             Nothing -> Just [ groupedWeapon ]
         )
-        filter
-        armory.groupedByEffect
-    armory { groupedByEffect = groupedByEffect }
+        effectType
+        db.groupedByEffect
+    db { groupedByEffect = groupedByEffect }
 
-  insertCharacterName :: Armory -> Armory
-  insertCharacterName armory =
-    armory { allCharacterNames = Set.insert weapon.character armory.allCharacterNames }
+  insertCharacterName :: Db -> Db
+  insertCharacterName db =
+    db { allCharacterNames = Set.insert weapon.character db.allCharacterNames }
+
+type GroupEntry =
+  { effectType :: FilterEffectType
+  , groupedWeapon :: GroupedWeapon
+  }
+
+groupsForWeapon :: Weapon -> LazyList.List GroupEntry
+groupsForWeapon weapon = do
+  LazyList.catMaybes $ unwrap groupsForWeapon'
+  where
+  groupsForWeapon' :: ZipList (Maybe GroupEntry)
+  groupsForWeapon' = ado
+    -- INVARIANT: this assumes weapon effects are listed in the same order at all overboost levels.
+    ob0 <- ZipList $ LazyList.fromFoldable weapon.ob0.effects
+    ob1 <- ZipList $ LazyList.fromFoldable weapon.ob1.effects
+    ob6 <- ZipList $ LazyList.fromFoldable weapon.ob6.effects
+    ob10 <- ZipList $ LazyList.fromFoldable weapon.ob10.effects
+    in
+      groupForWeaponEffect ob0 ob1 ob6 ob10 <#> \{ effectType, potencies } ->
+        { effectType
+        , groupedWeapon:
+            { weaponName: weapon.name
+            -- INVARIANT: this assumes an effect has the same range at all overboost levels.
+            , range: ob0.range
+            , potencies
+            }
+        }
+
+  groupForWeaponEffect
+    :: WeaponEffect
+    -> WeaponEffect
+    -> WeaponEffect
+    -> WeaponEffect
+    -> Maybe
+         { effectType :: FilterEffectType
+         , potencies :: Maybe GroupedWeaponPotencies
+         }
+  groupForWeaponEffect ob0 ob1 ob6 ob10 = do
+    case ob0.effectType of
+      Heal { percentage } ->
+        if unwrap percentage >= 35 then Just { effectType: FilterHeal, potencies: Nothing }
+        else Nothing
+      Veil _ -> Just { effectType: FilterVeil, potencies: Nothing }
+      Provoke _ -> Just { effectType: FilterProvoke, potencies: Nothing }
+      Enfeeble _ -> Just { effectType: FilterEnfeeble, potencies: Nothing }
+      Stop _ -> Just { effectType: FilterStop, potencies: Nothing }
+      ExploitWeakness _ -> Just { effectType: FilterExploitWeakness, potencies: Nothing }
+      PatkUp { potencies: ob0Potencies } ->
+        case ob1.effectType, ob6.effectType, ob10.effectType of
+          PatkUp ob1, PatkUp ob6, PatkUp ob10 ->
+            Just
+              { effectType: FilterPatkUp
+              , potencies: Just
+                  { ob0: ob0Potencies
+                  , ob1: ob1.potencies
+                  , ob6: ob6.potencies
+                  , ob10: ob10.potencies
+                  }
+              }
+          _, _, _ -> unsafeCoerce "TODO"
+      MatkUp {} -> unsafeCoerce "TODO"
+      PdefUp {} -> unsafeCoerce "TODO"
+      MdefUp {} -> unsafeCoerce "TODO"
+      FireDamageUp {} -> unsafeCoerce "TODO"
+      IceDamageUp {} -> unsafeCoerce "TODO"
+      ThunderDamageUp {} -> unsafeCoerce "TODO"
+      EarthDamageUp {} -> unsafeCoerce "TODO"
+      WaterDamageUp {} -> unsafeCoerce "TODO"
+      WindDamageUp {} -> unsafeCoerce "TODO"
+      PatkDown {} -> unsafeCoerce "TODO"
+      MatkDown {} -> unsafeCoerce "TODO"
+      PdefDown {} -> unsafeCoerce "TODO"
+      MdefDown {} -> unsafeCoerce "TODO"
+      FireResistDown {} -> unsafeCoerce "TODO"
+      IceResistDown {} -> unsafeCoerce "TODO"
+      ThunderResistDown {} -> unsafeCoerce "TODO"
+      EarthResistDown {} -> unsafeCoerce "TODO"
+      WaterResistDown {} -> unsafeCoerce "TODO"
+      WindResistDown {} -> unsafeCoerce "TODO"
 
 -- Throws if the cache is empty OR the cache data is corrupted.
-readFromCache :: forall m. MonadThrow Unit m => MonadAff m => m { armory :: Armory, hasExpired :: Boolean }
+readFromCache :: forall m. MonadThrow Unit m => MonadAff m => m { db :: Db, hasExpired :: Boolean }
 readFromCache = do
-  armoryStr <- throwOnNothing $ WS.getItem "armory"
+  dbStr <- throwOnNothing $ WS.getItem "db"
   lastUpdatedStr <- throwOnNothing $ WS.getItem "last_updated"
 
-  armory :: Armory <- fromSerializable <$> J.readJSON armoryStr `logOnLeft` \err ->
-    "Failed to deserialize armory:\n" <> renderJsonErr err
+  db :: Db <- fromSerializable <$> J.readJSON dbStr `logOnLeft` \err ->
+    "Failed to deserialize db:\n" <> renderJsonErr err
   lastUpdated :: DateTime <- J.readJSON lastUpdatedStr `logOnLeft` \err ->
-    "Failed to deserialize armory:\n" <> renderJsonErr err
+    "Failed to deserialize db:\n" <> renderJsonErr err
 
   now <- liftEffect Now.nowDateTime
   let hasExpired = DateTime.diff now lastUpdated > Hours 24.0
 
-  pure { armory, hasExpired }
+  pure { db, hasExpired }
   where
-  fromSerializable :: SerializableArmory -> Armory
-  fromSerializable armory =
-    { allWeapons: unwrap armory.allWeapons
-    , groupedByEffect: unwrap armory.groupedByEffect
-    , allCharacterNames: unwrap armory.allCharacterNames
+  fromSerializable :: SerializableDb -> Db
+  fromSerializable db =
+    { allWeapons: unwrap db.allWeapons
+    , groupedByEffect: unwrap db.groupedByEffect
+    , allCharacterNames: unwrap db.allCharacterNames
     }
 
-writeToCache :: forall m. MonadAff m => Armory -> m Unit
-writeToCache armory = do
-  let armoryStr = J.writeJSON $ toSerializable armory
+writeToCache :: forall m. MonadAff m => Db -> m Unit
+writeToCache db = do
+  let dbStr = J.writeJSON $ toSerializable db
   lastUpdatedStr <- J.writeJSON <$> liftEffect Now.nowDateTime
   let currentDbVersionStr = J.writeJSON currentDbVersion
 
-  WS.setItem "armory" armoryStr
+  WS.setItem "db" dbStr
   WS.setItem "last_updated" lastUpdatedStr
   WS.setItem "db_version" currentDbVersionStr
   where
-  toSerializable :: Armory -> SerializableArmory
-  toSerializable armory =
-    { allWeapons: MapAsArray armory.allWeapons
-    , groupedByEffect: MapAsArray armory.groupedByEffect
-    , allCharacterNames: SetAsArray armory.allCharacterNames
+  toSerializable :: Db -> SerializableDb
+  toSerializable db =
+    { allWeapons: MapAsArray db.allWeapons
+    , groupedByEffect: MapAsArray db.groupedByEffect
+    , allCharacterNames: SetAsArray db.allCharacterNames
     }

@@ -189,6 +189,8 @@ derive instance Eq Range
 derive instance Eq EffectType
 derive instance Eq Potency
 derive instance Eq FilterEffectType
+derive instance Eq FromOb
+derive instance Eq ToOb
 derive newtype instance Eq Percentage
 derive newtype instance Eq Duration
 derive newtype instance Eq Extension
@@ -199,6 +201,8 @@ derive instance Ord Potency
 derive instance Ord EffectType
 derive instance Ord Range
 derive instance Ord FilterEffectType
+derive instance Ord FromOb
+derive instance Ord ToOb
 derive newtype instance Ord Percentage
 derive newtype instance Ord Duration
 derive newtype instance Ord Extension
@@ -221,6 +225,12 @@ instance Show Potency where
   show = genericShow
 
 instance Show FilterEffectType where
+  show = genericShow
+
+instance Show FromOb where
+  show = genericShow
+
+instance Show ToOb where
   show = genericShow
 
 derive newtype instance Show Percentage

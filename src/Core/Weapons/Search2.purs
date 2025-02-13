@@ -15,8 +15,12 @@ import Data.Newtype (unwrap)
 import Data.Ord.Down (Down(..))
 import Data.Set (Set)
 import Data.Set as Set
+import Data.Show.Generic (genericShow)
 import Data.String.NonEmpty as NES
 import Utils (unsafeFromJust)
+import Yoga.JSON (class ReadForeign, class WriteForeign)
+import Yoga.JSON.Generics as J
+import Yoga.JSON.Generics.EnumSumRep as Enum
 
 type Filter =
   { effectType :: FilterEffectType
@@ -31,6 +35,15 @@ data FilterRange
 derive instance Generic FilterRange _
 derive instance Eq FilterRange
 derive instance Ord FilterRange
+
+instance Show FilterRange where
+  show = genericShow
+
+instance WriteForeign FilterRange where
+  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
+
+instance ReadForeign FilterRange where
+  readImpl = J.genericReadForeignEnum Enum.defaultOptions
 
 type FilterResult =
   { filter :: Filter

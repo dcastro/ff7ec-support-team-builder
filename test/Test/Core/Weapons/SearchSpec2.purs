@@ -1,13 +1,14 @@
 module Test.Core.Weapons.SearchSpec2 (spec) where
 
-import Core.Database.VLatest
+import Core.Database.VLatest2
 import Prelude
 import Test.Spec
-import Test.Utils
+import Test.Utils2
 
-import Core.Weapons.Search2 (AssignmentResult, Character, emptyTeam)
+import Core.Weapons.Search2 (AssignmentResult, Character, Filter, FilterRange(..), emptyTeam)
 import Core.Weapons.Search2 as Search
 import Data.Array as Arr
+import Data.Array.NonEmpty as NAR
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Newtype (unwrap)
@@ -16,7 +17,7 @@ import Data.String.NonEmpty (NonEmptyString)
 import Data.String.NonEmpty as NES
 import Data.Tuple (Tuple(..))
 import Test.Spec.Assertions (shouldEqual)
-import Test.Utils as T
+import Test.Utils2 as T
 
 spec :: Spec Unit
 spec =
@@ -36,32 +37,32 @@ combinationsSpec = do
       weapon22 = mkWeapon (nes @"22") matt
       weapon31 = mkWeapon (nes @"31") lucia
 
-      potencies11 = Just { base: Low, max: Low }
-      potencies12 = Just { base: Low, max: Mid }
-      potencies13 = Just { base: Low, max: High }
-      potencies21 = Just { base: Mid, max: Mid }
-      potencies22 = Just { base: Mid, max: High }
-      potencies31 = Just { base: High, max: High }
+      potencies11 = Just $ mkAllPotencies { base: Low, max: Low }
+      potencies12 = Just $ mkAllPotencies { base: Low, max: Mid }
+      potencies13 = Just $ mkAllPotencies { base: Low, max: High }
+      potencies21 = Just $ mkAllPotencies { base: Mid, max: Mid }
+      potencies22 = Just $ mkAllPotencies { base: Mid, max: High }
+      potencies31 = Just $ mkAllPotencies { base: High, max: High }
 
     it "finds all possible combinations" do
       let
         teams = Search.search 3
           [ { filter: filter1
             , matchingWeapons:
-                [ { weapon: weapon11, potenciesAtOb10: potencies11 }
-                , { weapon: weapon12, potenciesAtOb10: potencies12 }
-                , { weapon: weapon13, potenciesAtOb10: potencies13 }
+                [ { weapon: weapon11, allPotencies: potencies11 }
+                , { weapon: weapon12, allPotencies: potencies12 }
+                , { weapon: weapon13, allPotencies: potencies13 }
                 ]
             }
           , { filter: filter2
             , matchingWeapons:
-                [ { weapon: weapon21, potenciesAtOb10: potencies21 }
-                , { weapon: weapon22, potenciesAtOb10: potencies22 }
+                [ { weapon: weapon21, allPotencies: potencies21 }
+                , { weapon: weapon22, allPotencies: potencies22 }
                 ]
             }
           , { filter: filter3
             , matchingWeapons:
-                [ { weapon: weapon31, potenciesAtOb10: potencies31 }
+                [ { weapon: weapon31, allPotencies: potencies31 }
                 ]
             }
           ]
@@ -110,14 +111,14 @@ combinationsSpec = do
         combs = Search.search 3
           [ { filter: filter1
             , matchingWeapons:
-                [ { weapon: weapon11, potenciesAtOb10: potencies11 }
-                , { weapon: weapon12, potenciesAtOb10: potencies12 }
+                [ { weapon: weapon11, allPotencies: potencies11 }
+                , { weapon: weapon12, allPotencies: potencies12 }
                 ]
             }
           , { filter: filter2
             , matchingWeapons:
-                [ { weapon: weapon21, potenciesAtOb10: potencies21 }
-                , { weapon: weapon22, potenciesAtOb10: potencies22 }
+                [ { weapon: weapon21, allPotencies: potencies21 }
+                , { weapon: weapon22, allPotencies: potencies22 }
                 ]
             }
           , { filter: filter3
@@ -136,20 +137,20 @@ combinationsSpec = do
         teams = Search.search 3
           [ { filter: filter1
             , matchingWeapons:
-                [ { weapon: weapon11 { ignored = true }, potenciesAtOb10: potencies11 }
-                , { weapon: weapon12, potenciesAtOb10: potencies12 }
-                , { weapon: weapon13, potenciesAtOb10: potencies13 }
+                [ { weapon: weapon11 { ignored = true }, allPotencies: potencies11 }
+                , { weapon: weapon12, allPotencies: potencies12 }
+                , { weapon: weapon13, allPotencies: potencies13 }
                 ]
             }
           , { filter: filter2
             , matchingWeapons:
-                [ { weapon: weapon21, potenciesAtOb10: potencies21 }
-                , { weapon: weapon22, potenciesAtOb10: potencies22 }
+                [ { weapon: weapon21, allPotencies: potencies21 }
+                , { weapon: weapon22, allPotencies: potencies22 }
                 ]
             }
           , { filter: filter3
             , matchingWeapons:
-                [ { weapon: weapon31, potenciesAtOb10: potencies31 }
+                [ { weapon: weapon31, allPotencies: potencies31 }
                 ]
             }
           ]
@@ -192,13 +193,13 @@ assignWeaponSpec = do
 
     let redWeapon1 = mkWeapon (nes @"Red XIII 1") red
 
-    let potencies1 = Just { base: Low, max: Low }
-    let potencies2 = Just { base: Low, max: Mid }
-    let potencies3 = Just { base: Low, max: High }
+    let potencies1 = Just $ mkAllPotencies { base: Low, max: Low }
+    let potencies2 = Just $ mkAllPotencies { base: Low, max: Mid }
+    let potencies3 = Just $ mkAllPotencies { base: Low, max: High }
 
     it "creates character with 1st weapon in the main hand" do
       Search.assignWeapon 3
-        { filter: filter1, potenciesAtOb10: potencies1 }
+        { filter: filter1, allPotencies: potencies1 }
         tifaWeapon1
         emptyTeam
         `shouldEqualPretty` Just
@@ -210,8 +211,8 @@ assignWeaponSpec = do
 
     it "assigns 2nd weapon to off hand" do
       ( emptyTeam
-          # Search.assignWeapon 3 { filter: filter1, potenciesAtOb10: potencies1 } tifaWeapon1
-          >>= Search.assignWeapon 3 { filter: filter2, potenciesAtOb10: potencies2 } tifaWeapon2
+          # Search.assignWeapon 3 { filter: filter1, allPotencies: potencies1 } tifaWeapon1
+          >>= Search.assignWeapon 3 { filter: filter2, allPotencies: potencies2 } tifaWeapon2
       )
         `shouldEqualPretty` Just
           { characters: Map.fromFoldable
@@ -228,18 +229,18 @@ assignWeaponSpec = do
 
     it "handles main hand weapon matching on 2 or more effects" do
       ( emptyTeam
-          # Search.assignWeapon 3 { filter: filter1, potenciesAtOb10: potencies1 } tifaWeapon1
-          >>= Search.assignWeapon 3 { filter: filter2, potenciesAtOb10: potencies2 } tifaWeapon1
+          # Search.assignWeapon 3 { filter: filter1, allPotencies: potencies1 } tifaWeapon1
+          >>= Search.assignWeapon 3 { filter: filter2, allPotencies: potencies2 } tifaWeapon1
       )
         `shouldEqualPretty` Just
           { characters: Map.fromFoldable
               [ Tuple "tifa"
                   { name: tifa
                   , mainHand: Just
-                      { weapon: tifaWeapon1
+                      { weaponData: tifaWeapon1
                       , matchedFilters:
-                          [ { filter: filter2, potenciesAtOb10: potencies2 }
-                          , { filter: filter1, potenciesAtOb10: potencies1 }
+                          [ { filter: filter2, allPotencies: potencies2 }
+                          , { filter: filter1, allPotencies: potencies1 }
                           ]
                       }
                   , offHand: Nothing
@@ -249,25 +250,25 @@ assignWeaponSpec = do
 
     it "handles off hand weapon matching on 2 or more effects" do
       ( emptyTeam
-          # Search.assignWeapon 3 { filter: filter1, potenciesAtOb10: potencies1 } tifaWeapon1
-          >>= Search.assignWeapon 3 { filter: filter2, potenciesAtOb10: potencies2 } tifaWeapon2
-          >>= Search.assignWeapon 3 { filter: filter3, potenciesAtOb10: potencies3 } tifaWeapon2
+          # Search.assignWeapon 3 { filter: filter1, allPotencies: potencies1 } tifaWeapon1
+          >>= Search.assignWeapon 3 { filter: filter2, allPotencies: potencies2 } tifaWeapon2
+          >>= Search.assignWeapon 3 { filter: filter3, allPotencies: potencies3 } tifaWeapon2
       )
         `shouldEqualPretty` Just
           { characters: Map.fromFoldable
               [ Tuple "tifa"
                   { name: tifa
                   , mainHand: Just
-                      { weapon: tifaWeapon1
+                      { weaponData: tifaWeapon1
                       , matchedFilters:
-                          [ { filter: filter1, potenciesAtOb10: potencies1 }
+                          [ { filter: filter1, allPotencies: potencies1 }
                           ]
                       }
                   , offHand: Just
-                      { weapon: tifaWeapon2
+                      { weaponData: tifaWeapon2
                       , matchedFilters:
-                          [ { filter: filter3, potenciesAtOb10: potencies3 }
-                          , { filter: filter2, potenciesAtOb10: potencies2 }
+                          [ { filter: filter3, allPotencies: potencies3 }
+                          , { filter: filter2, allPotencies: potencies2 }
                           ]
                       }
                   }
@@ -276,17 +277,17 @@ assignWeaponSpec = do
 
     it "fails if more than 2 weapons were selected for the same character" do
       ( emptyTeam
-          # Search.assignWeapon 3 { filter: filter1, potenciesAtOb10: potencies1 } tifaWeapon1
-          >>= Search.assignWeapon 3 { filter: filter2, potenciesAtOb10: potencies2 } tifaWeapon2
-          >>= Search.assignWeapon 3 { filter: filter3, potenciesAtOb10: potencies3 } tifaWeapon3
+          # Search.assignWeapon 3 { filter: filter1, allPotencies: potencies1 } tifaWeapon1
+          >>= Search.assignWeapon 3 { filter: filter2, allPotencies: potencies2 } tifaWeapon2
+          >>= Search.assignWeapon 3 { filter: filter3, allPotencies: potencies3 } tifaWeapon3
       )
         `shouldEqual` Nothing
 
     it "fails if character count exceeds the selected maximum" do
       ( emptyTeam
-          # Search.assignWeapon 2 { filter: filter1, potenciesAtOb10: potencies1 } tifaWeapon1
-          >>= Search.assignWeapon 2 { filter: filter2, potenciesAtOb10: potencies2 } vincentWeapon1
-          >>= Search.assignWeapon 2 { filter: filter3, potenciesAtOb10: potencies3 } redWeapon1
+          # Search.assignWeapon 2 { filter: filter1, allPotencies: potencies1 } tifaWeapon1
+          >>= Search.assignWeapon 2 { filter: filter2, allPotencies: potencies2 } vincentWeapon1
+          >>= Search.assignWeapon 2 { filter: filter3, allPotencies: potencies3 } redWeapon1
       )
         `shouldEqual` Nothing
 
@@ -357,8 +358,8 @@ searchExamplesSpec = do
             do
               let
                 weapons = Arr.sort $ Arr.catMaybes
-                  [ character.mainHand <#> _.weapon.name
-                  , character.offHand <#> _.weapon.name
+                  [ character.mainHand <#> _.weaponData.weapon.name
+                  , character.offHand <#> _.weaponData.weapon.name
                   ]
 
               { character: character.name
@@ -367,19 +368,24 @@ searchExamplesSpec = do
         )
       # Arr.sort
 
-mkWeapon :: NonEmptyString -> CharacterName -> ArmoryWeapon
+mkWeapon :: NonEmptyString -> CharacterName -> WeaponData
 mkWeapon id character =
-  { name: WeaponName id
-  , character
-  , source: nes @"Gacha"
-  , image: nes @" "
-  , atbCost: 3
-  , ob0: { description: nes @" ", effects: [] }
-  , ob1: { description: nes @" ", effects: [] }
-  , ob6: { description: nes @" ", effects: [] }
-  , ob10: { description: nes @" ", effects: [] }
-  , cureAllAbility: true
+  { weapon:
+      { name: WeaponName id
+      , character
+      , source: nes @"Gacha"
+      , image: nes @" "
+      , atbCost: 3
+      , ob0: { description: nes @" ", effects: [] }
+      , ob1: { description: nes @" ", effects: [] }
+      , ob6: { description: nes @" ", effects: [] }
+      , ob10: { description: nes @" ", effects: [] }
+      , cureAllAbility: true
+      }
   , ignored: false
+  , distinctObs: NAR.singleton { from: FromOb0, to: Just ToOb5 }
+      # NAR.cons { from: FromOb6, to: Just ToOb10 }
+  , ownedOb: Just { from: FromOb6, to: Just ToOb10 }
   }
 
 filter1 :: Filter
@@ -400,35 +406,43 @@ filter3 =
   , range: FilterSelfOrSingleTargetOrAll
   }
 
-mkCharacter1 :: CharacterName -> ArmoryWeapon -> Filter -> Maybe Potencies -> Tuple String Character
-mkCharacter1 characterName weapon filter potenciesAtOb10 =
+mkCharacter1 :: CharacterName -> WeaponData -> Filter -> Maybe AllPotencies -> Tuple String Character
+mkCharacter1 characterName weaponData filter allPotencies =
   Tuple (NES.toString $ unwrap characterName)
     { name: characterName
     , mainHand: Just
-        { weapon
-        , matchedFilters: [ { filter, potenciesAtOb10 } ]
+        { weaponData
+        , matchedFilters: [ { filter, allPotencies } ]
         }
     , offHand: Nothing
     }
 
 mkCharacter2
   :: CharacterName
-  -> ArmoryWeapon
+  -> WeaponData
   -> Filter
-  -> Maybe Potencies
-  -> ArmoryWeapon
+  -> Maybe AllPotencies
+  -> WeaponData
   -> Filter
-  -> Maybe Potencies
+  -> Maybe AllPotencies
   -> Tuple String Character
 mkCharacter2 characterName weapon1 filter1 potencies1 weapon2 filter2 potencies2 =
   Tuple (NES.toString $ unwrap characterName)
     { name: characterName
     , mainHand: Just
-        { weapon: weapon1
-        , matchedFilters: [ { filter: filter1, potenciesAtOb10: potencies1 } ]
+        { weaponData: weapon1
+        , matchedFilters: [ { filter: filter1, allPotencies: potencies1 } ]
         }
     , offHand: Just
-        { weapon: weapon2
-        , matchedFilters: [ { filter: filter2, potenciesAtOb10: potencies2 } ]
+        { weaponData: weapon2
+        , matchedFilters: [ { filter: filter2, allPotencies: potencies2 } ]
         }
     }
+
+mkAllPotencies :: Potencies -> AllPotencies
+mkAllPotencies pots =
+  { ob0: pots
+  , ob1: pots
+  , ob6: pots
+  , ob10: pots
+  }

@@ -7,6 +7,7 @@ import Core.Display (display)
 import Data.Array as Arr
 import Data.Foldable as F
 import Data.Function (on)
+import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
 import Data.Map as Map
 import Data.Maybe (Maybe(..), fromMaybe)
@@ -15,7 +16,6 @@ import Data.Ord.Down (Down(..))
 import Data.Set (Set)
 import Data.Set as Set
 import Data.String.NonEmpty as NES
-import Unsafe.Coerce (unsafeCoerce)
 import Utils (unsafeFromJust)
 
 type Filter =
@@ -27,6 +27,10 @@ data FilterRange
   = FilterAll
   | FilterSingleTargetOrAll
   | FilterSelfOrSingleTargetOrAll
+
+derive instance Generic FilterRange _
+derive instance Eq FilterRange
+derive instance Ord FilterRange
 
 type FilterResult =
   { filter :: Filter
@@ -86,12 +90,12 @@ search maxCharacterCount filterResults =
       # Arr.nubBy (compare `on` _.filter)
       # Arr.foldr
           ( \(filterResult :: FilterResult) (teams :: Array AssignmentResult) -> do
-              { weapon, potenciesAtOb10 } <- filterResult.matchingWeapons
+              { weapon, allPotencies } <- filterResult.matchingWeapons
                 # discardIgnored
 
               (team :: AssignmentResult) <- teams
 
-              case assignWeapon maxCharacterCount { filter: filterResult.filter, potenciesAtOb10 } weapon team of
+              case assignWeapon maxCharacterCount { filter: filterResult.filter, allPotencies } weapon team of
                 Just team -> [ team ]
                 Nothing -> []
           )
@@ -243,7 +247,7 @@ scoreTeam { characters } = do
   allPotencies = Arr.fromFoldable (Map.values characters)
     >>= getEquipedWeapons
     >>= _.matchedFilters
-    # Arr.mapMaybe _.potenciesAtOb10
+    # Arr.mapMaybe (\equipedWeapon -> equipedWeapon.allPotencies <#> _.ob10)
 
   characterCount = Map.size characters
 

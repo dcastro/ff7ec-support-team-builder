@@ -2,14 +2,14 @@ module App.Root where
 
 import Prelude
 
-import App.EffectSelector as EffectSelector
-import App.Results as Result
-import App.Results as Results
-import Core.Database.VLatest
-import Core.Armory as Armory
+import App.EffectSelector2 as EffectSelector
+import App.Results2 as Result
+import App.Results2 as Results
+import Core.Database.VLatest2
+import Core.Database as Db
 import Core.Display (display)
-import Core.Weapons.Search (AssignmentResult)
-import Core.Weapons.Search as Search
+import Core.Weapons.Search2 (AssignmentResult)
+import Core.Weapons.Search2 as Search
 import Data.Array as Arr
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Array.NonEmpty as NA
@@ -47,16 +47,16 @@ data State
   | Loaded LoadedState
 
 type LoadedState =
-  { armory :: Armory
+  { db :: Db
   , teams :: Array AssignmentResult
   , maxCharacterCount :: Int
   , effectSelectorIds :: NonEmptyArray Int
   , mustHaveChars :: Set CharacterName
   }
 
-mkInitialLoadedState :: Armory -> LoadedState
-mkInitialLoadedState armory =
-  { armory
+mkInitialLoadedState :: Db -> LoadedState
+mkInitialLoadedState db =
+  { db
   , teams: []
   , maxCharacterCount: 2
   , effectSelectorIds: NA.range 0 (effectSelectorCount - 1)
@@ -92,7 +92,7 @@ render state =
       HH.div_
         [ HH.text "Failed to load"
         ]
-    Loaded { armory, teams, maxCharacterCount, effectSelectorIds } ->
+    Loaded { db, teams, maxCharacterCount, effectSelectorIds } ->
       HH.section [ classes' "hero is-fullheight" ]
         [ HH.section [ classes' "section" ]
             -- Contains all the effect selectors + the plus button
@@ -105,7 +105,7 @@ render state =
                               _effectSelector
                               effectSelectorId
                               EffectSelector.component
-                              { armory
+                              { db
                               , effectTypeMb: Nothing
                               , canBeDeleted: NA.length effectSelectorIds > 1
                               }
@@ -153,7 +153,7 @@ render state =
                     [ HH.text "Must have: "
                     ]
                 ] <>
-                  ( armory.allCharacterNames # Arr.fromFoldable <#> \name ->
+                  ( db.allCharacterNames # Arr.fromFoldable <#> \name ->
                       HH.div [ classes' "column is-narrow" ]
                         [ HH.label [ classes' "checkbox" ]
                             [ HH.input
@@ -208,11 +208,11 @@ handleAction :: forall o. Action → H.HalogenM State Action Slots o Aff Unit
 handleAction = case _ of
   Initialize -> do
     H.liftAff SheetsApi.load
-    H.liftAff Armory.init >>= case _ of
-      Just armory -> do
-        let initialState = mkInitialLoadedState armory
-        updateTeams initialState <#> Loaded >>= H.put
+    H.liftAff Db.init >>= case _ of
       Nothing -> H.put FailedToLoad
+      Just db -> do
+        let initialState = mkInitialLoadedState db
+        updateTeams initialState <#> Loaded >>= H.put
   HandleEffectSelector effectSelectorId output ->
     case output of
       EffectSelector.RaiseSelectionChanged -> do
@@ -281,7 +281,7 @@ updateTeams state = do
         H.request _effectSelector effectSelectorId EffectSelector.GetFilter
   let
     teams =
-      Search.applyFilters filters state.armory
+      Search.applyFilters filters state.db
         # Search.search state.maxCharacterCount
         # Search.filterMustHaveChars state.mustHaveChars
         # Search.filterDuplicates
@@ -310,9 +310,9 @@ setWeaponIgnored weaponName ignored state = do
             Nothing -> unsafeCrashWith $ "Attempted to set 'ignored' flag, but weapon was not found: " <> display weaponName
         )
         weaponName
-        state.armory.allWeapons
+        state.db.allWeapons
 
-  let state' = state { armory { allWeapons = updatedAllWeapons } }
-  Console.log "Saving armory to cache"
-  Armory.writeToCache state'.armory
+  let state' = state { db { allWeapons = updatedAllWeapons } }
+  Console.log "Saving db to cache"
+  Db.writeToCache state'.db
   pure state'

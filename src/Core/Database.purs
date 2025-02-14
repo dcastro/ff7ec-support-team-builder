@@ -1,4 +1,4 @@
-module Core.Database (init, createDb) where
+module Core.Database (init, createDb, writeToCache) where
 
 import Core.Database.VLatest2
 import Prelude

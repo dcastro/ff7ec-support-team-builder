@@ -2,10 +2,10 @@ module App.Results2 where
 
 import Prelude
 
-import Core.Database.VLatest
+import Core.Database.VLatest2
 import Core.Display (display)
-import Core.Weapons.Search (AssignmentResult)
-import Core.Weapons.Search as Search
+import Core.Weapons.Search2 (AssignmentResult)
+import Core.Weapons.Search2 as Search
 import Data.Array as Arr
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
@@ -14,7 +14,7 @@ import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
-import HtmlUtils (classes', mkTooltipForWeapon, tooltip)
+import HtmlUtils2 (classes', mkTooltipForWeapon, tooltip)
 
 type Slot id = forall query. H.Slot query Output id
 
@@ -56,19 +56,19 @@ render state =
                     ]
                 ]
                   <>
-                    ( Search.getEquipedWeapons character <#> \weapon ->
+                    ( Search.getEquipedWeapons character <#> \equipedWeapon ->
                         HH.div [ classes' "column is-two-fifths" ]
                           [ HH.div [ classes' "columns is-mobile is-centered" ]
                               [ HH.div [ classes' "column is-narrow" ]
-                                  [ HH.img [ HP.src (display weapon.weapon.image), classes' "image is-32x32" ]
+                                  [ HH.img [ HP.src (display equipedWeapon.weaponData.weapon.image), classes' "image is-32x32" ]
                                   ]
                               , HH.div [ classes' "column is-narrow" ]
                                   [ HH.span
-                                      [ tooltip (mkTooltipForWeapon weapon.weapon), classes' "has-tooltip-top" ]
-                                      [ HH.text (display weapon.weapon.name)
+                                      [ tooltip (mkTooltipForWeapon equipedWeapon.weaponData.weapon), classes' "has-tooltip-top" ]
+                                      [ HH.text (display equipedWeapon.weaponData.weapon.name)
                                       ]
                                   , HH.span
-                                      [ tooltip "Ignore weapon", HE.onClick \_ -> IgnoreWeapon weapon.weapon.name ]
+                                      [ tooltip "Ignore weapon", HE.onClick \_ -> IgnoreWeapon equipedWeapon.weaponData.weapon.name ]
                                       [ HH.i
                                           [ classes' "fas fa-delete-left ml-2"
                                           ]
@@ -81,7 +81,7 @@ render state =
                     )
     ]
 
-mkTooltip :: ArmoryWeapon -> String
+mkTooltip :: Weapon -> String
 mkTooltip weapon =
   "OB0:\n" <> display weapon.ob0.description
     <> "\n\nOB6:\n"

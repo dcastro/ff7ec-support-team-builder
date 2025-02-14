@@ -23,7 +23,6 @@ import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Newtype (unwrap)
 import Data.Set as Set
-import Data.String.NonEmpty as NES
 import Data.Time.Duration (Hours(..))
 import Data.Traversable (for_)
 import Effect.Aff (Aff)
@@ -136,11 +135,10 @@ insertWeapon weapon existingWeapons db =
   insert :: Db -> Db
   insert db = do
     let distinctObs = getDistinctObs weapon
-    let ignored = if NES.toString weapon.source == "Event" then true else false
     let
       newWeapon =
         { weapon
-        , ignored
+        , ignored: false
         , distinctObs
         , ownedOb: Just $ pickOb6 distinctObs
         }

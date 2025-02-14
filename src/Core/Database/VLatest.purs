@@ -6,7 +6,7 @@ import Core.Display (class Display, display)
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
-import Data.Maybe (Maybe)
+import Data.Maybe (Maybe(..))
 import Data.Newtype (class Newtype, unwrap)
 import Data.Set (Set)
 import Data.Show.Generic (genericShow)
@@ -58,7 +58,7 @@ type Weapon =
   , cureAllAbility :: Boolean
   }
 
-type ObRange =
+newtype ObRange = ObRange
   { from :: FromOb
   , to :: Maybe ToOb
   }
@@ -196,6 +196,7 @@ derive newtype instance Eq Duration
 derive newtype instance Eq Extension
 derive newtype instance Eq CharacterName
 derive newtype instance Eq WeaponName
+derive newtype instance Eq ObRange
 
 derive instance Ord Potency
 derive instance Ord EffectType
@@ -208,6 +209,7 @@ derive newtype instance Ord Duration
 derive newtype instance Ord Extension
 derive newtype instance Ord CharacterName
 derive newtype instance Ord WeaponName
+derive newtype instance Ord ObRange
 
 derive instance Newtype Percentage _
 derive instance Newtype Duration _
@@ -238,6 +240,7 @@ derive newtype instance Show Duration
 derive newtype instance Show Extension
 derive newtype instance Show CharacterName
 derive newtype instance Show WeaponName
+derive newtype instance Show ObRange
 
 instance WriteForeign Range where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
@@ -262,6 +265,7 @@ derive newtype instance WriteForeign Duration
 derive newtype instance WriteForeign Extension
 derive newtype instance WriteForeign CharacterName
 derive newtype instance WriteForeign WeaponName
+derive newtype instance WriteForeign ObRange
 
 instance ReadForeign Range where
   readImpl = J.genericReadForeignEnum Enum.defaultOptions
@@ -286,6 +290,7 @@ derive newtype instance ReadForeign Duration
 derive newtype instance ReadForeign Extension
 derive newtype instance ReadForeign CharacterName
 derive newtype instance ReadForeign WeaponName
+derive newtype instance ReadForeign ObRange
 
 instance Display WeaponName where
   display = display <<< unwrap
@@ -327,3 +332,23 @@ instance Display FilterEffectType where
 
 allFilterEffectTypes :: Array FilterEffectType
 allFilterEffectTypes = Utils.listEnum
+
+instance Display ObRange where
+  display (ObRange { from, to }) =
+    case to of
+      Nothing -> "OB" <> displayFrom from
+      Just to -> "OB" <> displayFrom from <> "-" <> displayTo to
+
+    where
+    displayFrom :: FromOb -> String
+    displayFrom = case _ of
+      FromOb0 -> "0"
+      FromOb1 -> "1"
+      FromOb6 -> "6"
+      FromOb10 -> "10"
+
+    displayTo :: ToOb -> String
+    displayTo = case _ of
+      ToOb5 -> "5"
+      ToOb9 -> "9"
+      ToOb10 -> "10"

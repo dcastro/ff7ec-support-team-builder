@@ -17,7 +17,7 @@ import Effect.Aff (error)
 import Google.SheetsApi (GetSheetResult)
 import Node.Encoding as Node
 import Node.FS.Aff as Node
-import Test.Utils as T
+import Test.Utils2 as T
 import Utils (MapAsArray(..))
 import Utils as Utils
 import Yoga.JSON as J

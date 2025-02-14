@@ -23,6 +23,7 @@ import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Newtype (unwrap)
 import Data.Set as Set
+import Data.String.NonEmpty as NES
 import Data.Time.Duration (Hours(..))
 import Data.Traversable (for_)
 import Effect.Aff (Aff)
@@ -135,10 +136,11 @@ insertWeapon weapon existingWeapons db =
   insert :: Db -> Db
   insert db = do
     let distinctObs = getDistinctObs weapon
+    let ignored = if NES.toString weapon.source == "Event" then true else false
     let
       newWeapon =
         { weapon
-        , ignored: false
+        , ignored
         , distinctObs
         , ownedOb: Just $ pickOb6 distinctObs
         }
@@ -186,7 +188,23 @@ type GroupEntry =
 
 groupsForWeapon :: Weapon -> LazyList.List GroupEntry
 groupsForWeapon weapon = do
-  LazyList.catMaybes $ unwrap groupsForWeapon'
+  let entries = LazyList.catMaybes $ unwrap groupsForWeapon'
+
+  -- NOTE: Aerith's "Umbrella" does Single Target Heal and has a Cure All S. Ability.
+  -- So we need to remove the entry with `range: SingleTarget` before adding an entry with `range: All`
+  if weapon.cureAllAbility then
+    entries
+      # LazyList.filter (\e -> e.effectType /= FilterHeal)
+      # LazyList.cons
+          { effectType: FilterHeal
+          , groupedWeapon:
+              { weaponName: weapon.name
+              , range: All
+              , allPotencies: Nothing
+              }
+          }
+  else entries
+
   where
   groupsForWeapon' :: ZipList (Maybe GroupEntry)
   groupsForWeapon' = ado

@@ -2,7 +2,7 @@ module HtmlUtils2 where
 
 import Prelude
 
-import Core.Database.VLatest (ArmoryWeapon)
+import Core.Database.VLatest2 (Weapon)
 import Core.Display (display)
 import Data.String.Utils as String
 import Halogen (AttrName(..), ClassName(..))
@@ -17,7 +17,7 @@ classes' str =
 tooltip :: forall r i. String -> IProp r i
 tooltip text = HH.attr (AttrName "data-tooltip") text
 
-mkTooltipForWeapon :: ArmoryWeapon -> String
+mkTooltipForWeapon :: Weapon -> String
 mkTooltipForWeapon weapon =
   cureAllNote
     <> "OB0:\n"

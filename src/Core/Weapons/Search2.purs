@@ -3,7 +3,7 @@ module Core.Weapons.Search2 where
 import Core.Database.VLatest2
 import Prelude
 
-import Core.Display (display)
+import Core.Display (class Display, display)
 import Data.Array as Arr
 import Data.Foldable as F
 import Data.Function (on)
@@ -18,6 +18,7 @@ import Data.Set as Set
 import Data.Show.Generic (genericShow)
 import Data.String.NonEmpty as NES
 import Utils (unsafeFromJust)
+import Utils as Utils
 import Yoga.JSON (class ReadForeign, class WriteForeign)
 import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
@@ -44,6 +45,15 @@ instance WriteForeign FilterRange where
 
 instance ReadForeign FilterRange where
   readImpl = J.genericReadForeignEnum Enum.defaultOptions
+
+instance Display FilterRange where
+  display = case _ of
+    FilterAll -> "All"
+    FilterSingleTargetOrAll -> "Single Target / All"
+    FilterSelfOrSingleTargetOrAll -> "Self / Single Target / All"
+
+allFilterRanges :: Array FilterRange
+allFilterRanges = Utils.listEnum
 
 type FilterResult =
   { filter :: Filter

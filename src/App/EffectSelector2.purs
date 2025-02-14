@@ -1,11 +1,12 @@
 module App.EffectSelector2 where
 
+import Core.Database.VLatest2
 import Prelude
 
+import Core.Database.VLatest2 as Db
 import Core.Display (display)
-import Core.Weapons.Search as Search
-import Core.Database.VLatest
-import Core.Database.VLatest as Db
+import Core.Weapons.Search2 (FilterRange, Filter)
+import Core.Weapons.Search2 as Search
 import Data.Array as Arr
 import Data.Bounded.Generic (genericBottom)
 import Data.Maybe (Maybe(..))
@@ -16,24 +17,23 @@ import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties (InputType(..))
 import Halogen.HTML.Properties as HP
-import HtmlUtils (classes', displayIf, mkTooltipForWeapon, tooltip)
+import HtmlUtils2 (classes', displayIf, mkTooltipForWeapon, tooltip)
 import Utils (unsafeFromJust)
 import Web.UIEvent.MouseEvent (MouseEvent)
 
 type Slot id = H.Slot Query Output id
 
 type Input =
-  { armory :: Armory
+  { db :: Db
   , effectTypeMb :: Maybe FilterEffectType
   , canBeDeleted :: Boolean
   }
 
 type State =
-  { armory ::
-      Armory
+  { db :: Db
   , selectedEffectType :: Maybe FilterEffectType
   , selectedRange :: FilterRange
-  , matchingWeapons :: Array ArmoryWeapon
+  , matchingWeapons :: Array WeaponData
   , canBeDeleted :: Boolean
   }
 
@@ -55,9 +55,9 @@ data Query a = GetFilter (Filter -> a)
 component :: H.Component Query Input Output Aff
 component =
   H.mkComponent
-    { initialState: \{ armory, effectTypeMb, canBeDeleted } ->
+    { initialState: \{ db, effectTypeMb, canBeDeleted } ->
         updateMatchingWeapons
-          { armory
+          { db
           , selectedEffectType: effectTypeMb
           , selectedRange: genericBottom
           , matchingWeapons: []
@@ -104,7 +104,7 @@ render state =
                             [ HH.select
                                 [ HE.onSelectedIndexChange SelectedRange
                                 ]
-                                ( Db.allFilterRanges <#> \filterRange ->
+                                ( Search.allFilterRanges <#> \filterRange ->
                                     HH.option_ [ HH.text $ display filterRange ]
                                 )
                             ]
@@ -132,19 +132,19 @@ render state =
                             ]
                         ]
                           <>
-                            ( state.matchingWeapons <#> \weapon ->
+                            ( state.matchingWeapons <#> \weaponData ->
                                 HH.tr_
-                                  [ HH.img [ HP.src (display weapon.image), classes' "image is-32x32" ]
+                                  [ HH.img [ HP.src (display weaponData.weapon.image), classes' "image is-32x32" ]
                                   , HH.td
-                                      [ tooltip (mkTooltipForWeapon weapon), classes' "has-tooltip-right" ]
-                                      [ HH.text $ display weapon.name ]
-                                  , HH.td_ [ HH.text $ display weapon.character ]
+                                      [ tooltip (mkTooltipForWeapon weaponData.weapon), classes' "has-tooltip-right" ]
+                                      [ HH.text $ display weaponData.weapon.name ]
+                                  , HH.td_ [ HH.text $ display weaponData.weapon.character ]
                                   , HH.td_
                                       [ HH.span [ classes' "checkbox " ]
                                           [ HH.input
                                               [ HP.type_ InputCheckbox
-                                              , HP.checked weapon.ignored
-                                              , HE.onChecked \ignored -> CheckedIgnored weapon.name ignored
+                                              , HP.checked weaponData.ignored
+                                              , HE.onChecked \ignored -> CheckedIgnored weaponData.weapon.name ignored
                                               ]
                                           ]
                                       ]
@@ -177,7 +177,7 @@ handleAction = case _ of
     H.raise RaiseSelectionChanged
 
   SelectedRange idx -> do
-    let filterRange = Arr.index Db.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
+    let filterRange = Arr.index Search.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
     Console.log $ "idx " <> show idx <> ", selected: " <> display filterRange
     H.modify_ \s -> s { selectedRange = filterRange }
       # updateMatchingWeapons
@@ -196,7 +196,7 @@ handleAction = case _ of
   Receive input -> do
     H.modify_ \state ->
       updateMatchingWeapons $ state
-        { armory = input.armory
+        { db = input.db
         , canBeDeleted = input.canBeDeleted
         }
 
@@ -208,7 +208,7 @@ updateMatchingWeapons state = do
   case state.selectedEffectType of
     Just effectType -> do
       let filter = { effectType, range: state.selectedRange } :: Filter
-      let filterResult = Search.findMatchingWeapons filter state.armory
+      let filterResult = Search.findMatchingWeapons filter state.db
       let matchingWeapons = filterResult.matchingWeapons <#> \{ weapon } -> weapon
       state { matchingWeapons = matchingWeapons }
     Nothing -> state { matchingWeapons = [] }

@@ -1,12 +1,12 @@
 module Test.Core.Weapons.DatabaseSpec where
 
-import Core.Weapons.Parser2
+import Core.Weapons.Parser
 import Prelude
 import Test.Spec
 
 import Control.Monad.Error.Class (throwError)
 import Core.Database as Db
-import Core.Database.VLatest2
+import Core.Database.VLatest
 import Data.Array as Arr
 import Data.Either (Either(..))
 import Data.List.Lazy as LazyList
@@ -17,7 +17,7 @@ import Effect.Aff (error)
 import Google.SheetsApi (GetSheetResult)
 import Node.Encoding as Node
 import Node.FS.Aff as Node
-import Test.Utils2 as T
+import Test.Utils as T
 import Utils (MapAsArray(..))
 import Utils as Utils
 import Yoga.JSON as J

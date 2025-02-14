@@ -1,13 +1,13 @@
 module Core.Database (init, createDb, writeToCache) where
 
-import Core.Database.VLatest2
+import Core.Database.VLatest
 import Prelude
 
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Control.Monad.Except (runExceptT)
 import Control.Monad.Rec.Class (class MonadRec)
 import Core.Display (display)
-import Core.Weapons.Parser2 as P
+import Core.Weapons.Parser as P
 import Core.WebStorage as WS
 import Data.Array as Arr
 import Data.Array.NonEmpty (NonEmptyArray)

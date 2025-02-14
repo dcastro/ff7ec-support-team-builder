@@ -1,12 +1,12 @@
-module Test.Core.Weapons.SearchSpec2 (spec) where
+module Test.Core.Weapons.SearchSpec (spec) where
 
-import Core.Database.VLatest2
+import Core.Database.VLatest
 import Prelude
 import Test.Spec
-import Test.Utils2
+import Test.Utils
 
-import Core.Weapons.Search2 (AssignmentResult, Character, Filter, FilterRange(..), emptyTeam)
-import Core.Weapons.Search2 as Search
+import Core.Weapons.Search (AssignmentResult, Character, Filter, FilterRange(..), emptyTeam)
+import Core.Weapons.Search as Search
 import Data.Array as Arr
 import Data.Array.NonEmpty as NAR
 import Data.Map as Map
@@ -17,7 +17,7 @@ import Data.String.NonEmpty (NonEmptyString)
 import Data.String.NonEmpty as NES
 import Data.Tuple (Tuple(..))
 import Test.Spec.Assertions (shouldEqual)
-import Test.Utils2 as T
+import Test.Utils as T
 
 spec :: Spec Unit
 spec =

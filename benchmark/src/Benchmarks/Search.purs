@@ -1,14 +1,14 @@
 module Benchmarks.Search where
 
-import Core.Database.VLatest2
+import Core.Database.VLatest
 import Prelude
 
 import Benchotron.Core (Benchmark, benchFn, mkBenchmark)
 import Control.Monad.Error.Class (throwError)
 import Core.Database as Db
-import Core.Weapons.Parser2 (parseWeapons)
-import Core.Weapons.Search2 (AssignmentResult, Filter, FilterRange(..))
-import Core.Weapons.Search2 as Search
+import Core.Weapons.Parser (parseWeapons)
+import Core.Weapons.Search (AssignmentResult, Filter, FilterRange(..))
+import Core.Weapons.Search as Search
 import Data.Either (Either(..))
 import Data.Map as Map
 import Data.Set as Set

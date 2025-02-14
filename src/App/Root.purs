@@ -2,14 +2,14 @@ module App.Root where
 
 import Prelude
 
-import App.EffectSelector2 as EffectSelector
-import App.Results2 as Result
-import App.Results2 as Results
-import Core.Database.VLatest2
+import App.EffectSelector as EffectSelector
+import App.Results as Result
+import App.Results as Results
+import Core.Database.VLatest
 import Core.Database as Db
 import Core.Display (display)
-import Core.Weapons.Search2 (AssignmentResult)
-import Core.Weapons.Search2 as Search
+import Core.Weapons.Search (AssignmentResult)
+import Core.Weapons.Search as Search
 import Data.Array as Arr
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Array.NonEmpty as NA
@@ -27,7 +27,7 @@ import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties (InputType(..))
 import Halogen.HTML.Properties as HP
-import HtmlUtils2 (classes', displayIf)
+import HtmlUtils (classes', displayIf)
 import Partial.Unsafe (unsafeCrashWith)
 import Type.Proxy (Proxy(..))
 import Utils (unsafeFromJust)

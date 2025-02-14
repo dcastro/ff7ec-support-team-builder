@@ -1,11 +1,11 @@
-module Test.Utils2 where
+module Test.Utils where
 
-import Core.Weapons.Parser2
+import Core.Weapons.Parser
 import Prelude
 
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Core.Database as Database
-import Core.Database.VLatest2 (Db, CharacterName(..))
+import Core.Database.VLatest (Db, CharacterName(..))
 import Data.Either (Either(..))
 import Data.Foldable (class Foldable)
 import Data.Map as Map

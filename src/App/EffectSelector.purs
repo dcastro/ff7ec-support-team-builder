@@ -1,12 +1,12 @@
-module App.EffectSelector2 where
+module App.EffectSelector where
 
-import Core.Database.VLatest2
+import Core.Database.VLatest
 import Prelude
 
-import Core.Database.VLatest2 as Db
+import Core.Database.VLatest as Db
 import Core.Display (display)
-import Core.Weapons.Search2 (FilterRange, Filter)
-import Core.Weapons.Search2 as Search
+import Core.Weapons.Search (FilterRange, Filter)
+import Core.Weapons.Search as Search
 import Data.Array as Arr
 import Data.Bounded.Generic (genericBottom)
 import Data.Maybe (Maybe(..))
@@ -17,7 +17,7 @@ import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties (InputType(..))
 import Halogen.HTML.Properties as HP
-import HtmlUtils2 (classes', displayIf, mkTooltipForWeapon, tooltip)
+import HtmlUtils (classes', displayIf, mkTooltipForWeapon, tooltip)
 import Utils (unsafeFromJust)
 import Web.UIEvent.MouseEvent (MouseEvent)
 

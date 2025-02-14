@@ -1,8 +1,8 @@
-module HtmlUtils2 where
+module HtmlUtils where
 
 import Prelude
 
-import Core.Database.VLatest2 (Weapon)
+import Core.Database.VLatest (Weapon)
 import Core.Display (display)
 import Data.String.Utils as String
 import Halogen (AttrName(..), ClassName(..))

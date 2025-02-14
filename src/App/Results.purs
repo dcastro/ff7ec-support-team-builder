@@ -1,11 +1,11 @@
-module App.Results2 where
+module App.Results where
 
 import Prelude
 
-import Core.Database.VLatest2
+import Core.Database.VLatest
 import Core.Display (display)
-import Core.Weapons.Search2 (AssignmentResult)
-import Core.Weapons.Search2 as Search
+import Core.Weapons.Search (AssignmentResult)
+import Core.Weapons.Search as Search
 import Data.Array as Arr
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
@@ -14,7 +14,7 @@ import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
-import HtmlUtils2 (classes', mkTooltipForWeapon, tooltip)
+import HtmlUtils (classes', mkTooltipForWeapon, tooltip)
 
 type Slot id = forall query. H.Slot query Output id
 

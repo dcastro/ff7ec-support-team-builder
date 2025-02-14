@@ -1,4 +1,4 @@
-module Core.Database.VLatest2 where
+module Core.Database.VLatest where
 
 import Prelude
 

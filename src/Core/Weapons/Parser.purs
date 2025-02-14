@@ -1,6 +1,6 @@
-module Core.Weapons.Parser2 where
+module Core.Weapons.Parser where
 
-import Core.Database.VLatest2
+import Core.Database.VLatest
 import Prelude
 
 import Control.Alt ((<|>))

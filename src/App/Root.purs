@@ -27,7 +27,7 @@ import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties (InputType(..))
 import Halogen.HTML.Properties as HP
-import HtmlUtils (classes', displayIf)
+import HtmlUtils2 (classes', displayIf)
 import Partial.Unsafe (unsafeCrashWith)
 import Type.Proxy (Proxy(..))
 import Utils (unsafeFromJust)

@@ -1,14 +1,14 @@
 module Benchmarks.Search where
 
-import Core.Database.VLatest
+import Core.Database.VLatest2
 import Prelude
 
 import Benchotron.Core (Benchmark, benchFn, mkBenchmark)
 import Control.Monad.Error.Class (throwError)
-import Core.Armory as Armory
-import Core.Weapons.Parser (parseWeapons)
-import Core.Weapons.Search (AssignmentResult)
-import Core.Weapons.Search as Search
+import Core.Database as Db
+import Core.Weapons.Parser2 (parseWeapons)
+import Core.Weapons.Search2 (AssignmentResult, Filter, FilterRange(..))
+import Core.Weapons.Search2 as Search
 import Data.Either (Either(..))
 import Data.Map as Map
 import Data.Set as Set
@@ -45,17 +45,17 @@ input =
   , { effectType: FilterMatkDown, range: FilterSingleTargetOrAll }
   ]
 
-search1 :: Armory -> Array Filter -> Array AssignmentResult
-search1 armory filters = do
+search1 :: Db -> Array Filter -> Array AssignmentResult
+search1 db filters = do
   let
     maxCharacterCount = 2
     mustHaveChars = Set.empty
-  Search.applyFilters filters armory
+  Search.applyFilters filters db
     # Search.search maxCharacterCount
     # Search.filterMustHaveChars mustHaveChars
     # Search.filterDuplicates
 
-loadTestDb :: Aff Armory
+loadTestDb :: Aff Db
 loadTestDb = do
   sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
   sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of
@@ -66,4 +66,4 @@ loadTestDb = do
             <> Utils.renderJsonErr errs
   let { weapons, errors: _ } = parseWeapons sourceWeapons
 
-  Armory.createArmory weapons Map.empty
+  Db.createDb weapons Map.empty

@@ -189,13 +189,10 @@ groupsForWeapon :: Weapon -> List.List GroupEntry
 groupsForWeapon weapon = do
   let entries = LazyList.catMaybes $ unwrap groupsForWeapon'
 
-  -- NOTE: Aerith's "Umbrella" does Single Target Heal and has a Cure All S. Ability.
-  -- So we need to remove the entry with `range: SingleTarget` before adding an entry with `range: All`
   let
     entries' =
       if weapon.cureAllAbility then
         entries
-          # LazyList.filter (\e -> e.effectType /= FilterHeal)
           # LazyList.cons
               { effectType: FilterHeal
               , groupedWeapon:

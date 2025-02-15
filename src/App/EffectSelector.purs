@@ -8,6 +8,7 @@ import Core.Display (display)
 import Core.Weapons.Search (FilterRange, Filter)
 import Core.Weapons.Search as Search
 import Data.Array as Arr
+import Data.Array.NonEmpty as NAR
 import Data.Bounded.Generic (genericBottom)
 import Data.Maybe (Maybe(..))
 import Effect.Aff (Aff)
@@ -40,12 +41,14 @@ type State =
 data Output
   = RaiseSelectionChanged
   | RaiseCheckedIgnored WeaponName Boolean
+  | RaiseSetOwnedOb WeaponName Int
   | RaiseClosed
 
 data Action
   = SelectedEffectType Int
   | SelectedRange Int
   | CheckedIgnored WeaponName Boolean
+  | SetOwnedOb WeaponName Int
   | Initialize
   | Receive Input
   | Close MouseEvent
@@ -128,7 +131,8 @@ render state =
                             [ HH.th_ []
                             , HH.th_ [ HH.text "Weapon" ]
                             , HH.th_ [ HH.text "Character" ]
-                            , HH.th_ [ HH.text "Ignored?" ]
+                            , HH.th_ [ HH.text "Owned" ]
+                            , HH.th_ [ HH.text "Ignored" ]
                             ]
                         ]
                           <>
@@ -139,6 +143,24 @@ render state =
                                       [ tooltip (mkTooltipForWeapon weaponData.weapon), classes' "has-tooltip-right" ]
                                       [ HH.text $ display weaponData.weapon.name ]
                                   , HH.td_ [ HH.text $ display weaponData.weapon.character ]
+                                  , HH.td_
+                                      [ HH.div [ classes' "select" ]
+                                          [ HH.select
+                                              [ HE.onSelectedIndexChange (SetOwnedOb weaponData.weapon.name)
+                                              ]
+                                              ( [ HH.option
+                                                    [ HP.selected (weaponData.ownedOb == Nothing) ]
+                                                    [ HH.text "No" ]
+                                                ]
+                                                  <>
+                                                    ( NAR.toArray weaponData.distinctObs <#> \obRange ->
+                                                        HH.option
+                                                          [ HP.selected (weaponData.ownedOb == Just obRange) ]
+                                                          [ HH.text $ display obRange ]
+                                                    )
+                                              )
+                                          ]
+                                      ]
                                   , HH.td_
                                       [ HH.span [ classes' "checkbox " ]
                                           [ HH.input
@@ -185,6 +207,9 @@ handleAction = case _ of
 
   CheckedIgnored weaponName ignored -> do
     H.raise $ RaiseCheckedIgnored weaponName ignored
+
+  SetOwnedOb weaponName ignored -> do
+    H.raise $ RaiseSetOwnedOb weaponName ignored
 
   Initialize -> do
     -- When this EffectSelector is done rendering, if the initial state has an effect type,

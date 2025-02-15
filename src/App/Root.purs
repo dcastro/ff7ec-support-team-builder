@@ -1,11 +1,11 @@
 module App.Root where
 
+import Core.Database.VLatest
 import Prelude
 
 import App.EffectSelector as EffectSelector
 import App.Results as Result
 import App.Results as Results
-import Core.Database.VLatest
 import Core.Database as Db
 import Core.Display (display)
 import Core.Weapons.Search (AssignmentResult)
@@ -13,6 +13,7 @@ import Core.Weapons.Search as Search
 import Data.Array as Arr
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Array.NonEmpty as NA
+import Data.Array.NonEmpty as NAR
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Set (Set)
@@ -217,9 +218,15 @@ handleAction = case _ of
     case output of
       EffectSelector.RaiseSelectionChanged -> do
         modifyLoadedState updateTeams
+
       EffectSelector.RaiseCheckedIgnored weaponName ignored -> do
         modifyLoadedState \state -> do
           state <- setWeaponIgnored weaponName ignored state
+          updateTeams state
+
+      EffectSelector.RaiseSetOwnedOb weaponName obRangeIndex -> do
+        modifyLoadedState \state -> do
+          state <- setOwnedOb weaponName obRangeIndex state
           updateTeams state
 
       EffectSelector.RaiseClosed -> do
@@ -308,6 +315,39 @@ setWeaponIgnored weaponName ignored state = do
         ( case _ of
             Just existingWeapon -> Just existingWeapon { ignored = ignored }
             Nothing -> unsafeCrashWith $ "Attempted to set 'ignored' flag, but weapon was not found: " <> display weaponName
+        )
+        weaponName
+        state.db.allWeapons
+
+  let state' = state { db { allWeapons = updatedAllWeapons } }
+  Console.log "Saving db to cache"
+  Db.writeToCache state'.db
+  pure state'
+
+setOwnedOb :: forall m. MonadAff m => WeaponName -> Int -> LoadedState -> m LoadedState
+setOwnedOb weaponName obRangeIndex state = do
+  Console.log $ "Weapon " <> display weaponName <> " owned OB: " <> show obRangeIndex
+  let
+    updatedAllWeapons =
+      Map.alter
+        ( case _ of
+            Just existingWeapon -> do
+              let
+                ownedOb =
+                  if obRangeIndex == 0 then
+                    Nothing
+                  else
+                    Just $ NAR.index existingWeapon.distinctObs (obRangeIndex - 1)
+                      `unsafeFromJust`
+                        ( "Attempted to set owned OB to #"
+                            <> show obRangeIndex
+                            <> " for weapon "
+                            <> display weaponName
+                            <> ", but weapon has fewer distinct OBs: "
+                            <> show (NAR.length existingWeapon.distinctObs)
+                        )
+              Just existingWeapon { ownedOb = ownedOb }
+            Nothing -> unsafeCrashWith $ "Attempted to set owned OB, but weapon was not found: " <> display weaponName
         )
         weaponName
         state.db.allWeapons

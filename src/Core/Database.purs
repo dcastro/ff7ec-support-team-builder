@@ -83,8 +83,8 @@ init = do
 getDistinctObs :: Weapon -> NonEmptyArray ObRange
 getDistinctObs _ =
   -- TODO
-  NAR.singleton (ObRange { from: FromOb0, to: Just ToOb5 })
-    # NAR.cons (ObRange { from: FromOb6, to: Just ToOb10 })
+  NAR.singleton (ObRange { from: FromOb6, to: Just ToOb10 })
+    # NAR.cons (ObRange { from: FromOb0, to: Just ToOb5 })
 
 pickOb6 :: NonEmptyArray ObRange -> ObRange
 pickOb6 _ = do

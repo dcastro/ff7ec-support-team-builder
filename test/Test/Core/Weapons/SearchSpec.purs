@@ -53,20 +53,20 @@ combinationsSpec = do
         teams = Search.search 3
           [ { filter: filter1
             , matchingWeapons:
-                [ { weapon: weapon11, potencies: potencies11 }
-                , { weapon: weapon12, potencies: potencies12 }
-                , { weapon: weapon13, potencies: potencies13 }
+                [ { weapon: weapon11, potencies: potencies11, matchesFilters: true }
+                , { weapon: weapon12, potencies: potencies12, matchesFilters: true }
+                , { weapon: weapon13, potencies: potencies13, matchesFilters: true }
                 ]
             }
           , { filter: filter2
             , matchingWeapons:
-                [ { weapon: weapon21, potencies: potencies21 }
-                , { weapon: weapon22, potencies: potencies22 }
+                [ { weapon: weapon21, potencies: potencies21, matchesFilters: true }
+                , { weapon: weapon22, potencies: potencies22, matchesFilters: true }
                 ]
             }
           , { filter: filter3
             , matchingWeapons:
-                [ { weapon: weapon31, potencies: potencies31 }
+                [ { weapon: weapon31, potencies: potencies31, matchesFilters: true }
                 ]
             }
           ]
@@ -115,14 +115,14 @@ combinationsSpec = do
         combs = Search.search 3
           [ { filter: filter1
             , matchingWeapons:
-                [ { weapon: weapon11, potencies: potencies11 }
-                , { weapon: weapon12, potencies: potencies12 }
+                [ { weapon: weapon11, potencies: potencies11, matchesFilters: true }
+                , { weapon: weapon12, potencies: potencies12, matchesFilters: true }
                 ]
             }
           , { filter: filter2
             , matchingWeapons:
-                [ { weapon: weapon21, potencies: potencies21 }
-                , { weapon: weapon22, potencies: potencies22 }
+                [ { weapon: weapon21, potencies: potencies21, matchesFilters: true }
+                , { weapon: weapon22, potencies: potencies22, matchesFilters: true }
                 ]
             }
           , { filter: filter3
@@ -136,25 +136,25 @@ combinationsSpec = do
     it "returns no combinations when no effects were selected" do
       Search.search 3 [] `shouldEqualPretty` []
 
-    it "discards ignored weapons" do
+    it "discards unmatched weapons" do
       let
         teams = Search.search 3
           [ { filter: filter1
             , matchingWeapons:
-                [ { weapon: weapon11 { ignored = true }, potencies: potencies11 }
-                , { weapon: weapon12, potencies: potencies12 }
-                , { weapon: weapon13, potencies: potencies13 }
+                [ { weapon: weapon11, potencies: potencies11, matchesFilters: false }
+                , { weapon: weapon12, potencies: potencies12, matchesFilters: true }
+                , { weapon: weapon13, potencies: potencies13, matchesFilters: true }
                 ]
             }
           , { filter: filter2
             , matchingWeapons:
-                [ { weapon: weapon21, potencies: potencies21 }
-                , { weapon: weapon22, potencies: potencies22 }
+                [ { weapon: weapon21, potencies: potencies21, matchesFilters: true }
+                , { weapon: weapon22, potencies: potencies22, matchesFilters: true }
                 ]
             }
           , { filter: filter3
             , matchingWeapons:
-                [ { weapon: weapon31, potencies: potencies31 }
+                [ { weapon: weapon31, potencies: potencies31, matchesFilters: true }
                 ]
             }
           ]

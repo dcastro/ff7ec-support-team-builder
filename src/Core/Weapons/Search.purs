@@ -12,7 +12,7 @@ import Data.Function (on)
 import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
 import Data.Map as Map
-import Data.Maybe (Maybe(..), fromMaybe)
+import Data.Maybe (Maybe(..), fromMaybe, isJust)
 import Data.Newtype (unwrap)
 import Data.Ord.Down (Down(..))
 import Data.Set (Set)
@@ -67,6 +67,7 @@ type FilterResultWeapon =
   -- For a given effect, the potencies this weapon has for that effect,
   -- at the owned overboost level.
   , potencies :: Maybe Potencies
+  , matchesFilters :: Boolean
   }
 
 findMatchingWeapons :: Filter -> Db -> FilterResult
@@ -80,13 +81,22 @@ findMatchingWeapons filter db = do
             weapon = Map.lookup weaponName db.allWeapons
               `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter.effectType <> "' not found.")
 
-          ownedOb <- weapon.ownedOb
-
           matchingRanges <- matchRanges filter.range ranges
+
+          let
+            potencies =
+              case weapon.ownedOb of
+                Nothing -> Nothing
+                Just ownedOb -> do
+                  selectBestPotencies ownedOb matchingRanges
+
+            matchesFilters =
+              not weapon.ignored && isJust weapon.ownedOb
 
           Just
             { weapon
-            , potencies: selectBestPotencies ownedOb matchingRanges
+            , potencies
+            , matchesFilters
             }
 
   { filter
@@ -146,7 +156,7 @@ search maxCharacterCount filterResults =
       # Arr.foldr
           ( \(filterResult :: FilterResult) (teams :: Array AssignmentResult) -> do
               { weapon, potencies } <- filterResult.matchingWeapons
-                # discardIgnored
+                # discardUnmatched
 
               (team :: AssignmentResult) <- teams
 
@@ -157,8 +167,8 @@ search maxCharacterCount filterResults =
           ([ emptyTeam ] :: Array AssignmentResult)
       # Arr.sortBy (comparing $ scoreTeam >>> Down)
   where
-  discardIgnored :: Array FilterResultWeapon -> Array FilterResultWeapon
-  discardIgnored = Arr.filter \{ weapon } -> not weapon.ignored
+  discardUnmatched :: Array FilterResultWeapon -> Array FilterResultWeapon
+  discardUnmatched = Arr.filter \filterResultWeapon -> filterResultWeapon.matchesFilters
 
 emptyTeam :: AssignmentResult
 emptyTeam = { characters: Map.empty }

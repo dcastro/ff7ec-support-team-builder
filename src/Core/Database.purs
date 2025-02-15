@@ -16,6 +16,7 @@ import Data.DateTime (DateTime)
 import Data.DateTime as DateTime
 import Data.Either (Either(..), hush)
 import Data.Foldable as F
+import Data.List as List
 import Data.List.Lazy as LazyList
 import Data.List.ZipList (ZipList(..))
 import Data.Map (Map)
@@ -184,24 +185,31 @@ type GroupEntry =
   , groupedWeapon :: GroupedWeapon
   }
 
-groupsForWeapon :: Weapon -> LazyList.List GroupEntry
+groupsForWeapon :: Weapon -> List.List GroupEntry
 groupsForWeapon weapon = do
   let entries = LazyList.catMaybes $ unwrap groupsForWeapon'
 
   -- NOTE: Aerith's "Umbrella" does Single Target Heal and has a Cure All S. Ability.
   -- So we need to remove the entry with `range: SingleTarget` before adding an entry with `range: All`
-  if weapon.cureAllAbility then
-    entries
-      # LazyList.filter (\e -> e.effectType /= FilterHeal)
-      # LazyList.cons
-          { effectType: FilterHeal
-          , groupedWeapon:
-              { weaponName: weapon.name
-              , range: All
-              , allPotencies: Nothing
+  let
+    entries' =
+      if weapon.cureAllAbility then
+        entries
+          # LazyList.filter (\e -> e.effectType /= FilterHeal)
+          # LazyList.cons
+              { effectType: FilterHeal
+              , groupedWeapon:
+                  { weaponName: weapon.name
+                  , ranges:
+                      [ { range: All
+                        , allPotencies: Nothing
+                        }
+                      ]
+                  }
               }
-          }
-  else entries
+      else entries
+
+  mergeRanges entries'
 
   where
   groupsForWeapon' :: ZipList (Maybe GroupEntry)
@@ -217,10 +225,41 @@ groupsForWeapon weapon = do
         , groupedWeapon:
             { weaponName: weapon.name
             -- INVARIANT: this assumes an effect has the same range at all overboost levels.
-            , range: ob0.range
-            , allPotencies: potencies
+            , ranges:
+                [ { range: ob0.range
+                  , allPotencies: potencies
+                  }
+                ]
             }
         }
+
+  -- If there are many ranges for the same effect (e.g. Arctic Star has PATK Up SingleTarget & PATK Up Self),
+  -- this function will merge those `GroupEntry`s into a single one.
+  mergeRanges :: LazyList.List GroupEntry -> List.List GroupEntry
+  mergeRanges groupEntries = do
+    let
+      (merged :: Map FilterEffectType GroupEntry) =
+        LazyList.foldl
+          ( \map ge ->
+              Map.alter
+                ( case _ of
+                    Nothing -> Just ge
+                    Just existingGe ->
+                      Just $ existingGe
+                        { groupedWeapon
+                            { ranges =
+                                existingGe.groupedWeapon.ranges
+                                  <>
+                                    ge.groupedWeapon.ranges
+                            }
+                        }
+                )
+                ge.effectType
+                map
+          )
+          Map.empty
+          groupEntries
+    Map.values merged
 
   groupForWeaponEffect
     :: WeaponEffect

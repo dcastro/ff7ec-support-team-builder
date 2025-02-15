@@ -5,6 +5,8 @@ import Prelude
 
 import Core.Display (class Display, display)
 import Data.Array as Arr
+import Data.Array.NonEmpty (NonEmptyArray)
+import Data.Array.NonEmpty as NAR
 import Data.Foldable as F
 import Data.Function (on)
 import Data.Generic.Rep (class Generic)
@@ -62,7 +64,9 @@ type FilterResult =
 
 type FilterResultWeapon =
   { weapon :: WeaponData
-  , allPotencies :: Maybe AllPotencies
+  -- For a given effect, the potencies this weapon has for that effect,
+  -- at the owned overboost level.
+  , potencies :: Maybe Potencies
   }
 
 findMatchingWeapons :: Filter -> Db -> FilterResult
@@ -71,22 +75,50 @@ findMatchingWeapons filter db = do
     (weaponsForEffectType :: Array GroupedWeapon) = Map.lookup filter.effectType db.groupedByEffect # fromMaybe []
 
     (matchingWeapons :: Array FilterResultWeapon) = weaponsForEffectType
-      # Arr.mapMaybe \{ weaponName, range, allPotencies } -> do
+      # Arr.mapMaybe \{ weaponName, ranges } -> do
           let
             weapon = Map.lookup weaponName db.allWeapons
               `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter.effectType <> "' not found.")
 
-          if matchRange filter.range range then Just
-            { weapon
-            , allPotencies
+          ownedOb <- weapon.ownedOb
 
+          matchingRanges <- matchRanges filter.range ranges
+
+          Just
+            { weapon
+            , potencies: selectBestPotencies ownedOb matchingRanges
             }
-          else Nothing
+
   { filter
   , matchingWeapons
   }
 
   where
+
+  selectBestPotencies :: ObRange -> NonEmptyArray GroupedWeaponRange -> Maybe Potencies
+  selectBestPotencies ownedOb ranges = do
+    ranges
+      # NAR.toArray
+      # Arr.mapMaybe (selectPotenciesForOwnedOb ownedOb)
+      # F.maximumBy (compare `on` _.max <> compare `on` _.base)
+
+  selectPotenciesForOwnedOb :: ObRange -> GroupedWeaponRange -> Maybe Potencies
+  selectPotenciesForOwnedOb (ObRange ownedOb) range =
+    case range.allPotencies of
+      Nothing -> Nothing
+      Just allPotencies ->
+        case ownedOb.from of
+          FromOb0 -> Just allPotencies.ob0
+          FromOb1 -> Just allPotencies.ob1
+          FromOb6 -> Just allPotencies.ob6
+          FromOb10 -> Just allPotencies.ob10
+
+  matchRanges :: FilterRange -> Array GroupedWeaponRange -> Maybe (NonEmptyArray GroupedWeaponRange)
+  matchRanges filterRange ranges =
+    ranges
+      # Arr.filter (\r -> matchRange filterRange r.range)
+      # NAR.fromArray
+
   matchRange :: FilterRange -> Range -> Boolean
   matchRange =
     case _, _ of
@@ -113,12 +145,12 @@ search maxCharacterCount filterResults =
       # Arr.nubBy (compare `on` _.filter)
       # Arr.foldr
           ( \(filterResult :: FilterResult) (teams :: Array AssignmentResult) -> do
-              { weapon, allPotencies } <- filterResult.matchingWeapons
+              { weapon, potencies } <- filterResult.matchingWeapons
                 # discardIgnored
 
               (team :: AssignmentResult) <- teams
 
-              case assignWeapon maxCharacterCount { filter: filterResult.filter, allPotencies } weapon team of
+              case assignWeapon maxCharacterCount { filter: filterResult.filter, potencies } weapon team of
                 Just team -> [ team ]
                 Nothing -> []
           )
@@ -150,7 +182,7 @@ type EquipedWeapon =
 
 type EquipedWeaponFilter =
   { filter :: Filter
-  , allPotencies :: Maybe AllPotencies
+  , potencies :: Maybe Potencies
   }
 
 -- Returns `Nothing` if:
@@ -270,7 +302,7 @@ scoreTeam { characters } = do
   allPotencies = Arr.fromFoldable (Map.values characters)
     >>= getEquipedWeapons
     >>= _.matchedFilters
-    # Arr.mapMaybe (\equipedWeapon -> equipedWeapon.allPotencies <#> _.ob10)
+    # Arr.mapMaybe (\equipedWeapon -> equipedWeapon.potencies)
 
   characterCount = Map.size characters
 

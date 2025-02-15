@@ -26,3 +26,13 @@
   So having 2 characters with 1 weapon each, with high potency, is better than running Cait's Trumpet Shell.
 * By default, we ignore event weapons, since their effects have usually low potency.
   Including event weapons in the calculations usually leads to a lot of noise in the results.
+
+## Notable weapons
+
+List of weapons that escape the norm:
+
+* Most weapons, for each effect, have exactly 1 range/potencies.
+  Yuffie's Arctic Star, however, has PATK Up High SingleTarget + PATK Up Mid->High Self.
+  Silver Megaphone has PDEF Down Low SingleTarget + PDEF Down High SingleTarget (Condition: Critical Hit)
+* Most weapons have either a C.Ability with healing _or_ have a Cure All S. Ability.
+  But Aerith's "Umbrella" does Single Target Heal _and_ has a Cure All S. Ability.

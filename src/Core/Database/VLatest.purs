@@ -73,7 +73,17 @@ type ObLevel =
 
 type GroupedWeapon =
   { weaponName :: WeaponName
-  , range :: Range
+  -- Most weapons have 1 range/potencies for each effect (i.e., this array will have exactly one item).
+  --
+  -- EXCEPTION: Yuffie's "Arctic Star" is an exception:
+  -- it has PATK Up SingleTarget + PATK Up Mid->High Self
+  --
+  -- Silver Megaphone has PDEF Down Low SingleTarget + PDEF Down High SingleTarget (Condition: Critical Hit)
+  , ranges :: Array GroupedWeaponRange
+  }
+
+type GroupedWeaponRange =
+  { range :: Range
   -- This will be `None` for effects that don't have potencies (e.g. `Heal`)
   , allPotencies :: Maybe AllPotencies
   }

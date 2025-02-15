@@ -295,7 +295,7 @@ searchExamplesSpec :: Spec Unit
 searchExamplesSpec = do
   describe "search examples" do
     it "example 1" do
-      armory <- T.loadTestDb
+      db <- T.loadTestDb
       let
         filters =
           [ { effectType: FilterHeal, range: FilterAll }
@@ -305,13 +305,13 @@ searchExamplesSpec = do
         maxCharacterCount = 1
         mustHaveChars = Set.empty
         results =
-          Search.applyFilters filters armory
+          Search.applyFilters filters db
             # Search.search maxCharacterCount
             # Search.filterMustHaveChars mustHaveChars
             # Search.filterDuplicates
       T.goldenTest "snaps/search-example-1.snap" $ teamSummary <$> results
     it "example 2" do
-      armory <- T.loadTestDb
+      db <- T.loadTestDb
       let
         filters =
           [ { effectType: FilterHeal, range: FilterAll }
@@ -323,13 +323,13 @@ searchExamplesSpec = do
         maxCharacterCount = 2
         mustHaveChars = Set.empty
         results =
-          Search.applyFilters filters armory
+          Search.applyFilters filters db
             # Search.search maxCharacterCount
             # Search.filterMustHaveChars mustHaveChars
             # Search.filterDuplicates
       T.goldenTest "snaps/search-example-2.snap" $ teamSummary <$> results
     it "example 3" do
-      armory <- T.loadTestDb
+      db <- T.loadTestDb
       let
         filters =
           [ { effectType: FilterPdefDown, range: FilterSingleTargetOrAll }
@@ -342,7 +342,7 @@ searchExamplesSpec = do
         maxCharacterCount = 2
         mustHaveChars = Set.empty
         results =
-          Search.applyFilters filters armory
+          Search.applyFilters filters db
             # Search.search maxCharacterCount
             # Search.filterMustHaveChars mustHaveChars
             # Search.filterDuplicates

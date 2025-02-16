@@ -5,7 +5,7 @@ import Prelude
 
 import Core.Database.VLatest as Db
 import Core.Display (display)
-import Core.Weapons.Search (FilterRange, Filter)
+import Core.Weapons.Search (Filter, FilterRange, FilterResultWeapon)
 import Core.Weapons.Search as Search
 import Data.Array as Arr
 import Data.Array.NonEmpty as NAR
@@ -34,7 +34,7 @@ type State =
   { db :: Db
   , selectedEffectType :: Maybe FilterEffectType
   , selectedRange :: FilterRange
-  , matchingWeapons :: Array WeaponData
+  , matchingWeapons :: Array FilterResultWeapon
   , canBeDeleted :: Boolean
   }
 
@@ -136,13 +136,28 @@ render state =
                             ]
                         ]
                           <>
-                            ( state.matchingWeapons <#> \weaponData ->
-                                HH.tr_
+                            ( state.matchingWeapons <#> \filterResultWeapon -> do
+                                let weaponData = filterResultWeapon.weapon
+
+                                -- Grey out a row if the weapon does not match the filters
+                                let
+                                  checkCellDisabled classes =
+                                    if not filterResultWeapon.matchesFilters then classes <> " has-text-primary-40"
+                                    else classes
+                                  checkRowDisabled classes =
+                                    if not filterResultWeapon.matchesFilters then classes <> " has-background-primary-95"
+                                    else classes
+                                HH.tr
+                                  [ classes' ("" # checkRowDisabled) ]
                                   [ HH.img [ HP.src (display weaponData.weapon.image), classes' "image is-32x32" ]
                                   , HH.td
-                                      [ tooltip (mkTooltipForWeapon weaponData.weapon), classes' "has-tooltip-right" ]
+                                      [ tooltip (mkTooltipForWeapon weaponData.weapon)
+                                      , classes' ("has-tooltip-right" # checkCellDisabled)
+                                      ]
                                       [ HH.text $ display weaponData.weapon.name ]
-                                  , HH.td_ [ HH.text $ display weaponData.weapon.character ]
+                                  , HH.td
+                                      [ classes' ("" # checkCellDisabled) ]
+                                      [ HH.text $ display weaponData.weapon.character ]
                                   , HH.td_
                                       [ HH.div [ classes' "select" ]
                                           [ HH.select
@@ -233,8 +248,7 @@ updateMatchingWeapons state = do
     Just effectType -> do
       let filter = { effectType, range: state.selectedRange } :: Filter
       let filterResult = Search.findMatchingWeapons filter state.db
-      let matchingWeapons = filterResult.matchingWeapons <#> \{ weapon } -> weapon
-      state { matchingWeapons = matchingWeapons }
+      state { matchingWeapons = filterResult.matchingWeapons }
     Nothing -> state { matchingWeapons = [] }
 
 handleQuery :: forall action a m. Query a -> H.HalogenM State action () Output m (Maybe a)

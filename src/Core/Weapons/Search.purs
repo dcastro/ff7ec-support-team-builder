@@ -29,6 +29,7 @@ type Filter =
   { effectType :: FilterEffectType
   , range :: FilterRange
   , minBasePotency :: Potency
+  , minMaxPotency :: Potency
   }
 
 data FilterRange
@@ -93,7 +94,7 @@ findMatchingWeapons filter db = do
                   selectBestPotencies ownedOb matchingRanges
 
             matchesFilters =
-              not weapon.ignored && isJust weapon.ownedOb && hasMinBasePotency potencies
+              not weapon.ignored && isJust weapon.ownedOb && hasMinPotencies potencies
 
           Just
             { weapon
@@ -107,8 +108,8 @@ findMatchingWeapons filter db = do
 
   where
 
-  hasMinBasePotency :: Maybe Potencies -> Boolean
-  hasMinBasePotency =
+  hasMinPotencies :: Maybe Potencies -> Boolean
+  hasMinPotencies =
     case _ of
       Nothing ->
         -- Either:
@@ -118,6 +119,8 @@ findMatchingWeapons filter db = do
         true
       Just potencies ->
         potencies.base >= filter.minBasePotency
+          &&
+            potencies.max >= filter.minMaxPotency
 
   selectBestPotencies :: ObRange -> NonEmptyArray GroupedWeaponRange -> Maybe Potencies
   selectBestPotencies ownedOb ranges = do

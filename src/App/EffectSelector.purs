@@ -35,6 +35,7 @@ type State =
   , selectedEffectType :: Maybe FilterEffectType
   , selectedRange :: FilterRange
   , selectedMinBasePotency :: Potency
+  , selectedMinMaxPotency :: Potency
   , matchingWeapons :: Array FilterResultWeapon
   , canBeDeleted :: Boolean
   }
@@ -49,6 +50,7 @@ data Action
   = SelectedEffectType Int
   | SelectedRange Int
   | SelectedMinBasePotency Int
+  | SelectedMinMaxPotency Int
   | CheckedIgnored WeaponName Boolean
   | SetOwnedOb WeaponName Int
   | Initialize
@@ -66,6 +68,7 @@ component =
           , selectedEffectType: effectTypeMb
           , selectedRange: genericBottom
           , selectedMinBasePotency: Mid
+          , selectedMinMaxPotency: High
           , matchingWeapons: []
           , canBeDeleted
           }
@@ -137,6 +140,20 @@ render state =
                         ]
                         ( Db.allPossiblePotencies <#> \potency -> do
                             let selected = state.selectedMinBasePotency == potency
+                            HH.option [ HP.selected selected ] [ HH.text $ display potency ]
+                        )
+                    ]
+                ]
+            , HH.div [ classes' "column is-narrow" ]
+                [ HH.text "Max Pot. ≥"
+                ]
+            , HH.div [ classes' "column is-narrow" ]
+                [ HH.div [ classes' "select" ]
+                    [ HH.select
+                        [ HE.onSelectedIndexChange SelectedMinMaxPotency
+                        ]
+                        ( Db.allPossiblePotencies <#> \potency -> do
+                            let selected = state.selectedMinMaxPotency == potency
                             HH.option [ HP.selected selected ] [ HH.text $ display potency ]
                         )
                     ]
@@ -241,9 +258,16 @@ handleAction = case _ of
     H.raise RaiseSelectionChanged
 
   SelectedMinBasePotency idx -> do
-    let minBasePotecy = Arr.index Db.allPossiblePotencies idx `unsafeFromJust` "Invalid potency index"
+    let minBasePotecy = Arr.index Db.allPossiblePotencies idx `unsafeFromJust` "Invalid base potency index"
     Console.log $ "idx " <> show idx <> ", selected: " <> display minBasePotecy
     H.modify_ \s -> s { selectedMinBasePotency = minBasePotecy }
+      # updateMatchingWeapons
+    H.raise RaiseSelectionChanged
+
+  SelectedMinMaxPotency idx -> do
+    let minMaxPotecy = Arr.index Db.allPossiblePotencies idx `unsafeFromJust` "Invalid max potency index"
+    Console.log $ "idx " <> show idx <> ", selected: " <> display minMaxPotecy
+    H.modify_ \s -> s { selectedMinMaxPotency = minMaxPotecy }
       # updateMatchingWeapons
     H.raise RaiseSelectionChanged
 
@@ -294,4 +318,5 @@ buildFilter state =
       { effectType
       , range: state.selectedRange
       , minBasePotency: state.selectedMinBasePotency
+      , minMaxPotency: state.selectedMinMaxPotency
       }

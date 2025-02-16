@@ -37,12 +37,12 @@ benchSearch = do
 
 input :: Array Filter
 input =
-  [ { effectType: FilterPdefDown, range: FilterSingleTargetOrAll, minBasePotency: Low }
-  , { effectType: FilterPatkUp, range: FilterSingleTargetOrAll, minBasePotency: Low }
-  , { effectType: FilterHeal, range: FilterAll, minBasePotency: Low }
-  , { effectType: FilterWaterResistDown, range: FilterSingleTargetOrAll, minBasePotency: Low }
-  , { effectType: FilterPatkDown, range: FilterSingleTargetOrAll, minBasePotency: Low }
-  , { effectType: FilterMatkDown, range: FilterSingleTargetOrAll, minBasePotency: Low }
+  [ { effectType: FilterPdefDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+  , { effectType: FilterPatkUp, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+  , { effectType: FilterHeal, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
+  , { effectType: FilterWaterResistDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+  , { effectType: FilterPatkDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+  , { effectType: FilterMatkDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
   ]
 
 search1 :: Db -> Array Filter -> Array AssignmentResult

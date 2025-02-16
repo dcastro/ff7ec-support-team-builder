@@ -340,6 +340,9 @@ instance Display FilterEffectType where
     FilterWaterResistDown -> "Water resist down"
     FilterWindResistDown -> "Wind resist down"
 
+allPossiblePotencies :: Array Potency
+allPossiblePotencies = Utils.listEnum
+
 allFilterEffectTypes :: Array FilterEffectType
 allFilterEffectTypes = Utils.listEnum
 
@@ -362,3 +365,11 @@ instance Display ObRange where
       ToOb5 -> "5"
       ToOb9 -> "9"
       ToOb10 -> "10"
+
+instance Display Potency where
+  display =
+    case _ of
+      Low -> "Low"
+      Mid -> "Mid"
+      High -> "High"
+      ExtraHigh -> "Extra High"

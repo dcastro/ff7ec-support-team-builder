@@ -302,9 +302,9 @@ searchExamplesSpec = do
       db <- T.loadTestDb
       let
         filters =
-          [ { effectType: FilterHeal, range: FilterAll }
-          , { effectType: FilterPatkUp, range: FilterAll }
-          , { effectType: FilterPatkDown, range: FilterAll }
+          [ { effectType: FilterHeal, range: FilterAll, minBasePotency: Low }
+          , { effectType: FilterPatkUp, range: FilterAll, minBasePotency: Low }
+          , { effectType: FilterPatkDown, range: FilterAll, minBasePotency: Low }
           ]
         maxCharacterCount = 1
         mustHaveChars = Set.empty
@@ -318,11 +318,11 @@ searchExamplesSpec = do
       db <- T.loadTestDb
       let
         filters =
-          [ { effectType: FilterHeal, range: FilterAll }
-          , { effectType: FilterMatkUp, range: FilterAll }
-          , { effectType: FilterMdefDown, range: FilterAll }
-          , { effectType: FilterFireResistDown, range: FilterSingleTargetOrAll }
-          , { effectType: FilterMdefUp, range: FilterAll }
+          [ { effectType: FilterHeal, range: FilterAll, minBasePotency: Low }
+          , { effectType: FilterMatkUp, range: FilterAll, minBasePotency: Low }
+          , { effectType: FilterMdefDown, range: FilterAll, minBasePotency: Low }
+          , { effectType: FilterFireResistDown, range: FilterSingleTargetOrAll, minBasePotency: Low }
+          , { effectType: FilterMdefUp, range: FilterAll, minBasePotency: Low }
           ]
         maxCharacterCount = 2
         mustHaveChars = Set.empty
@@ -336,12 +336,12 @@ searchExamplesSpec = do
       db <- T.loadTestDb
       let
         filters =
-          [ { effectType: FilterPdefDown, range: FilterSingleTargetOrAll }
-          , { effectType: FilterPatkUp, range: FilterSingleTargetOrAll }
-          , { effectType: FilterHeal, range: FilterAll }
-          , { effectType: FilterWaterResistDown, range: FilterSingleTargetOrAll }
-          , { effectType: FilterPatkDown, range: FilterSingleTargetOrAll }
-          , { effectType: FilterMatkDown, range: FilterSingleTargetOrAll }
+          [ { effectType: FilterPdefDown, range: FilterSingleTargetOrAll, minBasePotency: Low }
+          , { effectType: FilterPatkUp, range: FilterSingleTargetOrAll, minBasePotency: Low }
+          , { effectType: FilterHeal, range: FilterAll, minBasePotency: Low }
+          , { effectType: FilterWaterResistDown, range: FilterSingleTargetOrAll, minBasePotency: Low }
+          , { effectType: FilterPatkDown, range: FilterSingleTargetOrAll, minBasePotency: Low }
+          , { effectType: FilterMatkDown, range: FilterSingleTargetOrAll, minBasePotency: Low }
           ]
         maxCharacterCount = 2
         mustHaveChars = Set.empty
@@ -378,29 +378,27 @@ findMatchingWeaponsSpec = do
     it "returns potencies according to owned OB level / selected range" do
       db <- T.loadTestDb
 
-      -- let
-      -- (f :: Filter) = { filter: FilterPatkUp, range: FilterSingleTargetOrAll }
       let
-        { matchingWeapons } = Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSingleTargetOrAll } db
+        { matchingWeapons } = Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSingleTargetOrAll, minBasePotency: Low } db
       weapon <- findWeapon matchingWeapons
       weapon.potencies `shouldEqualPretty` Just { base: High, max: High }
 
       let
-        { matchingWeapons } = Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSelfOrSingleTargetOrAll } db
+        { matchingWeapons } = Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSelfOrSingleTargetOrAll, minBasePotency: Low } db
       weapon <- findWeapon matchingWeapons
       weapon.potencies `shouldEqualPretty` Just { base: High, max: High }
 
       { matchingWeapons } <-
         db
           # setOwnedLevel (ObRange { from: FromOb0, to: Just ToOb5 })
-          <#> Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSingleTargetOrAll }
+          <#> Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSingleTargetOrAll, minBasePotency: Low }
       weapon <- findWeapon matchingWeapons
       weapon.potencies `shouldEqualPretty` Just { base: Mid, max: High }
 
       { matchingWeapons } <-
         db
           # setOwnedLevel (ObRange { from: FromOb0, to: Just ToOb5 })
-          <#> Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSelfOrSingleTargetOrAll }
+          <#> Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSelfOrSingleTargetOrAll, minBasePotency: Low }
       weapon <- findWeapon matchingWeapons
       weapon.potencies `shouldEqualPretty` Just { base: Mid, max: High }
   where
@@ -444,18 +442,21 @@ filter1 :: Filter
 filter1 =
   { effectType: FilterHeal
   , range: FilterAll
+  , minBasePotency: Low
   }
 
 filter2 :: Filter
 filter2 =
   { effectType: FilterPatkDown
   , range: FilterSingleTargetOrAll
+  , minBasePotency: Low
   }
 
 filter3 :: Filter
 filter3 =
   { effectType: FilterProvoke
   , range: FilterSelfOrSingleTargetOrAll
+  , minBasePotency: Low
   }
 
 mkCharacter1 :: CharacterName -> WeaponData -> Filter -> Maybe Potencies -> Tuple String Character

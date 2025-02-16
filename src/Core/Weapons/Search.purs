@@ -28,6 +28,7 @@ import Yoga.JSON.Generics.EnumSumRep as Enum
 type Filter =
   { effectType :: FilterEffectType
   , range :: FilterRange
+  , minBasePotency :: Potency
   }
 
 data FilterRange
@@ -81,6 +82,7 @@ findMatchingWeapons filter db = do
             weapon = Map.lookup weaponName db.allWeapons
               `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter.effectType <> "' not found.")
 
+          -- Throw out weapons that don't match the required range.
           matchingRanges <- matchRanges filter.range ranges
 
           let
@@ -91,7 +93,7 @@ findMatchingWeapons filter db = do
                   selectBestPotencies ownedOb matchingRanges
 
             matchesFilters =
-              not weapon.ignored && isJust weapon.ownedOb
+              not weapon.ignored && isJust weapon.ownedOb && hasMinBasePotency potencies
 
           Just
             { weapon
@@ -104,6 +106,18 @@ findMatchingWeapons filter db = do
   }
 
   where
+
+  hasMinBasePotency :: Maybe Potencies -> Boolean
+  hasMinBasePotency =
+    case _ of
+      Nothing ->
+        -- Either:
+        --   * this weapon is not owned (in which case, it doesn't matter what we return)
+        --   * or the selected effect type is not associated with potencies, e.g. "Heal" has no potency
+        --     (in which case, we resort to vacuous truth)
+        true
+      Just potencies ->
+        potencies.base >= filter.minBasePotency
 
   selectBestPotencies :: ObRange -> NonEmptyArray GroupedWeaponRange -> Maybe Potencies
   selectBestPotencies ownedOb ranges = do

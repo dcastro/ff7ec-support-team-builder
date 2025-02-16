@@ -34,6 +34,7 @@ type State =
   { db :: Db
   , selectedEffectType :: Maybe FilterEffectType
   , selectedRange :: FilterRange
+  , selectedMinBasePotency :: Potency
   , matchingWeapons :: Array FilterResultWeapon
   , canBeDeleted :: Boolean
   }
@@ -47,6 +48,7 @@ data Output
 data Action
   = SelectedEffectType Int
   | SelectedRange Int
+  | SelectedMinBasePotency Int
   | CheckedIgnored WeaponName Boolean
   | SetOwnedOb WeaponName Int
   | Initialize
@@ -63,6 +65,7 @@ component =
           { db
           , selectedEffectType: effectTypeMb
           , selectedRange: genericBottom
+          , selectedMinBasePotency: Mid
           , matchingWeapons: []
           , canBeDeleted
           }
@@ -119,6 +122,24 @@ render state =
             , HH.div [ classes' "column is-narrow" ]
                 [ displayIf state.canBeDeleted $
                     HH.button [ classes' "delete is-medium", HE.onClick Close ] []
+                ]
+            ]
+
+        -- Table for the potency filters
+        , HH.div [ classes' "columns is-mobile is-centered is-vcentered is-1" ]
+            [ HH.div [ classes' "column is-narrow" ]
+                [ HH.text "Base Pot. ≥"
+                ]
+            , HH.div [ classes' "column is-narrow" ]
+                [ HH.div [ classes' "select" ]
+                    [ HH.select
+                        [ HE.onSelectedIndexChange SelectedMinBasePotency
+                        ]
+                        ( Db.allPossiblePotencies <#> \potency -> do
+                            let selected = state.selectedMinBasePotency == potency
+                            HH.option [ HP.selected selected ] [ HH.text $ display potency ]
+                        )
+                    ]
                 ]
             ]
 
@@ -219,6 +240,13 @@ handleAction = case _ of
       # updateMatchingWeapons
     H.raise RaiseSelectionChanged
 
+  SelectedMinBasePotency idx -> do
+    let minBasePotecy = Arr.index Db.allPossiblePotencies idx `unsafeFromJust` "Invalid potency index"
+    Console.log $ "idx " <> show idx <> ", selected: " <> display minBasePotecy
+    H.modify_ \s -> s { selectedMinBasePotency = minBasePotecy }
+      # updateMatchingWeapons
+    H.raise RaiseSelectionChanged
+
   CheckedIgnored weaponName ignored -> do
     H.raise $ RaiseCheckedIgnored weaponName ignored
 
@@ -244,9 +272,8 @@ handleAction = case _ of
 
 updateMatchingWeapons :: State -> State
 updateMatchingWeapons state = do
-  case state.selectedEffectType of
-    Just effectType -> do
-      let filter = { effectType, range: state.selectedRange } :: Filter
+  case buildFilter state of
+    Just filter -> do
       let filterResult = Search.findMatchingWeapons filter state.db
       state { matchingWeapons = filterResult.matchingWeapons }
     Nothing -> state { matchingWeapons = [] }
@@ -255,9 +282,16 @@ handleQuery :: forall action a m. Query a -> H.HalogenM State action () Output m
 handleQuery = case _ of
   GetFilter reply -> do
     state <- H.get
-    case state.selectedEffectType of
-      Just effectType -> pure $ Just $ reply
-        { effectType
-        , range: state.selectedRange
-        }
+    case buildFilter state of
+      Just filter -> pure $ Just $ reply filter
       Nothing -> pure Nothing
+
+buildFilter :: State -> Maybe Filter
+buildFilter state =
+  case state.selectedEffectType of
+    Nothing -> Nothing
+    Just effectType -> Just
+      { effectType
+      , range: state.selectedRange
+      , minBasePotency: state.selectedMinBasePotency
+      }

@@ -86,15 +86,10 @@ getDistinctObs _ =
   NAR.singleton (ObRange { from: FromOb6, to: Just ToOb10 })
     # NAR.cons (ObRange { from: FromOb0, to: Just ToOb5 })
 
-pickOb6 :: NonEmptyArray ObRange -> ObRange
-pickOb6 _ = do
+pickOb :: ObRange -> NonEmptyArray ObRange -> ObRange
+pickOb _ _ = do
   -- TODO
   ObRange { from: FromOb6, to: Just ToOb10 }
-
-pickOb :: ObRange -> NonEmptyArray ObRange -> ObRange
-pickOb _ = do
-  -- TODO
-  pickOb6
 
 createDb :: forall m. MonadEffect m => MonadRec m => Array Weapon -> Map WeaponName WeaponData -> m Db
 createDb newWeapons existingWeapons = do
@@ -141,7 +136,7 @@ insertWeapon weapon existingWeapons db =
         { weapon
         , ignored: false
         , distinctObs
-        , ownedOb: Just $ pickOb6 distinctObs
+        , ownedOb: Just $ NAR.last distinctObs
         }
     db { allWeapons = Map.insert weapon.name newWeapon db.allWeapons }
 

@@ -146,11 +146,10 @@ render state =
                                   , HH.td_
                                       [ HH.div [ classes' "select" ]
                                           [ HH.select
-                                              [ HE.onSelectedIndexChange (SetOwnedOb weaponData.weapon.name)
-                                              ]
+                                              [ HE.onSelectedIndexChange (SetOwnedOb weaponData.weapon.name) ]
                                               ( [ HH.option
                                                     [ HP.selected (weaponData.ownedOb == Nothing) ]
-                                                    [ HH.text "No" ]
+                                                    [ HH.text "N/A" ]
                                                 ]
                                                   <>
                                                     ( NAR.toArray weaponData.distinctObs <#> \obRange ->
@@ -208,8 +207,8 @@ handleAction = case _ of
   CheckedIgnored weaponName ignored -> do
     H.raise $ RaiseCheckedIgnored weaponName ignored
 
-  SetOwnedOb weaponName ignored -> do
-    H.raise $ RaiseSetOwnedOb weaponName ignored
+  SetOwnedOb weaponName obRangeIndex -> do
+    H.raise $ RaiseSetOwnedOb weaponName obRangeIndex
 
   Initialize -> do
     -- When this EffectSelector is done rendering, if the initial state has an effect type,

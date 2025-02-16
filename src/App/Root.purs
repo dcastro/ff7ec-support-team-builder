@@ -244,6 +244,10 @@ handleAction = case _ of
         modifyLoadedState \state -> do
           state <- setWeaponIgnored weaponName true state
           updateTeams state
+      Result.RaiseSetOwnedOb weaponName obRangeIndex -> do
+        modifyLoadedState \state -> do
+          state <- setOwnedOb weaponName obRangeIndex state
+          updateTeams state
 
   SelectedMaxCharacterCount idx -> do
     modifyLoadedState \state -> do

@@ -129,36 +129,38 @@ render state =
             ]
 
         -- Table for the potency filters
-        , HH.div [ classes' "columns is-mobile is-centered is-vcentered is-1" ]
-            [ HH.div [ classes' "column is-narrow" ]
-                [ HH.text "Base Pot. ≥"
-                ]
-            , HH.div [ classes' "column is-narrow" ]
-                [ HH.div [ classes' "select" ]
-                    [ HH.select
-                        [ HE.onSelectedIndexChange SelectedMinBasePotency
-                        ]
-                        ( Db.allPossiblePotencies <#> \potency -> do
-                            let selected = state.selectedMinBasePotency == potency
-                            HH.option [ HP.selected selected ] [ HH.text $ display potency ]
-                        )
-                    ]
-                ]
-            , HH.div [ classes' "column is-narrow" ]
-                [ HH.text "Max Pot. ≥"
-                ]
-            , HH.div [ classes' "column is-narrow" ]
-                [ HH.div [ classes' "select" ]
-                    [ HH.select
-                        [ HE.onSelectedIndexChange SelectedMinMaxPotency
-                        ]
-                        ( Db.allPossiblePotencies <#> \potency -> do
-                            let selected = state.selectedMinMaxPotency == potency
-                            HH.option [ HP.selected selected ] [ HH.text $ display potency ]
-                        )
-                    ]
-                ]
-            ]
+        , displayIf (hasPotencies state.selectedEffectType) $
+            HH.div
+              [ classes' "columns is-mobile is-centered is-vcentered is-1" ]
+              [ HH.div [ classes' "column is-narrow" ]
+                  [ HH.text "Base Pot. ≥"
+                  ]
+              , HH.div [ classes' "column is-narrow" ]
+                  [ HH.div [ classes' "select" ]
+                      [ HH.select
+                          [ HE.onSelectedIndexChange SelectedMinBasePotency
+                          ]
+                          ( Db.allPossiblePotencies <#> \potency -> do
+                              let selected = state.selectedMinBasePotency == potency
+                              HH.option [ HP.selected selected ] [ HH.text $ display potency ]
+                          )
+                      ]
+                  ]
+              , HH.div [ classes' "column is-narrow" ]
+                  [ HH.text "Max Pot. ≥"
+                  ]
+              , HH.div [ classes' "column is-narrow" ]
+                  [ HH.div [ classes' "select" ]
+                      [ HH.select
+                          [ HE.onSelectedIndexChange SelectedMinMaxPotency
+                          ]
+                          ( Db.allPossiblePotencies <#> \potency -> do
+                              let selected = state.selectedMinMaxPotency == potency
+                              HH.option [ HP.selected selected ] [ HH.text $ display potency ]
+                          )
+                      ]
+                  ]
+              ]
 
         -- Used to center the table
         , HH.div [ classes' "columns is-mobile is-centered" ]
@@ -320,3 +322,37 @@ buildFilter state =
       , minBasePotency: state.selectedMinBasePotency
       , minMaxPotency: state.selectedMinMaxPotency
       }
+
+hasPotencies :: Maybe FilterEffectType -> Boolean
+hasPotencies = case _ of
+  Nothing -> false
+  Just effectType -> case effectType of
+    FilterHeal -> false
+
+    FilterVeil -> false
+    FilterProvoke -> false
+    FilterEnfeeble -> false
+    FilterStop -> false
+    FilterExploitWeakness -> false
+
+    FilterPatkUp -> true
+    FilterMatkUp -> true
+    FilterPdefUp -> true
+    FilterMdefUp -> true
+    FilterFireDamageUp -> true
+    FilterIceDamageUp -> true
+    FilterThunderDamageUp -> true
+    FilterEarthDamageUp -> true
+    FilterWaterDamageUp -> true
+    FilterWindDamageUp -> true
+
+    FilterPatkDown -> true
+    FilterMatkDown -> true
+    FilterPdefDown -> true
+    FilterMdefDown -> true
+    FilterFireResistDown -> true
+    FilterIceResistDown -> true
+    FilterThunderResistDown -> true
+    FilterEarthResistDown -> true
+    FilterWaterResistDown -> true
+    FilterWindResistDown -> true

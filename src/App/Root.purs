@@ -50,6 +50,7 @@ data State
 type LoadedState =
   { db :: Db
   , teams :: Array AssignmentResult
+  , selectedEffectCount :: Int
   , maxCharacterCount :: Int
   , effectSelectorIds :: NonEmptyArray Int
   , mustHaveChars :: Set CharacterName
@@ -60,6 +61,7 @@ mkInitialLoadedState :: Db -> LoadedState
 mkInitialLoadedState db =
   { db
   , teams: []
+  , selectedEffectCount: 0
   , maxCharacterCount: 2
   , effectSelectorIds: NA.range 0 (effectSelectorCount - 1)
   , mustHaveChars: Set.empty
@@ -96,7 +98,7 @@ render state =
       HH.div_
         [ HH.text "Failed to load"
         ]
-    Loaded { db, teams, maxCharacterCount, effectSelectorIds } ->
+    Loaded { db, teams, selectedEffectCount, maxCharacterCount, effectSelectorIds } ->
       HH.section [ classes' "hero is-fullheight" ]
         [ HH.section [ classes' "section" ]
             -- Contains all the effect selectors + the plus button
@@ -191,6 +193,31 @@ render state =
                   )
 
             , HH.slot _results unit Results.component teams HandleResultsOutput
+
+            , displayIf (Arr.null teams) $
+                HH.div [ classes' "columns is-centered" ]
+                  [ HH.div [ classes' "column is-three-fifths-desktop" ]
+                      [ HH.div [ classes' "box" ]
+                          [ HH.div [ classes' "columns is-centered" ]
+                              [ HH.div [ classes' "column is-narrow content" ]
+                                  if selectedEffectCount == 0 then
+                                    [ HH.text "No results found. Please select at least 1 weapon effect."
+                                    ]
+                                  else
+                                    [ HH.text "No results found, please try:"
+                                    , HH.ul_
+                                        [ HH.li_ [ HH.text "Decreasing the range of some weapon effects (Single Target instead of All)" ]
+                                        , HH.li_ [ HH.text "Decreasing the base/max potencies (Mid instead of High)" ]
+                                        , HH.li_ [ HH.text "Adjusting the Overboost levels" ]
+                                        , HH.li_ [ HH.text "Increasing the maximum number of characters" ]
+
+                                        ]
+                                    ]
+                              ]
+                          ]
+                      ]
+                  ]
+
             ]
 
         , HH.div [ classes' "footer" ]
@@ -328,7 +355,10 @@ updateTeams state = do
   --       Nothing -> Console.log $ display char.name <> ": " <> display char.mainHand.weapon.name
   --   pure unit
 
-  pure $ state { teams = teams }
+  pure $ state
+    { teams = teams
+    , selectedEffectCount = Arr.length filters
+    }
 
 setOwnedOb :: forall m. MonadAff m => WeaponName -> Int -> LoadedState -> m LoadedState
 setOwnedOb weaponName obRangeIndex state = do

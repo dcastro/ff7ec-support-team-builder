@@ -273,6 +273,14 @@
             "range": "Self"
           }
         ]
+      },
+      {
+        "weaponName": "Fafnir Rifle",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
       }
     ]
   ],
@@ -305,6 +313,14 @@
       },
       {
         "weaponName": "Type-90 Longsword",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Fafnir Rifle",
         "ranges": [
           {
             "range": "Self"
@@ -1486,6 +1502,32 @@
               },
               "ob0": {
                 "max": "High",
+                "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Fafnir Rifle",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob0": {
+                "max": "Mid",
                 "base": "Mid"
               }
             }
@@ -5623,6 +5665,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Humus Saber",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }

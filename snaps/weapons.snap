@@ -4497,6 +4497,198 @@
       "atbCost": 4
     },
     {
+      "source": "Gacha (Collab)",
+      "ob6": {
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Provoke",
+              "value": {
+                "durExt": {
+                  "extension": 0,
+                  "duration": 60
+                }
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Veil",
+              "value": {
+                "percentage": 8,
+                "durExt": {
+                  "extension": 10,
+                  "duration": 50
+                }
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefUp",
+              "value": {
+                "potencies": {
+                  "max": "High",
+                  "base": "Mid"
+                },
+                "durExt": {
+                  "extension": 5,
+                  "duration": 16
+                }
+              }
+            }
+          }
+        ],
+        "description": "Dragon's Roar+ (4 ATB)\n480% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n50s 8% Veil (+10s) [Range: Self]\n16s PDEF Up (+5s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Provoke",
+              "value": {
+                "durExt": {
+                  "extension": 0,
+                  "duration": 60
+                }
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Veil",
+              "value": {
+                "percentage": 10,
+                "durExt": {
+                  "extension": 12,
+                  "duration": 60
+                }
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefUp",
+              "value": {
+                "potencies": {
+                  "max": "High",
+                  "base": "Mid"
+                },
+                "durExt": {
+                  "extension": 6,
+                  "duration": 20
+                }
+              }
+            }
+          }
+        ],
+        "description": "Dragon's Roar++ (4 ATB)\n540% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n60s 10% Veil (+12s) [Range: Self]\n20s PDEF Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Provoke",
+              "value": {
+                "durExt": {
+                  "extension": 0,
+                  "duration": 60
+                }
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Veil",
+              "value": {
+                "percentage": 6,
+                "durExt": {
+                  "extension": 9,
+                  "duration": 45
+                }
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefUp",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Mid"
+                },
+                "durExt": {
+                  "extension": 5,
+                  "duration": 16
+                }
+              }
+            }
+          }
+        ],
+        "description": "Dragon's Roar (4 ATB)\n390% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n45s 6% Veil (+9s) [Range: Self]\n16s PDEF Up (+5s) (Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Provoke",
+              "value": {
+                "durExt": {
+                  "extension": 0,
+                  "duration": 60
+                }
+              }
+            }
+          },
+          {
+            "range": "Self",
+            "effectType": {
+              "type": "Veil",
+              "value": {
+                "percentage": 5,
+                "durExt": {
+                  "extension": 8,
+                  "duration": 40
+                }
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "PdefUp",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Mid"
+                },
+                "durExt": {
+                  "extension": 4,
+                  "duration": 12
+                }
+              }
+            }
+          }
+        ],
+        "description": "Dragon's Roar (4 ATB)\n340% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n40s 5% Veil (+8s) [Range: Self]\n12s PDEF Up (+4s) (Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "name": "Fafnir Rifle",
+      "image": "https://i.imgur.com/mELRgLv.png",
+      "cureAllAbility": false,
+      "character": "Barret",
+      "atbCost": 4
+    },
+    {
       "source": "Gacha",
       "ob6": {
         "effects": [],
@@ -16632,6 +16824,98 @@
       },
       "name": "Glaireid",
       "image": "https://i.imgur.com/ptfHkvb.png",
+      "cureAllAbility": false,
+      "character": "Sephiroth",
+      "atbCost": 4
+    },
+    {
+      "source": "Event",
+      "ob6": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "WindResistDown",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Low"
+                },
+                "durExt": {
+                  "extension": 7,
+                  "duration": 30
+                }
+              }
+            }
+          }
+        ],
+        "description": "Deaerora Surge A+ (4 ATB)\n230% Mag. Non-elem. Damage [Range: All Enemies]\n30s Wind Resistance Down (+7s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "WindResistDown",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Low"
+                },
+                "durExt": {
+                  "extension": 8,
+                  "duration": 35
+                }
+              }
+            }
+          }
+        ],
+        "description": "Deaerora Surge A++ (4 ATB)\n240% Mag. Non-elem. Damage [Range: All Enemies]\n35s Wind Resistance Down (+8s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "WindResistDown",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Low"
+                },
+                "durExt": {
+                  "extension": 6,
+                  "duration": 25
+                }
+              }
+            }
+          }
+        ],
+        "description": "Deaerora Surge A (4 ATB)\n200% Mag. Non-elem. Damage [Range: All Enemies]\n25s Wind Resistance Down (+6s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "WindResistDown",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Low"
+                },
+                "durExt": {
+                  "extension": 5,
+                  "duration": 20
+                }
+              }
+            }
+          }
+        ],
+        "description": "Deaerora Surge A (4 ATB)\n170% Mag. Non-elem. Damage [Range: All Enemies]\n20s Wind Resistance Down (+5s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "name": "Humus Saber",
+      "image": "https://i.imgur.com/mluMtNz.png",
       "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4

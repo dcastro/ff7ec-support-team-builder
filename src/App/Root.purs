@@ -53,6 +53,7 @@ type LoadedState =
   , maxCharacterCount :: Int
   , effectSelectorIds :: NonEmptyArray Int
   , mustHaveChars :: Set CharacterName
+  , excludeChars :: Set CharacterName
   }
 
 mkInitialLoadedState :: Db -> LoadedState
@@ -62,6 +63,7 @@ mkInitialLoadedState db =
   , maxCharacterCount: 2
   , effectSelectorIds: NA.range 0 (effectSelectorCount - 1)
   , mustHaveChars: Set.empty
+  , excludeChars: Set.empty
   }
   where
   effectSelectorCount = 4
@@ -73,6 +75,7 @@ data Action
   | SelectedMaxCharacterCount Int
   | AddEffectSelector MouseEvent
   | CheckedMustHaveChar CharacterName Boolean
+  | CheckedExcludeChar CharacterName Boolean
 
 component :: forall q i o. H.Component q i o Aff
 component =
@@ -162,6 +165,25 @@ render state =
                                 , HP.name "must-have-char"
                                 , classes' "mr-1"
                                 , HE.onChecked (CheckedMustHaveChar name)
+                                ]
+                            , HH.text (display name)
+                            ]
+                        ]
+                  )
+
+            , HH.div [ classes' "columns is-mobile is-centered is-multiline" ] $
+                [ HH.div [ classes' "column is-narrow has-text-weight-semibold" ]
+                    [ HH.text "Exclude: "
+                    ]
+                ] <>
+                  ( db.allCharacterNames # Arr.fromFoldable <#> \name ->
+                      HH.div [ classes' "column is-narrow" ]
+                        [ HH.label [ classes' "checkbox" ]
+                            [ HH.input
+                                [ HP.type_ InputCheckbox
+                                , HP.name "exclude-char"
+                                , classes' "mr-1"
+                                , HE.onChecked (CheckedExcludeChar name)
                                 ]
                             , HH.text (display name)
                             ]
@@ -259,6 +281,13 @@ handleAction = case _ of
       else
         updateTeams $ state { mustHaveChars = Set.delete charName state.mustHaveChars }
 
+  CheckedExcludeChar charName checked -> do
+    modifyLoadedState \state -> do
+      if checked then
+        updateTeams $ state { excludeChars = Set.insert charName state.excludeChars }
+      else
+        updateTeams $ state { excludeChars = Set.delete charName state.excludeChars }
+
 modifyLoadedState
   :: forall o
    . (LoadedState -> H.HalogenM State Action Slots o Aff LoadedState)
@@ -284,7 +313,7 @@ updateTeams state = do
   let
     teams =
       Search.applyFilters filters state.db
-        # Search.search state.maxCharacterCount
+        # Search.search state.maxCharacterCount state.excludeChars
         # Search.filterMustHaveChars state.mustHaveChars
         # Search.filterDuplicates
 

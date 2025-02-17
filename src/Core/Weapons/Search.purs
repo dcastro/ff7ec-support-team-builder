@@ -167,8 +167,8 @@ findMatchingWeapons filter db = do
 applyFilters :: Array Filter -> Db -> Array FilterResult
 applyFilters filters db = filters <#> \filter -> findMatchingWeapons filter db
 
-search :: Int -> Array FilterResult -> Array AssignmentResult
-search maxCharacterCount filterResults =
+search :: Int -> Set CharacterName -> Array FilterResult -> Array AssignmentResult
+search maxCharacterCount excludeChars filterResults =
   if Arr.null filterResults then []
   else do
     filterResults
@@ -188,7 +188,10 @@ search maxCharacterCount filterResults =
       # Arr.sortBy (comparing $ scoreTeam >>> Down)
   where
   discardUnmatched :: Array FilterResultWeapon -> Array FilterResultWeapon
-  discardUnmatched = Arr.filter \filterResultWeapon -> filterResultWeapon.matchesFilters
+  discardUnmatched =
+    Arr.filter \filterResultWeapon ->
+      filterResultWeapon.matchesFilters
+        && not (Set.member filterResultWeapon.weapon.weapon.character excludeChars)
 
 emptyTeam :: AssignmentResult
 emptyTeam = { characters: Map.empty }

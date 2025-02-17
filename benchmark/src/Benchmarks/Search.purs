@@ -49,9 +49,10 @@ search1 :: Db -> Array Filter -> Array AssignmentResult
 search1 db filters = do
   let
     maxCharacterCount = 2
+    excludeChars = Set.empty
     mustHaveChars = Set.empty
   Search.applyFilters filters db
-    # Search.search maxCharacterCount
+    # Search.search maxCharacterCount excludeChars
     # Search.filterMustHaveChars mustHaveChars
     # Search.filterDuplicates
 

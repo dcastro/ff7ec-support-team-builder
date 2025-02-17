@@ -50,7 +50,7 @@ combinationsSpec = do
 
     it "finds all possible combinations" do
       let
-        teams = Search.search 3
+        teams = Search.search 3 Set.empty
           [ { filter: filter1
             , matchingWeapons:
                 [ { weapon: weapon11, potencies: potencies11, matchesFilters: true }
@@ -112,7 +112,7 @@ combinationsSpec = do
 
     it "returns no combinations when a match is not found for a required effect" do
       let
-        combs = Search.search 3
+        combs = Search.search 3 Set.empty
           [ { filter: filter1
             , matchingWeapons:
                 [ { weapon: weapon11, potencies: potencies11, matchesFilters: true }
@@ -134,11 +134,11 @@ combinationsSpec = do
       combs `shouldEqualPretty` []
 
     it "returns no combinations when no effects were selected" do
-      Search.search 3 [] `shouldEqualPretty` []
+      Search.search 3 Set.empty [] `shouldEqualPretty` []
 
     it "discards unmatched weapons" do
       let
-        teams = Search.search 3
+        teams = Search.search 3 Set.empty
           [ { filter: filter1
             , matchingWeapons:
                 [ { weapon: weapon11, potencies: potencies11, matchesFilters: false }
@@ -307,10 +307,11 @@ searchExamplesSpec = do
           , { effectType: FilterPatkDown, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
           ]
         maxCharacterCount = 1
+        excludeChars = Set.empty
         mustHaveChars = Set.empty
         results =
           Search.applyFilters filters db
-            # Search.search maxCharacterCount
+            # Search.search maxCharacterCount excludeChars
             # Search.filterMustHaveChars mustHaveChars
             # Search.filterDuplicates
       T.goldenTest "snaps/search-example-1.snap" $ teamSummary <$> results
@@ -325,10 +326,11 @@ searchExamplesSpec = do
           , { effectType: FilterMdefUp, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
           ]
         maxCharacterCount = 2
+        excludeChars = Set.empty
         mustHaveChars = Set.empty
         results =
           Search.applyFilters filters db
-            # Search.search maxCharacterCount
+            # Search.search maxCharacterCount excludeChars
             # Search.filterMustHaveChars mustHaveChars
             # Search.filterDuplicates
       T.goldenTest "snaps/search-example-2.snap" $ teamSummary <$> results
@@ -344,10 +346,11 @@ searchExamplesSpec = do
           , { effectType: FilterMatkDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
           ]
         maxCharacterCount = 2
+        excludeChars = Set.empty
         mustHaveChars = Set.empty
         results =
           Search.applyFilters filters db
-            # Search.search maxCharacterCount
+            # Search.search maxCharacterCount excludeChars
             # Search.filterMustHaveChars mustHaveChars
             # Search.filterDuplicates
       T.goldenTest "snaps/search-example-3.snap" $ teamSummary <$> results

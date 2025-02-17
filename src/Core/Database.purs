@@ -222,9 +222,10 @@ getDistinctObs weapon = do
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
 
 pickOb :: ObRange -> NonEmptyArray ObRange -> ObRange
-pickOb _ _ = do
-  -- TODO
-  ObRange { from: FromOb6, to: ToOb10 }
+pickOb ob obs = do
+  if NAR.elem ob obs then ob
+  else
+    NAR.last obs
 
 createDb :: forall m. MonadEffect m => MonadRec m => Array Weapon -> Map WeaponName WeaponData -> m Db
 createDb newWeapons existingWeapons = do

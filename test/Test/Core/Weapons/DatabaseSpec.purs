@@ -4,6 +4,7 @@ import Core.Database.VLatest
 import Prelude
 import Test.Spec
 
+import Core.Display (display)
 import Data.Array as Arr
 import Data.List.Lazy as LazyList
 import Data.List.ZipList (ZipList(..))
@@ -16,6 +17,18 @@ import Utils (MapAsArray(..))
 spec :: Spec Unit
 spec =
   describe "database" do
+    it "builds weapon data" do
+      db <- Utils.loadTestDb
+
+      let
+        weaponData = db.allWeapons
+          <#> \wd ->
+            { ignored: wd.ignored
+            , distinctObs: wd.distinctObs <#> display
+            , ownedOb: wd.ownedOb <#> display
+            }
+
+      T.goldenTest "snaps/weapon_data.snap" $ MapAsArray weaponData
     it "groups weapons" do
       db <- Utils.loadTestDb
 

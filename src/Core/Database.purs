@@ -112,20 +112,23 @@ insertWeapon
   -> Map WeaponName WeaponData
   -> Db
   -> m Db
-insertWeapon weapon existingWeapons db =
-  case Map.lookup weapon.name existingWeapons of
-    Just existingWeapon -> do
-      Console.log $ "Weapon already exists, replacing it: " <> display weapon.name
-      pure $ db
-        # mergeWithExisting existingWeapon
-        # insertIntoGroups
-        # insertCharacterName
-    Nothing -> do
-      Console.log $ "Weapon added: " <> display weapon.name
-      pure $ db
-        # insert
-        # insertIntoGroups
-        # insertCharacterName
+insertWeapon weapon existingWeapons db = do
+  let groups = groupsForWeapon weapon
+  if List.null groups then pure db
+  else
+    case Map.lookup weapon.name existingWeapons of
+      Just existingWeapon -> do
+        Console.log $ "Weapon already exists, replacing it: " <> display weapon.name
+        pure $ db
+          # mergeWithExisting existingWeapon
+          # insertIntoGroups groups
+          # insertCharacterName
+      Nothing -> do
+        Console.log $ "Weapon added: " <> display weapon.name
+        pure $ db
+          # insert
+          # insertIntoGroups groups
+          # insertCharacterName
   where
 
   insert :: Db -> Db
@@ -152,12 +155,12 @@ insertWeapon weapon existingWeapons db =
         }
     db { allWeapons = Map.insert weapon.name newWeapon db.allWeapons }
 
-  insertIntoGroups :: Db -> Db
-  insertIntoGroups db =
+  insertIntoGroups :: List.List GroupEntry -> Db -> Db
+  insertIntoGroups groups db =
     F.foldr
       insertIntoGroup
       db
-      (groupsForWeapon weapon)
+      groups
 
   insertIntoGroup :: GroupEntry -> Db -> Db
   insertIntoGroup { effectType, groupedWeapon } db = do

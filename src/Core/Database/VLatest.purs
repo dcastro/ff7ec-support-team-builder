@@ -6,7 +6,7 @@ import Core.Display (class Display, display)
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
-import Data.Maybe (Maybe(..))
+import Data.Maybe (Maybe)
 import Data.Newtype (class Newtype, unwrap)
 import Data.Set (Set)
 import Data.Show.Generic (genericShow)
@@ -60,11 +60,11 @@ type Weapon =
 
 newtype ObRange = ObRange
   { from :: FromOb
-  , to :: Maybe ToOb
+  , to :: ToOb
   }
 
 data FromOb = FromOb0 | FromOb1 | FromOb6 | FromOb10
-data ToOb = ToOb5 | ToOb9 | ToOb10
+data ToOb = ToOb0 | ToOb5 | ToOb9 | ToOb10
 
 type ObLevel =
   { description :: NonEmptyString -- ^ The source text from which the buffs/debuffs were parsed.
@@ -347,10 +347,11 @@ allFilterEffectTypes :: Array FilterEffectType
 allFilterEffectTypes = Utils.listEnum
 
 instance Display ObRange where
-  display (ObRange { from, to }) =
-    case to of
-      Nothing -> "OB" <> displayFrom from
-      Just to -> "OB" <> displayFrom from <> "-" <> displayTo to
+  display (ObRange { from, to }) = do
+    let fromStr = displayFrom from
+    let toStr = displayTo to
+    if fromStr == toStr then "OB" <> displayFrom from
+    else "OB" <> displayFrom from <> "-" <> displayTo to
 
     where
     displayFrom :: FromOb -> String
@@ -362,6 +363,7 @@ instance Display ObRange where
 
     displayTo :: ToOb -> String
     displayTo = case _ of
+      ToOb0 -> "0"
       ToOb5 -> "5"
       ToOb9 -> "9"
       ToOb10 -> "10"

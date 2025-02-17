@@ -390,14 +390,14 @@ findMatchingWeaponsSpec = do
 
       { matchingWeapons } <-
         db
-          # setOwnedLevel (ObRange { from: FromOb0, to: Just ToOb5 })
+          # setOwnedLevel (ObRange { from: FromOb0, to: ToOb5 })
           <#> Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
       weapon <- findWeapon matchingWeapons
       weapon.potencies `shouldEqualPretty` Just { base: Mid, max: High }
 
       { matchingWeapons } <-
         db
-          # setOwnedLevel (ObRange { from: FromOb0, to: Just ToOb5 })
+          # setOwnedLevel (ObRange { from: FromOb0, to: ToOb5 })
           <#> Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSelfOrSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
       weapon <- findWeapon matchingWeapons
       weapon.potencies `shouldEqualPretty` Just { base: Mid, max: High }
@@ -433,9 +433,9 @@ mkWeapon id character =
       , cureAllAbility: true
       }
   , ignored: false
-  , distinctObs: NAR.singleton (ObRange { from: FromOb0, to: Just ToOb5 })
-      # NAR.cons (ObRange { from: FromOb6, to: Just ToOb10 })
-  , ownedOb: Just (ObRange { from: FromOb6, to: Just ToOb10 })
+  , distinctObs: NAR.singleton (ObRange { from: FromOb0, to: ToOb5 })
+      # NAR.cons (ObRange { from: FromOb6, to: ToOb10 })
+  , ownedOb: Just (ObRange { from: FromOb6, to: ToOb10 })
   }
 
 filter1 :: Filter

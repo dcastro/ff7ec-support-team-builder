@@ -16,7 +16,6 @@ import Effect.Class.Console as Console
 import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
-import Halogen.HTML.Properties (InputType(..))
 import Halogen.HTML.Properties as HP
 import HtmlUtils (classes', displayIf, mkTooltipForWeapon, tooltip)
 import Utils (unsafeFromJust)
@@ -42,7 +41,6 @@ type State =
 
 data Output
   = RaiseSelectionChanged
-  | RaiseCheckedIgnored WeaponName Boolean
   | RaiseSetOwnedOb WeaponName Int
   | RaiseClosed
 
@@ -51,7 +49,6 @@ data Action
   | SelectedRange Int
   | SelectedMinBasePotency Int
   | SelectedMinMaxPotency Int
-  | CheckedIgnored WeaponName Boolean
   | SetOwnedOb WeaponName Int
   | Initialize
   | Receive Input
@@ -172,7 +169,6 @@ render state =
                             , HH.th_ [ HH.text "Weapon" ]
                             , HH.th_ [ HH.text "Character" ]
                             , HH.th_ [ HH.text "Owned" ]
-                            , HH.th_ [ HH.text "Ignored" ]
                             ]
                         ]
                           <>
@@ -213,15 +209,6 @@ render state =
                                                           [ HH.text $ display obRange ]
                                                     )
                                               )
-                                          ]
-                                      ]
-                                  , HH.td_
-                                      [ HH.span [ classes' "checkbox " ]
-                                          [ HH.input
-                                              [ HP.type_ InputCheckbox
-                                              , HP.checked weaponData.ignored
-                                              , HE.onChecked \ignored -> CheckedIgnored weaponData.weapon.name ignored
-                                              ]
                                           ]
                                       ]
                                   ]
@@ -272,9 +259,6 @@ handleAction = case _ of
     H.modify_ \s -> s { selectedMinMaxPotency = minMaxPotecy }
       # updateMatchingWeapons
     H.raise RaiseSelectionChanged
-
-  CheckedIgnored weaponName ignored -> do
-    H.raise $ RaiseCheckedIgnored weaponName ignored
 
   SetOwnedOb weaponName obRangeIndex -> do
     H.raise $ RaiseSetOwnedOb weaponName obRangeIndex

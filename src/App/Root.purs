@@ -219,11 +219,6 @@ handleAction = case _ of
       EffectSelector.RaiseSelectionChanged -> do
         modifyLoadedState updateTeams
 
-      EffectSelector.RaiseCheckedIgnored weaponName ignored -> do
-        modifyLoadedState \state -> do
-          state <- setWeaponIgnored weaponName ignored state
-          updateTeams state
-
       EffectSelector.RaiseSetOwnedOb weaponName obRangeIndex -> do
         modifyLoadedState \state -> do
           state <- setOwnedOb weaponName obRangeIndex state
@@ -240,10 +235,6 @@ handleAction = case _ of
 
   HandleResultsOutput output -> do
     case output of
-      Result.RaiseIgnoreWeapon weaponName -> do
-        modifyLoadedState \state -> do
-          state <- setWeaponIgnored weaponName true state
-          updateTeams state
       Result.RaiseSetOwnedOb weaponName obRangeIndex -> do
         modifyLoadedState \state -> do
           state <- setOwnedOb weaponName obRangeIndex state
@@ -309,24 +300,6 @@ updateTeams state = do
   --   pure unit
 
   pure $ state { teams = teams }
-
-setWeaponIgnored :: forall m. MonadAff m => WeaponName -> Boolean -> LoadedState -> m LoadedState
-setWeaponIgnored weaponName ignored state = do
-  Console.log $ "Weapon " <> display weaponName <> " ignored: " <> show ignored
-  let
-    updatedAllWeapons =
-      Map.alter
-        ( case _ of
-            Just existingWeapon -> Just existingWeapon { ignored = ignored }
-            Nothing -> unsafeCrashWith $ "Attempted to set 'ignored' flag, but weapon was not found: " <> display weaponName
-        )
-        weaponName
-        state.db.allWeapons
-
-  let state' = state { db { allWeapons = updatedAllWeapons } }
-  Console.log "Saving db to cache"
-  Db.writeToCache state'.db
-  pure state'
 
 setOwnedOb :: forall m. MonadAff m => WeaponName -> Int -> LoadedState -> m LoadedState
 setOwnedOb weaponName obRangeIndex state = do

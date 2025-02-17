@@ -26,6 +26,8 @@ type Db =
 
 type WeaponData =
   { weapon :: Weapon
+  -- NOTE: phased out the `ignored` feature,
+  -- but keeping the `ignored` flag in the db in case I want to bring it back
   , ignored :: Boolean
   -- List of all groups of Overboost Levels with the same weapon effect potencies.
   --

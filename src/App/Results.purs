@@ -25,13 +25,10 @@ type State =
 
 type Input = Array AssignmentResult
 
-data Output
-  = RaiseIgnoreWeapon WeaponName
-  | RaiseSetOwnedOb WeaponName Int
+data Output = RaiseSetOwnedOb WeaponName Int
 
 data Action
   = Receive Input
-  | IgnoreWeapon WeaponName
   | SetOwnedOb WeaponName Int
 
 component :: forall q. H.Component q Input Output Aff
@@ -91,16 +88,6 @@ render state =
                                           )
                                       ]
                                   ]
-                              , HH.div [ classes' "column is-narrow" ]
-                                  [ HH.span
-                                      [ tooltip "Ignore weapon", HE.onClick \_ -> IgnoreWeapon equipedWeapon.weaponData.weapon.name ]
-                                      [ HH.i
-                                          [ classes' "fas fa-delete-left ml-2"
-                                          ]
-                                          []
-                                      ]
-                                  -- TODO: display the applied effects next to each weapon
-                                  ]
                               ]
                           ]
                     )
@@ -115,5 +102,4 @@ mkTooltip weapon =
 handleAction :: forall cs. Action → H.HalogenM State Action cs Output Aff Unit
 handleAction = case _ of
   Receive teams -> H.put { teams }
-  IgnoreWeapon weaponName -> H.raise $ RaiseIgnoreWeapon weaponName
   SetOwnedOb weaponName obRangeIndex -> H.raise $ RaiseSetOwnedOb weaponName obRangeIndex

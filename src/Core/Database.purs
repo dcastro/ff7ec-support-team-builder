@@ -26,6 +26,8 @@ import Data.Newtype (unwrap)
 import Data.Set as Set
 import Data.Time.Duration (Hours(..))
 import Data.Traversable (for_)
+import Data.Tuple (Tuple(..))
+import Data.Tuple.Nested (type (/\), (/\))
 import Effect.Aff (Aff)
 import Effect.Aff.Class (class MonadAff, liftAff)
 import Effect.Class (class MonadEffect, liftEffect)
@@ -33,7 +35,7 @@ import Effect.Class.Console as Console
 import Effect.Now as Now
 import Google.SheetsApi as SheetsApi
 import Partial.Unsafe (unsafeCrashWith)
-import Utils (MapAsArray(..), SetAsArray(..), logOnLeft, renderJsonErr, throwOnNothing, whenJust)
+import Utils (MapAsArray(..), SetAsArray(..), logOnLeft, renderJsonErr, throwOnNothing, unsafeFromJust, whenJust)
 import Yoga.JSON as J
 
 currentDbVersion :: Int
@@ -81,10 +83,143 @@ init = do
     pure weapons
 
 getDistinctObs :: Weapon -> NonEmptyArray ObRange
-getDistinctObs _ =
-  -- TODO
-  NAR.singleton (ObRange { from: FromOb6, to: ToOb10 })
-    # NAR.cons (ObRange { from: FromOb0, to: ToOb5 })
+getDistinctObs weapon = do
+  NAR.cons' (weapon.ob0 /\ FromOb0 /\ ToOb0)
+    [ weapon.ob1 /\ FromOb1 /\ ToOb5
+    , weapon.ob6 /\ FromOb6 /\ ToOb9
+    , weapon.ob10 /\ FromOb10 /\ ToOb10
+    ]
+    # NAR.groupBy (\(Tuple x _) (Tuple y _) -> areObLevelsEquivalent x y)
+    <#> \(group :: NonEmptyArray (ObLevel /\ FromOb /\ ToOb)) ->
+      ObRange
+        { from: NAR.head group # \(Tuple _ (Tuple from _)) -> from
+        , to: NAR.last group # \(Tuple _ (Tuple _ to)) -> to
+        }
+  where
+  areObLevelsEquivalent :: ObLevel -> ObLevel -> Boolean
+  areObLevelsEquivalent obx oby = do
+    indices (Arr.length obx.effects)
+      # Arr.all \idx -> do
+          let effect1 = Arr.index obx.effects idx `unsafeFromJust` ("Index out of bounds for weapon: " <> display weapon.name)
+          let effect2 = Arr.index oby.effects idx `unsafeFromJust` ("Index out of bounds for weapon: " <> display weapon.name)
+          areEffectTypesEquivalent effect1.effectType effect2.effectType
+            &&
+              effect1.range == effect2.range
+
+  indices :: Int -> Array Int
+  indices n = if n <= 0 then [] else Arr.range 0 (n - 1)
+
+  -- Two effects are equivalent if they have the same potencies.
+  -- Duration, extension, and percentages are not considered.
+  areEffectTypesEquivalent :: EffectType -> EffectType -> Boolean
+  areEffectTypesEquivalent x y =
+    case x of
+      Heal { percentage: _ } ->
+        case y of
+          Heal { percentage: _ } -> true
+          _ -> crash unit
+      PatkUp { durExt: _, potencies: pot1 } ->
+        case y of
+          PatkUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      MatkUp { durExt: _, potencies: pot1 } ->
+        case y of
+          MatkUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      PdefUp { durExt: _, potencies: pot1 } ->
+        case y of
+          PdefUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      MdefUp { durExt: _, potencies: pot1 } ->
+        case y of
+          MdefUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      FireDamageUp { durExt: _, potencies: pot1 } ->
+        case y of
+          FireDamageUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      IceDamageUp { durExt: _, potencies: pot1 } ->
+        case y of
+          IceDamageUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      ThunderDamageUp { durExt: _, potencies: pot1 } ->
+        case y of
+          ThunderDamageUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      EarthDamageUp { durExt: _, potencies: pot1 } ->
+        case y of
+          EarthDamageUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      WaterDamageUp { durExt: _, potencies: pot1 } ->
+        case y of
+          WaterDamageUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      WindDamageUp { durExt: _, potencies: pot1 } ->
+        case y of
+          WindDamageUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      Veil { durExt: _, percentage: _ } ->
+        case y of
+          Veil { durExt: _, percentage: _ } -> true
+          _ -> crash unit
+      Provoke { durExt: _ } ->
+        case y of
+          Provoke { durExt: _ } -> true
+          _ -> crash unit
+      PatkDown { durExt: _, potencies: pot1 } ->
+        case y of
+          PatkDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      MatkDown { durExt: _, potencies: pot1 } ->
+        case y of
+          MatkDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      PdefDown { durExt: _, potencies: pot1 } ->
+        case y of
+          PdefDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      MdefDown { durExt: _, potencies: pot1 } ->
+        case y of
+          MdefDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      FireResistDown { durExt: _, potencies: pot1 } ->
+        case y of
+          FireResistDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      IceResistDown { durExt: _, potencies: pot1 } ->
+        case y of
+          IceResistDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      ThunderResistDown { durExt: _, potencies: pot1 } ->
+        case y of
+          ThunderResistDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      EarthResistDown { durExt: _, potencies: pot1 } ->
+        case y of
+          EarthResistDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      WaterResistDown { durExt: _, potencies: pot1 } ->
+        case y of
+          WaterResistDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      WindResistDown { durExt: _, potencies: pot1 } ->
+        case y of
+          WindResistDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          _ -> crash unit
+      Enfeeble { durExt: _ } ->
+        case y of
+          Enfeeble { durExt: _ } -> true
+          _ -> crash unit
+      Stop { durExt: _ } ->
+        case y of
+          Stop { durExt: _ } -> true
+          _ -> crash unit
+      ExploitWeakness { durExt: _, percentage: _ } ->
+        case y of
+          ExploitWeakness { durExt: _, percentage: _ } -> true
+          _ -> crash unit
+
+  crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
 
 pickOb :: ObRange -> NonEmptyArray ObRange -> ObRange
 pickOb _ _ = do

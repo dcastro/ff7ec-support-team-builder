@@ -134,44 +134,42 @@
   [
     "Best Wishes",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Bird of Prey",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Black Whiskers",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB10",
       "ignored": false,
       "distinctObs": [
         "OB0-5",
-        "OB6-10"
+        "OB6-9",
+        "OB10"
       ]
     }
   ],
   [
     "Blade of Ruin",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -189,11 +187,10 @@
   [
     "Blue Daffodil Gloves",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -255,11 +252,10 @@
   [
     "Catsmegaphone",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -299,11 +295,10 @@
   [
     "Chocobo Paddle",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -368,7 +363,8 @@
       "ownedOb": "OB6-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
+        "OB0",
+        "OB1-5",
         "OB6-10"
       ]
     }
@@ -376,11 +372,10 @@
   [
     "Crystal Sword",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -398,11 +393,10 @@
   [
     "Dawn's Prayers",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -420,11 +414,10 @@
   [
     "Egg Staff",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -442,11 +435,10 @@
   [
     "Enhance Sword (Z)",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -464,22 +456,20 @@
   [
     "Espee Rapiere Next-G",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Fairy Tale",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -497,11 +487,10 @@
   [
     "Featherscatter",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -530,11 +519,10 @@
   [
     "Flayer",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -563,11 +551,10 @@
   [
     "Foam Sword",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -618,11 +605,10 @@
   [
     "Giant Fork",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -651,22 +637,22 @@
   [
     "Gold Megaphone",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB10",
       "ignored": false,
       "distinctObs": [
         "OB0-5",
-        "OB6-10"
+        "OB6-9",
+        "OB10"
       ]
     }
   ],
   [
     "Grand Gloves",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -728,11 +714,10 @@
   [
     "Headphones",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -750,22 +735,20 @@
   [
     "Hell House Cannon",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Hell House Collar",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -816,22 +799,20 @@
   [
     "Iron Collar",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Iron Greatsword",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -860,11 +841,10 @@
   [
     "Járngreipr",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -948,11 +928,10 @@
   [
     "Lifeguard Wraps",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -992,11 +971,10 @@
   [
     "Mallet of Luck",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1036,11 +1014,10 @@
   [
     "Mop",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1113,22 +1090,20 @@
   [
     "Orchard Shovel",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Oven Mitts",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1190,11 +1165,10 @@
   [
     "Prime Number",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1245,22 +1219,20 @@
   [
     "Rhad Cannon",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Rhad Gun",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1289,11 +1261,10 @@
   [
     "Rubber Collar",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1399,11 +1370,10 @@
   [
     "Shinra Wyvern Blade",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1421,11 +1391,10 @@
   [
     "Silver Megaphone",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1465,11 +1434,10 @@
   [
     "Sleek Saber",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1509,11 +1477,10 @@
   [
     "Spear",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1531,55 +1498,50 @@
   [
     "Steiner's Blade",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Steward Collar",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Steward Gloves",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Stilva Glaive",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Stilva Megaphone",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1685,33 +1647,30 @@
   [
     "Tranquility",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Tranquilizer Gun",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Trident",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1729,33 +1688,30 @@
   [
     "Turks' Blade",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Turks' Gloves",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
   [
     "Turks' Rifle",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1773,11 +1729,10 @@
   [
     "Type-90 Longsword",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],
@@ -1795,11 +1750,10 @@
   [
     "Umbrella",
     {
-      "ownedOb": "OB6-10",
+      "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-5",
-        "OB6-10"
+        "OB0-10"
       ]
     }
   ],

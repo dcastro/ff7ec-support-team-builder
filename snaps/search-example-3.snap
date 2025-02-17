@@ -2,38 +2,6 @@
   [
     {
       "weapons": [
-        "Floral Wand",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
         "Battle Trumpet",
         "Marching Horn"
       ],
@@ -82,54 +50,6 @@
   [
     {
       "weapons": [
-        "Dawn's Prayers",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
         "Stalwart Integrity",
         "Type-91 Two-Hander"
       ],
@@ -141,38 +61,6 @@
         "Twinkling Star"
       ],
       "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Pole Axe",
-        "Scimitar"
-      ],
-      "character": "Cid"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
     }
   ],
   [
@@ -201,10 +89,10 @@
     },
     {
       "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
+        "Kuja's Spirit Blade",
+        "Tempest"
       ],
-      "character": "Cait Sith"
+      "character": "Sephiroth"
     }
   ],
   [
@@ -217,10 +105,10 @@
     },
     {
       "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
+        "Kuja's Spirit Blade",
+        "Tempest"
       ],
-      "character": "Cait Sith"
+      "character": "Sephiroth"
     }
   ],
   [
@@ -233,10 +121,10 @@
     },
     {
       "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
+        "Kuja's Spirit Blade",
+        "Tempest"
       ],
-      "character": "Cait Sith"
+      "character": "Sephiroth"
     }
   ],
   [
@@ -249,26 +137,10 @@
     },
     {
       "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
+        "Kuja's Spirit Blade",
+        "Tempest"
       ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
+      "character": "Sephiroth"
     }
   ],
   [
@@ -281,138 +153,10 @@
     },
     {
       "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
+        "Kuja's Spirit Blade",
+        "Tempest"
       ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Marching Horn"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Quina Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Stalwart Integrity",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
+      "character": "Sephiroth"
     }
   ],
   [
@@ -473,10 +217,26 @@
     },
     {
       "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
+        "Kuja's Spirit Blade",
+        "Tempest"
       ],
-      "character": "Barret"
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Pole Axe",
+        "Scimitar"
+      ],
+      "character": "Cid"
+    },
+    {
+      "weapons": [
+        "Iron Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
     }
   ],
   [
@@ -578,22 +338,6 @@
   [
     {
       "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Rhad Gun",
-        "S1976C"
-      ],
-      "character": "Vincent"
-    }
-  ],
-  [
-    {
-      "weapons": [
         "Electrocannon",
         "Rhad Cannon"
       ],
@@ -614,6 +358,278 @@
         "S1976C"
       ],
       "character": "Vincent"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Battle Trumpet",
+        "Green Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Sun Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Battle Trumpet",
+        "Green Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Dawn's Prayers",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Battle Trumpet",
+        "Green Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Gambanteinn"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Battle Trumpet",
+        "Green Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Electrocannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gambanteinn",
+        "Sun Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Battle Trumpet",
+        "Green Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Sun Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Electrocannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Battle Trumpet",
+        "Marching Horn"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Iron Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Battle Trumpet",
+        "Quina Megaphone"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Iron Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Dawn's Prayers",
+        "Gambanteinn"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Battle Trumpet",
+        "Green Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Dawn's Prayers",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Electrocannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Gambanteinn"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Electrocannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gambanteinn",
+        "Sun Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Electrocannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Stalwart Integrity",
+        "Type-91 Two-Hander"
+      ],
+      "character": "Angeal"
+    },
+    {
+      "weapons": [
+        "Iron Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Dawn's Prayers",
+        "Gambanteinn"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Electrocannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Iron Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Rhad Gun",
+        "S1976C"
+      ],
+      "character": "Vincent"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Oven Mitts",
+        "Steward Gloves"
+      ],
+      "character": "Tifa"
     },
     {
       "weapons": [
@@ -669,22 +685,6 @@
         "Silver Collar"
       ],
       "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Oven Mitts",
-        "Steward Gloves"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
     }
   ]
 ]

@@ -1,12 +1,14 @@
 module App.EffectSelector where
 
+import Core.Database.VLatest
 import Prelude
 
-import Core.Display (display)
-import Core.Weapons.Search as Search
-import Core.Database.VLatest
 import Core.Database.VLatest as Db
+import Core.Display (display)
+import Core.Weapons.Search (Filter, FilterRange, FilterResultWeapon)
+import Core.Weapons.Search as Search
 import Data.Array as Arr
+import Data.Array.NonEmpty as NAR
 import Data.Bounded.Generic (genericBottom)
 import Data.Maybe (Maybe(..))
 import Effect.Aff (Aff)
@@ -23,29 +25,34 @@ import Web.UIEvent.MouseEvent (MouseEvent)
 type Slot id = H.Slot Query Output id
 
 type Input =
-  { armory :: Armory
+  { db :: Db
   , effectTypeMb :: Maybe FilterEffectType
   , canBeDeleted :: Boolean
   }
 
 type State =
-  { armory ::
-      Armory
+  { db :: Db
   , selectedEffectType :: Maybe FilterEffectType
   , selectedRange :: FilterRange
-  , matchingWeapons :: Array ArmoryWeapon
+  , selectedMinBasePotency :: Potency
+  , selectedMinMaxPotency :: Potency
+  , matchingWeapons :: Array FilterResultWeapon
   , canBeDeleted :: Boolean
   }
 
 data Output
   = RaiseSelectionChanged
   | RaiseCheckedIgnored WeaponName Boolean
+  | RaiseSetOwnedOb WeaponName Int
   | RaiseClosed
 
 data Action
   = SelectedEffectType Int
   | SelectedRange Int
+  | SelectedMinBasePotency Int
+  | SelectedMinMaxPotency Int
   | CheckedIgnored WeaponName Boolean
+  | SetOwnedOb WeaponName Int
   | Initialize
   | Receive Input
   | Close MouseEvent
@@ -55,11 +62,13 @@ data Query a = GetFilter (Filter -> a)
 component :: H.Component Query Input Output Aff
 component =
   H.mkComponent
-    { initialState: \{ armory, effectTypeMb, canBeDeleted } ->
+    { initialState: \{ db, effectTypeMb, canBeDeleted } ->
         updateMatchingWeapons
-          { armory
+          { db
           , selectedEffectType: effectTypeMb
           , selectedRange: genericBottom
+          , selectedMinBasePotency: Mid
+          , selectedMinMaxPotency: High
           , matchingWeapons: []
           , canBeDeleted
           }
@@ -104,7 +113,7 @@ render state =
                             [ HH.select
                                 [ HE.onSelectedIndexChange SelectedRange
                                 ]
-                                ( Db.allFilterRanges <#> \filterRange ->
+                                ( Search.allFilterRanges <#> \filterRange ->
                                     HH.option_ [ HH.text $ display filterRange ]
                                 )
                             ]
@@ -119,6 +128,40 @@ render state =
                 ]
             ]
 
+        -- Table for the potency filters
+        , displayIf (hasPotencies state.selectedEffectType) $
+            HH.div
+              [ classes' "columns is-mobile is-centered is-vcentered is-1" ]
+              [ HH.div [ classes' "column is-narrow" ]
+                  [ HH.text "Base Pot. ≥"
+                  ]
+              , HH.div [ classes' "column is-narrow" ]
+                  [ HH.div [ classes' "select" ]
+                      [ HH.select
+                          [ HE.onSelectedIndexChange SelectedMinBasePotency
+                          ]
+                          ( Db.allPossiblePotencies <#> \potency -> do
+                              let selected = state.selectedMinBasePotency == potency
+                              HH.option [ HP.selected selected ] [ HH.text $ display potency ]
+                          )
+                      ]
+                  ]
+              , HH.div [ classes' "column is-narrow" ]
+                  [ HH.text "Max Pot. ≥"
+                  ]
+              , HH.div [ classes' "column is-narrow" ]
+                  [ HH.div [ classes' "select" ]
+                      [ HH.select
+                          [ HE.onSelectedIndexChange SelectedMinMaxPotency
+                          ]
+                          ( Db.allPossiblePotencies <#> \potency -> do
+                              let selected = state.selectedMinMaxPotency == potency
+                              HH.option [ HP.selected selected ] [ HH.text $ display potency ]
+                          )
+                      ]
+                  ]
+              ]
+
         -- Used to center the table
         , HH.div [ classes' "columns is-mobile is-centered" ]
             [ HH.div [ classes' "column is-narrow" ]
@@ -128,23 +171,56 @@ render state =
                             [ HH.th_ []
                             , HH.th_ [ HH.text "Weapon" ]
                             , HH.th_ [ HH.text "Character" ]
-                            , HH.th_ [ HH.text "Ignored?" ]
+                            , HH.th_ [ HH.text "Owned" ]
+                            , HH.th_ [ HH.text "Ignored" ]
                             ]
                         ]
                           <>
-                            ( state.matchingWeapons <#> \weapon ->
-                                HH.tr_
-                                  [ HH.img [ HP.src (display weapon.image), classes' "image is-32x32" ]
+                            ( state.matchingWeapons <#> \filterResultWeapon -> do
+                                let weaponData = filterResultWeapon.weapon
+
+                                -- Grey out a row if the weapon does not match the filters
+                                let
+                                  checkCellDisabled classes =
+                                    if not filterResultWeapon.matchesFilters then classes <> " has-text-primary-40"
+                                    else classes
+                                  checkRowDisabled classes =
+                                    if not filterResultWeapon.matchesFilters then classes <> " has-background-primary-95"
+                                    else classes
+                                HH.tr
+                                  [ classes' ("" # checkRowDisabled) ]
+                                  [ HH.img [ HP.src (display weaponData.weapon.image), classes' "image is-32x32" ]
                                   , HH.td
-                                      [ tooltip (mkTooltipForWeapon weapon), classes' "has-tooltip-right" ]
-                                      [ HH.text $ display weapon.name ]
-                                  , HH.td_ [ HH.text $ display weapon.character ]
+                                      [ tooltip (mkTooltipForWeapon weaponData.weapon)
+                                      , classes' ("has-tooltip-right" # checkCellDisabled)
+                                      ]
+                                      [ HH.text $ display weaponData.weapon.name ]
+                                  , HH.td
+                                      [ classes' ("" # checkCellDisabled) ]
+                                      [ HH.text $ display weaponData.weapon.character ]
+                                  , HH.td_
+                                      [ HH.div [ classes' "select" ]
+                                          [ HH.select
+                                              [ HE.onSelectedIndexChange (SetOwnedOb weaponData.weapon.name) ]
+                                              ( [ HH.option
+                                                    [ HP.selected (weaponData.ownedOb == Nothing) ]
+                                                    [ HH.text "N/A" ]
+                                                ]
+                                                  <>
+                                                    ( NAR.toArray weaponData.distinctObs <#> \obRange ->
+                                                        HH.option
+                                                          [ HP.selected (weaponData.ownedOb == Just obRange) ]
+                                                          [ HH.text $ display obRange ]
+                                                    )
+                                              )
+                                          ]
+                                      ]
                                   , HH.td_
                                       [ HH.span [ classes' "checkbox " ]
                                           [ HH.input
                                               [ HP.type_ InputCheckbox
-                                              , HP.checked weapon.ignored
-                                              , HE.onChecked \ignored -> CheckedIgnored weapon.name ignored
+                                              , HP.checked weaponData.ignored
+                                              , HE.onChecked \ignored -> CheckedIgnored weaponData.weapon.name ignored
                                               ]
                                           ]
                                       ]
@@ -177,14 +253,31 @@ handleAction = case _ of
     H.raise RaiseSelectionChanged
 
   SelectedRange idx -> do
-    let filterRange = Arr.index Db.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
+    let filterRange = Arr.index Search.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
     Console.log $ "idx " <> show idx <> ", selected: " <> display filterRange
     H.modify_ \s -> s { selectedRange = filterRange }
       # updateMatchingWeapons
     H.raise RaiseSelectionChanged
 
+  SelectedMinBasePotency idx -> do
+    let minBasePotecy = Arr.index Db.allPossiblePotencies idx `unsafeFromJust` "Invalid base potency index"
+    Console.log $ "idx " <> show idx <> ", selected: " <> display minBasePotecy
+    H.modify_ \s -> s { selectedMinBasePotency = minBasePotecy }
+      # updateMatchingWeapons
+    H.raise RaiseSelectionChanged
+
+  SelectedMinMaxPotency idx -> do
+    let minMaxPotecy = Arr.index Db.allPossiblePotencies idx `unsafeFromJust` "Invalid max potency index"
+    Console.log $ "idx " <> show idx <> ", selected: " <> display minMaxPotecy
+    H.modify_ \s -> s { selectedMinMaxPotency = minMaxPotecy }
+      # updateMatchingWeapons
+    H.raise RaiseSelectionChanged
+
   CheckedIgnored weaponName ignored -> do
     H.raise $ RaiseCheckedIgnored weaponName ignored
+
+  SetOwnedOb weaponName obRangeIndex -> do
+    H.raise $ RaiseSetOwnedOb weaponName obRangeIndex
 
   Initialize -> do
     -- When this EffectSelector is done rendering, if the initial state has an effect type,
@@ -196,7 +289,7 @@ handleAction = case _ of
   Receive input -> do
     H.modify_ \state ->
       updateMatchingWeapons $ state
-        { armory = input.armory
+        { db = input.db
         , canBeDeleted = input.canBeDeleted
         }
 
@@ -205,21 +298,61 @@ handleAction = case _ of
 
 updateMatchingWeapons :: State -> State
 updateMatchingWeapons state = do
-  case state.selectedEffectType of
-    Just effectType -> do
-      let filter = { effectType, range: state.selectedRange } :: Filter
-      let filterResult = Search.findMatchingWeapons filter state.armory
-      let matchingWeapons = filterResult.matchingWeapons <#> \{ weapon } -> weapon
-      state { matchingWeapons = matchingWeapons }
+  case buildFilter state of
+    Just filter -> do
+      let filterResult = Search.findMatchingWeapons filter state.db
+      state { matchingWeapons = filterResult.matchingWeapons }
     Nothing -> state { matchingWeapons = [] }
 
 handleQuery :: forall action a m. Query a -> H.HalogenM State action () Output m (Maybe a)
 handleQuery = case _ of
   GetFilter reply -> do
     state <- H.get
-    case state.selectedEffectType of
-      Just effectType -> pure $ Just $ reply
-        { effectType
-        , range: state.selectedRange
-        }
+    case buildFilter state of
+      Just filter -> pure $ Just $ reply filter
       Nothing -> pure Nothing
+
+buildFilter :: State -> Maybe Filter
+buildFilter state =
+  case state.selectedEffectType of
+    Nothing -> Nothing
+    Just effectType -> Just
+      { effectType
+      , range: state.selectedRange
+      , minBasePotency: state.selectedMinBasePotency
+      , minMaxPotency: state.selectedMinMaxPotency
+      }
+
+hasPotencies :: Maybe FilterEffectType -> Boolean
+hasPotencies = case _ of
+  Nothing -> false
+  Just effectType -> case effectType of
+    FilterHeal -> false
+
+    FilterVeil -> false
+    FilterProvoke -> false
+    FilterEnfeeble -> false
+    FilterStop -> false
+    FilterExploitWeakness -> false
+
+    FilterPatkUp -> true
+    FilterMatkUp -> true
+    FilterPdefUp -> true
+    FilterMdefUp -> true
+    FilterFireDamageUp -> true
+    FilterIceDamageUp -> true
+    FilterThunderDamageUp -> true
+    FilterEarthDamageUp -> true
+    FilterWaterDamageUp -> true
+    FilterWindDamageUp -> true
+
+    FilterPatkDown -> true
+    FilterMatkDown -> true
+    FilterPdefDown -> true
+    FilterMdefDown -> true
+    FilterFireResistDown -> true
+    FilterIceResistDown -> true
+    FilterThunderResistDown -> true
+    FilterEarthResistDown -> true
+    FilterWaterResistDown -> true
+    FilterWindResistDown -> true

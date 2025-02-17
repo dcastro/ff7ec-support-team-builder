@@ -5,9 +5,9 @@ import Prelude
 
 import Benchotron.Core (Benchmark, benchFn, mkBenchmark)
 import Control.Monad.Error.Class (throwError)
-import Core.Armory as Armory
+import Core.Database as Db
 import Core.Weapons.Parser (parseWeapons)
-import Core.Weapons.Search (AssignmentResult)
+import Core.Weapons.Search (AssignmentResult, Filter, FilterRange(..))
 import Core.Weapons.Search as Search
 import Data.Either (Either(..))
 import Data.Map as Map
@@ -37,25 +37,25 @@ benchSearch = do
 
 input :: Array Filter
 input =
-  [ { effectType: FilterPdefDown, range: FilterSingleTargetOrAll }
-  , { effectType: FilterPatkUp, range: FilterSingleTargetOrAll }
-  , { effectType: FilterHeal, range: FilterAll }
-  , { effectType: FilterWaterResistDown, range: FilterSingleTargetOrAll }
-  , { effectType: FilterPatkDown, range: FilterSingleTargetOrAll }
-  , { effectType: FilterMatkDown, range: FilterSingleTargetOrAll }
+  [ { effectType: FilterPdefDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+  , { effectType: FilterPatkUp, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+  , { effectType: FilterHeal, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
+  , { effectType: FilterWaterResistDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+  , { effectType: FilterPatkDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+  , { effectType: FilterMatkDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
   ]
 
-search1 :: Armory -> Array Filter -> Array AssignmentResult
-search1 armory filters = do
+search1 :: Db -> Array Filter -> Array AssignmentResult
+search1 db filters = do
   let
     maxCharacterCount = 2
     mustHaveChars = Set.empty
-  Search.applyFilters filters armory
+  Search.applyFilters filters db
     # Search.search maxCharacterCount
     # Search.filterMustHaveChars mustHaveChars
     # Search.filterDuplicates
 
-loadTestDb :: Aff Armory
+loadTestDb :: Aff Db
 loadTestDb = do
   sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
   sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of
@@ -66,4 +66,4 @@ loadTestDb = do
             <> Utils.renderJsonErr errs
   let { weapons, errors: _ } = parseWeapons sourceWeapons
 
-  Armory.createArmory weapons Map.empty
+  Db.createDb weapons Map.empty

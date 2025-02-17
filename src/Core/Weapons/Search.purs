@@ -3,19 +3,61 @@ module Core.Weapons.Search where
 import Core.Database.VLatest
 import Prelude
 
-import Core.Display (display)
+import Core.Display (class Display, display)
 import Data.Array as Arr
+import Data.Array.NonEmpty (NonEmptyArray)
+import Data.Array.NonEmpty as NAR
 import Data.Foldable as F
 import Data.Function (on)
+import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
 import Data.Map as Map
-import Data.Maybe (Maybe(..), fromMaybe)
+import Data.Maybe (Maybe(..), fromMaybe, isJust)
 import Data.Newtype (unwrap)
 import Data.Ord.Down (Down(..))
 import Data.Set (Set)
 import Data.Set as Set
+import Data.Show.Generic (genericShow)
 import Data.String.NonEmpty as NES
 import Utils (unsafeFromJust)
+import Utils as Utils
+import Yoga.JSON (class ReadForeign, class WriteForeign)
+import Yoga.JSON.Generics as J
+import Yoga.JSON.Generics.EnumSumRep as Enum
+
+type Filter =
+  { effectType :: FilterEffectType
+  , range :: FilterRange
+  , minBasePotency :: Potency
+  , minMaxPotency :: Potency
+  }
+
+data FilterRange
+  = FilterAll
+  | FilterSingleTargetOrAll
+  | FilterSelfOrSingleTargetOrAll
+
+derive instance Generic FilterRange _
+derive instance Eq FilterRange
+derive instance Ord FilterRange
+
+instance Show FilterRange where
+  show = genericShow
+
+instance WriteForeign FilterRange where
+  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
+
+instance ReadForeign FilterRange where
+  readImpl = J.genericReadForeignEnum Enum.defaultOptions
+
+instance Display FilterRange where
+  display = case _ of
+    FilterAll -> "All"
+    FilterSingleTargetOrAll -> "Single Target / All"
+    FilterSelfOrSingleTargetOrAll -> "Self / Single Target / All"
+
+allFilterRanges :: Array FilterRange
+allFilterRanges = Utils.listEnum
 
 type FilterResult =
   { filter :: Filter
@@ -23,26 +65,104 @@ type FilterResult =
   }
 
 type FilterResultWeapon =
-  { weapon :: ArmoryWeapon
-  , potenciesAtOb10 :: Maybe Potencies
+  { weapon :: WeaponData
+  -- For a given effect, the potencies this weapon has for that effect,
+  -- at the owned overboost level.
+  , potencies :: Maybe Potencies
+  , matchesFilters :: Boolean
   }
 
-findMatchingWeapons :: Filter -> Armory -> FilterResult
-findMatchingWeapons filter armory = do
+findMatchingWeapons :: Filter -> Db -> FilterResult
+findMatchingWeapons filter db = do
   let
-    matchingGroupedWeapons = Map.lookup filter armory.groupedByEffect # fromMaybe [] :: Array GroupedWeapon
+    (weaponsForEffectType :: Array GroupedWeapon) = Map.lookup filter.effectType db.groupedByEffect # fromMaybe []
 
-    matchingWeapons = matchingGroupedWeapons <#> \{ weaponName, potenciesAtOb10 } -> do
-      let weapon = Map.lookup weaponName armory.allWeapons `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter <> "' not found.")
-      { weapon
-      , potenciesAtOb10
-      }
+    (matchingWeapons :: Array FilterResultWeapon) = weaponsForEffectType
+      # Arr.mapMaybe \{ weaponName, ranges } -> do
+          let
+            weapon = Map.lookup weaponName db.allWeapons
+              `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter.effectType <> "' not found.")
+
+          -- Throw out weapons that don't match the required range.
+          matchingRanges <- matchRanges filter.range ranges
+
+          let
+            potencies =
+              case weapon.ownedOb of
+                Nothing -> Nothing
+                Just ownedOb -> do
+                  selectBestPotencies ownedOb matchingRanges
+
+            matchesFilters =
+              not weapon.ignored && isJust weapon.ownedOb && hasMinPotencies potencies
+
+          Just
+            { weapon
+            , potencies
+            , matchesFilters
+            }
+
   { filter
   , matchingWeapons
   }
 
-applyFilters :: Array Filter -> Armory -> Array FilterResult
-applyFilters filters armory = filters <#> \filter -> findMatchingWeapons filter armory
+  where
+
+  hasMinPotencies :: Maybe Potencies -> Boolean
+  hasMinPotencies =
+    case _ of
+      Nothing ->
+        -- Either:
+        --   * this weapon is not owned (in which case, it doesn't matter what we return)
+        --   * or the selected effect type is not associated with potencies, e.g. "Heal" has no potency
+        --     (in which case, we resort to vacuous truth)
+        true
+      Just potencies ->
+        potencies.base >= filter.minBasePotency
+          &&
+            potencies.max >= filter.minMaxPotency
+
+  selectBestPotencies :: ObRange -> NonEmptyArray GroupedWeaponRange -> Maybe Potencies
+  selectBestPotencies ownedOb ranges = do
+    ranges
+      # NAR.toArray
+      # Arr.mapMaybe (selectPotenciesForOwnedOb ownedOb)
+      # F.maximumBy (compare `on` _.max <> compare `on` _.base)
+
+  selectPotenciesForOwnedOb :: ObRange -> GroupedWeaponRange -> Maybe Potencies
+  selectPotenciesForOwnedOb (ObRange ownedOb) range =
+    case range.allPotencies of
+      Nothing -> Nothing
+      Just allPotencies ->
+        case ownedOb.from of
+          FromOb0 -> Just allPotencies.ob0
+          FromOb1 -> Just allPotencies.ob1
+          FromOb6 -> Just allPotencies.ob6
+          FromOb10 -> Just allPotencies.ob10
+
+  matchRanges :: FilterRange -> Array GroupedWeaponRange -> Maybe (NonEmptyArray GroupedWeaponRange)
+  matchRanges filterRange ranges =
+    ranges
+      # Arr.filter (\r -> matchRange filterRange r.range)
+      # NAR.fromArray
+
+  matchRange :: FilterRange -> Range -> Boolean
+  matchRange =
+    case _, _ of
+      FilterAll, All -> true
+      FilterAll, SingleTarget -> false
+      FilterAll, Self -> false
+
+      FilterSingleTargetOrAll, All -> true
+      FilterSingleTargetOrAll, SingleTarget -> true
+      FilterSingleTargetOrAll, Self -> false
+
+      FilterSelfOrSingleTargetOrAll, All -> true
+      FilterSelfOrSingleTargetOrAll, SingleTarget -> true
+      FilterSelfOrSingleTargetOrAll, Self -> true
+
+applyFilters :: Array Filter -> Db -> Array FilterResult
+applyFilters filters db = filters <#> \filter -> findMatchingWeapons filter db
 
 search :: Int -> Array FilterResult -> Array AssignmentResult
 search maxCharacterCount filterResults =
@@ -52,20 +172,20 @@ search maxCharacterCount filterResults =
       # Arr.nubBy (compare `on` _.filter)
       # Arr.foldr
           ( \(filterResult :: FilterResult) (teams :: Array AssignmentResult) -> do
-              { weapon, potenciesAtOb10 } <- filterResult.matchingWeapons
-                # discardIgnored
+              { weapon, potencies } <- filterResult.matchingWeapons
+                # discardUnmatched
 
               (team :: AssignmentResult) <- teams
 
-              case assignWeapon maxCharacterCount { filter: filterResult.filter, potenciesAtOb10 } weapon team of
+              case assignWeapon maxCharacterCount { filter: filterResult.filter, potencies } weapon team of
                 Just team -> [ team ]
                 Nothing -> []
           )
           ([ emptyTeam ] :: Array AssignmentResult)
       # Arr.sortBy (comparing $ scoreTeam >>> Down)
   where
-  discardIgnored :: Array FilterResultWeapon -> Array FilterResultWeapon
-  discardIgnored = Arr.filter \{ weapon } -> not weapon.ignored
+  discardUnmatched :: Array FilterResultWeapon -> Array FilterResultWeapon
+  discardUnmatched = Arr.filter \filterResultWeapon -> filterResultWeapon.matchesFilters
 
 emptyTeam :: AssignmentResult
 emptyTeam = { characters: Map.empty }
@@ -82,63 +202,63 @@ type Character =
   }
 
 type EquipedWeapon =
-  { weapon :: ArmoryWeapon
+  { weaponData :: WeaponData
   -- The filters that this weapon matched on.
   , matchedFilters :: Array EquipedWeaponFilter
   }
 
 type EquipedWeaponFilter =
   { filter :: Filter
-  , potenciesAtOb10 :: Maybe Potencies
+  , potencies :: Maybe Potencies
   }
 
 -- Returns `Nothing` if:
 --  * There are more than 2 weapons for any character.
 --  * The selected weapons belong to more than `n` characters.
-assignWeapon :: Int -> EquipedWeaponFilter -> ArmoryWeapon -> AssignmentResult -> Maybe AssignmentResult
-assignWeapon maxCharacterCount filter weapon assignments = do
+assignWeapon :: Int -> EquipedWeaponFilter -> WeaponData -> AssignmentResult -> Maybe AssignmentResult
+assignWeapon maxCharacterCount filter weaponData assignments = do
   let
-    characterName = weapon.character :: CharacterName
+    characterName = weaponData.weapon.character :: CharacterName
     characterName' = NES.toString (unwrap characterName)
   updatedCharacters <-
     case Map.lookup characterName' assignments.characters of
       Nothing ->
         -- This character hasn't been created yet, so we attempt to create it.
         if Map.size assignments.characters >= maxCharacterCount then Nothing
-        else Just $ Map.insert characterName' (mkCharacter characterName weapon filter) assignments.characters
+        else Just $ Map.insert characterName' (mkCharacter characterName weaponData filter) assignments.characters
       Just existingCharacter -> do
         -- This character already exists, so we attempt to equip this weapon.
-        updatedCharacter <- equipWeapon weapon filter existingCharacter
+        updatedCharacter <- equipWeapon weaponData filter existingCharacter
         pure $ Map.insert characterName' updatedCharacter assignments.characters
   Just $ assignments { characters = updatedCharacters }
   where
 
-  mkCharacter :: CharacterName -> ArmoryWeapon -> EquipedWeaponFilter -> Character
+  mkCharacter :: CharacterName -> WeaponData -> EquipedWeaponFilter -> Character
   mkCharacter name mainHandWeapon matchedFilter =
     { name
     , mainHand: Just
-        { weapon: mainHandWeapon
+        { weaponData: mainHandWeapon
         , matchedFilters: [ matchedFilter ]
         }
     , offHand: Nothing
     }
 
-  equipWeapon :: ArmoryWeapon -> EquipedWeaponFilter -> Character -> Maybe Character
-  equipWeapon weapon filter character = do
+  equipWeapon :: WeaponData -> EquipedWeaponFilter -> Character -> Maybe Character
+  equipWeapon weaponData filter character = do
     case character.mainHand of
       Nothing -> Just character
         { mainHand = Just
-            { weapon
+            { weaponData
             , matchedFilters: [ filter ]
             }
         }
       Just mainHand ->
-        if mainHand.weapon.name == weapon.name
+        if mainHand.weaponData.weapon.name == weaponData.weapon.name
         -- If this weapon is already equiped in the main hand, simply update `matchedFilters`
         then Just character { mainHand = Just $ addMatchedFilter filter mainHand }
         else
           case character.offHand of
-            Just offHand | offHand.weapon.name == weapon.name -> do
+            Just offHand | offHand.weaponData.weapon.name == weaponData.weapon.name -> do
               -- If this weapon is already equiped in the off hand, simply update `matchedFilters`
               pure $ character { offHand = Just $ addMatchedFilter filter offHand }
             Just _ ->
@@ -148,7 +268,7 @@ assignWeapon maxCharacterCount filter weapon assignments = do
               -- The off hand is free, we can equip this weapon in the off hand.
               pure $ character
                 { offHand = Just
-                    { weapon
+                    { weaponData
                     , matchedFilters: [ filter ]
                     }
                 }
@@ -166,7 +286,7 @@ getTeamWeaponNames team =
   Map.values team.characters
     # Arr.fromFoldable
     >>= getEquipedWeapons
-    <#> (\weapon -> weapon.weapon.name)
+    <#> (\equipedWeapon -> equipedWeapon.weaponData.weapon.name)
     # Set.fromFoldable
 
 getCharacterNames :: AssignmentResult -> Set CharacterName
@@ -209,7 +329,7 @@ scoreTeam { characters } = do
   allPotencies = Arr.fromFoldable (Map.values characters)
     >>= getEquipedWeapons
     >>= _.matchedFilters
-    # Arr.mapMaybe _.potenciesAtOb10
+    # Arr.mapMaybe (\equipedWeapon -> equipedWeapon.potencies)
 
   characterCount = Map.size characters
 
@@ -233,6 +353,7 @@ filterMustHaveChars mustHaveChars teams =
 --     * Crimson Staff (Matk Up All) + Kamura Wand (Patk Up All + Heal All)
 --
 -- Displaying both is redundant, so this function will eliminate one of them.
+-- TODO: return the one with the better score
 filterDuplicates :: Array AssignmentResult -> Array AssignmentResult
 filterDuplicates =
   Arr.nubBy (compare `on` getTeamWeaponNames)

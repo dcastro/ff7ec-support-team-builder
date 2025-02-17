@@ -1924,6 +1924,36 @@
   [
     {
       "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff"
       ],
       "character": "Aerith"
@@ -1934,6 +1964,52 @@
         "Pilot's Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
     }
   ],
   [
@@ -2010,10 +2086,42 @@
     },
     {
       "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Egg Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Flame Dragon's Band",
         "Pilot's Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Fairy Tale"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
     }
   ],
   [
@@ -2042,6 +2150,22 @@
     },
     {
       "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Floral Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Flame Dragon's Band",
         "Pilot's Collar"
       ],
@@ -2058,10 +2182,58 @@
     },
     {
       "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gambanteinn"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Flame Dragon's Band",
         "Pilot's Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Snowflake"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
     }
   ],
   [
@@ -2090,10 +2262,42 @@
     },
     {
       "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Flame Dragon's Band",
         "Pilot's Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
     }
   ],
   [
@@ -2132,6 +2336,22 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chocobo Paddle",
+        "Crystal Sword"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Mythril Rod"
       ],
       "character": "Aerith"
@@ -2141,6 +2361,165 @@
         "Withering Blaze"
       ],
       "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Egg Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Fairy Tale"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Floral Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gambanteinn"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Snowflake"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
     }
   ],
   [
@@ -2375,10 +2754,71 @@
     },
     {
       "weapons": [
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Canyon Collar",
         "Flame Dragon's Band"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chocobo Paddle",
+        "Crystal Sword"
+      ],
+      "character": "Cloud"
     }
   ],
   [

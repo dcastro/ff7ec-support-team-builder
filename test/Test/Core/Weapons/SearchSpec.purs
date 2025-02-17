@@ -5,16 +5,20 @@ import Prelude
 import Test.Spec
 import Test.Utils
 
-import Core.Weapons.Search (AssignmentResult, Character, emptyTeam)
+import Control.Monad.Error.Class (throwError)
+import Core.Weapons.Search (AssignmentResult, Character, Filter, FilterRange(..), FilterResultWeapon, emptyTeam)
 import Core.Weapons.Search as Search
 import Data.Array as Arr
+import Data.Array.NonEmpty as NAR
 import Data.Map as Map
-import Data.Maybe (Maybe(..))
+import Data.Maybe (Maybe(..), maybe)
 import Data.Newtype (unwrap)
 import Data.Set as Set
 import Data.String.NonEmpty (NonEmptyString)
 import Data.String.NonEmpty as NES
 import Data.Tuple (Tuple(..))
+import Effect.Aff (Aff)
+import Effect.Exception (error)
 import Test.Spec.Assertions (shouldEqual)
 import Test.Utils as T
 
@@ -24,6 +28,7 @@ spec =
     combinationsSpec
     assignWeaponSpec
     searchExamplesSpec
+    findMatchingWeaponsSpec
 
 combinationsSpec :: Spec Unit
 combinationsSpec = do
@@ -48,20 +53,20 @@ combinationsSpec = do
         teams = Search.search 3
           [ { filter: filter1
             , matchingWeapons:
-                [ { weapon: weapon11, potenciesAtOb10: potencies11 }
-                , { weapon: weapon12, potenciesAtOb10: potencies12 }
-                , { weapon: weapon13, potenciesAtOb10: potencies13 }
+                [ { weapon: weapon11, potencies: potencies11, matchesFilters: true }
+                , { weapon: weapon12, potencies: potencies12, matchesFilters: true }
+                , { weapon: weapon13, potencies: potencies13, matchesFilters: true }
                 ]
             }
           , { filter: filter2
             , matchingWeapons:
-                [ { weapon: weapon21, potenciesAtOb10: potencies21 }
-                , { weapon: weapon22, potenciesAtOb10: potencies22 }
+                [ { weapon: weapon21, potencies: potencies21, matchesFilters: true }
+                , { weapon: weapon22, potencies: potencies22, matchesFilters: true }
                 ]
             }
           , { filter: filter3
             , matchingWeapons:
-                [ { weapon: weapon31, potenciesAtOb10: potencies31 }
+                [ { weapon: weapon31, potencies: potencies31, matchesFilters: true }
                 ]
             }
           ]
@@ -110,14 +115,14 @@ combinationsSpec = do
         combs = Search.search 3
           [ { filter: filter1
             , matchingWeapons:
-                [ { weapon: weapon11, potenciesAtOb10: potencies11 }
-                , { weapon: weapon12, potenciesAtOb10: potencies12 }
+                [ { weapon: weapon11, potencies: potencies11, matchesFilters: true }
+                , { weapon: weapon12, potencies: potencies12, matchesFilters: true }
                 ]
             }
           , { filter: filter2
             , matchingWeapons:
-                [ { weapon: weapon21, potenciesAtOb10: potencies21 }
-                , { weapon: weapon22, potenciesAtOb10: potencies22 }
+                [ { weapon: weapon21, potencies: potencies21, matchesFilters: true }
+                , { weapon: weapon22, potencies: potencies22, matchesFilters: true }
                 ]
             }
           , { filter: filter3
@@ -131,25 +136,25 @@ combinationsSpec = do
     it "returns no combinations when no effects were selected" do
       Search.search 3 [] `shouldEqualPretty` []
 
-    it "discards ignored weapons" do
+    it "discards unmatched weapons" do
       let
         teams = Search.search 3
           [ { filter: filter1
             , matchingWeapons:
-                [ { weapon: weapon11 { ignored = true }, potenciesAtOb10: potencies11 }
-                , { weapon: weapon12, potenciesAtOb10: potencies12 }
-                , { weapon: weapon13, potenciesAtOb10: potencies13 }
+                [ { weapon: weapon11, potencies: potencies11, matchesFilters: false }
+                , { weapon: weapon12, potencies: potencies12, matchesFilters: true }
+                , { weapon: weapon13, potencies: potencies13, matchesFilters: true }
                 ]
             }
           , { filter: filter2
             , matchingWeapons:
-                [ { weapon: weapon21, potenciesAtOb10: potencies21 }
-                , { weapon: weapon22, potenciesAtOb10: potencies22 }
+                [ { weapon: weapon21, potencies: potencies21, matchesFilters: true }
+                , { weapon: weapon22, potencies: potencies22, matchesFilters: true }
                 ]
             }
           , { filter: filter3
             , matchingWeapons:
-                [ { weapon: weapon31, potenciesAtOb10: potencies31 }
+                [ { weapon: weapon31, potencies: potencies31, matchesFilters: true }
                 ]
             }
           ]
@@ -198,7 +203,7 @@ assignWeaponSpec = do
 
     it "creates character with 1st weapon in the main hand" do
       Search.assignWeapon 3
-        { filter: filter1, potenciesAtOb10: potencies1 }
+        { filter: filter1, potencies: potencies1 }
         tifaWeapon1
         emptyTeam
         `shouldEqualPretty` Just
@@ -210,8 +215,8 @@ assignWeaponSpec = do
 
     it "assigns 2nd weapon to off hand" do
       ( emptyTeam
-          # Search.assignWeapon 3 { filter: filter1, potenciesAtOb10: potencies1 } tifaWeapon1
-          >>= Search.assignWeapon 3 { filter: filter2, potenciesAtOb10: potencies2 } tifaWeapon2
+          # Search.assignWeapon 3 { filter: filter1, potencies: potencies1 } tifaWeapon1
+          >>= Search.assignWeapon 3 { filter: filter2, potencies: potencies2 } tifaWeapon2
       )
         `shouldEqualPretty` Just
           { characters: Map.fromFoldable
@@ -228,18 +233,18 @@ assignWeaponSpec = do
 
     it "handles main hand weapon matching on 2 or more effects" do
       ( emptyTeam
-          # Search.assignWeapon 3 { filter: filter1, potenciesAtOb10: potencies1 } tifaWeapon1
-          >>= Search.assignWeapon 3 { filter: filter2, potenciesAtOb10: potencies2 } tifaWeapon1
+          # Search.assignWeapon 3 { filter: filter1, potencies: potencies1 } tifaWeapon1
+          >>= Search.assignWeapon 3 { filter: filter2, potencies: potencies2 } tifaWeapon1
       )
         `shouldEqualPretty` Just
           { characters: Map.fromFoldable
               [ Tuple "tifa"
                   { name: tifa
                   , mainHand: Just
-                      { weapon: tifaWeapon1
+                      { weaponData: tifaWeapon1
                       , matchedFilters:
-                          [ { filter: filter2, potenciesAtOb10: potencies2 }
-                          , { filter: filter1, potenciesAtOb10: potencies1 }
+                          [ { filter: filter2, potencies: potencies2 }
+                          , { filter: filter1, potencies: potencies1 }
                           ]
                       }
                   , offHand: Nothing
@@ -249,25 +254,25 @@ assignWeaponSpec = do
 
     it "handles off hand weapon matching on 2 or more effects" do
       ( emptyTeam
-          # Search.assignWeapon 3 { filter: filter1, potenciesAtOb10: potencies1 } tifaWeapon1
-          >>= Search.assignWeapon 3 { filter: filter2, potenciesAtOb10: potencies2 } tifaWeapon2
-          >>= Search.assignWeapon 3 { filter: filter3, potenciesAtOb10: potencies3 } tifaWeapon2
+          # Search.assignWeapon 3 { filter: filter1, potencies: potencies1 } tifaWeapon1
+          >>= Search.assignWeapon 3 { filter: filter2, potencies: potencies2 } tifaWeapon2
+          >>= Search.assignWeapon 3 { filter: filter3, potencies: potencies3 } tifaWeapon2
       )
         `shouldEqualPretty` Just
           { characters: Map.fromFoldable
               [ Tuple "tifa"
                   { name: tifa
                   , mainHand: Just
-                      { weapon: tifaWeapon1
+                      { weaponData: tifaWeapon1
                       , matchedFilters:
-                          [ { filter: filter1, potenciesAtOb10: potencies1 }
+                          [ { filter: filter1, potencies: potencies1 }
                           ]
                       }
                   , offHand: Just
-                      { weapon: tifaWeapon2
+                      { weaponData: tifaWeapon2
                       , matchedFilters:
-                          [ { filter: filter3, potenciesAtOb10: potencies3 }
-                          , { filter: filter2, potenciesAtOb10: potencies2 }
+                          [ { filter: filter3, potencies: potencies3 }
+                          , { filter: filter2, potencies: potencies2 }
                           ]
                       }
                   }
@@ -276,17 +281,17 @@ assignWeaponSpec = do
 
     it "fails if more than 2 weapons were selected for the same character" do
       ( emptyTeam
-          # Search.assignWeapon 3 { filter: filter1, potenciesAtOb10: potencies1 } tifaWeapon1
-          >>= Search.assignWeapon 3 { filter: filter2, potenciesAtOb10: potencies2 } tifaWeapon2
-          >>= Search.assignWeapon 3 { filter: filter3, potenciesAtOb10: potencies3 } tifaWeapon3
+          # Search.assignWeapon 3 { filter: filter1, potencies: potencies1 } tifaWeapon1
+          >>= Search.assignWeapon 3 { filter: filter2, potencies: potencies2 } tifaWeapon2
+          >>= Search.assignWeapon 3 { filter: filter3, potencies: potencies3 } tifaWeapon3
       )
         `shouldEqual` Nothing
 
     it "fails if character count exceeds the selected maximum" do
       ( emptyTeam
-          # Search.assignWeapon 2 { filter: filter1, potenciesAtOb10: potencies1 } tifaWeapon1
-          >>= Search.assignWeapon 2 { filter: filter2, potenciesAtOb10: potencies2 } vincentWeapon1
-          >>= Search.assignWeapon 2 { filter: filter3, potenciesAtOb10: potencies3 } redWeapon1
+          # Search.assignWeapon 2 { filter: filter1, potencies: potencies1 } tifaWeapon1
+          >>= Search.assignWeapon 2 { filter: filter2, potencies: potencies2 } vincentWeapon1
+          >>= Search.assignWeapon 2 { filter: filter3, potencies: potencies3 } redWeapon1
       )
         `shouldEqual` Nothing
 
@@ -294,54 +299,54 @@ searchExamplesSpec :: Spec Unit
 searchExamplesSpec = do
   describe "search examples" do
     it "example 1" do
-      armory <- T.loadTestDb
+      db <- T.loadTestDb
       let
         filters =
-          [ { effectType: FilterHeal, range: FilterAll }
-          , { effectType: FilterPatkUp, range: FilterAll }
-          , { effectType: FilterPatkDown, range: FilterAll }
+          [ { effectType: FilterHeal, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
+          , { effectType: FilterPatkUp, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
+          , { effectType: FilterPatkDown, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
           ]
         maxCharacterCount = 1
         mustHaveChars = Set.empty
         results =
-          Search.applyFilters filters armory
+          Search.applyFilters filters db
             # Search.search maxCharacterCount
             # Search.filterMustHaveChars mustHaveChars
             # Search.filterDuplicates
       T.goldenTest "snaps/search-example-1.snap" $ teamSummary <$> results
     it "example 2" do
-      armory <- T.loadTestDb
+      db <- T.loadTestDb
       let
         filters =
-          [ { effectType: FilterHeal, range: FilterAll }
-          , { effectType: FilterMatkUp, range: FilterAll }
-          , { effectType: FilterMdefDown, range: FilterAll }
-          , { effectType: FilterFireResistDown, range: FilterSingleTargetOrAll }
-          , { effectType: FilterMdefUp, range: FilterAll }
+          [ { effectType: FilterHeal, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
+          , { effectType: FilterMatkUp, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
+          , { effectType: FilterMdefDown, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
+          , { effectType: FilterFireResistDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+          , { effectType: FilterMdefUp, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
           ]
         maxCharacterCount = 2
         mustHaveChars = Set.empty
         results =
-          Search.applyFilters filters armory
+          Search.applyFilters filters db
             # Search.search maxCharacterCount
             # Search.filterMustHaveChars mustHaveChars
             # Search.filterDuplicates
       T.goldenTest "snaps/search-example-2.snap" $ teamSummary <$> results
     it "example 3" do
-      armory <- T.loadTestDb
+      db <- T.loadTestDb
       let
         filters =
-          [ { effectType: FilterPdefDown, range: FilterSingleTargetOrAll }
-          , { effectType: FilterPatkUp, range: FilterSingleTargetOrAll }
-          , { effectType: FilterHeal, range: FilterAll }
-          , { effectType: FilterWaterResistDown, range: FilterSingleTargetOrAll }
-          , { effectType: FilterPatkDown, range: FilterSingleTargetOrAll }
-          , { effectType: FilterMatkDown, range: FilterSingleTargetOrAll }
+          [ { effectType: FilterPdefDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+          , { effectType: FilterPatkUp, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+          , { effectType: FilterHeal, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
+          , { effectType: FilterWaterResistDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+          , { effectType: FilterPatkDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+          , { effectType: FilterMatkDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
           ]
         maxCharacterCount = 2
         mustHaveChars = Set.empty
         results =
-          Search.applyFilters filters armory
+          Search.applyFilters filters db
             # Search.search maxCharacterCount
             # Search.filterMustHaveChars mustHaveChars
             # Search.filterDuplicates
@@ -357,8 +362,8 @@ searchExamplesSpec = do
             do
               let
                 weapons = Arr.sort $ Arr.catMaybes
-                  [ character.mainHand <#> _.weapon.name
-                  , character.offHand <#> _.weapon.name
+                  [ character.mainHand <#> _.weaponData.weapon.name
+                  , character.offHand <#> _.weaponData.weapon.name
                   ]
 
               { character: character.name
@@ -367,56 +372,113 @@ searchExamplesSpec = do
         )
       # Arr.sort
 
-mkWeapon :: NonEmptyString -> CharacterName -> ArmoryWeapon
+findMatchingWeaponsSpec :: Spec Unit
+findMatchingWeaponsSpec = do
+  describe "find matching weapons" do
+    it "returns potencies according to owned OB level / selected range" do
+      db <- T.loadTestDb
+
+      let
+        { matchingWeapons } = Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low } db
+      weapon <- findWeapon matchingWeapons
+      weapon.potencies `shouldEqualPretty` Just { base: High, max: High }
+
+      let
+        { matchingWeapons } = Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSelfOrSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low } db
+      weapon <- findWeapon matchingWeapons
+      weapon.potencies `shouldEqualPretty` Just { base: High, max: High }
+
+      { matchingWeapons } <-
+        db
+          # setOwnedLevel (ObRange { from: FromOb0, to: ToOb5 })
+          <#> Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+      weapon <- findWeapon matchingWeapons
+      weapon.potencies `shouldEqualPretty` Just { base: Mid, max: High }
+
+      { matchingWeapons } <-
+        db
+          # setOwnedLevel (ObRange { from: FromOb0, to: ToOb5 })
+          <#> Search.findMatchingWeapons { effectType: FilterPatkUp, range: FilterSelfOrSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+      weapon <- findWeapon matchingWeapons
+      weapon.potencies `shouldEqualPretty` Just { base: Mid, max: High }
+  where
+  findWeapon :: Array FilterResultWeapon -> Aff FilterResultWeapon
+  findWeapon matchingWeapons =
+    matchingWeapons
+      # Arr.find (\w -> w.weapon.weapon.name == WeaponName (nes @"Arctic Star"))
+      # maybe (throwError $ error "Failed to find weapon") pure
+
+  setOwnedLevel :: ObRange -> Db -> Aff Db
+  setOwnedLevel obRange db = do
+    let
+      allWeapons = Map.update
+        (\w -> Just $ w { ownedOb = Just obRange })
+        (WeaponName (nes @"Arctic Star"))
+        db.allWeapons
+
+    pure $ db { allWeapons = allWeapons }
+
+mkWeapon :: NonEmptyString -> CharacterName -> WeaponData
 mkWeapon id character =
-  { name: WeaponName id
-  , character
-  , source: nes @"Gacha"
-  , image: nes @" "
-  , atbCost: 3
-  , ob0: { description: nes @" ", effects: [] }
-  , ob1: { description: nes @" ", effects: [] }
-  , ob6: { description: nes @" ", effects: [] }
-  , ob10: { description: nes @" ", effects: [] }
-  , cureAllAbility: true
+  { weapon:
+      { name: WeaponName id
+      , character
+      , source: nes @"Gacha"
+      , image: nes @" "
+      , atbCost: 3
+      , ob0: { description: nes @" ", effects: [] }
+      , ob1: { description: nes @" ", effects: [] }
+      , ob6: { description: nes @" ", effects: [] }
+      , ob10: { description: nes @" ", effects: [] }
+      , cureAllAbility: true
+      }
   , ignored: false
+  , distinctObs: NAR.singleton (ObRange { from: FromOb0, to: ToOb5 })
+      # NAR.cons (ObRange { from: FromOb6, to: ToOb10 })
+  , ownedOb: Just (ObRange { from: FromOb6, to: ToOb10 })
   }
 
 filter1 :: Filter
 filter1 =
   { effectType: FilterHeal
   , range: FilterAll
+  , minBasePotency: Low
+  , minMaxPotency: Low
   }
 
 filter2 :: Filter
 filter2 =
   { effectType: FilterPatkDown
   , range: FilterSingleTargetOrAll
+  , minBasePotency: Low
+  , minMaxPotency: Low
   }
 
 filter3 :: Filter
 filter3 =
   { effectType: FilterProvoke
   , range: FilterSelfOrSingleTargetOrAll
+  , minBasePotency: Low
+  , minMaxPotency: Low
   }
 
-mkCharacter1 :: CharacterName -> ArmoryWeapon -> Filter -> Maybe Potencies -> Tuple String Character
-mkCharacter1 characterName weapon filter potenciesAtOb10 =
+mkCharacter1 :: CharacterName -> WeaponData -> Filter -> Maybe Potencies -> Tuple String Character
+mkCharacter1 characterName weaponData filter potencies =
   Tuple (NES.toString $ unwrap characterName)
     { name: characterName
     , mainHand: Just
-        { weapon
-        , matchedFilters: [ { filter, potenciesAtOb10 } ]
+        { weaponData
+        , matchedFilters: [ { filter, potencies } ]
         }
     , offHand: Nothing
     }
 
 mkCharacter2
   :: CharacterName
-  -> ArmoryWeapon
+  -> WeaponData
   -> Filter
   -> Maybe Potencies
-  -> ArmoryWeapon
+  -> WeaponData
   -> Filter
   -> Maybe Potencies
   -> Tuple String Character
@@ -424,11 +486,11 @@ mkCharacter2 characterName weapon1 filter1 potencies1 weapon2 filter2 potencies2
   Tuple (NES.toString $ unwrap characterName)
     { name: characterName
     , mainHand: Just
-        { weapon: weapon1
-        , matchedFilters: [ { filter: filter1, potenciesAtOb10: potencies1 } ]
+        { weaponData: weapon1
+        , matchedFilters: [ { filter: filter1, potencies: potencies1 } ]
         }
     , offHand: Just
-        { weapon: weapon2
-        , matchedFilters: [ { filter: filter2, potenciesAtOb10: potencies2 } ]
+        { weaponData: weapon2
+        , matchedFilters: [ { filter: filter2, potencies: potencies2 } ]
         }
     }

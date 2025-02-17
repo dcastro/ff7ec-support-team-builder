@@ -3,6 +3,7 @@ module Core.Database.VLatest where
 import Prelude
 
 import Core.Display (class Display, display)
+import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
 import Data.Maybe (Maybe)
@@ -17,27 +18,34 @@ import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
 import Yoga.JSON.Generics.TaggedSumRep as TaggedSum
 
-type Armory =
-  { allWeapons :: Map WeaponName ArmoryWeapon
-  , groupedByEffect :: Map Filter (Array GroupedWeapon)
+type Db =
+  { allWeapons :: Map WeaponName WeaponData
+  , groupedByEffect :: Map FilterEffectType (Array GroupedWeapon)
   , allCharacterNames :: Set CharacterName
   }
 
-type SerializableArmory =
-  { allWeapons :: MapAsArray WeaponName ArmoryWeapon
-  , groupedByEffect :: MapAsArray Filter (Array GroupedWeapon)
-  , allCharacterNames :: SetAsArray CharacterName
+type WeaponData =
+  { weapon :: Weapon
+  , ignored :: Boolean
+  -- List of all groups of Overboost Levels with the same weapon effect potencies.
+  --
+  -- For most weapons, this will be [OB0-5, Ob6-Ob10]
+  -- because they have the same potencies between Ob0 and Ob5,
+  -- and between Ob6 and Ob10.
+  , distinctObs :: NonEmptyArray ObRange
+  , ownedOb :: Maybe ObRange
   }
 
-type GroupedWeapon =
-  { weaponName :: WeaponName
-  , potenciesAtOb10 :: Maybe Potencies
+type SerializableDb =
+  { allWeapons :: MapAsArray WeaponName WeaponData
+  , groupedByEffect :: MapAsArray FilterEffectType (Array GroupedWeapon)
+  , allCharacterNames :: SetAsArray CharacterName
   }
 
 newtype CharacterName = CharacterName NonEmptyString
 newtype WeaponName = WeaponName NonEmptyString
 
-type ArmoryWeapon =
+type Weapon =
   { name :: WeaponName
   , character :: CharacterName
   , source :: NonEmptyString
@@ -48,13 +56,43 @@ type ArmoryWeapon =
   , ob6 :: ObLevel
   , ob10 :: ObLevel
   , cureAllAbility :: Boolean
-  , ignored :: Boolean
   }
+
+newtype ObRange = ObRange
+  { from :: FromOb
+  , to :: ToOb
+  }
+
+data FromOb = FromOb0 | FromOb1 | FromOb6 | FromOb10
+data ToOb = ToOb0 | ToOb5 | ToOb9 | ToOb10
 
 type ObLevel =
   { description :: NonEmptyString -- ^ The source text from which the buffs/debuffs were parsed.
-  , effects ::
-      Array WeaponEffect
+  , effects :: Array WeaponEffect
+  }
+
+type GroupedWeapon =
+  { weaponName :: WeaponName
+  -- Most weapons have 1 range/potencies for each effect (i.e., this array will have exactly one item).
+  --
+  -- EXCEPTION: Yuffie's "Arctic Star" is an exception:
+  -- it has PATK Up SingleTarget + PATK Up Mid->High Self
+  --
+  -- Silver Megaphone has PDEF Down Low SingleTarget + PDEF Down High SingleTarget (Condition: Critical Hit)
+  , ranges :: Array GroupedWeaponRange
+  }
+
+type GroupedWeaponRange =
+  { range :: Range
+  -- This will be `None` for effects that don't have potencies (e.g. `Heal`)
+  , allPotencies :: Maybe AllPotencies
+  }
+
+type AllPotencies =
+  { ob0 :: Potencies
+  , ob1 :: Potencies
+  , ob6 :: Potencies
+  , ob10 :: Potencies
   }
 
 data Potency
@@ -119,16 +157,6 @@ type Potencies =
   , max :: Potency
   }
 
-type Filter =
-  { effectType :: FilterEffectType
-  , range :: FilterRange
-  }
-
-data FilterRange
-  = FilterAll
-  | FilterSingleTargetOrAll
-  | FilterSelfOrSingleTargetOrAll
-
 data FilterEffectType
   = FilterHeal
 
@@ -164,29 +192,34 @@ derive instance Generic Range _
 derive instance Generic EffectType _
 derive instance Generic Potency _
 derive instance Generic FilterEffectType _
-derive instance Generic FilterRange _
+derive instance Generic FromOb _
+derive instance Generic ToOb _
 
 derive instance Eq Range
 derive instance Eq EffectType
 derive instance Eq Potency
 derive instance Eq FilterEffectType
-derive instance Eq FilterRange
+derive instance Eq FromOb
+derive instance Eq ToOb
 derive newtype instance Eq Percentage
 derive newtype instance Eq Duration
 derive newtype instance Eq Extension
 derive newtype instance Eq CharacterName
 derive newtype instance Eq WeaponName
+derive newtype instance Eq ObRange
 
 derive instance Ord Potency
 derive instance Ord EffectType
 derive instance Ord Range
 derive instance Ord FilterEffectType
-derive instance Ord FilterRange
+derive instance Ord FromOb
+derive instance Ord ToOb
 derive newtype instance Ord Percentage
 derive newtype instance Ord Duration
 derive newtype instance Ord Extension
 derive newtype instance Ord CharacterName
 derive newtype instance Ord WeaponName
+derive newtype instance Ord ObRange
 
 derive instance Newtype Percentage _
 derive instance Newtype Duration _
@@ -206,7 +239,10 @@ instance Show Potency where
 instance Show FilterEffectType where
   show = genericShow
 
-instance Show FilterRange where
+instance Show FromOb where
+  show = genericShow
+
+instance Show ToOb where
   show = genericShow
 
 derive newtype instance Show Percentage
@@ -214,11 +250,9 @@ derive newtype instance Show Duration
 derive newtype instance Show Extension
 derive newtype instance Show CharacterName
 derive newtype instance Show WeaponName
+derive newtype instance Show ObRange
 
 instance WriteForeign Range where
-  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
-
-instance WriteForeign FilterRange where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
 instance WriteForeign EffectType where
@@ -230,16 +264,20 @@ instance WriteForeign Potency where
 instance WriteForeign FilterEffectType where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
+instance WriteForeign FromOb where
+  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
+
+instance WriteForeign ToOb where
+  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
+
 derive newtype instance WriteForeign Percentage
 derive newtype instance WriteForeign Duration
 derive newtype instance WriteForeign Extension
 derive newtype instance WriteForeign CharacterName
 derive newtype instance WriteForeign WeaponName
+derive newtype instance WriteForeign ObRange
 
 instance ReadForeign Range where
-  readImpl = J.genericReadForeignEnum Enum.defaultOptions
-
-instance ReadForeign FilterRange where
   readImpl = J.genericReadForeignEnum Enum.defaultOptions
 
 instance ReadForeign EffectType where
@@ -251,23 +289,24 @@ instance ReadForeign Potency where
 instance ReadForeign FilterEffectType where
   readImpl = J.genericReadForeignEnum Enum.defaultOptions
 
+instance ReadForeign FromOb where
+  readImpl = J.genericReadForeignEnum Enum.defaultOptions
+
+instance ReadForeign ToOb where
+  readImpl = J.genericReadForeignEnum Enum.defaultOptions
+
 derive newtype instance ReadForeign Percentage
 derive newtype instance ReadForeign Duration
 derive newtype instance ReadForeign Extension
 derive newtype instance ReadForeign CharacterName
 derive newtype instance ReadForeign WeaponName
+derive newtype instance ReadForeign ObRange
 
 instance Display WeaponName where
   display = display <<< unwrap
 
 instance Display CharacterName where
   display = display <<< unwrap
-
-instance Display FilterRange where
-  display = case _ of
-    FilterAll -> "All"
-    FilterSingleTargetOrAll -> "Single Target / All"
-    FilterSelfOrSingleTargetOrAll -> "Self / Single Target / All"
 
 instance Display FilterEffectType where
   display = case _ of
@@ -301,8 +340,38 @@ instance Display FilterEffectType where
     FilterWaterResistDown -> "Water resist down"
     FilterWindResistDown -> "Wind resist down"
 
-allFilterRanges :: Array FilterRange
-allFilterRanges = Utils.listEnum
+allPossiblePotencies :: Array Potency
+allPossiblePotencies = Utils.listEnum
 
 allFilterEffectTypes :: Array FilterEffectType
 allFilterEffectTypes = Utils.listEnum
+
+instance Display ObRange where
+  display (ObRange { from, to }) = do
+    let fromStr = displayFrom from
+    let toStr = displayTo to
+    if fromStr == toStr then "OB" <> displayFrom from
+    else "OB" <> displayFrom from <> "-" <> displayTo to
+
+    where
+    displayFrom :: FromOb -> String
+    displayFrom = case _ of
+      FromOb0 -> "0"
+      FromOb1 -> "1"
+      FromOb6 -> "6"
+      FromOb10 -> "10"
+
+    displayTo :: ToOb -> String
+    displayTo = case _ of
+      ToOb0 -> "0"
+      ToOb5 -> "5"
+      ToOb9 -> "9"
+      ToOb10 -> "10"
+
+instance Display Potency where
+  display =
+    case _ of
+      Low -> "Low"
+      Mid -> "Mid"
+      High -> "High"
+      ExtraHigh -> "Extra High"

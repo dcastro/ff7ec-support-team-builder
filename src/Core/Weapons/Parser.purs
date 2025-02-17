@@ -20,26 +20,15 @@ import Parsing.String as P
 import Parsing.String.Basic as P
 import Utils (unsafeFromJust)
 
-type Result a = Either String a
-
 type ParseResult =
   { weapons ::
       Array Weapon
   , errors :: Array String
   }
 
-type Weapon =
-  { name :: WeaponName
-  , character :: CharacterName
-  , source :: NonEmptyString
-  , image :: NonEmptyString
-  , atbCost :: Int
-  , ob0 :: ObLevel
-  , ob1 :: ObLevel
-  , ob6 :: ObLevel
-  , ob10 :: ObLevel
-  , cureAllAbility :: Boolean
-  }
+type Result a = Either String a
+
+type Parser a = P.Parser String a
 
 parseWeapons :: Array (Array String) -> ParseResult
 parseWeapons lines =
@@ -133,8 +122,6 @@ parseDescription coords description = do
         , effects
         }
     }
-
-type Parser = P.Parser String
 
 parseAtbCost :: Coords -> Parser Int
 parseAtbCost coords = do

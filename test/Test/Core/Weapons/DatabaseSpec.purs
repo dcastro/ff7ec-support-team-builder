@@ -1,34 +1,49 @@
-module Test.Core.Weapons.ArmorySpec where
+module Test.Core.Weapons.DatabaseSpec where
 
 import Core.Database.VLatest
 import Prelude
 import Test.Spec
 
+import Core.Display (display)
 import Data.Array as Arr
 import Data.List.Lazy as LazyList
 import Data.List.ZipList (ZipList(..))
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Test.Utils as T
+import Test.Utils as Utils
 import Utils (MapAsArray(..))
 
 spec :: Spec Unit
 spec =
-  describe "armory" do
+  describe "database" do
+    it "builds weapon data" do
+      db <- Utils.loadTestDb
+
+      let
+        weaponData = db.allWeapons
+          <#> \wd ->
+            { ignored: wd.ignored
+            , distinctObs: wd.distinctObs <#> display
+            , ownedOb: wd.ownedOb <#> display
+            }
+
+      T.goldenTest "snaps/weapon_data.snap" $ MapAsArray weaponData
     it "groups weapons" do
-      armory <- T.loadTestDb
-      T.goldenTest "snaps/grouped_weapons.snap" $ MapAsArray armory.groupedByEffect
+      db <- Utils.loadTestDb
+
+      T.goldenTest "snaps/grouped_weapons.snap" $ MapAsArray db.groupedByEffect
 
     it "check differences in OB potencies" do
       -- A script to find out whether all weapons have the same effects at OB0 as they do at OB1,
       -- and the same effects at OB6 as they do at OB10.
-      armory <- T.loadTestDb
+      db <- Utils.loadTestDb
 
       let
         obDiffs =
-          Map.values armory.allWeapons
+          Map.values db.allWeapons
             # Arr.fromFoldable
-            <#> groupEffects
+            <#> (\weaponData -> groupEffects weaponData.weapon)
             >>= makeDiff
 
       T.goldenTest "snaps/ob-differences.snap" $ obDiffs
@@ -77,7 +92,7 @@ type EffectInfo =
   , ob10 :: WeaponEffect
   }
 
-groupEffects :: ArmoryWeapon -> WeaponInfo
+groupEffects :: Weapon -> WeaponInfo
 groupEffects weapon =
   { name: weapon.name
   , effects: Arr.fromFoldable effects

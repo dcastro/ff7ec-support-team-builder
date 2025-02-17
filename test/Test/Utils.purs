@@ -4,8 +4,8 @@ import Core.Weapons.Parser
 import Prelude
 
 import Control.Monad.Error.Class (class MonadThrow, throwError)
-import Core.Armory as Armory
-import Core.Database.VLatest (Armory, CharacterName(..))
+import Core.Database as Database
+import Core.Database.VLatest (Db, CharacterName(..))
 import Data.Either (Either(..))
 import Data.Foldable (class Foldable)
 import Data.Map as Map
@@ -112,7 +112,7 @@ nes :: forall (@a :: Symbol). NES.MakeNonEmpty a => NonEmptyString
 nes =
   NES.nes (Proxy :: Proxy a)
 
-loadTestDb :: Aff Armory
+loadTestDb :: Aff Db
 loadTestDb = do
   sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
   sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of
@@ -123,7 +123,7 @@ loadTestDb = do
             <> Utils.renderJsonErr errs
   let { weapons, errors: _ } = parseWeapons sourceWeapons
 
-  Armory.createArmory weapons Map.empty
+  Database.createDb weapons Map.empty
 
 setAsArray :: forall f a. Foldable f => Ord a => f a -> SetAsArray a
 setAsArray = Set.fromFoldable >>> SetAsArray

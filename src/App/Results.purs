@@ -1,12 +1,13 @@
 module App.Results where
 
+import Core.Database.VLatest
 import Prelude
 
-import Core.Database.VLatest
 import Core.Display (display)
 import Core.Weapons.Search (AssignmentResult)
 import Core.Weapons.Search as Search
 import Data.Array as Arr
+import Data.Array.NonEmpty as NAR
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Effect.Aff (Aff)
@@ -24,11 +25,14 @@ type State =
 
 type Input = Array AssignmentResult
 
-data Output = RaiseIgnoreWeapon WeaponName
+data Output
+  = RaiseIgnoreWeapon WeaponName
+  | RaiseSetOwnedOb WeaponName Int
 
 data Action
   = Receive Input
   | IgnoreWeapon WeaponName
+  | SetOwnedOb WeaponName Int
 
 component :: forall q. H.Component q Input Output Aff
 component =
@@ -46,7 +50,7 @@ component =
 render :: forall cs m. State -> H.ComponentHTML Action cs m
 render state =
   HH.div [ classes' "columns is-centered" ]
-    [ HH.div [ classes' "column is-half-desktop" ] $
+    [ HH.div [ classes' "column is-three-fifths-desktop" ] $
         state.teams <#> \team ->
           HH.div [ classes' "box" ] $
             Map.values team.characters # Arr.fromFoldable <#> \character ->
@@ -56,31 +60,53 @@ render state =
                     ]
                 ]
                   <>
-                    ( Search.getEquipedWeapons character <#> \weapon ->
+                    ( Search.getEquipedWeapons character <#> \equipedWeapon ->
                         HH.div [ classes' "column is-two-fifths" ]
-                          [ HH.div [ classes' "columns is-mobile is-centered" ]
+                          -- Align the img/wepon name/controls vertically.
+                          -- `is-1` for a smaller gap between the elements.
+                          [ HH.div [ classes' "columns is-mobile is-centered is-vcentered is-1" ]
                               [ HH.div [ classes' "column is-narrow" ]
-                                  [ HH.img [ HP.src (display weapon.weapon.image), classes' "image is-32x32" ]
+                                  [ HH.img [ HP.src (display equipedWeapon.weaponData.weapon.image), classes' "image is-32x32" ]
                                   ]
                               , HH.div [ classes' "column is-narrow" ]
                                   [ HH.span
-                                      [ tooltip (mkTooltipForWeapon weapon.weapon), classes' "has-tooltip-top" ]
-                                      [ HH.text (display weapon.weapon.name)
+                                      [ tooltip (mkTooltipForWeapon equipedWeapon.weaponData.weapon), classes' "has-tooltip-top" ]
+                                      [ HH.text (display equipedWeapon.weaponData.weapon.name)
                                       ]
-                                  , HH.span
-                                      [ tooltip "Ignore weapon", HE.onClick \_ -> IgnoreWeapon weapon.weapon.name ]
+                                  ]
+                              , HH.div [ classes' "column is-narrow" ]
+                                  [ HH.div [ classes' "select" ]
+                                      [ HH.select
+                                          [ HE.onSelectedIndexChange (SetOwnedOb equipedWeapon.weaponData.weapon.name) ]
+                                          ( [ HH.option
+                                                [ HP.selected (equipedWeapon.weaponData.ownedOb == Nothing) ]
+                                                [ HH.text "N/A" ]
+                                            ]
+                                              <>
+                                                ( NAR.toArray equipedWeapon.weaponData.distinctObs <#> \obRange ->
+                                                    HH.option
+                                                      [ HP.selected (equipedWeapon.weaponData.ownedOb == Just obRange) ]
+                                                      [ HH.text $ display obRange ]
+                                                )
+                                          )
+                                      ]
+                                  ]
+                              , HH.div [ classes' "column is-narrow" ]
+                                  [ HH.span
+                                      [ tooltip "Ignore weapon", HE.onClick \_ -> IgnoreWeapon equipedWeapon.weaponData.weapon.name ]
                                       [ HH.i
                                           [ classes' "fas fa-delete-left ml-2"
                                           ]
                                           []
                                       ]
+                                  -- TODO: display the applied effects next to each weapon
                                   ]
                               ]
                           ]
                     )
     ]
 
-mkTooltip :: ArmoryWeapon -> String
+mkTooltip :: Weapon -> String
 mkTooltip weapon =
   "OB0:\n" <> display weapon.ob0.description
     <> "\n\nOB6:\n"
@@ -90,3 +116,4 @@ handleAction :: forall cs. Action → H.HalogenM State Action cs Output Aff Unit
 handleAction = case _ of
   Receive teams -> H.put { teams }
   IgnoreWeapon weaponName -> H.raise $ RaiseIgnoreWeapon weaponName
+  SetOwnedOb weaponName obRangeIndex -> H.raise $ RaiseSetOwnedOb weaponName obRangeIndex

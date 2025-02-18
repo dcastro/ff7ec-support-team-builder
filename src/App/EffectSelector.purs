@@ -64,7 +64,7 @@ component =
           { db
           , selectedEffectType: effectTypeMb
           , selectedRange: genericBottom
-          , selectedMinBasePotency: Mid
+          , selectedMinBasePotency: Low
           , selectedMinMaxPotency: High
           , matchingWeapons: []
           , canBeDeleted

@@ -223,6 +223,19 @@ render state =
         , HH.div [ classes' "footer" ]
             [ HH.div [ classes' "content has-text-centered" ]
                 [ HH.p_
+                    [ HH.a
+                        [ HP.href "https://www.buymeacoffee.com/diogo.castro"
+                        , HP.target "_blank"
+                        ]
+                        [ HH.img
+                            [ HP.src "https://cdn.buymeacoffee.com/buttons/v2/default-green.png"
+                            , HP.alt "Buy Me A Coffee"
+                            , HP.style "height: 60px !important;width: 217px !important;"
+                            ]
+
+                        ]
+                    ]
+                , HH.p_
                     [ HH.text "Thanks to "
                     , HH.code_ [ HH.text "unknownx" ]
                     , HH.text " for the datamines and "

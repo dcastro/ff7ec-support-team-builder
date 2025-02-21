@@ -92,7 +92,7 @@ render state =
   case state of
     Loading ->
       HH.div_
-        [ HH.text "Loading..."
+        [ HH.progress [ classes' "progress is-medium is-primary" ] []
         ]
     FailedToLoad ->
       HH.div_

@@ -101,8 +101,10 @@ render state =
     Loaded { db, teams, selectedEffectCount, maxCharacterCount, effectSelectorIds } ->
       HH.section [ classes' "hero is-fullheight" ]
         [ HH.section [ classes' "section" ]
+            [ HH.h2 [ classes' "title is-2 has-text-centered" ]
+                [ HH.text "FF7 EC - Support Team Builder" ]
             -- Contains all the effect selectors + the plus button
-            [ HH.div [ classes' "columns is-mobile is-multiline" ] $
+            , HH.div [ classes' "columns is-mobile is-multiline" ] $
                 ( NA.toArray effectSelectorIds <#> \effectSelectorId ->
                     -- Contains an effect selector
                     HH.div [ classes' "column is-one-third-fullhd is-half-widescreen is-half-desktop is-full-tablet is-full-mobile" ]
@@ -136,7 +138,7 @@ render state =
                   ]
             ]
         , HH.section [ classes' "section" ]
-            [ HH.h1 [ classes' "title is-2 has-text-centered" ] [ HH.text "Teams " ]
+            [ HH.h3 [ classes' "title is-3 has-text-centered" ] [ HH.text "Teams" ]
             , HH.div [ classes' "columns is-mobile is-centered is-vcentered" ]
                 [ HH.div [ classes' "column is-narrow has-text-weight-semibold" ]
                     [ HH.text "Maximum number of characters: "

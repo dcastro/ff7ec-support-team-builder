@@ -11,7 +11,7 @@ import Core.Weapons.Search as Search
 import Data.Array as Arr
 import Data.Array.NonEmpty as NAR
 import Data.Bounded.Generic (genericBottom)
-import Data.Maybe (Maybe(..))
+import Data.Maybe (Maybe(..), isJust)
 import Effect.Aff (Aff)
 import Effect.Class.Console as Console
 import Halogen as H
@@ -174,7 +174,7 @@ render state =
         -- Used to center the table
         , HH.div [ classes' "columns is-mobile is-centered" ]
             [ HH.div [ classes' "column is-narrow" ]
-                [ displayIf (Arr.null state.matchingWeapons) $
+                [ displayIf (Arr.null state.matchingWeapons && isJust state.selectedEffectType) $
                     HH.p [ classes' "has-text-centered has-text-weight-semibold" ]
                       [ HH.text "No weapons found" ]
                 , displayIf (not $ Arr.null state.matchingWeapons) $ HH.table [ classes' "table" ]

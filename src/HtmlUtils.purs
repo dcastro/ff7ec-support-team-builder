@@ -2,8 +2,6 @@ module HtmlUtils where
 
 import Prelude
 
-import Core.Database.VLatest (Weapon)
-import Core.Display (display)
 import Data.String.Utils as String
 import Halogen (AttrName(..), ClassName(..))
 import Halogen.HTML (HTML, IProp)

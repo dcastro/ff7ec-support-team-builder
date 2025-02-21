@@ -10,9 +10,16 @@ import Data.String.Utils as String
 import Effect.Aff (Aff)
 import Halogen as H
 import Halogen.HTML as HH
-import Halogen.HTML.Properties as HP
 import Halogen.HTML.Events as HE
+import Halogen.HTML.Properties as HP
+import Halogen.Query.Event as QE
 import HtmlUtils (classes')
+import Web.Event.Event as E
+import Web.HTML as HTML
+import Web.HTML.HTMLDocument as HTMLDocument
+import Web.HTML.Window as Window
+import Web.UIEvent.KeyboardEvent as KE
+import Web.UIEvent.KeyboardEvent.EventTypes as KET
 
 type Slot id = H.Slot Query Output id
 
@@ -24,7 +31,10 @@ type State =
 
 data Output = ModalClosed
 
-data Action = CloseModal
+data Action
+  = CloseModal
+  | Initialize
+  | HandleKey H.SubscriptionId KE.KeyboardEvent
 
 data Query :: forall k. k -> Type
 data Query a
@@ -36,7 +46,7 @@ component =
     , render
     , eval: H.mkEval H.defaultEval
         { handleAction = handleAction
-        , initialize = Nothing
+        , initialize = Just Initialize
         }
     }
 
@@ -82,4 +92,19 @@ renderObLevel ob { description } =
 
 handleAction :: forall cs. Action → H.HalogenM State Action cs Output Aff Unit
 handleAction = case _ of
-  CloseModal -> H.raise ModalClosed
+  CloseModal ->
+    H.raise ModalClosed
+  Initialize -> do
+    document <- H.liftEffect $ Window.document =<< HTML.window
+    H.subscribe' \sid ->
+      QE.eventListener
+        KET.keyup
+        (HTMLDocument.toEventTarget document)
+        (map (HandleKey sid) <<< KE.fromEvent)
+  HandleKey sid ev
+    | KE.key ev == "Escape" -> do
+        H.liftEffect $ E.preventDefault (KE.toEvent ev)
+        H.unsubscribe sid
+        handleAction CloseModal
+    | otherwise -> do
+        pure unit

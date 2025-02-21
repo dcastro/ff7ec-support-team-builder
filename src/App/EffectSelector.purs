@@ -174,7 +174,10 @@ render state =
         -- Used to center the table
         , HH.div [ classes' "columns is-mobile is-centered" ]
             [ HH.div [ classes' "column is-narrow" ]
-                [ displayIf (not $ Arr.null state.matchingWeapons) $ HH.table [ classes' "table" ]
+                [ displayIf (Arr.null state.matchingWeapons) $
+                    HH.p [ classes' "has-text-centered has-text-weight-semibold" ]
+                      [ HH.text "No weapons found" ]
+                , displayIf (not $ Arr.null state.matchingWeapons) $ HH.table [ classes' "table" ]
                     [ HH.tbody_ $
                         [ HH.tr_
                             [ HH.th_ []

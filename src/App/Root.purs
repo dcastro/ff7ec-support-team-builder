@@ -103,6 +103,9 @@ render state =
         [ HH.section [ classes' "section" ]
             [ HH.h2 [ classes' "title is-2 has-text-centered" ]
                 [ HH.text "FF7 EC - Support Team Builder" ]
+            , HH.p [ classes' "has-text-centered has-text-weight-semibold" ]
+                [ HH.text "Select the desired weapon effects"
+                ]
             -- Contains all the effect selectors + the plus button
             , HH.div [ classes' "columns is-mobile is-multiline" ] $
                 ( NA.toArray effectSelectorIds <#> \effectSelectorId ->

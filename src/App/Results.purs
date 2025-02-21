@@ -3,6 +3,7 @@ module App.Results where
 import Core.Database.VLatest
 import Prelude
 
+import App.WeaponModal as WeaponModal
 import Core.Display (display)
 import Core.Weapons.Search (AssignmentResult)
 import Core.Weapons.Search as Search
@@ -15,12 +16,20 @@ import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
-import HtmlUtils (classes', mkTooltipForWeapon, tooltip)
+import HtmlUtils (classes')
+import Type.Prelude (Proxy(..))
 
 type Slot id = forall query. H.Slot query Output id
 
+type Slots =
+  ( weaponModal :: WeaponModal.Slot Unit
+  )
+
+_weaponModal = Proxy :: Proxy "weaponModal"
+
 type State =
   { teams :: Array AssignmentResult
+  , weaponForModal :: Maybe Weapon
   }
 
 type Input = Array AssignmentResult
@@ -30,12 +39,15 @@ data Output = RaiseSetOwnedOb WeaponName Int
 data Action
   = Receive Input
   | SetOwnedOb WeaponName Int
+  | SelectedWeaponForModal Weapon
+  | HandleWeaponModal WeaponModal.Output
 
 component :: forall q. H.Component q Input Output Aff
 component =
   H.mkComponent
     { initialState: \teams ->
         { teams
+        , weaponForModal: Nothing
         }
     , render
     , eval: H.mkEval H.defaultEval
@@ -44,7 +56,7 @@ component =
         }
     }
 
-render :: forall cs m. State -> H.ComponentHTML Action cs m
+render :: State -> H.ComponentHTML Action Slots Aff
 render state =
   HH.div [ classes' "columns is-centered" ]
     [ HH.div [ classes' "column is-three-fifths-desktop" ] $
@@ -62,12 +74,17 @@ render state =
                           -- Align the img/wepon name/controls vertically.
                           -- `is-1` for a smaller gap between the elements.
                           [ HH.div [ classes' "columns is-mobile is-centered is-vcentered is-1" ]
-                              [ HH.div [ classes' "column is-narrow" ]
+                              [ HH.div
+                                  [ classes' "column is-narrow is-clickable"
+                                  , HE.onClick $ \_ -> SelectedWeaponForModal equipedWeapon.weaponData.weapon
+                                  ]
                                   [ HH.img [ HP.src (display equipedWeapon.weaponData.weapon.image), classes' "image is-32x32" ]
                                   ]
-                              , HH.div [ classes' "column is-narrow" ]
-                                  [ HH.span
-                                      [ tooltip (mkTooltipForWeapon equipedWeapon.weaponData.weapon), classes' "has-tooltip-top" ]
+                              , HH.div
+                                  [ classes' "column is-narrow is-clickable"
+                                  , HE.onClick $ \_ -> SelectedWeaponForModal equipedWeapon.weaponData.weapon
+                                  ]
+                                  [ HH.span_
                                       [ HH.text (display equipedWeapon.weaponData.weapon.name)
                                       ]
                                   ]
@@ -91,15 +108,20 @@ render state =
                               ]
                           ]
                     )
+    , case state.weaponForModal of
+        Nothing -> HH.div_ []
+        Just weaponForModal -> HH.slot _weaponModal unit WeaponModal.component weaponForModal HandleWeaponModal
     ]
 
-mkTooltip :: Weapon -> String
-mkTooltip weapon =
-  "OB0:\n" <> display weapon.ob0.description
-    <> "\n\nOB6:\n"
-    <> display weapon.ob6.description
-
-handleAction :: forall cs. Action → H.HalogenM State Action cs Output Aff Unit
+handleAction :: Action → H.HalogenM State Action Slots Output Aff Unit
 handleAction = case _ of
-  Receive teams -> H.put { teams }
-  SetOwnedOb weaponName obRangeIndex -> H.raise $ RaiseSetOwnedOb weaponName obRangeIndex
+  Receive teams ->
+    H.modify_ \s -> s { teams = teams }
+  SetOwnedOb weaponName obRangeIndex ->
+    H.raise $ RaiseSetOwnedOb weaponName obRangeIndex
+  SelectedWeaponForModal weapon ->
+    H.modify_ \s -> s { weaponForModal = Just weapon }
+  HandleWeaponModal output ->
+    case output of
+      WeaponModal.ModalClosed ->
+        H.modify_ \s -> s { weaponForModal = Nothing }

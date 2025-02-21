@@ -3,6 +3,7 @@ module App.EffectSelector where
 import Core.Database.VLatest
 import Prelude
 
+import App.WeaponModal as WeaponModal
 import Core.Database.VLatest as Db
 import Core.Display (display)
 import Core.Weapons.Search (Filter, FilterRange, FilterResultWeapon)
@@ -17,11 +18,18 @@ import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
-import HtmlUtils (classes', displayIf, mkTooltipForWeapon, tooltip)
+import HtmlUtils (classes', displayIf)
+import Type.Prelude (Proxy(..))
 import Utils (unsafeFromJust)
 import Web.UIEvent.MouseEvent (MouseEvent)
 
 type Slot id = H.Slot Query Output id
+
+type Slots =
+  ( weaponModal :: WeaponModal.Slot Unit
+  )
+
+_weaponModal = Proxy :: Proxy "weaponModal"
 
 type Input =
   { db :: Db
@@ -37,6 +45,7 @@ type State =
   , selectedMinMaxPotency :: Potency
   , matchingWeapons :: Array FilterResultWeapon
   , canBeDeleted :: Boolean
+  , weaponForModal :: Maybe Weapon
   }
 
 data Output
@@ -50,6 +59,8 @@ data Action
   | SelectedMinBasePotency Int
   | SelectedMinMaxPotency Int
   | SetOwnedOb WeaponName Int
+  | SelectedWeaponForModal Weapon
+  | HandleWeaponModal WeaponModal.Output
   | Initialize
   | Receive Input
   | Close MouseEvent
@@ -68,6 +79,7 @@ component =
           , selectedMinMaxPotency: High
           , matchingWeapons: []
           , canBeDeleted
+          , weaponForModal: Nothing
           }
     , render
     , eval: H.mkEval H.defaultEval
@@ -78,7 +90,7 @@ component =
         }
     }
 
-render :: forall cs m. State -> H.ComponentHTML Action cs m
+render :: State -> H.ComponentHTML Action Slots Aff
 render state =
   HH.div [ classes' "columns is-mobile is-centered" ]
     -- Single column used to center the entire contents of the effect selector
@@ -185,14 +197,20 @@ render state =
                                     else classes
                                 HH.tr
                                   [ classes' ("" # checkRowDisabled) ]
-                                  [ HH.img [ HP.src (display weaponData.weapon.image), classes' "image is-32x32" ]
+                                  [ HH.img
+                                      [ HP.src (display weaponData.weapon.image)
+                                      , classes' "is-clickable image is-32x32"
+                                      , HE.onClick $ \_ -> SelectedWeaponForModal weaponData.weapon
+                                      ]
                                   , HH.td
-                                      [ tooltip (mkTooltipForWeapon weaponData.weapon)
-                                      , classes' ("has-tooltip-right" # checkCellDisabled)
+                                      [ classes' ("is-clickable" # checkCellDisabled)
+                                      , HE.onClick $ \_ -> SelectedWeaponForModal weaponData.weapon
                                       ]
                                       [ HH.text $ display weaponData.weapon.name ]
                                   , HH.td
-                                      [ classes' ("" # checkCellDisabled) ]
+                                      [ classes' ("is-clickable" # checkCellDisabled)
+                                      , HE.onClick $ \_ -> SelectedWeaponForModal weaponData.weapon
+                                      ]
                                       [ HH.text $ display weaponData.weapon.character ]
                                   , HH.td_
                                       [ HH.div [ classes' "select" ]
@@ -217,9 +235,12 @@ render state =
                 ]
             ]
         ]
+    , case state.weaponForModal of
+        Nothing -> HH.div_ []
+        Just weaponForModal -> HH.slot _weaponModal unit WeaponModal.component weaponForModal HandleWeaponModal
     ]
 
-handleAction :: forall cs. Action → H.HalogenM State Action cs Output Aff Unit
+handleAction :: Action → H.HalogenM State Action Slots Output Aff Unit
 handleAction = case _ of
   SelectedEffectType idx -> do
     if idx == 0 then
@@ -263,6 +284,14 @@ handleAction = case _ of
   SetOwnedOb weaponName obRangeIndex -> do
     H.raise $ RaiseSetOwnedOb weaponName obRangeIndex
 
+  SelectedWeaponForModal weapon ->
+    H.modify_ \s -> s { weaponForModal = Just weapon }
+
+  HandleWeaponModal output ->
+    case output of
+      WeaponModal.ModalClosed ->
+        H.modify_ \s -> s { weaponForModal = Nothing }
+
   Initialize -> do
     -- When this EffectSelector is done rendering, if the initial state has an effect type,
     -- we notify the root component so the results section will be updated.
@@ -288,7 +317,7 @@ updateMatchingWeapons state = do
       state { matchingWeapons = filterResult.matchingWeapons }
     Nothing -> state { matchingWeapons = [] }
 
-handleQuery :: forall action a m. Query a -> H.HalogenM State action () Output m (Maybe a)
+handleQuery :: forall action a m. Query a -> H.HalogenM State action Slots Output m (Maybe a)
 handleQuery = case _ of
   GetFilter reply -> do
     state <- H.get

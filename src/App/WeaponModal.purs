@@ -81,7 +81,7 @@ render { weapon } =
 renderObLevel :: forall w i. Int -> ObLevel -> HH.HTML w i
 renderObLevel ob { description } =
   HH.div [ classes' "mb-3" ] $
-    [ HH.p [ classes' "title is-5 mb-1" ] [ HH.text ("OB" <> show ob) ]
+    [ HH.p [ classes' "subtitle is-5 mb-1" ] [ HH.text ("OB" <> show ob) ]
     , HH.section [] $
         ( description
             # NES.toString

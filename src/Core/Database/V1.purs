@@ -1,8 +1,7 @@
-module Core.Database.VLatest where
+module Core.Database.V1 where
 
 import Prelude
 
-import Core.Database.V1 as V1
 import Core.Display (class Display, display)
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Generic.Rep (class Generic)
@@ -18,9 +17,6 @@ import Yoga.JSON (class ReadForeign, class WriteForeign)
 import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
 import Yoga.JSON.Generics.TaggedSumRep as TaggedSum
-
-migrate :: V1.Db -> Db
-migrate db = db
 
 type Db =
   { allWeapons :: Map WeaponName WeaponData

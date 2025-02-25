@@ -24,6 +24,22 @@ import Partial.Unsafe (unsafeCrashWith)
 import Yoga.JSON (class ReadForeign, class WriteForeign)
 import Yoga.JSON as J
 
+{- |
+Similar to the function `the` from Idris, used to manually ascribe the type of an expression
+in a chain of functions.
+
+https://www.idris-lang.org/docs/idris2/current/prelude_docs/docs/Prelude.Basics.html#Prelude.Basics.the
+
+```
+myMap
+  # Map.toUnfoldable
+  # the @(Array _)
+  <#> (\(k /\ v) -> ...)
+```
+-}
+the :: forall @a. a -> a
+the = identity
+
 whenJust :: forall @a @m. Monad m => Maybe a -> (a -> m Unit) -> m Unit
 whenJust mb action =
   case mb of

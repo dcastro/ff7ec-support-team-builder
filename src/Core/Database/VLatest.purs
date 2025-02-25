@@ -2,7 +2,7 @@ module Core.Database.VLatest where
 
 import Prelude
 
-import Core.Database.V1 as V1
+import Core.Database.V1 as Prev
 import Core.Display (class Display, display)
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Generic.Rep (class Generic)
@@ -19,8 +19,25 @@ import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
 import Yoga.JSON.Generics.TaggedSumRep as TaggedSum
 
-migrate :: V1.Db -> Db
-migrate db = db
+type DbState =
+  { db :: Db
+  , userState :: UserState
+  }
+
+type UserState =
+  { weapons :: Map WeaponName UserStateWeapon
+  }
+
+type UserStateWeapon =
+  { ignored :: Boolean
+  -- | The OB range owned by the user. E.g. if the user has this weapon at OB3, this range could be OB0-5.
+  -- INVARIANT: this needs to match one of the items in the corresponding `WeaponData.distinctObs`.
+  , ownedOb :: Maybe ObRange
+  }
+
+type SerializableUserState =
+  { weapons :: MapAsArray WeaponName UserStateWeapon
+  }
 
 type Db =
   { allWeapons :: Map WeaponName WeaponData
@@ -30,16 +47,12 @@ type Db =
 
 type WeaponData =
   { weapon :: Weapon
-  -- NOTE: phased out the `ignored` feature,
-  -- but keeping the `ignored` flag in the db in case I want to bring it back
-  , ignored :: Boolean
   -- List of all groups of Overboost Levels with the same weapon effect potencies.
   --
   -- For most weapons, this will be [OB0-5, Ob6-Ob10]
   -- because they have the same potencies between Ob0 and Ob5,
   -- and between Ob6 and Ob10.
   , distinctObs :: NonEmptyArray ObRange
-  , ownedOb :: Maybe ObRange
   }
 
 type SerializableDb =
@@ -152,10 +165,8 @@ data EffectType
   | ExploitWeakness { durExt :: DurExt, percentage :: Percentage }
 
 type WeaponEffect =
-  { effectType ::
-      EffectType
-  , range ::
-      Range
+  { effectType :: EffectType
+  , range :: Range
   }
 
 type Potencies =

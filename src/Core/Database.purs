@@ -1,4 +1,4 @@
-module Core.Database (init, createDb, writeToCache) where
+module Core.Database (init, createDbState, writeToCache) where
 
 import Core.Database.VLatest
 import Prelude
@@ -41,33 +41,33 @@ import Yoga.JSON as J
 currentDbVersion :: Int
 currentDbVersion = 1
 
-init :: Aff (Maybe Db)
+init :: Aff (Maybe DbState)
 init = do
   runExceptT readFromCache >>= case _ of
     Left _ -> do
       Console.log "Db not found in cache, loading it from the spreadsheet..."
-      dbMb <- hush <$> runExceptT (loadAndCreateDb Map.empty)
+      dbMb <- hush <$> runExceptT (loadAndCreateDbState newUserState)
       whenJust dbMb $ writeToCache
       pure dbMb
-    Right { db, hasExpired } | hasExpired -> do
+    Right { dbState, hasExpired } | hasExpired -> do
       Console.log "Db found in cache but has expired, updating cache..."
-      hush <$> runExceptT (loadAndCreateDb db.allWeapons) >>= case _ of
-        Just updatedDb -> do
-          writeToCache updatedDb
-          pure $ Just updatedDb
+      hush <$> runExceptT (loadAndCreateDbState dbState.userState) >>= case _ of
+        Just updatedDbState -> do
+          writeToCache updatedDbState
+          pure $ Just updatedDbState
         Nothing -> do
           Console.log "Failed to update db"
-          pure $ Just db
-    Right { db, hasExpired: _ } -> do
+          pure $ Just dbState
+    Right { dbState, hasExpired: _ } -> do
       Console.log "Db found in cache."
-      pure $ Just db
+      pure $ Just dbState
 
   where
   -- Load the weapons from the spreadsheet, and updates the existing db.
-  loadAndCreateDb :: forall f. MonadAff f => MonadThrow Unit f => MonadRec f => Map WeaponName WeaponData -> f Db
-  loadAndCreateDb existingWeapons = do
+  loadAndCreateDbState :: forall f. MonadAff f => MonadThrow Unit f => MonadRec f => UserState -> f DbState
+  loadAndCreateDbState existingUserState = do
     weapons <- loadFromSpreadsheet
-    createDb weapons existingWeapons
+    createDbState weapons existingUserState
 
   -- Throws if we can't parse the Google Sheet.
   loadFromSpreadsheet :: forall f. MonadAff f => MonadThrow Unit f => f (Array Weapon)
@@ -81,6 +81,9 @@ init = do
       Console.log "Failed to parse any weapons"
       throwError unit
     pure weapons
+
+newUserState :: UserState
+newUserState = { weapons: Map.empty }
 
 getDistinctObs :: Weapon -> NonEmptyArray ObRange
 getDistinctObs weapon = do
@@ -221,18 +224,35 @@ getDistinctObs weapon = do
 
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
 
-pickOb :: ObRange -> NonEmptyArray ObRange -> ObRange
-pickOb ob obs = do
-  if NAR.elem ob obs then ob
-  else
-    NAR.last obs
-
-createDb :: forall m. MonadEffect m => MonadRec m => Array Weapon -> Map WeaponName WeaponData -> m Db
-createDb newWeapons existingWeapons = do
-  Arr.foldRecM
-    (\db weapon -> insertWeapon weapon existingWeapons db)
+createDbState :: forall m. MonadEffect m => MonadRec m => Array Weapon -> UserState -> m DbState
+createDbState newWeapons existingUserState = do
+  (finalDb :: Db) <- Arr.foldRecM
+    (\db weapon -> insertWeapon weapon db)
     newDb
     newWeapons
+
+  -- If new weapons were added to the db, we need to create "empty states" for them.
+  let
+    (finalUserState :: UserState) =
+      F.foldl
+        ( \userState weaponData ->
+            case Map.lookup weaponData.weapon.name userState.weapons of
+              Just _ -> userState
+              Nothing -> do
+                let
+                  updatedUserStateWeapons =
+                    Map.insert weaponData.weapon.name
+                      { ignored: false
+                      , ownedOb: Just $ NAR.last weaponData.distinctObs
+                      }
+                      userState.weapons
+                userState { weapons = updatedUserStateWeapons }
+        )
+        existingUserState
+        finalDb.allWeapons
+
+  pure { db: finalDb, userState: finalUserState }
+
   where
   newDb :: Db
   newDb =
@@ -245,26 +265,16 @@ insertWeapon
   :: forall m
    . MonadEffect m
   => Weapon
-  -> Map WeaponName WeaponData
   -> Db
   -> m Db
-insertWeapon weapon existingWeapons db = do
+insertWeapon weapon db = do
   let groups = groupsForWeapon weapon
   if List.null groups then pure db
   else
-    case Map.lookup weapon.name existingWeapons of
-      Just existingWeapon -> do
-        Console.log $ "Weapon already exists, replacing it: " <> display weapon.name
-        pure $ db
-          # mergeWithExisting existingWeapon
-          # insertIntoGroups groups
-          # insertCharacterName
-      Nothing -> do
-        Console.log $ "Weapon added: " <> display weapon.name
-        pure $ db
-          # insert
-          # insertIntoGroups groups
-          # insertCharacterName
+    pure $ db
+      # insert
+      # insertIntoGroups groups
+      # insertCharacterName
   where
 
   insert :: Db -> Db
@@ -273,21 +283,7 @@ insertWeapon weapon existingWeapons db = do
     let
       newWeapon =
         { weapon
-        , ignored: false
         , distinctObs
-        , ownedOb: Just $ NAR.last distinctObs
-        }
-    db { allWeapons = Map.insert weapon.name newWeapon db.allWeapons }
-
-  mergeWithExisting :: WeaponData -> Db -> Db
-  mergeWithExisting existing db = do
-    let distinctObs = getDistinctObs weapon
-    let
-      newWeapon =
-        { weapon
-        , ignored: existing.ignored
-        , distinctObs
-        , ownedOb: existing.ownedOb <#> \owned -> pickOb owned distinctObs
         }
     db { allWeapons = Map.insert weapon.name newWeapon db.allWeapons }
 
@@ -475,41 +471,57 @@ groupsForWeapon weapon = do
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
 
 -- Throws if the cache is empty OR the cache data is corrupted.
-readFromCache :: forall m. MonadThrow Unit m => MonadAff m => m { db :: Db, hasExpired :: Boolean }
+readFromCache :: forall m. MonadThrow Unit m => MonadAff m => m { dbState :: DbState, hasExpired :: Boolean }
 readFromCache = do
   dbStr <- throwOnNothing $ WS.getItem "db"
+  userStateStr <- throwOnNothing $ WS.getItem "user_state"
   lastUpdatedStr <- throwOnNothing $ WS.getItem "last_updated"
 
-  db :: Db <- fromSerializable <$> J.readJSON dbStr `logOnLeft` \err ->
+  db :: Db <- fromSerializableDb <$> J.readJSON dbStr `logOnLeft` \err ->
     "Failed to deserialize db:\n" <> renderJsonErr err
+  userState :: UserState <- fromSerializableUserState <$> J.readJSON userStateStr `logOnLeft` \err ->
+    "Failed to deserialize user_state:\n" <> renderJsonErr err
   lastUpdated :: DateTime <- J.readJSON lastUpdatedStr `logOnLeft` \err ->
-    "Failed to deserialize db:\n" <> renderJsonErr err
+    "Failed to deserialize last_updated:\n" <> renderJsonErr err
 
   now <- liftEffect Now.nowDateTime
   let hasExpired = DateTime.diff now lastUpdated > Hours 24.0
 
-  pure { db, hasExpired }
+  let dbState = { db, userState }
+  pure { dbState, hasExpired }
   where
-  fromSerializable :: SerializableDb -> Db
-  fromSerializable db =
+  fromSerializableDb :: SerializableDb -> Db
+  fromSerializableDb db =
     { allWeapons: unwrap db.allWeapons
     , groupedByEffect: unwrap db.groupedByEffect
     , allCharacterNames: unwrap db.allCharacterNames
     }
 
-writeToCache :: forall m. MonadAff m => Db -> m Unit
-writeToCache db = do
-  let dbStr = J.writeJSON $ toSerializable db
+  fromSerializableUserState :: SerializableUserState -> UserState
+  fromSerializableUserState userState =
+    { weapons: unwrap userState.weapons
+    }
+
+writeToCache :: forall m. MonadAff m => DbState -> m Unit
+writeToCache dbState = do
+  let dbStr = J.writeJSON $ toSerializableDb dbState.db
+  let userStateStr = J.writeJSON $ toSerializableUserState dbState.userState
   lastUpdatedStr <- J.writeJSON <$> liftEffect Now.nowDateTime
   let currentDbVersionStr = J.writeJSON currentDbVersion
 
   WS.setItem "db" dbStr
+  WS.setItem "user_state" userStateStr
   WS.setItem "last_updated" lastUpdatedStr
   WS.setItem "db_version" currentDbVersionStr
   where
-  toSerializable :: Db -> SerializableDb
-  toSerializable db =
+  toSerializableDb :: Db -> SerializableDb
+  toSerializableDb db =
     { allWeapons: MapAsArray db.allWeapons
     , groupedByEffect: MapAsArray db.groupedByEffect
     , allCharacterNames: SetAsArray db.allCharacterNames
+    }
+
+  toSerializableUserState :: UserState -> SerializableUserState
+  toSerializableUserState userState =
+    { weapons: MapAsArray userState.weapons
     }

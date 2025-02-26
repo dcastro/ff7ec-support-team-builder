@@ -48,7 +48,7 @@ data State
   | Loaded LoadedState
 
 type LoadedState =
-  { db :: Db
+  { dbState :: DbState
   , teams :: Array AssignmentResult
   , selectedEffectCount :: Int
   , maxCharacterCount :: Int
@@ -57,9 +57,9 @@ type LoadedState =
   , excludeChars :: Set CharacterName
   }
 
-mkInitialLoadedState :: Db -> LoadedState
-mkInitialLoadedState db =
-  { db
+mkInitialLoadedState :: DbState -> LoadedState
+mkInitialLoadedState dbState =
+  { dbState
   , teams: []
   , selectedEffectCount: 0
   , maxCharacterCount: 2
@@ -98,7 +98,7 @@ render state =
       HH.div_
         [ HH.text "Failed to load"
         ]
-    Loaded { db, teams, selectedEffectCount, maxCharacterCount, effectSelectorIds } ->
+    Loaded { dbState, teams, selectedEffectCount, maxCharacterCount, effectSelectorIds } ->
       HH.section [ classes' "hero is-fullheight" ]
         [ HH.section [ classes' "section" ]
             [ HH.h2 [ classes' "title is-2 has-text-centered" ]
@@ -116,7 +116,7 @@ render state =
                               _effectSelector
                               effectSelectorId
                               EffectSelector.component
-                              { db
+                              { dbState
                               , effectTypeMb: Nothing
                               , canBeDeleted: NA.length effectSelectorIds > 1
                               }
@@ -164,7 +164,7 @@ render state =
                     [ HH.text "Must have: "
                     ]
                 ] <>
-                  ( db.allCharacterNames # Arr.fromFoldable <#> \name ->
+                  ( dbState.db.allCharacterNames # Arr.fromFoldable <#> \name ->
                       HH.div [ classes' "column is-narrow" ]
                         [ HH.label [ classes' "checkbox" ]
                             [ HH.input
@@ -183,7 +183,7 @@ render state =
                     [ HH.text "Exclude: "
                     ]
                 ] <>
-                  ( db.allCharacterNames # Arr.fromFoldable <#> \name ->
+                  ( dbState.db.allCharacterNames # Arr.fromFoldable <#> \name ->
                       HH.div [ classes' "column is-narrow" ]
                         [ HH.label [ classes' "checkbox" ]
                             [ HH.input
@@ -357,7 +357,7 @@ updateTeams state = do
         H.request _effectSelector effectSelectorId EffectSelector.GetFilter
   let
     teams =
-      Search.applyFilters filters state.db
+      Search.applyFilters filters state.dbState
         # Search.search state.maxCharacterCount state.excludeChars
         # Search.filterMustHaveChars state.mustHaveChars
         # Search.filterDuplicates
@@ -382,31 +382,37 @@ setOwnedOb :: forall m. MonadAff m => WeaponName -> Int -> LoadedState -> m Load
 setOwnedOb weaponName obRangeIndex state = do
   Console.log $ "Weapon " <> display weaponName <> " owned OB: " <> show obRangeIndex
   let
-    updatedAllWeapons =
+    updatedWeapons =
       Map.alter
         ( case _ of
-            Just existingWeapon -> do
+            Just existingWeaponState -> do
               let
                 ownedOb =
                   if obRangeIndex == 0 then
                     Nothing
-                  else
-                    Just $ NAR.index existingWeapon.distinctObs (obRangeIndex - 1)
+                  else do
+                    let
+                      existingWeaponData = Map.lookup weaponName state.dbState.db.allWeapons `unsafeFromJust`
+                        ( "Weapon "
+                            <> display weaponName
+                            <> " found in user state but not in db."
+                        )
+                    Just $ NAR.index existingWeaponData.distinctObs (obRangeIndex - 1)
                       `unsafeFromJust`
                         ( "Attempted to set owned OB to #"
                             <> show obRangeIndex
                             <> " for weapon "
                             <> display weaponName
                             <> ", but weapon has fewer distinct OBs: "
-                            <> show (NAR.length existingWeapon.distinctObs)
+                            <> show (NAR.length existingWeaponData.distinctObs)
                         )
-              Just existingWeapon { ownedOb = ownedOb }
+              Just existingWeaponState { ownedOb = ownedOb }
             Nothing -> unsafeCrashWith $ "Attempted to set owned OB, but weapon was not found: " <> display weaponName
         )
         weaponName
-        state.db.allWeapons
+        state.dbState.userState.weapons
 
-  let state' = state { db { allWeapons = updatedAllWeapons } }
+  let state' = state { dbState { userState { weapons = updatedWeapons } } }
   Console.log "Saving db to cache"
-  Db.writeToCache state'.db
+  Db.writeToCache state'.dbState
   pure state'

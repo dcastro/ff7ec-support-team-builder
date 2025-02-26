@@ -32,13 +32,13 @@ type Slots =
 _weaponModal = Proxy :: Proxy "weaponModal"
 
 type Input =
-  { db :: Db
+  { dbState :: DbState
   , effectTypeMb :: Maybe FilterEffectType
   , canBeDeleted :: Boolean
   }
 
 type State =
-  { db :: Db
+  { dbState :: DbState
   , selectedEffectType :: Maybe FilterEffectType
   , selectedRange :: FilterRange
   , selectedMinBasePotency :: Potency
@@ -70,9 +70,9 @@ data Query a = GetFilter (Filter -> a)
 component :: H.Component Query Input Output Aff
 component =
   H.mkComponent
-    { initialState: \{ db, effectTypeMb, canBeDeleted } ->
+    { initialState: \{ dbState, effectTypeMb, canBeDeleted } ->
         updateMatchingWeapons
-          { db
+          { dbState
           , selectedEffectType: effectTypeMb
           , selectedRange: genericBottom
           , selectedMinBasePotency: Low
@@ -189,6 +189,7 @@ render state =
                           <>
                             ( state.matchingWeapons <#> \filterResultWeapon -> do
                                 let weaponData = filterResultWeapon.weapon
+                                let weaponState = filterResultWeapon.weaponState
 
                                 -- Grey out a row if the weapon does not match the filters
                                 let
@@ -220,13 +221,13 @@ render state =
                                           [ HH.select
                                               [ HE.onSelectedIndexChange (SetOwnedOb weaponData.weapon.name) ]
                                               ( [ HH.option
-                                                    [ HP.selected (weaponData.ownedOb == Nothing) ]
+                                                    [ HP.selected (weaponState.ownedOb == Nothing) ]
                                                     [ HH.text "N/A" ]
                                                 ]
                                                   <>
                                                     ( NAR.toArray weaponData.distinctObs <#> \obRange ->
                                                         HH.option
-                                                          [ HP.selected (weaponData.ownedOb == Just obRange) ]
+                                                          [ HP.selected (weaponState.ownedOb == Just obRange) ]
                                                           [ HH.text $ display obRange ]
                                                     )
                                               )
@@ -305,7 +306,7 @@ handleAction = case _ of
   Receive input -> do
     H.modify_ \state ->
       updateMatchingWeapons $ state
-        { db = input.db
+        { dbState = input.dbState
         , canBeDeleted = input.canBeDeleted
         }
 
@@ -316,7 +317,7 @@ updateMatchingWeapons :: State -> State
 updateMatchingWeapons state = do
   case buildFilter state of
     Just filter -> do
-      let filterResult = Search.findMatchingWeapons filter state.db
+      let filterResult = Search.findMatchingWeapons filter state.dbState
       state { matchingWeapons = filterResult.matchingWeapons }
     Nothing -> state { matchingWeapons = [] }
 

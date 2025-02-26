@@ -66,29 +66,33 @@ type FilterResult =
 
 type FilterResultWeapon =
   { weapon :: WeaponData
+  , weaponState :: UserStateWeapon
   -- For a given effect, the potencies this weapon has for that effect,
   -- at the owned overboost level.
   , potencies :: Maybe Potencies
   , matchesFilters :: Boolean
   }
 
-findMatchingWeapons :: Filter -> Db -> FilterResult
-findMatchingWeapons filter db = do
+findMatchingWeapons :: Filter -> DbState -> FilterResult
+findMatchingWeapons filter dbState = do
   let
-    (weaponsForEffectType :: Array GroupedWeapon) = Map.lookup filter.effectType db.groupedByEffect # fromMaybe []
+    (weaponsForEffectType :: Array GroupedWeapon) = Map.lookup filter.effectType dbState.db.groupedByEffect # fromMaybe []
 
     (matchingWeapons :: Array FilterResultWeapon) = weaponsForEffectType
       # Arr.mapMaybe \{ weaponName, ranges } -> do
           let
-            weapon = Map.lookup weaponName db.allWeapons
-              `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter.effectType <> "' not found.")
+            weapon = Map.lookup weaponName dbState.db.allWeapons
+              `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter.effectType <> "' not found in 'db.allWeapons'.")
+
+            weaponState = Map.lookup weaponName dbState.userState.weapons
+              `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter.effectType <> "' not found in user state.")
 
           -- Throw out weapons that don't match the required range.
           matchingRanges <- matchRanges filter.range ranges
 
           let
             potencies =
-              case weapon.ownedOb of
+              case weaponState.ownedOb of
                 Nothing -> Nothing
                 Just ownedOb -> do
                   selectBestPotencies ownedOb matchingRanges
@@ -97,10 +101,11 @@ findMatchingWeapons filter db = do
               -- NOTE: phased out the `ignored` feature,
               -- but keeping the `ignored` flag in the db in case I want to bring it back
               -- not weapon.ignored &&
-              isJust weapon.ownedOb && hasMinPotencies potencies
+              isJust weaponState.ownedOb && hasMinPotencies potencies
 
           Just
             { weapon
+            , weaponState
             , potencies
             , matchesFilters
             }
@@ -164,8 +169,8 @@ findMatchingWeapons filter db = do
       FilterSelfOrSingleTargetOrAll, SingleTarget -> true
       FilterSelfOrSingleTargetOrAll, Self -> true
 
-applyFilters :: Array Filter -> Db -> Array FilterResult
-applyFilters filters db = filters <#> \filter -> findMatchingWeapons filter db
+applyFilters :: Array Filter -> DbState -> Array FilterResult
+applyFilters filters dbState = filters <#> \filter -> findMatchingWeapons filter dbState
 
 search :: Int -> Set CharacterName -> Array FilterResult -> Array AssignmentResult
 search maxCharacterCount excludeChars filterResults =
@@ -175,12 +180,12 @@ search maxCharacterCount excludeChars filterResults =
       # Arr.nubBy (compare `on` _.filter)
       # Arr.foldr
           ( \(filterResult :: FilterResult) (teams :: Array AssignmentResult) -> do
-              { weapon, potencies } <- filterResult.matchingWeapons
+              { weapon, weaponState, potencies } <- filterResult.matchingWeapons
                 # discardUnmatched
 
               (team :: AssignmentResult) <- teams
 
-              case assignWeapon maxCharacterCount { filter: filterResult.filter, potencies } weapon team of
+              case assignWeapon maxCharacterCount { filter: filterResult.filter, potencies } weapon weaponState team of
                 Just team -> [ team ]
                 Nothing -> []
           )
@@ -209,6 +214,7 @@ type Character =
 
 type EquipedWeapon =
   { weaponData :: WeaponData
+  , weaponState :: UserStateWeapon
   -- The filters that this weapon matched on.
   , matchedFilters :: Array EquipedWeaponFilter
   }
@@ -221,8 +227,8 @@ type EquipedWeaponFilter =
 -- Returns `Nothing` if:
 --  * There are more than 2 weapons for any character.
 --  * The selected weapons belong to more than `n` characters.
-assignWeapon :: Int -> EquipedWeaponFilter -> WeaponData -> AssignmentResult -> Maybe AssignmentResult
-assignWeapon maxCharacterCount filter weaponData assignments = do
+assignWeapon :: Int -> EquipedWeaponFilter -> WeaponData -> UserStateWeapon -> AssignmentResult -> Maybe AssignmentResult
+assignWeapon maxCharacterCount filter weaponData weaponState assignments = do
   let
     characterName = weaponData.weapon.character :: CharacterName
     characterName' = NES.toString (unwrap characterName)
@@ -231,30 +237,32 @@ assignWeapon maxCharacterCount filter weaponData assignments = do
       Nothing ->
         -- This character hasn't been created yet, so we attempt to create it.
         if Map.size assignments.characters >= maxCharacterCount then Nothing
-        else Just $ Map.insert characterName' (mkCharacter characterName weaponData filter) assignments.characters
+        else Just $ Map.insert characterName' (mkCharacter characterName weaponData weaponState filter) assignments.characters
       Just existingCharacter -> do
         -- This character already exists, so we attempt to equip this weapon.
-        updatedCharacter <- equipWeapon weaponData filter existingCharacter
+        updatedCharacter <- equipWeapon weaponData weaponState filter existingCharacter
         pure $ Map.insert characterName' updatedCharacter assignments.characters
   Just $ assignments { characters = updatedCharacters }
   where
 
-  mkCharacter :: CharacterName -> WeaponData -> EquipedWeaponFilter -> Character
-  mkCharacter name mainHandWeapon matchedFilter =
+  mkCharacter :: CharacterName -> WeaponData -> UserStateWeapon -> EquipedWeaponFilter -> Character
+  mkCharacter name mainHandWeapon mainHandWeaponState matchedFilter =
     { name
     , mainHand: Just
         { weaponData: mainHandWeapon
+        , weaponState: mainHandWeaponState
         , matchedFilters: [ matchedFilter ]
         }
     , offHand: Nothing
     }
 
-  equipWeapon :: WeaponData -> EquipedWeaponFilter -> Character -> Maybe Character
-  equipWeapon weaponData filter character = do
+  equipWeapon :: WeaponData -> UserStateWeapon -> EquipedWeaponFilter -> Character -> Maybe Character
+  equipWeapon weaponData weaponState filter character = do
     case character.mainHand of
       Nothing -> Just character
         { mainHand = Just
             { weaponData
+            , weaponState
             , matchedFilters: [ filter ]
             }
         }
@@ -275,6 +283,7 @@ assignWeapon maxCharacterCount filter weaponData assignments = do
               pure $ character
                 { offHand = Just
                     { weaponData
+                    , weaponState
                     , matchedFilters: [ filter ]
                     }
                 }

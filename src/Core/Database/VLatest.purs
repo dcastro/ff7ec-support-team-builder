@@ -7,17 +7,55 @@ import Core.Display (class Display, display)
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
+import Data.Map as Map
 import Data.Maybe (Maybe)
 import Data.Newtype (class Newtype, unwrap)
 import Data.Set (Set)
 import Data.Show.Generic (genericShow)
 import Data.String.NonEmpty (NonEmptyString)
-import Utils (MapAsArray, SetAsArray)
+import Data.Tuple.Nested ((/\))
+import Safe.Coerce (coerce)
+import Utils (MapAsArray, SetAsArray, the)
 import Utils as Utils
 import Yoga.JSON (class ReadForeign, class WriteForeign)
 import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
 import Yoga.JSON.Generics.TaggedSumRep as TaggedSum
+
+migrate :: Prev.UserState -> UserState
+migrate prev =
+  { weapons: prev.weapons
+      # Map.toUnfoldable
+      # the @(Array _)
+      <#> (\(k /\ v) -> (coerce k /\ (migrateUserStateWeapon v)))
+      # Map.fromFoldable
+  }
+  where
+  migrateUserStateWeapon :: Prev.UserStateWeapon -> UserStateWeapon
+  migrateUserStateWeapon prev =
+    { ignored: prev.ignored
+    , ownedOb: migrateObRange <$> prev.ownedOb
+    }
+
+  migrateObRange :: Prev.ObRange -> ObRange
+  migrateObRange (Prev.ObRange prev) = ObRange
+    { from: migrateFromOb prev.from
+    , to: migrateToOb prev.to
+    }
+
+  migrateFromOb :: Prev.FromOb -> FromOb
+  migrateFromOb = case _ of
+    Prev.FromOb0 -> FromOb0
+    Prev.FromOb1 -> FromOb1
+    Prev.FromOb6 -> FromOb6
+    Prev.FromOb10 -> FromOb10
+
+  migrateToOb :: Prev.ToOb -> ToOb
+  migrateToOb = case _ of
+    Prev.ToOb0 -> ToOb0
+    Prev.ToOb5 -> ToOb5
+    Prev.ToOb9 -> ToOb9
+    Prev.ToOb10 -> ToOb10
 
 type DbState =
   { db :: Db

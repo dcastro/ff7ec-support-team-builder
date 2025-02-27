@@ -3,9 +3,14 @@ module Core.Database (init, createDbState, writeToCache) where
 import Core.Database.VLatest
 import Prelude
 
+import Control.Alt (alt)
+import Control.Apply (lift2)
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Control.Monad.Except (runExceptT)
 import Control.Monad.Rec.Class (class MonadRec)
+import Core.Database.V1 as V1
+import Core.Database.VLatest as V2
+import Core.Database.VLatest as VLatest
 import Core.Display (display)
 import Core.Weapons.Parser as P
 import Core.WebStorage as WS
@@ -35,32 +40,41 @@ import Effect.Class.Console as Console
 import Effect.Now as Now
 import Google.SheetsApi as SheetsApi
 import Partial.Unsafe (unsafeCrashWith)
-import Utils (MapAsArray(..), SetAsArray(..), logOnLeft, renderJsonErr, throwOnNothing, unsafeFromJust, whenJust)
+import Utils (MapAsArray(..), SetAsArray(..), logOnLeft, renderJsonErr, the, throwOnNothing, unsafeFromJust, whenJust)
 import Yoga.JSON as J
 
-currentDbVersion :: Int
-currentDbVersion = 1
+currentUserStateVersion :: Int
+currentUserStateVersion = 2
 
 init :: Aff (Maybe DbState)
 init = do
   runExceptT readFromCache >>= case _ of
-    Left _ -> do
-      Console.log "Db not found in cache, loading it from the spreadsheet..."
+    Left (_ :: Unit) -> do
+      Console.log "Db/user state not found in cache, loading db from the spreadsheet..."
       dbMb <- hush <$> runExceptT (loadAndCreateDbState newUserState)
       whenJust dbMb $ writeToCache
       pure dbMb
-    Right { dbState, hasExpired } | hasExpired -> do
+    Right { userState, dbMaybe: Just { db, hasExpired } } | hasExpired -> do
       Console.log "Db found in cache but has expired, updating cache..."
-      hush <$> runExceptT (loadAndCreateDbState dbState.userState) >>= case _ of
+      hush <$> runExceptT (loadAndCreateDbState userState) >>= case _ of
         Just updatedDbState -> do
           writeToCache updatedDbState
           pure $ Just updatedDbState
         Nothing -> do
-          Console.log "Failed to update db"
-          pure $ Just dbState
-    Right { dbState, hasExpired: _ } -> do
+          Console.error "Failed to update db, reusing existing expired db."
+          pure $ Just { userState, db }
+    Right { userState, dbMaybe: Nothing } -> do
+      Console.log "Db not found in cache, updating cache..."
+      hush <$> runExceptT (loadAndCreateDbState userState) >>= case _ of
+        Just updatedDbState -> do
+          writeToCache updatedDbState
+          pure $ Just updatedDbState
+        Nothing -> do
+          Console.error "Failed to update db."
+          pure $ Nothing
+    Right { userState, dbMaybe: Just { db, hasExpired: _ } } -> do
       Console.log "Db found in cache."
-      pure $ Just dbState
+      pure $ Just { userState, db }
 
   where
   -- Load the weapons from the spreadsheet, and updates the existing db.
@@ -470,25 +484,69 @@ groupsForWeapon weapon = do
 
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
 
+type ReadCacheResult =
+  { userState :: UserState
+  , dbMaybe ::
+      Maybe
+        { db :: Db
+        , hasExpired :: Boolean
+        }
+  }
+
 -- Throws if the cache is empty OR the cache data is corrupted.
-readFromCache :: forall m. MonadThrow Unit m => MonadAff m => m { dbState :: DbState, hasExpired :: Boolean }
+readFromCache :: forall m. MonadThrow Unit m => MonadAff m => m ReadCacheResult
 readFromCache = do
-  dbStr <- throwOnNothing $ WS.getItem "db"
-  userStateStr <- throwOnNothing $ WS.getItem "user_state"
+  -- NOTE: in V1, we used to store the version number in `db_version`.
+  -- From V2 onwards, it's stored in `user_state_version`.
+  userStateVersionStr <- throwOnNothing $ lift2 alt (WS.getItem "user_state_version") (WS.getItem "db_version")
+  userStateVersion :: Int <- J.readJSON userStateVersionStr
+    # logOnLeft \err -> "Failed to deserialize db_version:\n" <> renderJsonErr err
+
   lastUpdatedStr <- throwOnNothing $ WS.getItem "last_updated"
+  lastUpdated :: DateTime <- J.readJSON lastUpdatedStr
+    # logOnLeft \err -> "Failed to deserialize last_updated:\n" <> renderJsonErr err
 
-  db :: Db <- fromSerializableDb <$> J.readJSON dbStr `logOnLeft` \err ->
-    "Failed to deserialize db:\n" <> renderJsonErr err
-  userState :: UserState <- fromSerializableUserState <$> J.readJSON userStateStr `logOnLeft` \err ->
-    "Failed to deserialize user_state:\n" <> renderJsonErr err
-  lastUpdated :: DateTime <- J.readJSON lastUpdatedStr `logOnLeft` \err ->
-    "Failed to deserialize last_updated:\n" <> renderJsonErr err
+  dbStr <- throwOnNothing $ WS.getItem "db"
+  userStateStr <- WS.getItem "user_state" >>= case _ of
+    Just userStateStr -> pure userStateStr
+    Nothing | userStateVersion == 1 ->
+      -- NOTE: in V1, the user state used to be stored in the `db` cache key, so we deserialize it from `dbStr`
+      -- From V2 onwards, it's stored in the `user_state` key
+      pure dbStr
+    Nothing -> do
+      Console.error "`user_state` cache key not found, even though `db` was found."
+      throwError unit
 
-  now <- liftEffect Now.nowDateTime
-  let hasExpired = DateTime.diff now lastUpdated > Hours 24.0
+  userState :: VLatest.UserState <- case userStateVersion of
+    1 -> do
+      J.readJSON userStateStr
+        # logOnLeft (\err -> "Failed to deserialize db:\n" <> renderJsonErr err)
+        <#> V1.deserializeUserState
+        <#> the @V1.UserState
+        <#> V2.migrate
+    2 -> do
+      J.readJSON userStateStr
+        # logOnLeft (\err -> "Failed to deserialize user_state:\n" <> renderJsonErr err)
+        <#> V2.deserializeUserState
+        <#> the @V2.UserState
+    _ -> do
+      Console.error $ "Unexpected user state version number: " <> show userStateVersion
+      throwError unit
 
-  let dbState = { db, userState }
-  pure { dbState, hasExpired }
+  dbMaybe <- case fromSerializableDb <$> J.readJSON dbStr of
+    Right (db :: Db) -> do
+      now <- liftEffect Now.nowDateTime
+      pure $ Just
+        { db
+        , hasExpired: DateTime.diff now lastUpdated > Hours 24.0
+        }
+    Left err -> do
+      Console.error "Failed to deserializable db. The schema may have recently changed."
+      Console.error $ renderJsonErr err
+      pure Nothing
+
+  pure { userState, dbMaybe }
+
   where
   fromSerializableDb :: SerializableDb -> Db
   fromSerializableDb db =
@@ -497,22 +555,17 @@ readFromCache = do
     , allCharacterNames: unwrap db.allCharacterNames
     }
 
-  fromSerializableUserState :: SerializableUserState -> UserState
-  fromSerializableUserState userState =
-    { weapons: unwrap userState.weapons
-    }
-
 writeToCache :: forall m. MonadAff m => DbState -> m Unit
 writeToCache dbState = do
   let dbStr = J.writeJSON $ toSerializableDb dbState.db
   let userStateStr = J.writeJSON $ toSerializableUserState dbState.userState
   lastUpdatedStr <- J.writeJSON <$> liftEffect Now.nowDateTime
-  let currentDbVersionStr = J.writeJSON currentDbVersion
+  let currentUserStateVersionStr = J.writeJSON currentUserStateVersion
 
   WS.setItem "db" dbStr
   WS.setItem "user_state" userStateStr
   WS.setItem "last_updated" lastUpdatedStr
-  WS.setItem "db_version" currentDbVersionStr
+  WS.setItem "user_state_version" currentUserStateVersionStr
   where
   toSerializableDb :: Db -> SerializableDb
   toSerializableDb db =

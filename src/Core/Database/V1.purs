@@ -5,11 +5,17 @@ import Prelude
 import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
 import Data.Maybe (Maybe)
+import Data.Newtype (unwrap)
 import Data.String.NonEmpty (NonEmptyString)
 import Utils (MapAsArray)
 import Yoga.JSON (class ReadForeign)
 import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
+
+deserializeUserState :: SerializableDb -> UserState
+deserializeUserState db =
+  { weapons: unwrap db.allWeapons
+  }
 
 type UserState =
   { weapons :: Map WeaponName UserStateWeapon
@@ -18,15 +24,6 @@ type UserState =
 type UserStateWeapon =
   { ignored :: Boolean
   , ownedOb :: Maybe ObRange
-  }
-
-type Db =
-  { allWeapons :: Map WeaponName WeaponData
-  }
-
-collectUserState :: Db -> UserState
-collectUserState db =
-  { weapons: db.allWeapons
   }
 
 type WeaponData =
@@ -61,6 +58,7 @@ derive newtype instance Eq ObRange
 
 derive instance Ord FromOb
 derive instance Ord ToOb
+derive newtype instance Ord WeaponName
 
 instance ReadForeign FromOb where
   readImpl = J.genericReadForeignEnum Enum.defaultOptions

@@ -22,6 +22,11 @@ import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
 import Yoga.JSON.Generics.TaggedSumRep as TaggedSum
 
+deserializeUserState :: SerializableUserState -> UserState
+deserializeUserState userState =
+  { weapons: unwrap userState.weapons
+  }
+
 migrate :: Prev.UserState -> UserState
 migrate prev =
   { weapons: prev.weapons

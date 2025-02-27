@@ -58,12 +58,12 @@ logOnNothing msg mb = do
       Console.log msg
       throwError unit
 
-logOnLeft :: forall m e a. MonadThrow Unit m => MonadEffect m => Either e a -> (e -> String) -> m a
-logOnLeft either mkMsg = do
+logOnLeft :: forall m e a. MonadThrow Unit m => MonadEffect m => (e -> String) -> Either e a -> m a
+logOnLeft mkMsg either =
   case either of
     Right a -> pure a
     Left err -> do
-      Console.log $ mkMsg err
+      Console.error $ mkMsg err
       throwError unit
 
 renderJsonErr :: MultipleErrors -> String

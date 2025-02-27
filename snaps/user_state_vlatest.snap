@@ -1,0 +1,1746 @@
+{
+  "weapons": [
+    [
+      "4-Point Shuriken",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Amarant's Claws",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Aonibi",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Arc Sword",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Arctic Star",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Assault Gun",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Bahamut Cutter",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Bahamut Fangs",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Bahamut Rod",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Bald Eagle",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Bandaged Sword",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Battle Trumpet",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Best Wishes",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Bird of Prey",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Black Whiskers",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb10"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Blade of Ruin",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Blue Bramble",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Blue Daffodil Gloves",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Boomerang",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Bramble Spine",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Brilliant Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb5",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Bunny Gloves",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Butterfly Edge",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Canyon Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Catsmegaphone",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Centipede",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Ceremonial Sword (Z)",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Chiron",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Chocobo Paddle",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Chocobo Staff",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Citric Wand",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Core Defender",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Crimson Staff",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Crystal Cross",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Crystal Megaphone",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Crystal Sword",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Cutlass",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Dawn's Prayers",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Defender",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Egg Staff",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Electrocannon",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Enhance Sword (Z)",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Escutcheon Cannon",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Espee Rapiere Next-G",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Fafnir Rifle",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Fairy Tale",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Feathered Gloves",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Featherscatter",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Flame Dragon Blade",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Flame Dragon's Band",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Flayer",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Floral Wand",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Flower Vase",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Foam Sword",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Full Metal Staff",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Gambanteinn",
+      {
+        "ignored": false
+      }
+    ],
+    [
+      "Gargantuan Monolith",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Garnet's Rod",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Giant Fork",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Glavenus Sword",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Gold Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Gold Megaphone",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb10"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Grand Gloves",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Greatsword (A)",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Green Megaphone",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Guard Stick",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Hardcore Squad",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Hardedge",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Headphones",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Heavy Vulcan",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Hell House Cannon",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Hell House Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Holiday Bell",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Humus Saber",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Icebolt Megaphone",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Icebolt Shooter",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Iron Blade",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Iron Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Iron Greatsword",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Ivy Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Junk Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Járngreipr",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Kaiser Knuckles",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Kamura Wand",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Kirin Gloves",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Kugelblitz",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Kuja's Spirit Blade",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Leather Gloves",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Lefko Kypseli",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Lifeguard Wraps",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Locke's Sword",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Luminary Sword",
+      {
+        "ownedOb": {
+          "to": "ToOb5",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Mad Minute",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Mallet of Luck",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Marching Horn",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Marine Shooter",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Microlaser",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Mop",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Mystic Sword",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Mythril Rod",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Mythril Type-0 Katana",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Nameless",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Nautilus Spiral",
+      {
+        "ownedOb": {
+          "to": "ToOb5",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Nightjar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Northern Lights",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Orchard Shovel",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Oven Mitts",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Piece of Cake",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Pilot's Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Pinwheel",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Pole Axe",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Pressure Ridge",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Prime Number",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Pumpkin Blaster",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Pumpkin Lamppost",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Quina Megaphone",
+      {
+        "ignored": false
+      }
+    ],
+    [
+      "Radiant Edge",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Rhad Cannon",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Rhad Gun",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Rocket Lance",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Rose Musket",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Rubber Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "S1976C",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "SSR1976",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Sabin's Claws",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Sawed-Off GS",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Scimitar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Seaside Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Sharkslayer",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Shinra Greatsword: Model I",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Shinra Military Sword",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Shinra Wyvern Blade",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Silver Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Silver Megaphone",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Slash Lance",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Slay the Day",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Sleek Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Sleek Saber",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Slick Beetle",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Snowflake",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Solid Bazooka",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Spear",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Stalwart Integrity",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Steiner's Blade",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Steward Collar",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Steward Gloves",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Stilva Glaive",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Stilva Megaphone",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Stingray",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Striped Moogle Float",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Sun Umbrella",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Syringe Rapier",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Tempest",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Terra's Rod",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Thunderbird",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Tiger Fangs",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Torn Wing",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Tranquility",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Tranquilizer Gun",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Trident",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Trumpet Shell",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Turks' Blade",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Turks' Gloves",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Turks' Rifle",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Twinkling Star",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Type-90 Longsword",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Type-91 Two-Hander",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Umbrella",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb0"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Viper Halberd",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Volcanic Heat",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "W Machine",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Wind Slash",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Witch's Broom",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Withering Blaze",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ],
+    [
+      "Work Gloves",
+      {
+        "ownedOb": {
+          "to": "ToOb10",
+          "from": "FromOb6"
+        },
+        "ignored": false
+      }
+    ]
+  ]
+}

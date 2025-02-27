@@ -1,4 +1,12 @@
-module Core.Database (init, createDbState, writeToCache) where
+module Core.Database
+  ( init
+  , createDbState
+  , writeToCache
+
+  -- Exported for tests
+  , parseAndMigrateUserState
+  , toSerializableUserState
+  ) where
 
 import Core.Database.VLatest
 import Prelude
@@ -520,20 +528,7 @@ readFromCache = do
     Nothing -> do
       throwError "`user_state` not found in cache, even though `db` was found."
 
-  userState :: VLatest.UserState <- case userStateVersion of
-    1 -> do
-      J.readJSON userStateStr
-        # throwOnLeft (\err -> "Failed to deserialize db:\n" <> renderJsonErr err)
-        <#> V1.deserializeUserState
-        <#> the @V1.UserState
-        <#> V2.migrate
-    2 -> do
-      J.readJSON userStateStr
-        # throwOnLeft (\err -> "Failed to deserialize user_state:\n" <> renderJsonErr err)
-        <#> V2.deserializeUserState
-        <#> the @V2.UserState
-    _ -> do
-      throwError $ "Unexpected user state version number: " <> show userStateVersion
+  userState :: VLatest.UserState <- parseAndMigrateUserState userStateStr userStateVersion
 
   dbMaybe <- case fromSerializableDb <$> J.readJSON dbStr of
     Right (db :: Db) -> do
@@ -557,6 +552,23 @@ readFromCache = do
     , allCharacterNames: unwrap db.allCharacterNames
     }
 
+parseAndMigrateUserState :: forall m. MonadThrow String m => String -> Int -> m VLatest.UserState
+parseAndMigrateUserState userStateStr userStateVersion = do
+  case userStateVersion of
+    1 -> do
+      J.readJSON userStateStr
+        # throwOnLeft (\err -> "Failed to deserialize db:\n" <> renderJsonErr err)
+        <#> V1.deserializeUserState
+        <#> the @V1.UserState
+        <#> V2.migrate
+    2 -> do
+      J.readJSON userStateStr
+        # throwOnLeft (\err -> "Failed to deserialize user_state:\n" <> renderJsonErr err)
+        <#> V2.deserializeUserState
+        <#> the @V2.UserState
+    _ -> do
+      throwError $ "Unexpected user state version number: " <> show userStateVersion
+
 writeToCache :: forall m. MonadAff m => DbState -> m Unit
 writeToCache dbState = do
   let dbStr = J.writeJSON $ toSerializableDb dbState.db
@@ -576,7 +588,7 @@ writeToCache dbState = do
     , allCharacterNames: SetAsArray db.allCharacterNames
     }
 
-  toSerializableUserState :: UserState -> SerializableUserState
-  toSerializableUserState userState =
-    { weapons: MapAsArray userState.weapons
-    }
+toSerializableUserState :: UserState -> SerializableUserState
+toSerializableUserState userState =
+  { weapons: MapAsArray userState.weapons
+  }

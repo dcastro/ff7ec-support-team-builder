@@ -10231,6 +10231,162 @@
     {
       "source": "Gacha",
       "ob6": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "MatkDown",
+              "value": {
+                "potencies": {
+                  "max": "High",
+                  "base": "High"
+                },
+                "durExt": {
+                  "extension": 6,
+                  "duration": 20
+                }
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "PatkDown",
+              "value": {
+                "potencies": {
+                  "max": "High",
+                  "base": "High"
+                },
+                "durExt": {
+                  "extension": 6,
+                  "duration": 20
+                }
+              }
+            }
+          }
+        ],
+        "description": "Forcestream+ (3 ATB)\n360% Mag. Non-elem. Damage [Range: Single Enemy]\n20s MATK Down (+6s) (High) [Range: Single Enemy]\n20s PATK Down (+6s) (High) [Range: Single Enemy] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "MatkDown",
+              "value": {
+                "potencies": {
+                  "max": "High",
+                  "base": "High"
+                },
+                "durExt": {
+                  "extension": 8,
+                  "duration": 24
+                }
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "PatkDown",
+              "value": {
+                "potencies": {
+                  "max": "High",
+                  "base": "High"
+                },
+                "durExt": {
+                  "extension": 8,
+                  "duration": 24
+                }
+              }
+            }
+          }
+        ],
+        "description": "Forcestream++ (3 ATB)\n420% Mag. Non-elem. Damage [Range: Single Enemy]\n24s MATK Down (+8s) (High) [Range: Single Enemy]\n24s PATK Down (+8s) (High) [Range: Single Enemy] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "MatkDown",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Mid"
+                },
+                "durExt": {
+                  "extension": 6,
+                  "duration": 18
+                }
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "PatkDown",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Mid"
+                },
+                "durExt": {
+                  "extension": 6,
+                  "duration": 18
+                }
+              }
+            }
+          }
+        ],
+        "description": "Forcestream (3 ATB)\n300% Mag. Non-elem. Damage [Range: Single Enemy]\n18s MATK Down (+6s) (Mid) [Range: Single Enemy]\n18s PATK Down (+6s) (Mid) [Range: Single Enemy] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "MatkDown",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Mid"
+                },
+                "durExt": {
+                  "extension": 5,
+                  "duration": 16
+                }
+              }
+            }
+          },
+          {
+            "range": "SingleTarget",
+            "effectType": {
+              "type": "PatkDown",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Mid"
+                },
+                "durExt": {
+                  "extension": 5,
+                  "duration": 16
+                }
+              }
+            }
+          }
+        ],
+        "description": "Forcestream (3 ATB)\n260% Mag. Non-elem. Damage [Range: Single Enemy]\n16s MATK Down (+5s) (Mid) [Range: Single Enemy]\n16s PATK Down (+5s) (Mid) [Range: Single Enemy] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "name": "Mystic Sword",
+      "image": "https://i.imgur.com/FLut8JI.png",
+      "cureAllAbility": false,
+      "character": "Cloud",
+      "atbCost": 3
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
         "effects": [],
         "description": "Blade Burst+ (4 ATB)\n780% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
@@ -14793,6 +14949,198 @@
       "name": "Amethyst Collar",
       "image": "https://i.imgur.com/QQ59aag.png",
       "cureAllAbility": false,
+      "character": "Red XIII",
+      "atbCost": 4
+    },
+    {
+      "source": "Gacha",
+      "ob6": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "MatkUp",
+              "value": {
+                "potencies": {
+                  "max": "High",
+                  "base": "Mid"
+                },
+                "durExt": {
+                  "extension": 6,
+                  "duration": 20
+                }
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "WindDamageUp",
+              "value": {
+                "potencies": {
+                  "max": "High",
+                  "base": "Mid"
+                },
+                "durExt": {
+                  "extension": 6,
+                  "duration": 20
+                }
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 7
+              }
+            }
+          }
+        ],
+        "description": "Brilliant Sault+ (4 ATB)\n20s MATK Up (+6s) (Mid -> High) [Range: All Allies]\n20s Wind Damage Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n7% Heal [Range: All Allies]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "MatkUp",
+              "value": {
+                "potencies": {
+                  "max": "High",
+                  "base": "Mid"
+                },
+                "durExt": {
+                  "extension": 8,
+                  "duration": 25
+                }
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "WindDamageUp",
+              "value": {
+                "potencies": {
+                  "max": "High",
+                  "base": "Mid"
+                },
+                "durExt": {
+                  "extension": 8,
+                  "duration": 25
+                }
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 7
+              }
+            }
+          }
+        ],
+        "description": "Brilliant Sault++ (4 ATB)\n25s MATK Up (+8s) (Mid -> High) [Range: All Allies]\n25s Wind Damage Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n7% Heal [Range: All Allies]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "MatkUp",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Low"
+                },
+                "durExt": {
+                  "extension": 6,
+                  "duration": 20
+                }
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "WindDamageUp",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Low"
+                },
+                "durExt": {
+                  "extension": 6,
+                  "duration": 20
+                }
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 6
+              }
+            }
+          }
+        ],
+        "description": "Brilliant Sault (4 ATB)\n20s MATK Up (+6s) (Low -> Mid) [Range: All Allies]\n20s Wind Damage Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n6% Heal [Range: All Allies]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "range": "All",
+            "effectType": {
+              "type": "MatkUp",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Low"
+                },
+                "durExt": {
+                  "extension": 5,
+                  "duration": 16
+                }
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "WindDamageUp",
+              "value": {
+                "potencies": {
+                  "max": "Mid",
+                  "base": "Low"
+                },
+                "durExt": {
+                  "extension": 5,
+                  "duration": 16
+                }
+              }
+            }
+          },
+          {
+            "range": "All",
+            "effectType": {
+              "type": "Heal",
+              "value": {
+                "percentage": 5
+              }
+            }
+          }
+        ],
+        "description": "Brilliant Sault (4 ATB)\n16s MATK Up (+5s) (Low -> Mid) [Range: All Allies]\n16s Wind Damage Up (+5s) (Low -> Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n5% Heal [Range: All Allies]"
+      },
+      "name": "Brilliant Collar",
+      "image": "https://i.imgur.com/eUjI7gT.png",
+      "cureAllAbility": true,
       "character": "Red XIII",
       "atbCost": 4
     },

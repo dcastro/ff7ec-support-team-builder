@@ -217,6 +217,17 @@
     }
   ],
   [
+    "Brilliant Collar",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Bunny Gloves",
     {
       "ownedOb": "OB6-10",
@@ -1039,6 +1050,17 @@
       "ignored": false,
       "distinctObs": [
         "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Mystic Sword",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],

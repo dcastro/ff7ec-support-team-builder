@@ -652,6 +652,38 @@
     },
     {
       "weapons": [
+        "Brilliant Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Headphones",
         "Sleek Collar"
       ],
@@ -1239,6 +1271,38 @@
     },
     {
       "weapons": [
+        "Brilliant Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Headphones",
         "Pilot's Collar"
       ],
@@ -1343,6 +1407,22 @@
   [
     {
       "weapons": [
+        "Kamura Wand",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Core Defender",
         "Luminary Sword"
       ],
@@ -1354,6 +1434,22 @@
         "Ivy Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
     }
   ],
   [
@@ -1787,6 +1883,54 @@
     },
     {
       "weapons": [
+        "Brilliant Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Flame Dragon's Band",
         "Headphones"
       ],
@@ -2223,6 +2367,22 @@
   [
     {
       "weapons": [
+        "Kamura Wand",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff",
         "Snowflake"
       ],
@@ -2509,6 +2669,22 @@
   [
     {
       "weapons": [
+        "Mythril Rod",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff",
         "Umbrella"
       ],
@@ -2536,6 +2712,22 @@
         "Ivy Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
     }
   ],
   [
@@ -2589,6 +2781,22 @@
   [
     {
       "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Luminary Sword",
         "Syringe Rapier"
       ],
@@ -2600,6 +2808,22 @@
         "Flame Dragon's Band"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
     }
   ],
   [
@@ -2692,6 +2916,22 @@
       "weapons": [
         "Flame Dragon's Band",
         "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Flame Dragon's Band"
       ],
       "character": "Red XIII"
     }
@@ -2808,6 +3048,22 @@
   [
     {
       "weapons": [
+        "Mythril Rod",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff",
         "Mythril Rod"
       ],
@@ -2856,6 +3112,22 @@
   [
     {
       "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Luminary Sword",
         "Syringe Rapier"
       ],
@@ -2867,6 +3139,22 @@
         "Gold Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
     }
   ],
   [

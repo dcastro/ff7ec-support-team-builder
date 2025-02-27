@@ -1,6 +1,7 @@
 module App.Results where
 
-import Core.Database.VLatest
+import Core.Database.Types
+import Core.Database.UserState.VLatest
 import Prelude
 
 import App.WeaponModal as WeaponModal
@@ -93,13 +94,13 @@ render state =
                                       [ HH.select
                                           [ HE.onSelectedIndexChange (SetOwnedOb equipedWeapon.weaponData.weapon.name) ]
                                           ( [ HH.option
-                                                [ HP.selected (equipedWeapon.weaponData.ownedOb == Nothing) ]
+                                                [ HP.selected (equipedWeapon.weaponState.ownedOb == Nothing) ]
                                                 [ HH.text "N/A" ]
                                             ]
                                               <>
                                                 ( NAR.toArray equipedWeapon.weaponData.distinctObs <#> \obRange ->
                                                     HH.option
-                                                      [ HP.selected (equipedWeapon.weaponData.ownedOb == Just obRange) ]
+                                                      [ HP.selected (equipedWeapon.weaponState.ownedOb == Just obRange) ]
                                                       [ HH.text $ display obRange ]
                                                 )
                                           )

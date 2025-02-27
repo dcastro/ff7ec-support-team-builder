@@ -5,7 +5,7 @@ import Test.Spec
 
 import Control.Monad.Error.Class (throwError)
 import Core.Weapons.Parser
-import Core.Database.VLatest
+import Core.Database.Types
 import Data.Either (Either(..))
 import Effect.Aff (error)
 import Google.SheetsApi (GetSheetResult)

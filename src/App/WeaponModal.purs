@@ -1,6 +1,6 @@
 module App.WeaponModal where
 
-import Core.Database.VLatest
+import Core.Database.Types
 import Prelude
 
 import Core.Display (display)

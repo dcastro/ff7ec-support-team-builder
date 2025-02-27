@@ -1,7 +1,8 @@
-module Core.Database.VLatest where
+module Core.Database.Types where
 
 import Prelude
 
+import Core.Database.UserState.VLatest
 import Core.Display (class Display, display)
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Generic.Rep (class Generic)
@@ -18,6 +19,11 @@ import Yoga.JSON.Generics as J
 import Yoga.JSON.Generics.EnumSumRep as Enum
 import Yoga.JSON.Generics.TaggedSumRep as TaggedSum
 
+type DbState =
+  { db :: Db
+  , userState :: UserState
+  }
+
 type Db =
   { allWeapons :: Map WeaponName WeaponData
   , groupedByEffect :: Map FilterEffectType (Array GroupedWeapon)
@@ -26,16 +32,12 @@ type Db =
 
 type WeaponData =
   { weapon :: Weapon
-  -- NOTE: phased out the `ignored` feature,
-  -- but keeping the `ignored` flag in the db in case I want to bring it back
-  , ignored :: Boolean
   -- List of all groups of Overboost Levels with the same weapon effect potencies.
   --
   -- For most weapons, this will be [OB0-5, Ob6-Ob10]
   -- because they have the same potencies between Ob0 and Ob5,
   -- and between Ob6 and Ob10.
   , distinctObs :: NonEmptyArray ObRange
-  , ownedOb :: Maybe ObRange
   }
 
 type SerializableDb =
@@ -45,7 +47,6 @@ type SerializableDb =
   }
 
 newtype CharacterName = CharacterName NonEmptyString
-newtype WeaponName = WeaponName NonEmptyString
 
 type Weapon =
   { name :: WeaponName
@@ -59,14 +60,6 @@ type Weapon =
   , ob10 :: ObLevel
   , cureAllAbility :: Boolean
   }
-
-newtype ObRange = ObRange
-  { from :: FromOb
-  , to :: ToOb
-  }
-
-data FromOb = FromOb0 | FromOb1 | FromOb6 | FromOb10
-data ToOb = ToOb0 | ToOb5 | ToOb9 | ToOb10
 
 type ObLevel =
   { description :: NonEmptyString -- ^ The source text from which the buffs/debuffs were parsed.
@@ -148,10 +141,8 @@ data EffectType
   | ExploitWeakness { durExt :: DurExt, percentage :: Percentage }
 
 type WeaponEffect =
-  { effectType ::
-      EffectType
-  , range ::
-      Range
+  { effectType :: EffectType
+  , range :: Range
   }
 
 type Potencies =
@@ -194,40 +185,29 @@ derive instance Generic Range _
 derive instance Generic EffectType _
 derive instance Generic Potency _
 derive instance Generic FilterEffectType _
-derive instance Generic FromOb _
-derive instance Generic ToOb _
 
 derive instance Eq Range
 derive instance Eq EffectType
 derive instance Eq Potency
 derive instance Eq FilterEffectType
-derive instance Eq FromOb
-derive instance Eq ToOb
 derive newtype instance Eq Percentage
 derive newtype instance Eq Duration
 derive newtype instance Eq Extension
 derive newtype instance Eq CharacterName
-derive newtype instance Eq WeaponName
-derive newtype instance Eq ObRange
 
 derive instance Ord Potency
 derive instance Ord EffectType
 derive instance Ord Range
 derive instance Ord FilterEffectType
-derive instance Ord FromOb
-derive instance Ord ToOb
 derive newtype instance Ord Percentage
 derive newtype instance Ord Duration
 derive newtype instance Ord Extension
 derive newtype instance Ord CharacterName
-derive newtype instance Ord WeaponName
-derive newtype instance Ord ObRange
 
 derive instance Newtype Percentage _
 derive instance Newtype Duration _
 derive instance Newtype Extension _
 derive instance Newtype CharacterName _
-derive instance Newtype WeaponName _
 
 instance Show Range where
   show = genericShow
@@ -241,18 +221,10 @@ instance Show Potency where
 instance Show FilterEffectType where
   show = genericShow
 
-instance Show FromOb where
-  show = genericShow
-
-instance Show ToOb where
-  show = genericShow
-
 derive newtype instance Show Percentage
 derive newtype instance Show Duration
 derive newtype instance Show Extension
 derive newtype instance Show CharacterName
-derive newtype instance Show WeaponName
-derive newtype instance Show ObRange
 
 instance WriteForeign Range where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
@@ -266,18 +238,10 @@ instance WriteForeign Potency where
 instance WriteForeign FilterEffectType where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
-instance WriteForeign FromOb where
-  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
-
-instance WriteForeign ToOb where
-  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
-
 derive newtype instance WriteForeign Percentage
 derive newtype instance WriteForeign Duration
 derive newtype instance WriteForeign Extension
 derive newtype instance WriteForeign CharacterName
-derive newtype instance WriteForeign WeaponName
-derive newtype instance WriteForeign ObRange
 
 instance ReadForeign Range where
   readImpl = J.genericReadForeignEnum Enum.defaultOptions
@@ -291,21 +255,10 @@ instance ReadForeign Potency where
 instance ReadForeign FilterEffectType where
   readImpl = J.genericReadForeignEnum Enum.defaultOptions
 
-instance ReadForeign FromOb where
-  readImpl = J.genericReadForeignEnum Enum.defaultOptions
-
-instance ReadForeign ToOb where
-  readImpl = J.genericReadForeignEnum Enum.defaultOptions
-
 derive newtype instance ReadForeign Percentage
 derive newtype instance ReadForeign Duration
 derive newtype instance ReadForeign Extension
 derive newtype instance ReadForeign CharacterName
-derive newtype instance ReadForeign WeaponName
-derive newtype instance ReadForeign ObRange
-
-instance Display WeaponName where
-  display = display <<< unwrap
 
 instance Display CharacterName where
   display = display <<< unwrap
@@ -347,28 +300,6 @@ allPossiblePotencies = Utils.listEnum
 
 allFilterEffectTypes :: Array FilterEffectType
 allFilterEffectTypes = Utils.listEnum
-
-instance Display ObRange where
-  display (ObRange { from, to }) = do
-    let fromStr = displayFrom from
-    let toStr = displayTo to
-    if fromStr == toStr then "OB" <> displayFrom from
-    else "OB" <> displayFrom from <> "-" <> displayTo to
-
-    where
-    displayFrom :: FromOb -> String
-    displayFrom = case _ of
-      FromOb0 -> "0"
-      FromOb1 -> "1"
-      FromOb6 -> "6"
-      FromOb10 -> "10"
-
-    displayTo :: ToOb -> String
-    displayTo = case _ of
-      ToOb0 -> "0"
-      ToOb5 -> "5"
-      ToOb9 -> "9"
-      ToOb10 -> "10"
 
 instance Display Potency where
   display =

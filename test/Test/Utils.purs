@@ -5,11 +5,12 @@ import Prelude
 
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Core.Database as Database
-import Core.Database.VLatest (Db, CharacterName(..))
+import Core.Database.Types (CharacterName(..), DbState)
 import Data.Either (Either(..))
 import Data.Foldable (class Foldable)
 import Data.Map as Map
 import Data.Maybe (Maybe(..))
+import Data.Set as Set
 import Data.String.NonEmpty (NonEmptyString)
 import Data.String.NonEmpty as NES
 import Effect.Aff (Aff, error)
@@ -30,7 +31,6 @@ import Parsing (runParser)
 import Test.Spec.Assertions (fail, shouldEqual)
 import Type.Proxy (Proxy(..))
 import Utils (SetAsArray(..))
-import Data.Set as Set
 import Utils as Utils
 import Yoga.JSON (class WriteForeign)
 import Yoga.JSON as J
@@ -112,8 +112,8 @@ nes :: forall (@a :: Symbol). NES.MakeNonEmpty a => NonEmptyString
 nes =
   NES.nes (Proxy :: Proxy a)
 
-loadTestDb :: Aff Db
-loadTestDb = do
+loadTestDbState :: Aff DbState
+loadTestDbState = do
   sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
   sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of
     Right res -> pure res.values
@@ -123,7 +123,7 @@ loadTestDb = do
             <> Utils.renderJsonErr errs
   let { weapons, errors: _ } = parseWeapons sourceWeapons
 
-  Database.createDb weapons Map.empty
+  Database.createDbState weapons { weapons: Map.empty }
 
 setAsArray :: forall f a. Foldable f => Ord a => f a -> SetAsArray a
 setAsArray = Set.fromFoldable >>> SetAsArray

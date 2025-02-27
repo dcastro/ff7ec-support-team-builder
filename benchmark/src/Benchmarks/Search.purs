@@ -1,6 +1,6 @@
 module Benchmarks.Search where
 
-import Core.Database.VLatest
+import Core.Database.Types
 import Prelude
 
 import Benchotron.Core (Benchmark, benchFn, mkBenchmark)
@@ -22,7 +22,7 @@ import Yoga.JSON as J
 
 benchSearch :: Aff Benchmark
 benchSearch = do
-  db <- loadTestDb
+  dbState <- loadTestDbState
   pure $ mkBenchmark
     { slug: "search"
     , title: "Search"
@@ -31,7 +31,7 @@ benchSearch = do
     , inputsPerSize: 1
     , gen: \_ -> pure input
     , functions:
-        [ benchFn "search1" $ search1 db
+        [ benchFn "search1" $ search1 dbState
         ]
     }
 
@@ -45,19 +45,19 @@ input =
   , { effectType: FilterMatkDown, range: FilterSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
   ]
 
-search1 :: Db -> Array Filter -> Array AssignmentResult
-search1 db filters = do
+search1 :: DbState -> Array Filter -> Array AssignmentResult
+search1 dbState filters = do
   let
     maxCharacterCount = 2
     excludeChars = Set.empty
     mustHaveChars = Set.empty
-  Search.applyFilters filters db
+  Search.applyFilters filters dbState
     # Search.search maxCharacterCount excludeChars
     # Search.filterMustHaveChars mustHaveChars
     # Search.filterDuplicates
 
-loadTestDb :: Aff Db
-loadTestDb = do
+loadTestDbState :: Aff DbState
+loadTestDbState = do
   sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
   sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of
     Right res -> pure res.values
@@ -67,4 +67,4 @@ loadTestDb = do
             <> Utils.renderJsonErr errs
   let { weapons, errors: _ } = parseWeapons sourceWeapons
 
-  Db.createDb weapons Map.empty
+  Db.createDbState weapons { weapons: Map.empty }

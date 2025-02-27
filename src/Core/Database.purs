@@ -40,7 +40,7 @@ import Effect.Class.Console as Console
 import Effect.Now as Now
 import Google.SheetsApi as SheetsApi
 import Partial.Unsafe (unsafeCrashWith)
-import Utils (MapAsArray(..), SetAsArray(..), logOnLeft, renderJsonErr, the, throwOnNothing, unsafeFromJust, whenJust)
+import Utils (MapAsArray(..), SetAsArray(..), throwOnLeft, renderJsonErr, the, throwOnNothing, unsafeFromJust, whenJust)
 import Yoga.JSON as J
 
 currentUserStateVersion :: Int
@@ -49,8 +49,9 @@ currentUserStateVersion = 2
 init :: Aff (Maybe DbState)
 init = do
   runExceptT readFromCache >>= case _ of
-    Left (_ :: Unit) -> do
-      Console.log "Db/user state not found in cache, loading db from the spreadsheet..."
+    Left (err :: String) -> do
+      Console.error err
+      Console.log "Loading db from the spreadsheet..."
       dbMb <- hush <$> runExceptT (loadAndCreateDbState newUserState)
       whenJust dbMb $ writeToCache
       pure dbMb
@@ -494,19 +495,22 @@ type ReadCacheResult =
   }
 
 -- Throws if the cache is empty OR the cache data is corrupted.
-readFromCache :: forall m. MonadThrow Unit m => MonadAff m => m ReadCacheResult
+readFromCache :: forall m. MonadThrow String m => MonadAff m => m ReadCacheResult
 readFromCache = do
   -- NOTE: in V1, we used to store the version number in `db_version`.
   -- From V2 onwards, it's stored in `user_state_version`.
-  userStateVersionStr <- throwOnNothing $ lift2 alt (WS.getItem "user_state_version") (WS.getItem "db_version")
+  userStateVersionStr <- lift2 alt (WS.getItem "user_state_version") (WS.getItem "db_version")
+    >>= throwOnNothing \_ -> "'user_state_version' / `db_version` not found in cache"
   userStateVersion :: Int <- J.readJSON userStateVersionStr
-    # logOnLeft \err -> "Failed to deserialize db_version:\n" <> renderJsonErr err
+    # throwOnLeft \err -> "Failed to deserialize 'user_state_version':\n" <> renderJsonErr err
 
-  lastUpdatedStr <- throwOnNothing $ WS.getItem "last_updated"
+  lastUpdatedStr <- WS.getItem "last_updated"
+    >>= throwOnNothing \_ -> "'last_updated' not found in cache"
   lastUpdated :: DateTime <- J.readJSON lastUpdatedStr
-    # logOnLeft \err -> "Failed to deserialize last_updated:\n" <> renderJsonErr err
+    # throwOnLeft \err -> "Failed to deserialize 'last_updated':\n" <> renderJsonErr err
 
-  dbStr <- throwOnNothing $ WS.getItem "db"
+  dbStr <- WS.getItem "db"
+    >>= throwOnNothing \_ -> "'db' not found in cache"
   userStateStr <- WS.getItem "user_state" >>= case _ of
     Just userStateStr -> pure userStateStr
     Nothing | userStateVersion == 1 ->
@@ -514,24 +518,22 @@ readFromCache = do
       -- From V2 onwards, it's stored in the `user_state` key
       pure dbStr
     Nothing -> do
-      Console.error "`user_state` cache key not found, even though `db` was found."
-      throwError unit
+      throwError "`user_state` not found in cache, even though `db` was found."
 
   userState :: VLatest.UserState <- case userStateVersion of
     1 -> do
       J.readJSON userStateStr
-        # logOnLeft (\err -> "Failed to deserialize db:\n" <> renderJsonErr err)
+        # throwOnLeft (\err -> "Failed to deserialize db:\n" <> renderJsonErr err)
         <#> V1.deserializeUserState
         <#> the @V1.UserState
         <#> V2.migrate
     2 -> do
       J.readJSON userStateStr
-        # logOnLeft (\err -> "Failed to deserialize user_state:\n" <> renderJsonErr err)
+        # throwOnLeft (\err -> "Failed to deserialize user_state:\n" <> renderJsonErr err)
         <#> V2.deserializeUserState
         <#> the @V2.UserState
     _ -> do
-      Console.error $ "Unexpected user state version number: " <> show userStateVersion
-      throwError unit
+      throwError $ "Unexpected user state version number: " <> show userStateVersion
 
   dbMaybe <- case fromSerializableDb <$> J.readJSON dbStr of
     Right (db :: Db) -> do

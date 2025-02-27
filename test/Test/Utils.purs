@@ -5,7 +5,7 @@ import Prelude
 
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Core.Database as Database
-import Core.Database.VLatest (CharacterName(..), DbState)
+import Core.Database.Types (CharacterName(..), DbState)
 import Data.Either (Either(..))
 import Data.Foldable (class Foldable)
 import Data.Map as Map

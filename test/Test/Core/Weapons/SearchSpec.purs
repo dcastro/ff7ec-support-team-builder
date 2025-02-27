@@ -1,6 +1,7 @@
 module Test.Core.Weapons.SearchSpec (spec) where
 
-import Core.Database.VLatest
+import Core.Database.Types
+import Core.Database.UserState.VLatest
 import Prelude
 import Test.Spec
 import Test.Utils

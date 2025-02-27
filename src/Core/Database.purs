@@ -8,7 +8,7 @@ module Core.Database
   , toSerializableUserState
   ) where
 
-import Core.Database.VLatest
+import Core.Database.Types
 import Prelude
 
 import Control.Alt (alt)
@@ -16,9 +16,10 @@ import Control.Apply (lift2)
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Control.Monad.Except (runExceptT)
 import Control.Monad.Rec.Class (class MonadRec)
-import Core.Database.V1 as V1
-import Core.Database.VLatest as V2
-import Core.Database.VLatest as VLatest
+import Core.Database.UserState.V1 as V1
+import Core.Database.UserState.VLatest
+import Core.Database.UserState.VLatest as V2
+import Core.Database.UserState.VLatest as VLatest
 import Core.Display (display)
 import Core.Weapons.Parser as P
 import Core.WebStorage as WS

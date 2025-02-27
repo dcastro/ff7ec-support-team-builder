@@ -1,6 +1,6 @@
 module Benchmarks.Search where
 
-import Core.Database.VLatest
+import Core.Database.Types
 import Prelude
 
 import Benchotron.Core (Benchmark, benchFn, mkBenchmark)

@@ -1,6 +1,7 @@
 module Test.Core.Weapons.DatabaseSpec where
 
-import Core.Database.VLatest
+import Core.Database.Types
+import Core.Database.UserState.VLatest
 import Prelude
 import Test.Spec
 

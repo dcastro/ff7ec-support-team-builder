@@ -1,10 +1,11 @@
 module App.EffectSelector where
 
-import Core.Database.VLatest
+import Core.Database.UserState.VLatest
+import Core.Database.Types
 import Prelude
 
 import App.WeaponModal as WeaponModal
-import Core.Database.VLatest as Db
+import Core.Database.Types as Db
 import Core.Display (display)
 import Core.Weapons.Search (Filter, FilterRange, FilterResultWeapon)
 import Core.Weapons.Search as Search

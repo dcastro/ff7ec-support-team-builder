@@ -1,4 +1,4 @@
-module Core.Database.V1 where
+module Core.Database.UserState.V1 where
 
 import Prelude
 

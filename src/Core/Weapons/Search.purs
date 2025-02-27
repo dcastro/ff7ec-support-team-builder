@@ -1,6 +1,7 @@
 module Core.Weapons.Search where
 
-import Core.Database.VLatest
+import Core.Database.UserState.VLatest
+import Core.Database.Types
 import Prelude
 
 import Core.Display (class Display, display)

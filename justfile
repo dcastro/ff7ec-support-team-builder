@@ -36,10 +36,10 @@ test:
 	spago test
 
 # Usage:
-#  * make test-filter FILTER="MyTest"
-test-filter:
+#  * just test-filter "MyTest"
+test-filter filter:
 	npm run ts
-	spago test -- --example "$(FILTER)"
+	spago test -- --example "{{filter}}"
 
 format:
 	purs-tidy format-in-place "src/**/*.purs" "test/**/*.purs"

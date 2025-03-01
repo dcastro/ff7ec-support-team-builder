@@ -2,6 +2,15 @@
   "weapons": [
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "All (Esuna) I",
+        "slot2": "HEAL Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost HEAL",
+        "slot1": "Boost MATK (All Allies)"
+      },
       "ob6": {
         "effects": [
           {
@@ -114,6 +123,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -226,6 +244,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "ATK Boost (Ice) I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -394,6 +421,15 @@
     },
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "HEAL Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost MATK (All Allies)"
+      },
       "ob6": {
         "effects": [
           {
@@ -534,6 +570,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost PDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -618,6 +663,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Helical Flame+ (4 ATB)\n530% Mag. Fire Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]"
@@ -642,6 +696,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Resist",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -698,6 +761,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "ATK Boost (Wind) I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -838,6 +910,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Resist",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -922,6 +1003,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "HEAL Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -1034,6 +1124,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -1146,6 +1245,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "Buff/Debuff Extension I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Limit Break Pot.",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -1258,6 +1366,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -1282,6 +1399,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "HEAL Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -1450,6 +1576,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "Buff/Debuff Extension I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Resist",
+        "slot1": "Boost MDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -1618,6 +1753,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "HEAL Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Raging Sphere+ (4 ATB)\n660% Mag. Wind Damage [Range: Single Enemy]"
@@ -1642,6 +1786,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Watera Surge A+ (4 ATB)\n280% Mag. Water Damage [Range: All Enemies]"
@@ -1666,6 +1819,15 @@
     },
     {
       "source": "Summon Quests (Ramuh)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost HP",
+        "slot1": "Boost Water Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Thundara Surge+ (4 ATB)\n460% Mag. Lightning Damage [Range: Single Enemy]"
@@ -1690,6 +1852,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzaga A+ (4 ATB)\n450% Mag. Ice Damage [Range: All Enemies]"
@@ -1714,6 +1885,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -1798,6 +1978,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "HEAL Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Limit Break Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Tempest Force+ (4 ATB)\n750% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -1822,6 +2011,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -1962,6 +2160,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -2158,6 +2365,15 @@
     },
     {
       "source": "Summon Quests (Titan)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost HP",
+        "slot1": "Boost Wind Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Quakera Surge+ (4 ATB)\n430% Mag. Earth Damage [Range: Single Enemy]"
@@ -2182,6 +2398,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF (All Allies)",
+        "slot1": "Boost Lightning Resist"
+      },
       "ob6": {
         "effects": [
           {
@@ -2238,6 +2463,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Thundaga A+ (4 ATB)\n450% Mag. Lightning Damage [Range: All Enemies]"
@@ -2262,6 +2496,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Quaga A+ (4 ATB)\n450% Mag. Earth Damage [Range: All Enemies]"
@@ -2286,6 +2529,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Thundaga Burst+ (4 ATB)\n740% Mag. Lightning Damage [Range: Single Enemy]"
@@ -2310,6 +2562,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzara Impact+ (4 ATB)\n430% Phys. Ice Damage [Range: Single Enemy]"
@@ -2334,6 +2595,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -2486,6 +2756,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -2614,6 +2893,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Firaga A+ (4 ATB)\n440% Mag. Fire Damage [Range: All Enemies]"
@@ -2638,6 +2926,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF (All Allies)",
+        "slot1": "Boost Earth Resist"
+      },
       "ob6": {
         "effects": [
           {
@@ -2706,6 +3003,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Earthly Horn+ (4 ATB)\n500% Phys. Earth Damage [Scaling: 1x (100% HP), 2x (30% HP)] [Range: Single Enemy]"
@@ -2730,6 +3036,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -2858,6 +3173,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -3026,6 +3350,15 @@
     },
     {
       "source": "Summon Quests (Titan)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF",
+        "slot1": "Boost Wind Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Quakera Surge+ (4 ATB)\n430% Mag. Earth Damage [Range: Single Enemy]"
@@ -3050,6 +3383,15 @@
     },
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost PATK (All Allies)"
+      },
       "ob6": {
         "effects": [
           {
@@ -3162,6 +3504,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -3246,6 +3597,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost PDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -3314,6 +3674,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -3455,6 +3824,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -3583,6 +3961,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Lightning) I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Resist",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -3695,6 +4082,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -3835,6 +4231,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Chain Bomber+ (4 ATB)\n550% Phys. Non-elem. Damage [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
@@ -3859,6 +4264,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost MDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -4027,6 +4441,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -4195,6 +4618,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Firaga A+ (4 ATB)\n440% Mag. Fire Damage [Range: All Enemies]"
@@ -4219,6 +4651,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Resist",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Blitz Beat+ [Sigils: 1 \\✖] (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -4244,6 +4685,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Pyroball+ (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -4268,6 +4718,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "Buff/Debuff Extension I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost MDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -4380,6 +4839,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -4464,6 +4932,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -4576,6 +5053,15 @@
     },
     {
       "source": "Summon Quests (Leviathan)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost HP",
+        "slot1": "Boost Lightning Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Watera Surge+ (4 ATB)\n430% Mag. Water Damage [Range: Single Enemy]"
@@ -4600,6 +5086,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Earth) I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Crit. Pot.",
+        "slot1": "Boost PDEF"
+      },
       "ob6": {
         "effects": [],
         "description": "Energy Laser+ [Sigils: 1 \\◆] (4 ATB)\n620% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -4625,6 +5120,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Resist",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -4737,6 +5241,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -4849,6 +5362,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF (All Allies)",
+        "slot1": "Boost Earth Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Jet Fists+ (4 ATB)\n420% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -4873,6 +5395,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -5014,6 +5545,15 @@
     },
     {
       "source": "Summon Quests (Shiva)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost ATK",
+        "slot1": "Boost Fire Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge+ (4 ATB)\n430% Mag. Ice Damage [Range: Single Enemy]"
@@ -5038,6 +5578,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Watera Surge A+ (4 ATB)\n280% Mag. Water Damage [Range: All Enemies]"
@@ -5062,6 +5611,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Crit. Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -5146,6 +5704,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Resist",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -5230,6 +5797,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Ruinra Impact A+ (4 ATB)\r\n380% Phys. Non-elem. Damage [Range: All Enemies]\r\n10% Crit Rate [Range: All Enemies]"
@@ -5254,6 +5830,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -5394,6 +5979,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzaga A+ (4 ATB)\n440% Mag. Ice Damage [Range: All Enemies]"
@@ -5418,6 +6012,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -5530,6 +6133,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -5642,6 +6254,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\r\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -5666,6 +6287,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -5778,6 +6408,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -5918,6 +6557,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -6002,6 +6650,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Aerora Surge A+ (4 ATB)\n280% Mag. Wind Damage [Range: All Enemies]"
@@ -6026,6 +6683,15 @@
     },
     {
       "source": "Summon Quests (Shiva/Ramuh)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost HP",
+        "slot1": "Boost Fire Resist"
+      },
       "ob6": {
         "effects": [
           {
@@ -6166,6 +6832,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -6278,6 +6953,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "ATK Boost (Wind) I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -6446,6 +7130,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Firaga A+ (4 ATB)\n440% Mag. Fire Damage [Range: All Enemies]"
@@ -6470,6 +7163,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -6610,6 +7312,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -6694,6 +7405,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF (All Allies)",
+        "slot1": "Boost Ice Resist"
+      },
       "ob6": {
         "effects": [
           {
@@ -6862,6 +7582,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "ATK Boost (Lightning) I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -7002,6 +7731,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Sonic Meow+ (5 ATB)\n590% Phys. Non-elem. Damage [Range: Single Enemy]\n30% Crit Rate [Range: Single Enemy]\n3x Damage [Range: Single Enemy] [Condition: Critical Hit]"
@@ -7026,6 +7764,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -7095,6 +7842,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF (All Allies)",
+        "slot1": "Boost Earth Resist"
+      },
       "ob6": {
         "effects": [
           {
@@ -7163,6 +7919,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Aeroga A+ (4 ATB)\n440% Mag. Wind Damage [Range: All Enemies]"
@@ -7187,6 +7952,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -7327,6 +8101,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Flying Spiral+ (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n+20% Stance Gauge\n10% Crit Rate [Range: Single Enemy]"
@@ -7351,6 +8134,15 @@
     },
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost ATK (All Allies)"
+      },
       "ob6": {
         "effects": [
           {
@@ -7475,6 +8267,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -7699,6 +8500,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -7783,6 +8593,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -7851,6 +8670,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -7919,6 +8747,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost PDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -8087,6 +8924,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Bloody End+ (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -8111,6 +8957,15 @@
     },
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost PATK (All Allies)"
+      },
       "ob6": {
         "effects": [],
         "description": "Fierce Claw+ (4 ATB)\r\n670% Phys. Non-elem. Damage [Range: All Enemies]\r\n25s Haste (+8s) [Range: Self] [Condition: First Use]\r\n10% Crit Rate [Range: All Enemies]\r\n30000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]"
@@ -8135,6 +8990,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Ice) I",
+        "slot2": "Buff/Debuff Extension I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Resist",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -8247,6 +9111,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Fira Impact+ (4 ATB)\n430% Phys. Fire Damage [Range: Single Enemy]"
@@ -8271,6 +9144,15 @@
     },
     {
       "source": "Crisis Medal Exchange",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost ATK",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Braver+ [Sigils: 1 \\✖] (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]\n+200% Additional Damage [Range: Single Enemy] [Condition: Sigil Destruction]"
@@ -8296,6 +9178,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Ice) I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Limit Break Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -8408,6 +9299,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -8492,6 +9392,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Resist",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -8548,6 +9457,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzaga A+ (4 ATB)\n440% Mag. Ice Damage [Range: All Enemies]"
@@ -8572,6 +9490,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "ATK Boost (Fire) I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -8712,6 +9639,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Resist",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -8796,6 +9732,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Twister Blade+ (4 ATB)\n780% Mag. Wind Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]"
@@ -8820,6 +9765,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Quakera Surge A+ (4 ATB)\n280% Mag. Earth Damage [Range: All Enemies]"
@@ -8844,6 +9798,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Fira Surge A+ (4 ATB)\n280% Mag. Fire Damage [Range: All Enemies]"
@@ -8868,6 +9831,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Wind) I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Crit. Pot.",
+        "slot1": "Boost PDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -8952,6 +9924,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "ATK Boost (Lightning) I",
+        "slot2": "ATK Boost (Ice) I",
+        "slot1": "ATK Boost (Fire) I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -9148,6 +10129,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Seasplitter+ (4 ATB)\n620% Phys. Water Damage [Range: Single Enemy]"
@@ -9172,6 +10162,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Thunderstrike+ (4 ATB)\n620% Phys. Lightning Damage [Range: Single Enemy]"
@@ -9196,6 +10195,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -9336,6 +10344,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Blade Burst+ (4 ATB)\n780% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -9360,6 +10377,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "ATB Boost",
+        "slot1": "Boost Fire Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Disorder+ (5 ATB) [No Limit Gauge Gain]\n1320% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -9384,6 +10410,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "HEAL Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Resist",
+        "slot1": "Boost MDEF"
+      },
       "ob6": {
         "effects": [],
         "description": "Shock Slice+ (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n5s Stun (+2s) [Range: Single Enemy] [Rate: 30%]\n10% Crit Rate [Range: Single Enemy]"
@@ -9408,6 +10443,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -9432,6 +10476,15 @@
     },
     {
       "source": "Summon Quests (Shiva)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost HP",
+        "slot1": "Boost Fire Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge+ (4 ATB)\n430% Mag. Ice Damage [Range: Single Enemy]"
@@ -9456,6 +10509,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Blazing Strike+ (4 ATB)\n710% Phys. Fire Damage [Range: Single Enemy]"
@@ -9480,6 +10542,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -9564,6 +10635,15 @@
     },
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost PATK (All Allies)"
+      },
       "ob6": {
         "effects": [],
         "description": "Freezing Stream+ (4 ATB)\n740% Phys. Ice Damage [Range: Single Enemy]"
@@ -9588,6 +10668,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Free Energy+ (4 ATB)\n1140% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -9612,6 +10701,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Resist",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Twin Hell+ (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -9636,6 +10734,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost PDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -9720,6 +10827,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -9788,6 +10904,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Spinning Blaze+ (4 ATB)\n620% Phys. Fire Damage [Range: Single Enemy]"
@@ -9812,6 +10937,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Crit. Pot.",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -9980,6 +11114,15 @@
     },
     {
       "source": "Summon Quests (Ifrit)",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost ATK",
+        "slot1": "Boost Ice Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Fira Surge+ (4 ATB)\n430% Mag. Fire Damage [Range: Single Enemy]"
@@ -10004,6 +11147,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Quaga A+ (4 ATB)\n440% Mag. Earth Damage [Range: All Enemies]"
@@ -10028,6 +11180,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Mad Bull+ (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -10052,6 +11213,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Resist",
+        "slot1": "Boost PDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -10136,6 +11306,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -10248,6 +11427,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Watera Surge A+ (4 ATB)\n280% Mag. Water Damage [Range: All Enemies]"
@@ -10272,6 +11460,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Resist",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Hell's Penalty+ [Sigils: 1 \\◆] (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -10297,6 +11494,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Thundaga A+ (4 ATB)\n440% Mag. Lightning Damage [Range: All Enemies]"
@@ -10321,6 +11527,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Fira Surge A+ (4 ATB)\n280% Mag. Fire Damage [Range: All Enemies]"
@@ -10345,6 +11560,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "ATK Boost (Water) I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -10485,6 +11709,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF (All Allies)",
+        "slot1": "Boost Water Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Crushing Jump+ (4 ATB)\r\n570% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 2x (30% HP)] [Range: Single Enemy]\r\n10% Crit Rate [Range: Single Enemy]"
@@ -10509,6 +11742,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Limit Break Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -10593,6 +11835,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -10677,6 +11928,15 @@
     },
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost PATK (All Allies)"
+      },
       "ob6": {
         "effects": [],
         "description": "Flooding Stream+ (4 ATB)\n740% Phys. Water Damage [Range: Single Enemy]"
@@ -10701,6 +11961,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Magic Ray+ (4 ATB)\n540% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -10725,6 +11994,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Skullknocker+ [Sigils: 1 \\⬤] (4 ATB)\n910% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -10750,6 +12028,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Ice) I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -10834,6 +12121,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Resist",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Striking Quintet+ [Sigils: 1 \\◆] (4 ATB)\n660% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -10859,6 +12155,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Crit. Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Quietude+ (4 ATB)\n660% Phys. Non-elem. Damage [Range: Single Enemy]\n5s Silence (+2s) [Range: Single Enemy] [Rate: 30%]\n10% Crit Rate [Range: Single Enemy]"
@@ -10883,6 +12188,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -10907,6 +12221,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -10991,6 +12314,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Rock Blast+ (4 ATB)\n660% Mag. Earth Damage [Range: Single Enemy]"
@@ -11015,6 +12347,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -11099,6 +12440,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "ATK Boost (Fire) I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost Phys. Ability Pot."
+      },
       "ob6": {
         "effects": [
           {
@@ -11239,6 +12589,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -11380,6 +12739,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Aeroga A+ (4 ATB)\n420% Mag. Wind Damage [Range: All Enemies]"
@@ -11404,6 +12772,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -11516,6 +12893,15 @@
     },
     {
       "source": "Summon Quests (Ramuh)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost ATK",
+        "slot1": "Boost Water Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Thundara Surge+ (4 ATB)\n410% Mag. Lightning Damage [Range: Single Enemy]"
@@ -11540,6 +12926,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost Mag. Ability Pot."
+      },
       "ob6": {
         "effects": [
           {
@@ -11624,6 +13019,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF (All Allies)",
+        "slot1": "Boost Wind Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Parading Shot+ (4 ATB)\r\n510% Phys. Non-elem. Damage [Range: Single Enemy]\r\n+20% Stance Gauge\r\n10% Crit Rate [Range: Single Enemy]"
@@ -11648,6 +13052,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Hydroshot+ (4 ATB)\n660% Phys. Water Damage [Range: Single Enemy]"
@@ -11672,6 +13085,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "Buff/Debuff Extension I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -11784,6 +13206,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -11868,6 +13299,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -11924,6 +13364,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -12008,6 +13457,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Ice) I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Resist",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Pineapple Shot+ (4 ATB)\n580% Phys. Non-elem. Damage [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
@@ -12032,6 +13490,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Limit Break Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Fira Surge A+ (4 ATB)\n280% Mag. Fire Damage [Range: All Enemies]"
@@ -12056,6 +13523,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Snowstorm+ (4 ATB)\n450% Mag. Ice Damage [Range: All Enemies]"
@@ -12080,6 +13556,15 @@
     },
     {
       "source": "Summon Quests (Bahamut)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MATK",
+        "slot1": "Boost MDEF"
+      },
       "ob6": {
         "effects": [],
         "description": "Ruinra Surge+ [Sigils: 1 \\◆] (4 ATB)\n430% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -12105,6 +13590,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -12217,6 +13711,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Shoot & Slash+ (4 ATB)\n750% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -12241,6 +13744,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Thundara Surge A+ (4 ATB)\r\n280% Mag. Lightning Damage [Range: All Enemies]"
@@ -12265,6 +13777,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "HEAL Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -12377,6 +13898,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Wind) I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Resist",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -12489,6 +14019,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Fire) I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost MDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -12545,6 +14084,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Fira Impact+ (4 ATB)\n430% Phys. Fire Damage [Range: Single Enemy]"
@@ -12569,6 +14117,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF (All Allies)",
+        "slot1": "Boost Lightning Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Swing+ (4 ATB)\r\n510% Phys. Non-elem. Damage [Range: Single Enemy]\r\nCancel Effect(s): PDEF Up [Range: Single Enemy]\r\n10% Crit Rate [Range: Single Enemy]"
@@ -12593,6 +14150,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -12705,6 +14271,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Quakera Surge A+ (4 ATB)\n280% Mag. Earth Damage [Range: All Enemies]"
@@ -12729,6 +14304,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Aerora Surge A+ (4 ATB)\n280% Mag. Wind Damage [Range: All Enemies]"
@@ -12753,6 +14337,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Killing Slash+ [Sigils: 1 \\◆] (4 ATB)\n590% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -12778,6 +14371,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -12946,6 +14548,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "HEAL Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -13087,6 +14698,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Waterga A+ (4 ATB)\n450% Mag. Water Damage [Range: All Enemies]"
@@ -13111,6 +14731,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "Buff/Debuff Extension I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Resist",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -13167,6 +14796,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Crit. Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -13251,6 +14889,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Resist",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -13335,6 +14982,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -13503,6 +15159,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -13527,6 +15192,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost HEAL",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -13695,6 +15369,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -13779,6 +15462,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Fira Surge A+ (4 ATB)\n280% Mag. Fire Damage [Range: All Enemies]"
@@ -13803,6 +15495,15 @@
     },
     {
       "source": "Summon Quests (Ifrit/Bahamut)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost HP",
+        "slot1": "Boost Ice Resist"
+      },
       "ob6": {
         "effects": [
           {
@@ -13887,6 +15588,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Resist",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -13971,6 +15681,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF (All Allies)",
+        "slot1": "Boost Ice Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Wild Howling+ (4 ATB)\n450% Mag. Non-elem. Damage [Range: All Enemies]\nCancel Effect(s): MDEF Up [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
@@ -13995,6 +15714,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -14079,6 +15807,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Crit. Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -14163,6 +15900,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Fire) I",
+        "slot2": "ATK Boost (Ice) I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -14303,6 +16049,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Resist",
+        "slot1": "Boost PDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -14387,6 +16142,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Thundara Surge A+ (4 ATB)\n280% Mag. Lightning Damage [Range: All Enemies]"
@@ -14411,6 +16175,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "HEAL Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Sonic Fangs+ (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -14435,6 +16208,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Waterga A+ (4 ATB)\n440% Mag. Water Damage [Range: All Enemies]"
@@ -14459,6 +16241,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "HEAL Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -14571,6 +16362,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "Buff/Debuff Extension I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Crit. Pot.",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -14627,6 +16427,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Blaze Rush+ (4 ATB)\n620% Phys. Fire Damage [Range: Single Enemy]"
@@ -14651,6 +16460,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Limit Break Pot.",
+        "slot1": "Boost PDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -14707,6 +16525,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -14791,6 +16618,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "ATK Boost (Wind) I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -14932,6 +16768,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "Buff/Debuff Extension I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Resist",
+        "slot1": "Boost MDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -15044,6 +16889,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -15128,6 +16982,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "HEAL Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -15240,6 +17103,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Fira Surge A+ (4 ATB)\n280% Mag. Fire Damage [Range: All Enemies]"
@@ -15264,6 +17136,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -15348,6 +17229,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Thundaga A+ (4 ATB)\n440% Mag. Lightning Damage [Range: All Enemies]"
@@ -15372,6 +17262,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Gale Strike+ (4 ATB)\n660% Phys. Wind Damage [Range: Single Enemy]"
@@ -15396,6 +17295,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Royal Shock+ (4 ATB)\n780% Mag. Water Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]"
@@ -15420,6 +17328,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Aerial Frostblade+ (4 ATB)\n660% Mag. Ice Damage [Range: Single Enemy]"
@@ -15444,6 +17361,15 @@
     },
     {
       "source": "Summon Quests (Ifrit/Bahamut)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost Ice Resist"
+      },
       "ob6": {
         "effects": [
           {
@@ -15528,6 +17454,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Earth) I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Limit Break Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Sweeping Slash+ (4 ATB)\n550% Phys. Non-elem. Damage [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
@@ -15552,6 +17487,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -15636,6 +17580,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -15776,6 +17729,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -15888,6 +17850,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Resist",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -15972,6 +17943,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Resist",
+        "slot1": "Boost MDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -16056,6 +18036,15 @@
     },
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost MATK (All Allies)"
+      },
       "ob6": {
         "effects": [],
         "description": "Protector's Blow+ (4 ATB)\n740% Mag. Non-elem. Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n10% Crit Rate [Range: All Enemies]"
@@ -16080,6 +18069,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Firaga A+ (4 ATB)\n440% Mag. Fire Damage [Range: All Enemies]"
@@ -16104,6 +18102,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "ATK Boost (Fire) I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -16244,6 +18251,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Water) I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Shock Blast+ (4 ATB)\n780% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -16268,6 +18284,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -16408,6 +18433,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -16492,6 +18526,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -16576,6 +18619,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "HEAL Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -16688,6 +18740,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Aerora Surge A+ (4 ATB)\n280% Mag. Wind Damage [Range: All Enemies]"
@@ -16712,6 +18773,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -16796,6 +18866,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "ATB Boost",
+        "slot1": "Boost Earth Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Heavenly Grasp+ (4 ATB)\r\n570% Phys. Non-elem. Damage [Range: Single Enemy]\r\n1.5x Damage [Range: Single Enemy] [Condition: Lv. 3 Attack Stance]\r\n10% Crit Rate [Range: Single Enemy]"
@@ -16820,6 +18899,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -16960,6 +19048,15 @@
     },
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost MATK (All Allies)"
+      },
       "ob6": {
         "effects": [
           {
@@ -17044,6 +19141,15 @@
     },
     {
       "source": "Summon Quests (Bahamut)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost HP",
+        "slot1": "Boost MDEF"
+      },
       "ob6": {
         "effects": [],
         "description": "Ruinra Surge+ [Sigils: 1 \\◆] (4 ATB)\n430% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -17069,6 +19175,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Thundara Surge A+ (4 ATB)\n280% Mag. Lightning Damage [Range: All Enemies]"
@@ -17093,6 +19208,15 @@
     },
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost ATK (All Allies)"
+      },
       "ob6": {
         "effects": [
           {
@@ -17165,6 +19289,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -17249,6 +19382,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Thundaga A+ (4 ATB)\n420% Mag. Lightning Damage [Range: All Enemies]"
@@ -17273,6 +19415,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "ATK Boost (Water) I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -17413,6 +19564,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Water) I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -17469,6 +19629,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "ATK Boost (Fire) I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Zangan Fist+ (4 ATB)\n1140% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -17493,6 +19662,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Freezing Blow+ (4 ATB)\n660% Phys. Ice Damage [Range: Single Enemy]"
@@ -17517,6 +19695,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -17601,6 +19788,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Resist",
+        "slot1": "Boost MDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -17685,6 +19881,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -17769,6 +19974,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Fire) I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Resist",
+        "slot1": "Boost PDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -17853,6 +20067,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "HEAL Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Resist",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -17909,6 +20132,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Sonic Spiral+ (4 ATB)\n660% Phys. Wind Damage [Range: Single Enemy]"
@@ -17933,6 +20165,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -18045,6 +20286,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Savage Blast+ (4 ATB)\n750% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -18069,6 +20319,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -18209,6 +20468,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Spinning Fervor+ (4 ATB)\n810% Mag. Fire Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]"
@@ -18233,6 +20501,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Resist",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Divekick+ (4 ATB)\n830% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -18257,6 +20534,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -18341,6 +20627,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Crit. Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -18425,6 +20720,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -18509,6 +20813,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "ATB Boost",
+        "slot1": "Boost Ice Resist"
+      },
       "ob6": {
         "effects": [
           {
@@ -18677,6 +20990,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzaga A+ (4 ATB)\n440% Mag. Ice Damage [Range: All Enemies]"
@@ -18701,6 +21023,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -18785,6 +21116,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Shadow Swoop+ (4 ATB)\n780% Mag. Lightning Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]\n+5% Limit Break Gauge [Range: Self]"
@@ -18809,6 +21149,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Poison Sphere+ (4 ATB)\n440% Mag. Non-elem. Damage [Range: All Enemies]\n+3% Limit Break Gauge [Range: Self]\n10% Crit Rate [Range: All Enemies]\n20s Poison (+5s) [Range: All Enemies] [Condition: Self 0-30% HP]"
@@ -18833,6 +21182,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -18857,6 +21215,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -18913,6 +21280,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Hellhound Shot+ (4 ATB)\n780% Phys. Fire Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]\n+5% Limit Break Gauge [Range: Self]"
@@ -18937,6 +21313,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "ATK Boost (Ice) I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Pentaburst Shot+ (4 ATB)\n1140% Mag. Non-elem. Damage [Range: Single Enemy]\n+5% Limit Break Gauge [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
@@ -18961,6 +21346,15 @@
     },
     {
       "source": "Summon Quests (Shiva/Ramuh)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost HP",
+        "slot1": "Boost Water Resist"
+      },
       "ob6": {
         "effects": [
           {
@@ -19101,6 +21495,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -19241,6 +21644,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Limit Break Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Spinning Pentashot+ (4 ATB)\n620% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 1.5x (30% HP)] [Range: Single Enemy]\n+5% Limit Break Gauge [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
@@ -19265,6 +21677,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -19377,6 +21798,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -19517,6 +21947,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -19685,6 +22124,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Stormround+ (4 ATB)\n340% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+4% Limit Break Gauge [Range: Self]"
@@ -19709,6 +22157,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "ATB Boost",
+        "slot1": "Boost Water Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Gunspinner Shot+ (4 ATB)\r\n570% Phys. Non-elem. Damage [Range: Single Enemy]\r\n1.5x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff(s), Condition(s)]\r\n+3% Limit Break Gauge [Range: Self]\r\n10% Crit Rate [Range: Single Enemy]"
@@ -19733,6 +22190,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Quick Draw+ (2 ATB)\n250% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]\n+2% Limit Break Gauge [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
@@ -19757,6 +22223,15 @@
     },
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost MATK (All Allies)"
+      },
       "ob6": {
         "effects": [],
         "description": "Sludge Shot+ (4 ATB)\n780% Mag. Earth Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff(s), Condition(s)]\n+5% Limit Break Gauge [Range: Self]"
@@ -19781,6 +22256,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -19865,6 +22349,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -20033,6 +22526,15 @@
     },
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost PATK (All Allies)"
+      },
       "ob6": {
         "effects": [
           {
@@ -20117,6 +22619,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "ATB Boost",
+        "slot1": "Boost Wind Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Baddies Begone+ (4 ATB)\r\n420% Phys. Non-elem. Damage [Mult.: 2x (100% HP), 1x (30% HP)] [Range: Single Enemy]\r\n10% Crit Rate [Range: Single Enemy]"
@@ -20141,6 +22652,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -20213,6 +22733,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -20297,6 +22826,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Blizzara Surge A+ (4 ATB)\r\n280% Mag. Ice Damage [Range: All Enemies]"
@@ -20321,6 +22859,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Watera Surge A+ (4 ATB)\n280% Mag. Water Damage [Range: All Enemies]"
@@ -20345,6 +22892,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -20457,6 +23013,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Twister+ (4 ATB)\n710% Phys. Wind Damage [Range: Single Enemy]"
@@ -20481,6 +23046,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Earth Ninjutsu+ (4 ATB)\n710% Phys. Earth Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]"
@@ -20505,6 +23079,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -20645,6 +23228,15 @@
     },
     {
       "source": "Summon Quests (Leviathan)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost Lightning Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Watera Surge+ (4 ATB)\n430% Mag. Water Damage [Range: Single Enemy]"
@@ -20669,6 +23261,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Icebound+ (4 ATB)\r\n780% Mag. Ice Damage [Range: Single Enemy]\r\n1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]"
@@ -20693,6 +23294,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Wind Ninjutsu+ (4 ATB)\n440% Phys. Wind Damage [Range: All Enemies]"
@@ -20717,6 +23327,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -20801,6 +23420,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -20885,6 +23513,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Quaga A+ (4 ATB)\n440% Mag. Earth Damage [Range: All Enemies]"
@@ -20909,6 +23546,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Ice Ninjutsu+ (4 ATB)\n660% Phys. Ice Damage [Range: Single Enemy]"
@@ -20933,6 +23579,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -21017,6 +23672,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Limit Break Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Venomstrike+ (4 ATB)\n450% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]\n26s Poison (+6s) [Range: Single Enemy] [Rate: 70%]"
@@ -21041,6 +23705,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Lightning) I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Buff/Debuff Extension (Stats/Pot./Res.)",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -21125,6 +23798,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Ruinra Impact A+ (4 ATB)\r\n380% Phys. Non-elem. Damage [Range: All Enemies]\r\n10% Crit Rate [Range: All Enemies]"
@@ -21149,6 +23831,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Resist",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -21233,6 +23924,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost MDEF",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Magic Ray+ (4 ATB)\n540% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -21257,6 +23957,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Gale Slash+ (4 ATB)\r\n780% Phys. Wind Damage [Range: Single Enemy]\r\n1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]"
@@ -21281,6 +23990,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "ATK Boost (Water) I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -21421,6 +24139,15 @@
     },
     {
       "source": "Guild Exchange",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost PDEF (All Allies)",
+        "slot1": "Boost Fire Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Floral Flourish+ (4 ATB)\r\n330% Phys. Non-elem. Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\r\n10% Crit Rate [Range: Single Enemy]"
@@ -21445,6 +24172,15 @@
     },
     {
       "source": "Crisis Medal Exchange",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost HP",
+        "slot1": "Boost PDEF"
+      },
       "ob6": {
         "effects": [],
         "description": "High Braver+ (4 ATB)\n710% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -21469,6 +24205,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost MATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Fira Surge A+ (4 ATB)\n280% Mag. Fire Damage [Range: All Enemies]"
@@ -21493,6 +24238,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -21577,6 +24331,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Firaga A+ (4 ATB)\n440% Mag. Fire Damage [Range: All Enemies]"
@@ -21601,6 +24364,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost PDEF"
+      },
       "ob6": {
         "effects": [
           {
@@ -21685,6 +24457,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "Buff/Debuff Extension I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -21797,6 +24578,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "ATK Boost (Lightning) I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost HEAL"
+      },
       "ob6": {
         "effects": [
           {
@@ -21853,6 +24643,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Gale Blast+ (4 ATB)\n440% Phys. Wind Damage [Range: All Enemies]"
@@ -21877,6 +24676,15 @@
     },
     {
       "source": "Summon Quests (Ifrit)",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost HP",
+        "slot1": "Boost Ice Resist"
+      },
       "ob6": {
         "effects": [],
         "description": "Fira Surge+ (4 ATB)\n430% Mag. Fire Damage [Range: Single Enemy]"
@@ -21901,6 +24709,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "ATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Crit. Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -21985,6 +24802,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [
           {
@@ -22069,6 +24895,15 @@
     },
     {
       "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Pot.",
+        "slot1": "Boost MATK (All Allies)"
+      },
       "ob6": {
         "effects": [],
         "description": "Igniting Stream+ (4 ATB)\n710% Mag. Fire Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]"
@@ -22093,6 +24928,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "All (Cure Spells) I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [
           {
@@ -22233,6 +25077,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Crit. Pot.",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Rapid Slash+ [Sigils: 1 \\⬤] (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -22258,6 +25111,15 @@
     },
     {
       "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost HP"
+      },
       "ob6": {
         "effects": [],
         "description": "Aerora Surge A+ (4 ATB)\n280% Mag. Wind Damage [Range: All Enemies]"
@@ -22282,6 +25144,15 @@
     },
     {
       "source": "Gacha (Collab)",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Lightning Pot.",
+        "slot1": "Boost PATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Lightning Edge+ (4 ATB)\n780% Phys. Lightning Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]"
@@ -22306,6 +25177,15 @@
     },
     {
       "source": "Gacha",
+      "sAbilities": {
+        "slot3": "HEAL Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Fire Resist",
+        "slot1": "Boost ATK"
+      },
       "ob6": {
         "effects": [],
         "description": "Slashing Thrust+ (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"

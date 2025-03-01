@@ -53,10 +53,17 @@ parseWeapon rowIndex row = do
   { obLevel: ob6 } <- getDescription 20
   { obLevel: ob10, atbCost, commandAbilitySigil } <- getDescription 21
   image <- getCell 22
-  -- Check if the 3rd S.Ability is a "cure all" slot
-  thirdSupportAbility <- getCell 25
+
+  rAbility1 <- getCell 3
+  rAbility2 <- getCell 5
+
+  sAbility1 <- getCell 23
+  sAbility2 <- getCell 24
+  sAbility3 <- getCell 25
+
   let
-    cureAllAbility = String.startsWith "All (Cure Spells)" (NES.toString thirdSupportAbility)
+    -- Check if the 3rd S.Ability is a "cure all" slot
+    cureAllAbility = String.startsWith "All (Cure Spells)" (NES.toString sAbility3)
   pure
     { name
     , character
@@ -69,6 +76,8 @@ parseWeapon rowIndex row = do
     , ob10
     , cureAllAbility
     , commandAbilitySigil
+    , sAbilities: { slot1: sAbility1, slot2: sAbility2, slot3: sAbility3 }
+    , rAbilities: { slot1: rAbility1, slot2: rAbility2 }
     }
   where
   rowId = rowIndex + 1

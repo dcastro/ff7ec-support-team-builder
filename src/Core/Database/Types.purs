@@ -60,6 +60,19 @@ type Weapon =
   , ob10 :: ObLevel
   , cureAllAbility :: Boolean
   , commandAbilitySigil :: Maybe Sigil
+  , sAbilities :: SAbilities
+  , rAbilities :: RAbilities
+  }
+
+type SAbilities =
+  { slot1 :: NonEmptyString
+  , slot2 :: NonEmptyString
+  , slot3 :: NonEmptyString
+  }
+
+type RAbilities =
+  { slot1 :: NonEmptyString
+  , slot2 :: NonEmptyString
   }
 
 data Sigil

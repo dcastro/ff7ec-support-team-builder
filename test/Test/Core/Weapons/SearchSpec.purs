@@ -440,6 +440,8 @@ mkWeapon id character =
       , ob10: { description: nes @" ", effects: [] }
       , cureAllAbility: true
       , commandAbilitySigil: Nothing
+      , sAbilities: { slot1: nes @"MATK Boost I", slot2: nes @"MATK Boost I", slot3: nes @"▲ Sigil Boost I" }
+      , rAbilities: { slot1: nes @"Boost MATK", slot2: nes @"Boost Earth Pot." }
       }
   , distinctObs: NAR.singleton (ObRange { from: FromOb0, to: ToOb5 })
       # NAR.cons (ObRange { from: FromOb6, to: ToOb10 })

@@ -118,16 +118,17 @@ render state =
                                 )
                             ]
                         ]
-                    , HH.div [ classes' "column is-narrow" ]
-                        [ HH.div [ classes' "select" ]
-                            [ HH.select
-                                [ HE.onSelectedIndexChange SelectedRange
-                                ]
-                                ( Search.allFilterRanges <#> \filterRange ->
-                                    HH.option_ [ HH.text $ display filterRange ]
-                                )
-                            ]
-                        ]
+                    , displayIf (hasRange state.selectedEffectType) $
+                        HH.div [ classes' "column is-narrow" ]
+                          [ HH.div [ classes' "select" ]
+                              [ HH.select
+                                  [ HE.onSelectedIndexChange SelectedRange
+                                  ]
+                                  ( Search.allFilterRanges <#> \filterRange ->
+                                      HH.option_ [ HH.text $ display filterRange ]
+                                  )
+                              ]
+                          ]
                     ]
                 ]
 
@@ -352,6 +353,45 @@ hasPotencies = case _ of
     FilterEnfeeble -> false
     FilterStop -> false
     FilterExploitWeakness -> false
+
+    FilterPatkUp -> true
+    FilterMatkUp -> true
+    FilterPdefUp -> true
+    FilterMdefUp -> true
+    FilterFireDamageUp -> true
+    FilterIceDamageUp -> true
+    FilterThunderDamageUp -> true
+    FilterEarthDamageUp -> true
+    FilterWaterDamageUp -> true
+    FilterWindDamageUp -> true
+
+    FilterPatkDown -> true
+    FilterMatkDown -> true
+    FilterPdefDown -> true
+    FilterMdefDown -> true
+    FilterFireResistDown -> true
+    FilterIceResistDown -> true
+    FilterThunderResistDown -> true
+    FilterEarthResistDown -> true
+    FilterWaterResistDown -> true
+    FilterWindResistDown -> true
+
+    FilterSigilBoostO -> false
+    FilterSigilBoostX -> false
+    FilterSigilBoostTriangle -> false
+    FilterSigilDiamond -> false
+
+hasRange :: Maybe FilterEffectType -> Boolean
+hasRange = case _ of
+  Nothing -> false
+  Just effectType -> case effectType of
+    FilterHeal -> true
+
+    FilterVeil -> true
+    FilterProvoke -> true
+    FilterEnfeeble -> true
+    FilterStop -> true
+    FilterExploitWeakness -> true
 
     FilterPatkUp -> true
     FilterMatkUp -> true

@@ -1,7 +1,7 @@
 module Core.Weapons.Search where
 
-import Core.Database.UserState.VLatest
 import Core.Database.Types
+import Core.Database.UserState.VLatest
 import Prelude
 
 import Core.Display (class Display, display)
@@ -89,14 +89,32 @@ findMatchingWeapons filter dbState = do
               `unsafeFromJust` ("Weapon name '" <> display weaponName <> "' from group '" <> show filter.effectType <> "' not found in user state.")
 
           -- Throw out weapons that don't match the required range.
-          matchingRanges <- matchRanges filter.range ranges
+          matchingRangesMb :: Maybe (NonEmptyArray GroupedWeaponRange) <-
+            case ranges of
+              Nothing ->
+                -- The effect doesn't have any associated ranges; so there are no matching ranges.
+                pure Nothing -- The
+              Just ranges -> do
+                -- The effect has associated ranges.
+                -- We either fail if they don't match the range specified by the user,
+                -- or succeed with a nonempty array.
+                matchingRanges <- matchRanges filter.range ranges
+                pure $ Just matchingRanges
 
           let
             potencies =
-              case weaponState.ownedOb of
-                Nothing -> Nothing
-                Just ownedOb -> do
+              case weaponState.ownedOb, matchingRangesMb of
+                Just ownedOb, Just matchingRanges -> do
                   selectBestPotencies ownedOb matchingRanges
+                _, _ ->
+                  -- If the user does not own this weapon, we can't select a potency.
+                  -- If this effect does not have any associated ranges,
+                  --    it follows that it also does not have any associated potencies,
+                  --    therefore we can't select a potency either.
+                  --
+                  -- INVARIANT: at the moment, all effects with potencies also have a range.
+                  -- Therefore, we have potencies grouped by ranges.
+                  Nothing
 
             matchesFilters =
               -- NOTE: phased out the `ignored` feature,

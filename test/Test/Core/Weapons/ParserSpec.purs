@@ -20,62 +20,40 @@ spec =
   describe "parser" do
     it "parses weapon effects" do
       let
-        shouldParse = T.shouldParse' (parseWeaponEffect { rowId: 0, columnId: 0 })
+        shouldParse = T.shouldParse' (parseEffectType { rowId: 0, columnId: 0 })
       "60s Provoke (+0s) [Range: Self]"
         `shouldParse`
-          { effectType: Provoke { durExt: { duration: Duration 60, extension: Extension 0 } }
-          , range: Self
-          }
+          Provoke { range: Self, durExt: { duration: Duration 60, extension: Extension 0 } }
       "40s 5% Veil (+8s) [Range: Self]"
         `shouldParse`
-          { effectType: Veil { durExt: { duration: Duration 40, extension: Extension 8 }, percentage: Percentage 5 }
-          , range: Self
-          }
+          Veil { range: Self, durExt: { duration: Duration 40, extension: Extension 8 }, percentage: Percentage 5 }
       "74% Heal [Range: All Allies]"
         `shouldParse`
-          { effectType: Heal { percentage: Percentage 74 }
-          , range: All
-          }
+          Heal { range: All, percentage: Percentage 74 }
       "16s PATK Up (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
-          { effectType: PatkUp { durExt: { duration: Duration 16, extension: Extension 5 }, potencies: { base: Mid, max: High } }
-          , range: All
-          }
+          PatkUp { range: All, durExt: { duration: Duration 16, extension: Extension 5 }, potencies: { base: Mid, max: High } }
       "20s PATK Up (+6s) (High) [Range: All Allies]"
         `shouldParse`
-          { effectType: PatkUp { durExt: { duration: Duration 20, extension: Extension 6 }, potencies: { base: High, max: High } }
-          , range: All
-          }
+          PatkUp { range: All, durExt: { duration: Duration 20, extension: Extension 6 }, potencies: { base: High, max: High } }
       "20s MDEF Up (+6s) (High) [Range: All Allies] [Condition: Self 70-100% HP]"
         `shouldParse`
-          { effectType: MdefUp { durExt: { duration: Duration 20, extension: Extension 6 }, potencies: { base: High, max: High } }
-          , range: All
-          }
+          MdefUp { range: All, durExt: { duration: Duration 20, extension: Extension 6 }, potencies: { base: High, max: High } }
       "26s Ice Damage Up (+8s) (Mid) [Range: Single Ally]"
         `shouldParse`
-          { effectType: IceDamageUp { durExt: { duration: Duration 26, extension: Extension 8 }, potencies: { base: Mid, max: Mid } }
-          , range: SingleTarget
-          }
+          IceDamageUp { range: SingleTarget, durExt: { duration: Duration 26, extension: Extension 8 }, potencies: { base: Mid, max: Mid } }
       "3s Stop (+3s) [Range: Single Enemy] [Condition: First Use]"
         `shouldParse`
-          { effectType: Stop { durExt: { duration: Duration 3, extension: Extension 3 } }
-          , range: SingleTarget
-          }
+          Stop { range: SingleTarget, durExt: { duration: Duration 3, extension: Extension 3 } }
       "40s Enfeeble (+8s) [Range: Single Enemy]"
         `shouldParse`
-          { effectType: Enfeeble { durExt: { duration: Duration 40, extension: Extension 8 } }
-          , range: SingleTarget
-          }
+          Enfeeble { range: SingleTarget, durExt: { duration: Duration 40, extension: Extension 8 } }
       "45s 25% WeaknessAttackUp (+9s) [Range: Self]"
         `shouldParse`
-          { effectType: ExploitWeakness { durExt: { duration: Duration 45, extension: Extension 9 }, percentage: Percentage 25 }
-          , range: Self
-          }
+          ExploitWeakness { range: Self, durExt: { duration: Duration 45, extension: Extension 9 }, percentage: Percentage 25 }
       "45s 30% Exploit Weakness (+9s) [Range: Self]"
         `shouldParse`
-          { effectType: ExploitWeakness { durExt: { duration: Duration 45, extension: Extension 9 }, percentage: Percentage 30 }
-          , range: Self
-          }
+          ExploitWeakness { range: Self, durExt: { duration: Duration 45, extension: Extension 9 }, percentage: Percentage 30 }
     it "parses all weapons" do
       sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
       sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of

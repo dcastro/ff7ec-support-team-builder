@@ -9,6 +9,7 @@ module Core.Database
   ) where
 
 import Core.Database.Types
+import Core.Database.UserState.VLatest
 import Prelude
 
 import Control.Alt (alt)
@@ -17,7 +18,6 @@ import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Control.Monad.Except (runExceptT)
 import Control.Monad.Rec.Class (class MonadRec)
 import Core.Database.UserState.V1 as V1
-import Core.Database.UserState.VLatest
 import Core.Database.UserState.VLatest as V2
 import Core.Database.UserState.VLatest as VLatest
 import Core.Display (display)
@@ -129,121 +129,119 @@ getDistinctObs weapon = do
       # Arr.all \idx -> do
           let effect1 = Arr.index obx.effects idx `unsafeFromJust` ("Index out of bounds for weapon: " <> display weapon.name)
           let effect2 = Arr.index oby.effects idx `unsafeFromJust` ("Index out of bounds for weapon: " <> display weapon.name)
-          areEffectTypesEquivalent effect1.effectType effect2.effectType
-            &&
-              effect1.range == effect2.range
+          areEffectTypesEquivalent effect1 effect2
 
   indices :: Int -> Array Int
   indices n = if n <= 0 then [] else Arr.range 0 (n - 1)
 
-  -- Two effects are equivalent if they have the same potencies.
+  -- Two effects are equivalent if they have the same potencies and range
   -- Duration, extension, and percentages are not considered.
   areEffectTypesEquivalent :: EffectType -> EffectType -> Boolean
   areEffectTypesEquivalent x y =
     case x of
-      Heal { percentage: _ } ->
+      Heal { range: range1, percentage: _ } ->
         case y of
-          Heal { percentage: _ } -> true
+          Heal { range: range2, percentage: _ } -> range1 == range2
           _ -> crash unit
-      PatkUp { durExt: _, potencies: pot1 } ->
+      PatkUp { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          PatkUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          PatkUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      MatkUp { durExt: _, potencies: pot1 } ->
+      MatkUp { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          MatkUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          MatkUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      PdefUp { durExt: _, potencies: pot1 } ->
+      PdefUp { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          PdefUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          PdefUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      MdefUp { durExt: _, potencies: pot1 } ->
+      MdefUp { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          MdefUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          MdefUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      FireDamageUp { durExt: _, potencies: pot1 } ->
+      FireDamageUp { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          FireDamageUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          FireDamageUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      IceDamageUp { durExt: _, potencies: pot1 } ->
+      IceDamageUp { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          IceDamageUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          IceDamageUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      ThunderDamageUp { durExt: _, potencies: pot1 } ->
+      ThunderDamageUp { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          ThunderDamageUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          ThunderDamageUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      EarthDamageUp { durExt: _, potencies: pot1 } ->
+      EarthDamageUp { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          EarthDamageUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          EarthDamageUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      WaterDamageUp { durExt: _, potencies: pot1 } ->
+      WaterDamageUp { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          WaterDamageUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          WaterDamageUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      WindDamageUp { durExt: _, potencies: pot1 } ->
+      WindDamageUp { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          WindDamageUp { durExt: _, potencies: pot2 } -> pot1 == pot2
+          WindDamageUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      Veil { durExt: _, percentage: _ } ->
+      Veil { range: range1, durExt: _, percentage: _ } ->
         case y of
-          Veil { durExt: _, percentage: _ } -> true
+          Veil { range: range2, durExt: _, percentage: _ } -> range1 == range2
           _ -> crash unit
-      Provoke { durExt: _ } ->
+      Provoke { range: range1, durExt: _ } ->
         case y of
-          Provoke { durExt: _ } -> true
+          Provoke { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
-      PatkDown { durExt: _, potencies: pot1 } ->
+      PatkDown { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          PatkDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          PatkDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      MatkDown { durExt: _, potencies: pot1 } ->
+      MatkDown { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          MatkDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          MatkDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      PdefDown { durExt: _, potencies: pot1 } ->
+      PdefDown { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          PdefDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          PdefDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      MdefDown { durExt: _, potencies: pot1 } ->
+      MdefDown { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          MdefDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          MdefDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      FireResistDown { durExt: _, potencies: pot1 } ->
+      FireResistDown { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          FireResistDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          FireResistDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      IceResistDown { durExt: _, potencies: pot1 } ->
+      IceResistDown { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          IceResistDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          IceResistDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      ThunderResistDown { durExt: _, potencies: pot1 } ->
+      ThunderResistDown { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          ThunderResistDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          ThunderResistDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      EarthResistDown { durExt: _, potencies: pot1 } ->
+      EarthResistDown { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          EarthResistDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          EarthResistDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      WaterResistDown { durExt: _, potencies: pot1 } ->
+      WaterResistDown { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          WaterResistDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          WaterResistDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      WindResistDown { durExt: _, potencies: pot1 } ->
+      WindResistDown { range: range1, durExt: _, potencies: pot1 } ->
         case y of
-          WindResistDown { durExt: _, potencies: pot2 } -> pot1 == pot2
+          WindResistDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
           _ -> crash unit
-      Enfeeble { durExt: _ } ->
+      Enfeeble { range: range1, durExt: _ } ->
         case y of
-          Enfeeble { durExt: _ } -> true
+          Enfeeble { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
-      Stop { durExt: _ } ->
+      Stop { range: range1, durExt: _ } ->
         case y of
-          Stop { durExt: _ } -> true
+          Stop { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
-      ExploitWeakness { durExt: _, percentage: _ } ->
+      ExploitWeakness { range: range1, durExt: _, percentage: _ } ->
         case y of
-          ExploitWeakness { durExt: _, percentage: _ } -> true
+          ExploitWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
           _ -> crash unit
 
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
@@ -351,7 +349,7 @@ groupsForWeapon weapon = do
               { effectType: FilterHeal
               , groupedWeapon:
                   { weaponName: weapon.name
-                  , ranges:
+                  , ranges: Just
                       [ { range: All
                         , allPotencies: Nothing
                         }
@@ -371,16 +369,22 @@ groupsForWeapon weapon = do
     ob6 <- ZipList $ LazyList.fromFoldable weapon.ob6.effects
     ob10 <- ZipList $ LazyList.fromFoldable weapon.ob10.effects
     in
-      groupForWeaponEffect ob0 ob1 ob6 ob10 <#> \{ effectType, potencies } ->
+      groupForWeaponEffect ob0 ob1 ob6 ob10 <#> \{ effectType, potencies, range } -> do
+        let
+          ranges =
+            case range of
+              Just range ->
+                Just
+                  [ { range
+                    , allPotencies: potencies
+                    }
+                  ]
+              Nothing -> Nothing
+
         { effectType
         , groupedWeapon:
             { weaponName: weapon.name
-            -- INVARIANT: this assumes an effect has the same range at all overboost levels.
-            , ranges:
-                [ { range: ob0.range
-                  , allPotencies: potencies
-                  }
-                ]
+            , ranges
             }
         }
 
@@ -412,84 +416,87 @@ groupsForWeapon weapon = do
           groupEntries
     Map.values merged
 
+  -- INVARIANT: this function assumes an effect has the same range at all overboost levels,
+  -- so it just returns the range for the effect at OB0.
   groupForWeaponEffect
-    :: WeaponEffect
-    -> WeaponEffect
-    -> WeaponEffect
-    -> WeaponEffect
+    :: EffectType
+    -> EffectType
+    -> EffectType
+    -> EffectType
     -> Maybe
          { effectType :: FilterEffectType
          , potencies :: Maybe AllPotencies
+         , range :: Maybe Range
          }
   groupForWeaponEffect ob0 ob1 ob6 ob10 = do
-    case ob0.effectType of
-      Heal { percentage } ->
-        if unwrap percentage >= 35 then Just { effectType: FilterHeal, potencies: Nothing }
+    case ob0 of
+      Heal { range, percentage } ->
+        if unwrap percentage >= 35 then Just { effectType: FilterHeal, range: Just range, potencies: Nothing }
         else Nothing
-      Veil _ -> Just { effectType: FilterVeil, potencies: Nothing }
-      Provoke _ -> Just { effectType: FilterProvoke, potencies: Nothing }
-      Enfeeble _ -> Just { effectType: FilterEnfeeble, potencies: Nothing }
-      Stop _ -> Just { effectType: FilterStop, potencies: Nothing }
-      ExploitWeakness _ -> Just { effectType: FilterExploitWeakness, potencies: Nothing }
-      PatkUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        PatkUp ob1, PatkUp ob6, PatkUp ob10 -> Just { effectType: FilterPatkUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      Veil { range } -> Just { effectType: FilterVeil, range: Just range, potencies: Nothing }
+      Provoke { range } -> Just { effectType: FilterProvoke, range: Just range, potencies: Nothing }
+      Enfeeble { range } -> Just { effectType: FilterEnfeeble, range: Just range, potencies: Nothing }
+      Stop { range } -> Just { effectType: FilterStop, range: Just range, potencies: Nothing }
+      ExploitWeakness { range } -> Just { effectType: FilterExploitWeakness, range: Just range, potencies: Nothing }
+      PatkUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        PatkUp ob1, PatkUp ob6, PatkUp ob10 -> Just { effectType: FilterPatkUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      MatkUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        MatkUp ob1, MatkUp ob6, MatkUp ob10 -> Just { effectType: FilterMatkUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      MatkUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        MatkUp ob1, MatkUp ob6, MatkUp ob10 -> Just { effectType: FilterMatkUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      PdefUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        PdefUp ob1, PdefUp ob6, PdefUp ob10 -> Just { effectType: FilterPdefUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      PdefUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        PdefUp ob1, PdefUp ob6, PdefUp ob10 -> Just { effectType: FilterPdefUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      MdefUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        MdefUp ob1, MdefUp ob6, MdefUp ob10 -> Just { effectType: FilterMdefUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      MdefUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        MdefUp ob1, MdefUp ob6, MdefUp ob10 -> Just { effectType: FilterMdefUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      FireDamageUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        FireDamageUp ob1, FireDamageUp ob6, FireDamageUp ob10 -> Just { effectType: FilterFireDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      FireDamageUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        FireDamageUp ob1, FireDamageUp ob6, FireDamageUp ob10 -> Just { effectType: FilterFireDamageUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      IceDamageUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        IceDamageUp ob1, IceDamageUp ob6, IceDamageUp ob10 -> Just { effectType: FilterIceDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      IceDamageUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        IceDamageUp ob1, IceDamageUp ob6, IceDamageUp ob10 -> Just { effectType: FilterIceDamageUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      ThunderDamageUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        ThunderDamageUp ob1, ThunderDamageUp ob6, ThunderDamageUp ob10 -> Just { effectType: FilterThunderDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      ThunderDamageUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        ThunderDamageUp ob1, ThunderDamageUp ob6, ThunderDamageUp ob10 -> Just { effectType: FilterThunderDamageUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      EarthDamageUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        EarthDamageUp ob1, EarthDamageUp ob6, EarthDamageUp ob10 -> Just { effectType: FilterEarthDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      EarthDamageUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        EarthDamageUp ob1, EarthDamageUp ob6, EarthDamageUp ob10 -> Just { effectType: FilterEarthDamageUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      WaterDamageUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        WaterDamageUp ob1, WaterDamageUp ob6, WaterDamageUp ob10 -> Just { effectType: FilterWaterDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      WaterDamageUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        WaterDamageUp ob1, WaterDamageUp ob6, WaterDamageUp ob10 -> Just { effectType: FilterWaterDamageUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      WindDamageUp { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        WindDamageUp ob1, WindDamageUp ob6, WindDamageUp ob10 -> Just { effectType: FilterWindDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      WindDamageUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        WindDamageUp ob1, WindDamageUp ob6, WindDamageUp ob10 -> Just { effectType: FilterWindDamageUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      PatkDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        PatkDown ob1, PatkDown ob6, PatkDown ob10 -> Just { effectType: FilterPatkDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      PatkDown { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        PatkDown ob1, PatkDown ob6, PatkDown ob10 -> Just { effectType: FilterPatkDown, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      MatkDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        MatkDown ob1, MatkDown ob6, MatkDown ob10 -> Just { effectType: FilterMatkDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      MatkDown { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        MatkDown ob1, MatkDown ob6, MatkDown ob10 -> Just { effectType: FilterMatkDown, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      PdefDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        PdefDown ob1, PdefDown ob6, PdefDown ob10 -> Just { effectType: FilterPdefDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      PdefDown { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        PdefDown ob1, PdefDown ob6, PdefDown ob10 -> Just { effectType: FilterPdefDown, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      MdefDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        MdefDown ob1, MdefDown ob6, MdefDown ob10 -> Just { effectType: FilterMdefDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      MdefDown { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        MdefDown ob1, MdefDown ob6, MdefDown ob10 -> Just { effectType: FilterMdefDown, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      FireResistDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        FireResistDown ob1, FireResistDown ob6, FireResistDown ob10 -> Just { effectType: FilterFireResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      FireResistDown { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        FireResistDown ob1, FireResistDown ob6, FireResistDown ob10 -> Just { effectType: FilterFireResistDown, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      IceResistDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        IceResistDown ob1, IceResistDown ob6, IceResistDown ob10 -> Just { effectType: FilterIceResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      IceResistDown { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        IceResistDown ob1, IceResistDown ob6, IceResistDown ob10 -> Just { effectType: FilterIceResistDown, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      ThunderResistDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        ThunderResistDown ob1, ThunderResistDown ob6, ThunderResistDown ob10 -> Just { effectType: FilterThunderResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      ThunderResistDown { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        ThunderResistDown ob1, ThunderResistDown ob6, ThunderResistDown ob10 -> Just { effectType: FilterThunderResistDown, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      EarthResistDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        EarthResistDown ob1, EarthResistDown ob6, EarthResistDown ob10 -> Just { effectType: FilterEarthResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      EarthResistDown { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        EarthResistDown ob1, EarthResistDown ob6, EarthResistDown ob10 -> Just { effectType: FilterEarthResistDown, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      WaterResistDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        WaterResistDown ob1, WaterResistDown ob6, WaterResistDown ob10 -> Just { effectType: FilterWaterResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      WaterResistDown { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        WaterResistDown ob1, WaterResistDown ob6, WaterResistDown ob10 -> Just { effectType: FilterWaterResistDown, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
-      WindResistDown { potencies: ob0Potencies } -> case ob1.effectType, ob6.effectType, ob10.effectType of
-        WindResistDown ob1, WindResistDown ob6, WindResistDown ob10 -> Just { effectType: FilterWindResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+      WindResistDown { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        WindResistDown ob1, WindResistDown ob6, WindResistDown ob10 -> Just { effectType: FilterWindResistDown, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
 
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"

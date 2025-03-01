@@ -63,7 +63,7 @@ type Weapon =
 
 type ObLevel =
   { description :: NonEmptyString -- ^ The source text from which the buffs/debuffs were parsed.
-  , effects :: Array WeaponEffect
+  , effects :: Array EffectType
   }
 
 type GroupedWeapon =
@@ -74,7 +74,13 @@ type GroupedWeapon =
   -- it has PATK Up SingleTarget + PATK Up Mid->High Self
   --
   -- Silver Megaphone has PDEF Down Low SingleTarget + PDEF Down High SingleTarget (Condition: Critical Hit)
-  , ranges :: Array GroupedWeaponRange
+  --
+  -- Some weapon effects have no ranges/potencies at all (e.g. Diamond Sigil),
+  -- in which case this will be `Nothing`.
+  --
+  -- INVARIANT: at the moment, all effects with potencies also have a range.
+  -- Therefore, we have potencies grouped by ranges.
+  , ranges :: Maybe (Array GroupedWeaponRange)
   }
 
 type GroupedWeaponRange =
@@ -111,39 +117,34 @@ type DurExt =
   }
 
 data EffectType
-  = Heal { percentage :: Percentage }
+  = Heal { range :: Range, percentage :: Percentage }
   -- Buffs
-  | PatkUp { durExt :: DurExt, potencies :: Potencies }
-  | MatkUp { durExt :: DurExt, potencies :: Potencies }
-  | PdefUp { durExt :: DurExt, potencies :: Potencies }
-  | MdefUp { durExt :: DurExt, potencies :: Potencies }
-  | FireDamageUp { durExt :: DurExt, potencies :: Potencies }
-  | IceDamageUp { durExt :: DurExt, potencies :: Potencies }
-  | ThunderDamageUp { durExt :: DurExt, potencies :: Potencies }
-  | EarthDamageUp { durExt :: DurExt, potencies :: Potencies }
-  | WaterDamageUp { durExt :: DurExt, potencies :: Potencies }
-  | WindDamageUp { durExt :: DurExt, potencies :: Potencies }
-  | Veil { durExt :: DurExt, percentage :: Percentage }
-  | Provoke { durExt :: DurExt }
+  | PatkUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | MatkUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | PdefUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | MdefUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | FireDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | IceDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | ThunderDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | EarthDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | WaterDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | WindDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | Veil { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | Provoke { range :: Range, durExt :: DurExt }
   -- Debuffs
-  | PatkDown { durExt :: DurExt, potencies :: Potencies }
-  | MatkDown { durExt :: DurExt, potencies :: Potencies }
-  | PdefDown { durExt :: DurExt, potencies :: Potencies }
-  | MdefDown { durExt :: DurExt, potencies :: Potencies }
-  | FireResistDown { durExt :: DurExt, potencies :: Potencies }
-  | IceResistDown { durExt :: DurExt, potencies :: Potencies }
-  | ThunderResistDown { durExt :: DurExt, potencies :: Potencies }
-  | EarthResistDown { durExt :: DurExt, potencies :: Potencies }
-  | WaterResistDown { durExt :: DurExt, potencies :: Potencies }
-  | WindResistDown { durExt :: DurExt, potencies :: Potencies }
-  | Enfeeble { durExt :: DurExt }
-  | Stop { durExt :: DurExt }
-  | ExploitWeakness { durExt :: DurExt, percentage :: Percentage }
-
-type WeaponEffect =
-  { effectType :: EffectType
-  , range :: Range
-  }
+  | PatkDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | MatkDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | PdefDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | MdefDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | FireResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | IceResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | ThunderResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | EarthResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | WaterResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | WindResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | Enfeeble { range :: Range, durExt :: DurExt }
+  | Stop { range :: Range, durExt :: DurExt }
+  | ExploitWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
 
 type Potencies =
   { base :: Potency

@@ -68,7 +68,7 @@ makeDiff :: WeaponInfo -> Array ObDiff
 makeDiff { name, effects } =
   effects >>= \effect ->
     Arr.catMaybes
-      [ if getPotencies effect.ob0.effectType /= getPotencies effect.ob1.effectType then Just
+      [ if getPotencies effect.ob0 /= getPotencies effect.ob1 then Just
           { weaponName: name
           , obX: "OB0"
           , obY: "OB1"
@@ -77,7 +77,7 @@ makeDiff { name, effects } =
           }
         else
           Nothing
-      , if getPotencies effect.ob6.effectType /= getPotencies effect.ob10.effectType then Just
+      , if getPotencies effect.ob6 /= getPotencies effect.ob10 then Just
           { weaponName: name
           , obX: "OB6"
           , obY: "OB10"
@@ -92,8 +92,8 @@ type ObDiff =
   { weaponName :: WeaponName
   , obX :: String
   , obY :: String
-  , obXEffect :: WeaponEffect
-  , obYEffect :: WeaponEffect
+  , obXEffect :: EffectType
+  , obYEffect :: EffectType
   }
 
 type WeaponInfo =
@@ -102,10 +102,10 @@ type WeaponInfo =
   }
 
 type EffectInfo =
-  { ob0 :: WeaponEffect
-  , ob1 :: WeaponEffect
-  , ob6 :: WeaponEffect
-  , ob10 :: WeaponEffect
+  { ob0 :: EffectType
+  , ob1 :: EffectType
+  , ob6 :: EffectType
+  , ob10 :: EffectType
   }
 
 groupEffects :: Weapon -> WeaponInfo

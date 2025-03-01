@@ -112,7 +112,7 @@ parseDescription coords description = do
   let
     effects =
       lines
-        # Arr.mapMaybe \line -> hush $ runParser line (parseWeaponEffect coords)
+        # Arr.mapMaybe \line -> hush $ runParser line (parseEffectType coords)
   atbCost <- runParser firstLine (parseAtbCost coords) #
     lmap P.parseErrorMessage
 
@@ -130,16 +130,6 @@ parseAtbCost coords = do
     Tuple _ atbCost <- P.manyTill_ P.anyChar do
       P.char '(' *> P.intDecimal <* P.string " ATB)"
     pure atbCost
-
-parseWeaponEffect :: Coords -> Parser WeaponEffect
-parseWeaponEffect coords =
-  inContext ("Coords " <> show coords) do
-    effectType <- parseEffectType <* space
-    range <- parseRange
-    pure
-      { effectType
-      , range
-      }
 
 space :: Parser Unit
 space = void $ P.char ' '
@@ -209,71 +199,76 @@ parsePotencies =
 -- * `PATK Down (+7s) (Low -> Mid)`
 -- * `Veil (+8s)`
 -- * `Heal`
-parseEffectType :: Parser EffectType
-parseEffectType =
-  inContext "EffectType" do
-    P.try (withPercentage "Heal" Heal)
-    <|> P.try (withDurExtPotencies "PATK Up" PatkUp)
-    <|> P.try (withDurExtPotencies "MATK Up" MatkUp)
-    <|> P.try (withDurExtPotencies "PDEF Up" PdefUp)
-    <|> P.try (withDurExtPotencies "MDEF Up" MdefUp)
-    <|> P.try (withDurExtPotencies "Fire Damage Up" FireDamageUp)
-    <|> P.try (withDurExtPotencies "Ice Damage Up" IceDamageUp)
-    <|> P.try (withDurExtPotencies "Thunder Damage Up" ThunderDamageUp)
-    <|> P.try (withDurExtPotencies "Earth Damage Up" EarthDamageUp)
-    <|> P.try (withDurExtPotencies "Water Damage Up" WaterDamageUp)
-    <|> P.try (withDurExtPotencies "Wind Damage Up" WindDamageUp)
-    <|> P.try (withDurExtPercentage "Veil" Veil)
-    <|> P.try (withDurExt "Provoke" Provoke)
-    <|> P.try (withDurExtPotencies "PATK Down" PatkDown)
-    <|> P.try (withDurExtPotencies "MATK Down" MatkDown)
-    <|> P.try (withDurExtPotencies "PDEF Down" PdefDown)
-    <|> P.try (withDurExtPotencies "MDEF Down" MdefDown)
-    <|> P.try (withDurExtPotencies "Fire Resistance Down" FireResistDown)
-    <|> P.try (withDurExtPotencies "Ice Resistance Down" IceResistDown)
-    <|> P.try (withDurExtPotencies "Thunder Resistance Down" ThunderResistDown)
-    <|> P.try (withDurExtPotencies "Earth Resistance Down" EarthResistDown)
-    <|> P.try (withDurExtPotencies "Water Resistance Down" WaterResistDown)
-    <|> P.try (withDurExtPotencies "Wind Resistance Down" WindResistDown)
-    <|> P.try (withDurExt "Enfeeble" Enfeeble)
-    <|> P.try (withDurExt "Stop" Stop)
-    -- NOTE: The effect on "Blue Daffodil Gloves" is named "WeaknessAttackUp",
-    -- but on "Bird of Prey" it's named "Exploit Weakness".
-    <|> P.try (withDurExtPercentage "WeaknessAttackUp" ExploitWeakness)
-    <|> P.try (withDurExtPercentage "Exploit Weakness" ExploitWeakness)
+parseEffectType :: Coords -> Parser EffectType
+parseEffectType coords =
+  inContext ("Coords " <> show coords) do
+    inContext "EffectType" do
+      P.try (withPercentage "Heal" Heal)
+      <|> P.try (withDurExtPotencies "PATK Up" PatkUp)
+      <|> P.try (withDurExtPotencies "MATK Up" MatkUp)
+      <|> P.try (withDurExtPotencies "PDEF Up" PdefUp)
+      <|> P.try (withDurExtPotencies "MDEF Up" MdefUp)
+      <|> P.try (withDurExtPotencies "Fire Damage Up" FireDamageUp)
+      <|> P.try (withDurExtPotencies "Ice Damage Up" IceDamageUp)
+      <|> P.try (withDurExtPotencies "Thunder Damage Up" ThunderDamageUp)
+      <|> P.try (withDurExtPotencies "Earth Damage Up" EarthDamageUp)
+      <|> P.try (withDurExtPotencies "Water Damage Up" WaterDamageUp)
+      <|> P.try (withDurExtPotencies "Wind Damage Up" WindDamageUp)
+      <|> P.try (withDurExtPercentage "Veil" Veil)
+      <|> P.try (withDurExt "Provoke" Provoke)
+      <|> P.try (withDurExtPotencies "PATK Down" PatkDown)
+      <|> P.try (withDurExtPotencies "MATK Down" MatkDown)
+      <|> P.try (withDurExtPotencies "PDEF Down" PdefDown)
+      <|> P.try (withDurExtPotencies "MDEF Down" MdefDown)
+      <|> P.try (withDurExtPotencies "Fire Resistance Down" FireResistDown)
+      <|> P.try (withDurExtPotencies "Ice Resistance Down" IceResistDown)
+      <|> P.try (withDurExtPotencies "Thunder Resistance Down" ThunderResistDown)
+      <|> P.try (withDurExtPotencies "Earth Resistance Down" EarthResistDown)
+      <|> P.try (withDurExtPotencies "Water Resistance Down" WaterResistDown)
+      <|> P.try (withDurExtPotencies "Wind Resistance Down" WindResistDown)
+      <|> P.try (withDurExt "Enfeeble" Enfeeble)
+      <|> P.try (withDurExt "Stop" Stop)
+      -- NOTE: The effect on "Blue Daffodil Gloves" is named "WeaknessAttackUp",
+      -- but on "Bird of Prey" it's named "Exploit Weakness".
+      <|> P.try (withDurExtPercentage "WeaknessAttackUp" ExploitWeakness)
+      <|> P.try (withDurExtPercentage "Exploit Weakness" ExploitWeakness)
   where
-  withPercentage :: String -> ({ percentage :: Percentage } -> EffectType) -> Parser EffectType
+  withPercentage :: String -> ({ range :: Range, percentage :: Percentage } -> EffectType) -> Parser EffectType
   withPercentage effectName constructor = do
     inContext effectName do
       percentage <- parsePercentage <* space
-      _ <- P.string effectName
-      pure $ constructor $ { percentage }
+      _ <- P.string effectName <* space
+      range <- parseRange
+      pure $ constructor $ { range, percentage }
 
-  withDurExt :: String -> ({ durExt :: DurExt } -> EffectType) -> Parser EffectType
+  withDurExt :: String -> ({ range :: Range, durExt :: DurExt } -> EffectType) -> Parser EffectType
   withDurExt effectName constructor = do
     inContext effectName do
       duration <- parseDuration <* space
       _ <- P.string effectName <* space
-      extension <- parseExtension
-      pure $ constructor $ { durExt: { duration, extension } }
+      extension <- parseExtension <* space
+      range <- parseRange
+      pure $ constructor $ { range, durExt: { duration, extension } }
 
-  withDurExtPercentage :: String -> ({ durExt :: DurExt, percentage :: Percentage } -> EffectType) -> Parser EffectType
+  withDurExtPercentage :: String -> ({ range :: Range, durExt :: DurExt, percentage :: Percentage } -> EffectType) -> Parser EffectType
   withDurExtPercentage effectName constructor = do
     inContext effectName do
       duration <- parseDuration <* space
       percentage <- parsePercentage <* space
       _ <- P.string effectName <* space
-      extension <- parseExtension
-      pure $ constructor $ { durExt: { duration, extension }, percentage }
+      extension <- parseExtension <* space
+      range <- parseRange
+      pure $ constructor $ { range, durExt: { duration, extension }, percentage }
 
-  withDurExtPotencies :: String -> ({ durExt :: DurExt, potencies :: Potencies } -> EffectType) -> Parser EffectType
+  withDurExtPotencies :: String -> ({ range :: Range, durExt :: DurExt, potencies :: Potencies } -> EffectType) -> Parser EffectType
   withDurExtPotencies effectName constructor = do
     inContext effectName do
       duration <- parseDuration <* space
       _ <- P.string effectName <* space
       extension <- parseExtension <* space
-      potencies <- parsePotencies
-      pure $ constructor $ { durExt: { duration, extension }, potencies }
+      potencies <- parsePotencies <* space
+      range <- parseRange
+      pure $ constructor $ { range, durExt: { duration, extension }, potencies }
 
 inContext :: forall a. String -> Parser a -> Parser a
 inContext context =

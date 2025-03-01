@@ -92,8 +92,8 @@ type ObDiff =
   { weaponName :: WeaponName
   , obX :: String
   , obY :: String
-  , obXEffect :: EffectType
-  , obYEffect :: EffectType
+  , obXEffect :: WeaponEffect
+  , obYEffect :: WeaponEffect
   }
 
 type WeaponInfo =
@@ -102,10 +102,10 @@ type WeaponInfo =
   }
 
 type EffectInfo =
-  { ob0 :: EffectType
-  , ob1 :: EffectType
-  , ob6 :: EffectType
-  , ob10 :: EffectType
+  { ob0 :: WeaponEffect
+  , ob1 :: WeaponEffect
+  , ob6 :: WeaponEffect
+  , ob10 :: WeaponEffect
   }
 
 groupEffects :: Weapon -> WeaponInfo
@@ -126,7 +126,7 @@ groupEffects weapon =
       , ob10
       }
 
--- Similar to `EffectType`, but we discard all information except potencies.
+-- Similar to `WeaponEffect`, but we discard all information except potencies.
 data EffectTypeAndPotencies
   = PatkUp' Potencies
   | MatkUp' Potencies
@@ -151,7 +151,7 @@ data EffectTypeAndPotencies
 
 derive instance Eq EffectTypeAndPotencies
 
-getPotencies :: EffectType -> Maybe EffectTypeAndPotencies
+getPotencies :: WeaponEffect -> Maybe EffectTypeAndPotencies
 getPotencies = case _ of
   Heal {} -> Nothing
   PatkUp { potencies } -> Just $ PatkUp' potencies

@@ -112,7 +112,7 @@ parseDescription coords description = do
   let
     effects =
       lines
-        # Arr.mapMaybe \line -> hush $ runParser line (parseEffectType coords)
+        # Arr.mapMaybe \line -> hush $ runParser line (parseWeaponEffect coords)
   atbCost <- runParser firstLine (parseAtbCost coords) #
     lmap P.parseErrorMessage
 
@@ -199,10 +199,10 @@ parsePotencies =
 -- * `PATK Down (+7s) (Low -> Mid)`
 -- * `Veil (+8s)`
 -- * `Heal`
-parseEffectType :: Coords -> Parser EffectType
-parseEffectType coords =
+parseWeaponEffect :: Coords -> Parser WeaponEffect
+parseWeaponEffect coords =
   inContext ("Coords " <> show coords) do
-    inContext "EffectType" do
+    inContext "WeaponEffect" do
       P.try (withPercentage "Heal" Heal)
       <|> P.try (withDurExtPotencies "PATK Up" PatkUp)
       <|> P.try (withDurExtPotencies "MATK Up" MatkUp)
@@ -233,7 +233,7 @@ parseEffectType coords =
       <|> P.try (withDurExtPercentage "WeaknessAttackUp" ExploitWeakness)
       <|> P.try (withDurExtPercentage "Exploit Weakness" ExploitWeakness)
   where
-  withPercentage :: String -> ({ range :: Range, percentage :: Percentage } -> EffectType) -> Parser EffectType
+  withPercentage :: String -> ({ range :: Range, percentage :: Percentage } -> WeaponEffect) -> Parser WeaponEffect
   withPercentage effectName constructor = do
     inContext effectName do
       percentage <- parsePercentage <* space
@@ -241,7 +241,7 @@ parseEffectType coords =
       range <- parseRange
       pure $ constructor $ { range, percentage }
 
-  withDurExt :: String -> ({ range :: Range, durExt :: DurExt } -> EffectType) -> Parser EffectType
+  withDurExt :: String -> ({ range :: Range, durExt :: DurExt } -> WeaponEffect) -> Parser WeaponEffect
   withDurExt effectName constructor = do
     inContext effectName do
       duration <- parseDuration <* space
@@ -250,7 +250,7 @@ parseEffectType coords =
       range <- parseRange
       pure $ constructor $ { range, durExt: { duration, extension } }
 
-  withDurExtPercentage :: String -> ({ range :: Range, durExt :: DurExt, percentage :: Percentage } -> EffectType) -> Parser EffectType
+  withDurExtPercentage :: String -> ({ range :: Range, durExt :: DurExt, percentage :: Percentage } -> WeaponEffect) -> Parser WeaponEffect
   withDurExtPercentage effectName constructor = do
     inContext effectName do
       duration <- parseDuration <* space
@@ -260,7 +260,7 @@ parseEffectType coords =
       range <- parseRange
       pure $ constructor $ { range, durExt: { duration, extension }, percentage }
 
-  withDurExtPotencies :: String -> ({ range :: Range, durExt :: DurExt, potencies :: Potencies } -> EffectType) -> Parser EffectType
+  withDurExtPotencies :: String -> ({ range :: Range, durExt :: DurExt, potencies :: Potencies } -> WeaponEffect) -> Parser WeaponEffect
   withDurExtPotencies effectName constructor = do
     inContext effectName do
       duration <- parseDuration <* space

@@ -20,7 +20,7 @@ spec =
   describe "parser" do
     it "parses weapon effects" do
       let
-        shouldParse = T.shouldParse' (parseEffectType { rowId: 0, columnId: 0 })
+        shouldParse = T.shouldParse' (parseWeaponEffect { rowId: 0, columnId: 0 })
       "60s Provoke (+0s) [Range: Self]"
         `shouldParse`
           Provoke { range: Self, durExt: { duration: Duration 60, extension: Extension 0 } }

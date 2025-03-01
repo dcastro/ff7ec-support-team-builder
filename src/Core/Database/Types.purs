@@ -63,7 +63,7 @@ type Weapon =
 
 type ObLevel =
   { description :: NonEmptyString -- ^ The source text from which the buffs/debuffs were parsed.
-  , effects :: Array EffectType
+  , effects :: Array WeaponEffect
   }
 
 type GroupedWeapon =
@@ -116,7 +116,7 @@ type DurExt =
   , extension :: Extension
   }
 
-data EffectType
+data WeaponEffect
   = Heal { range :: Range, percentage :: Percentage }
   -- Buffs
   | PatkUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
@@ -183,12 +183,12 @@ data FilterEffectType
   | FilterWindResistDown
 
 derive instance Generic Range _
-derive instance Generic EffectType _
+derive instance Generic WeaponEffect _
 derive instance Generic Potency _
 derive instance Generic FilterEffectType _
 
 derive instance Eq Range
-derive instance Eq EffectType
+derive instance Eq WeaponEffect
 derive instance Eq Potency
 derive instance Eq FilterEffectType
 derive newtype instance Eq Percentage
@@ -197,7 +197,7 @@ derive newtype instance Eq Extension
 derive newtype instance Eq CharacterName
 
 derive instance Ord Potency
-derive instance Ord EffectType
+derive instance Ord WeaponEffect
 derive instance Ord Range
 derive instance Ord FilterEffectType
 derive newtype instance Ord Percentage
@@ -213,7 +213,7 @@ derive instance Newtype CharacterName _
 instance Show Range where
   show = genericShow
 
-instance Show EffectType where
+instance Show WeaponEffect where
   show = genericShow
 
 instance Show Potency where
@@ -230,7 +230,7 @@ derive newtype instance Show CharacterName
 instance WriteForeign Range where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
-instance WriteForeign EffectType where
+instance WriteForeign WeaponEffect where
   writeImpl = J.genericWriteForeignTaggedSum TaggedSum.defaultOptions
 
 instance WriteForeign Potency where
@@ -247,7 +247,7 @@ derive newtype instance WriteForeign CharacterName
 instance ReadForeign Range where
   readImpl = J.genericReadForeignEnum Enum.defaultOptions
 
-instance ReadForeign EffectType where
+instance ReadForeign WeaponEffect where
   readImpl = J.genericReadForeignTaggedSum TaggedSum.defaultOptions
 
 instance ReadForeign Potency where

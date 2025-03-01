@@ -129,15 +129,15 @@ getDistinctObs weapon = do
       # Arr.all \idx -> do
           let effect1 = Arr.index obx.effects idx `unsafeFromJust` ("Index out of bounds for weapon: " <> display weapon.name)
           let effect2 = Arr.index oby.effects idx `unsafeFromJust` ("Index out of bounds for weapon: " <> display weapon.name)
-          areEffectTypesEquivalent effect1 effect2
+          areWeaponEffectsEquivalent effect1 effect2
 
   indices :: Int -> Array Int
   indices n = if n <= 0 then [] else Arr.range 0 (n - 1)
 
   -- Two effects are equivalent if they have the same potencies and range
   -- Duration, extension, and percentages are not considered.
-  areEffectTypesEquivalent :: EffectType -> EffectType -> Boolean
-  areEffectTypesEquivalent x y =
+  areWeaponEffectsEquivalent :: WeaponEffect -> WeaponEffect -> Boolean
+  areWeaponEffectsEquivalent x y =
     case x of
       Heal { range: range1, percentage: _ } ->
         case y of
@@ -419,10 +419,10 @@ groupsForWeapon weapon = do
   -- INVARIANT: this function assumes an effect has the same range at all overboost levels,
   -- so it just returns the range for the effect at OB0.
   groupForWeaponEffect
-    :: EffectType
-    -> EffectType
-    -> EffectType
-    -> EffectType
+    :: WeaponEffect
+    -> WeaponEffect
+    -> WeaponEffect
+    -> WeaponEffect
     -> Maybe
          { effectType :: FilterEffectType
          , potencies :: Maybe AllPotencies

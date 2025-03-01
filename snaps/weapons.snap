@@ -3449,6 +3449,7 @@
       "name": "Type-91 Two-Hander",
       "image": "https://i.imgur.com/a4OVk2y.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilDiamond",
       "character": "Angeal",
       "atbCost": 3
     },
@@ -4237,6 +4238,7 @@
       "name": "Gatling Gun",
       "image": "https://i.imgur.com/NjyMAt3.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilX",
       "character": "Barret",
       "atbCost": 4
     },
@@ -4617,6 +4619,7 @@
       "name": "Max Ray",
       "image": "https://i.imgur.com/qZHroeX.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilDiamond",
       "character": "Barret",
       "atbCost": 4
     },
@@ -5005,6 +5008,7 @@
       "name": "Sharkslayer",
       "image": "https://i.imgur.com/sATlFNf.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilDiamond",
       "character": "Barret",
       "atbCost": 3
     },
@@ -7085,6 +7089,7 @@
       "name": "Flayer",
       "image": "https://i.imgur.com/lV7oorM.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilDiamond",
       "character": "Cid",
       "atbCost": 3
     },
@@ -8285,6 +8290,7 @@
       "name": "Buster Sword",
       "image": "https://i.imgur.com/1zBjp27.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilX",
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10285,6 +10291,7 @@
       "name": "Rest in Peace",
       "image": "https://i.imgur.com/EZuy4dG.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilDiamond",
       "character": "Glenn",
       "atbCost": 4
     },
@@ -10737,6 +10744,7 @@
       "name": "Ultimatic",
       "image": "https://i.imgur.com/CsG82Nk.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilO",
       "character": "Glenn",
       "atbCost": 4
     },
@@ -10845,6 +10853,7 @@
       "name": "Barn Swallow",
       "image": "https://i.imgur.com/JDzyVgs.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilDiamond",
       "character": "Lucia",
       "atbCost": 4
     },
@@ -11365,6 +11374,7 @@
       "name": "Nightjar",
       "image": "https://i.imgur.com/e1XnLLr.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilDiamond",
       "character": "Lucia",
       "atbCost": 3
     },
@@ -12089,6 +12099,7 @@
       "name": "Bahamut Rapier",
       "image": "https://i.imgur.com/4JEGGiR.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilDiamond",
       "character": "Matt",
       "atbCost": 4
     },
@@ -12761,6 +12772,7 @@
       "name": "Killer Hornet",
       "image": "https://i.imgur.com/LANRdoB.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilDiamond",
       "character": "Matt",
       "atbCost": 4
     },
@@ -13069,6 +13081,7 @@
       "name": "Nautilus Spiral",
       "image": "https://i.imgur.com/dBCxFk0.png",
       "cureAllAbility": true,
+      "commandAbilitySigil": "SigilDiamond",
       "character": "Matt",
       "atbCost": 3
     },
@@ -14913,6 +14926,7 @@
       "name": "Silver Collar",
       "image": "https://i.imgur.com/bkjgmOC.png",
       "cureAllAbility": true,
+      "commandAbilitySigil": "SigilDiamond",
       "character": "Red XIII",
       "atbCost": 3
     },
@@ -17049,6 +17063,7 @@
       "name": "Bahamut Knuckles",
       "image": "https://i.imgur.com/vZVNK32.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilDiamond",
       "character": "Tifa",
       "atbCost": 4
     },
@@ -22237,6 +22252,7 @@
       "name": "Type-99 Longsword",
       "image": "https://i.imgur.com/NtlaK01.png",
       "cureAllAbility": false,
+      "commandAbilitySigil": "SigilO",
       "character": "Zack",
       "atbCost": 4
     },

@@ -439,6 +439,7 @@ mkWeapon id character =
       , ob6: { description: nes @" ", effects: [] }
       , ob10: { description: nes @" ", effects: [] }
       , cureAllAbility: true
+      , commandAbilitySigil: Nothing
       }
   , distinctObs: NAR.singleton (ObRange { from: FromOb0, to: ToOb5 })
       # NAR.cons (ObRange { from: FromOb6, to: ToOb10 })

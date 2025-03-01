@@ -59,7 +59,14 @@ type Weapon =
   , ob6 :: ObLevel
   , ob10 :: ObLevel
   , cureAllAbility :: Boolean
+  , commandAbilitySigil :: Maybe Sigil
   }
+
+data Sigil
+  = SigilO
+  | SigilX
+  | SigilTriangle
+  | SigilDiamond
 
 type ObLevel =
   { description :: NonEmptyString -- ^ The source text from which the buffs/debuffs were parsed.
@@ -186,11 +193,13 @@ derive instance Generic Range _
 derive instance Generic WeaponEffect _
 derive instance Generic Potency _
 derive instance Generic FilterEffectType _
+derive instance Generic Sigil _
 
 derive instance Eq Range
 derive instance Eq WeaponEffect
 derive instance Eq Potency
 derive instance Eq FilterEffectType
+derive instance Eq Sigil
 derive newtype instance Eq Percentage
 derive newtype instance Eq Duration
 derive newtype instance Eq Extension
@@ -200,6 +209,7 @@ derive instance Ord Potency
 derive instance Ord WeaponEffect
 derive instance Ord Range
 derive instance Ord FilterEffectType
+derive instance Ord Sigil
 derive newtype instance Ord Percentage
 derive newtype instance Ord Duration
 derive newtype instance Ord Extension
@@ -222,6 +232,9 @@ instance Show Potency where
 instance Show FilterEffectType where
   show = genericShow
 
+instance Show Sigil where
+  show = genericShow
+
 derive newtype instance Show Percentage
 derive newtype instance Show Duration
 derive newtype instance Show Extension
@@ -239,6 +252,9 @@ instance WriteForeign Potency where
 instance WriteForeign FilterEffectType where
   writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
 
+instance WriteForeign Sigil where
+  writeImpl = J.genericWriteForeignEnum Enum.defaultOptions
+
 derive newtype instance WriteForeign Percentage
 derive newtype instance WriteForeign Duration
 derive newtype instance WriteForeign Extension
@@ -254,6 +270,9 @@ instance ReadForeign Potency where
   readImpl = J.genericReadForeignEnum Enum.defaultOptions
 
 instance ReadForeign FilterEffectType where
+  readImpl = J.genericReadForeignEnum Enum.defaultOptions
+
+instance ReadForeign Sigil where
   readImpl = J.genericReadForeignEnum Enum.defaultOptions
 
 derive newtype instance ReadForeign Percentage

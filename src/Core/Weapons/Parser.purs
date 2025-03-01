@@ -51,7 +51,7 @@ parseWeapon rowIndex row = do
   { obLevel: ob0 } <- getDescription 18
   { obLevel: ob1 } <- getDescription 19
   { obLevel: ob6 } <- getDescription 20
-  { obLevel: ob10, atbCost } <- getDescription 21
+  { obLevel: ob10, atbCost, commandAbilitySigil } <- getDescription 21
   image <- getCell 22
   -- Check if the 3rd S.Ability is a "cure all" slot
   thirdSupportAbility <- getCell 25
@@ -68,6 +68,7 @@ parseWeapon rowIndex row = do
     , ob6
     , ob10
     , cureAllAbility
+    , commandAbilitySigil
     }
   where
   rowId = rowIndex + 1
@@ -102,6 +103,7 @@ type Coords = { rowId :: Int, columnId :: Int }
 type ParsedDescription =
   { atbCost :: Int
   , obLevel :: ObLevel
+  , commandAbilitySigil :: Maybe Sigil
   }
 
 parseDescription :: Coords -> NonEmptyString -> Result ParsedDescription
@@ -110,14 +112,20 @@ parseDescription coords description = do
     lines = description # NES.toString # String.lines
     firstLine = Arr.head lines `unsafeFromJust` "String.lines returned empty list"
   let
+    -- Parse weapon effects, discarding parser failures
     effects =
       lines
         # Arr.mapMaybe \line -> hush $ runParser line (parseWeaponEffect coords)
+  -- Every weapon must have an ATB cost
   atbCost <- runParser firstLine (parseAtbCost coords) #
     lmap P.parseErrorMessage
 
+  -- A weapon may have a C. Ability Sigil.
+  let commandAbilitySigil = hush $ runParser firstLine (parseCommandAbilitySigil coords)
+
   pure
     { atbCost
+    , commandAbilitySigil
     , obLevel:
         { description
         , effects
@@ -127,9 +135,27 @@ parseDescription coords description = do
 parseAtbCost :: Coords -> Parser Int
 parseAtbCost coords = do
   inContext ("Coords " <> show coords) do
-    Tuple _ atbCost <- P.manyTill_ P.anyChar do
-      P.char '(' *> P.intDecimal <* P.string " ATB)"
-    pure atbCost
+    inContext "ATB Cost" do
+      Tuple _ atbCost <- P.manyTill_ P.anyChar do
+        P.char '(' *> P.intDecimal <* P.string " ATB)"
+      pure atbCost
+
+-- | Example input:
+-- Rolling Claw [Sigils: 1 \\◆] (3 ATB)
+parseCommandAbilitySigil :: Coords -> Parser Sigil
+parseCommandAbilitySigil coords = do
+  inContext ("Coords " <> show coords) do
+    inContext "C. Ability Sigil" do
+      Tuple _ sigil <- P.manyTill_ P.anyChar do
+        P.string "[Sigils: " *> P.intDecimal *> P.string " \\" *> parseSigilSymbol <* P.string "]"
+      pure sigil
+
+parseSigilSymbol :: Parser Sigil
+parseSigilSymbol =
+  (P.char '◆' $> SigilDiamond)
+    <|> ((P.char '⬤' <|> P.char '⏺') $> SigilO)
+    <|> (P.char '✖' $> SigilX)
+    <|> (P.char '▲' $> SigilTriangle)
 
 space :: Parser Unit
 space = void $ P.char ' '

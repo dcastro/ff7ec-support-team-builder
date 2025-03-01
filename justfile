@@ -23,7 +23,7 @@ build-staging:
 	parcel build staging/index.html --dist-dir docs/staging --public-url '.'
 
 run:
-	make build
+	just build
 	npm run serve
 
 # Runs benchmarks. The generated files can be uploaded to: https://harry.garrood.me/purescript-benchotron-svg-renderer/

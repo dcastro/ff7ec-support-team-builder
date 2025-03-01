@@ -17,8 +17,11 @@ import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
-import HtmlUtils (classes')
+import HtmlUtils (classes', displayIf)
 import Type.Prelude (Proxy(..))
+
+teamsDisplayLimit :: Int
+teamsDisplayLimit = 100
 
 type Slot id = forall query. H.Slot query Output id
 
@@ -59,56 +62,62 @@ component =
 
 render :: State -> H.ComponentHTML Action Slots Aff
 render state =
-  HH.div [ classes' "columns is-centered" ]
-    [ HH.div [ classes' "column is-three-fifths-desktop" ] $
-        state.teams <#> \team ->
-          HH.div [ classes' "box" ] $
-            Map.values team.characters # Arr.fromFoldable <#> \character ->
-              HH.div [ classes' "columns" ] $
-                [ HH.div [ classes' "column is-one-fifth" ]
-                    [ HH.span [ classes' "tag is-medium" ] [ HH.text (display character.name) ]
+  HH.div_
+    [ displayIf (Arr.length state.teams > teamsDisplayLimit) $
+        HH.div
+          [ classes' "has-text-centered has-text-weight-semibold mb-4" ]
+          [ HH.text $ "Displaying first " <> show teamsDisplayLimit <> " teams." ]
+    , HH.div [ classes' "columns is-centered" ]
+        [ HH.div [ classes' "column is-three-fifths-desktop" ] $
+            state.teams # Arr.take teamsDisplayLimit <#> \team ->
+              HH.div [ classes' "box" ] $
+                Map.values team.characters # Arr.fromFoldable <#> \character ->
+                  HH.div [ classes' "columns" ] $
+                    [ HH.div [ classes' "column is-one-fifth" ]
+                        [ HH.span [ classes' "tag is-medium" ] [ HH.text (display character.name) ]
+                        ]
                     ]
-                ]
-                  <>
-                    ( Search.getEquipedWeapons character <#> \equipedWeapon ->
-                        HH.div [ classes' "column is-two-fifths" ]
-                          -- Align the img/wepon name/controls vertically.
-                          -- `is-1` for a smaller gap between the elements.
-                          [ HH.div [ classes' "columns is-mobile is-centered is-vcentered is-1" ]
-                              [ HH.div
-                                  [ classes' "column is-narrow is-clickable"
-                                  , HE.onClick $ \_ -> SelectedWeaponForModal equipedWeapon.weaponData.weapon
-                                  ]
-                                  [ HH.img [ HP.src (display equipedWeapon.weaponData.weapon.image), classes' "image is-32x32" ]
-                                  ]
-                              , HH.div
-                                  [ classes' "column is-narrow is-clickable"
-                                  , HE.onClick $ \_ -> SelectedWeaponForModal equipedWeapon.weaponData.weapon
-                                  ]
-                                  [ HH.span_
-                                      [ HH.text (display equipedWeapon.weaponData.weapon.name)
+                      <>
+                        ( Search.getEquipedWeapons character <#> \equipedWeapon ->
+                            HH.div [ classes' "column is-two-fifths" ]
+                              -- Align the img/wepon name/controls vertically.
+                              -- `is-1` for a smaller gap between the elements.
+                              [ HH.div [ classes' "columns is-mobile is-centered is-vcentered is-1" ]
+                                  [ HH.div
+                                      [ classes' "column is-narrow is-clickable"
+                                      , HE.onClick $ \_ -> SelectedWeaponForModal equipedWeapon.weaponData.weapon
                                       ]
-                                  ]
-                              , HH.div [ classes' "column is-narrow" ]
-                                  [ HH.div [ classes' "select" ]
-                                      [ HH.select
-                                          [ HE.onSelectedIndexChange (SetOwnedOb equipedWeapon.weaponData.weapon.name) ]
-                                          ( [ HH.option
-                                                [ HP.selected (equipedWeapon.weaponState.ownedOb == Nothing) ]
-                                                [ HH.text "N/A" ]
-                                            ]
-                                              <>
-                                                ( NAR.toArray equipedWeapon.weaponData.distinctObs <#> \obRange ->
-                                                    HH.option
-                                                      [ HP.selected (equipedWeapon.weaponState.ownedOb == Just obRange) ]
-                                                      [ HH.text $ display obRange ]
-                                                )
-                                          )
+                                      [ HH.img [ HP.src (display equipedWeapon.weaponData.weapon.image), classes' "image is-32x32" ]
+                                      ]
+                                  , HH.div
+                                      [ classes' "column is-narrow is-clickable"
+                                      , HE.onClick $ \_ -> SelectedWeaponForModal equipedWeapon.weaponData.weapon
+                                      ]
+                                      [ HH.span_
+                                          [ HH.text (display equipedWeapon.weaponData.weapon.name)
+                                          ]
+                                      ]
+                                  , HH.div [ classes' "column is-narrow" ]
+                                      [ HH.div [ classes' "select" ]
+                                          [ HH.select
+                                              [ HE.onSelectedIndexChange (SetOwnedOb equipedWeapon.weaponData.weapon.name) ]
+                                              ( [ HH.option
+                                                    [ HP.selected (equipedWeapon.weaponState.ownedOb == Nothing) ]
+                                                    [ HH.text "N/A" ]
+                                                ]
+                                                  <>
+                                                    ( NAR.toArray equipedWeapon.weaponData.distinctObs <#> \obRange ->
+                                                        HH.option
+                                                          [ HP.selected (equipedWeapon.weaponState.ownedOb == Just obRange) ]
+                                                          [ HH.text $ display obRange ]
+                                                    )
+                                              )
+                                          ]
                                       ]
                                   ]
                               ]
-                          ]
-                    )
+                        )
+        ]
     , case state.weaponForModal of
         Nothing -> HH.div_ []
         Just weaponForModal -> HH.slot _weaponModal unit WeaponModal.component weaponForModal HandleWeaponModal

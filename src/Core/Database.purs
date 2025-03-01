@@ -350,19 +350,22 @@ groupsForWeapon weapon = do
     ]
   where
   getCureAllAbility :: LazyList.List GroupEntry
-  getCureAllAbility =
-    if weapon.cureAllAbility then LazyList.singleton
-      { effectType: FilterHeal
-      , groupedWeapon:
-          { weaponName: weapon.name
-          , ranges: Just
-              [ { range: All
-                , allPotencies: Nothing
-                }
-              ]
-          }
-      }
-    else LazyList.nil
+  getCureAllAbility = do
+    let sAbilities = [ weapon.sAbilities.slot1, weapon.sAbilities.slot2, weapon.sAbilities.slot3 ]
+    if Arr.any Parser.hasCureAllSAbility sAbilities then
+      LazyList.singleton
+        { effectType: FilterHeal
+        , groupedWeapon:
+            { weaponName: weapon.name
+            , ranges: Just
+                [ { range: All
+                  , allPotencies: Nothing
+                  }
+                ]
+            }
+        }
+    else
+      LazyList.nil
 
   getCommandAbilityDiamondSigil :: LazyList.List GroupEntry
   getCommandAbilityDiamondSigil =

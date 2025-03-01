@@ -117,7 +117,6 @@
       },
       "name": "Bahamut Rod",
       "image": "https://i.imgur.com/PwE8DRP.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 5
     },
@@ -238,7 +237,6 @@
       },
       "name": "Chocobo Staff",
       "image": "https://i.imgur.com/VnGBuQc.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -415,7 +413,6 @@
       },
       "name": "Citric Wand",
       "image": "https://i.imgur.com/RRNYXRv.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 3
     },
@@ -564,7 +561,6 @@
       },
       "name": "Crimson Staff",
       "image": "https://i.imgur.com/lrkCvGM.png",
-      "cureAllAbility": true,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -657,7 +653,6 @@
       },
       "name": "Dawn's Prayers",
       "image": "https://i.imgur.com/4veNpVc.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -690,7 +685,6 @@
       },
       "name": "Egg Staff",
       "image": "https://i.imgur.com/s0JnKb6.png",
-      "cureAllAbility": true,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -755,7 +749,6 @@
       },
       "name": "Fairy Tale",
       "image": "https://i.imgur.com/nJsTyFE.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 5
     },
@@ -904,7 +897,6 @@
       },
       "name": "Floral Wand",
       "image": "https://i.imgur.com/hb1pbly.png",
-      "cureAllAbility": true,
       "character": "Aerith",
       "atbCost": 3
     },
@@ -997,7 +989,6 @@
       },
       "name": "Full Metal Staff",
       "image": "https://i.imgur.com/dgJmAOf.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -1118,7 +1109,6 @@
       },
       "name": "Gambanteinn",
       "image": "https://i.imgur.com/Oc0JlfT.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 5
     },
@@ -1239,7 +1229,6 @@
       },
       "name": "Garnet's Rod",
       "image": "https://i.imgur.com/mKrctxu.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 3
     },
@@ -1360,7 +1349,6 @@
       },
       "name": "Guard Stick",
       "image": "https://i.imgur.com/FvnSdtA.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -1393,7 +1381,6 @@
       },
       "name": "Hell House Rod",
       "image": "https://i.imgur.com/7LU2DZn.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -1570,7 +1557,6 @@
       },
       "name": "Kamura Wand",
       "image": "https://i.imgur.com/2NPIYl2.png",
-      "cureAllAbility": true,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -1747,7 +1733,6 @@
       },
       "name": "Mythril Rod",
       "image": "https://i.imgur.com/z4Iu31D.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 5
     },
@@ -1780,7 +1765,6 @@
       },
       "name": "Prism Rod",
       "image": "https://i.imgur.com/cWiyxx6.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -1813,7 +1797,6 @@
       },
       "name": "Radrod",
       "image": "https://i.imgur.com/lfhsoUk.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -1846,7 +1829,6 @@
       },
       "name": "Ramuh's Staff",
       "image": "https://i.imgur.com/1fBxYdD.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -1879,7 +1861,6 @@
       },
       "name": "Silver Staff",
       "image": "https://i.imgur.com/romA9x0.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -1972,7 +1953,6 @@
       },
       "name": "Snowflake",
       "image": "https://i.imgur.com/V46rJMJ.png",
-      "cureAllAbility": true,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -2005,7 +1985,6 @@
       },
       "name": "Striking Staff",
       "image": "https://i.imgur.com/Cs9meyf.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -2154,7 +2133,6 @@
       },
       "name": "Sun Umbrella",
       "image": "https://i.imgur.com/IiqjKSW.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -2359,7 +2337,6 @@
       },
       "name": "Terra's Rod",
       "image": "https://i.imgur.com/fxhB2K0.png",
-      "cureAllAbility": true,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -2392,7 +2369,6 @@
       },
       "name": "Titan Rod",
       "image": "https://i.imgur.com/6uSGgZG.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -2457,7 +2433,6 @@
       },
       "name": "Umbrella",
       "image": "https://i.imgur.com/a59TGEP.png",
-      "cureAllAbility": true,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -2490,7 +2465,6 @@
       },
       "name": "Wizard Staff",
       "image": "https://i.imgur.com/h9I7kgL.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -2523,7 +2497,6 @@
       },
       "name": "Wizer Staff",
       "image": "https://i.imgur.com/IyCGzx7.png",
-      "cureAllAbility": false,
       "character": "Aerith",
       "atbCost": 4
     },
@@ -2556,7 +2529,6 @@
       },
       "name": "CC Alloy Greatsword",
       "image": "https://i.imgur.com/Sh9SnlM.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -2589,7 +2561,6 @@
       },
       "name": "Cyan's Blade",
       "image": "https://i.imgur.com/N1Crbpt.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -2750,7 +2721,6 @@
       },
       "name": "Gargantuan Monolith",
       "image": "https://i.imgur.com/stkUxAN.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -2887,7 +2857,6 @@
       },
       "name": "Greatsword (A)",
       "image": "https://i.imgur.com/MiXRZJF.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -2920,7 +2889,6 @@
       },
       "name": "Innocent Warrior",
       "image": "https://i.imgur.com/SXlvP8a.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -2997,7 +2965,6 @@
       },
       "name": "Orchard Shovel",
       "image": "https://i.imgur.com/IsYueMs.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -3030,7 +2997,6 @@
       },
       "name": "Sequoiadendron",
       "image": "https://i.imgur.com/JuhsNKy.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -3167,7 +3133,6 @@
       },
       "name": "Shinra Greatsword: Model I",
       "image": "https://i.imgur.com/zVevrus.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -3344,7 +3309,6 @@
       },
       "name": "Stalwart Integrity",
       "image": "https://i.imgur.com/aTBihgf.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -3377,7 +3341,6 @@
       },
       "name": "Titan Blade",
       "image": "https://i.imgur.com/rg8sE5Z.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -3498,7 +3461,6 @@
       },
       "name": "Tranquility",
       "image": "https://i.imgur.com/1hVyEux.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -3591,7 +3553,6 @@
       },
       "name": "Turks' Blade",
       "image": "https://i.imgur.com/itsWXpC.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -3668,7 +3629,6 @@
       },
       "name": "Type-90 Longsword",
       "image": "https://i.imgur.com/ycn3hcG.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -3817,7 +3777,6 @@
       },
       "name": "Type-91 Two-Hander",
       "image": "https://i.imgur.com/a4OVk2y.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilDiamond",
       "character": "Angeal",
       "atbCost": 3
@@ -3955,7 +3914,6 @@
       },
       "name": "Volcanic Heat",
       "image": "https://i.imgur.com/9ry5S6c.png",
-      "cureAllAbility": false,
       "character": "Angeal",
       "atbCost": 4
     },
@@ -4076,7 +4034,6 @@
       },
       "name": "Assault Gun",
       "image": "https://i.imgur.com/XtDYCBu.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -4225,7 +4182,6 @@
       },
       "name": "Electrocannon",
       "image": "https://i.imgur.com/5dI7P6s.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -4258,7 +4214,6 @@
       },
       "name": "Enemy Launcher",
       "image": "https://i.imgur.com/G9wrZOs.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -4435,7 +4390,6 @@
       },
       "name": "Escutcheon Cannon",
       "image": "https://i.imgur.com/oTeOQi4.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -4612,7 +4566,6 @@
       },
       "name": "Fafnir Rifle",
       "image": "https://i.imgur.com/mELRgLv.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -4645,7 +4598,6 @@
       },
       "name": "Flame Projector",
       "image": "https://i.imgur.com/IF4k3T3.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -4678,7 +4630,6 @@
       },
       "name": "Gatling Gun",
       "image": "https://i.imgur.com/NjyMAt3.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilX",
       "character": "Barret",
       "atbCost": 4
@@ -4712,7 +4663,6 @@
       },
       "name": "Heavy Hauser",
       "image": "https://i.imgur.com/y4gukMY.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -4833,7 +4783,6 @@
       },
       "name": "Heavy Vulcan",
       "image": "https://i.imgur.com/Cj5tgIB.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -4926,7 +4875,6 @@
       },
       "name": "Hell House Cannon",
       "image": "https://i.imgur.com/18Fxv40.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -5047,7 +4995,6 @@
       },
       "name": "Lefko Kypseli",
       "image": "https://i.imgur.com/gP1DjgQ.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -5080,7 +5027,6 @@
       },
       "name": "Leviathan Buster",
       "image": "https://i.imgur.com/U0Cs2yS.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -5113,7 +5059,6 @@
       },
       "name": "Max Ray",
       "image": "https://i.imgur.com/qZHroeX.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilDiamond",
       "character": "Barret",
       "atbCost": 4
@@ -5235,7 +5180,6 @@
       },
       "name": "Microlaser",
       "image": "https://i.imgur.com/cuirb2K.png",
-      "cureAllAbility": true,
       "character": "Barret",
       "atbCost": 4
     },
@@ -5356,7 +5300,6 @@
       },
       "name": "Rhad Cannon",
       "image": "https://i.imgur.com/eI1Uobd.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -5389,7 +5332,6 @@
       },
       "name": "Rocket Punch",
       "image": "https://i.imgur.com/bxsEIZi.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -5538,7 +5480,6 @@
       },
       "name": "Sharkslayer",
       "image": "https://i.imgur.com/sATlFNf.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilDiamond",
       "character": "Barret",
       "atbCost": 3
@@ -5572,7 +5513,6 @@
       },
       "name": "Shiva Cannon",
       "image": "https://i.imgur.com/VZJhbL2.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -5605,7 +5545,6 @@
       },
       "name": "Siege Cannon",
       "image": "https://i.imgur.com/UmT7WRn.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -5698,7 +5637,6 @@
       },
       "name": "Solid Bazooka",
       "image": "https://i.imgur.com/6GkeuAL.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -5791,7 +5729,6 @@
       },
       "name": "W Machine",
       "image": "https://i.imgur.com/AizppYb.png",
-      "cureAllAbility": false,
       "character": "Barret",
       "atbCost": 4
     },
@@ -5824,7 +5761,6 @@
       },
       "name": "Alba Megaphone",
       "image": "https://i.imgur.com/vbKCddd.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -5973,7 +5909,6 @@
       },
       "name": "Battle Trumpet",
       "image": "https://i.imgur.com/78BTB37.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -6006,7 +5941,6 @@
       },
       "name": "Blue Megaphone",
       "image": "https://i.imgur.com/NS3Q40d.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -6127,7 +6061,6 @@
       },
       "name": "Catsmegaphone",
       "image": "https://i.imgur.com/PkXPPBa.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -6248,7 +6181,6 @@
       },
       "name": "Crystal Megaphone",
       "image": "https://i.imgur.com/bOIcDlt.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -6281,7 +6213,6 @@
       },
       "name": "Fireworks Megaphone",
       "image": "https://i.imgur.com/Odub6d2.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -6402,7 +6333,6 @@
       },
       "name": "Flower Vase",
       "image": "https://i.imgur.com/5fqYQni.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -6551,7 +6481,6 @@
       },
       "name": "Gold Megaphone",
       "image": "https://i.imgur.com/Qk3hUXI.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -6644,7 +6573,6 @@
       },
       "name": "Green Megaphone",
       "image": "https://i.imgur.com/CUPVJZP.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -6677,7 +6605,6 @@
       },
       "name": "Humus Megaphone",
       "image": "https://i.imgur.com/ivd8Dch.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -6826,7 +6753,6 @@
       },
       "name": "Icebolt Megaphone",
       "image": "https://i.imgur.com/huNBx6R.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -6947,7 +6873,6 @@
       },
       "name": "Marching Horn",
       "image": "https://i.imgur.com/468qKXs.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -7124,7 +7049,6 @@
       },
       "name": "Quina Megaphone",
       "image": "https://i.imgur.com/pKTpVy2.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -7157,7 +7081,6 @@
       },
       "name": "Red Megaphone",
       "image": "https://i.imgur.com/jht0G24.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -7306,7 +7229,6 @@
       },
       "name": "Silver Megaphone",
       "image": "https://i.imgur.com/eOWdFWI.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -7399,7 +7321,6 @@
       },
       "name": "Stilva Megaphone",
       "image": "https://i.imgur.com/qcPKhkV.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -7576,7 +7497,6 @@
       },
       "name": "Trumpet Shell",
       "image": "https://i.imgur.com/g7KyOgg.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -7725,7 +7645,6 @@
       },
       "name": "Witch's Broom",
       "image": "https://i.imgur.com/09iGtqt.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 3
     },
@@ -7758,7 +7677,6 @@
       },
       "name": "Yellow Megaphone",
       "image": "https://i.imgur.com/ORGI6Xu.png",
-      "cureAllAbility": false,
       "character": "Cait Sith",
       "atbCost": 5
     },
@@ -7835,7 +7753,6 @@
       },
       "name": "Flayer",
       "image": "https://i.imgur.com/lV7oorM.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilDiamond",
       "character": "Cid",
       "atbCost": 3
@@ -7913,7 +7830,6 @@
       },
       "name": "Mop",
       "image": "https://i.imgur.com/ri1NRRr.png",
-      "cureAllAbility": false,
       "character": "Cid",
       "atbCost": 4
     },
@@ -7946,7 +7862,6 @@
       },
       "name": "Partisan",
       "image": "https://i.imgur.com/dZ6EmxF.png",
-      "cureAllAbility": false,
       "character": "Cid",
       "atbCost": 4
     },
@@ -8095,7 +8010,6 @@
       },
       "name": "Pole Axe",
       "image": "https://i.imgur.com/Wf6lAxp.png",
-      "cureAllAbility": false,
       "character": "Cid",
       "atbCost": 4
     },
@@ -8128,7 +8042,6 @@
       },
       "name": "Radiant Lance",
       "image": "https://i.imgur.com/zuVyvjz.png",
-      "cureAllAbility": false,
       "character": "Cid",
       "atbCost": 4
     },
@@ -8261,7 +8174,6 @@
       },
       "name": "Rocket Lance",
       "image": "https://i.imgur.com/ee06twq.png",
-      "cureAllAbility": false,
       "character": "Cid",
       "atbCost": 4
     },
@@ -8494,7 +8406,6 @@
       },
       "name": "Scimitar",
       "image": "https://i.imgur.com/FtmNLjJ.png",
-      "cureAllAbility": false,
       "character": "Cid",
       "atbCost": 4
     },
@@ -8587,7 +8498,6 @@
       },
       "name": "Slash Lance",
       "image": "https://i.imgur.com/aZeNoOu.png",
-      "cureAllAbility": false,
       "character": "Cid",
       "atbCost": 4
     },
@@ -8664,7 +8574,6 @@
       },
       "name": "Spear",
       "image": "https://i.imgur.com/svvGQA8.png",
-      "cureAllAbility": false,
       "character": "Cid",
       "atbCost": 4
     },
@@ -8741,7 +8650,6 @@
       },
       "name": "Trident",
       "image": "https://i.imgur.com/ph81nYG.png",
-      "cureAllAbility": false,
       "character": "Cid",
       "atbCost": 4
     },
@@ -8918,7 +8826,6 @@
       },
       "name": "Viper Halberd",
       "image": "https://i.imgur.com/738XBiz.png",
-      "cureAllAbility": false,
       "character": "Cid",
       "atbCost": 4
     },
@@ -8951,7 +8858,6 @@
       },
       "name": "Apocalypse",
       "image": "https://i.imgur.com/WQAfKis.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -8984,7 +8890,6 @@
       },
       "name": "Bahamut Greatsword",
       "image": "https://i.imgur.com/W5kIvcT.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -9105,7 +9010,6 @@
       },
       "name": "Bandaged Sword",
       "image": "https://i.imgur.com/q6EUVF8.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -9138,7 +9042,6 @@
       },
       "name": "Burning Oar",
       "image": "https://i.imgur.com/bweimfq.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -9171,7 +9074,6 @@
       },
       "name": "Buster Sword",
       "image": "https://i.imgur.com/1zBjp27.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilX",
       "character": "Cloud",
       "atbCost": 4
@@ -9293,7 +9195,6 @@
       },
       "name": "Butterfly Edge",
       "image": "https://i.imgur.com/060ZcsH.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -9386,7 +9287,6 @@
       },
       "name": "Chocobo Paddle",
       "image": "https://i.imgur.com/5kBA2XC.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -9451,7 +9351,6 @@
       },
       "name": "Crystal Sword",
       "image": "https://i.imgur.com/2fsWJGz.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 5
     },
@@ -9484,7 +9383,6 @@
       },
       "name": "Enhance Sword",
       "image": "https://i.imgur.com/P5J6gmQ.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -9633,7 +9531,6 @@
       },
       "name": "Glavenus Sword",
       "image": "https://i.imgur.com/gPYQACk.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -9726,7 +9623,6 @@
       },
       "name": "Hardedge",
       "image": "https://i.imgur.com/hSFThUE.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -9759,7 +9655,6 @@
       },
       "name": "Holiday Blade",
       "image": "https://i.imgur.com/43A3frS.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -9792,7 +9687,6 @@
       },
       "name": "Holiday Cheer",
       "image": "https://i.imgur.com/zLI8UXb.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -9825,7 +9719,6 @@
       },
       "name": "Igneous Saber",
       "image": "https://i.imgur.com/wfaMObs.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -9918,7 +9811,6 @@
       },
       "name": "Iron Blade",
       "image": "https://i.imgur.com/49SabL7.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10123,7 +10015,6 @@
       },
       "name": "Locke's Sword",
       "image": "https://i.imgur.com/YjaEcyZ.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10156,7 +10047,6 @@
       },
       "name": "Maritime Sword",
       "image": "https://i.imgur.com/XNvISTm.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10189,7 +10079,6 @@
       },
       "name": "Murasame",
       "image": "https://i.imgur.com/laQXQdJ.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10338,7 +10227,6 @@
       },
       "name": "Mystic Sword",
       "image": "https://i.imgur.com/FLut8JI.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 3
     },
@@ -10371,7 +10259,6 @@
       },
       "name": "Mythril Saber",
       "image": "https://i.imgur.com/jXHISFD.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10404,7 +10291,6 @@
       },
       "name": "Nail Bat",
       "image": "https://i.imgur.com/LXlF0Ik.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 5
     },
@@ -10437,7 +10323,6 @@
       },
       "name": "Organics",
       "image": "https://i.imgur.com/Gzl30uN.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10470,7 +10355,6 @@
       },
       "name": "Rune Blade",
       "image": "https://i.imgur.com/lub5ACu.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10503,7 +10387,6 @@
       },
       "name": "Shiva's Blade",
       "image": "https://i.imgur.com/q8y7bJX.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10536,7 +10419,6 @@
       },
       "name": "Skysplitter",
       "image": "https://i.imgur.com/vQ2T5hD.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10629,7 +10511,6 @@
       },
       "name": "Sleek Saber",
       "image": "https://i.imgur.com/zgvMIZk.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10662,7 +10543,6 @@
       },
       "name": "Stream Saber",
       "image": "https://i.imgur.com/MAajVZE.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10695,7 +10575,6 @@
       },
       "name": "Zidane's Sword",
       "image": "https://i.imgur.com/v91vHwP.png",
-      "cureAllAbility": false,
       "character": "Cloud",
       "atbCost": 4
     },
@@ -10728,7 +10607,6 @@
       },
       "name": "Apology in Hell",
       "image": "https://i.imgur.com/iidwch9.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -10821,7 +10699,6 @@
       },
       "name": "Best Wishes",
       "image": "https://i.imgur.com/WCsMCV5.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -10898,7 +10775,6 @@
       },
       "name": "Blade of Ruin",
       "image": "https://i.imgur.com/TQH4K9w.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -10931,7 +10807,6 @@
       },
       "name": "Crewkicker",
       "image": "https://i.imgur.com/wbiqVX7.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11108,7 +10983,6 @@
       },
       "name": "Hardcore Squad",
       "image": "https://i.imgur.com/yjamnpN.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 5
     },
@@ -11141,7 +11015,6 @@
       },
       "name": "Inferno Grave",
       "image": "https://i.imgur.com/yEB811N.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11174,7 +11047,6 @@
       },
       "name": "Jiggy Fam",
       "image": "https://i.imgur.com/9MCzImi.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11207,7 +11079,6 @@
       },
       "name": "Personal Style",
       "image": "https://i.imgur.com/u71Ja73.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11300,7 +11171,6 @@
       },
       "name": "Piece of Cake",
       "image": "https://i.imgur.com/PoVcwYL.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11421,7 +11291,6 @@
       },
       "name": "Pumpkin Lamppost",
       "image": "https://i.imgur.com/1oO9ok3.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11454,7 +11323,6 @@
       },
       "name": "Radglaive",
       "image": "https://i.imgur.com/kGdrXxZ.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11487,7 +11355,6 @@
       },
       "name": "Rest in Peace",
       "image": "https://i.imgur.com/EZuy4dG.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilDiamond",
       "character": "Glenn",
       "atbCost": 4
@@ -11521,7 +11388,6 @@
       },
       "name": "Shockbuster",
       "image": "https://i.imgur.com/tCQQz8x.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11554,7 +11420,6 @@
       },
       "name": "Silver Sol Buster",
       "image": "https://i.imgur.com/8C2G7Tz.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11703,7 +11568,6 @@
       },
       "name": "Slay the Day",
       "image": "https://i.imgur.com/myl3ARM.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 3
     },
@@ -11736,7 +11600,6 @@
       },
       "name": "Squeaky Hammer",
       "image": "https://i.imgur.com/jchyfTy.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11829,7 +11692,6 @@
       },
       "name": "Steiner's Blade",
       "image": "https://i.imgur.com/wlGu76D.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11922,7 +11784,6 @@
       },
       "name": "Stilva Glaive",
       "image": "https://i.imgur.com/BKqFc28.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11955,7 +11816,6 @@
       },
       "name": "Stream Slasher",
       "image": "https://i.imgur.com/3uA1CBQ.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -11988,7 +11848,6 @@
       },
       "name": "Thousand Waves",
       "image": "https://i.imgur.com/IQ4YJvd.png",
-      "cureAllAbility": false,
       "character": "Glenn",
       "atbCost": 4
     },
@@ -12021,7 +11880,6 @@
       },
       "name": "Ultimatic",
       "image": "https://i.imgur.com/CsG82Nk.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilO",
       "character": "Glenn",
       "atbCost": 4
@@ -12115,7 +11973,6 @@
       },
       "name": "Bald Eagle",
       "image": "https://i.imgur.com/l93Bu2I.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -12148,7 +12005,6 @@
       },
       "name": "Barn Swallow",
       "image": "https://i.imgur.com/JDzyVgs.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilDiamond",
       "character": "Lucia",
       "atbCost": 4
@@ -12182,7 +12038,6 @@
       },
       "name": "Black Rifle",
       "image": "https://i.imgur.com/pMnttBU.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -12215,7 +12070,6 @@
       },
       "name": "Eligor Rifle",
       "image": "https://i.imgur.com/jdjC0Aj.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -12308,7 +12162,6 @@
       },
       "name": "Featherscatter",
       "image": "https://i.imgur.com/h0Sp8XU.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -12341,7 +12194,6 @@
       },
       "name": "Holiday Revolver",
       "image": "https://i.imgur.com/mdWJFdk.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -12434,7 +12286,6 @@
       },
       "name": "Mad Minute",
       "image": "https://i.imgur.com/45eZllP.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -12583,7 +12434,6 @@
       },
       "name": "Marine Shooter",
       "image": "https://i.imgur.com/8MGti27.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -12732,7 +12582,6 @@
       },
       "name": "Nightjar",
       "image": "https://i.imgur.com/e1XnLLr.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilDiamond",
       "character": "Lucia",
       "atbCost": 3
@@ -12766,7 +12615,6 @@
       },
       "name": "Pulse Gun",
       "image": "https://i.imgur.com/ltugoDY.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -12887,7 +12735,6 @@
       },
       "name": "Pumpkin Blaster",
       "image": "https://i.imgur.com/4RMoz6q.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -12920,7 +12767,6 @@
       },
       "name": "Rifle of Levin",
       "image": "https://i.imgur.com/1ILq0FZ.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -13013,7 +12859,6 @@
       },
       "name": "Rose Musket",
       "image": "https://i.imgur.com/woBWM1e.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -13046,7 +12891,6 @@
       },
       "name": "Rubber Band Gun",
       "image": "https://i.imgur.com/Tl40n2s.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -13079,7 +12923,6 @@
       },
       "name": "Serpent Eater",
       "image": "https://i.imgur.com/om4IXZn.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -13200,7 +13043,6 @@
       },
       "name": "SSR1976",
       "image": "https://i.imgur.com/qNaKmgs.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -13293,7 +13135,6 @@
       },
       "name": "Thunderbird",
       "image": "https://i.imgur.com/ayEdUEh.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -13358,7 +13199,6 @@
       },
       "name": "Tranquilizer Gun",
       "image": "https://i.imgur.com/r5pEgr6.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 5
     },
@@ -13451,7 +13291,6 @@
       },
       "name": "Turks' Rifle",
       "image": "https://i.imgur.com/5vf606m.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -13484,7 +13323,6 @@
       },
       "name": "V39",
       "image": "https://i.imgur.com/oyOBHuB.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -13517,7 +13355,6 @@
       },
       "name": "Vivi's Magical Gun",
       "image": "https://i.imgur.com/HgNTEr4.png",
-      "cureAllAbility": false,
       "character": "Lucia",
       "atbCost": 4
     },
@@ -13550,7 +13387,6 @@
       },
       "name": "Absolute Royal",
       "image": "https://i.imgur.com/hYs6eLK.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 4
     },
@@ -13583,7 +13419,6 @@
       },
       "name": "Bahamut Rapier",
       "image": "https://i.imgur.com/4JEGGiR.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilDiamond",
       "character": "Matt",
       "atbCost": 4
@@ -13705,7 +13540,6 @@
       },
       "name": "Bramble Spine",
       "image": "https://i.imgur.com/UVJUm4O.png",
-      "cureAllAbility": true,
       "character": "Matt",
       "atbCost": 4
     },
@@ -13738,7 +13572,6 @@
       },
       "name": "Broadsword: Axis",
       "image": "https://i.imgur.com/G8dsW0W.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 4
     },
@@ -13771,7 +13604,6 @@
       },
       "name": "Candle Rapier",
       "image": "https://i.imgur.com/XFCFAlw.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 4
     },
@@ -13892,7 +13724,6 @@
       },
       "name": "Centipede",
       "image": "https://i.imgur.com/WraMWT9.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 5
     },
@@ -14013,7 +13844,6 @@
       },
       "name": "Core Defender",
       "image": "https://i.imgur.com/QSMCChb.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 4
     },
@@ -14078,7 +13908,6 @@
       },
       "name": "Espee Rapiere Next-G",
       "image": "https://i.imgur.com/eOfYItv.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 5
     },
@@ -14111,7 +13940,6 @@
       },
       "name": "Firefish",
       "image": "https://i.imgur.com/f0BYQek.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 4
     },
@@ -14144,7 +13972,6 @@
       },
       "name": "Foam Sword",
       "image": "https://i.imgur.com/3nwQ0v3.png",
-      "cureAllAbility": true,
       "character": "Matt",
       "atbCost": 4
     },
@@ -14265,7 +14092,6 @@
       },
       "name": "Giant Fork",
       "image": "https://i.imgur.com/SrRxuwL.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 4
     },
@@ -14298,7 +14124,6 @@
       },
       "name": "Holiday Cane",
       "image": "https://i.imgur.com/a5PJ4HG.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 4
     },
@@ -14331,7 +14156,6 @@
       },
       "name": "Humus Rapier",
       "image": "https://i.imgur.com/JP62btf.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 4
     },
@@ -14364,7 +14188,6 @@
       },
       "name": "Killer Hornet",
       "image": "https://i.imgur.com/LANRdoB.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilDiamond",
       "character": "Matt",
       "atbCost": 4
@@ -14542,7 +14365,6 @@
       },
       "name": "Luminary Sword",
       "image": "https://i.imgur.com/mgK3dMx.png",
-      "cureAllAbility": true,
       "character": "Matt",
       "atbCost": 4
     },
@@ -14691,7 +14513,6 @@
       },
       "name": "Nautilus Spiral",
       "image": "https://i.imgur.com/dBCxFk0.png",
-      "cureAllAbility": true,
       "commandAbilitySigil": "SigilDiamond",
       "character": "Matt",
       "atbCost": 3
@@ -14725,7 +14546,6 @@
       },
       "name": "Orthodox Raven",
       "image": "https://i.imgur.com/vJZGpyk.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 4
     },
@@ -14790,7 +14610,6 @@
       },
       "name": "Prime Number",
       "image": "https://i.imgur.com/fwpGXHj.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 5
     },
@@ -14883,7 +14702,6 @@
       },
       "name": "Slick Beetle",
       "image": "https://i.imgur.com/UV6bpGm.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 4
     },
@@ -14976,7 +14794,6 @@
       },
       "name": "Stingray",
       "image": "https://i.imgur.com/2oy5Dya.png",
-      "cureAllAbility": false,
       "character": "Matt",
       "atbCost": 4
     },
@@ -15153,7 +14970,6 @@
       },
       "name": "Syringe Rapier",
       "image": "https://i.imgur.com/81twEiq.png",
-      "cureAllAbility": true,
       "character": "Matt",
       "atbCost": 4
     },
@@ -15186,7 +15002,6 @@
       },
       "name": "Amethyst Collar",
       "image": "https://i.imgur.com/QQ59aag.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -15363,7 +15178,6 @@
       },
       "name": "Brilliant Collar",
       "image": "https://i.imgur.com/eUjI7gT.png",
-      "cureAllAbility": true,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -15456,7 +15270,6 @@
       },
       "name": "Canyon Collar",
       "image": "https://i.imgur.com/nnGh5ol.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -15489,7 +15302,6 @@
       },
       "name": "Egg Collar",
       "image": "https://i.imgur.com/nzbOfwe.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -15582,7 +15394,6 @@
       },
       "name": "Flame Dragon's Band",
       "image": "https://i.imgur.com/TJkFOqB.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -15675,7 +15486,6 @@
       },
       "name": "Gold Collar",
       "image": "https://i.imgur.com/tBfAjak.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -15708,7 +15518,6 @@
       },
       "name": "Headphones",
       "image": "https://i.imgur.com/x8iNY0F.png",
-      "cureAllAbility": true,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -15801,7 +15610,6 @@
       },
       "name": "Hell House Collar",
       "image": "https://i.imgur.com/E1hBOMp.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -15894,7 +15702,6 @@
       },
       "name": "Iron Collar",
       "image": "https://i.imgur.com/bxMBkc8.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -16043,7 +15850,6 @@
       },
       "name": "Ivy Collar",
       "image": "https://i.imgur.com/kFE1UjR.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 3
     },
@@ -16136,7 +15942,6 @@
       },
       "name": "Junk Collar",
       "image": "https://i.imgur.com/jtl3zFu.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -16169,7 +15974,6 @@
       },
       "name": "Kefka's Collar",
       "image": "https://i.imgur.com/p81oDge.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -16202,7 +16006,6 @@
       },
       "name": "Leather Collar",
       "image": "https://i.imgur.com/Yt5SPhW.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -16235,7 +16038,6 @@
       },
       "name": "Noble Collar",
       "image": "https://i.imgur.com/cMljjrY.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -16356,7 +16158,6 @@
       },
       "name": "Pilot's Collar",
       "image": "https://i.imgur.com/qWrxTxf.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 5
     },
@@ -16421,7 +16222,6 @@
       },
       "name": "Platinum Collar",
       "image": "https://i.imgur.com/sGfcl4n.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 5
     },
@@ -16454,7 +16254,6 @@
       },
       "name": "Rage Collar",
       "image": "https://i.imgur.com/f5RHR2y.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -16519,7 +16318,6 @@
       },
       "name": "Rubber Collar",
       "image": "https://i.imgur.com/xqqaUtp.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 5
     },
@@ -16612,7 +16410,6 @@
       },
       "name": "Seaside Collar",
       "image": "https://i.imgur.com/HlMF5oE.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -16761,7 +16558,6 @@
       },
       "name": "Silver Collar",
       "image": "https://i.imgur.com/bkjgmOC.png",
-      "cureAllAbility": true,
       "commandAbilitySigil": "SigilDiamond",
       "character": "Red XIII",
       "atbCost": 3
@@ -16883,7 +16679,6 @@
       },
       "name": "Sleek Collar",
       "image": "https://i.imgur.com/4P8k4jv.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -16976,7 +16771,6 @@
       },
       "name": "Steward Collar",
       "image": "https://i.imgur.com/BiwpWT7.png",
-      "cureAllAbility": false,
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -17097,7 +16891,6 @@
       },
       "name": "Aonibi",
       "image": "https://i.imgur.com/PWdf3gl.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -17130,7 +16923,6 @@
       },
       "name": "Ashura",
       "image": "https://i.imgur.com/9UiExw3.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -17223,7 +17015,6 @@
       },
       "name": "Blue Bramble",
       "image": "https://i.imgur.com/8hhEgaq.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -17256,7 +17047,6 @@
       },
       "name": "CC Alloy Sword",
       "image": "https://i.imgur.com/KJpErRv.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -17289,7 +17079,6 @@
       },
       "name": "Dark Heavens",
       "image": "https://i.imgur.com/4ByzV53.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -17322,7 +17111,6 @@
       },
       "name": "Edgar's Coiled Blade",
       "image": "https://i.imgur.com/fe2I2Da.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -17355,7 +17143,6 @@
       },
       "name": "Edged Wings",
       "image": "https://i.imgur.com/z7b5boW.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -17448,7 +17235,6 @@
       },
       "name": "Flame Dragon Blade",
       "image": "https://i.imgur.com/zlQkaRb.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -17481,7 +17267,6 @@
       },
       "name": "Glaireid",
       "image": "https://i.imgur.com/ptfHkvb.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -17574,7 +17359,6 @@
       },
       "name": "Humus Saber",
       "image": "https://i.imgur.com/mluMtNz.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -17723,7 +17507,6 @@
       },
       "name": "Kuja's Spirit Blade",
       "image": "https://i.imgur.com/zoH4VZ0.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -17844,7 +17627,6 @@
       },
       "name": "Mythril Type-0 Katana",
       "image": "https://i.imgur.com/V50gKMe.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -17937,7 +17719,6 @@
       },
       "name": "Nameless",
       "image": "https://i.imgur.com/dETgVlH.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 2
     },
@@ -18030,7 +17811,6 @@
       },
       "name": "Northern Lights",
       "image": "https://i.imgur.com/eHkpQxM.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -18063,7 +17843,6 @@
       },
       "name": "Protector's Blade",
       "image": "https://i.imgur.com/MxChzlJ.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -18096,7 +17875,6 @@
       },
       "name": "Prototype Crimson Blade",
       "image": "https://i.imgur.com/oW6cQ0u.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -18245,7 +18023,6 @@
       },
       "name": "Radiant Edge",
       "image": "https://i.imgur.com/5abDddj.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -18278,7 +18055,6 @@
       },
       "name": "Shinra Blade: Model I",
       "image": "https://i.imgur.com/NlByyYt.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -18427,7 +18203,6 @@
       },
       "name": "Shinra Military Sword",
       "image": "https://i.imgur.com/LsxjpAN.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 3
     },
@@ -18520,7 +18295,6 @@
       },
       "name": "Shinra Wyvern Blade",
       "image": "https://i.imgur.com/heINOEX.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -18613,7 +18387,6 @@
       },
       "name": "Tempest",
       "image": "https://i.imgur.com/Lxuuaqm.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -18734,7 +18507,6 @@
       },
       "name": "Torn Wing",
       "image": "https://i.imgur.com/tSanO8u.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -18767,7 +18539,6 @@
       },
       "name": "Wintercrest Blade",
       "image": "https://i.imgur.com/Znxg48H.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -18860,7 +18631,6 @@
       },
       "name": "Withering Blaze",
       "image": "https://i.imgur.com/cVMolrU.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -18893,7 +18663,6 @@
       },
       "name": "World Tree Bough",
       "image": "https://i.imgur.com/j1NENTA.png",
-      "cureAllAbility": false,
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -19042,7 +18811,6 @@
       },
       "name": "Amarant's Claws",
       "image": "https://i.imgur.com/aUyNfvG.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -19135,7 +18903,6 @@
       },
       "name": "Bahamut Fangs",
       "image": "https://i.imgur.com/4jaWCYW.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -19168,7 +18935,6 @@
       },
       "name": "Bahamut Knuckles",
       "image": "https://i.imgur.com/vZVNK32.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilDiamond",
       "character": "Tifa",
       "atbCost": 4
@@ -19202,7 +18968,6 @@
       },
       "name": "Black Cat's Paws",
       "image": "https://i.imgur.com/2UHXAFA.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -19283,7 +19048,6 @@
       },
       "name": "Blue Daffodil Gloves",
       "image": "https://i.imgur.com/PC5XXnQ.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -19376,7 +19140,6 @@
       },
       "name": "Bunny Gloves",
       "image": "https://i.imgur.com/gbmjr2t.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -19409,7 +19172,6 @@
       },
       "name": "Crystal Gloves",
       "image": "https://i.imgur.com/aOkBg6R.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -19558,7 +19320,6 @@
       },
       "name": "Feathered Gloves",
       "image": "https://i.imgur.com/ij9nYIX.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 3
     },
@@ -19623,7 +19384,6 @@
       },
       "name": "Grand Gloves",
       "image": "https://i.imgur.com/iDMr5uV.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 5
     },
@@ -19656,7 +19416,6 @@
       },
       "name": "Guide Gloves",
       "image": "https://i.imgur.com/NWRZ8pa.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -19689,7 +19448,6 @@
       },
       "name": "Holy Flame Gloves",
       "image": "https://i.imgur.com/M28rCqv.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -19782,7 +19540,6 @@
       },
       "name": "Járngreipr",
       "image": "https://i.imgur.com/RqevOzl.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -19875,7 +19632,6 @@
       },
       "name": "Kaiser Knuckles",
       "image": "https://i.imgur.com/hW9uNBr.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -19968,7 +19724,6 @@
       },
       "name": "Kirin Gloves",
       "image": "https://i.imgur.com/dus32cc.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -20061,7 +19816,6 @@
       },
       "name": "Leather Gloves",
       "image": "https://i.imgur.com/wpTFWF9.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -20126,7 +19880,6 @@
       },
       "name": "Lifeguard Wraps",
       "image": "https://i.imgur.com/frJ1WIf.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -20159,7 +19912,6 @@
       },
       "name": "Motor Drive",
       "image": "https://i.imgur.com/hrCdQAD.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -20280,7 +20032,6 @@
       },
       "name": "Oven Mitts",
       "image": "https://i.imgur.com/t7PX0od.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -20313,7 +20064,6 @@
       },
       "name": "Powersoul",
       "image": "https://i.imgur.com/ZrHNCp6.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -20462,7 +20212,6 @@
       },
       "name": "Sabin's Claws",
       "image": "https://i.imgur.com/iuWA5Ai.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -20495,7 +20244,6 @@
       },
       "name": "Shell Knuckles",
       "image": "https://i.imgur.com/X4VSmtv.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -20528,7 +20276,6 @@
       },
       "name": "Sonic Striker",
       "image": "https://i.imgur.com/DgKNfZs.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -20621,7 +20368,6 @@
       },
       "name": "Steward Gloves",
       "image": "https://i.imgur.com/WKaXvaJ.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -20714,7 +20460,6 @@
       },
       "name": "Tiger Fangs",
       "image": "https://i.imgur.com/bYsU0JW.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -20807,7 +20552,6 @@
       },
       "name": "Turks' Gloves",
       "image": "https://i.imgur.com/ixQeXcE.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -20984,7 +20728,6 @@
       },
       "name": "Work Gloves",
       "image": "https://i.imgur.com/kOguQnA.png",
-      "cureAllAbility": false,
       "character": "Tifa",
       "atbCost": 4
     },
@@ -21017,7 +20760,6 @@
       },
       "name": "Cath Palug",
       "image": "https://i.imgur.com/Ptqi2oW.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -21110,7 +20852,6 @@
       },
       "name": "Chiron",
       "image": "https://i.imgur.com/3axIKXF.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -21143,7 +20884,6 @@
       },
       "name": "Crow Familiar",
       "image": "https://i.imgur.com/vHfLxkX.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -21176,7 +20916,6 @@
       },
       "name": "Double Stem E",
       "image": "https://i.imgur.com/gPw0Qti.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -21209,7 +20948,6 @@
       },
       "name": "Eligor Gun",
       "image": "https://i.imgur.com/j1UGOOk.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -21274,7 +21012,6 @@
       },
       "name": "Gilded Age",
       "image": "https://i.imgur.com/6eisZ3Z.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -21307,7 +21044,6 @@
       },
       "name": "Holiday Garm",
       "image": "https://i.imgur.com/l0FkCKy.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -21340,7 +21076,6 @@
       },
       "name": "Hugin & Munin",
       "image": "https://i.imgur.com/jINidfB.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -21489,7 +21224,6 @@
       },
       "name": "Icebolt Shooter",
       "image": "https://i.imgur.com/iYeqRrV.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -21638,7 +21372,6 @@
       },
       "name": "Kugelblitz",
       "image": "https://i.imgur.com/lVwoBpG.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -21671,7 +21404,6 @@
       },
       "name": "Quicksilver",
       "image": "https://i.imgur.com/iR7b4RD.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -21792,7 +21524,6 @@
       },
       "name": "Rhad Gun",
       "image": "https://i.imgur.com/LDkVwpN.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -21941,7 +21672,6 @@
       },
       "name": "S1976C",
       "image": "https://i.imgur.com/UDk19uj.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -22118,7 +21848,6 @@
       },
       "name": "Sawed-Off GS",
       "image": "https://i.imgur.com/iQNw0Re.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -22151,7 +21880,6 @@
       },
       "name": "Shortbarrel",
       "image": "https://i.imgur.com/tlcIegj.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -22184,7 +21912,6 @@
       },
       "name": "Silver Rifle",
       "image": "https://i.imgur.com/b0RnYFY.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -22217,7 +21944,6 @@
       },
       "name": "T03 Model N",
       "image": "https://i.imgur.com/bpiXvuW.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 2
     },
@@ -22250,7 +21976,6 @@
       },
       "name": "White Dog",
       "image": "https://i.imgur.com/bNbc0bP.png",
-      "cureAllAbility": false,
       "character": "Vincent",
       "atbCost": 4
     },
@@ -22343,7 +22068,6 @@
       },
       "name": "4-Point Shuriken",
       "image": "https://i.imgur.com/nfpQkCw.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -22520,7 +22244,6 @@
       },
       "name": "Arctic Star",
       "image": "https://i.imgur.com/h7h4R05.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -22613,7 +22336,6 @@
       },
       "name": "Bahamut Cutter",
       "image": "https://i.imgur.com/u2FlPRQ.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -22646,7 +22368,6 @@
       },
       "name": "Bamboo Ring",
       "image": "https://i.imgur.com/3BbocmH.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -22727,7 +22448,6 @@
       },
       "name": "Bird of Prey",
       "image": "https://i.imgur.com/pXcOXpn.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -22820,7 +22540,6 @@
       },
       "name": "Boomerang",
       "image": "https://i.imgur.com/q3cmbWQ.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -22853,7 +22572,6 @@
       },
       "name": "Cactuar Fan",
       "image": "https://i.imgur.com/ULsjYbK.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -22886,7 +22604,6 @@
       },
       "name": "Chariot Wheel",
       "image": "https://i.imgur.com/w4W4fQ9.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23007,7 +22724,6 @@
       },
       "name": "Crystal Cross",
       "image": "https://i.imgur.com/BcRIJSR.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23040,7 +22756,6 @@
       },
       "name": "Diner Tray",
       "image": "https://i.imgur.com/KwoD3jW.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23073,7 +22788,6 @@
       },
       "name": "Hawkeye",
       "image": "https://i.imgur.com/0aLrL2M.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23222,7 +22936,6 @@
       },
       "name": "Holiday Bell",
       "image": "https://i.imgur.com/52x9ulP.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23255,7 +22968,6 @@
       },
       "name": "Leviathan Cutter",
       "image": "https://i.imgur.com/QvdhabF.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23288,7 +23000,6 @@
       },
       "name": "Little Red Wreath",
       "image": "https://i.imgur.com/Ltlh3Gb.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23321,7 +23032,6 @@
       },
       "name": "Magic Shuriken",
       "image": "https://i.imgur.com/O8HCoQv.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23414,7 +23124,6 @@
       },
       "name": "Mallet of Luck",
       "image": "https://i.imgur.com/Yz3YJD2.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23507,7 +23216,6 @@
       },
       "name": "Pinwheel",
       "image": "https://i.imgur.com/OJA9sv1.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23540,7 +23248,6 @@
       },
       "name": "Razor Ring",
       "image": "https://i.imgur.com/GKkFoxi.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23573,7 +23280,6 @@
       },
       "name": "Spiral Shuriken",
       "image": "https://i.imgur.com/Wz3cQYb.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23666,7 +23372,6 @@
       },
       "name": "Striped Moogle Float",
       "image": "https://i.imgur.com/vA7jACl.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23699,7 +23404,6 @@
       },
       "name": "Twin Viper",
       "image": "https://i.imgur.com/T0mU7TE.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23792,7 +23496,6 @@
       },
       "name": "Wind Slash",
       "image": "https://i.imgur.com/Zb9h8Po.png",
-      "cureAllAbility": false,
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -23825,7 +23528,6 @@
       },
       "name": "Alba Blade",
       "image": "https://i.imgur.com/YVu0oN4.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -23918,7 +23620,6 @@
       },
       "name": "Arc Sword",
       "image": "https://i.imgur.com/1iFg3dE.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -23951,7 +23652,6 @@
       },
       "name": "Beach Parasol",
       "image": "https://i.imgur.com/uksNbKD.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -23984,7 +23684,6 @@
       },
       "name": "Beatrix Sword",
       "image": "https://i.imgur.com/mFeWKjn.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -24133,7 +23832,6 @@
       },
       "name": "Black Whiskers",
       "image": "https://i.imgur.com/BFYEixD.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -24166,7 +23864,6 @@
       },
       "name": "Bouquet",
       "image": "https://i.imgur.com/y2yDOzk.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -24199,7 +23896,6 @@
       },
       "name": "Buster Sword Origin",
       "image": "https://i.imgur.com/6O0LWIC.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -24232,7 +23928,6 @@
       },
       "name": "Carrot Sword",
       "image": "https://i.imgur.com/kKhYSuE.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -24325,7 +24020,6 @@
       },
       "name": "Ceremonial Sword (Z)",
       "image": "https://i.imgur.com/nIscUo1.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 5
     },
@@ -24358,7 +24052,6 @@
       },
       "name": "Crystal Sword (Z)",
       "image": "https://i.imgur.com/6qE1RxC.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -24451,7 +24144,6 @@
       },
       "name": "Cutlass",
       "image": "https://i.imgur.com/cxnCVlA.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -24572,7 +24264,6 @@
       },
       "name": "Defender",
       "image": "https://i.imgur.com/3kKThOP.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -24637,7 +24328,6 @@
       },
       "name": "Enhance Sword (Z)",
       "image": "https://i.imgur.com/PE1yK3d.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 5
     },
@@ -24670,7 +24360,6 @@
       },
       "name": "Falchion",
       "image": "https://i.imgur.com/lkJWidp.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -24703,7 +24392,6 @@
       },
       "name": "Ifrit's Sword",
       "image": "https://i.imgur.com/kHdlzQc.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -24796,7 +24484,6 @@
       },
       "name": "Iron Greatsword",
       "image": "https://i.imgur.com/aAIIqk8.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -24889,7 +24576,6 @@
       },
       "name": "Pressure Ridge",
       "image": "https://i.imgur.com/9gtbj0B.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -24922,7 +24608,6 @@
       },
       "name": "Stream Guard",
       "image": "https://i.imgur.com/AW32S8x.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -25071,7 +24756,6 @@
       },
       "name": "Twinkling Star",
       "image": "https://i.imgur.com/zHbYBie.png",
-      "cureAllAbility": true,
       "character": "Zack",
       "atbCost": 4
     },
@@ -25104,7 +24788,6 @@
       },
       "name": "Type-99 Longsword",
       "image": "https://i.imgur.com/NtlaK01.png",
-      "cureAllAbility": false,
       "commandAbilitySigil": "SigilO",
       "character": "Zack",
       "atbCost": 4
@@ -25138,7 +24821,6 @@
       },
       "name": "White Tree",
       "image": "https://i.imgur.com/RbJB0Kn.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -25171,7 +24853,6 @@
       },
       "name": "Zinogre Blade",
       "image": "https://i.imgur.com/woJ7Sm1.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     },
@@ -25204,7 +24885,6 @@
       },
       "name": "Zweihander",
       "image": "https://i.imgur.com/SjD1vvD.png",
-      "cureAllAbility": false,
       "character": "Zack",
       "atbCost": 4
     }

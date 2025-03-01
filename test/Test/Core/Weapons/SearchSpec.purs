@@ -438,7 +438,6 @@ mkWeapon id character =
       , ob1: { description: nes @" ", effects: [] }
       , ob6: { description: nes @" ", effects: [] }
       , ob10: { description: nes @" ", effects: [] }
-      , cureAllAbility: true
       , commandAbilitySigil: Nothing
       , sAbilities: { slot1: nes @"MATK Boost I", slot2: nes @"MATK Boost I", slot3: nes @"▲ Sigil Boost I" }
       , rAbilities: { slot1: nes @"Boost MATK", slot2: nes @"Boost Earth Pot." }

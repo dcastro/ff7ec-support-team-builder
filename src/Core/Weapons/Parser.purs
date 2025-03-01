@@ -61,9 +61,6 @@ parseWeapon rowIndex row = do
   sAbility2 <- getCell 24
   sAbility3 <- getCell 25
 
-  let
-    -- Check if the 3rd S.Ability is a "cure all" slot
-    cureAllAbility = String.startsWith "All (Cure Spells)" (NES.toString sAbility3)
   pure
     { name
     , character
@@ -74,7 +71,6 @@ parseWeapon rowIndex row = do
     , ob1
     , ob6
     , ob10
-    , cureAllAbility
     , commandAbilitySigil
     , sAbilities: { slot1: sAbility1, slot2: sAbility2, slot3: sAbility3 }
     , rAbilities: { slot1: rAbility1, slot2: rAbility2 }
@@ -114,6 +110,9 @@ type ParsedDescription =
   , obLevel :: ObLevel
   , commandAbilitySigil :: Maybe Sigil
   }
+
+hasCureAllSAbility :: NonEmptyString -> Boolean
+hasCureAllSAbility = NES.toString >>> String.startsWith "All (Cure Spells)"
 
 parseDescription :: Coords -> NonEmptyString -> Result ParsedDescription
 parseDescription coords description = do

@@ -58,7 +58,6 @@ type Weapon =
   , ob1 :: ObLevel
   , ob6 :: ObLevel
   , ob10 :: ObLevel
-  , cureAllAbility :: Boolean
   , commandAbilitySigil :: Maybe Sigil
   , sAbilities :: SAbilities
   , rAbilities :: RAbilities

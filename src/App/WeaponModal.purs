@@ -5,6 +5,7 @@ import Prelude
 
 import Core.Display (display)
 import Data.Maybe (Maybe(..))
+import Data.String.NonEmpty (NonEmptyString)
 import Data.String.NonEmpty as NES
 import Data.String.Utils as String
 import Effect.Aff (Aff)
@@ -52,7 +53,12 @@ component =
 
 render :: forall cs m. State -> H.ComponentHTML Action cs m
 render { weapon } =
-  HH.div [ classes' "modal is-active" ]
+  HH.div
+    [ classes' "modal is-active"
+    -- By default, the modal is 40rem wide.
+    -- We're increasing the width here to allow displaying S./R. Abilities.
+    , HP.style "--bulma-modal-content-width: 60rem"
+    ]
     [ HH.div [ classes' "modal-background", HE.onClick \_ -> CloseModal ] []
     , HH.div [ classes' "modal-card" ]
         [ HH.header [ classes' "modal-card-head pt-2 pb-2" ]
@@ -66,11 +72,24 @@ render { weapon } =
                 []
             ]
         , HH.section [ classes' "modal-card-foot" ]
-            [ HH.p []
-                [ renderObLevel 0 weapon.ob0
-                , renderObLevel 1 weapon.ob1
-                , renderObLevel 6 weapon.ob6
-                , renderObLevel 10 weapon.ob10
+            [ HH.div [ classes' "columns" ]
+                [ HH.div [ classes' "column" ]
+                    [ HH.p [ classes' "title is-4 mb-1" ] [ HH.text "C. Ability" ]
+                    , renderObLevel 0 weapon.ob0
+                    , renderObLevel 1 weapon.ob1
+                    , renderObLevel 6 weapon.ob6
+                    , renderObLevel 10 weapon.ob10
+                    ]
+
+                , HH.div [ classes' "column is-narrow" ]
+                    [ HH.p [ classes' "title is-4 mb-1" ] [ HH.text "S. Abilities" ]
+                    , renderAbility weapon.sAbilities.slot1
+                    , renderAbility weapon.sAbilities.slot2
+                    , renderAbility weapon.sAbilities.slot3
+                    , HH.p [ classes' "title is-4 mb-1 mt-3" ] [ HH.text "R. Abilities" ]
+                    , renderAbility weapon.rAbilities.slot1
+                    , renderAbility weapon.rAbilities.slot2
+                    ]
                 ]
             ]
 
@@ -89,6 +108,10 @@ renderObLevel ob { description } =
             <#> \line -> HH.p [] [ HH.text line ]
         )
     ]
+
+renderAbility :: forall w i. NonEmptyString -> HH.HTML w i
+renderAbility ability =
+  HH.p [] [ HH.text $ NES.toString ability ]
 
 handleAction :: forall cs. Action → H.HalogenM State Action cs Output Aff Unit
 handleAction = case _ of

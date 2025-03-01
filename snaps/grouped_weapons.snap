@@ -78,10 +78,10 @@
         "weaponName": "Umbrella",
         "ranges": [
           {
-            "range": "All"
+            "range": "SingleTarget"
           },
           {
-            "range": "SingleTarget"
+            "range": "All"
           }
         ]
       },
@@ -5833,6 +5833,329 @@
             }
           }
         ]
+      }
+    ]
+  ],
+  [
+    "FilterSigilBoostO",
+    [
+      {
+        "weaponName": "Citric Wand"
+      },
+      {
+        "weaponName": "Gambanteinn"
+      },
+      {
+        "weaponName": "Prism Rod"
+      },
+      {
+        "weaponName": "Electrocannon"
+      },
+      {
+        "weaponName": "Escutcheon Cannon"
+      },
+      {
+        "weaponName": "Fafnir Rifle"
+      },
+      {
+        "weaponName": "Heavy Hauser"
+      },
+      {
+        "weaponName": "Rocket Punch"
+      },
+      {
+        "weaponName": "Sharkslayer"
+      },
+      {
+        "weaponName": "Green Megaphone"
+      },
+      {
+        "weaponName": "Quina Megaphone"
+      },
+      {
+        "weaponName": "Trumpet Shell"
+      },
+      {
+        "weaponName": "Witch's Broom"
+      },
+      {
+        "weaponName": "Bahamut Greatsword"
+      },
+      {
+        "weaponName": "Glavenus Sword"
+      },
+      {
+        "weaponName": "Holiday Blade"
+      },
+      {
+        "weaponName": "Maritime Sword"
+      },
+      {
+        "weaponName": "Mystic Sword"
+      },
+      {
+        "weaponName": "Nail Bat"
+      },
+      {
+        "weaponName": "Stream Saber"
+      },
+      {
+        "weaponName": "Stream Slasher"
+      },
+      {
+        "weaponName": "Holiday Revolver"
+      },
+      {
+        "weaponName": "Pulse Gun"
+      },
+      {
+        "weaponName": "Thunderbird"
+      },
+      {
+        "weaponName": "Killer Hornet"
+      },
+      {
+        "weaponName": "Canyon Collar"
+      },
+      {
+        "weaponName": "Dark Heavens"
+      },
+      {
+        "weaponName": "Protector's Blade"
+      },
+      {
+        "weaponName": "Shinra Military Sword"
+      },
+      {
+        "weaponName": "Holy Flame Gloves"
+      },
+      {
+        "weaponName": "Bahamut Cutter"
+      },
+      {
+        "weaponName": "Bird of Prey"
+      },
+      {
+        "weaponName": "Hawkeye"
+      },
+      {
+        "weaponName": "Holiday Bell"
+      },
+      {
+        "weaponName": "Little Red Wreath"
+      },
+      {
+        "weaponName": "Striped Moogle Float"
+      },
+      {
+        "weaponName": "Ceremonial Sword (Z)"
+      },
+      {
+        "weaponName": "Crystal Sword (Z)"
+      }
+    ]
+  ],
+  [
+    "FilterSigilBoostX",
+    [
+      {
+        "weaponName": "Wizer Staff"
+      },
+      {
+        "weaponName": "Mop"
+      },
+      {
+        "weaponName": "Radiant Lance"
+      },
+      {
+        "weaponName": "Rocket Lance"
+      },
+      {
+        "weaponName": "Skysplitter"
+      },
+      {
+        "weaponName": "Blade of Ruin"
+      },
+      {
+        "weaponName": "Slay the Day"
+      },
+      {
+        "weaponName": "Squeaky Hammer"
+      },
+      {
+        "weaponName": "Ultimatic"
+      },
+      {
+        "weaponName": "Absolute Royal"
+      },
+      {
+        "weaponName": "Seaside Collar"
+      },
+      {
+        "weaponName": "Edged Wings"
+      },
+      {
+        "weaponName": "Radiant Edge"
+      },
+      {
+        "weaponName": "Bahamut Fangs"
+      },
+      {
+        "weaponName": "Blue Daffodil Gloves"
+      },
+      {
+        "weaponName": "Bunny Gloves"
+      },
+      {
+        "weaponName": "Crystal Gloves"
+      },
+      {
+        "weaponName": "Feathered Gloves"
+      },
+      {
+        "weaponName": "Guide Gloves"
+      },
+      {
+        "weaponName": "Kirin Gloves"
+      },
+      {
+        "weaponName": "Sabin's Claws"
+      },
+      {
+        "weaponName": "Shell Knuckles"
+      },
+      {
+        "weaponName": "Work Gloves"
+      },
+      {
+        "weaponName": "Beatrix Sword"
+      },
+      {
+        "weaponName": "Bouquet"
+      },
+      {
+        "weaponName": "Buster Sword Origin"
+      },
+      {
+        "weaponName": "Pressure Ridge"
+      },
+      {
+        "weaponName": "Stream Guard"
+      },
+      {
+        "weaponName": "Zinogre Blade"
+      }
+    ]
+  ],
+  [
+    "FilterSigilBoostTriangle",
+    [
+      {
+        "weaponName": "Tranquility"
+      },
+      {
+        "weaponName": "Volcanic Heat"
+      },
+      {
+        "weaponName": "Murasame"
+      },
+      {
+        "weaponName": "Zidane's Sword"
+      },
+      {
+        "weaponName": "Jiggy Fam"
+      },
+      {
+        "weaponName": "Marine Shooter"
+      },
+      {
+        "weaponName": "Nightjar"
+      },
+      {
+        "weaponName": "Rose Musket"
+      },
+      {
+        "weaponName": "Rubber Band Gun"
+      },
+      {
+        "weaponName": "Noble Collar"
+      },
+      {
+        "weaponName": "Blue Bramble"
+      },
+      {
+        "weaponName": "Edgar's Coiled Blade"
+      },
+      {
+        "weaponName": "Kuja's Spirit Blade"
+      },
+      {
+        "weaponName": "Tempest"
+      },
+      {
+        "weaponName": "Withering Blaze"
+      },
+      {
+        "weaponName": "World Tree Bough"
+      },
+      {
+        "weaponName": "Crow Familiar"
+      },
+      {
+        "weaponName": "Holiday Garm"
+      },
+      {
+        "weaponName": "Hugin & Munin"
+      },
+      {
+        "weaponName": "Kugelblitz"
+      },
+      {
+        "weaponName": "White Dog"
+      },
+      {
+        "weaponName": "Black Whiskers"
+      }
+    ]
+  ],
+  [
+    "FilterSigilDiamond",
+    [
+      {
+        "weaponName": "Type-91 Two-Hander"
+      },
+      {
+        "weaponName": "Max Ray"
+      },
+      {
+        "weaponName": "Sharkslayer"
+      },
+      {
+        "weaponName": "Flayer"
+      },
+      {
+        "weaponName": "Rest in Peace"
+      },
+      {
+        "weaponName": "Barn Swallow"
+      },
+      {
+        "weaponName": "Nightjar"
+      },
+      {
+        "weaponName": "Bahamut Rapier"
+      },
+      {
+        "weaponName": "Killer Hornet"
+      },
+      {
+        "weaponName": "Nautilus Spiral"
+      },
+      {
+        "weaponName": "Silver Collar"
+      },
+      {
+        "weaponName": "Bahamut Knuckles"
       }
     ]
   ]

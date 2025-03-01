@@ -374,3 +374,8 @@ hasPotencies = case _ of
     FilterEarthResistDown -> true
     FilterWaterResistDown -> true
     FilterWindResistDown -> true
+
+    FilterSigilBoostO -> false
+    FilterSigilBoostX -> false
+    FilterSigilBoostTriangle -> false
+    FilterSigilDiamond -> false

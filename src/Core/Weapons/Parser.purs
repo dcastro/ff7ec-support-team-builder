@@ -150,7 +150,7 @@ parseAtbCost coords = do
       pure atbCost
 
 -- | Example input:
--- Rolling Claw [Sigils: 1 \\◆] (3 ATB)
+-- "Rolling Claw [Sigils: 1 \\◆] (3 ATB)"
 parseCommandAbilitySigil :: Coords -> Parser Sigil
 parseCommandAbilitySigil coords = do
   inContext ("Coords " <> show coords) do
@@ -158,6 +158,12 @@ parseCommandAbilitySigil coords = do
       Tuple _ sigil <- P.manyTill_ P.anyChar do
         P.string "[Sigils: " *> P.intDecimal *> P.string " \\" *> parseSigilSymbol <* P.string "]"
       pure sigil
+
+-- | Example input:
+-- "✖ Sigil Boost I"
+parseSAbilitySigilBoost :: Parser Sigil
+parseSAbilitySigilBoost =
+  parseSigilSymbol <* P.string " Sigil Boost"
 
 parseSigilSymbol :: Parser Sigil
 parseSigilSymbol =

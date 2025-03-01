@@ -202,6 +202,11 @@ data FilterEffectType
   | FilterWaterResistDown
   | FilterWindResistDown
 
+  | FilterSigilBoostO
+  | FilterSigilBoostX
+  | FilterSigilBoostTriangle
+  | FilterSigilDiamond
+
 derive instance Generic Range _
 derive instance Generic WeaponEffect _
 derive instance Generic Potency _
@@ -327,6 +332,11 @@ instance Display FilterEffectType where
     FilterEarthResistDown -> "Earth resist down"
     FilterWaterResistDown -> "Water resist down"
     FilterWindResistDown -> "Wind resist down"
+
+    FilterSigilBoostO -> "⏺ Sigil Boost"
+    FilterSigilBoostX -> "✖ Sigil Boost"
+    FilterSigilBoostTriangle -> "▲ Sigil Boost"
+    FilterSigilDiamond -> "◆ Sigil"
 
 allPossiblePotencies :: Array Potency
 allPossiblePotencies = Utils.listEnum

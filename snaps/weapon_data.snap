@@ -11,6 +11,16 @@
     }
   ],
   [
+    "Absolute Royal",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Amarant's Claws",
     {
       "ownedOb": "OB6-10",
@@ -88,6 +98,36 @@
     }
   ],
   [
+    "Bahamut Greatsword",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Bahamut Knuckles",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Bahamut Rapier",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Bahamut Rod",
     {
       "ownedOb": "OB6-10",
@@ -121,6 +161,16 @@
     }
   ],
   [
+    "Barn Swallow",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Battle Trumpet",
     {
       "ownedOb": "OB6-10",
@@ -128,6 +178,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Beatrix Sword",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -206,6 +266,16 @@
     }
   ],
   [
+    "Bouquet",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Bramble Spine",
     {
       "ownedOb": "OB6-10",
@@ -235,6 +305,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Buster Sword Origin",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -358,6 +438,16 @@
     }
   ],
   [
+    "Crow Familiar",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Crystal Cross",
     {
       "ownedOb": "OB6-10",
@@ -365,6 +455,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Crystal Gloves",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -391,6 +491,16 @@
     }
   ],
   [
+    "Crystal Sword (Z)",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Cutlass",
     {
       "ownedOb": "OB6-10",
@@ -398,6 +508,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Dark Heavens",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -419,6 +539,26 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Edgar's Coiled Blade",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Edged Wings",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -712,6 +852,16 @@
     }
   ],
   [
+    "Guide Gloves",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Hardcore Squad",
     {
       "ownedOb": "OB6-10",
@@ -734,7 +884,27 @@
     }
   ],
   [
+    "Hawkeye",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Headphones",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Heavy Hauser",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -782,6 +952,56 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Holiday Blade",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Holiday Garm",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Holiday Revolver",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Holy Flame Gloves",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Hugin & Munin",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -860,6 +1080,16 @@
     }
   ],
   [
+    "Jiggy Fam",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Junk Collar",
     {
       "ownedOb": "OB6-10",
@@ -899,6 +1129,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Killer Hornet",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -959,6 +1199,16 @@
   ],
   [
     "Lifeguard Wraps",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Little Red Wreath",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -1033,6 +1283,26 @@
     }
   ],
   [
+    "Maritime Sword",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Max Ray",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Microlaser",
     {
       "ownedOb": "OB6-10",
@@ -1045,6 +1315,16 @@
   ],
   [
     "Mop",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Murasame",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -1087,6 +1367,16 @@
     }
   ],
   [
+    "Nail Bat",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Nameless",
     {
       "ownedOb": "OB6-10",
@@ -1116,6 +1406,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Noble Collar",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -1216,6 +1516,36 @@
     }
   ],
   [
+    "Prism Rod",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Protector's Blade",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Pulse Gun",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Pumpkin Blaster",
     {
       "ownedOb": "OB6-10",
@@ -1260,6 +1590,26 @@
     }
   ],
   [
+    "Radiant Lance",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Rest in Peace",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Rhad Cannon",
     {
       "ownedOb": "OB0-10",
@@ -1291,6 +1641,16 @@
     }
   ],
   [
+    "Rocket Punch",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Rose Musket",
     {
       "ownedOb": "OB6-10",
@@ -1298,6 +1658,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Rubber Band Gun",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -1389,6 +1759,16 @@
     }
   ],
   [
+    "Shell Knuckles",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Shinra Greatsword: Model I",
     {
       "ownedOb": "OB6-10",
@@ -1433,6 +1813,16 @@
   ],
   [
     "Silver Megaphone",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Skysplitter",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -1528,6 +1918,16 @@
     }
   ],
   [
+    "Squeaky Hammer",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Stalwart Integrity",
     {
       "ownedOb": "OB6-10",
@@ -1596,6 +1996,36 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Stream Guard",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Stream Saber",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Stream Slasher",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -1791,6 +2221,16 @@
     }
   ],
   [
+    "Ultimatic",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Umbrella",
     {
       "ownedOb": "OB0-10",
@@ -1834,6 +2274,16 @@
     }
   ],
   [
+    "White Dog",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Wind Slash",
     {
       "ownedOb": "OB6-10",
@@ -1867,6 +2317,16 @@
     }
   ],
   [
+    "Wizer Staff",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Work Gloves",
     {
       "ownedOb": "OB6-10",
@@ -1874,6 +2334,36 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "World Tree Bough",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Zidane's Sword",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Zinogre Blade",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ]

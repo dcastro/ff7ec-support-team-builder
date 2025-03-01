@@ -22,6 +22,7 @@ import Core.Database.UserState.VLatest as V2
 import Core.Database.UserState.VLatest as VLatest
 import Core.Display (display)
 import Core.Weapons.Parser as P
+import Core.Weapons.Parser as Parser
 import Core.WebStorage as WS
 import Data.Array as Arr
 import Data.Array.NonEmpty (NonEmptyArray)
@@ -38,6 +39,7 @@ import Data.Map as Map
 import Data.Maybe (Maybe(..))
 import Data.Newtype (unwrap)
 import Data.Set as Set
+import Data.String.NonEmpty as NES
 import Data.Time.Duration (Hours(..))
 import Data.Traversable (for_)
 import Data.Tuple (Tuple(..))
@@ -48,6 +50,7 @@ import Effect.Class (class MonadEffect, liftEffect)
 import Effect.Class.Console as Console
 import Effect.Now as Now
 import Google.SheetsApi as SheetsApi
+import Parsing (runParser)
 import Partial.Unsafe (unsafeCrashWith)
 import Utils (MapAsArray(..), SetAsArray(..), throwOnLeft, renderJsonErr, the, throwOnNothing, unsafeFromJust, whenJust)
 import Yoga.JSON as J
@@ -339,28 +342,58 @@ type GroupEntry =
 
 groupsForWeapon :: Weapon -> List.List GroupEntry
 groupsForWeapon weapon = do
-  let entries = LazyList.catMaybes $ unwrap groupsForWeapon'
-
-  let
-    entries' =
-      if weapon.cureAllAbility then
-        entries
-          # LazyList.cons
-              { effectType: FilterHeal
-              , groupedWeapon:
-                  { weaponName: weapon.name
-                  , ranges: Just
-                      [ { range: All
-                        , allPotencies: Nothing
-                        }
-                      ]
-                  }
-              }
-      else entries
-
-  mergeRanges entries'
-
+  mergeRanges $ Arr.fold
+    [ LazyList.catMaybes (unwrap groupsForWeapon')
+    , getCureAllAbility
+    , getCommandAbilityDiamondSigil
+    , getSigilBoost
+    ]
   where
+  getCureAllAbility :: LazyList.List GroupEntry
+  getCureAllAbility =
+    if weapon.cureAllAbility then LazyList.singleton
+      { effectType: FilterHeal
+      , groupedWeapon:
+          { weaponName: weapon.name
+          , ranges: Just
+              [ { range: All
+                , allPotencies: Nothing
+                }
+              ]
+          }
+      }
+    else LazyList.nil
+
+  getCommandAbilityDiamondSigil :: LazyList.List GroupEntry
+  getCommandAbilityDiamondSigil =
+    case weapon.commandAbilitySigil of
+      Just SigilDiamond -> LazyList.singleton
+        { effectType: FilterSigilDiamond
+        , groupedWeapon:
+            { weaponName: weapon.name
+            , ranges: Nothing
+            }
+        }
+      _ -> LazyList.nil
+
+  getSigilBoost :: LazyList.List GroupEntry
+  getSigilBoost =
+    LazyList.fromFoldable [ weapon.sAbilities.slot1, weapon.sAbilities.slot2, weapon.sAbilities.slot3 ]
+      <#> (\sAbility -> hush $ runParser (NES.toString sAbility) Parser.parseSAbilitySigilBoost)
+      # LazyList.catMaybes
+      <#> \sigil ->
+        { effectType:
+            case sigil of
+              SigilO -> FilterSigilBoostO
+              SigilX -> FilterSigilBoostX
+              SigilTriangle -> FilterSigilBoostTriangle
+              SigilDiamond -> FilterSigilDiamond
+        , groupedWeapon:
+            { weaponName: weapon.name
+            , ranges: Nothing
+            }
+        }
+
   groupsForWeapon' :: ZipList (Maybe GroupEntry)
   groupsForWeapon' = ado
     -- INVARIANT: this assumes weapon effects are listed in the same order at all overboost levels.

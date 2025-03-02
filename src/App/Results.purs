@@ -17,7 +17,7 @@ import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
-import HtmlUtils (classes', displayIf)
+import HtmlUtils (classes', displayIf, mkTooltipForWeapon, tooltip)
 import Type.Prelude (Proxy(..))
 
 teamsDisplayLimit :: Int
@@ -90,8 +90,9 @@ render state =
                                       [ HH.img [ HP.src (display equipedWeapon.weaponData.weapon.image), classes' "image is-32x32" ]
                                       ]
                                   , HH.div
-                                      [ classes' "column is-narrow is-clickable"
+                                      [ classes' "column is-narrow is-clickable has-tooltip-right"
                                       , HE.onClick $ \_ -> SelectedWeaponForModal equipedWeapon.weaponData.weapon
+                                      , tooltip (mkTooltipForWeapon equipedWeapon.weaponData.weapon)
                                       ]
                                       [ HH.span_
                                           [ HH.text (display equipedWeapon.weaponData.weapon.name)

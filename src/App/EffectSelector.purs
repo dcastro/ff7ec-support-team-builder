@@ -1,7 +1,7 @@
 module App.EffectSelector where
 
-import Core.Database.UserState.VLatest
 import Core.Database.Types
+import Core.Database.UserState.VLatest
 import Prelude
 
 import App.WeaponModal as WeaponModal
@@ -19,7 +19,7 @@ import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
-import HtmlUtils (classes', displayIf)
+import HtmlUtils (classes', displayIf, mkTooltipForWeapon, tooltip)
 import Type.Prelude (Proxy(..))
 import Utils (unsafeFromJust)
 import Web.UIEvent.MouseEvent (MouseEvent)
@@ -209,13 +209,15 @@ render state =
                                       , HE.onClick $ \_ -> SelectedWeaponForModal weaponData.weapon
                                       ]
                                   , HH.td
-                                      [ classes' ("is-clickable" # checkCellDisabled)
+                                      [ classes' ("is-clickable has-tooltip-right" # checkCellDisabled)
                                       , HE.onClick $ \_ -> SelectedWeaponForModal weaponData.weapon
+                                      , tooltip (mkTooltipForWeapon weaponData.weapon)
                                       ]
                                       [ HH.text $ display weaponData.weapon.name ]
                                   , HH.td
-                                      [ classes' ("is-clickable" # checkCellDisabled)
+                                      [ classes' ("is-clickable has-tooltip-right" # checkCellDisabled)
                                       , HE.onClick $ \_ -> SelectedWeaponForModal weaponData.weapon
+                                      , tooltip (mkTooltipForWeapon weaponData.weapon)
                                       ]
                                       [ HH.text $ display weaponData.weapon.character ]
                                   , HH.td_

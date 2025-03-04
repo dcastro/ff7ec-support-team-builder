@@ -4,6 +4,9 @@ import Prelude
 
 import Core.Database.UserState.V1 as Prev
 import Core.Display (class Display, display)
+import Data.Bounded.Generic as GBounded
+import Data.Enum (class Enum)
+import Data.Enum.Generic as GEnum
 import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
 import Data.Map as Map
@@ -149,3 +152,11 @@ instance Display ObRange where
       ToOb5 -> "5"
       ToOb9 -> "9"
       ToOb10 -> "10"
+
+instance Enum FromOb where
+  pred = GEnum.genericPred
+  succ = GEnum.genericSucc
+
+instance Bounded FromOb where
+  top = GBounded.genericTop
+  bottom = GBounded.genericBottom

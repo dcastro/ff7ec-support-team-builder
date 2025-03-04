@@ -5,6 +5,7 @@ import Prelude
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Data.Bounded.Generic (class GenericBottom, genericBottom)
 import Data.Either (Either(..))
+import Data.Enum (class Enum, pred, succ)
 import Data.Enum.Generic (class GenericEnum, genericSucc)
 import Data.Foldable as Fold
 import Data.Generic.Rep (class Generic)
@@ -93,3 +94,15 @@ instance (ReadForeign a, Ord a) => ReadForeign (SetAsArray a) where
     pure $ SetAsArray $ Set.fromFoldable arr
 
 derive instance Newtype (SetAsArray a) _
+
+succCyclic :: forall a. Bounded a => Enum a => a -> a
+succCyclic a =
+  case succ a of
+    Just b -> b
+    Nothing -> bottom
+
+predCyclic :: forall a. Bounded a => Enum a => a -> a
+predCyclic a =
+  case pred a of
+    Just b -> b
+    Nothing -> top

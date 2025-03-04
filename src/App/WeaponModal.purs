@@ -16,6 +16,7 @@ import Halogen.HTML.Events as HE
 import Halogen.HTML.Properties as HP
 import Halogen.Query.Event as QE
 import HtmlUtils (classes')
+import Utils (predCyclic, succCyclic)
 import Web.Event.Event as E
 import Web.HTML as HTML
 import Web.HTML.HTMLDocument as HTMLDocument
@@ -42,6 +43,8 @@ data Action
   | Initialize
   | HandleKey H.SubscriptionId KE.KeyboardEvent
   | ChangedObSelection FromOb
+  | SuccOb
+  | PredOb
 
 data Query :: forall k. k -> Type
 data Query a
@@ -85,13 +88,17 @@ render { weapon, selectedOb } =
             , HP.style "display: block"
             ]
             [ HH.div_ [ HH.p [ classes' "title is-4 mb-1 " ] [ HH.text "C. Ability" ] ]
-            , HH.div [ classes' "tabs" ]
+            , HH.div [ classes' "tabs is-fullwidth" ]
                 [ HH.ul_ do
                     let isActive ob = if ob == selectedOb then "is-active" else ""
-                    [ HH.li [ classes' (isActive FromOb0), HE.onClick \_ -> ChangedObSelection FromOb0 ] [ HH.a_ [ HH.span_ [ HH.text "OB0" ] ] ]
+                    [ HH.li [ classes' "is-clickable", HE.onClick \_ -> PredOb ]
+                        [ HH.a [ HP.style "border-bottom: none" ] [ HH.i [ classes' "fas fa-chevron-left" ] [] ] ]
+                    , HH.li [ classes' (isActive FromOb0), HE.onClick \_ -> ChangedObSelection FromOb0 ] [ HH.a_ [ HH.span_ [ HH.text "OB0" ] ] ]
                     , HH.li [ classes' (isActive FromOb1), HE.onClick \_ -> ChangedObSelection FromOb1 ] [ HH.a_ [ HH.span_ [ HH.text "OB1" ] ] ]
                     , HH.li [ classes' (isActive FromOb6), HE.onClick \_ -> ChangedObSelection FromOb6 ] [ HH.a_ [ HH.span_ [ HH.text "OB6" ] ] ]
                     , HH.li [ classes' (isActive FromOb10), HE.onClick \_ -> ChangedObSelection FromOb10 ] [ HH.a_ [ HH.span_ [ HH.text "OB10" ] ] ]
+                    , HH.li [ classes' "is-clickable", HE.onClick \_ -> SuccOb ]
+                        [ HH.a [ HP.style "border-bottom: none" ] [ HH.i [ classes' "fas fa-chevron-right" ] [] ] ]
                     ]
                 ]
             , HH.div [ classes' "mb-5" ]
@@ -151,9 +158,19 @@ handleAction = case _ of
         H.liftEffect $ E.preventDefault (KE.toEvent ev)
         H.unsubscribe sid
         handleAction CloseModal
+    | KE.key ev == "ArrowLeft" -> do
+        H.liftEffect $ E.preventDefault (KE.toEvent ev)
+        handleAction PredOb
+    | KE.key ev == "ArrowRight" -> do
+        H.liftEffect $ E.preventDefault (KE.toEvent ev)
+        handleAction SuccOb
     | otherwise -> do
         pure unit
   ChangedObSelection selectedOb -> H.modify_ \s -> s { selectedOb = selectedOb }
+  PredOb ->
+    H.modify_ \s -> s { selectedOb = predCyclic s.selectedOb }
+  SuccOb ->
+    H.modify_ \s -> s { selectedOb = succCyclic s.selectedOb }
 
 pickBestOb :: Maybe ObRange -> FromOb
 pickBestOb = case _ of

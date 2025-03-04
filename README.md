@@ -8,22 +8,24 @@ Requires Node.js and `npm`.
 npm install -g purescript spago parcel esbuild
 ```
 
+Most commands below use [justfile](https://github.com/casey/just).
+
 To launch the app in the browser:
 
 ```sh
-make run
+just run
 ```
 
 ## Test
 
 ```sh
-make regen-weapons
-make test
+just regen-weapons
+just test
 ```
 
 ## Production
 
-Run `make build-prod` to build the minified production bundle, you can find it in the `/docs` folder.
+Run `just build-prod` to build the minified production bundle, you can find it in the `/docs` folder.
 
 To test the production output locally, run:
 

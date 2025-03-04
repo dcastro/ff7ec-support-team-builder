@@ -7,11 +7,12 @@ import Prelude
 import App.WeaponModal as WeaponModal
 import Core.Database.Types as Db
 import Core.Display (display)
-import Core.Weapons.Search (Filter, FilterRange, FilterResultWeapon)
+import Core.Weapons.Search (Filter, FilterRange, FilterResultWeapon, FilterResult)
 import Core.Weapons.Search as Search
 import Data.Array as Arr
 import Data.Array.NonEmpty as NAR
 import Data.Bounded.Generic (genericBottom)
+import Data.Enum (succ)
 import Data.Maybe (Maybe(..), isJust)
 import Effect.Aff (Aff)
 import Effect.Class.Console as Console
@@ -47,6 +48,7 @@ type State =
   , matchingWeapons :: Array FilterResultWeapon
   , canBeDeleted :: Boolean
   , weaponForModal :: Maybe WeaponModal.Input
+  , rangeSuggestion :: Maybe FilterRange
   }
 
 data Output
@@ -57,6 +59,7 @@ data Output
 data Action
   = SelectedEffectType Int
   | SelectedRange Int
+  | SelectedRange' FilterRange
   | SelectedMinBasePotency Int
   | SelectedMinMaxPotency Int
   | SetOwnedOb WeaponName Int
@@ -81,6 +84,7 @@ component =
           , matchingWeapons: []
           , canBeDeleted
           , weaponForModal: Nothing
+          , rangeSuggestion: Nothing
           }
     , render
     , eval: H.mkEval H.defaultEval
@@ -124,8 +128,9 @@ render state =
                               [ HH.select
                                   [ HE.onSelectedIndexChange SelectedRange
                                   ]
-                                  ( Search.allFilterRanges <#> \filterRange ->
-                                      HH.option_ [ HH.text $ display filterRange ]
+                                  ( Search.allFilterRanges <#> \filterRange -> do
+                                      let selected = state.selectedRange == filterRange
+                                      HH.option [ HP.selected selected ] [ HH.text $ display filterRange ]
                                   )
                               ]
                           ]
@@ -176,9 +181,24 @@ render state =
         -- Used to center the table
         , HH.div [ classes' "columns is-mobile is-centered" ]
             [ HH.div [ classes' "column is-narrow" ]
-                [ displayIf (Arr.null state.matchingWeapons && isJust state.selectedEffectType) $
-                    HH.p [ classes' "has-text-centered has-text-weight-semibold" ]
-                      [ HH.text "No weapons found" ]
+                [ displayIf (Arr.null state.matchingWeapons && isJust state.selectedEffectType)
+                    $ HH.div_
+                    $
+                      [ HH.p [ classes' "has-text-centered has-text-weight-semibold" ]
+                          [ HH.text "No weapons found" ]
+                      ]
+                        <>
+                          case state.rangeSuggestion of
+                            Nothing -> []
+                            Just rangeSuggestion ->
+                              [ HH.text $ "Change range to "
+                              , HH.a
+                                  [ HE.onClick \_ -> SelectedRange' rangeSuggestion ]
+                                  [ HH.text $ display rangeSuggestion ]
+                              , HH.text "?"
+
+                              ]
+
                 , displayIf (not $ Arr.null state.matchingWeapons) $ HH.table [ classes' "table" ]
                     [ HH.tbody_ $
                         [ HH.tr_
@@ -276,6 +296,9 @@ handleAction = case _ of
   SelectedRange idx -> do
     let filterRange = Arr.index Search.allFilterRanges idx `unsafeFromJust` "Invalid filter range index"
     Console.log $ "idx " <> show idx <> ", selected: " <> display filterRange
+    handleAction $ SelectedRange' filterRange
+
+  SelectedRange' filterRange -> do
     H.modify_ \s -> s { selectedRange = filterRange }
       # updateMatchingWeapons
     H.raise RaiseSelectionChanged
@@ -327,8 +350,27 @@ updateMatchingWeapons state = do
   case buildFilter state of
     Just filter -> do
       let filterResult = Search.findMatchingWeapons filter state.dbState
-      state { matchingWeapons = filterResult.matchingWeapons }
+      let
+        rangeSuggestion =
+          if Arr.null filterResult.matchingWeapons then
+            tryNextRange state.dbState filterResult
+          else Nothing
+
+      state { matchingWeapons = filterResult.matchingWeapons, rangeSuggestion = rangeSuggestion }
     Nothing -> state { matchingWeapons = [] }
+
+tryNextRange :: DbState -> FilterResult -> Maybe FilterRange
+tryNextRange dbState filterResult = do
+  let filter = filterResult.filter
+  case succ filter.range of
+    Nothing -> Nothing
+    Just nextRange -> do
+      let nextFilter = filter { range = nextRange }
+      let nextFilterResult = Search.findMatchingWeapons nextFilter dbState
+      if Arr.null nextFilterResult.matchingWeapons then
+        tryNextRange dbState nextFilterResult
+      else
+        Just nextRange
 
 handleQuery :: forall action a m. Query a -> H.HalogenM State action Slots Output m (Maybe a)
 handleQuery = case _ of

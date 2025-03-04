@@ -8,6 +8,8 @@ import Core.Display (class Display, display)
 import Data.Array as Arr
 import Data.Array.NonEmpty (NonEmptyArray)
 import Data.Array.NonEmpty as NAR
+import Data.Enum (class Enum)
+import Data.Enum.Generic as GEnum
 import Data.Foldable as F
 import Data.Function (on)
 import Data.Generic.Rep (class Generic)
@@ -50,6 +52,10 @@ instance WriteForeign FilterRange where
 
 instance ReadForeign FilterRange where
   readImpl = J.genericReadForeignEnum Enum.defaultOptions
+
+instance Enum FilterRange where
+  pred = GEnum.genericPred
+  succ = GEnum.genericSucc
 
 instance Display FilterRange where
   display = case _ of

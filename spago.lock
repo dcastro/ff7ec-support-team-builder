@@ -1,7 +1,7 @@
 {
   "workspace": {
     "packages": {
-      "ff7ec-team-builder": {
+      "ff7ec-support-team-builder": {
         "path": "./",
         "core": {
           "dependencies": [
@@ -210,12 +210,12 @@
           ]
         }
       },
-      "ff7ec-team-builder-benchmarks": {
+      "ff7ec-support-team-builder-benchmarks": {
         "path": "benchmark",
         "core": {
           "dependencies": [
             "benchotron",
-            "ff7ec-team-builder",
+            "ff7ec-support-team-builder",
             "quickcheck"
           ],
           "build_plan": [
@@ -240,7 +240,7 @@
             "enums",
             "exceptions",
             "exists",
-            "ff7ec-team-builder",
+            "ff7ec-support-team-builder",
             "foldable-traversable",
             "foreign",
             "foreign-object",

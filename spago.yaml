@@ -1,5 +1,5 @@
 package:
-  name: ff7ec-team-builder
+  name: ff7ec-support-team-builder
   dependencies:
     - aff
     - aff-promise

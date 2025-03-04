@@ -9,7 +9,7 @@ build-prod:
 	mkdir -p prod
 	cp dev/index.html prod/
 	npm run ts
-	spago bundle --outfile prod/index.js -p ff7ec-team-builder
+	spago bundle --outfile prod/index.js -p ff7ec-support-team-builder
 	parcel build prod/index.html --dist-dir docs --public-url '.'
 
 build-staging:
@@ -19,7 +19,7 @@ build-staging:
 	mkdir -p staging
 	cp dev/index.html staging/
 	npm run ts
-	spago bundle --outfile staging/index.js -p ff7ec-team-builder
+	spago bundle --outfile staging/index.js -p ff7ec-support-team-builder
 	parcel build staging/index.html --dist-dir docs/staging --public-url '.'
 
 run:
@@ -29,7 +29,7 @@ run:
 # Runs benchmarks. The generated files can be uploaded to: https://harry.garrood.me/purescript-benchotron-svg-renderer/
 bench:
 	npm run ts
-	spago run -m BenchMain -p ff7ec-team-builder-benchmarks
+	spago run -m BenchMain -p ff7ec-support-team-builder-benchmarks
 
 test:
 	npm run ts

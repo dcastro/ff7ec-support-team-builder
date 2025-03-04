@@ -1,4 +1,4 @@
-# FF7 Ever Crisis - Team Builder
+# FF7 Ever Crisis - Support Team Builder
 
 ## Development
 

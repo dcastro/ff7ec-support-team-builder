@@ -1,8 +1,8 @@
 package:
-  name: ff7ec-team-builder-benchmarks
+  name: ff7ec-support-team-builder-benchmarks
   dependencies:
     - benchotron
-    - ff7ec-team-builder
+    - ff7ec-support-team-builder
     - quickcheck
   build:
     censorProjectWarnings:

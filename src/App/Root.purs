@@ -257,7 +257,7 @@ render state =
                 , HH.p_
                     [ HH.text "If you find a bug or would like to make a suggestion, open a New Issue "
                     , HH.a
-                        [ HP.href "https://github.com/dcastro/ff7ec-team-builder/issues"
+                        [ HP.href "https://github.com/dcastro/ff7ec-support-team-builder/issues"
                         , HP.target "_blank"
                         ]
                         [ HH.text "here" ]

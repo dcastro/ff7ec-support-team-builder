@@ -1,6 +1,5 @@
 module App.Results where
 
-import Core.Database.Types
 import Core.Database.UserState.VLatest
 import Prelude
 
@@ -33,7 +32,7 @@ _weaponModal = Proxy :: Proxy "weaponModal"
 
 type State =
   { teams :: Array AssignmentResult
-  , weaponForModal :: Maybe Weapon
+  , weaponForModal :: Maybe WeaponModal.Input
   }
 
 type Input = Array AssignmentResult
@@ -43,7 +42,7 @@ data Output = RaiseSetOwnedOb WeaponName Int
 data Action
   = Receive Input
   | SetOwnedOb WeaponName Int
-  | SelectedWeaponForModal Weapon
+  | SelectedWeaponForModal WeaponModal.Input
   | HandleWeaponModal WeaponModal.Output
 
 component :: forall q. H.Component q Input Output Aff
@@ -78,20 +77,26 @@ render state =
                         ]
                     ]
                       <>
-                        ( Search.getEquipedWeapons character <#> \equipedWeapon ->
+                        ( Search.getEquipedWeapons character <#> \equipedWeapon -> do
+                            let
+                              weaponModalInput =
+                                { weapon: equipedWeapon.weaponData.weapon
+                                , ownedOb: equipedWeapon.weaponState.ownedOb
+                                }
+
                             HH.div [ classes' "column is-two-fifths" ]
                               -- Align the img/wepon name/controls vertically.
                               -- `is-1` for a smaller gap between the elements.
                               [ HH.div [ classes' "columns is-mobile is-centered is-vcentered is-1" ]
                                   [ HH.div
                                       [ classes' "column is-narrow is-clickable"
-                                      , HE.onClick $ \_ -> SelectedWeaponForModal equipedWeapon.weaponData.weapon
+                                      , HE.onClick $ \_ -> SelectedWeaponForModal weaponModalInput
                                       ]
                                       [ HH.img [ HP.src (display equipedWeapon.weaponData.weapon.image), classes' "image is-32x32" ]
                                       ]
                                   , HH.div
                                       [ classes' "column is-narrow is-clickable has-tooltip-right"
-                                      , HE.onClick $ \_ -> SelectedWeaponForModal equipedWeapon.weaponData.weapon
+                                      , HE.onClick $ \_ -> SelectedWeaponForModal weaponModalInput
                                       , tooltip (mkTooltipForWeapon equipedWeapon.weaponData.weapon)
                                       ]
                                       [ HH.span_

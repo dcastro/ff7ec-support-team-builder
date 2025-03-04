@@ -46,7 +46,7 @@ type State =
   , selectedMinMaxPotency :: Potency
   , matchingWeapons :: Array FilterResultWeapon
   , canBeDeleted :: Boolean
-  , weaponForModal :: Maybe Weapon
+  , weaponForModal :: Maybe WeaponModal.Input
   }
 
 data Output
@@ -60,7 +60,7 @@ data Action
   | SelectedMinBasePotency Int
   | SelectedMinMaxPotency Int
   | SetOwnedOb WeaponName Int
-  | SelectedWeaponForModal Weapon
+  | SelectedWeaponForModal WeaponModal.Input
   | HandleWeaponModal WeaponModal.Output
   | Initialize
   | Receive Input
@@ -192,6 +192,11 @@ render state =
                             ( state.matchingWeapons <#> \filterResultWeapon -> do
                                 let weaponData = filterResultWeapon.weapon
                                 let weaponState = filterResultWeapon.weaponState
+                                let
+                                  weaponModalInput =
+                                    { weapon: weaponData.weapon
+                                    , ownedOb: weaponState.ownedOb
+                                    }
 
                                 -- Grey out a row if the weapon does not match the filters
                                 let
@@ -206,17 +211,17 @@ render state =
                                   [ HH.img
                                       [ HP.src (display weaponData.weapon.image)
                                       , classes' "is-clickable image is-32x32"
-                                      , HE.onClick $ \_ -> SelectedWeaponForModal weaponData.weapon
+                                      , HE.onClick $ \_ -> SelectedWeaponForModal weaponModalInput
                                       ]
                                   , HH.td
                                       [ classes' ("is-clickable has-tooltip-right" # checkCellDisabled)
-                                      , HE.onClick $ \_ -> SelectedWeaponForModal weaponData.weapon
+                                      , HE.onClick $ \_ -> SelectedWeaponForModal weaponModalInput
                                       , tooltip (mkTooltipForWeapon weaponData.weapon)
                                       ]
                                       [ HH.text $ display weaponData.weapon.name ]
                                   , HH.td
                                       [ classes' ("is-clickable has-tooltip-right" # checkCellDisabled)
-                                      , HE.onClick $ \_ -> SelectedWeaponForModal weaponData.weapon
+                                      , HE.onClick $ \_ -> SelectedWeaponForModal weaponModalInput
                                       , tooltip (mkTooltipForWeapon weaponData.weapon)
                                       ]
                                       [ HH.text $ display weaponData.weapon.character ]

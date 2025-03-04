@@ -100,7 +100,7 @@ render state =
         [ HH.text "Failed to load"
         ]
     Loaded { dbState, teams, selectedEffectCount, maxCharacterCount, effectSelectorIds } ->
-      HH.section [ classes' "hero is-fullheight" ]
+      HH.section [ classes' "is-fullheight" ]
         [ HH.section [ classes' "section" ]
             [ HH.h2 [ classes' "title is-2 has-text-centered" ]
                 [ HH.text "FF7 EC - Support Team Builder" ]

@@ -352,9 +352,9 @@ instance Ord TeamScore where
       -- I.e. criteria are listed in order from most to least important.
       Arr.fold
         [ compare `on` _.maxPotenciesScore
-        , compare `on` _.basePotenciesScore
         , compare `on` _.characterCountScore
         , compare `on` _.weaponCountScore
+        , compare `on` _.basePotenciesScore
         ]
 
 scoreTeam :: AssignmentResult -> TeamScore

@@ -197,6 +197,96 @@
   [
     {
       "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Bahamut Rod",
         "Crimson Staff"
       ],
@@ -773,81 +863,6 @@
   [
     {
       "weapons": [
-        "Crimson Staff",
-        "Terra's Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Syringe Rapier"
-      ],
-      "character": "Matt"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff",
-        "Terra's Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Pilot's Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff",
-        "Terra's Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Bahamut Cutter"
-      ],
-      "character": "Yuffie"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Ivy Collar",
-        "Pilot's Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Bahamut Cutter",
-        "Boomerang"
-      ],
-      "character": "Yuffie"
-    }
-  ],
-  [
-    {
-      "weapons": [
         "Bahamut Rod",
         "Crimson Staff"
       ],
@@ -1377,21 +1392,6 @@
     {
       "weapons": [
         "Crimson Staff",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Withering Blaze"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff",
         "Terra's Rod"
       ],
       "character": "Aerith"
@@ -1629,6 +1629,111 @@
     {
       "weapons": [
         "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
       ],
       "character": "Yuffie"
     }
@@ -2068,81 +2173,6 @@
   [
     {
       "weapons": [
-        "Crimson Staff",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Chocobo Paddle"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Bandaged Sword",
-        "Chocobo Paddle"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Flame Dragon's Band",
-        "Pilot's Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Shinra Wyvern Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mallet of Luck"
-      ],
-      "character": "Yuffie"
-    }
-  ],
-  [
-    {
-      "weapons": [
         "Bahamut Rod",
         "Crimson Staff"
       ],
@@ -2511,36 +2541,6 @@
   [
     {
       "weapons": [
-        "Crimson Staff",
-        "Mythril Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Withering Blaze"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Bahamut Cutter",
-        "Mallet of Luck"
-      ],
-      "character": "Yuffie"
-    }
-  ],
-  [
-    {
-      "weapons": [
         "Bahamut Rod",
         "Crimson Staff"
       ],
@@ -2860,6 +2860,51 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Kamura Wand"
       ],
       "character": "Aerith"
@@ -2982,51 +3027,6 @@
         "Silver Collar"
       ],
       "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff",
-        "Mythril Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Chocobo Paddle"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff",
-        "Mythril Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Shinra Wyvern Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff",
-        "Mythril Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mallet of Luck"
-      ],
-      "character": "Yuffie"
     }
   ],
   [

@@ -16927,6 +16927,86 @@
       "atbCost": 4
     },
     {
+      "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "MATK Boost I",
+        "slot1": "MATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ability Pot.",
+        "slot1": "Boost ATK (All Allies)"
+      },
+      "ob6": {
+        "effects": [
+          {
+            "type": "ExploitWeakness",
+            "value": {
+              "range": "Self",
+              "percentage": 35,
+              "durExt": {
+                "extension": 15,
+                "duration": 45
+              }
+            }
+          }
+        ],
+        "description": "Diving Scourge+ (4 ATB)\n840% Mag. Non-elem. Damage [Range: All Enemies]\n30000 Additional Damage [Range: All Enemies]\n45s 35% Exploit Weakness (+15s) [Range: Self] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "type": "ExploitWeakness",
+            "value": {
+              "range": "Self",
+              "percentage": 40,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            }
+          }
+        ],
+        "description": "Diving Scourge++ (4 ATB)\n1010% Mag. Non-elem. Damage [Range: All Enemies]\n40000 Additional Damage [Range: All Enemies]\n60s 40% Exploit Weakness (+20s) [Range: Self] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "type": "ExploitWeakness",
+            "value": {
+              "range": "Self",
+              "percentage": 25,
+              "durExt": {
+                "extension": 12,
+                "duration": 35
+              }
+            }
+          }
+        ],
+        "description": "Diving Scourge (4 ATB)\n650% Mag. Non-elem. Damage [Range: All Enemies]\n20000 Additional Damage [Range: All Enemies]\n35s 25% Exploit Weakness (+12s) [Range: Self] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "type": "ExploitWeakness",
+            "value": {
+              "range": "Self",
+              "percentage": 25,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            }
+          }
+        ],
+        "description": "Diving Scourge (4 ATB)\n540% Mag. Non-elem. Damage [Range: All Enemies]\n10000 Additional Damage [Range: All Enemies]\n30s 25% Exploit Weakness (+10s) [Range: Self] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "name": "Blade of the Worthy",
+      "image": "https://i.imgur.com/GtWQP62.png",
+      "character": "Sephiroth",
+      "atbCost": 4
+    },
+    {
       "source": "Gacha",
       "sAbilities": {
         "slot3": "▲ Sigil Boost I",
@@ -23248,6 +23328,98 @@
       },
       "name": "Razor Ring",
       "image": "https://i.imgur.com/GKkFoxi.png",
+      "character": "Yuffie",
+      "atbCost": 4
+    },
+    {
+      "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost MATK"
+      },
+      "ob6": {
+        "effects": [
+          {
+            "type": "EarthResistDown",
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 7,
+                "duration": 25
+              }
+            }
+          }
+        ],
+        "description": "Dequakera Surge+ (4 ATB)\n350% Mag. Non-elem. Damage [Range: Single Enemy]\n25s Earth Resistance Down (+7s) (Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "type": "EarthResistDown",
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 9,
+                "duration": 28
+              }
+            }
+          }
+        ],
+        "description": "Dequakera Surge++ (4 ATB)\n360% Mag. Non-elem. Damage [Range: Single Enemy]\n28s Earth Resistance Down (+9s) (Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "type": "EarthResistDown",
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 7,
+                "duration": 22
+              }
+            }
+          }
+        ],
+        "description": "Dequakera Surge (4 ATB)\n300% Mag. Non-elem. Damage [Range: Single Enemy]\n22s Earth Resistance Down (+7s) (Low -> Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "type": "EarthResistDown",
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            }
+          }
+        ],
+        "description": "Dequakera Surge (4 ATB)\n260% Mag. Non-elem. Damage [Range: Single Enemy]\n20s Earth Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "name": "Risanautr",
+      "image": "https://i.imgur.com/chpj1xI.png",
       "character": "Yuffie",
       "atbCost": 4
     },

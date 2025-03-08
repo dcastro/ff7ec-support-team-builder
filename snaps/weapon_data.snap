@@ -234,6 +234,16 @@
     }
   ],
   [
+    "Blade of the Worthy",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Blue Bramble",
     {
       "ownedOb": "OB6-10",
@@ -1626,6 +1636,17 @@
       "ignored": false,
       "distinctObs": [
         "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Risanautr",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],

@@ -399,6 +399,14 @@
     "FilterExploitWeakness",
     [
       {
+        "weaponName": "Blade of the Worthy",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
         "weaponName": "Blue Daffodil Gloves",
         "ranges": [
           {
@@ -5589,6 +5597,32 @@
             }
           }
         ]
+      },
+      {
+        "weaponName": "Risanautr",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
       }
     ]
   ],
@@ -6079,6 +6113,9 @@
       },
       {
         "weaponName": "Noble Collar"
+      },
+      {
+        "weaponName": "Blade of the Worthy"
       },
       {
         "weaponName": "Blue Bramble"

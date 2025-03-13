@@ -54,6 +54,9 @@ spec =
       "45s 30% Exploit Weakness (+9s) [Range: Self]"
         `shouldParse`
           ExploitWeakness { range: Self, durExt: { duration: Duration 45, extension: Extension 9 }, percentage: Percentage 30 }
+      "150s 50% Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]"
+        `shouldParse`
+          IceWeakness { range: SingleTarget, durExt: { duration: Duration 150, extension: Extension 0 }, percentage: Percentage 50 }
     it "parses all weapons" do
       sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
       sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of

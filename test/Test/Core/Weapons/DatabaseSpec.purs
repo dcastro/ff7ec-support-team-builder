@@ -179,3 +179,9 @@ getPotencies = case _ of
   Enfeeble {} -> Nothing
   Stop {} -> Nothing
   ExploitWeakness {} -> Nothing
+  FireWeakness {} -> Nothing
+  IceWeakness {} -> Nothing
+  ThunderWeakness {} -> Nothing
+  EarthWeakness {} -> Nothing
+  WaterWeakness {} -> Nothing
+  WindWeakness {} -> Nothing

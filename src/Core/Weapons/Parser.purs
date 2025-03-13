@@ -266,6 +266,12 @@ parseWeaponEffect coords =
       <|> P.try (withDurExtPotencies "Earth Resistance Down" EarthResistDown)
       <|> P.try (withDurExtPotencies "Water Resistance Down" WaterResistDown)
       <|> P.try (withDurExtPotencies "Wind Resistance Down" WindResistDown)
+      <|> P.try (withDurExtPercentage "Fire Weakness" FireWeakness)
+      <|> P.try (withDurExtPercentage "Ice Weakness" IceWeakness)
+      <|> P.try (withDurExtPercentage "Thunder Weakness" ThunderWeakness)
+      <|> P.try (withDurExtPercentage "Earth Weakness" EarthWeakness)
+      <|> P.try (withDurExtPercentage "Water Weakness" WaterWeakness)
+      <|> P.try (withDurExtPercentage "Wind Weakness" WindWeakness)
       <|> P.try (withDurExt "Enfeeble" Enfeeble)
       <|> P.try (withDurExt "Stop" Stop)
       -- NOTE: The effect on "Blue Daffodil Gloves" is named "WeaknessAttackUp",

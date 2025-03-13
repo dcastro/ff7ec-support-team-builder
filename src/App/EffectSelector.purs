@@ -424,6 +424,12 @@ hasPotencies = case _ of
     FilterEarthResistDown -> true
     FilterWaterResistDown -> true
     FilterWindResistDown -> true
+    FilterFireWeakness -> false
+    FilterIceWeakness -> false
+    FilterThunderWeakness -> false
+    FilterEarthWeakness -> false
+    FilterWaterWeakness -> false
+    FilterWindWeakness -> false
 
     FilterSigilBoostO -> false
     FilterSigilBoostX -> false
@@ -463,6 +469,12 @@ hasRange = case _ of
     FilterEarthResistDown -> true
     FilterWaterResistDown -> true
     FilterWindResistDown -> true
+    FilterFireWeakness -> true
+    FilterIceWeakness -> true
+    FilterThunderWeakness -> true
+    FilterEarthWeakness -> true
+    FilterWaterWeakness -> true
+    FilterWindWeakness -> true
 
     FilterSigilBoostO -> false
     FilterSigilBoostX -> false

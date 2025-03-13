@@ -161,6 +161,12 @@ data WeaponEffect
   | EarthResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | WaterResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | WindResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | FireWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | IceWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | ThunderWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | EarthWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | WaterWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | WindWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | Enfeeble { range :: Range, durExt :: DurExt }
   | Stop { range :: Range, durExt :: DurExt }
   | ExploitWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
@@ -200,6 +206,12 @@ data FilterEffectType
   | FilterEarthResistDown
   | FilterWaterResistDown
   | FilterWindResistDown
+  | FilterFireWeakness
+  | FilterIceWeakness
+  | FilterThunderWeakness
+  | FilterEarthWeakness
+  | FilterWaterWeakness
+  | FilterWindWeakness
 
   | FilterSigilBoostO
   | FilterSigilBoostX
@@ -331,6 +343,12 @@ instance Display FilterEffectType where
     FilterEarthResistDown -> "Earth resist down"
     FilterWaterResistDown -> "Water resist down"
     FilterWindResistDown -> "Wind resist down"
+    FilterFireWeakness -> "Fire weakness"
+    FilterIceWeakness -> "Ice weakness"
+    FilterThunderWeakness -> "Thunder weakness"
+    FilterEarthWeakness -> "Earth weakness"
+    FilterWaterWeakness -> "Water weakness"
+    FilterWindWeakness -> "Wind weakness"
 
     FilterSigilBoostO -> "⏺ Sigil Boost"
     FilterSigilBoostX -> "✖ Sigil Boost"

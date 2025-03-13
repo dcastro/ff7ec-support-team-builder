@@ -247,6 +247,31 @@ getDistinctObs weapon = do
           ExploitWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
           _ -> crash unit
 
+      FireWeakness { range: range1, durExt: _, percentage: _ } ->
+        case y of
+          FireWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          _ -> crash unit
+      IceWeakness { range: range1, durExt: _, percentage: _ } ->
+        case y of
+          IceWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          _ -> crash unit
+      ThunderWeakness { range: range1, durExt: _, percentage: _ } ->
+        case y of
+          ThunderWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          _ -> crash unit
+      EarthWeakness { range: range1, durExt: _, percentage: _ } ->
+        case y of
+          EarthWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          _ -> crash unit
+      WaterWeakness { range: range1, durExt: _, percentage: _ } ->
+        case y of
+          WaterWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          _ -> crash unit
+      WindWeakness { range: range1, durExt: _, percentage: _ } ->
+        case y of
+          WindWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          _ -> crash unit
+
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
 
 createDbState :: forall m. MonadEffect m => MonadRec m => Array Weapon -> UserState -> m DbState
@@ -474,6 +499,14 @@ groupsForWeapon weapon = do
       Enfeeble { range } -> Just { effectType: FilterEnfeeble, range: Just range, potencies: Nothing }
       Stop { range } -> Just { effectType: FilterStop, range: Just range, potencies: Nothing }
       ExploitWeakness { range } -> Just { effectType: FilterExploitWeakness, range: Just range, potencies: Nothing }
+
+      FireWeakness { range } -> Just { effectType: FilterFireWeakness, range: Just range, potencies: Nothing }
+      IceWeakness { range } -> Just { effectType: FilterIceWeakness, range: Just range, potencies: Nothing }
+      ThunderWeakness { range } -> Just { effectType: FilterThunderWeakness, range: Just range, potencies: Nothing }
+      EarthWeakness { range } -> Just { effectType: FilterEarthWeakness, range: Just range, potencies: Nothing }
+      WaterWeakness { range } -> Just { effectType: FilterWaterWeakness, range: Just range, potencies: Nothing }
+      WindWeakness { range } -> Just { effectType: FilterWindWeakness, range: Just range, potencies: Nothing }
+
       PatkUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
         PatkUp ob1, PatkUp ob6, PatkUp ob10 -> Just { effectType: FilterPatkUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit

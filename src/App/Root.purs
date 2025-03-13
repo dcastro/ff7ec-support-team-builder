@@ -8,6 +8,7 @@ import App.EffectSelector as EffectSelector
 import App.Results as Result
 import App.Results as Results
 import Core.Database as Db
+import Core.Database.Types as Db
 import Core.Display (display)
 import Core.Weapons.Search (AssignmentResult)
 import Core.Weapons.Search as Search
@@ -56,6 +57,7 @@ type LoadedState =
   , effectSelectorIds :: NonEmptyArray Int
   , mustHaveChars :: Set CharacterName
   , excludeChars :: Set CharacterName
+  , enabledFilterEffectTypes :: Array FilterEffectType
   }
 
 mkInitialLoadedState :: DbState -> LoadedState
@@ -67,6 +69,10 @@ mkInitialLoadedState dbState =
   , effectSelectorIds: NA.range 0 (effectSelectorCount - 1)
   , mustHaveChars: Set.empty
   , excludeChars: Set.empty
+  , enabledFilterEffectTypes:
+      Db.allFilterEffectTypes
+        # Arr.filter \filterEffectType -> Map.member filterEffectType dbState.db.groupedByEffect
+
   }
   where
   effectSelectorCount = 4
@@ -99,7 +105,7 @@ render state =
       HH.div_
         [ HH.text "Failed to load"
         ]
-    Loaded { dbState, teams, selectedEffectCount, maxCharacterCount, effectSelectorIds } ->
+    Loaded { dbState, teams, selectedEffectCount, maxCharacterCount, effectSelectorIds, enabledFilterEffectTypes } ->
       HH.section [ classes' "is-fullheight" ]
         [ HH.section [ classes' "section" ]
             [ HH.h2 [ classes' "title is-2 has-text-centered" ]
@@ -120,6 +126,7 @@ render state =
                               { dbState
                               , effectTypeMb: Nothing
                               , canBeDeleted: NA.length effectSelectorIds > 1
+                              , enabledFilterEffectTypes
                               }
                               (HandleEffectSelector effectSelectorId)
                           ]

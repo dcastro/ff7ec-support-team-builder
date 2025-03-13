@@ -37,6 +37,7 @@ type Input =
   { dbState :: DbState
   , effectTypeMb :: Maybe FilterEffectType
   , canBeDeleted :: Boolean
+  , enabledFilterEffectTypes :: Array FilterEffectType
   }
 
 type State =
@@ -49,6 +50,7 @@ type State =
   , canBeDeleted :: Boolean
   , weaponForModal :: Maybe WeaponModal.Input
   , rangeSuggestion :: Maybe FilterRange
+  , enabledFilterEffectTypes :: Array FilterEffectType
   }
 
 data Output
@@ -74,7 +76,7 @@ data Query a = GetFilter (Filter -> a)
 component :: H.Component Query Input Output Aff
 component =
   H.mkComponent
-    { initialState: \{ dbState, effectTypeMb, canBeDeleted } ->
+    { initialState: \{ dbState, effectTypeMb, canBeDeleted, enabledFilterEffectTypes } ->
         updateMatchingWeapons
           { dbState
           , selectedEffectType: effectTypeMb
@@ -85,6 +87,7 @@ component =
           , canBeDeleted
           , weaponForModal: Nothing
           , rangeSuggestion: Nothing
+          , enabledFilterEffectTypes
           }
     , render
     , eval: H.mkEval H.defaultEval
@@ -115,7 +118,7 @@ render state =
                                 ]
                                 ( [ HH.option_ [ HH.text "Select a weapon effect..." ] ]
                                     <>
-                                      ( Db.allFilterEffectTypes <#> \effectType -> do
+                                      ( state.enabledFilterEffectTypes <#> \effectType -> do
                                           let selected = state.selectedEffectType == Just effectType
                                           HH.option [ HP.selected selected ] [ HH.text $ display effectType ]
                                       )

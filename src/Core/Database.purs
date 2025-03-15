@@ -247,29 +247,29 @@ getDistinctObs weapon = do
           ExploitWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
           _ -> crash unit
 
-      FireWeakness { range: range1, durExt: _, percentage: _ } ->
+      FireWeakness { range: range1, durExt: _ } ->
         case y of
-          FireWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          FireWeakness { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
-      IceWeakness { range: range1, durExt: _, percentage: _ } ->
+      IceWeakness { range: range1, durExt: _ } ->
         case y of
-          IceWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          IceWeakness { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
-      ThunderWeakness { range: range1, durExt: _, percentage: _ } ->
+      ThunderWeakness { range: range1, durExt: _ } ->
         case y of
-          ThunderWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          ThunderWeakness { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
-      EarthWeakness { range: range1, durExt: _, percentage: _ } ->
+      EarthWeakness { range: range1, durExt: _ } ->
         case y of
-          EarthWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          EarthWeakness { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
-      WaterWeakness { range: range1, durExt: _, percentage: _ } ->
+      WaterWeakness { range: range1, durExt: _ } ->
         case y of
-          WaterWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          WaterWeakness { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
-      WindWeakness { range: range1, durExt: _, percentage: _ } ->
+      WindWeakness { range: range1, durExt: _ } ->
         case y of
-          WindWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          WindWeakness { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
 
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"

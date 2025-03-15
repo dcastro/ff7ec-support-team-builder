@@ -5871,6 +5871,19 @@
     ]
   ],
   [
+    "FilterIceWeakness",
+    [
+      {
+        "weaponName": "Gun of the Worthy",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      }
+    ]
+  ],
+  [
     "FilterSigilBoostO",
     [
       {

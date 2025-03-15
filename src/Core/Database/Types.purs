@@ -162,12 +162,12 @@ data WeaponEffect
   | EarthResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | WaterResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | WindResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
-  | FireWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | IceWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | ThunderWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | EarthWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | WaterWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | WindWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | FireWeakness { range :: Range, durExt :: DurExt }
+  | IceWeakness { range :: Range, durExt :: DurExt }
+  | ThunderWeakness { range :: Range, durExt :: DurExt }
+  | EarthWeakness { range :: Range, durExt :: DurExt }
+  | WaterWeakness { range :: Range, durExt :: DurExt }
+  | WindWeakness { range :: Range, durExt :: DurExt }
   | Enfeeble { range :: Range, durExt :: DurExt }
   | Stop { range :: Range, durExt :: DurExt }
   | ExploitWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
@@ -709,12 +709,12 @@ exhaustiveWeaponEffectMatch =
   , EarthResistDown { range, durExt, potencies }
   , WaterResistDown { range, durExt, potencies }
   , WindResistDown { range, durExt, potencies }
-  , FireWeakness { range, durExt, percentage }
-  , IceWeakness { range, durExt, percentage }
-  , ThunderWeakness { range, durExt, percentage }
-  , EarthWeakness { range, durExt, percentage }
-  , WaterWeakness { range, durExt, percentage }
-  , WindWeakness { range, durExt, percentage }
+  , FireWeakness { range, durExt }
+  , IceWeakness { range, durExt }
+  , ThunderWeakness { range, durExt }
+  , EarthWeakness { range, durExt }
+  , WaterWeakness { range, durExt }
+  , WindWeakness { range, durExt }
   , Enfeeble { range, durExt }
   , Stop { range, durExt }
   , ExploitWeakness { range, durExt, percentage }

@@ -25072,19 +25072,63 @@
         "slot1": "Boost PATK (All Allies)"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 0,
+                "duration": 100
+              }
+            },
+            "type": "IceWeakness"
+          }
+        ],
         "description": "Frozen Strike+ (4 ATB)\n930% Phys. Ice Damage [Range: Single Enemy]\n100s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+5% Limit Break Gauge [Range: Self]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 0,
+                "duration": 150
+              }
+            },
+            "type": "IceWeakness"
+          }
+        ],
         "description": "Frozen Strike++ (4 ATB)\n1120% Phys. Ice Damage [Range: Single Enemy]\n150s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+5% Limit Break Gauge [Range: Self]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 0,
+                "duration": 70
+              }
+            },
+            "type": "IceWeakness"
+          }
+        ],
         "description": "Frozen Strike (4 ATB)\n740% Phys. Ice Damage [Range: Single Enemy]\n70s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+4% Limit Break Gauge [Range: Self]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "IceWeakness"
+          }
+        ],
         "description": "Frozen Strike (4 ATB)\n620% Phys. Ice Damage [Range: Single Enemy]\n60s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+4% Limit Break Gauge [Range: Self]"
       },
       "name": "Gun of the Worthy",

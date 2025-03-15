@@ -285,10 +285,11 @@ handleAction = case _ of
         H.modify_ \s -> s { selectedEffectType = Nothing }
           # updateMatchingWeapons
     else do
+      state <- H.get
       -- Find the correct filter
       let arrayIndex = idx - 1
       let
-        effectType = Arr.index Db.allFilterEffectTypes arrayIndex `unsafeFromJust`
+        effectType = Arr.index state.enabledFilterEffectTypes arrayIndex `unsafeFromJust`
           ("Invalid effect type index: " <> show arrayIndex)
 
       Console.log $ "idx " <> show idx <> ", selected: " <> display effectType

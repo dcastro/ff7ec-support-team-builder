@@ -2,11 +2,14 @@ module Utils where
 
 import Prelude
 
+import Control.Alt (class Alt, alt)
 import Control.Monad.Error.Class (class MonadThrow, throwError)
 import Data.Bounded.Generic (class GenericBottom, genericBottom)
 import Data.Either (Either(..))
 import Data.Enum (class Enum, pred, succ)
 import Data.Enum.Generic (class GenericEnum, genericSucc)
+import Data.Foldable (class Foldable)
+import Data.Foldable as F
 import Data.Foldable as Fold
 import Data.Generic.Rep (class Generic)
 import Data.Map (Map)
@@ -106,3 +109,9 @@ predCyclic a =
   case pred a of
     Just b -> b
     Nothing -> top
+
+-- | Combines a collection of elements using the `Alt` operation.
+--
+-- Similar to `Data.Foldable.oneOf`, but only requires `Alt` instead of `Plus`.
+oneOf' :: forall f g a. Foldable f => Alt g => g a -> f (g a) -> g a
+oneOf' = F.foldr alt

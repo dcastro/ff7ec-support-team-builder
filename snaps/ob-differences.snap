@@ -2,7 +2,6 @@
   {
     "weaponName": "Black Whiskers",
     "obYEffect": {
-      "type": "WaterResistDown",
       "value": {
         "range": "SingleTarget",
         "potencies": {
@@ -13,11 +12,11 @@
           "extension": 10,
           "duration": 30
         }
-      }
+      },
+      "type": "WaterResistDown"
     },
     "obY": "OB10",
     "obXEffect": {
-      "type": "WaterResistDown",
       "value": {
         "range": "SingleTarget",
         "potencies": {
@@ -28,14 +27,14 @@
           "extension": 8,
           "duration": 26
         }
-      }
+      },
+      "type": "WaterResistDown"
     },
     "obX": "OB6"
   },
   {
     "weaponName": "Crystal Megaphone",
     "obYEffect": {
-      "type": "PdefUp",
       "value": {
         "range": "SingleTarget",
         "potencies": {
@@ -46,11 +45,11 @@
           "extension": 11,
           "duration": 34
         }
-      }
+      },
+      "type": "PdefUp"
     },
     "obY": "OB1",
     "obXEffect": {
-      "type": "PdefUp",
       "value": {
         "range": "SingleTarget",
         "potencies": {
@@ -61,14 +60,14 @@
           "extension": 10,
           "duration": 30
         }
-      }
+      },
+      "type": "PdefUp"
     },
     "obX": "OB0"
   },
   {
     "weaponName": "Gold Megaphone",
     "obYEffect": {
-      "type": "MatkDown",
       "value": {
         "range": "SingleTarget",
         "potencies": {
@@ -79,11 +78,11 @@
           "extension": 20,
           "duration": 60
         }
-      }
+      },
+      "type": "MatkDown"
     },
     "obY": "OB10",
     "obXEffect": {
-      "type": "MatkDown",
       "value": {
         "range": "SingleTarget",
         "potencies": {
@@ -94,7 +93,8 @@
           "extension": 17,
           "duration": 52
         }
-      }
+      },
+      "type": "MatkDown"
     },
     "obX": "OB6"
   }

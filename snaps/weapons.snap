@@ -25059,6 +25059,38 @@
       "image": "https://i.imgur.com/SjD1vvD.png",
       "character": "Zack",
       "atbCost": 4
+    },
+    {
+      "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost PATK (All Allies)"
+      },
+      "ob6": {
+        "effects": [],
+        "description": "Frozen Strike+ (4 ATB)\n930% Phys. Ice Damage [Range: Single Enemy]\n100s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+5% Limit Break Gauge [Range: Self]"
+      },
+      "ob10": {
+        "effects": [],
+        "description": "Frozen Strike++ (4 ATB)\n1120% Phys. Ice Damage [Range: Single Enemy]\n150s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+5% Limit Break Gauge [Range: Self]"
+      },
+      "ob1": {
+        "effects": [],
+        "description": "Frozen Strike (4 ATB)\n740% Phys. Ice Damage [Range: Single Enemy]\n70s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+4% Limit Break Gauge [Range: Self]"
+      },
+      "ob0": {
+        "effects": [],
+        "description": "Frozen Strike (4 ATB)\n620% Phys. Ice Damage [Range: Single Enemy]\n60s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+4% Limit Break Gauge [Range: Self]"
+      },
+      "name": "Gun of the Worthy",
+      "image": "https://i.imgur.com/5o0PTwY.png",
+      "character": "Vincent",
+      "atbCost": 4
     }
   ],
   "errors": []

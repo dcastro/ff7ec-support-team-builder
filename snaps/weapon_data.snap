@@ -872,6 +872,16 @@
     }
   ],
   [
+    "Gun of the Worthy",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Hardcore Squad",
     {
       "ownedOb": "OB6-10",

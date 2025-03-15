@@ -1,3 +1,6 @@
+install-deps:
+	npm install -g esbuild spago@next parcel purescript purs-tidy
+
 build:
 	npm run ts
 	spago build
@@ -53,6 +56,9 @@ full-clean:
 	rm -rf .spago
 	rm -rf .psci_modules
 	rm -rf .parcel-cache
+
+repl:
+	spago repl
 
 regen-weapons: ## Regenerate the `weapons.json` file used in the tests
 	curl \

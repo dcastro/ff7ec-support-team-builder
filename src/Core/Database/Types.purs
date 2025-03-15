@@ -440,10 +440,7 @@ instance ReadForeign Range where
 
 instance ReadForeign WeaponEffect where
   readImpl json = do
-    -- str :: String <- readImpl j son
-    -- x :: X <- readImpl json
     { type: recType, value } :: { type :: String, value :: Foreign } <- readImpl json
-    -- let { type, value } = x
     oneOf' (unexpected recType) $
       exhaustiveWeaponEffectMatch <#> \x -> case x of
         Heal _ -> tryRead Heal recType value "Heal"

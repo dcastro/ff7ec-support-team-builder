@@ -258,6 +258,22 @@
   [
     {
       "weapons": [
+        "Kamura Wand",
+        "Noblesse Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Stalwart Integrity",
         "Turks' Blade"
       ],
@@ -326,6 +342,22 @@
         "Oven Mitts"
       ],
       "character": "Tifa"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gambanteinn",
+        "Noblesse Rod"
+      ],
+      "character": "Aerith"
     },
     {
       "weapons": [

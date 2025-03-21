@@ -1737,6 +1737,98 @@
       "atbCost": 5
     },
     {
+      "source": "Event",
+      "sAbilities": {
+        "slot3": "MATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "ATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Mag. Ability Pot.",
+        "slot1": "Boost HP"
+      },
+      "ob6": {
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 7,
+                "duration": 25
+              }
+            },
+            "type": "PatkDown"
+          }
+        ],
+        "description": "Debravera Surge+ (4 ATB)\n350% Mag. Non-elem. Damage [Range: Single Enemy]\n25s PATK Down (+7s) (Low -> Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 9,
+                "duration": 28
+              }
+            },
+            "type": "PatkDown"
+          }
+        ],
+        "description": "Debravera Surge++ (4 ATB)\n360% Mag. Non-elem. Damage [Range: Single Enemy]\n28s PATK Down (+9s) (Low -> Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 7,
+                "duration": 22
+              }
+            },
+            "type": "PatkDown"
+          }
+        ],
+        "description": "Debravera Surge (4 ATB)\n300% Mag. Non-elem. Damage [Range: Single Enemy]\n22s PATK Down (+7s) (Low -> Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PatkDown"
+          }
+        ],
+        "description": "Debravera Surge (4 ATB)\n260% Mag. Non-elem. Damage [Range: Single Enemy]\n20s PATK Down (+6s) (Low -> Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
+      },
+      "name": "Noblesse Rod",
+      "image": "https://i.imgur.com/KxPLAy0.png",
+      "character": "Aerith",
+      "atbCost": 4
+    },
+    {
       "source": "Gacha",
       "sAbilities": {
         "slot3": "⏺ Sigil Boost I",
@@ -10543,6 +10635,38 @@
       },
       "name": "Stream Saber",
       "image": "https://i.imgur.com/MAajVZE.png",
+      "character": "Cloud",
+      "atbCost": 4
+    },
+    {
+      "source": "Gift",
+      "sAbilities": {
+        "slot3": "PATK Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Phys. Ability Pot.",
+        "slot1": "Boost HP"
+      },
+      "ob6": {
+        "effects": [],
+        "description": "Scratch+ (4 ATB)\n420% Phys. Non-elem. Damage [Range: All Enemies]\n8000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob10": {
+        "effects": [],
+        "description": "Scratch++ (4 ATB)\n430% Phys. Non-elem. Damage [Range: All Enemies]\n10000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob1": {
+        "effects": [],
+        "description": "Scratch (4 ATB)\n360% Phys. Non-elem. Damage [Range: All Enemies]\n6000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "ob0": {
+        "effects": [],
+        "description": "Scratch (4 ATB)\n310% Phys. Non-elem. Damage [Range: All Enemies]\n5000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
+      },
+      "name": "Umbral Blade",
+      "image": "https://i.imgur.com/2yeqO29.png",
       "character": "Cloud",
       "atbCost": 4
     },
@@ -19404,6 +19528,98 @@
       "atbCost": 3
     },
     {
+      "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Earth Pot.",
+        "slot1": "Boost PATK (All Allies)"
+      },
+      "ob6": {
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "EarthDamageUp"
+          }
+        ],
+        "description": "Geo Combo+ (4 ATB)\n990% Phys. Earth Damage [Range: Single Enemy]\n20s Earth Damage Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 50-100% HP]\n+2 ATB [Range: Self] [Condition: First Use]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "EarthDamageUp"
+          }
+        ],
+        "description": "Geo Combo++ (4 ATB)\n1120% Phys. Earth Damage [Range: Single Enemy]\n25s Earth Damage Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 50-100% HP]\n+3 ATB [Range: Self] [Condition: First Use]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "EarthDamageUp"
+          }
+        ],
+        "description": "Geo Combo (4 ATB)\n720% Phys. Earth Damage [Range: Single Enemy]\n20s Earth Damage Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 50-100% HP]\n+1 ATB [Range: Self] [Condition: First Use]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "EarthDamageUp"
+          }
+        ],
+        "description": "Geo Combo (4 ATB)\n600% Phys. Earth Damage [Range: Single Enemy]\n15s Earth Damage Up (+5s) (Low -> Mid) [Range: All Allies] [Condition: Self 50-100% HP]\n+1 ATB [Range: Self] [Condition: First Use]"
+      },
+      "name": "Gauntlets of the Worthy",
+      "image": "https://i.imgur.com/hshuLMW.png",
+      "character": "Tifa",
+      "atbCost": 4
+    },
+    {
       "source": "Gacha",
       "sAbilities": {
         "slot3": "ATK Boost (Water) I",
@@ -21092,6 +21308,82 @@
       },
       "name": "Gilded Age",
       "image": "https://i.imgur.com/6eisZ3Z.png",
+      "character": "Vincent",
+      "atbCost": 4
+    },
+    {
+      "source": "Gacha (Limit Break)",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Ice Pot.",
+        "slot1": "Boost PATK (All Allies)"
+      },
+      "ob6": {
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 0,
+                "duration": 100
+              }
+            },
+            "type": "IceWeakness"
+          }
+        ],
+        "description": "Frozen Strike+ (4 ATB)\n930% Phys. Ice Damage [Range: Single Enemy]\n100s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+5% Limit Break Gauge [Range: Self]"
+      },
+      "ob10": {
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 0,
+                "duration": 150
+              }
+            },
+            "type": "IceWeakness"
+          }
+        ],
+        "description": "Frozen Strike++ (4 ATB)\n1120% Phys. Ice Damage [Range: Single Enemy]\n150s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+5% Limit Break Gauge [Range: Self]"
+      },
+      "ob1": {
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 0,
+                "duration": 70
+              }
+            },
+            "type": "IceWeakness"
+          }
+        ],
+        "description": "Frozen Strike (4 ATB)\n740% Phys. Ice Damage [Range: Single Enemy]\n70s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+4% Limit Break Gauge [Range: Self]"
+      },
+      "ob0": {
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "IceWeakness"
+          }
+        ],
+        "description": "Frozen Strike (4 ATB)\n620% Phys. Ice Damage [Range: Single Enemy]\n60s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+4% Limit Break Gauge [Range: Self]"
+      },
+      "name": "Gun of the Worthy",
+      "image": "https://i.imgur.com/5o0PTwY.png",
       "character": "Vincent",
       "atbCost": 4
     },
@@ -25058,82 +25350,6 @@
       "name": "Zweihander",
       "image": "https://i.imgur.com/SjD1vvD.png",
       "character": "Zack",
-      "atbCost": 4
-    },
-    {
-      "source": "Gacha (Limit Break)",
-      "sAbilities": {
-        "slot3": "▲ Sigil Boost I",
-        "slot2": "PATK Boost I",
-        "slot1": "PATK Boost I"
-      },
-      "rAbilities": {
-        "slot2": "Boost Ice Pot.",
-        "slot1": "Boost PATK (All Allies)"
-      },
-      "ob6": {
-        "effects": [
-          {
-            "value": {
-              "range": "SingleTarget",
-              "durExt": {
-                "extension": 0,
-                "duration": 100
-              }
-            },
-            "type": "IceWeakness"
-          }
-        ],
-        "description": "Frozen Strike+ (4 ATB)\n930% Phys. Ice Damage [Range: Single Enemy]\n100s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+5% Limit Break Gauge [Range: Self]"
-      },
-      "ob10": {
-        "effects": [
-          {
-            "value": {
-              "range": "SingleTarget",
-              "durExt": {
-                "extension": 0,
-                "duration": 150
-              }
-            },
-            "type": "IceWeakness"
-          }
-        ],
-        "description": "Frozen Strike++ (4 ATB)\n1120% Phys. Ice Damage [Range: Single Enemy]\n150s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+5% Limit Break Gauge [Range: Self]"
-      },
-      "ob1": {
-        "effects": [
-          {
-            "value": {
-              "range": "SingleTarget",
-              "durExt": {
-                "extension": 0,
-                "duration": 70
-              }
-            },
-            "type": "IceWeakness"
-          }
-        ],
-        "description": "Frozen Strike (4 ATB)\n740% Phys. Ice Damage [Range: Single Enemy]\n70s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+4% Limit Break Gauge [Range: Self]"
-      },
-      "ob0": {
-        "effects": [
-          {
-            "value": {
-              "range": "SingleTarget",
-              "durExt": {
-                "extension": 0,
-                "duration": 60
-              }
-            },
-            "type": "IceWeakness"
-          }
-        ],
-        "description": "Frozen Strike (4 ATB)\n620% Phys. Ice Damage [Range: Single Enemy]\n60s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\n+4% Limit Break Gauge [Range: Self]"
-      },
-      "name": "Gun of the Worthy",
-      "image": "https://i.imgur.com/5o0PTwY.png",
-      "character": "Vincent",
       "atbCost": 4
     }
   ],

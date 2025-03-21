@@ -2590,6 +2590,32 @@
     "FilterEarthDamageUp",
     [
       {
+        "weaponName": "Gauntlets of the Worthy",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Kugelblitz",
         "ranges": [
           {
@@ -2747,6 +2773,32 @@
               "ob10": {
                 "max": "Mid",
                 "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Noblesse Rod",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
               },
               "ob1": {
                 "max": "Mid",
@@ -6060,6 +6112,9 @@
         "weaponName": "Feathered Gloves"
       },
       {
+        "weaponName": "Gauntlets of the Worthy"
+      },
+      {
         "weaponName": "Guide Gloves"
       },
       {
@@ -6152,6 +6207,9 @@
         "weaponName": "Crow Familiar"
       },
       {
+        "weaponName": "Gun of the Worthy"
+      },
+      {
         "weaponName": "Holiday Garm"
       },
       {
@@ -6165,9 +6223,6 @@
       },
       {
         "weaponName": "Black Whiskers"
-      },
-      {
-        "weaponName": "Gun of the Worthy"
       }
     ]
   ],

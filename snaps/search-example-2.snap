@@ -204,6 +204,21 @@
     },
     {
       "weapons": [
+        "Greatsword of the Worthy"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Syringe Rapier"
       ],
       "character": "Matt"
@@ -237,6 +252,21 @@
         "Bahamut Cutter"
       ],
       "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
     }
   ],
   [
@@ -870,6 +900,22 @@
     },
     {
       "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Ivy Collar",
         "Pilot's Collar"
       ],
@@ -934,6 +980,22 @@
     },
     {
       "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Egg Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Ivy Collar",
         "Pilot's Collar"
       ],
@@ -966,6 +1028,22 @@
     },
     {
       "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Fairy Tale"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Ivy Collar",
         "Pilot's Collar"
       ],
@@ -998,6 +1076,22 @@
     },
     {
       "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Floral Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Ivy Collar",
         "Pilot's Collar"
       ],
@@ -1018,6 +1112,22 @@
         "Boomerang"
       ],
       "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gambanteinn"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
     }
   ],
   [
@@ -1062,10 +1172,42 @@
     },
     {
       "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Bahamut Cutter",
         "Boomerang"
       ],
       "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Snowflake"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
     }
   ],
   [
@@ -1110,6 +1252,22 @@
     },
     {
       "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Ivy Collar",
         "Pilot's Collar"
       ],
@@ -1130,6 +1288,22 @@
         "Boomerang"
       ],
       "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
     }
   ],
   [
@@ -1432,6 +1606,22 @@
       "weapons": [
         "Canyon Collar",
         "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Canyon Collar"
       ],
       "character": "Red XIII"
     }
@@ -2710,6 +2900,22 @@
       "weapons": [
         "Gold Collar",
         "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Gold Collar"
       ],
       "character": "Red XIII"
     }

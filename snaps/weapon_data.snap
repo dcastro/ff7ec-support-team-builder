@@ -851,6 +851,17 @@
     }
   ],
   [
+    "Greatsword of the Worthy",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Green Megaphone",
     {
       "ownedOb": "OB6-10",
@@ -1023,6 +1034,17 @@
       "ignored": false,
       "distinctObs": [
         "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Hrotti",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -1442,6 +1464,16 @@
   ],
   [
     "Noble Collar",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Noblesse Automatic",
     {
       "ownedOb": "OB0-10",
       "ignored": false,

@@ -259,6 +259,14 @@
         ]
       },
       {
+        "weaponName": "Greatsword of the Worthy",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
         "weaponName": "Shinra Greatsword: Model I",
         "ranges": [
           {
@@ -1499,6 +1507,32 @@
         ]
       },
       {
+        "weaponName": "Greatsword of the Worthy",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Stalwart Integrity",
         "ranges": [
           {
@@ -2044,6 +2078,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Greatsword of the Worthy",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -3204,6 +3264,32 @@
       },
       {
         "weaponName": "Steward Gloves",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Noblesse Automatic",
         "ranges": [
           {
             "range": "SingleTarget",
@@ -5599,6 +5685,32 @@
         ]
       },
       {
+        "weaponName": "Hrotti",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Blue Bramble",
         "ranges": [
           {
@@ -6152,6 +6264,9 @@
   [
     "FilterSigilBoostTriangle",
     [
+      {
+        "weaponName": "Greatsword of the Worthy"
+      },
       {
         "weaponName": "Tranquility"
       },

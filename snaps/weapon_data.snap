@@ -426,6 +426,28 @@
     }
   ],
   [
+    "Class President's Bracelet",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Cool Cat's Megaphone",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Core Defender",
     {
       "ownedOb": "OB6-10",
@@ -543,6 +565,17 @@
   ],
   [
     "Defender",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Dragoon Lance",
     {
       "ownedOb": "OB6-10",
       "ignored": false,
@@ -722,6 +755,16 @@
   ],
   [
     "Foam Sword",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Folding Ruler",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -1703,6 +1746,17 @@
     }
   ],
   [
+    "Rifle of the Hunt",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Risanautr",
     {
       "ownedOb": "OB6-10",
@@ -1828,6 +1882,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Set Square",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -2002,6 +2066,26 @@
     }
   ],
   [
+    "Spirit Demon Megaphone",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Spirit Demon Rifle",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Squeaky Hammer",
     {
       "ownedOb": "OB0-10",
@@ -2136,7 +2220,28 @@
     }
   ],
   [
+    "Sword of the Hunt",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Syringe Rapier",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Teacher's Paper Fan",
     {
       "ownedOb": "OB6-10",
       "ignored": false,
@@ -2348,6 +2453,17 @@
   ],
   [
     "W Machine",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Watch of the Hunt",
     {
       "ownedOb": "OB6-10",
       "ignored": false,

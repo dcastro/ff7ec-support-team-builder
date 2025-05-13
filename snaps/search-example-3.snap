@@ -66,6 +66,54 @@
   [
     {
       "weapons": [
+        "Battle Trumpet",
+        "Cool Cat's Megaphone"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Leather Gloves"
+      ],
+      "character": "Tifa"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Arctic Star",
+        "Watch of the Hunt"
+      ],
+      "character": "Yuffie"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Pole Axe",
         "Scimitar"
       ],
@@ -306,6 +354,38 @@
   [
     {
       "weapons": [
+        "Marching Horn",
+        "Spirit Demon Megaphone"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Quina Megaphone",
+        "Spirit Demon Megaphone"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Pumpkin Lamppost",
         "Steiner's Blade"
       ],
@@ -374,6 +454,38 @@
         "Rhad Cannon"
       ],
       "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Cool Cat's Megaphone",
+        "Spirit Demon Megaphone"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Steward Gloves"
+      ],
+      "character": "Tifa"
     },
     {
       "weapons": [
@@ -626,6 +738,22 @@
   [
     {
       "weapons": [
+        "Battle Trumpet",
+        "Cool Cat's Megaphone"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Iron Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Dawn's Prayers",
         "Gambanteinn"
       ],
@@ -653,6 +781,38 @@
         "S1976C"
       ],
       "character": "Vincent"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Spirit Demon Megaphone",
+        "Trumpet Shell"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Catsmegaphone",
+        "Spirit Demon Megaphone"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
     }
   ],
   [

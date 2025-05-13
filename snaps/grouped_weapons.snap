@@ -297,6 +297,14 @@
             "range": "Self"
           }
         ]
+      },
+      {
+        "weaponName": "Teacher's Paper Fan",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
       }
     ]
   ],
@@ -356,6 +364,14 @@
   [
     "FilterEnfeeble",
     [
+      {
+        "weaponName": "Cool Cat's Megaphone",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
       {
         "weaponName": "Rocket Lance",
         "ranges": [
@@ -424,6 +440,14 @@
       },
       {
         "weaponName": "Bird of Prey",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Sword of the Hunt",
         "ranges": [
           {
             "range": "Self"
@@ -552,6 +576,32 @@
               "ob10": {
                 "max": "Mid",
                 "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Cool Cat's Megaphone",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
               },
               "ob1": {
                 "max": "Mid",
@@ -820,6 +870,32 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Class President's Bracelet",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -1923,6 +1999,32 @@
         ]
       },
       {
+        "weaponName": "Watch of the Hunt",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Defender",
         "ranges": [
           {
@@ -2977,6 +3079,32 @@
         ]
       },
       {
+        "weaponName": "Spirit Demon Megaphone",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Pole Axe",
         "ranges": [
           {
@@ -3127,6 +3255,32 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Spirit Demon Rifle",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -3352,6 +3506,32 @@
               },
               "ob10": {
                 "max": "Mid",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Watch of the Hunt",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
                 "base": "Mid"
               },
               "ob1": {
@@ -4048,6 +4228,32 @@
         ]
       },
       {
+        "weaponName": "Set Square",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Slay the Day",
         "ranges": [
           {
@@ -4100,6 +4306,32 @@
         ]
       },
       {
+        "weaponName": "Rifle of the Hunt",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Turks' Rifle",
         "ranges": [
           {
@@ -4130,6 +4362,32 @@
         "ranges": [
           {
             "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Folding Ruler",
+        "ranges": [
+          {
+            "range": "All",
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -5550,6 +5808,32 @@
         ]
       },
       {
+        "weaponName": "Dragoon Lance",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Nautilus Spiral",
         "ranges": [
           {
@@ -5679,6 +5963,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Rifle of the Hunt",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -5955,6 +6265,32 @@
         ]
       },
       {
+        "weaponName": "Teacher's Paper Fan",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Silver Collar",
         "ranges": [
           {
@@ -6078,6 +6414,12 @@
         "weaponName": "Sharkslayer"
       },
       {
+        "weaponName": "Teacher's Paper Fan"
+      },
+      {
+        "weaponName": "Cool Cat's Megaphone"
+      },
+      {
         "weaponName": "Green Megaphone"
       },
       {
@@ -6159,6 +6501,9 @@
         "weaponName": "Striped Moogle Float"
       },
       {
+        "weaponName": "Watch of the Hunt"
+      },
+      {
         "weaponName": "Ceremonial Sword (Z)"
       },
       {
@@ -6171,6 +6516,9 @@
     [
       {
         "weaponName": "Wizer Staff"
+      },
+      {
+        "weaponName": "Dragoon Lance"
       },
       {
         "weaponName": "Mop"
@@ -6218,6 +6566,9 @@
         "weaponName": "Bunny Gloves"
       },
       {
+        "weaponName": "Class President's Bracelet"
+      },
+      {
         "weaponName": "Crystal Gloves"
       },
       {
@@ -6257,6 +6608,9 @@
         "weaponName": "Stream Guard"
       },
       {
+        "weaponName": "Sword of the Hunt"
+      },
+      {
         "weaponName": "Zinogre Blade"
       }
     ]
@@ -6287,6 +6641,9 @@
       },
       {
         "weaponName": "Nightjar"
+      },
+      {
+        "weaponName": "Rifle of the Hunt"
       },
       {
         "weaponName": "Rose Musket"

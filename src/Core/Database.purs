@@ -492,7 +492,7 @@ groupsForWeapon weapon = do
   groupForWeaponEffect ob0 ob1 ob6 ob10 = do
     case ob0 of
       Heal { range, percentage } ->
-        if unwrap percentage >= 35 then Just { effectType: FilterHeal, range: Just range, potencies: Nothing }
+        if unwrap percentage >= 30 then Just { effectType: FilterHeal, range: Just range, potencies: Nothing }
         else Nothing
       Veil { range } -> Just { effectType: FilterVeil, range: Just range, potencies: Nothing }
       Provoke { range } -> Just { effectType: FilterProvoke, range: Just range, potencies: Nothing }

@@ -406,6 +406,7 @@ hasPotencies = case _ of
     FilterEnfeeble -> false
     FilterStop -> false
     FilterExploitWeakness -> false
+    FilterEnliven -> false
 
     FilterPatkUp -> true
     FilterMatkUp -> true
@@ -451,6 +452,7 @@ hasRange = case _ of
     FilterEnfeeble -> true
     FilterStop -> true
     FilterExploitWeakness -> true
+    FilterEnliven -> true
 
     FilterPatkUp -> true
     FilterMatkUp -> true

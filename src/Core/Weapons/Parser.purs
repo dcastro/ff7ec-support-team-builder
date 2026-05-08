@@ -274,6 +274,7 @@ parseWeaponEffect coords =
       <|> P.try (withDurExt "Wind Weakness" WindWeakness)
       <|> P.try (withDurExt "Enfeeble" Enfeeble)
       <|> P.try (withDurExt "Stop" Stop)
+      <|> P.try (withDurExt "Enliven" Enliven)
       -- NOTE: The effect on "Blue Daffodil Gloves" is named "WeaknessAttackUp",
       -- but on "Bird of Prey" it's named "Exploit Weakness".
       <|> P.try (withDurExtPercentage "WeaknessAttackUp" ExploitWeakness)

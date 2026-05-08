@@ -171,6 +171,7 @@ data WeaponEffect
   | Enfeeble { range :: Range, durExt :: DurExt }
   | Stop { range :: Range, durExt :: DurExt }
   | ExploitWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | Enliven { range :: Range, durExt :: DurExt }
 
 type Potencies =
   { base :: Potency
@@ -185,6 +186,7 @@ data FilterEffectType
   | FilterEnfeeble
   | FilterStop
   | FilterExploitWeakness
+  | FilterEnliven
 
   | FilterPatkUp
   | FilterMatkUp
@@ -286,6 +288,7 @@ instance Show WeaponEffect where
       Enfeeble rec -> showRec rec "Enfeeble"
       Stop rec -> showRec rec "Stop"
       ExploitWeakness rec -> showRec rec "ExploitWeakness"
+      Enliven rec -> showRec rec "Enliven"
     where
     showRec :: forall rec. Show rec => rec -> String -> String
     showRec rec recType = recType <> " " <> show rec
@@ -301,6 +304,7 @@ instance Show FilterEffectType where
     FilterEnfeeble -> "FilterEnfeeble"
     FilterStop -> "FilterStop"
     FilterExploitWeakness -> "FilterExploitWeakness"
+    FilterEnliven -> "FilterEnliven"
     FilterPatkUp -> "FilterPatkUp"
     FilterMatkUp -> "FilterMatkUp"
     FilterPdefUp -> "FilterPdefUp"
@@ -378,6 +382,7 @@ instance WriteForeign WeaponEffect where
       Enfeeble rec -> writeRecord rec "Enfeeble"
       Stop rec -> writeRecord rec "Stop"
       ExploitWeakness rec -> writeRecord rec "ExploitWeakness"
+      Enliven rec -> writeRecord rec "Enliven"
     where
     writeRecord :: forall rec. WriteForeign rec => rec -> String -> Foreign
     writeRecord rec recType = writeImpl
@@ -396,6 +401,7 @@ instance WriteForeign FilterEffectType where
     FilterEnfeeble -> writeImpl "FilterEnfeeble"
     FilterStop -> writeImpl "FilterStop"
     FilterExploitWeakness -> writeImpl "FilterExploitWeakness"
+    FilterEnliven -> writeImpl "FilterEnliven"
     FilterPatkUp -> writeImpl "FilterPatkUp"
     FilterMatkUp -> writeImpl "FilterMatkUp"
     FilterPdefUp -> writeImpl "FilterPdefUp"
@@ -449,6 +455,7 @@ instance ReadForeign WeaponEffect where
         Enfeeble _ -> tryRead Enfeeble recType value "Enfeeble"
         Stop _ -> tryRead Stop recType value "Stop"
         ExploitWeakness _ -> tryRead ExploitWeakness recType value "ExploitWeakness"
+        Enliven _ -> tryRead Enliven recType value "Enliven"
         PatkUp _ -> tryRead PatkUp recType value "PatkUp"
         MatkUp _ -> tryRead MatkUp recType value "MatkUp"
         PdefUp _ -> tryRead PdefUp recType value "PdefUp"
@@ -500,6 +507,7 @@ instance ReadForeign FilterEffectType where
         FilterEnfeeble -> tryRead x str "FilterEnfeeble"
         FilterStop -> tryRead x str "FilterStop"
         FilterExploitWeakness -> tryRead x str "FilterExploitWeakness"
+        FilterEnliven -> tryRead x str "FilterEnliven"
         FilterPatkUp -> tryRead x str "FilterPatkUp"
         FilterMatkUp -> tryRead x str "FilterMatkUp"
         FilterPdefUp -> tryRead x str "FilterPdefUp"
@@ -558,6 +566,7 @@ instance Display FilterEffectType where
     FilterEnfeeble -> "Enfeeble"
     FilterStop -> "Stop"
     FilterExploitWeakness -> "Exploit Weakness"
+    FilterEnliven -> "Enliven"
 
     FilterPatkUp -> "PATK up"
     FilterMatkUp -> "MATK up"
@@ -603,6 +612,7 @@ allFilterEffectTypes =
   , FilterEnfeeble
   , FilterStop
   , FilterExploitWeakness
+  , FilterEnliven
   , FilterPatkUp
   , FilterMatkUp
   , FilterPdefUp
@@ -646,6 +656,7 @@ allFilterEffectTypes =
     FilterEnfeeble -> unit
     FilterStop -> unit
     FilterExploitWeakness -> unit
+    FilterEnliven -> unit
     FilterPatkUp -> unit
     FilterMatkUp -> unit
     FilterPdefUp -> unit
@@ -715,6 +726,7 @@ exhaustiveWeaponEffectMatch =
   , Enfeeble { range, durExt }
   , Stop { range, durExt }
   , ExploitWeakness { range, durExt, percentage }
+  , Enliven { range, durExt }
   ]
   where
   range = All
@@ -758,11 +770,12 @@ exhaustiveWeaponEffectMatch =
     WindWeakness _ -> unit
     Enfeeble _ -> unit
     Stop _ -> unit
+    ExploitWeakness _ -> unit
     -- Unfortunately, there's no way to ensure our returns values are exhaustive
     -- https://alistairb.dev/exhaustive-return-warning/
     --
     -- As a workaround, we have this useless pattern match here to remind us to update the list above when new variants are added.
-    ExploitWeakness _ -> unit
+    Enliven _ -> unit
 
 instance Display Potency where
   display =

@@ -246,6 +246,10 @@ getDistinctObs weapon = do
         case y of
           ExploitWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
           _ -> crash unit
+      Enliven { range: range1, durExt: _ } ->
+        case y of
+          Enliven { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
 
       FireWeakness { range: range1, durExt: _ } ->
         case y of
@@ -499,6 +503,7 @@ groupsForWeapon weapon = do
       Enfeeble { range } -> Just { effectType: FilterEnfeeble, range: Just range, potencies: Nothing }
       Stop { range } -> Just { effectType: FilterStop, range: Just range, potencies: Nothing }
       ExploitWeakness { range } -> Just { effectType: FilterExploitWeakness, range: Just range, potencies: Nothing }
+      Enliven { range } -> Just { effectType: FilterEnliven, range: Just range, potencies: Nothing }
 
       FireWeakness { range } -> Just { effectType: FilterFireWeakness, range: Just range, potencies: Nothing }
       IceWeakness { range } -> Just { effectType: FilterIceWeakness, range: Just range, potencies: Nothing }

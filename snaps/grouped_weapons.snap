@@ -745,6 +745,19 @@
     ]
   ],
   [
+    "FilterEnliven",
+    [
+      {
+        "weaponName": "Festive Sword",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      }
+    ]
+  ],
+  [
     "FilterPatkUp",
     [
       {

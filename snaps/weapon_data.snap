@@ -889,10 +889,11 @@
   [
     "Festive Sword",
     {
-      "ownedOb": "OB0-10",
+      "ownedOb": "OB6-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-10"
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],

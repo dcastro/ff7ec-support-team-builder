@@ -35349,6 +35349,16 @@
               }
             },
             "type": "ExploitWeakness"
+          },
+          {
+            "value": {
+              "range": "All",
+              "durExt": {
+                "extension": 15,
+                "duration": 45
+              }
+            },
+            "type": "Enliven"
           }
         ],
         "description": "Planet's Lightwave+ (4 ATB)\n1080% Mag. Non-elem. Damage [Range: All Enemies]\n45s 30% Exploit Weakness (+15s) [Range: All Allies]\n45s Enliven (+15s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -35365,6 +35375,16 @@
               }
             },
             "type": "ExploitWeakness"
+          },
+          {
+            "value": {
+              "range": "All",
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "Enliven"
           }
         ],
         "description": "Planet's Lightwave++ (4 ATB)\n1340% Mag. Non-elem. Damage [Range: All Enemies]\n60s 40% Exploit Weakness (+20s) [Range: All Allies]\n60s Enliven (+20s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -35381,6 +35401,16 @@
               }
             },
             "type": "ExploitWeakness"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "Enliven"
           }
         ],
         "description": "Planet's Lightwave (4 ATB)\n720% Mag. Non-elem. Damage [Range: All Enemies]\n30s 20% Exploit Weakness (+10s) [Range: All Allies]\n30s Enliven (+10s) [Range: Self]\n10% Crit Rate [Range: All Enemies]"
@@ -35397,6 +35427,16 @@
               }
             },
             "type": "ExploitWeakness"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "Enliven"
           }
         ],
         "description": "Planet's Lightwave (4 ATB)\n600% Mag. Non-elem. Damage [Range: All Enemies]\n20s 20% Exploit Weakness (+6s) [Range: All Allies]\n20s Enliven (+6s) [Range: Self]\n10% Crit Rate [Range: All Enemies]"

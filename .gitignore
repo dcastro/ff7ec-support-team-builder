@@ -1,4 +1,8 @@
-.*
+.parcel-cache
+.spago
+.psc-ide-port
+.purs-repl
+.spec-results
 !.gitignore
 !.github
 

@@ -54,7 +54,7 @@ spec =
       "45s 30% Exploit Weakness (+9s) [Range: Self]"
         `shouldParse`
           ExploitWeakness { range: Self, durExt: { duration: Duration 45, extension: Extension 9 }, percentage: Percentage 30 }
-      "30s Enliven (+10s) [Range: Single All Allies]"
+      "30s Enliven (+10s) [Range: Self]"
         `shouldParse`
           Enliven { range: Self, durExt: { duration: Duration 30, extension: Extension 10 } }
       "150s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]"

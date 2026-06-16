@@ -6,16 +6,28 @@ build:
     spago build
 
 build-prod:
+    # make sure the tests are passing
+    just test
+    # make sure the working tree is clean
+    # this ensures (1) snapshots have been comitted and (2) we don't accidentally compile API keys meant to be used for local development.
+    git diff --exit-code && git diff --cached --exit-code
+    # Clean the output directory
     find docs -maxdepth 1 -type f -delete
     rm -rf prod
+    # Prepare
     npm i
     mkdir -p prod
     cp dev/index.html prod/
+    # Build
     npm run ts
     spago bundle --outfile prod/index.js -p ff7ec-support-team-builder
     parcel build prod/index.html --dist-dir docs --public-url '.'
 
 build-staging:
+    # make sure the tests are passing
+    just test
+    # make sure the working tree is clean
+    git diff --exit-code && git diff --cached --exit-code
     rm -rf docs/staging
     rm -rf staging
     npm i

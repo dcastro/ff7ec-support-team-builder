@@ -35,6 +35,14 @@
         ]
       },
       {
+        "weaponName": "Festive Rod",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
         "weaponName": "Floral Wand",
         "ranges": [
           {
@@ -51,6 +59,14 @@
         ]
       },
       {
+        "weaponName": "Gorgeous Staff",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
         "weaponName": "Kamura Wand",
         "ranges": [
           {
@@ -59,7 +75,39 @@
         ]
       },
       {
+        "weaponName": "Lightning's Rod",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Rousing Wizer Staff",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
         "weaponName": "Snowflake",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Staff of the Possessed",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Supreme Sage's Staff",
         "ranges": [
           {
             "range": "All"
@@ -126,6 +174,22 @@
         ]
       },
       {
+        "weaponName": "Deroplatys",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Desperado Rapier",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
         "weaponName": "Espee Rapiere Next-G",
         "ranges": [
           {
@@ -151,6 +215,14 @@
       },
       {
         "weaponName": "Nautilus Spiral",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Physician's Scalpel",
         "ranges": [
           {
             "range": "All"
@@ -191,6 +263,14 @@
       },
       {
         "weaponName": "Pilot's Collar",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Pirate Collar",
         "ranges": [
           {
             "range": "All"
@@ -305,6 +385,38 @@
             "range": "Self"
           }
         ]
+      },
+      {
+        "weaponName": "Desperado Glaive",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Patissier's Glaive",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Pirate's Glaive",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Stream Slasher",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
       }
     ]
   ],
@@ -312,7 +424,31 @@
     "FilterProvoke",
     [
       {
+        "weaponName": "Festive Blade",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
         "weaponName": "Gargantuan Monolith",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Inflatable Buster Sword",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Mythril Slasher",
         "ranges": [
           {
             "range": "Self"
@@ -358,6 +494,14 @@
             "range": "Self"
           }
         ]
+      },
+      {
+        "weaponName": "Pirate's Glaive",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
       }
     ]
   ],
@@ -373,7 +517,95 @@
         ]
       },
       {
+        "weaponName": "Grinding Gear",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
         "weaponName": "Rocket Lance",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Erdrick's Sword",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Umbralschwert",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Snow's Bardiche",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Shinra Ceremonial Rifle",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Patissier's Collar",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Serrated Remiges",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Omega Wing",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Leather Combat Gloves",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Galian Roar",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Fatum Ex Machina",
         "ranges": [
           {
             "range": "SingleTarget"
@@ -423,10 +655,34 @@
     "FilterExploitWeakness",
     [
       {
+        "weaponName": "Supreme Sage's Staff",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Fusion Sword",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
         "weaponName": "Blade of the Worthy",
         "ranges": [
           {
             "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Infiltration Sword",
+        "ranges": [
+          {
+            "range": "All"
           }
         ]
       },
@@ -439,10 +695,42 @@
         ]
       },
       {
+        "weaponName": "Lightning's Gloves",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Transgressor",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
         "weaponName": "Bird of Prey",
         "ranges": [
           {
             "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Rocker's Guitar",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Festive Sword",
+        "ranges": [
+          {
+            "range": "All"
           }
         ]
       },
@@ -506,6 +794,84 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Mermaid Rod",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Low",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Low",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Rousing Wizer Staff",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Master Tonberry's Blade",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -798,6 +1164,58 @@
         ]
       },
       {
+        "weaponName": "Deroplatys",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Desperado Rapier",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Giant Fork",
         "ranges": [
           {
@@ -902,6 +1320,32 @@
         ]
       },
       {
+        "weaponName": "Demon's Impetus",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Oven Mitts",
         "ranges": [
           {
@@ -935,19 +1379,19 @@
             "allPotencies": {
               "ob6": {
                 "max": "High",
-                "base": "Low"
+                "base": "Mid"
               },
               "ob10": {
                 "max": "High",
-                "base": "Low"
+                "base": "Mid"
               },
               "ob1": {
                 "max": "Mid",
-                "base": "Low"
+                "base": "Mid"
               },
               "ob0": {
                 "max": "Mid",
-                "base": "Low"
+                "base": "Mid"
               }
             }
           }
@@ -1073,6 +1517,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Surfer Blade",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -1292,6 +1762,84 @@
         ]
       },
       {
+        "weaponName": "Full Throttle",
+        "ranges": [
+          {
+            "range": "Self",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Garish Greatblade",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Patissier's Glaive",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Luminary Sword",
         "ranges": [
           {
@@ -1344,6 +1892,32 @@
         ]
       },
       {
+        "weaponName": "Pirate Collar",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Low",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Low",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Aonibi",
         "ranges": [
           {
@@ -1364,6 +1938,58 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Pandemonic Sword",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Osafune",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -1455,11 +2081,37 @@
             "allPotencies": {
               "ob6": {
                 "max": "High",
-                "base": "Low"
+                "base": "Mid"
               },
               "ob10": {
                 "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
                 "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Galian Roar",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
               },
               "ob1": {
                 "max": "Mid",
@@ -1524,6 +2176,32 @@
             }
           }
         ]
+      },
+      {
+        "weaponName": "Stream Guard",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
       }
     ]
   ],
@@ -1543,6 +2221,32 @@
               "ob10": {
                 "max": "Mid",
                 "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Lightning's Rod",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
               },
               "ob1": {
                 "max": "Mid",
@@ -1603,6 +2307,58 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Inflatable Buster Sword",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Lightning's Sword",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Low",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Low",
+                "base": "Low"
               }
             }
           }
@@ -1707,6 +2463,32 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Sunrise Cannon",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -2082,6 +2864,32 @@
         ]
       },
       {
+        "weaponName": "Gorgeous Staff",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Guard Stick",
         "ranges": [
           {
@@ -2154,6 +2962,32 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Rousing Wizer Staff",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Mid"
               }
             }
           }
@@ -2342,6 +3176,32 @@
         ]
       },
       {
+        "weaponName": "Snow's Bardiche",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Pumpkin Blaster",
         "ranges": [
           {
@@ -2414,6 +3274,58 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Deroplatys",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob0": {
+                "max": "High",
+                "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Physician's Scalpel",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -2548,6 +3460,32 @@
             }
           }
         ]
+      },
+      {
+        "weaponName": "Zenithian Sword",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
       }
     ]
   ],
@@ -2562,11 +3500,11 @@
             "allPotencies": {
               "ob6": {
                 "max": "High",
-                "base": "Mid"
+                "base": "High"
               },
               "ob10": {
                 "max": "High",
-                "base": "Mid"
+                "base": "High"
               },
               "ob1": {
                 "max": "Mid",
@@ -2575,6 +3513,32 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Shinra Ceremonial Rifle",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -2697,11 +3661,11 @@
             "allPotencies": {
               "ob6": {
                 "max": "High",
-                "base": "Mid"
+                "base": "High"
               },
               "ob10": {
                 "max": "High",
-                "base": "Mid"
+                "base": "High"
               },
               "ob1": {
                 "max": "Mid",
@@ -2714,17 +3678,12 @@
             }
           }
         ]
-      }
-    ]
-  ],
-  [
-    "FilterThunderDamageUp",
-    [
+      },
       {
-        "weaponName": "Locke's Sword",
+        "weaponName": "Desperado Rifle",
         "ranges": [
           {
-            "range": "Self",
+            "range": "All",
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2736,11 +3695,146 @@
               },
               "ob1": {
                 "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Gelid Sword",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterThunderDamageUp",
+    [
+      {
+        "weaponName": "Mermaid Rod",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Low",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Low",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Locke's Sword",
+        "ranges": [
+          {
+            "range": "Self",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
                 "base": "Mid"
               },
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Pirate Collar",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Low",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Low",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Winged Chakram",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -2751,6 +3845,58 @@
   [
     "FilterEarthDamageUp",
     [
+      {
+        "weaponName": "Ghost Ensis",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Grinding Gear",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
       {
         "weaponName": "Gauntlets of the Worthy",
         "ranges": [
@@ -2809,6 +3955,32 @@
     "FilterWaterDamageUp",
     [
       {
+        "weaponName": "Team Leader's Bamboo Sword",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Slay the Day",
         "ranges": [
           {
@@ -2829,6 +4001,58 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Physician's Scalpel",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Overture",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -2975,6 +4199,32 @@
         ]
       },
       {
+        "weaponName": "Lightning's Sword",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Turks' Blade",
         "ranges": [
           {
@@ -3105,6 +4355,32 @@
         ]
       },
       {
+        "weaponName": "Patissier's Spear",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Pole Axe",
         "ranges": [
           {
@@ -3177,6 +4453,32 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Desperado Glaive",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -3287,6 +4589,32 @@
         ]
       },
       {
+        "weaponName": "Dragontail Sword",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Slick Beetle",
         "ranges": [
           {
@@ -3325,6 +4653,32 @@
               "ob10": {
                 "max": "Mid",
                 "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Infiltration Sword",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
               },
               "ob1": {
                 "max": "Mid",
@@ -3391,6 +4745,58 @@
         ]
       },
       {
+        "weaponName": "Pandemonic Sword",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Kotetsu",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Leather Gloves",
         "ranges": [
           {
@@ -3411,6 +4817,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Shining Gloves",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -3521,6 +4953,32 @@
         ]
       },
       {
+        "weaponName": "Fatum Ex Machina",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Watch of the Hunt",
         "ranges": [
           {
@@ -3551,6 +5009,32 @@
   [
     "FilterMatkDown",
     [
+      {
+        "weaponName": "Magatsuchi Rod",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
       {
         "weaponName": "Type-91 Two-Hander",
         "ranges": [
@@ -3708,6 +5192,32 @@
         ]
       },
       {
+        "weaponName": "Erdrick's Sword",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Mystic Sword",
         "ranges": [
           {
@@ -3728,6 +5238,32 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Snow's Bardiche",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -3812,6 +5348,32 @@
         ]
       },
       {
+        "weaponName": "Kotetsu",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Amarant's Claws",
         "ranges": [
           {
@@ -3832,6 +5394,58 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Shining Gloves",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Striped Moogle Gloves",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -3884,6 +5498,58 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Striped Moogle Flag",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Magatsuchi Blade",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -4025,6 +5691,32 @@
         ]
       },
       {
+        "weaponName": "Quad Gatling Gun",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "W Machine",
         "ranges": [
           {
@@ -4092,6 +5784,32 @@
               "ob0": {
                 "max": "High",
                 "base": "High"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Captain's Spear",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -4280,6 +5998,58 @@
         ]
       },
       {
+        "weaponName": "Stream Slasher",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Desperado Rifle",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Nightjar",
         "ranges": [
           {
@@ -4358,6 +6128,32 @@
         ]
       },
       {
+        "weaponName": "Great Sabrecat Collar",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Iron Collar",
         "ranges": [
           {
@@ -4396,6 +6192,32 @@
               "ob10": {
                 "max": "Mid",
                 "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Overture",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
               },
               "ob1": {
                 "max": "Mid",
@@ -4488,6 +6310,32 @@
         ]
       },
       {
+        "weaponName": "Winged Chakram",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Black Whiskers",
         "ranges": [
           {
@@ -4552,6 +6400,32 @@
               "ob10": {
                 "max": "Mid",
                 "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Surfer Blade",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
               },
               "ob1": {
                 "max": "Mid",
@@ -4701,6 +6575,32 @@
         ]
       },
       {
+        "weaponName": "Nocturne Horn",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Witch's Broom",
         "ranges": [
           {
@@ -4721,6 +6621,32 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Full Throttle",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -4883,6 +6809,32 @@
         ]
       },
       {
+        "weaponName": "Great Sabrecat Collar",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Hell House Collar",
         "ranges": [
           {
@@ -4921,6 +6873,58 @@
               "ob10": {
                 "max": "Mid",
                 "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Protector's Blade",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Starsoul Blade",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
               },
               "ob1": {
                 "max": "Mid",
@@ -4981,6 +6985,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Galian Roar",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -5059,6 +7089,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Stream Guard",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Low",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Low",
+                "base": "Low"
               }
             }
           }
@@ -5186,6 +7242,32 @@
               "ob10": {
                 "max": "Mid",
                 "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Patissier's Glaive",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
               },
               "ob1": {
                 "max": "Mid",
@@ -5543,6 +7625,32 @@
         ]
       },
       {
+        "weaponName": "Neo Bahamut Greatsword",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Stilva Glaive",
         "ranges": [
           {
@@ -5647,6 +7755,32 @@
         ]
       },
       {
+        "weaponName": "Lightning's Gloves",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Icebolt Shooter",
         "ranges": [
           {
@@ -5693,6 +7827,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Gelid Sword",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -5943,6 +8103,32 @@
     "FilterEarthResistDown",
     [
       {
+        "weaponName": "Ghost Ensis",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Shinra Greatsword: Model I",
         "ranges": [
           {
@@ -5963,6 +8149,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Desperado Glaive",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -6047,6 +8259,32 @@
         ]
       },
       {
+        "weaponName": "Immaculate Blade",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Chiron",
         "ranges": [
           {
@@ -6067,6 +8305,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Fatum Ex Machina",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -6097,12 +8361,142 @@
             }
           }
         ]
+      },
+      {
+        "weaponName": "Virtuous Contract",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
       }
     ]
   ],
   [
     "FilterWaterResistDown",
     [
+      {
+        "weaponName": "Sea Dragon Staff",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Staff of the Possessed",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Mythril Slasher",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Sea Dragon Greatsword",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
       {
         "weaponName": "Sharkslayer",
         "ranges": [
@@ -6150,6 +8544,58 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Umbralschwert",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Revenant Mother's Glaive",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -6291,6 +8737,32 @@
         ]
       },
       {
+        "weaponName": "Nocturne Horn",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Silver Collar",
         "ranges": [
           {
@@ -6317,7 +8789,59 @@
         ]
       },
       {
+        "weaponName": "Tsviet Collar",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Humus Saber",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Merciless White",
         "ranges": [
           {
             "range": "All",
@@ -6393,7 +8917,13 @@
         "weaponName": "Gambanteinn"
       },
       {
+        "weaponName": "Mermaid Rod"
+      },
+      {
         "weaponName": "Prism Rod"
+      },
+      {
+        "weaponName": "Team Leader's Bamboo Sword"
       },
       {
         "weaponName": "Electrocannon"
@@ -6414,6 +8944,9 @@
         "weaponName": "Sharkslayer"
       },
       {
+        "weaponName": "Sunrise Cannon"
+      },
+      {
         "weaponName": "Teacher's Paper Fan"
       },
       {
@@ -6421,6 +8954,9 @@
       },
       {
         "weaponName": "Green Megaphone"
+      },
+      {
+        "weaponName": "Nocturne Horn"
       },
       {
         "weaponName": "Quina Megaphone"
@@ -6433,6 +8969,21 @@
       },
       {
         "weaponName": "Bahamut Greatsword"
+      },
+      {
+        "weaponName": "Crimson Blitz"
+      },
+      {
+        "weaponName": "Cruel Successor"
+      },
+      {
+        "weaponName": "Erdrick's Sword"
+      },
+      {
+        "weaponName": "Full Throttle"
+      },
+      {
+        "weaponName": "Fusion Sword"
       },
       {
         "weaponName": "Glavenus Sword"
@@ -6450,7 +9001,13 @@
         "weaponName": "Nail Bat"
       },
       {
+        "weaponName": "Noble Parasol"
+      },
+      {
         "weaponName": "Stream Saber"
+      },
+      {
+        "weaponName": "Umbralschwert"
       },
       {
         "weaponName": "Stream Slasher"
@@ -6463,6 +9020,9 @@
       },
       {
         "weaponName": "Thunderbird"
+      },
+      {
+        "weaponName": "Desperado Rapier"
       },
       {
         "weaponName": "Killer Hornet"
@@ -6489,7 +9049,13 @@
         "weaponName": "Bird of Prey"
       },
       {
+        "weaponName": "Fatum Ex Machina"
+      },
+      {
         "weaponName": "Hawkeye"
+      },
+      {
+        "weaponName": "Heirloom Brush"
       },
       {
         "weaponName": "Holiday Bell"
@@ -6498,10 +9064,19 @@
         "weaponName": "Little Red Wreath"
       },
       {
+        "weaponName": "Rocker's Guitar"
+      },
+      {
         "weaponName": "Striped Moogle Float"
       },
       {
+        "weaponName": "Uber 4-Point Shuriken"
+      },
+      {
         "weaponName": "Watch of the Hunt"
+      },
+      {
+        "weaponName": "Winged Chakram"
       },
       {
         "weaponName": "Ceremonial Sword (Z)"
@@ -6518,10 +9093,19 @@
         "weaponName": "Wizer Staff"
       },
       {
+        "weaponName": "Antler Pike"
+      },
+      {
         "weaponName": "Dragoon Lance"
       },
       {
+        "weaponName": "Grinding Gear"
+      },
+      {
         "weaponName": "Mop"
+      },
+      {
+        "weaponName": "Patissier's Spear"
       },
       {
         "weaponName": "Radiant Lance"
@@ -6536,7 +9120,22 @@
         "weaponName": "Blade of Ruin"
       },
       {
+        "weaponName": "Desperado Glaive"
+      },
+      {
+        "weaponName": "Garish Greatblade"
+      },
+      {
+        "weaponName": "Patissier's Glaive"
+      },
+      {
+        "weaponName": "Pirate's Glaive"
+      },
+      {
         "weaponName": "Slay the Day"
+      },
+      {
+        "weaponName": "Snow's Bardiche"
       },
       {
         "weaponName": "Squeaky Hammer"
@@ -6546,6 +9145,9 @@
       },
       {
         "weaponName": "Absolute Royal"
+      },
+      {
+        "weaponName": "Patissier's Collar"
       },
       {
         "weaponName": "Seaside Collar"
@@ -6572,7 +9174,16 @@
         "weaponName": "Crystal Gloves"
       },
       {
+        "weaponName": "Demon's Impetus"
+      },
+      {
+        "weaponName": "Elegant Gloves"
+      },
+      {
         "weaponName": "Feathered Gloves"
+      },
+      {
+        "weaponName": "Festive Gloves"
       },
       {
         "weaponName": "Gauntlets of the Worthy"
@@ -6584,13 +9195,28 @@
         "weaponName": "Kirin Gloves"
       },
       {
+        "weaponName": "Leather Combat Gloves"
+      },
+      {
+        "weaponName": "Lightning's Gloves"
+      },
+      {
+        "weaponName": "Riding Gloves"
+      },
+      {
         "weaponName": "Sabin's Claws"
       },
       {
         "weaponName": "Shell Knuckles"
       },
       {
+        "weaponName": "Shining Gloves"
+      },
+      {
         "weaponName": "Work Gloves"
+      },
+      {
+        "weaponName": "Battering Sword"
       },
       {
         "weaponName": "Beatrix Sword"
@@ -6602,13 +9228,28 @@
         "weaponName": "Buster Sword Origin"
       },
       {
+        "weaponName": "Festive Sword"
+      },
+      {
+        "weaponName": "Gelid Sword"
+      },
+      {
         "weaponName": "Pressure Ridge"
+      },
+      {
+        "weaponName": "Rousing Arc Sword"
       },
       {
         "weaponName": "Stream Guard"
       },
       {
+        "weaponName": "Surfer Blade"
+      },
+      {
         "weaponName": "Sword of the Hunt"
+      },
+      {
+        "weaponName": "Zenithian Sword"
       },
       {
         "weaponName": "Zinogre Blade"
@@ -6619,7 +9260,19 @@
     "FilterSigilBoostTriangle",
     [
       {
+        "weaponName": "Festive Blade"
+      },
+      {
+        "weaponName": "Ghost Ensis"
+      },
+      {
         "weaponName": "Greatsword of the Worthy"
+      },
+      {
+        "weaponName": "Inflatable Buster Sword"
+      },
+      {
+        "weaponName": "Mythril Slasher"
       },
       {
         "weaponName": "Tranquility"
@@ -6637,6 +9290,12 @@
         "weaponName": "Jiggy Fam"
       },
       {
+        "weaponName": "Desperado Rifle"
+      },
+      {
+        "weaponName": "Killer Falcon"
+      },
+      {
         "weaponName": "Marine Shooter"
       },
       {
@@ -6652,6 +9311,9 @@
         "weaponName": "Rubber Band Gun"
       },
       {
+        "weaponName": "Shinra Ceremonial Rifle"
+      },
+      {
         "weaponName": "Noble Collar"
       },
       {
@@ -6664,7 +9326,28 @@
         "weaponName": "Edgar's Coiled Blade"
       },
       {
+        "weaponName": "Immaculate Blade"
+      },
+      {
+        "weaponName": "Infiltration Sword"
+      },
+      {
         "weaponName": "Kuja's Spirit Blade"
+      },
+      {
+        "weaponName": "Overture"
+      },
+      {
+        "weaponName": "Pandemonic Sword"
+      },
+      {
+        "weaponName": "Phoenix Odachi"
+      },
+      {
+        "weaponName": "Serrated Remiges"
+      },
+      {
+        "weaponName": "Sōba"
       },
       {
         "weaponName": "Tempest"
@@ -6676,7 +9359,37 @@
         "weaponName": "World Tree Bough"
       },
       {
+        "weaponName": "Kikuichimonji"
+      },
+      {
+        "weaponName": "Kotetsu"
+      },
+      {
+        "weaponName": "Masamune"
+      },
+      {
+        "weaponName": "Muramasa"
+      },
+      {
+        "weaponName": "Omega Wing"
+      },
+      {
+        "weaponName": "Osafune"
+      },
+      {
+        "weaponName": "Shiranui"
+      },
+      {
+        "weaponName": "Starsoul Blade"
+      },
+      {
+        "weaponName": "Chrome Death Penalty"
+      },
+      {
         "weaponName": "Crow Familiar"
+      },
+      {
+        "weaponName": "Galian Roar"
       },
       {
         "weaponName": "Gun of the Worthy"
@@ -6689,6 +9402,9 @@
       },
       {
         "weaponName": "Kugelblitz"
+      },
+      {
+        "weaponName": "Transgressor"
       },
       {
         "weaponName": "White Dog"
@@ -6717,6 +9433,9 @@
         "weaponName": "Rest in Peace"
       },
       {
+        "weaponName": "Stream Slasher"
+      },
+      {
         "weaponName": "Barn Swallow"
       },
       {
@@ -6733,6 +9452,9 @@
       },
       {
         "weaponName": "Silver Collar"
+      },
+      {
+        "weaponName": "Protector's Blade"
       },
       {
         "weaponName": "Bahamut Knuckles"

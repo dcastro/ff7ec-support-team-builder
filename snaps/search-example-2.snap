@@ -54,6 +54,21 @@
     },
     {
       "weapons": [
+        "Deroplatys"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Sleek Collar"
       ],
       "character": "Red XIII"
@@ -78,7 +93,37 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -123,6 +168,21 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Kamura Wand"
       ],
       "character": "Aerith"
@@ -138,7 +198,37 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Marine Shooter"
+      ],
+      "character": "Lucia"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -183,7 +273,37 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -207,6 +327,36 @@
         "Greatsword of the Worthy"
       ],
       "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
     }
   ],
   [
@@ -257,6 +407,36 @@
   [
     {
       "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Zenithian Sword"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff"
       ],
       "character": "Aerith"
@@ -272,6 +452,96 @@
   [
     {
       "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Marine Shooter"
+      ],
+      "character": "Lucia"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff"
       ],
       "character": "Aerith"
@@ -282,6 +552,36 @@
         "Pilot's Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Boomerang"
+      ],
+      "character": "Yuffie"
     }
   ],
   [
@@ -303,6 +603,36 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Kamura Wand"
       ],
       "character": "Aerith"
@@ -317,6 +647,51 @@
   [
     {
       "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Bahamut Rod",
         "Crimson Staff"
       ],
@@ -351,6 +726,54 @@
       "weapons": [
         "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -430,6 +853,38 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Festive Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Festive Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Floral Wand"
       ],
       "character": "Aerith"
@@ -479,6 +934,38 @@
       "weapons": [
         "Crimson Staff",
         "Gambanteinn"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
       ],
       "character": "Aerith"
     },
@@ -510,6 +997,54 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Lightning's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Lightning's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Snowflake"
       ],
       "character": "Aerith"
@@ -527,6 +1062,70 @@
       "weapons": [
         "Crimson Staff",
         "Snowflake"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Supreme Sage's Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Supreme Sage's Staff"
       ],
       "character": "Aerith"
     },
@@ -638,6 +1237,38 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Microlaser",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Microlaser"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Terra's Rod"
       ],
       "character": "Aerith"
@@ -676,6 +1307,22 @@
     },
     {
       "weapons": [
+        "Bramble Spine",
+        "Deroplatys"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Centipede",
         "Core Defender"
       ],
@@ -692,7 +1339,87 @@
     },
     {
       "weapons": [
+        "Centipede",
+        "Deroplatys"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Core Defender",
+        "Deroplatys"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Core Defender",
+        "Desperado Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Deroplatys",
+        "Desperado Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Core Defender",
+        "Foam Sword"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Deroplatys",
         "Foam Sword"
       ],
       "character": "Matt"
@@ -724,8 +1451,72 @@
     },
     {
       "weapons": [
+        "Deroplatys",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Core Defender",
         "Nautilus Spiral"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Deroplatys",
+        "Nautilus Spiral"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Core Defender",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Deroplatys",
+        "Physician's Scalpel"
       ],
       "character": "Matt"
     }
@@ -756,7 +1547,39 @@
     },
     {
       "weapons": [
+        "Deroplatys",
+        "Prime Number"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Core Defender",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Deroplatys",
         "Syringe Rapier"
       ],
       "character": "Matt"
@@ -798,6 +1621,22 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Terra's Rod"
       ],
       "character": "Aerith"
@@ -815,6 +1654,22 @@
       "weapons": [
         "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Headphones",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -862,6 +1717,70 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pirate Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Terra's Rod"
       ],
       "character": "Aerith"
@@ -879,6 +1798,22 @@
       "weapons": [
         "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -942,6 +1877,38 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Terra's Rod"
       ],
       "character": "Aerith"
@@ -974,6 +1941,118 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Garish Greatblade",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Garish Greatblade",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Garish Greatblade",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Egg Staff"
       ],
       "character": "Aerith"
@@ -1070,6 +2149,54 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Festive Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Festive Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Festive Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Floral Wand"
       ],
       "character": "Aerith"
@@ -1151,6 +2278,54 @@
       "weapons": [
         "Crimson Staff",
         "Gambanteinn"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
       ],
       "character": "Aerith"
     },
@@ -1197,6 +2372,150 @@
   [
     {
       "weapons": [
+        "Kamura Wand",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Galian Roar",
+        "Kugelblitz"
+      ],
+      "character": "Vincent"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Lightning's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Lightning's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Lightning's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Galian Roar",
+        "Kugelblitz"
+      ],
+      "character": "Vincent"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff",
         "Snowflake"
       ],
@@ -1231,6 +2550,102 @@
       "weapons": [
         "Crimson Staff",
         "Snowflake"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Supreme Sage's Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Supreme Sage's Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Supreme Sage's Staff"
       ],
       "character": "Aerith"
     },
@@ -1336,6 +2751,38 @@
         "Boomerang"
       ],
       "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Microlaser",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Microlaser"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
     }
   ],
   [
@@ -1365,6 +2812,22 @@
     {
       "weapons": [
         "Bramble Spine",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bramble Spine",
         "Syringe Rapier"
       ],
       "character": "Matt"
@@ -1381,7 +2844,71 @@
     {
       "weapons": [
         "Centipede",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Centipede",
         "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Desperado Rapier",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Desperado Rapier",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Foam Sword",
+        "Physician's Scalpel"
       ],
       "character": "Matt"
     }
@@ -1413,6 +2940,22 @@
     {
       "weapons": [
         "Luminary Sword",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Luminary Sword",
         "Syringe Rapier"
       ],
       "character": "Matt"
@@ -1429,7 +2972,55 @@
     {
       "weapons": [
         "Nautilus Spiral",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Nautilus Spiral",
         "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Physician's Scalpel",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Physician's Scalpel",
+        "Prime Number"
       ],
       "character": "Matt"
     }
@@ -1469,6 +3060,22 @@
   [
     {
       "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Escutcheon Cannon",
         "Sharkslayer"
       ],
@@ -1485,6 +3092,22 @@
   [
     {
       "weapons": [
+        "Brilliant Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff",
         "Terra's Rod"
       ],
@@ -1494,6 +3117,22 @@
       "weapons": [
         "Headphones",
         "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Headphones",
+        "Ivy Collar"
       ],
       "character": "Red XIII"
     }
@@ -1541,6 +3180,86 @@
     {
       "weapons": [
         "Pilot's Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Pirate Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
         "Silver Collar"
       ],
       "character": "Red XIII"
@@ -1572,10 +3291,314 @@
     },
     {
       "weapons": [
+        "Twinkling Star",
+        "Zenithian Sword"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Canyon Collar",
         "Pilot's Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Garish Greatblade",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Stream Guard",
+        "Zenithian Sword"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Egg Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Fairy Tale"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Festive Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Floral Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gambanteinn"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gorgeous Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gorgeous Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Galian Roar",
+        "Kugelblitz"
+      ],
+      "character": "Vincent"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
     }
   ],
   [
@@ -1597,6 +3620,422 @@
   [
     {
       "weapons": [
+        "Kamura Wand",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Lightning's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Snowflake"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Supreme Sage's Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Microlaser"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Deroplatys",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Core Defender",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Galian Roar",
+        "Kugelblitz"
+      ],
+      "character": "Vincent"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Pirate Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gorgeous Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gorgeous Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Deroplatys",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Deroplatys",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Core Defender",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Core Defender",
         "Luminary Sword"
       ],
@@ -1606,6 +4045,54 @@
       "weapons": [
         "Canyon Collar",
         "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Pilot's Collar"
       ],
       "character": "Red XIII"
     }
@@ -1645,6 +4132,198 @@
   [
     {
       "weapons": [
+        "Brilliant Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Garish Greatblade",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Pirate Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Deroplatys",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Luminary Sword",
         "Syringe Rapier"
       ],
@@ -1656,6 +4335,182 @@
         "Ivy Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Core Defender",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Headphones"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
     }
   ],
   [
@@ -1751,6 +4606,21 @@
   [
     {
       "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff"
       ],
       "character": "Aerith"
@@ -1783,6 +4653,21 @@
       "weapons": [
         "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -1841,6 +4726,21 @@
   [
     {
       "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff"
       ],
       "character": "Aerith"
@@ -1851,6 +4751,51 @@
         "Chocobo Paddle"
       ],
       "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
     }
   ],
   [
@@ -1872,7 +4817,37 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -1902,6 +4877,51 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Mythril Rod"
       ],
       "character": "Aerith"
@@ -1911,6 +4931,21 @@
         "Withering Blaze"
       ],
       "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
     }
   ],
   [
@@ -1926,6 +4961,36 @@
         "Mallet of Luck"
       ],
       "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
     }
   ],
   [
@@ -1980,6 +5045,118 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Mythril Rod"
       ],
       "character": "Aerith"
@@ -2012,6 +5189,38 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Trumpet Shell"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Garish Greatblade",
+        "Hardcore Squad"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Egg Staff"
       ],
       "character": "Aerith"
@@ -2029,6 +5238,22 @@
       "weapons": [
         "Crimson Staff",
         "Fairy Tale"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Festive Rod"
       ],
       "character": "Aerith"
     },
@@ -2076,6 +5301,22 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Kamura Wand"
       ],
       "character": "Aerith"
@@ -2092,7 +5333,71 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Lightning's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Snowflake"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Supreme Sage's Staff"
       ],
       "character": "Aerith"
     },
@@ -2171,8 +5476,56 @@
   [
     {
       "weapons": [
+        "Escutcheon Cannon",
+        "Microlaser"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Microlaser"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -2219,8 +5572,40 @@
   [
     {
       "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Headphones"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -2267,8 +5652,40 @@
   [
     {
       "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Headphones"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -2315,8 +5732,120 @@
   [
     {
       "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -2355,6 +5884,22 @@
     {
       "weapons": [
         "Gold Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
         "Silver Collar"
       ],
       "character": "Red XIII"
@@ -2386,6 +5931,22 @@
     },
     {
       "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Crimson Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Flame Dragon's Band",
         "Pilot's Collar"
       ],
@@ -2396,7 +5957,39 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Nocturne Horn"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
       ],
       "character": "Aerith"
     },
@@ -2444,6 +6037,198 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Megaphone",
+        "Trumpet Shell"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Garish Greatblade",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Pandemonic Sword"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Pandemonic Sword"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Egg Staff"
       ],
       "character": "Aerith"
@@ -2454,6 +6239,22 @@
         "Chocobo Paddle"
       ],
       "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Egg Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
     }
   ],
   [
@@ -2498,6 +6299,70 @@
     },
     {
       "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Fairy Tale"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Festive Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Festive Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Festive Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Flame Dragon's Band",
         "Pilot's Collar"
       ],
@@ -2518,6 +6383,22 @@
         "Chocobo Paddle"
       ],
       "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Floral Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
     }
   ],
   [
@@ -2557,6 +6438,70 @@
       "weapons": [
         "Crimson Staff",
         "Gambanteinn"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gambanteinn"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
       ],
       "character": "Aerith"
     },
@@ -2587,6 +6532,38 @@
   [
     {
       "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Nocturne Horn",
+        "Trumpet Shell"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Kamura Wand",
         "Terra's Rod"
       ],
@@ -2603,6 +6580,214 @@
   [
     {
       "weapons": [
+        "Kamura Wand",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Lightning's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Lightning's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Lightning's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Nocturne Horn",
+        "Trumpet Shell"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff",
         "Snowflake"
       ],
@@ -2621,6 +6806,118 @@
       "weapons": [
         "Crimson Staff",
         "Snowflake"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Snowflake"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Supreme Sage's Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Supreme Sage's Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Supreme Sage's Staff"
       ],
       "character": "Aerith"
     },
@@ -2662,6 +6959,38 @@
         "Pilot's Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Mythril Rod",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Mythril Rod",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Galian Roar",
+        "Kugelblitz"
+      ],
+      "character": "Vincent"
     }
   ],
   [
@@ -2678,6 +7007,22 @@
         "Chocobo Paddle"
       ],
       "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
     }
   ],
   [
@@ -2715,6 +7060,22 @@
   [
     {
       "weapons": [
+        "Escutcheon Cannon",
+        "Microlaser"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff",
         "Kamura Wand"
       ],
@@ -2731,6 +7092,118 @@
   [
     {
       "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chocobo Paddle",
+        "Crystal Sword"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Headphones"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Pirate Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Bahamut Rod",
         "Crimson Staff"
       ],
@@ -2742,6 +7215,102 @@
         "Mallet of Luck"
       ],
       "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Pandemonic Sword"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
     }
   ],
   [
@@ -2765,6 +7334,22 @@
       "weapons": [
         "Crimson Staff",
         "Fairy Tale"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Festive Rod"
       ],
       "character": "Aerith"
     },
@@ -2812,6 +7397,102 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gorgeous Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Nocturne Horn",
+        "Trumpet Shell"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gorgeous Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gorgeous Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gorgeous Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gorgeous Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Kamura Wand"
       ],
       "character": "Aerith"
@@ -2828,7 +7509,71 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Lightning's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Snowflake"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Supreme Sage's Staff"
       ],
       "character": "Aerith"
     },
@@ -2875,6 +7620,22 @@
   [
     {
       "weapons": [
+        "Mythril Rod",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Crimson Staff",
         "Umbrella"
       ],
@@ -2891,6 +7652,70 @@
   [
     {
       "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chocobo Paddle",
+        "Crystal Sword"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Deroplatys",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Deroplatys",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Deroplatys",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Core Defender",
         "Luminary Sword"
       ],
@@ -2902,6 +7727,38 @@
         "Ivy Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Core Defender",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Core Defender",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
     }
   ],
   [
@@ -2939,6 +7796,86 @@
   [
     {
       "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Nocturne Horn",
+        "Trumpet Shell"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Ivy Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Gold Megaphone",
         "Trumpet Shell"
       ],
@@ -2955,6 +7892,262 @@
   [
     {
       "weapons": [
+        "Garish Greatblade",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Garish Greatblade",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Galian Roar",
+        "Kugelblitz"
+      ],
+      "character": "Vincent"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Greatsword of the Worthy",
+        "Volcanic Heat"
+      ],
+      "character": "Angeal"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Boomerang"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Pirate Collar",
+        "Sleek Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Deroplatys",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Deroplatys",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Core Defender",
         "Luminary Sword"
       ],
@@ -2964,6 +8157,22 @@
       "weapons": [
         "Canyon Collar",
         "Flame Dragon's Band"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Ivy Collar"
       ],
       "character": "Red XIII"
     }
@@ -2987,6 +8196,134 @@
   [
     {
       "weapons": [
+        "Luminary Sword",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Core Defender",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Bandaged Sword",
         "Chocobo Paddle"
       ],
@@ -2996,6 +8333,278 @@
       "weapons": [
         "Brilliant Collar",
         "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Headphones"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Headphones"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Headphones"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Pandemonic Sword"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Patissier's Glaive",
+        "Snow's Bardiche"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Flame Dragon's Band"
       ],
       "character": "Red XIII"
     }
@@ -3019,8 +8628,104 @@
   [
     {
       "weapons": [
+        "Luminary Sword",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Brilliant Collar",
         "Canyon Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Withering Blaze"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Canyon Collar",
+        "Pirate Collar"
       ],
       "character": "Red XIII"
     },
@@ -3127,6 +8832,22 @@
     {
       "weapons": [
         "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
         "Mythril Rod"
       ],
       "character": "Aerith"
@@ -3137,6 +8858,70 @@
         "Ivy Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Ivy Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Protector's Blade"
+      ],
+      "character": "Sephiroth"
     }
   ],
   [
@@ -3167,6 +8952,22 @@
       "weapons": [
         "Flame Dragon's Band",
         "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Escutcheon Cannon",
+        "Microlaser"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Great Sabrecat Collar"
       ],
       "character": "Red XIII"
     }
@@ -3230,6 +9031,22 @@
     {
       "weapons": [
         "Flame Dragon's Band",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
         "Silver Collar"
       ],
       "character": "Red XIII"
@@ -3254,6 +9071,86 @@
   [
     {
       "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Gorgeous Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Protector's Blade",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Pandemonic Sword"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Mythril Rod",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Nocturne Horn",
+        "Trumpet Shell"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Mythril Rod",
         "Terra's Rod"
       ],
@@ -3263,6 +9160,54 @@
       "weapons": [
         "Brilliant Collar",
         "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Mythril Rod",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Mythril Rod",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Mythril Rod",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pirate Collar"
       ],
       "character": "Red XIII"
     }
@@ -3302,6 +9247,70 @@
   [
     {
       "weapons": [
+        "Gold Megaphone",
+        "Trumpet Shell"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Deroplatys",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Deroplatys",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Core Defender",
         "Luminary Sword"
       ],
@@ -3318,6 +9327,54 @@
   [
     {
       "weapons": [
+        "Core Defender",
+        "Luminary Sword"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Bandaged Sword",
         "Chocobo Paddle"
       ],
@@ -3326,6 +9383,246 @@
     {
       "weapons": [
         "Brilliant Collar",
+        "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    },
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Headphones"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Headphones"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Nocturne Horn",
+        "Trumpet Shell"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Pandemonic Sword"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Flame Dragon Blade",
+        "Pandemonic Sword"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bandaged Sword",
+        "Chocobo Paddle"
+      ],
+      "character": "Cloud"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Gold Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Hardcore Squad",
+        "Patissier's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
         "Gold Collar"
       ],
       "character": "Red XIII"
@@ -3350,8 +9647,120 @@
   [
     {
       "weapons": [
+        "Luminary Sword",
+        "Physician's Scalpel"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Luminary Sword",
+        "Syringe Rapier"
+      ],
+      "character": "Matt"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Brilliant Collar",
         "Gold Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Great Sabrecat Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pilot's Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Pandemonic Sword",
+        "Shinra Wyvern Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gold Collar",
+        "Pirate Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Bahamut Cutter",
+        "Mallet of Luck"
+      ],
+      "character": "Yuffie"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Pirate Collar"
       ],
       "character": "Red XIII"
     },
@@ -3375,6 +9784,22 @@
       "weapons": [
         "Flame Dragon's Band",
         "Gold Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Mythril Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Flame Dragon's Band",
+        "Great Sabrecat Collar"
       ],
       "character": "Red XIII"
     }

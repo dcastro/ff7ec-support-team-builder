@@ -97,5 +97,302 @@
       "type": "MatkDown"
     },
     "obX": "OB6"
+  },
+  {
+    "weaponName": "Inflatable Buster Sword",
+    "obYEffect": {
+      "value": {
+        "range": "All",
+        "potencies": {
+          "max": "High",
+          "base": "High"
+        },
+        "durExt": {
+          "extension": 8,
+          "duration": 25
+        }
+      },
+      "type": "PdefUp"
+    },
+    "obY": "OB10",
+    "obXEffect": {
+      "value": {
+        "range": "All",
+        "potencies": {
+          "max": "High",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 6,
+          "duration": 20
+        }
+      },
+      "type": "PdefUp"
+    },
+    "obX": "OB6"
+  },
+  {
+    "weaponName": "Mermaid Rod",
+    "obYEffect": {
+      "value": {
+        "range": "All",
+        "potencies": {
+          "max": "High",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 8,
+          "duration": 25
+        }
+      },
+      "type": "PatkUp"
+    },
+    "obY": "OB10",
+    "obXEffect": {
+      "value": {
+        "range": "All",
+        "potencies": {
+          "max": "Mid",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 6,
+          "duration": 20
+        }
+      },
+      "type": "PatkUp"
+    },
+    "obX": "OB6"
+  },
+  {
+    "weaponName": "Protector's Blade",
+    "obYEffect": {
+      "value": {
+        "range": "All",
+        "potencies": {
+          "max": "High",
+          "base": "High"
+        },
+        "durExt": {
+          "extension": 13,
+          "duration": 40
+        }
+      },
+      "type": "MdefDown"
+    },
+    "obY": "OB10",
+    "obXEffect": {
+      "value": {
+        "range": "All",
+        "potencies": {
+          "max": "High",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 10,
+          "duration": 30
+        }
+      },
+      "type": "MdefDown"
+    },
+    "obX": "OB6"
+  },
+  {
+    "weaponName": "Shining Gloves",
+    "obYEffect": {
+      "value": {
+        "range": "SingleTarget",
+        "potencies": {
+          "max": "High",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 10,
+          "duration": 30
+        }
+      },
+      "type": "PatkDown"
+    },
+    "obY": "OB10",
+    "obXEffect": {
+      "value": {
+        "range": "SingleTarget",
+        "potencies": {
+          "max": "Mid",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 8,
+          "duration": 25
+        }
+      },
+      "type": "PatkDown"
+    },
+    "obX": "OB6"
+  },
+  {
+    "weaponName": "Shining Gloves",
+    "obYEffect": {
+      "value": {
+        "range": "SingleTarget",
+        "potencies": {
+          "max": "High",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 10,
+          "duration": 30
+        }
+      },
+      "type": "MatkDown"
+    },
+    "obY": "OB10",
+    "obXEffect": {
+      "value": {
+        "range": "SingleTarget",
+        "potencies": {
+          "max": "Mid",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 8,
+          "duration": 25
+        }
+      },
+      "type": "MatkDown"
+    },
+    "obX": "OB6"
+  },
+  {
+    "weaponName": "Stream Guard",
+    "obYEffect": {
+      "value": {
+        "range": "SingleTarget",
+        "potencies": {
+          "max": "High",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 8,
+          "duration": 25
+        }
+      },
+      "type": "MdefDown"
+    },
+    "obY": "OB10",
+    "obXEffect": {
+      "value": {
+        "range": "SingleTarget",
+        "potencies": {
+          "max": "Mid",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 6,
+          "duration": 20
+        }
+      },
+      "type": "MdefDown"
+    },
+    "obX": "OB6"
+  },
+  {
+    "weaponName": "Stream Guard",
+    "obYEffect": {
+      "value": {
+        "range": "All",
+        "potencies": {
+          "max": "High",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 8,
+          "duration": 25
+        }
+      },
+      "type": "MatkUp"
+    },
+    "obY": "OB10",
+    "obXEffect": {
+      "value": {
+        "range": "All",
+        "potencies": {
+          "max": "Mid",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 6,
+          "duration": 20
+        }
+      },
+      "type": "MatkUp"
+    },
+    "obX": "OB6"
+  },
+  {
+    "weaponName": "Stream Slasher",
+    "obYEffect": {
+      "value": {
+        "range": "SingleTarget",
+        "potencies": {
+          "max": "High",
+          "base": "High"
+        },
+        "durExt": {
+          "extension": 8,
+          "duration": 25
+        }
+      },
+      "type": "PdefDown"
+    },
+    "obY": "OB10",
+    "obXEffect": {
+      "value": {
+        "range": "SingleTarget",
+        "potencies": {
+          "max": "High",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 6,
+          "duration": 20
+        }
+      },
+      "type": "PdefDown"
+    },
+    "obX": "OB6"
+  },
+  {
+    "weaponName": "Team Leader's Bamboo Sword",
+    "obYEffect": {
+      "value": {
+        "range": "All",
+        "potencies": {
+          "max": "High",
+          "base": "High"
+        },
+        "durExt": {
+          "extension": 8,
+          "duration": 25
+        }
+      },
+      "type": "WaterDamageUp"
+    },
+    "obY": "OB10",
+    "obXEffect": {
+      "value": {
+        "range": "All",
+        "potencies": {
+          "max": "Mid",
+          "base": "Mid"
+        },
+        "durExt": {
+          "extension": 6,
+          "duration": 20
+        }
+      },
+      "type": "WaterDamageUp"
+    },
+    "obX": "OB6"
   }
 ]

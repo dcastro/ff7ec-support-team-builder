@@ -32,6 +32,16 @@
     }
   ],
   [
+    "Antler Pike",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Aonibi",
     {
       "ownedOb": "OB6-10",
@@ -162,6 +172,16 @@
   ],
   [
     "Barn Swallow",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Battering Sword",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -351,6 +371,16 @@
     }
   ],
   [
+    "Captain's Spear",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Catsmegaphone",
     {
       "ownedOb": "OB0-10",
@@ -415,6 +445,16 @@
     }
   ],
   [
+    "Chrome Death Penalty",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Citric Wand",
     {
       "ownedOb": "OB6-10",
@@ -459,6 +499,16 @@
     }
   ],
   [
+    "Crimson Blitz",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Crimson Staff",
     {
       "ownedOb": "OB6-10",
@@ -471,6 +521,16 @@
   ],
   [
     "Crow Familiar",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Cruel Successor",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -575,6 +635,71 @@
     }
   ],
   [
+    "Demon's Impetus",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Deroplatys",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Desperado Glaive",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Desperado Rapier",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Desperado Rifle",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Dragontail Sword",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Dragoon Lance",
     {
       "ownedOb": "OB6-10",
@@ -627,12 +752,33 @@
     }
   ],
   [
+    "Elegant Gloves",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Enhance Sword (Z)",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
         "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Erdrick's Sword",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -679,6 +825,17 @@
     }
   ],
   [
+    "Fatum Ex Machina",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Feathered Gloves",
     {
       "ownedOb": "OB6-10",
@@ -691,6 +848,46 @@
   ],
   [
     "Featherscatter",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Festive Blade",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Festive Gloves",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Festive Rod",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Festive Sword",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -785,6 +982,38 @@
     }
   ],
   [
+    "Full Throttle",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Fusion Sword",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Galian Roar",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Gambanteinn",
     {
       "ownedOb": "OB6-10",
@@ -807,6 +1036,17 @@
     }
   ],
   [
+    "Garish Greatblade",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Garnet's Rod",
     {
       "ownedOb": "OB6-10",
@@ -819,6 +1059,28 @@
   ],
   [
     "Gauntlets of the Worthy",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Gelid Sword",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Ghost Ensis",
     {
       "ownedOb": "OB6-10",
       "ignored": false,
@@ -873,12 +1135,34 @@
     }
   ],
   [
+    "Gorgeous Staff",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Grand Gloves",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
         "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Great Sabrecat Collar",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -906,6 +1190,17 @@
   ],
   [
     "Green Megaphone",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Grinding Gear",
     {
       "ownedOb": "OB6-10",
       "ignored": false,
@@ -1006,6 +1301,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Heirloom Brush",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -1134,6 +1439,40 @@
     }
   ],
   [
+    "Immaculate Blade",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Infiltration Sword",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Inflatable Buster Sword",
+    {
+      "ownedOb": "OB10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-9",
+        "OB10"
+      ]
+    }
+  ],
+  [
     "Iron Blade",
     {
       "ownedOb": "OB6-10",
@@ -1229,6 +1568,26 @@
     }
   ],
   [
+    "Kikuichimonji",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Killer Falcon",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Killer Hornet",
     {
       "ownedOb": "OB0-10",
@@ -1240,6 +1599,17 @@
   ],
   [
     "Kirin Gloves",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Kotetsu",
     {
       "ownedOb": "OB6-10",
       "ignored": false,
@@ -1272,6 +1642,16 @@
     }
   ],
   [
+    "Leather Combat Gloves",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Leather Gloves",
     {
       "ownedOb": "OB6-10",
@@ -1300,6 +1680,39 @@
       "ignored": false,
       "distinctObs": [
         "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Lightning's Gloves",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Lightning's Rod",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Lightning's Sword",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -1347,6 +1760,26 @@
     }
   ],
   [
+    "Magatsuchi Blade",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Magatsuchi Rod",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Mallet of Luck",
     {
       "ownedOb": "OB0-10",
@@ -1389,12 +1822,54 @@
     }
   ],
   [
+    "Masamune",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Master Tonberry's Blade",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Max Ray",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
         "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Merciless White",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Mermaid Rod",
+    {
+      "ownedOb": "OB10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-9",
+        "OB10"
       ]
     }
   ],
@@ -1411,6 +1886,16 @@
   ],
   [
     "Mop",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Muramasa",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -1442,6 +1927,17 @@
   ],
   [
     "Mythril Rod",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Mythril Slasher",
     {
       "ownedOb": "OB6-10",
       "ignored": false,
@@ -1495,6 +1991,16 @@
     }
   ],
   [
+    "Neo Bahamut Greatsword",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Nightjar",
     {
       "ownedOb": "OB6-10",
@@ -1507,6 +2013,16 @@
   ],
   [
     "Noble Collar",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Noble Parasol",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -1536,6 +2052,17 @@
     }
   ],
   [
+    "Nocturne Horn",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Northern Lights",
     {
       "ownedOb": "OB6-10",
@@ -1543,6 +2070,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Omega Wing",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -1557,12 +2094,98 @@
     }
   ],
   [
+    "Osafune",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Oven Mitts",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
         "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Overture",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Pandemonic Sword",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Patissier's Collar",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Patissier's Glaive",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Patissier's Spear",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Phoenix Odachi",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Physician's Scalpel",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -1596,6 +2219,27 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Pirate Collar",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Pirate's Glaive",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -1644,10 +2288,12 @@
   [
     "Protector's Blade",
     {
-      "ownedOb": "OB0-10",
+      "ownedOb": "OB10",
       "ignored": false,
       "distinctObs": [
-        "OB0-10"
+        "OB0-5",
+        "OB6-9",
+        "OB10"
       ]
     }
   ],
@@ -1680,6 +2326,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Quad Gatling Gun",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -1726,6 +2382,16 @@
     }
   ],
   [
+    "Revenant Mother's Glaive",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Rhad Cannon",
     {
       "ownedOb": "OB0-10",
@@ -1737,6 +2403,16 @@
   ],
   [
     "Rhad Gun",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Riding Gloves",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -1768,6 +2444,16 @@
     }
   ],
   [
+    "Rocker's Guitar",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Rocket Lance",
     {
       "ownedOb": "OB6-10",
@@ -1790,6 +2476,27 @@
   ],
   [
     "Rose Musket",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Rousing Arc Sword",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Rousing Wizer Staff",
     {
       "ownedOb": "OB6-10",
       "ignored": false,
@@ -1875,6 +2582,28 @@
     }
   ],
   [
+    "Sea Dragon Greatsword",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Sea Dragon Staff",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Seaside Collar",
     {
       "ownedOb": "OB6-10",
@@ -1882,6 +2611,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Serrated Remiges",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -1917,6 +2656,29 @@
     }
   ],
   [
+    "Shining Gloves",
+    {
+      "ownedOb": "OB10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-9",
+        "OB10"
+      ]
+    }
+  ],
+  [
+    "Shinra Ceremonial Rifle",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Shinra Greatsword: Model I",
     {
       "ownedOb": "OB6-10",
@@ -1940,6 +2702,16 @@
   ],
   [
     "Shinra Wyvern Blade",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Shiranui",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -2034,6 +2806,17 @@
     }
   ],
   [
+    "Snow's Bardiche",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Snowflake",
     {
       "ownedOb": "OB6-10",
@@ -2096,7 +2879,29 @@
     }
   ],
   [
+    "Staff of the Possessed",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Stalwart Integrity",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Starsoul Blade",
     {
       "ownedOb": "OB6-10",
       "ignored": false,
@@ -2170,10 +2975,12 @@
   [
     "Stream Guard",
     {
-      "ownedOb": "OB0-10",
+      "ownedOb": "OB10",
       "ignored": false,
       "distinctObs": [
-        "OB0-10"
+        "OB0-5",
+        "OB6-9",
+        "OB10"
       ]
     }
   ],
@@ -2189,6 +2996,18 @@
   ],
   [
     "Stream Slasher",
+    {
+      "ownedOb": "OB10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-9",
+        "OB10"
+      ]
+    }
+  ],
+  [
+    "Striped Moogle Flag",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
@@ -2209,7 +3028,49 @@
     }
   ],
   [
+    "Striped Moogle Gloves",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Sun Umbrella",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Sunrise Cannon",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Supreme Sage's Staff",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Surfer Blade",
     {
       "ownedOb": "OB6-10",
       "ignored": false,
@@ -2241,6 +3102,16 @@
     }
   ],
   [
+    "Sōba",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Teacher's Paper Fan",
     {
       "ownedOb": "OB6-10",
@@ -2248,6 +3119,18 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Team Leader's Bamboo Sword",
+    {
+      "ownedOb": "OB10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-9",
+        "OB10"
       ]
     }
   ],
@@ -2327,6 +3210,16 @@
     }
   ],
   [
+    "Transgressor",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Trident",
     {
       "ownedOb": "OB0-10",
@@ -2344,6 +3237,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Tsviet Collar",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -2410,12 +3313,33 @@
     }
   ],
   [
+    "Uber 4-Point Shuriken",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "Ultimatic",
     {
       "ownedOb": "OB0-10",
       "ignored": false,
       "distinctObs": [
         "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Umbralschwert",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -2437,6 +3361,16 @@
       "distinctObs": [
         "OB0-5",
         "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Virtuous Contract",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
       ]
     }
   ],
@@ -2485,6 +3419,17 @@
   ],
   [
     "Wind Slash",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Winged Chakram",
     {
       "ownedOb": "OB6-10",
       "ignored": false,
@@ -2544,6 +3489,17 @@
       "ignored": false,
       "distinctObs": [
         "OB0-10"
+      ]
+    }
+  ],
+  [
+    "Zenithian Sword",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],

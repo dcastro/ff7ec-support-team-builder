@@ -1,3 +1,9 @@
+# I'm pretty sure I used this as a template:
+#   * https://github.com/purescript-halogen/purescript-halogen-template
+# Other useful templates:
+#   * https://github.com/thomashoneyman/purescript-halogen-realworld?tab=readme-ov-file
+
+
 package:
   name: ff7ec-support-team-builder
   dependencies:

@@ -72,6 +72,11 @@ full-clean:
 repl:
     spago repl
 
+# Check for weapon effects in weapons.json not yet handled by the parser
+check-effects:
+    npm run ts
+    spago run -m CheckEffects.Main -p ff7ec-support-team-builder
+
 # Regenerate the `weapons.json` file used in the tests
 regen-weapons:
     # NOTE: you must set the `FF7EC_GOOGLE_SHEETS_KEY` environment variable with a Google API key first.

@@ -75,14 +75,38 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Bahamut Rod
-* Aerith: Gambanteinn
-* Cid: Antler Pike
-* Lucia: Shinra Ceremonial Rifle
-* Red XIII: Pirate Collar
-* Sephiroth: Phoenix Odachi
-* Tifa: Gauntlets of the Worthy
-* Yuffie: Winged Chakram
+* **Aerith - Bahamut Rod**
+  * `+1 ATB [Range: Other Allies] [Condition: Self 0-40% HP]`
+  * `+1 ATB [Range: Other Allies] [Condition: Self 0-50% HP]`
+  * `+1 ATB [Range: Other Allies] [Condition: Self 0-70% HP]`
+  * `+1 ATB [Range: Other Allies] [Condition: Self 0-90% HP]`
+* **Aerith - Gambanteinn**
+  * `+1 ATB [Range: Other Allies] [Condition: Self 0-40% HP]`
+  * `+1 ATB [Range: Other Allies] [Condition: Self 0-50% HP]`
+  * `+1 ATB [Range: Other Allies] [Condition: Self 0-70% HP]`
+  * `+1 ATB [Range: Other Allies] [Condition: Self 0-90% HP]`
+* **Cid - Antler Pike**
+  * `+1 ATB [Range: All Allies] [Condition: First Use]`
+  * `+2 ATB [Range: All Allies] [Condition: First Use]`
+* **Lucia - Shinra Ceremonial Rifle**
+  * `+1 ATB [Range: All Allies] [Condition: First Use]`
+  * `+2 ATB [Range: All Allies] [Condition: First Use]`
+* **Red XIII - Pirate Collar**
+  * `+1 ATB [Range: Other Allies] [Condition: Self 0-40% HP]`
+  * `+1 ATB [Range: Other Allies] [Condition: Self 0-50% HP]`
+  * `+1 ATB [Range: Other Allies] [Condition: Self 0-70% HP]`
+  * `+1 ATB [Range: Other Allies] [Condition: Self 0-90% HP]`
+* **Sephiroth - Phoenix Odachi**
+  * `+1 ATB [Range: Self] [Condition: First Use]`
+  * `+2 ATB [Range: Self] [Condition: First Use]`
+  * `+3 ATB [Range: Self] [Condition: First Use]`
+* **Tifa - Gauntlets of the Worthy**
+  * `+1 ATB [Range: Self] [Condition: First Use]`
+  * `+2 ATB [Range: Self] [Condition: First Use]`
+  * `+3 ATB [Range: Self] [Condition: First Use]`
+* **Yuffie - Winged Chakram**
+  * `+1 ATB [Range: All Allies] [Condition: First Use]`
+  * `+2 ATB [Range: All Allies] [Condition: First Use]`
 
 ---
 
@@ -90,8 +114,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Gorgeous Staff
-* Vincent: Chrome Death Penalty
+* **Aerith - Gorgeous Staff**
+  * `+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]`
+  * `+2 Costume C. Ability Uses [Range: Self] [Condition: First Use]`
+* **Vincent - Chrome Death Penalty**
+  * `+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]`
 
 ---
 
@@ -99,7 +126,8 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Tifa: Festive Gloves
+* **Tifa - Festive Gloves**
+  * `+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
 
 ---
 
@@ -107,7 +135,8 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cloud: Buster Sword
+* **Cloud - Buster Sword**
+  * `+200% Additional Damage [Range: Single Enemy] [Condition: Sigil Destruction]`
 
 ---
 
@@ -115,21 +144,53 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Vincent: Chiron
-* Vincent: Crow Familiar
-* Vincent: Double Stem E
-* Vincent: Gilded Age
-* Vincent: Gun of the Worthy
-* Vincent: Holiday Garm
-* Vincent: Hugin & Munin
-* Vincent: Kugelblitz
-* Vincent: Quicksilver
-* Vincent: S1976C
-* Vincent: Sawed-Off GS
-* Vincent: Shortbarrel
-* Vincent: Silver Rifle
-* Vincent: T03 Model N
-* Vincent: White Dog
+* **Vincent - Chiron**
+  * `+2% Limit Break Gauge [Range: Self]`
+  * `+3% Limit Break Gauge [Range: Self]`
+* **Vincent - Crow Familiar**
+  * `+4% Limit Break Gauge [Range: Self]`
+  * `+5% Limit Break Gauge [Range: Self]`
+* **Vincent - Double Stem E**
+  * `+2% Limit Break Gauge [Range: Self]`
+  * `+3% Limit Break Gauge [Range: Self]`
+* **Vincent - Gilded Age**
+  * `+10% Limit Break Gauge [Range: Self]`
+  * `+5% Limit Break Gauge [Range: Self]`
+  * `+6% Limit Break Gauge [Range: Self]`
+  * `+8% Limit Break Gauge [Range: Self]`
+* **Vincent - Gun of the Worthy**
+  * `+4% Limit Break Gauge [Range: Self]`
+  * `+5% Limit Break Gauge [Range: Self]`
+* **Vincent - Holiday Garm**
+  * `+4% Limit Break Gauge [Range: Self]`
+  * `+5% Limit Break Gauge [Range: Self]`
+* **Vincent - Hugin & Munin**
+  * `+4% Limit Break Gauge [Range: Self]`
+  * `+5% Limit Break Gauge [Range: Self]`
+* **Vincent - Kugelblitz**
+  * `+4% Limit Break Gauge [Range: Self]`
+  * `+5% Limit Break Gauge [Range: Self]`
+* **Vincent - Quicksilver**
+  * `+3% Limit Break Gauge [Range: Self]`
+  * `+5% Limit Break Gauge [Range: Self]`
+* **Vincent - S1976C**
+  * `+2% Limit Break Gauge [Range: Self]`
+  * `+3% Limit Break Gauge [Range: Self]`
+* **Vincent - Sawed-Off GS**
+  * `+2% Limit Break Gauge [Range: Self]`
+  * `+3% Limit Break Gauge [Range: Self]`
+* **Vincent - Shortbarrel**
+  * `+3% Limit Break Gauge [Range: Self]`
+  * `+4% Limit Break Gauge [Range: Self]`
+* **Vincent - Silver Rifle**
+  * `+2% Limit Break Gauge [Range: Self]`
+  * `+3% Limit Break Gauge [Range: Self]`
+* **Vincent - T03 Model N**
+  * `+1% Limit Break Gauge [Range: Self]`
+  * `+2% Limit Break Gauge [Range: Self]`
+* **Vincent - White Dog**
+  * `+4% Limit Break Gauge [Range: Self]`
+  * `+5% Limit Break Gauge [Range: Self]`
 
 ---
 
@@ -137,11 +198,20 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Lightning's Rod
-* Cid: Radiant Lance
-* Glenn: Blade of Ruin
-* Lucia: Rubber Band Gun
-* Yuffie: Rocker's Guitar
+* **Aerith - Lightning's Rod**
+  * `+50% Stance Gauge [Condition: First Use]`
+  * `+75% Stance Gauge [Condition: First Use]`
+* **Cid - Radiant Lance**
+  * `+10% Stance Gauge`
+  * `+20% Stance Gauge`
+* **Glenn - Blade of Ruin**
+  * `+10% Stance Gauge`
+  * `+20% Stance Gauge`
+* **Lucia - Rubber Band Gun**
+  * `+20% Stance Gauge`
+* **Yuffie - Rocker's Guitar**
+  * `+10% Stance Gauge`
+  * `+20% Stance Gauge`
 
 ---
 
@@ -149,7 +219,8 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Supreme Sage's Staff
+* **Aerith - Supreme Sage's Staff**
+  * `-100% Summon Gauge [Range: Self]`
 
 ---
 
@@ -157,11 +228,16 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Umbrella
-* Lucia: Tranquilizer Gun
-* Matt: Foam Sword
-* Red XIII: Headphones
-* Tifa: Grand Gloves
+* **Aerith - Umbrella**
+  * `Cancel Effect(s): PATK Down, MATK Down [Range: Single Ally]`
+* **Lucia - Tranquilizer Gun**
+  * `Cancel Effect(s): Poison, Darkness [Range: Self]`
+* **Matt - Foam Sword**
+  * `Cancel Effect(s): PDEF Up [Range: Single Enemy]`
+* **Red XIII - Headphones**
+  * `Cancel Effect(s): MDEF Up [Range: All Enemies]`
+* **Tifa - Grand Gloves**
+  * `Cancel Effect(s): Poison, Silence [Range: Self]`
 
 ---
 
@@ -169,8 +245,12 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Tifa: Leather Combat Gloves
-* Yuffie: Heirloom Brush
+* **Tifa - Leather Combat Gloves**
+  * `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`
+  * `Enhance Buffs (+10s) (Low -> High) [Range: All Allies]`
+* **Yuffie - Heirloom Brush**
+  * `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`
+  * `Enhance Buffs (+10s) (Low -> High) [Range: All Allies]`
 
 ---
 
@@ -178,12 +258,36 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Supreme Sage's Staff
-* Cloud: Bahamut Greatsword
-* Cloud: Umbral Blade
-* Sephiroth (Orig.): Masamune
-* Sephiroth: Blade of the Worthy
-* Tifa: Sabin's Claws
+* **Aerith - Supreme Sage's Staff**
+  * `20000 Additional Damage [Range: All Enemies]`
+  * `40000 Additional Damage [Range: All Enemies]`
+  * `60000 Additional Damage [Range: All Enemies]`
+  * `80000 Additional Damage [Range: All Enemies]`
+* **Cloud - Bahamut Greatsword**
+  * `10000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
+  * `20000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
+  * `30000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
+  * `40000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
+* **Cloud - Umbral Blade**
+  * `10000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
+  * `5000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
+  * `6000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
+  * `8000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
+* **Sephiroth (Orig.) - Masamune**
+  * `20000 Additional Damage [Range: Single Enemy]`
+  * `30000 Additional Damage [Range: Single Enemy]`
+  * `40000 Additional Damage [Range: Single Enemy]`
+  * `60000 Additional Damage [Range: Single Enemy]`
+* **Sephiroth - Blade of the Worthy**
+  * `10000 Additional Damage [Range: All Enemies]`
+  * `20000 Additional Damage [Range: All Enemies]`
+  * `30000 Additional Damage [Range: All Enemies]`
+  * `40000 Additional Damage [Range: All Enemies]`
+* **Tifa - Sabin's Claws**
+  * `10000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
+  * `20000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
+  * `30000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
+  * `40000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
 
 ---
 
@@ -191,204 +295,403 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Crimson Staff
-* Aerith: Dawn's Prayers
-* Aerith: Floral Wand
-* Aerith: Full Metal Staff
-* Aerith: Gorgeous Staff
-* Aerith: Magatsuchi Rod
-* Aerith: Noblesse Rod
-* Aerith: Sea Dragon Staff
-* Aerith: Staff of the Possessed
-* Aerith: Striking Staff
-* Aerith: Sun Umbrella
-* Aerith: Supreme Sage's Staff
-* Aerith: Terra's Rod
-* Angeal: Greatsword (A)
-* Angeal: Inflatable Buster Sword
-* Angeal: Lightning's Sword
-* Angeal: Orchard Shovel
-* Angeal: Sea Dragon Greatsword
-* Angeal: Shinra Greatsword: Model I
-* Angeal: Turks' Blade
-* Angeal: Type-90 Longsword
-* Angeal: Type-91 Two-Hander
-* Barret: Enemy Launcher
-* Barret: Fafnir Rifle
-* Barret: Gatling Gun
-* Barret: Heavy Hauser
-* Barret: Hell House Cannon
-* Barret: Max Ray
-* Barret: Quad Gatling Gun
-* Barret: Rocket Punch
-* Barret: Sharkslayer
-* Barret: Solid Bazooka
-* Barret: Sunrise Cannon
-* Barret: W Machine
-* Cait Sith: Alba Megaphone
-* Cait Sith: Battle Trumpet
-* Cait Sith: Gold Megaphone
-* Cait Sith: Icebolt Megaphone
-* Cait Sith: Silver Megaphone
-* Cait Sith: Spirit Demon Megaphone
-* Cait Sith: Stilva Megaphone
-* Cait Sith: Witch's Broom
-* Cait Sith: Yellow Megaphone
-* Cid: Captain's Spear
-* Cid: Flayer
-* Cid: Mop
-* Cid: Pole Axe
-* Cid: Radiant Lance
-* Cid: Rocket Lance
-* Cid: Slash Lance
-* Cid: Spear
-* Cid: Trident
-* Cloud: Apocalypse
-* Cloud: Bahamut Greatsword
-* Cloud: Buster Sword
-* Cloud: Chocobo Paddle
-* Cloud: Crimson Blitz
-* Cloud: Fusion Sword
-* Cloud: Glavenus Sword
-* Cloud: Hardedge
-* Cloud: Iron Blade
-* Cloud: Locke's Sword
-* Cloud: Mystic Sword
-* Cloud: Mythril Saber
-* Cloud: Nail Bat
-* Cloud: Neo Bahamut Greatsword
-* Cloud: Noble Parasol
-* Cloud: Organics
-* Cloud: Sleek Saber
-* Cloud: Umbral Blade
-* Cloud: Zidane's Sword
-* Glenn: Apology in Hell
-* Glenn: Best Wishes
-* Glenn: Garish Greatblade
-* Glenn: Personal Style
-* Glenn: Piece of Cake
-* Glenn: Pirate's Glaive
-* Glenn: Rest in Peace
-* Glenn: Revenant Mother's Glaive
-* Glenn: Set Square
-* Glenn: Slay the Day
-* Glenn: Squeaky Hammer
-* Glenn: Steiner's Blade
-* Glenn: Stilva Glaive
-* Glenn: Thousand Waves
-* Glenn: Ultimatic
-* Lucia: Bald Eagle
-* Lucia: Barn Swallow
-* Lucia: Black Rifle
-* Lucia: Featherscatter
-* Lucia: Mad Minute
-* Lucia: Nightjar
-* Lucia: Rubber Band Gun
-* Lucia: Spirit Demon Rifle
-* Lucia: Turks' Rifle
-* Lucia: V39
-* Matt: Bahamut Rapier
-* Matt: Broadsword: Axis
-* Matt: Dragontail Sword
-* Matt: Foam Sword
-* Matt: Hrotti
-* Matt: Killer Hornet
-* Matt: Nautilus Spiral
-* Matt: Physician's Scalpel
-* Matt: Slick Beetle
-* Matt: Stingray
-* Red XIII: Flame Dragon's Band
-* Red XIII: Gold Collar
-* Red XIII: Headphones
-* Red XIII: Hell House Collar
-* Red XIII: Iron Collar
-* Red XIII: Ivy Collar
-* Red XIII: Junk Collar
-* Red XIII: Leather Collar
-* Red XIII: Patissier's Collar
-* Red XIII: Seaside Collar
-* Red XIII: Silver Collar
-* Red XIII: Steward Collar
-* Red XIII: Tsviet Collar
-* Sephiroth (Orig.): Kikuichimonji
-* Sephiroth (Orig.): Kotetsu
-* Sephiroth (Orig.): Masamune
-* Sephiroth (Orig.): Muramasa
-* Sephiroth: Blade of the Worthy
-* Sephiroth: Flame Dragon Blade
-* Sephiroth: Folding Ruler
-* Sephiroth: Glaireid
-* Sephiroth: Humus Saber
-* Sephiroth: Infiltration Sword
-* Sephiroth: Kuja's Spirit Blade
-* Sephiroth: Nameless
-* Sephiroth: Northern Lights
-* Sephiroth: Phoenix Odachi
-* Sephiroth: Protector's Blade
-* Sephiroth: Radiant Edge
-* Sephiroth: Shinra Blade: Model I
-* Sephiroth: Shinra Military Sword
-* Sephiroth: Shinra Wyvern Blade
-* Sephiroth: World Tree Bough
-* Tifa: Amarant's Claws
-* Tifa: Bahamut Fangs
-* Tifa: Bahamut Knuckles
-* Tifa: Blue Daffodil Gloves
-* Tifa: Demon's Impetus
-* Tifa: Feathered Gloves
-* Tifa: Guide Gloves
-* Tifa: Járngreipr
-* Tifa: Kaiser Knuckles
-* Tifa: Leather Combat Gloves
-* Tifa: Leather Gloves
-* Tifa: Powersoul
-* Tifa: Sabin's Claws
-* Tifa: Sonic Striker
-* Tifa: Steward Gloves
-* Tifa: Striped Moogle Gloves
-* Tifa: Tiger Fangs
-* Tifa: Turks' Gloves
-* Vincent: Chiron
-* Vincent: Chrome Death Penalty
-* Vincent: Double Stem E
-* Vincent: Galian Roar
-* Vincent: Hugin & Munin
-* Vincent: Icebolt Shooter
-* Vincent: Kugelblitz
-* Vincent: Merciless White
-* Vincent: Noblesse Automatic
-* Vincent: Quicksilver
-* Vincent: S1976C
-* Vincent: Silver Rifle
-* Vincent: T03 Model N
-* Yuffie: 4-Point Shuriken
-* Yuffie: Bahamut Cutter
-* Yuffie: Bamboo Ring
-* Yuffie: Boomerang
-* Yuffie: Fatum Ex Machina
-* Yuffie: Heirloom Brush
-* Yuffie: Mallet of Luck
-* Yuffie: Pinwheel
-* Yuffie: Risanautr
-* Yuffie: Striped Moogle Flag
-* Yuffie: Twin Viper
-* Yuffie: Wind Slash
-* Zack: Alba Blade
-* Zack: Arc Sword
-* Zack: Beach Parasol
-* Zack: Black Whiskers
-* Zack: Bouquet
-* Zack: Buster Sword Origin
-* Zack: Ceremonial Sword (Z)
-* Zack: Cutlass
-* Zack: Festive Sword
-* Zack: Iron Greatsword
-* Zack: Magatsuchi Blade
-* Zack: Surfer Blade
-* Zack: Twinkling Star
-* Zack: Type-99 Longsword
-* Zack: Virtuous Contract
-* Zack: Zweihander
+* **Aerith - Crimson Staff**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Aerith - Dawn's Prayers**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Aerith - Floral Wand**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Aerith - Full Metal Staff**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Aerith - Gorgeous Staff**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Aerith - Magatsuchi Rod**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Aerith - Noblesse Rod**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Aerith - Sea Dragon Staff**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Aerith - Staff of the Possessed**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Aerith - Striking Staff**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Aerith - Sun Umbrella**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Aerith - Supreme Sage's Staff**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Aerith - Terra's Rod**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Angeal - Greatsword (A)**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Angeal - Inflatable Buster Sword**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Angeal - Lightning's Sword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Angeal - Orchard Shovel**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Angeal - Sea Dragon Greatsword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Angeal - Shinra Greatsword: Model I**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Angeal - Turks' Blade**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Angeal - Type-90 Longsword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Angeal - Type-91 Two-Hander**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Barret - Enemy Launcher**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Barret - Fafnir Rifle**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Barret - Gatling Gun**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Barret - Heavy Hauser**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Barret - Hell House Cannon**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Barret - Max Ray**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Barret - Quad Gatling Gun**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Barret - Rocket Punch**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Barret - Sharkslayer**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Barret - Solid Bazooka**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Barret - Sunrise Cannon**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Barret - W Machine**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cait Sith - Alba Megaphone**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cait Sith - Battle Trumpet**
+  * `20% Crit Rate [Range: All Enemies]`
+* **Cait Sith - Gold Megaphone**
+  * `20% Crit Rate [Range: Single Enemy]`
+* **Cait Sith - Icebolt Megaphone**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cait Sith - Silver Megaphone**
+  * `20% Crit Rate [Range: Single Enemy]`
+* **Cait Sith - Spirit Demon Megaphone**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cait Sith - Stilva Megaphone**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cait Sith - Witch's Broom**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cait Sith - Yellow Megaphone**
+  * `30% Crit Rate [Range: Single Enemy]`
+* **Cid - Captain's Spear**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cid - Flayer**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cid - Mop**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cid - Pole Axe**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cid - Radiant Lance**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cid - Rocket Lance**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cid - Slash Lance**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cid - Spear**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cid - Trident**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cloud - Apocalypse**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cloud - Bahamut Greatsword**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cloud - Buster Sword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cloud - Chocobo Paddle**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cloud - Crimson Blitz**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cloud - Fusion Sword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cloud - Glavenus Sword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cloud - Hardedge**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cloud - Iron Blade**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cloud - Locke's Sword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cloud - Mystic Sword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cloud - Mythril Saber**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cloud - Nail Bat**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cloud - Neo Bahamut Greatsword**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cloud - Noble Parasol**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cloud - Organics**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Cloud - Sleek Saber**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cloud - Umbral Blade**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Cloud - Zidane's Sword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Glenn - Apology in Hell**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Glenn - Best Wishes**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Glenn - Garish Greatblade**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Glenn - Personal Style**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Glenn - Piece of Cake**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Glenn - Pirate's Glaive**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Glenn - Rest in Peace**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Glenn - Revenant Mother's Glaive**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Glenn - Set Square**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Glenn - Slay the Day**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Glenn - Squeaky Hammer**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Glenn - Steiner's Blade**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Glenn - Stilva Glaive**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Glenn - Thousand Waves**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Glenn - Ultimatic**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Lucia - Bald Eagle**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Lucia - Barn Swallow**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Lucia - Black Rifle**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Lucia - Featherscatter**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Lucia - Mad Minute**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Lucia - Nightjar**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Lucia - Rubber Band Gun**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Lucia - Spirit Demon Rifle**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Lucia - Turks' Rifle**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Lucia - V39**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Matt - Bahamut Rapier**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Matt - Broadsword: Axis**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Matt - Dragontail Sword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Matt - Foam Sword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Matt - Hrotti**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Matt - Killer Hornet**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Matt - Nautilus Spiral**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Matt - Physician's Scalpel**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Matt - Slick Beetle**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Matt - Stingray**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Red XIII - Flame Dragon's Band**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Red XIII - Gold Collar**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Red XIII - Headphones**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Red XIII - Hell House Collar**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Red XIII - Iron Collar**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Red XIII - Ivy Collar**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Red XIII - Junk Collar**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Red XIII - Leather Collar**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Red XIII - Patissier's Collar**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Red XIII - Seaside Collar**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Red XIII - Silver Collar**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Red XIII - Steward Collar**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Red XIII - Tsviet Collar**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Sephiroth (Orig.) - Kikuichimonji**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Sephiroth (Orig.) - Kotetsu**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Sephiroth (Orig.) - Masamune**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Sephiroth (Orig.) - Muramasa**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Sephiroth - Blade of the Worthy**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Sephiroth - Flame Dragon Blade**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Sephiroth - Folding Ruler**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Sephiroth - Glaireid**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Sephiroth - Humus Saber**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Sephiroth - Infiltration Sword**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Sephiroth - Kuja's Spirit Blade**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Sephiroth - Nameless**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Sephiroth - Northern Lights**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Sephiroth - Phoenix Odachi**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Sephiroth - Protector's Blade**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Sephiroth - Radiant Edge**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Sephiroth - Shinra Blade: Model I**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Sephiroth - Shinra Military Sword**
+  * `10% Crit Rate [Range: Single Enemy`
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Sephiroth - Shinra Wyvern Blade**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Sephiroth - World Tree Bough**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Amarant's Claws**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Bahamut Fangs**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Bahamut Knuckles**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Blue Daffodil Gloves**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Demon's Impetus**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Feathered Gloves**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Guide Gloves**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Járngreipr**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Tifa - Kaiser Knuckles**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Leather Combat Gloves**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Tifa - Leather Gloves**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Powersoul**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Sabin's Claws**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Tifa - Sonic Striker**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Steward Gloves**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Striped Moogle Gloves**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Tiger Fangs**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Tifa - Turks' Gloves**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Vincent - Chiron**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Vincent - Chrome Death Penalty**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Vincent - Double Stem E**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Vincent - Galian Roar**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Vincent - Hugin & Munin**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Vincent - Icebolt Shooter**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Vincent - Kugelblitz**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Vincent - Merciless White**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Vincent - Noblesse Automatic**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Vincent - Quicksilver**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Vincent - S1976C**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Vincent - Silver Rifle**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Vincent - T03 Model N**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Yuffie - 4-Point Shuriken**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Yuffie - Bahamut Cutter**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Yuffie - Bamboo Ring**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Yuffie - Boomerang**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Yuffie - Fatum Ex Machina**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Yuffie - Heirloom Brush**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Yuffie - Mallet of Luck**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Yuffie - Pinwheel**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Yuffie - Risanautr**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Yuffie - Striped Moogle Flag**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Yuffie - Twin Viper**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Yuffie - Wind Slash**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Zack - Alba Blade**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Zack - Arc Sword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Zack - Beach Parasol**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Zack - Black Whiskers**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Zack - Bouquet**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Zack - Buster Sword Origin**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Zack - Ceremonial Sword (Z)**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Zack - Cutlass**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Zack - Festive Sword**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Zack - Iron Greatsword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Zack - Magatsuchi Blade**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Zack - Surfer Blade**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Zack - Twinkling Star**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Zack - Type-99 Longsword**
+  * `10% Crit Rate [Range: Single Enemy]`
+* **Zack - Virtuous Contract**
+  * `10% Crit Rate [Range: All Enemies]`
+* **Zack - Zweihander**
+  * `10% Crit Rate [Range: Single Enemy]`
 
 ---
 
@@ -396,21 +699,81 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Titan Rod
-* Aerith: Wizer Staff
-* Angeal: Ghost Ensis
-* Angeal: Titan Blade
-* Cait Sith: Sable Megaphone
-* Cloud: Holiday Cheer
-* Glenn: Jiggy Fam
-* Lucia: Holiday Revolver
-* Matt: Holiday Cane
-* Sephiroth (Orig.): Divine Steed Blade
-* Sephiroth: Blue Bramble
-* Tifa: Elegant Gloves
-* Vincent: White Dog
-* Yuffie: Razor Ring
-* Yuffie: Uber 4-Point Shuriken
+* **Aerith - Titan Rod**
+  * `320% Mag. Earth Damage [Range: Single Enemy]`
+  * `370% Mag. Earth Damage [Range: Single Enemy]`
+  * `430% Mag. Earth Damage [Range: Single Enemy]`
+  * `450% Mag. Earth Damage [Range: Single Enemy]`
+* **Aerith - Wizer Staff**
+  * `290% Mag. Earth Damage [Range: All Enemies]`
+  * `350% Mag. Earth Damage [Range: All Enemies]`
+  * `450% Mag. Earth Damage [Range: All Enemies]`
+  * `540% Mag. Earth Damage [Range: All Enemies]`
+* **Angeal - Ghost Ensis**
+  * `430% Mag. Earth Damage [Range: All Enemies]`
+  * `520% Mag. Earth Damage [Range: All Enemies]`
+  * `670% Mag. Earth Damage [Range: All Enemies]`
+  * `780% Mag. Earth Damage [Range: All Enemies]`
+* **Angeal - Titan Blade**
+  * `320% Mag. Earth Damage [Range: Single Enemy]`
+  * `370% Mag. Earth Damage [Range: Single Enemy]`
+  * `430% Mag. Earth Damage [Range: Single Enemy]`
+  * `450% Mag. Earth Damage [Range: Single Enemy]`
+* **Cait Sith - Sable Megaphone**
+  * `210% Mag. Earth Damage [Range: All Enemies]`
+  * `240% Mag. Earth Damage [Range: All Enemies]`
+  * `280% Mag. Earth Damage [Range: All Enemies]`
+  * `290% Mag. Earth Damage [Range: All Enemies]`
+* **Cloud - Holiday Cheer**
+  * `210% Mag. Earth Damage [Range: All Enemies]`
+  * `240% Mag. Earth Damage [Range: All Enemies]`
+  * `280% Mag. Earth Damage [Range: All Enemies]`
+  * `290% Mag. Earth Damage [Range: All Enemies]`
+* **Glenn - Jiggy Fam**
+  * `280% Mag. Earth Damage [Range: All Enemies]`
+  * `340% Mag. Earth Damage [Range: All Enemies]`
+  * `440% Mag. Earth Damage [Range: All Enemies]`
+  * `520% Mag. Earth Damage [Range: All Enemies]`
+* **Lucia - Holiday Revolver**
+  * `440% Mag. Earth Damage [Range: Single Enemy]`
+  * `530% Mag. Earth Damage [Range: Single Enemy]`
+  * `660% Mag. Earth Damage [Range: Single Enemy]`
+  * `800% Mag. Earth Damage [Range: Single Enemy]`
+* **Matt - Holiday Cane**
+  * `210% Mag. Earth Damage [Range: All Enemies]`
+  * `240% Mag. Earth Damage [Range: All Enemies]`
+  * `280% Mag. Earth Damage [Range: All Enemies]`
+  * `290% Mag. Earth Damage [Range: All Enemies]`
+* **Sephiroth (Orig.) - Divine Steed Blade**
+  * `210% Mag. Earth Damage [Range: All Enemies]`
+  * `240% Mag. Earth Damage [Range: All Enemies]`
+  * `280% Mag. Earth Damage [Range: All Enemies]`
+  * `290% Mag. Earth Damage [Range: All Enemies]`
+* **Sephiroth - Blue Bramble**
+  * `440% Mag. Earth Damage [Range: Single Enemy]`
+  * `510% Mag. Earth Damage [Range: Single Enemy]`
+  * `620% Mag. Earth Damage [Range: Single Enemy]`
+  * `700% Mag. Earth Damage [Range: Single Enemy]`
+* **Tifa - Elegant Gloves**
+  * `1080% Mag. Earth Damage [Range: Single Enemy]`
+  * `1340% Mag. Earth Damage [Range: Single Enemy]`
+  * `600% Mag. Earth Damage [Range: Single Enemy]`
+  * `720% Mag. Earth Damage [Range: Single Enemy]`
+* **Vincent - White Dog**
+  * `520% Mag. Earth Damage [Range: Single Enemy]`
+  * `620% Mag. Earth Damage [Range: Single Enemy]`
+  * `780% Mag. Earth Damage [Range: Single Enemy]`
+  * `940% Mag. Earth Damage [Range: Single Enemy]`
+* **Yuffie - Razor Ring**
+  * `280% Mag. Earth Damage [Range: All Enemies]`
+  * `340% Mag. Earth Damage [Range: All Enemies]`
+  * `440% Mag. Earth Damage [Range: All Enemies]`
+  * `520% Mag. Earth Damage [Range: All Enemies]`
+* **Yuffie - Uber 4-Point Shuriken**
+  * `1080% Mag. Earth Damage [Range: Single Enemy]`
+  * `1340% Mag. Earth Damage [Range: Single Enemy]`
+  * `600% Mag. Earth Damage [Range: Single Enemy]`
+  * `720% Mag. Earth Damage [Range: Single Enemy]`
 
 ---
 
@@ -418,30 +781,126 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Egg Staff
-* Angeal: Innocent Warrior
-* Angeal: Penance Blade
-* Barret: Flame Projector
-* Cait Sith: Red Megaphone
-* Cloud: Igneous Saber
-* Glenn: Inferno Grave
-* Glenn: Patissier's Glaive
-* Glenn: Silver Sol Buster
-* Lucia: Killer Falcon
-* Lucia: Rose Musket
-* Lucia: Vivi's Magical Gun
-* Red XIII: Egg Collar
-* Sephiroth (Orig.): Shiranui
-* Sephiroth: Ashura
-* Sephiroth: Prototype Crimson Blade
-* Sephiroth: Withering Blaze
-* Tifa: Penance Gloves
-* Tifa: Shell Knuckles
-* Yuffie: Abzu Cutter
-* Zack: Carrot Sword
-* Zack: Crystal Sword (Z)
-* Zack: Ifrit's Sword
-* Zack: Stream Guard
+* **Aerith - Egg Staff**
+  * `340% Mag. Fire Damage [Range: All Enemies]`
+  * `410% Mag. Fire Damage [Range: All Enemies]`
+  * `530% Mag. Fire Damage [Range: All Enemies]`
+  * `630% Mag. Fire Damage [Range: All Enemies]`
+* **Angeal - Innocent Warrior**
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `340% Mag. Fire Damage [Range: All Enemies]`
+  * `440% Mag. Fire Damage [Range: All Enemies]`
+  * `520% Mag. Fire Damage [Range: All Enemies]`
+* **Angeal - Penance Blade**
+  * `210% Mag. Fire Damage [Range: All Enemies]`
+  * `240% Mag. Fire Damage [Range: All Enemies]`
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `290% Mag. Fire Damage [Range: All Enemies]`
+* **Barret - Flame Projector**
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `340% Mag. Fire Damage [Range: All Enemies]`
+  * `440% Mag. Fire Damage [Range: All Enemies]`
+  * `520% Mag. Fire Damage [Range: All Enemies]`
+* **Cait Sith - Red Megaphone**
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `340% Mag. Fire Damage [Range: All Enemies]`
+  * `440% Mag. Fire Damage [Range: All Enemies]`
+  * `520% Mag. Fire Damage [Range: All Enemies]`
+* **Cloud - Igneous Saber**
+  * `210% Mag. Fire Damage [Range: All Enemies]`
+  * `240% Mag. Fire Damage [Range: All Enemies]`
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `290% Mag. Fire Damage [Range: All Enemies]`
+* **Glenn - Inferno Grave**
+  * `320% Mag. Fire Damage [Range: Single Enemy]`
+  * `370% Mag. Fire Damage [Range: Single Enemy]`
+  * `430% Mag. Fire Damage [Range: Single Enemy]`
+  * `450% Mag. Fire Damage [Range: Single Enemy]`
+* **Glenn - Patissier's Glaive**
+  * `490% Mag. Fire Damage [Range: Single Enemy]`
+  * `590% Mag. Fire Damage [Range: Single Enemy]`
+  * `760% Mag. Fire Damage [Range: Single Enemy]`
+  * `920% Mag. Fire Damage [Range: Single Enemy]`
+* **Glenn - Silver Sol Buster**
+  * `210% Mag. Fire Damage [Range: All Enemies]`
+  * `240% Mag. Fire Damage [Range: All Enemies]`
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `290% Mag. Fire Damage [Range: All Enemies]`
+* **Lucia - Killer Falcon**
+  * `490% Mag. Fire Damage [Range: Single Enemy]`
+  * `590% Mag. Fire Damage [Range: Single Enemy]`
+  * `760% Mag. Fire Damage [Range: Single Enemy]`
+  * `920% Mag. Fire Damage [Range: Single Enemy]`
+* **Lucia - Rose Musket**
+  * `390% Mag. Fire Damage [Range: Single Enemy]`
+  * `450% Mag. Fire Damage [Range: Single Enemy]`
+  * `550% Mag. Fire Damage [Range: Single Enemy]`
+  * `620% Mag. Fire Damage [Range: Single Enemy]`
+* **Lucia - Vivi's Magical Gun**
+  * `210% Mag. Fire Damage [Range: All Enemies]`
+  * `240% Mag. Fire Damage [Range: All Enemies]`
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `290% Mag. Fire Damage [Range: All Enemies]`
+* **Red XIII - Egg Collar**
+  * `210% Mag. Fire Damage [Range: All Enemies]`
+  * `240% Mag. Fire Damage [Range: All Enemies]`
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `290% Mag. Fire Damage [Range: All Enemies]`
+* **Sephiroth (Orig.) - Shiranui**
+  * `1080% Mag. Fire Damage [Range: Single Enemy]`
+  * `1340% Mag. Fire Damage [Range: Single Enemy]`
+  * `600% Mag. Fire Damage [Range: Single Enemy]`
+  * `720% Mag. Fire Damage [Range: Single Enemy]`
+* **Sephiroth - Ashura**
+  * `210% Mag. Fire Damage [Range: All Enemies]`
+  * `240% Mag. Fire Damage [Range: All Enemies]`
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `290% Mag. Fire Damage [Range: All Enemies]`
+* **Sephiroth - Prototype Crimson Blade**
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `340% Mag. Fire Damage [Range: All Enemies]`
+  * `440% Mag. Fire Damage [Range: All Enemies]`
+  * `520% Mag. Fire Damage [Range: All Enemies]`
+* **Sephiroth - Withering Blaze**
+  * `440% Mag. Fire Damage [Range: Single Enemy]`
+  * `510% Mag. Fire Damage [Range: Single Enemy]`
+  * `620% Mag. Fire Damage [Range: Single Enemy]`
+  * `700% Mag. Fire Damage [Range: Single Enemy]`
+* **Tifa - Penance Gloves**
+  * `210% Mag. Fire Damage [Range: All Enemies]`
+  * `240% Mag. Fire Damage [Range: All Enemies]`
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `290% Mag. Fire Damage [Range: All Enemies]`
+* **Tifa - Shell Knuckles**
+  * `520% Mag. Fire Damage [Range: Single Enemy]`
+  * `620% Mag. Fire Damage [Range: Single Enemy]`
+  * `810% Mag. Fire Damage [Range: Single Enemy]`
+  * `940% Mag. Fire Damage [Range: Single Enemy]`
+* **Yuffie - Abzu Cutter**
+  * `210% Mag. Fire Damage [Range: All Enemies]`
+  * `240% Mag. Fire Damage [Range: All Enemies]`
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `290% Mag. Fire Damage [Range: All Enemies]`
+* **Zack - Carrot Sword**
+  * `210% Mag. Fire Damage [Range: All Enemies]`
+  * `240% Mag. Fire Damage [Range: All Enemies]`
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `290% Mag. Fire Damage [Range: All Enemies]`
+* **Zack - Crystal Sword (Z)**
+  * `280% Mag. Fire Damage [Range: All Enemies]`
+  * `340% Mag. Fire Damage [Range: All Enemies]`
+  * `440% Mag. Fire Damage [Range: All Enemies]`
+  * `520% Mag. Fire Damage [Range: All Enemies]`
+* **Zack - Ifrit's Sword**
+  * `320% Mag. Fire Damage [Range: Single Enemy]`
+  * `370% Mag. Fire Damage [Range: Single Enemy]`
+  * `430% Mag. Fire Damage [Range: Single Enemy]`
+  * `450% Mag. Fire Damage [Range: Single Enemy]`
+* **Zack - Stream Guard**
+  * `1020% Mag. Fire Damage [Range: Single Enemy]`
+  * `580% Mag. Fire Damage [Range: Single Enemy]`
+  * `700% Mag. Fire Damage [Range: Single Enemy]`
+  * `860% Mag. Fire Damage [Range: Single Enemy]`
 
 ---
 
@@ -449,32 +908,136 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Hell House Rod
-* Aerith: Silver Staff
-* Aerith: Snowflake
-* Angeal: Blade of the Hunt
-* Barret: Shiva Cannon
-* Cait Sith: Blue Megaphone
-* Cait Sith: Fireworks Megaphone
-* Cid: Lance of the Hunt
-* Cloud: Enhance Sword
-* Cloud: Full Throttle
-* Cloud: Rune Blade
-* Cloud: Shiva's Blade
-* Glenn: Snow's Bardiche
-* Lucia: Eligor Rifle
-* Matt: Absolute Royal
-* Red XIII: Amethyst Collar
-* Sephiroth (Orig.): Omega Wing
-* Sephiroth: Edged Wings
-* Tifa: Lightning's Gloves
-* Vincent: Cath Palug
-* Vincent: Eligor Gun
-* Yuffie: Cactuar Fan
-* Yuffie: Little Red Wreath
-* Yuffie: Rocker's Guitar
-* Zack: Gelid Sword
-* Zack: Sword of the Hunt
+* **Aerith - Hell House Rod**
+  * `210% Mag. Ice Damage [Range: All Enemies]`
+  * `240% Mag. Ice Damage [Range: All Enemies]`
+  * `280% Mag. Ice Damage [Range: All Enemies]`
+  * `290% Mag. Ice Damage [Range: All Enemies]`
+* **Aerith - Silver Staff**
+  * `290% Mag. Ice Damage [Range: All Enemies]`
+  * `350% Mag. Ice Damage [Range: All Enemies]`
+  * `450% Mag. Ice Damage [Range: All Enemies]`
+  * `540% Mag. Ice Damage [Range: All Enemies]`
+* **Aerith - Snowflake**
+  * `340% Mag. Ice Damage [Range: Single Enemy]`
+  * `390% Mag. Ice Damage [Range: Single Enemy]`
+  * `480% Mag. Ice Damage [Range: Single Enemy]`
+  * `540% Mag. Ice Damage [Range: Single Enemy]`
+* **Angeal - Blade of the Hunt**
+  * `210% Mag. Ice Damage [Range: All Enemies]`
+  * `240% Mag. Ice Damage [Range: All Enemies]`
+  * `280% Mag. Ice Damage [Range: All Enemies]`
+  * `290% Mag. Ice Damage [Range: All Enemies]`
+* **Barret - Shiva Cannon**
+  * `320% Mag. Ice Damage [Range: Single Enemy]`
+  * `370% Mag. Ice Damage [Range: Single Enemy]`
+  * `430% Mag. Ice Damage [Range: Single Enemy]`
+  * `450% Mag. Ice Damage [Range: Single Enemy]`
+* **Cait Sith - Blue Megaphone**
+  * `280% Mag. Ice Damage [Range: All Enemies]`
+  * `340% Mag. Ice Damage [Range: All Enemies]`
+  * `440% Mag. Ice Damage [Range: All Enemies]`
+  * `520% Mag. Ice Damage [Range: All Enemies]`
+* **Cait Sith - Fireworks Megaphone**
+  * `210% Mag. Ice Damage [Range: All Enemies]`
+  * `240% Mag. Ice Damage [Range: All Enemies]`
+  * `280% Mag. Ice Damage [Range: All Enemies]`
+  * `290% Mag. Ice Damage [Range: All Enemies]`
+* **Cid - Lance of the Hunt**
+  * `210% Mag. Ice Damage [Range: All Enemies]`
+  * `240% Mag. Ice Damage [Range: All Enemies]`
+  * `280% Mag. Ice Damage [Range: All Enemies]`
+  * `290% Mag. Ice Damage [Range: All Enemies]`
+* **Cloud - Enhance Sword**
+  * `280% Mag. Ice Damage [Range: All Enemies]`
+  * `340% Mag. Ice Damage [Range: All Enemies]`
+  * `440% Mag. Ice Damage [Range: All Enemies]`
+  * `520% Mag. Ice Damage [Range: All Enemies]`
+* **Cloud - Full Throttle**
+  * `1120% Mag. Ice Damage [Range: Single Enemy]`
+  * `600% Mag. Ice Damage [Range: Single Enemy]`
+  * `720% Mag. Ice Damage [Range: Single Enemy]`
+  * `940% Mag. Ice Damage [Range: Single Enemy]`
+* **Cloud - Rune Blade**
+  * `210% Mag. Ice Damage [Range: All Enemies]`
+  * `240% Mag. Ice Damage [Range: All Enemies]`
+  * `280% Mag. Ice Damage [Range: All Enemies]`
+  * `290% Mag. Ice Damage [Range: All Enemies]`
+* **Cloud - Shiva's Blade**
+  * `320% Mag. Ice Damage [Range: Single Enemy]`
+  * `370% Mag. Ice Damage [Range: Single Enemy]`
+  * `430% Mag. Ice Damage [Range: Single Enemy]`
+  * `450% Mag. Ice Damage [Range: Single Enemy]`
+* **Glenn - Snow's Bardiche**
+  * `490% Mag. Ice Damage [Range: Single Enemy]`
+  * `590% Mag. Ice Damage [Range: Single Enemy]`
+  * `760% Mag. Ice Damage [Range: Single Enemy]`
+  * `920% Mag. Ice Damage [Range: Single Enemy]`
+* **Lucia - Eligor Rifle**
+  * `210% Mag. Ice Damage [Range: All Enemies]`
+  * `240% Mag. Ice Damage [Range: All Enemies]`
+  * `280% Mag. Ice Damage [Range: All Enemies]`
+  * `290% Mag. Ice Damage [Range: All Enemies]`
+* **Matt - Absolute Royal**
+  * `290% Mag. Ice Damage [Range: All Enemies]`
+  * `350% Mag. Ice Damage [Range: All Enemies]`
+  * `450% Mag. Ice Damage [Range: All Enemies]`
+  * `540% Mag. Ice Damage [Range: All Enemies]`
+* **Red XIII - Amethyst Collar**
+  * `210% Mag. Ice Damage [Range: All Enemies]`
+  * `240% Mag. Ice Damage [Range: All Enemies]`
+  * `280% Mag. Ice Damage [Range: All Enemies]`
+  * `290% Mag. Ice Damage [Range: All Enemies]`
+* **Sephiroth (Orig.) - Omega Wing**
+  * `480% Mag. Ice Damage [Range: All Enemies]`
+  * `580% Mag. Ice Damage [Range: All Enemies]`
+  * `750% Mag. Ice Damage [Range: All Enemies]`
+  * `900% Mag. Ice Damage [Range: All Enemies]`
+* **Sephiroth - Edged Wings**
+  * `440% Mag. Ice Damage [Range: Single Enemy]`
+  * `530% Mag. Ice Damage [Range: Single Enemy]`
+  * `660% Mag. Ice Damage [Range: Single Enemy]`
+  * `800% Mag. Ice Damage [Range: Single Enemy]`
+* **Tifa - Lightning's Gloves**
+  * `1080% Mag. Ice Damage [Range: Single Enemy]`
+  * `1340% Mag. Ice Damage [Range: Single Enemy]`
+  * `600% Mag. Ice Damage [Range: Single Enemy]`
+  * `720% Mag. Ice Damage [Range: Single Enemy]`
+* **Vincent - Cath Palug**
+  * `280% Mag. Ice Damage [Range: All Enemies]`
+  * `340% Mag. Ice Damage [Range: All Enemies]`
+  * `440% Mag. Ice Damage [Range: All Enemies]`
+  * `520% Mag. Ice Damage [Range: All Enemies]`
+* **Vincent - Eligor Gun**
+  * `210% Mag. Ice Damage [Range: All Enemies]`
+  * `240% Mag. Ice Damage [Range: All Enemies]`
+  * `280% Mag. Ice Damage [Range: All Enemies]`
+  * `290% Mag. Ice Damage [Range: All Enemies]`
+* **Yuffie - Cactuar Fan**
+  * `210% Mag. Ice Damage [Range: All Enemies]`
+  * `240% Mag. Ice Damage [Range: All Enemies]`
+  * `280% Mag. Ice Damage [Range: All Enemies]`
+  * `290% Mag. Ice Damage [Range: All Enemies]`
+* **Yuffie - Little Red Wreath**
+  * `520% Mag. Ice Damage [Range: Single Enemy]`
+  * `620% Mag. Ice Damage [Range: Single Enemy]`
+  * `780% Mag. Ice Damage [Range: Single Enemy]`
+  * `940% Mag. Ice Damage [Range: Single Enemy]`
+* **Yuffie - Rocker's Guitar**
+  * `320% Mag. Ice Damage [Range: Single Enemy]`
+  * `380% Mag. Ice Damage [Range: Single Enemy]`
+  * `500% Mag. Ice Damage [Range: Single Enemy]`
+  * `600% Mag. Ice Damage [Range: Single Enemy]`
+* **Zack - Gelid Sword**
+  * `1080% Mag. Ice Damage [Range: Single Enemy]`
+  * `1340% Mag. Ice Damage [Range: Single Enemy]`
+  * `600% Mag. Ice Damage [Range: Single Enemy]`
+  * `720% Mag. Ice Damage [Range: Single Enemy]`
+* **Zack - Sword of the Hunt**
+  * `440% Mag. Ice Damage [Range: All Enemies]`
+  * `530% Mag. Ice Damage [Range: All Enemies]`
+  * `660% Mag. Ice Damage [Range: All Enemies]`
+  * `800% Mag. Ice Damage [Range: All Enemies]`
 
 ---
 
@@ -482,29 +1045,121 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Ramuh's Staff
-* Aerith: Wizard Staff
-* Angeal: CC Alloy Greatsword
-* Angeal: Festive Blade
-* Barret: Electrocannon
-* Barret: Hook Launcher
-* Cid: Dragoon Lance
-* Cid: Festive Spear
-* Glenn: Shockbuster
-* Lucia: Rifle of Levin
-* Lucia: Thunderbird
-* Matt: Candle Rapier
-* Red XIII: Great Sabrecat Collar
-* Red XIII: Kefka's Collar
-* Sephiroth (Orig.): Starsoul Blade
-* Sephiroth: CC Alloy Sword
-* Sephiroth: Pandemonic Sword
-* Tifa: Black Cat's Paws
-* Tifa: Crystal Gloves
-* Tifa: Kirin Gloves
-* Vincent: Crow Familiar
-* Vincent: Electro Peashooter
-* Yuffie: Watch of the Hunt
+* **Aerith - Ramuh's Staff**
+  * `340% Mag. Lightning Damage [Range: Single Enemy]`
+  * `390% Mag. Lightning Damage [Range: Single Enemy]`
+  * `460% Mag. Lightning Damage [Range: Single Enemy]`
+  * `480% Mag. Lightning Damage [Range: Single Enemy]`
+* **Aerith - Wizard Staff**
+  * `290% Mag. Lightning Damage [Range: All Enemies]`
+  * `350% Mag. Lightning Damage [Range: All Enemies]`
+  * `450% Mag. Lightning Damage [Range: All Enemies]`
+  * `540% Mag. Lightning Damage [Range: All Enemies]`
+* **Angeal - CC Alloy Greatsword**
+  * `500% Mag. Lightning Damage [Range: Single Enemy]`
+  * `600% Mag. Lightning Damage [Range: Single Enemy]`
+  * `740% Mag. Lightning Damage [Range: Single Enemy]`
+  * `900% Mag. Lightning Damage [Range: Single Enemy]`
+* **Angeal - Festive Blade**
+  * `490% Mag. Lightning Damage [Range: Single Enemy]`
+  * `590% Mag. Lightning Damage [Range: Single Enemy]`
+  * `760% Mag. Lightning Damage [Range: Single Enemy]`
+  * `920% Mag. Lightning Damage [Range: Single Enemy]`
+* **Barret - Electrocannon**
+  * `340% Mag. Lightning Damage [Range: All Enemies]`
+  * `390% Mag. Lightning Damage [Range: All Enemies]`
+  * `480% Mag. Lightning Damage [Range: All Enemies]`
+  * `540% Mag. Lightning Damage [Range: All Enemies]`
+* **Barret - Hook Launcher**
+  * `210% Mag. Lightning Damage [Range: All Enemies]`
+  * `240% Mag. Lightning Damage [Range: All Enemies]`
+  * `280% Mag. Lightning Damage [Range: All Enemies]`
+  * `290% Mag. Lightning Damage [Range: All Enemies]`
+* **Cid - Dragoon Lance**
+  * `420% Mag. Lightning Damage [Range: All Enemies]`
+  * `480% Mag. Lightning Damage [Range: All Enemies]`
+  * `590% Mag. Lightning Damage [Range: All Enemies]`
+  * `670% Mag. Lightning Damage [Range: All Enemies]`
+* **Cid - Festive Spear**
+  * `210% Mag. Lightning Damage [Range: All Enemies]`
+  * `240% Mag. Lightning Damage [Range: All Enemies]`
+  * `280% Mag. Lightning Damage [Range: All Enemies]`
+  * `290% Mag. Lightning Damage [Range: All Enemies]`
+* **Glenn - Shockbuster**
+  * `280% Mag. Lightning Damage [Range: All Enemies]`
+  * `340% Mag. Lightning Damage [Range: All Enemies]`
+  * `440% Mag. Lightning Damage [Range: All Enemies]`
+  * `520% Mag. Lightning Damage [Range: All Enemies]`
+* **Lucia - Rifle of Levin**
+  * `300% Mag. Lightning Damage [Range: Single Enemy]`
+  * `350% Mag. Lightning Damage [Range: Single Enemy]`
+  * `410% Mag. Lightning Damage [Range: Single Enemy]`
+  * `420% Mag. Lightning Damage [Range: Single Enemy]`
+* **Lucia - Thunderbird**
+  * `340% Mag. Lightning Damage [Range: Single Enemy]`
+  * `390% Mag. Lightning Damage [Range: Single Enemy]`
+  * `480% Mag. Lightning Damage [Range: Single Enemy]`
+  * `540% Mag. Lightning Damage [Range: Single Enemy]`
+* **Matt - Candle Rapier**
+  * `220% Mag. Lightning Damage [Range: All Enemies]`
+  * `230% Mag. Lightning Damage [Range: All Enemies]`
+  * `280% Mag. Lightning Damage [Range: All Enemies]`
+  * `290% Mag. Lightning Damage [Range: All Enemies]`
+* **Red XIII - Great Sabrecat Collar**
+  * `290% Mag. Lightning Damage [Range: All Enemies]`
+  * `330% Mag. Lightning Damage [Range: All Enemies]`
+  * `390% Mag. Lightning Damage [Range: All Enemies]`
+  * `440% Mag. Lightning Damage [Range: All Enemies]`
+* **Red XIII - Kefka's Collar**
+  * `210% Mag. Lightning Damage [Range: All Enemies]`
+  * `240% Mag. Lightning Damage [Range: All Enemies]`
+  * `280% Mag. Lightning Damage [Range: All Enemies]`
+  * `290% Mag. Lightning Damage [Range: All Enemies]`
+* **Sephiroth (Orig.) - Starsoul Blade**
+  * `1080% Mag. Lightning Damage [Range: Single Enemy]`
+  * `1340% Mag. Lightning Damage [Range: Single Enemy]`
+  * `600% Mag. Lightning Damage [Range: Single Enemy]`
+  * `720% Mag. Lightning Damage [Range: Single Enemy]`
+* **Sephiroth - CC Alloy Sword**
+  * `280% Mag. Lightning Damage [Range: All Enemies]`
+  * `340% Mag. Lightning Damage [Range: All Enemies]`
+  * `440% Mag. Lightning Damage [Range: All Enemies]`
+  * `520% Mag. Lightning Damage [Range: All Enemies]`
+* **Sephiroth - Pandemonic Sword**
+  * `430% Mag. Lightning Damage [Range: All Enemies]`
+  * `520% Mag. Lightning Damage [Range: All Enemies]`
+  * `670% Mag. Lightning Damage [Range: All Enemies]`
+  * `800% Mag. Lightning Damage [Range: All Enemies]`
+* **Tifa - Black Cat's Paws**
+  * `220% Mag. Lightning Damage [Range: All Enemies]`
+  * `230% Mag. Lightning Damage [Range: All Enemies]`
+  * `280% Mag. Lightning Damage [Range: All Enemies]`
+  * `290% Mag. Lightning Damage [Range: All Enemies]`
+* **Tifa - Crystal Gloves**
+  * `270% Mag. Lightning Damage [Range: All Enemies]`
+  * `320% Mag. Lightning Damage [Range: All Enemies]`
+  * `420% Mag. Lightning Damage [Range: All Enemies]`
+  * `500% Mag. Lightning Damage [Range: All Enemies]`
+* **Tifa - Kirin Gloves**
+  * `520% Mag. Lightning Damage [Range: Single Enemy]`
+  * `620% Mag. Lightning Damage [Range: Single Enemy]`
+  * `780% Mag. Lightning Damage [Range: Single Enemy]`
+  * `940% Mag. Lightning Damage [Range: Single Enemy]`
+* **Vincent - Crow Familiar**
+  * `520% Mag. Lightning Damage [Range: Single Enemy]`
+  * `620% Mag. Lightning Damage [Range: Single Enemy]`
+  * `780% Mag. Lightning Damage [Range: Single Enemy]`
+  * `940% Mag. Lightning Damage [Range: Single Enemy]`
+* **Vincent - Electro Peashooter**
+  * `210% Mag. Lightning Damage [Range: All Enemies]`
+  * `240% Mag. Lightning Damage [Range: All Enemies]`
+  * `280% Mag. Lightning Damage [Range: All Enemies]`
+  * `290% Mag. Lightning Damage [Range: All Enemies]`
+* **Yuffie - Watch of the Hunt**
+  * `340% Mag. Lightning Damage [Range: All Enemies]`
+  * `390% Mag. Lightning Damage [Range: All Enemies]`
+  * `480% Mag. Lightning Damage [Range: All Enemies]`
+  * `540% Mag. Lightning Damage [Range: All Enemies]`
 
 ---
 
@@ -512,92 +1167,436 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Crimson Staff
-* Aerith: Dawn's Prayers
-* Aerith: Gorgeous Staff
-* Aerith: Magatsuchi Rod
-* Aerith: Noblesse Rod
-* Aerith: Sea Dragon Staff
-* Aerith: Sun Umbrella
-* Aerith: Supreme Sage's Staff
-* Aerith: Terra's Rod
-* Angeal: Sea Dragon Greatsword
-* Angeal: Turks' Blade
-* Angeal: Type-91 Two-Hander
-* Barret: Hell House Cannon
-* Barret: Max Ray
-* Barret: Quad Gatling Gun
-* Cait Sith: Icebolt Megaphone
-* Cait Sith: Spirit Demon Megaphone
-* Cait Sith: Stilva Megaphone
-* Cid: Captain's Spear
-* Cid: Rocket Lance
-* Cloud: Chocobo Paddle
-* Cloud: Crimson Blitz
-* Cloud: Mystic Sword
-* Cloud: Mythril Saber
-* Cloud: Neo Bahamut Greatsword
-* Cloud: Sleek Saber
-* Glenn: Best Wishes
-* Glenn: Garish Greatblade
-* Glenn: Revenant Mother's Glaive
-* Glenn: Set Square
-* Glenn: Stilva Glaive
-* Glenn: Thousand Waves
-* Lucia: Featherscatter
-* Lucia: Nightjar
-* Lucia: Spirit Demon Rifle
-* Lucia: Turks' Rifle
-* Matt: Bahamut Rapier
-* Matt: Dragontail Sword
-* Matt: Hrotti
-* Matt: Physician's Scalpel
-* Matt: Stingray
-* Red XIII: Flame Dragon's Band
-* Red XIII: Gold Collar
-* Red XIII: Headphones
-* Red XIII: Hell House Collar
-* Red XIII: Iron Collar
-* Red XIII: Steward Collar
-* Red XIII: Tsviet Collar
-* Sephiroth (Orig.): Kikuichimonji
-* Sephiroth (Orig.): Muramasa
-* Sephiroth: Blade of the Worthy
-* Sephiroth: Flame Dragon Blade
-* Sephiroth: Folding Ruler
-* Sephiroth: Humus Saber
-* Sephiroth: Kuja's Spirit Blade
-* Sephiroth: Phoenix Odachi
-* Sephiroth: Protector's Blade
-* Sephiroth: Shinra Blade: Model I
-* Sephiroth: Shinra Wyvern Blade
-* Tifa: Bahamut Fangs
-* Tifa: Bahamut Knuckles
-* Tifa: Járngreipr
-* Tifa: Kaiser Knuckles
-* Tifa: Leather Combat Gloves
-* Tifa: Powersoul
-* Tifa: Steward Gloves
-* Tifa: Striped Moogle Gloves
-* Tifa: Turks' Gloves
-* Vincent: Double Stem E
-* Vincent: Galian Roar
-* Vincent: Hugin & Munin
-* Vincent: Icebolt Shooter
-* Vincent: Kugelblitz
-* Vincent: Merciless White
-* Vincent: Noblesse Automatic
-* Vincent: S1976C
-* Yuffie: Heirloom Brush
-* Yuffie: Mallet of Luck
-* Yuffie: Risanautr
-* Yuffie: Striped Moogle Flag
-* Zack: Arc Sword
-* Zack: Beach Parasol
-* Zack: Festive Sword
-* Zack: Iron Greatsword
-* Zack: Magatsuchi Blade
-* Zack: Virtuous Contract
+* **Aerith - Crimson Staff**
+  * `470% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `540% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `660% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `750% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Aerith - Dawn's Prayers**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Aerith - Gorgeous Staff**
+  * `490% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `590% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `760% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `920% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Aerith - Magatsuchi Rod**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Aerith - Noblesse Rod**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Aerith - Sea Dragon Staff**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Aerith - Sun Umbrella**
+  * `340% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `390% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `540% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Aerith - Supreme Sage's Staff**
+  * `480% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `580% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `750% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `890% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Aerith - Terra's Rod**
+  * `470% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `540% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `660% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `750% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Angeal - Sea Dragon Greatsword**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Angeal - Turks' Blade**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Angeal - Type-91 Two-Hander**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Barret - Hell House Cannon**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Barret - Max Ray**
+  * `400% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `750% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Barret - Quad Gatling Gun**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Cait Sith - Icebolt Megaphone**
+  * `240% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `280% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `320% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `340% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Cait Sith - Spirit Demon Megaphone**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Cait Sith - Stilva Megaphone**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Cid - Captain's Spear**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Cid - Rocket Lance**
+  * `390% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `550% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Chocobo Paddle**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Cloud - Crimson Blitz**
+  * `430% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `520% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `670% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `800% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Mystic Sword**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Mythril Saber**
+  * `500% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `780% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `940% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Neo Bahamut Greatsword**
+  * `170% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `200% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `230% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Cloud - Sleek Saber**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Glenn - Best Wishes**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Glenn - Garish Greatblade**
+  * `490% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `590% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `760% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `920% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Glenn - Revenant Mother's Glaive**
+  * `170% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `200% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `230% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Glenn - Set Square**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Glenn - Stilva Glaive**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Glenn - Thousand Waves**
+  * `400% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `460% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `540% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `560% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Lucia - Featherscatter**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Lucia - Nightjar**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Lucia - Spirit Demon Rifle**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Lucia - Turks' Rifle**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Matt - Bahamut Rapier**
+  * `320% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `430% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Matt - Dragontail Sword**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Matt - Hrotti**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Matt - Physician's Scalpel**
+  * `490% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `590% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `760% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `920% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Matt - Stingray**
+  * `340% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `390% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `540% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Red XIII - Flame Dragon's Band**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Red XIII - Gold Collar**
+  * `220% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `310% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `350% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Red XIII - Headphones**
+  * `290% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `350% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `450% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `540% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Red XIII - Hell House Collar**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Red XIII - Iron Collar**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Red XIII - Steward Collar**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Red XIII - Tsviet Collar**
+  * `170% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `200% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `230% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Sephiroth (Orig.) - Kikuichimonji**
+  * `1080% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `1340% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `600% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `720% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Sephiroth (Orig.) - Muramasa**
+  * `1080% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `1340% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `600% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `720% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Sephiroth - Blade of the Worthy**
+  * `1010% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `540% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `650% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `840% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Sephiroth - Flame Dragon Blade**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Sephiroth - Folding Ruler**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Sephiroth - Humus Saber**
+  * `170% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `200% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `230% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Sephiroth - Kuja's Spirit Blade**
+  * `340% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `390% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `480% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `540% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Sephiroth - Phoenix Odachi**
+  * `1080% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `1340% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `720% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Sephiroth - Protector's Blade**
+  * `500% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `600% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `740% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `900% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Sephiroth - Shinra Blade: Model I**
+  * `500% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `780% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `940% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Sephiroth - Shinra Wyvern Blade**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Tifa - Bahamut Fangs**
+  * `1000% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `1100% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `720% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Bahamut Knuckles**
+  * `320% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `430% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Járngreipr**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Tifa - Kaiser Knuckles**
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Leather Combat Gloves**
+  * `1080% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `1340% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `600% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `720% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Tifa - Powersoul**
+  * `480% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `580% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `750% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `900% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Steward Gloves**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Striped Moogle Gloves**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Turks' Gloves**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Vincent - Double Stem E**
+  * `280% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `340% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `440% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `520% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Vincent - Galian Roar**
+  * `430% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `520% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `670% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `800% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Vincent - Hugin & Munin**
+  * `1140% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `1300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `650% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `780% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Vincent - Icebolt Shooter**
+  * `240% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `280% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `320% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `340% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Vincent - Kugelblitz**
+  * `470% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `540% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `660% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `750% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Vincent - Merciless White**
+  * `170% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `200% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `230% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Vincent - Noblesse Automatic**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Vincent - S1976C**
+  * `340% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `390% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `480% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `540% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Yuffie - Heirloom Brush**
+  * `1080% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `1340% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `720% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Yuffie - Mallet of Luck**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Yuffie - Risanautr**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Yuffie - Striped Moogle Flag**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Zack - Arc Sword**
+  * `320% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Zack - Beach Parasol**
+  * `400% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `460% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `540% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `560% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Zack - Festive Sword**
+  * `1080% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `1340% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `600% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `720% Mag. Non-elem. Damage [Range: All Enemies]`
+* **Zack - Iron Greatsword**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Zack - Magatsuchi Blade**
+  * `260% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Mag. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Mag. Non-elem. Damage [Range: Single Enemy]`
+* **Zack - Virtuous Contract**
+  * `180% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `210% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `240% Mag. Non-elem. Damage [Range: All Enemies]`
+  * `250% Mag. Non-elem. Damage [Range: All Enemies]`
 
 ---
 
@@ -605,22 +1604,86 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Radrod
-* Aerith: Team Leader's Bamboo Sword
-* Angeal: Mythril Slasher
-* Angeal: Rhad Blade
-* Barret: Leviathan Buster
-* Barret: Siege Cannon
-* Cait Sith: Green Megaphone
-* Cloud: Umbralschwert
-* Glenn: Radglaive
-* Matt: Orthodox Raven
-* Red XIII: Noble Collar
-* Sephiroth (Orig.): Osafune
-* Sephiroth: Edgar's Coiled Blade
-* Tifa: Bunny Gloves
-* Yuffie: Chariot Wheel
-* Yuffie: Leviathan Cutter
+* **Aerith - Radrod**
+  * `210% Mag. Water Damage [Range: All Enemies]`
+  * `240% Mag. Water Damage [Range: All Enemies]`
+  * `280% Mag. Water Damage [Range: All Enemies]`
+  * `290% Mag. Water Damage [Range: All Enemies]`
+* **Aerith - Team Leader's Bamboo Sword**
+  * `330% Mag. Water Damage [Range: All Enemies]`
+  * `380% Mag. Water Damage [Range: All Enemies]`
+  * `460% Mag. Water Damage [Range: All Enemies]`
+  * `530% Mag. Water Damage [Range: All Enemies]`
+* **Angeal - Mythril Slasher**
+  * `360% Mag. Water Damage [Range: All Enemies]`
+  * `410% Mag. Water Damage [Range: All Enemies]`
+  * `500% Mag. Water Damage [Range: All Enemies]`
+  * `580% Mag. Water Damage [Range: All Enemies]`
+* **Angeal - Rhad Blade**
+  * `210% Mag. Water Damage [Range: All Enemies]`
+  * `240% Mag. Water Damage [Range: All Enemies]`
+  * `280% Mag. Water Damage [Range: All Enemies]`
+  * `290% Mag. Water Damage [Range: All Enemies]`
+* **Barret - Leviathan Buster**
+  * `320% Mag. Water Damage [Range: Single Enemy]`
+  * `370% Mag. Water Damage [Range: Single Enemy]`
+  * `430% Mag. Water Damage [Range: Single Enemy]`
+  * `450% Mag. Water Damage [Range: Single Enemy]`
+* **Barret - Siege Cannon**
+  * `210% Mag. Water Damage [Range: All Enemies]`
+  * `240% Mag. Water Damage [Range: All Enemies]`
+  * `280% Mag. Water Damage [Range: All Enemies]`
+  * `290% Mag. Water Damage [Range: All Enemies]`
+* **Cait Sith - Green Megaphone**
+  * `390% Mag. Water Damage [Range: Single Enemy]`
+  * `450% Mag. Water Damage [Range: Single Enemy]`
+  * `550% Mag. Water Damage [Range: Single Enemy]`
+  * `620% Mag. Water Damage [Range: Single Enemy]`
+* **Cloud - Umbralschwert**
+  * `1080% Mag. Water Damage [Range: Single Enemy]`
+  * `1340% Mag. Water Damage [Range: Single Enemy]`
+  * `600% Mag. Water Damage [Range: Single Enemy]`
+  * `720% Mag. Water Damage [Range: Single Enemy]`
+* **Glenn - Radglaive**
+  * `210% Mag. Water Damage [Range: All Enemies]`
+  * `240% Mag. Water Damage [Range: All Enemies]`
+  * `280% Mag. Water Damage [Range: All Enemies]`
+  * `290% Mag. Water Damage [Range: All Enemies]`
+* **Matt - Orthodox Raven**
+  * `290% Mag. Water Damage [Range: All Enemies]`
+  * `350% Mag. Water Damage [Range: All Enemies]`
+  * `450% Mag. Water Damage [Range: All Enemies]`
+  * `540% Mag. Water Damage [Range: All Enemies]`
+* **Red XIII - Noble Collar**
+  * `280% Mag. Water Damage [Range: All Enemies]`
+  * `340% Mag. Water Damage [Range: All Enemies]`
+  * `440% Mag. Water Damage [Range: All Enemies]`
+  * `520% Mag. Water Damage [Range: All Enemies]`
+* **Sephiroth (Orig.) - Osafune**
+  * `1080% Mag. Water Damage [Range: Single Enemy]`
+  * `1340% Mag. Water Damage [Range: Single Enemy]`
+  * `600% Mag. Water Damage [Range: Single Enemy]`
+  * `720% Mag. Water Damage [Range: Single Enemy]`
+* **Sephiroth - Edgar's Coiled Blade**
+  * `520% Mag. Water Damage [Range: Single Enemy]`
+  * `620% Mag. Water Damage [Range: Single Enemy]`
+  * `780% Mag. Water Damage [Range: Single Enemy]`
+  * `940% Mag. Water Damage [Range: Single Enemy]`
+* **Tifa - Bunny Gloves**
+  * `480% Mag. Water Damage [Range: Single Enemy]`
+  * `580% Mag. Water Damage [Range: Single Enemy]`
+  * `710% Mag. Water Damage [Range: Single Enemy]`
+  * `850% Mag. Water Damage [Range: Single Enemy]`
+* **Yuffie - Chariot Wheel**
+  * `210% Mag. Water Damage [Range: All Enemies]`
+  * `240% Mag. Water Damage [Range: All Enemies]`
+  * `280% Mag. Water Damage [Range: All Enemies]`
+  * `290% Mag. Water Damage [Range: All Enemies]`
+* **Yuffie - Leviathan Cutter**
+  * `320% Mag. Water Damage [Range: Single Enemy]`
+  * `370% Mag. Water Damage [Range: Single Enemy]`
+  * `430% Mag. Water Damage [Range: Single Enemy]`
+  * `450% Mag. Water Damage [Range: Single Enemy]`
 
 ---
 
@@ -628,21 +1691,81 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Prism Rod
-* Cait Sith: Humus Megaphone
-* Cait Sith: Nocturne Horn
-* Cid: Odin Spear
-* Cid: Partisan
-* Cloud: Holiday Blade
-* Lucia: Pulse Gun
-* Matt: Humus Rapier
-* Red XIII: Canyon Collar
-* Sephiroth: Serrated Remiges
-* Sephiroth: Wintercrest Blade
-* Tifa: Odin Gloves
-* Yuffie: Holiday Bell
-* Zack: Battering Sword
-* Zack: White Tree
+* **Aerith - Prism Rod**
+  * `440% Mag. Wind Damage [Range: Single Enemy]`
+  * `530% Mag. Wind Damage [Range: Single Enemy]`
+  * `660% Mag. Wind Damage [Range: Single Enemy]`
+  * `800% Mag. Wind Damage [Range: Single Enemy]`
+* **Cait Sith - Humus Megaphone**
+  * `210% Mag. Wind Damage [Range: All Enemies]`
+  * `240% Mag. Wind Damage [Range: All Enemies]`
+  * `280% Mag. Wind Damage [Range: All Enemies]`
+  * `290% Mag. Wind Damage [Range: All Enemies]`
+* **Cait Sith - Nocturne Horn**
+  * `430% Mag. Wind Damage [Range: All Enemies]`
+  * `520% Mag. Wind Damage [Range: All Enemies]`
+  * `670% Mag. Wind Damage [Range: All Enemies]`
+  * `780% Mag. Wind Damage [Range: All Enemies]`
+* **Cid - Odin Spear**
+  * `320% Mag. Wind Damage [Range: Single Enemy]`
+  * `370% Mag. Wind Damage [Range: Single Enemy]`
+  * `430% Mag. Wind Damage [Range: Single Enemy]`
+  * `450% Mag. Wind Damage [Range: Single Enemy]`
+* **Cid - Partisan**
+  * `280% Mag. Wind Damage [Range: All Enemies]`
+  * `340% Mag. Wind Damage [Range: All Enemies]`
+  * `440% Mag. Wind Damage [Range: All Enemies]`
+  * `520% Mag. Wind Damage [Range: All Enemies]`
+* **Cloud - Holiday Blade**
+  * `520% Mag. Wind Damage [Range: Single Enemy]`
+  * `620% Mag. Wind Damage [Range: Single Enemy]`
+  * `780% Mag. Wind Damage [Range: Single Enemy]`
+  * `940% Mag. Wind Damage [Range: Single Enemy]`
+* **Lucia - Pulse Gun**
+  * `270% Mag. Wind Damage [Range: All Enemies]`
+  * `320% Mag. Wind Damage [Range: All Enemies]`
+  * `420% Mag. Wind Damage [Range: All Enemies]`
+  * `500% Mag. Wind Damage [Range: All Enemies]`
+* **Matt - Humus Rapier**
+  * `210% Mag. Wind Damage [Range: All Enemies]`
+  * `240% Mag. Wind Damage [Range: All Enemies]`
+  * `280% Mag. Wind Damage [Range: All Enemies]`
+  * `290% Mag. Wind Damage [Range: All Enemies]`
+* **Red XIII - Canyon Collar**
+  * `270% Mag. Wind Damage [Range: All Enemies]`
+  * `320% Mag. Wind Damage [Range: All Enemies]`
+  * `420% Mag. Wind Damage [Range: All Enemies]`
+  * `500% Mag. Wind Damage [Range: All Enemies]`
+* **Sephiroth - Serrated Remiges**
+  * `1120% Mag. Wind Damage [Range: Single Enemy]`
+  * `600% Mag. Wind Damage [Range: Single Enemy]`
+  * `720% Mag. Wind Damage [Range: Single Enemy]`
+  * `940% Mag. Wind Damage [Range: Single Enemy]`
+* **Sephiroth - Wintercrest Blade**
+  * `210% Mag. Wind Damage [Range: All Enemies]`
+  * `240% Mag. Wind Damage [Range: All Enemies]`
+  * `280% Mag. Wind Damage [Range: All Enemies]`
+  * `290% Mag. Wind Damage [Range: All Enemies]`
+* **Tifa - Odin Gloves**
+  * `320% Mag. Wind Damage [Range: Single Enemy]`
+  * `370% Mag. Wind Damage [Range: Single Enemy]`
+  * `430% Mag. Wind Damage [Range: Single Enemy]`
+  * `450% Mag. Wind Damage [Range: Single Enemy]`
+* **Yuffie - Holiday Bell**
+  * `390% Mag. Wind Damage [Range: Single Enemy]`
+  * `450% Mag. Wind Damage [Range: Single Enemy]`
+  * `550% Mag. Wind Damage [Range: Single Enemy]`
+  * `620% Mag. Wind Damage [Range: Single Enemy]`
+* **Zack - Battering Sword**
+  * `1080% Mag. Wind Damage [Range: Single Enemy]`
+  * `1340% Mag. Wind Damage [Range: Single Enemy]`
+  * `600% Mag. Wind Damage [Range: Single Enemy]`
+  * `720% Mag. Wind Damage [Range: Single Enemy]`
+* **Zack - White Tree**
+  * `210% Mag. Wind Damage [Range: All Enemies]`
+  * `240% Mag. Wind Damage [Range: All Enemies]`
+  * `280% Mag. Wind Damage [Range: All Enemies]`
+  * `290% Mag. Wind Damage [Range: All Enemies]`
 
 ---
 
@@ -650,14 +1773,46 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Angeal: Sequoiadendron
-* Cid: Grinding Gear
-* Cloud: Cruel Successor
-* Glenn: Desperado Glaive
-* Lucia: Rifle of the Hunt
-* Sephiroth: Immaculate Blade
-* Tifa: Gauntlets of the Worthy
-* Yuffie: Hawkeye
+* **Angeal - Sequoiadendron**
+  * `320% Phys. Earth Damage [Scaling: 1x (100% HP), 2x (30% HP)] [Range: Single Enemy]`
+  * `380% Phys. Earth Damage [Scaling: 1x (100% HP), 2x (30% HP)] [Range: Single Enemy]`
+  * `500% Phys. Earth Damage [Scaling: 1x (100% HP), 2x (30% HP)] [Range: Single Enemy]`
+  * `600% Phys. Earth Damage [Scaling: 1x (100% HP), 2x (30% HP)] [Range: Single Enemy]`
+* **Cid - Grinding Gear**
+  * `430% Phys. Earth Damage [Range: All Enemies]`
+  * `520% Phys. Earth Damage [Range: All Enemies]`
+  * `670% Phys. Earth Damage [Range: All Enemies]`
+  * `780% Phys. Earth Damage [Range: All Enemies]`
+* **Cloud - Cruel Successor**
+  * `1080% Phys. Earth Damage [Range: Single Enemy]`
+  * `1340% Phys. Earth Damage [Range: Single Enemy]`
+  * `600% Phys. Earth Damage [Range: Single Enemy]`
+  * `720% Phys. Earth Damage [Range: Single Enemy]`
+* **Glenn - Desperado Glaive**
+  * `390% Phys. Earth Damage [Range: Single Enemy]`
+  * `450% Phys. Earth Damage [Range: Single Enemy]`
+  * `550% Phys. Earth Damage [Range: Single Enemy]`
+  * `620% Phys. Earth Damage [Range: Single Enemy]`
+* **Lucia - Rifle of the Hunt**
+  * `390% Phys. Earth Damage [Range: Single Enemy]`
+  * `450% Phys. Earth Damage [Range: Single Enemy]`
+  * `550% Phys. Earth Damage [Range: Single Enemy]`
+  * `620% Phys. Earth Damage [Range: Single Enemy]`
+* **Sephiroth - Immaculate Blade**
+  * `480% Phys. Earth Damage [Range: All Enemies]`
+  * `580% Phys. Earth Damage [Range: All Enemies]`
+  * `750% Phys. Earth Damage [Range: All Enemies]`
+  * `900% Phys. Earth Damage [Range: All Enemies]`
+* **Tifa - Gauntlets of the Worthy**
+  * `1120% Phys. Earth Damage [Range: Single Enemy]`
+  * `600% Phys. Earth Damage [Range: Single Enemy]`
+  * `720% Phys. Earth Damage [Range: Single Enemy]`
+  * `990% Phys. Earth Damage [Range: Single Enemy]`
+* **Yuffie - Hawkeye**
+  * `480% Phys. Earth Damage [Range: Single Enemy]`
+  * `580% Phys. Earth Damage [Range: Single Enemy]`
+  * `710% Phys. Earth Damage [Range: Single Enemy]`
+  * `850% Phys. Earth Damage [Range: Single Enemy]`
 
 ---
 
@@ -665,17 +1820,61 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Angeal: Volcanic Heat
-* Cloud: Burning Oar
-* Cloud: Skysplitter
-* Glenn: Crewkicker
-* Lucia: Shinra Ceremonial Rifle
-* Matt: Firefish
-* Red XIII: Rage Collar
-* Tifa: Festive Gloves
-* Vincent: Holiday Garm
-* Yuffie: Striped Moogle Float
-* Zack: Zenithian Sword
+* **Angeal - Volcanic Heat**
+  * `390% Phys. Fire Damage [Range: Single Enemy]`
+  * `450% Phys. Fire Damage [Range: Single Enemy]`
+  * `550% Phys. Fire Damage [Range: Single Enemy]`
+  * `620% Phys. Fire Damage [Range: Single Enemy]`
+* **Cloud - Burning Oar**
+  * `320% Phys. Fire Damage [Range: Single Enemy]`
+  * `370% Phys. Fire Damage [Range: Single Enemy]`
+  * `430% Phys. Fire Damage [Range: Single Enemy]`
+  * `450% Phys. Fire Damage [Range: Single Enemy]`
+* **Cloud - Skysplitter**
+  * `480% Phys. Fire Damage [Range: Single Enemy]`
+  * `580% Phys. Fire Damage [Range: Single Enemy]`
+  * `710% Phys. Fire Damage [Range: Single Enemy]`
+  * `850% Phys. Fire Damage [Range: Single Enemy]`
+* **Glenn - Crewkicker**
+  * `400% Phys. Fire Damage [Range: Single Enemy]`
+  * `480% Phys. Fire Damage [Range: Single Enemy]`
+  * `620% Phys. Fire Damage [Range: Single Enemy]`
+  * `750% Phys. Fire Damage [Range: Single Enemy]`
+* **Lucia - Shinra Ceremonial Rifle**
+  * `450% Phys. Fire Damage [Range: Single Enemy]`
+  * `540% Phys. Fire Damage [Range: Single Enemy]`
+  * `700% Phys. Fire Damage [Range: Single Enemy]`
+  * `840% Phys. Fire Damage [Range: Single Enemy]`
+* **Matt - Firefish**
+  * `320% Phys. Fire Damage [Range: Single Enemy]`
+  * `370% Phys. Fire Damage [Range: Single Enemy]`
+  * `430% Phys. Fire Damage [Range: Single Enemy]`
+  * `450% Phys. Fire Damage [Range: Single Enemy]`
+* **Red XIII - Rage Collar**
+  * `400% Phys. Fire Damage [Range: Single Enemy]`
+  * `480% Phys. Fire Damage [Range: Single Enemy]`
+  * `620% Phys. Fire Damage [Range: Single Enemy]`
+  * `750% Phys. Fire Damage [Range: Single Enemy]`
+* **Tifa - Festive Gloves**
+  * `1080% Phys. Fire Damage [Range: Single Enemy]`
+  * `1340% Phys. Fire Damage [Range: Single Enemy]`
+  * `600% Phys. Fire Damage [Range: Single Enemy]`
+  * `720% Phys. Fire Damage [Range: Single Enemy]`
+* **Vincent - Holiday Garm**
+  * `520% Phys. Fire Damage [Range: Single Enemy]`
+  * `620% Phys. Fire Damage [Range: Single Enemy]`
+  * `780% Phys. Fire Damage [Range: Single Enemy]`
+  * `940% Phys. Fire Damage [Range: Single Enemy]`
+* **Yuffie - Striped Moogle Float**
+  * `390% Phys. Fire Damage [Range: All Enemies]`
+  * `530% Phys. Fire Damage [Range: All Enemies]`
+  * `620% Phys. Fire Damage [Range: All Enemies]`
+  * `700% Phys. Fire Damage [Range: All Enemies]`
+* **Zack - Zenithian Sword**
+  * `1120% Phys. Fire Damage [Range: Single Enemy]`
+  * `600% Phys. Fire Damage [Range: Single Enemy]`
+  * `720% Phys. Fire Damage [Range: Single Enemy]`
+  * `940% Phys. Fire Damage [Range: Single Enemy]`
 
 ---
 
@@ -683,17 +1882,61 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Angeal: Cyan's Blade
-* Cid: Patissier's Spear
-* Cloud: Stream Saber
-* Glenn: Blade of Ruin
-* Lucia: Desperado Rifle
-* Sephiroth: Sōba
-* Tifa: Holy Flame Gloves
-* Tifa: Riding Gloves
-* Vincent: Gun of the Worthy
-* Yuffie: Spiral Shuriken
-* Zack: Pressure Ridge
+* **Angeal - Cyan's Blade**
+  * `320% Phys. Ice Damage [Range: Single Enemy]`
+  * `370% Phys. Ice Damage [Range: Single Enemy]`
+  * `430% Phys. Ice Damage [Range: Single Enemy]`
+  * `450% Phys. Ice Damage [Range: Single Enemy]`
+* **Cid - Patissier's Spear**
+  * `490% Phys. Ice Damage [Range: Single Enemy]`
+  * `590% Phys. Ice Damage [Range: Single Enemy]`
+  * `760% Phys. Ice Damage [Range: Single Enemy]`
+  * `920% Phys. Ice Damage [Range: Single Enemy]`
+* **Cloud - Stream Saber**
+  * `1020% Phys. Ice Damage [Range: Single Enemy]`
+  * `570% Phys. Ice Damage [Range: Single Enemy]`
+  * `680% Phys. Ice Damage [Range: Single Enemy]`
+  * `840% Phys. Ice Damage [Range: Single Enemy]`
+* **Glenn - Blade of Ruin**
+  * `520% Phys. Ice Damage [Range: Single Enemy]`
+  * `620% Phys. Ice Damage [Range: Single Enemy]`
+  * `780% Phys. Ice Damage [Range: Single Enemy]`
+  * `940% Phys. Ice Damage [Range: Single Enemy]`
+* **Lucia - Desperado Rifle**
+  * `430% Phys. Ice Damage [Range: All Enemies]`
+  * `520% Phys. Ice Damage [Range: All Enemies]`
+  * `670% Phys. Ice Damage [Range: All Enemies]`
+  * `780% Phys. Ice Damage [Range: All Enemies]`
+* **Sephiroth - Sōba**
+  * `1080% Phys. Ice Damage [Range: Single Enemy]`
+  * `1340% Phys. Ice Damage [Range: Single Enemy]`
+  * `600% Phys. Ice Damage [Range: Single Enemy]`
+  * `720% Phys. Ice Damage [Range: Single Enemy]`
+* **Tifa - Holy Flame Gloves**
+  * `440% Phys. Ice Damage [Range: Single Enemy]`
+  * `530% Phys. Ice Damage [Range: Single Enemy]`
+  * `660% Phys. Ice Damage [Range: Single Enemy]`
+  * `800% Phys. Ice Damage [Range: Single Enemy]`
+* **Tifa - Riding Gloves**
+  * `1080% Phys. Ice Damage [Range: Single Enemy]`
+  * `1340% Phys. Ice Damage [Range: Single Enemy]`
+  * `600% Phys. Ice Damage [Range: Single Enemy]`
+  * `720% Phys. Ice Damage [Range: Single Enemy]`
+* **Vincent - Gun of the Worthy**
+  * `1120% Phys. Ice Damage [Range: Single Enemy]`
+  * `620% Phys. Ice Damage [Range: Single Enemy]`
+  * `740% Phys. Ice Damage [Range: Single Enemy]`
+  * `930% Phys. Ice Damage [Range: Single Enemy]`
+* **Yuffie - Spiral Shuriken**
+  * `440% Phys. Ice Damage [Range: Single Enemy]`
+  * `530% Phys. Ice Damage [Range: Single Enemy]`
+  * `660% Phys. Ice Damage [Range: Single Enemy]`
+  * `800% Phys. Ice Damage [Range: Single Enemy]`
+* **Zack - Pressure Ridge**
+  * `390% Phys. Ice Damage [Range: Single Enemy]`
+  * `450% Phys. Ice Damage [Range: Single Enemy]`
+  * `550% Phys. Ice Damage [Range: Single Enemy]`
+  * `620% Phys. Ice Damage [Range: Single Enemy]`
 
 ---
 
@@ -701,13 +1944,41 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cait Sith: Cool Cat's Megaphone
-* Cid: Antler Pike
-* Cloud: Erdrick's Sword
-* Cloud: Murasame
-* Yuffie: Winged Chakram
-* Zack: Rousing Arc Sword
-* Zack: Zinogre Blade
+* **Cait Sith - Cool Cat's Megaphone**
+  * `380% Phys. Lightning Damage [Range: Single Enemy]`
+  * `460% Phys. Lightning Damage [Range: Single Enemy]`
+  * `590% Phys. Lightning Damage [Range: Single Enemy]`
+  * `710% Phys. Lightning Damage [Range: Single Enemy]`
+* **Cid - Antler Pike**
+  * `490% Phys. Lightning Damage [Range: Single Enemy]`
+  * `590% Phys. Lightning Damage [Range: Single Enemy]`
+  * `760% Phys. Lightning Damage [Range: Single Enemy]`
+  * `920% Phys. Lightning Damage [Range: Single Enemy]`
+* **Cloud - Erdrick's Sword**
+  * `390% Phys. Lightning Damage [Range: All Enemies]`
+  * `470% Phys. Lightning Damage [Range: All Enemies]`
+  * `610% Phys. Lightning Damage [Range: All Enemies]`
+  * `720% Phys. Lightning Damage [Range: All Enemies]`
+* **Cloud - Murasame**
+  * `400% Phys. Lightning Damage [Range: Single Enemy]`
+  * `480% Phys. Lightning Damage [Range: Single Enemy]`
+  * `620% Phys. Lightning Damage [Range: Single Enemy]`
+  * `750% Phys. Lightning Damage [Range: Single Enemy]`
+* **Yuffie - Winged Chakram**
+  * `1080% Phys. Lightning Damage [Range: Single Enemy]`
+  * `1340% Phys. Lightning Damage [Range: Single Enemy]`
+  * `600% Phys. Lightning Damage [Range: Single Enemy]`
+  * `720% Phys. Lightning Damage [Range: Single Enemy]`
+* **Zack - Rousing Arc Sword**
+  * `500% Phys. Lightning Damage [Range: Single Enemy]`
+  * `600% Phys. Lightning Damage [Range: Single Enemy]`
+  * `750% Phys. Lightning Damage [Range: Single Enemy]`
+  * `900% Phys. Lightning Damage [Range: Single Enemy]`
+* **Zack - Zinogre Blade**
+  * `520% Phys. Lightning Damage [Range: Single Enemy]`
+  * `620% Phys. Lightning Damage [Range: Single Enemy]`
+  * `780% Phys. Lightning Damage [Range: Single Enemy]`
+  * `940% Phys. Lightning Damage [Range: Single Enemy]`
 
 ---
 
@@ -715,119 +1986,571 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Floral Wand
-* Aerith: Full Metal Staff
-* Aerith: Staff of the Possessed
-* Aerith: Striking Staff
-* Angeal: Greatsword (A)
-* Angeal: Inflatable Buster Sword
-* Angeal: Lightning's Sword
-* Angeal: Orchard Shovel
-* Angeal: Shinra Greatsword: Model I
-* Angeal: Type-90 Longsword
-* Barret: Enemy Launcher
-* Barret: Fafnir Rifle
-* Barret: Gatling Gun
-* Barret: Heavy Hauser
-* Barret: Rocket Punch
-* Barret: Sharkslayer
-* Barret: Solid Bazooka
-* Barret: Sunrise Cannon
-* Barret: W Machine
-* Cait Sith: Alba Megaphone
-* Cait Sith: Battle Trumpet
-* Cait Sith: Gold Megaphone
-* Cait Sith: Silver Megaphone
-* Cait Sith: Witch's Broom
-* Cait Sith: Yellow Megaphone
-* Cid: Flayer
-* Cid: Mop
-* Cid: Pole Axe
-* Cid: Radiant Lance
-* Cid: Slash Lance
-* Cid: Spear
-* Cid: Trident
-* Cloud: Apocalypse
-* Cloud: Bahamut Greatsword
-* Cloud: Buster Sword
-* Cloud: Fusion Sword
-* Cloud: Glavenus Sword
-* Cloud: Hardedge
-* Cloud: Iron Blade
-* Cloud: Locke's Sword
-* Cloud: Nail Bat
-* Cloud: Noble Parasol
-* Cloud: Organics
-* Cloud: Umbral Blade
-* Cloud: Zidane's Sword
-* Glenn: Apology in Hell
-* Glenn: Personal Style
-* Glenn: Piece of Cake
-* Glenn: Pirate's Glaive
-* Glenn: Rest in Peace
-* Glenn: Slay the Day
-* Glenn: Squeaky Hammer
-* Glenn: Steiner's Blade
-* Glenn: Ultimatic
-* Lucia: Bald Eagle
-* Lucia: Barn Swallow
-* Lucia: Black Rifle
-* Lucia: Mad Minute
-* Lucia: Marine Shooter
-* Lucia: Rubber Band Gun
-* Lucia: V39
-* Matt: Broadsword: Axis
-* Matt: Foam Sword
-* Matt: Killer Hornet
-* Matt: Nautilus Spiral
-* Matt: Slick Beetle
-* Red XIII: Ivy Collar
-* Red XIII: Junk Collar
-* Red XIII: Leather Collar
-* Red XIII: Patissier's Collar
-* Red XIII: Seaside Collar
-* Red XIII: Silver Collar
-* Sephiroth (Orig.): Kotetsu
-* Sephiroth (Orig.): Masamune
-* Sephiroth: Glaireid
-* Sephiroth: Infiltration Sword
-* Sephiroth: Nameless
-* Sephiroth: Northern Lights
-* Sephiroth: Radiant Edge
-* Sephiroth: Shinra Military Sword
-* Sephiroth: World Tree Bough
-* Tifa: Amarant's Claws
-* Tifa: Blue Daffodil Gloves
-* Tifa: Demon's Impetus
-* Tifa: Feathered Gloves
-* Tifa: Guide Gloves
-* Tifa: Leather Gloves
-* Tifa: Sabin's Claws
-* Tifa: Sonic Striker
-* Tifa: Tiger Fangs
-* Vincent: Chiron
-* Vincent: Chrome Death Penalty
-* Vincent: Quicksilver
-* Vincent: Silver Rifle
-* Vincent: T03 Model N
-* Yuffie: 4-Point Shuriken
-* Yuffie: Bahamut Cutter
-* Yuffie: Bamboo Ring
-* Yuffie: Boomerang
-* Yuffie: Fatum Ex Machina
-* Yuffie: Pinwheel
-* Yuffie: Twin Viper
-* Yuffie: Wind Slash
-* Zack: Alba Blade
-* Zack: Black Whiskers
-* Zack: Bouquet
-* Zack: Buster Sword Origin
-* Zack: Ceremonial Sword (Z)
-* Zack: Cutlass
-* Zack: Surfer Blade
-* Zack: Twinkling Star
-* Zack: Type-99 Longsword
-* Zack: Zweihander
+* **Aerith - Floral Wand**
+  * `260% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Aerith - Full Metal Staff**
+  * `210% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `240% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `290% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `340% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Aerith - Staff of the Possessed**
+  * `490% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `590% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `760% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `920% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Aerith - Striking Staff**
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `580% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `750% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `900% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Angeal - Greatsword (A)**
+  * `340% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `390% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `480% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `540% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Angeal - Inflatable Buster Sword**
+  * `400% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `460% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `560% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `640% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Angeal - Lightning's Sword**
+  * `500% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `580% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `680% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `700% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Angeal - Orchard Shovel**
+  * `210% Phys. Non-elem. Damage [Scaling: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]`
+  * `260% Phys. Non-elem. Damage [Scaling: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Scaling: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]`
+  * `490% Phys. Non-elem. Damage [Scaling: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]`
+* **Angeal - Shinra Greatsword: Model I**
+  * `390% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `550% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Angeal - Type-90 Longsword**
+  * `400% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `750% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Barret - Enemy Launcher**
+  * `350% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `420% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `550% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `650% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Barret - Fafnir Rifle**
+  * `340% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `390% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `480% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `540% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Barret - Gatling Gun**
+  * `400% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `750% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Barret - Heavy Hauser**
+  * `500% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `780% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `940% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Barret - Rocket Punch**
+  * `270% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]`
+  * `320% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]`
+  * `420% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]`
+  * `500% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]`
+* **Barret - Sharkslayer**
+  * `260% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Barret - Solid Bazooka**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Barret - Sunrise Cannon**
+  * `430% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `520% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `670% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `780% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Barret - W Machine**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cait Sith - Alba Megaphone**
+  * `280% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `320% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `380% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `390% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Cait Sith - Battle Trumpet**
+  * `220% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `250% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `310% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `350% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Cait Sith - Gold Megaphone**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cait Sith - Silver Megaphone**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cait Sith - Witch's Broom**
+  * `260% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cait Sith - Yellow Megaphone**
+  * `380% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `460% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `590% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `700% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cid - Flayer**
+  * `260% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cid - Mop**
+  * `340% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `390% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `480% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `540% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Cid - Pole Axe**
+  * `340% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `390% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `480% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `540% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Cid - Radiant Lance**
+  * `400% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `750% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cid - Slash Lance**
+  * `340% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `390% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `480% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `540% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Cid - Spear**
+  * `400% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `750% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cid - Trident**
+  * `390% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `550% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Apocalypse**
+  * `500% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `780% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `940% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Bahamut Greatsword**
+  * `430% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `520% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `670% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `800% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Cloud - Buster Sword**
+  * `400% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `750% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Fusion Sword**
+  * `1080% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `1340% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `720% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Glavenus Sword**
+  * `530% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `610% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `740% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `850% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Hardedge**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Iron Blade**
+  * `220% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `250% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `310% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `350% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Cloud - Locke's Sword**
+  * `1010% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `630% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `720% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `880% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Nail Bat**
+  * `1020% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `1320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `1600% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `850% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Noble Parasol**
+  * `1080% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `1340% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `600% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `720% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Cloud - Organics**
+  * `400% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `750% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Cloud - Umbral Blade**
+  * `310% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `360% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `420% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `430% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Cloud - Zidane's Sword**
+  * `1140% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `1300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `650% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `780% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Glenn - Apology in Hell**
+  * `500% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `780% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `940% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Glenn - Personal Style**
+  * `500% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `780% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `940% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Glenn - Piece of Cake**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Glenn - Pirate's Glaive**
+  * `430% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `520% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `670% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `800% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Glenn - Rest in Peace**
+  * `400% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `750% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Glenn - Slay the Day**
+  * `260% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Glenn - Squeaky Hammer**
+  * `370% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 2x (30% HP)] [Range: Single Enemy]`
+  * `440% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 2x (30% HP)] [Range: Single Enemy]`
+  * `570% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 2x (30% HP)] [Range: Single Enemy]`
+  * `700% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 2x (30% HP)] [Range: Single Enemy]`
+* **Glenn - Steiner's Blade**
+  * `260% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Glenn - Ultimatic**
+  * `1040% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `520% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `910% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Lucia - Bald Eagle**
+  * `340% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `390% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `540% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Lucia - Barn Swallow**
+  * `420% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `500% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `660% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `790% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Lucia - Black Rifle**
+  * `420% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `500% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `660% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `790% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Lucia - Mad Minute**
+  * `340% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `390% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `540% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Lucia - Marine Shooter**
+  * `350% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `400% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `490% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `560% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Lucia - Rubber Band Gun**
+  * `330% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `400% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Lucia - V39**
+  * `370% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `440% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `580% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `690% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Matt - Broadsword: Axis**
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `580% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `750% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `900% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Matt - Foam Sword**
+  * `330% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `400% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Matt - Killer Hornet**
+  * `380% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `460% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `590% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `720% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Matt - Nautilus Spiral**
+  * `260% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Matt - Slick Beetle**
+  * `300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `350% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Red XIII - Ivy Collar**
+  * `260% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Red XIII - Junk Collar**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Red XIII - Leather Collar**
+  * `500% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `780% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `940% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Red XIII - Patissier's Collar**
+  * `490% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `590% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `760% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `920% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Red XIII - Seaside Collar**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Red XIII - Silver Collar**
+  * `200% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `230% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `280% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Sephiroth (Orig.) - Kotetsu**
+  * `330% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `380% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `460% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `540% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Sephiroth (Orig.) - Masamune**
+  * `430% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `520% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `670% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `800% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Sephiroth - Glaireid**
+  * `350% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `420% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `550% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `650% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Sephiroth - Infiltration Sword**
+  * `1080% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `1340% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `600% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `720% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Sephiroth - Nameless**
+  * `150% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `170% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `210% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `240% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Sephiroth - Northern Lights**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Sephiroth - Radiant Edge**
+  * `340% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `390% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `540% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Sephiroth - Shinra Military Sword**
+  * `260% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Sephiroth - World Tree Bough**
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `440% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `570% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `700% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Amarant's Claws**
+  * `360% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `430% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `630% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `720% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Blue Daffodil Gloves**
+  * `1000% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `1100% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `720% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Demon's Impetus**
+  * `1080% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `1340% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `720% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Feathered Gloves**
+  * `260% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `360% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `420% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Guide Gloves**
+  * `1140% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `1300% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `650% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `780% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Leather Gloves**
+  * `340% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `390% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `540% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Sabin's Claws**
+  * `430% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `520% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `670% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `800% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Tifa - Sonic Striker**
+  * `530% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `640% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `830% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `990% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Tifa - Tiger Fangs**
+  * `340% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `390% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `540% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Vincent - Chiron**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Vincent - Chrome Death Penalty**
+  * `1080% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `1340% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `600% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `720% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Vincent - Quicksilver**
+  * `400% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 1.5x (30% HP)] [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 1.5x (30% HP)] [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 1.5x (30% HP)] [Range: Single Enemy]`
+  * `750% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 1.5x (30% HP)] [Range: Single Enemy]`
+* **Vincent - Silver Rifle**
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `440% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `570% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `700% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Vincent - T03 Model N**
+  * `160% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]`
+  * `190% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]`
+  * `250% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]`
+  * `300% Phys. Non-elem. Damage [Mult.: 1x (100% HP), 3x (30% HP)] [Range: Single Enemy]`
+* **Yuffie - 4-Point Shuriken**
+  * `220% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `250% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `310% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `350% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Yuffie - Bahamut Cutter**
+  * `1080% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `540% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `650% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `950% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Yuffie - Bamboo Ring**
+  * `270% Phys. Non-elem. Damage [Mult.: 2x (100% HP), 1x (30% HP)] [Range: Single Enemy]`
+  * `320% Phys. Non-elem. Damage [Mult.: 2x (100% HP), 1x (30% HP)] [Range: Single Enemy]`
+  * `420% Phys. Non-elem. Damage [Mult.: 2x (100% HP), 1x (30% HP)] [Range: Single Enemy]`
+  * `500% Phys. Non-elem. Damage [Mult.: 2x (100% HP), 1x (30% HP)] [Range: Single Enemy]`
+* **Yuffie - Boomerang**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Yuffie - Fatum Ex Machina**
+  * `1080% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `1340% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `720% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Yuffie - Pinwheel**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Yuffie - Twin Viper**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Yuffie - Wind Slash**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Zack - Alba Blade**
+  * `280% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `320% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `380% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `390% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Zack - Black Whiskers**
+  * `340% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `390% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `540% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Zack - Bouquet**
+  * `210% Phys. Non-elem. Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]`
+  * `250% Phys. Non-elem. Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]`
+  * `330% Phys. Non-elem. Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]`
+  * `400% Phys. Non-elem. Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]`
+* **Zack - Buster Sword Origin**
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `580% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `710% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `860% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Zack - Ceremonial Sword (Z)**
+  * `1220% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `1400% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `700% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `840% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Zack - Cutlass**
+  * `320% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `370% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `450% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `510% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Zack - Surfer Blade**
+  * `460% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `530% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `640% Phys. Non-elem. Damage [Range: All Enemies]`
+  * `740% Phys. Non-elem. Damage [Range: All Enemies]`
+* **Zack - Twinkling Star**
+  * `340% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `390% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `540% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Zack - Type-99 Longsword**
+  * `400% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `480% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `620% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `750% Phys. Non-elem. Damage [Range: Single Enemy]`
+* **Zack - Zweihander**
+  * `500% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `600% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `780% Phys. Non-elem. Damage [Range: Single Enemy]`
+  * `940% Phys. Non-elem. Damage [Range: Single Enemy]`
 
 ---
 
@@ -835,15 +2558,51 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Angeal: Tranquility
-* Cloud: Maritime Sword
-* Cloud: Radblade
-* Glenn: Stream Slasher
-* Lucia: Serpent Eater
-* Sephiroth: Overture
-* Sephiroth: Tempest
-* Tifa: Shining Gloves
-* Yuffie: Bird of Prey
+* **Angeal - Tranquility**
+  * `520% Phys. Water Damage [Range: Single Enemy]`
+  * `620% Phys. Water Damage [Range: Single Enemy]`
+  * `780% Phys. Water Damage [Range: Single Enemy]`
+  * `940% Phys. Water Damage [Range: Single Enemy]`
+* **Cloud - Maritime Sword**
+  * `400% Phys. Water Damage [Range: Single Enemy]`
+  * `480% Phys. Water Damage [Range: Single Enemy]`
+  * `620% Phys. Water Damage [Range: Single Enemy]`
+  * `750% Phys. Water Damage [Range: Single Enemy]`
+* **Cloud - Radblade**
+  * `320% Phys. Water Damage [Range: Single Enemy]`
+  * `370% Phys. Water Damage [Range: Single Enemy]`
+  * `430% Phys. Water Damage [Range: Single Enemy]`
+  * `450% Phys. Water Damage [Range: Single Enemy]`
+* **Glenn - Stream Slasher**
+  * `500% Phys. Water Damage [Range: Single Enemy]`
+  * `600% Phys. Water Damage [Range: Single Enemy]`
+  * `740% Phys. Water Damage [Range: Single Enemy]`
+  * `900% Phys. Water Damage [Range: Single Enemy]`
+* **Lucia - Serpent Eater**
+  * `420% Phys. Water Damage [Range: Single Enemy]`
+  * `500% Phys. Water Damage [Range: Single Enemy]`
+  * `660% Phys. Water Damage [Range: Single Enemy]`
+  * `790% Phys. Water Damage [Range: Single Enemy]`
+* **Sephiroth - Overture**
+  * `1080% Phys. Water Damage [Range: Single Enemy]`
+  * `1340% Phys. Water Damage [Range: Single Enemy]`
+  * `600% Phys. Water Damage [Range: Single Enemy]`
+  * `720% Phys. Water Damage [Range: Single Enemy]`
+* **Sephiroth - Tempest**
+  * `440% Phys. Water Damage [Range: Single Enemy]`
+  * `510% Phys. Water Damage [Range: Single Enemy]`
+  * `620% Phys. Water Damage [Range: Single Enemy]`
+  * `700% Phys. Water Damage [Range: Single Enemy]`
+* **Tifa - Shining Gloves**
+  * `1120% Phys. Water Damage [Range: Single Enemy]`
+  * `600% Phys. Water Damage [Range: Single Enemy]`
+  * `720% Phys. Water Damage [Range: Single Enemy]`
+  * `940% Phys. Water Damage [Range: Single Enemy]`
+* **Yuffie - Bird of Prey**
+  * `520% Phys. Water Damage [Range: Single Enemy]`
+  * `620% Phys. Water Damage [Range: Single Enemy]`
+  * `780% Phys. Water Damage [Range: Single Enemy]`
+  * `940% Phys. Water Damage [Range: Single Enemy]`
 
 ---
 
@@ -851,16 +2610,56 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Barret: Teacher's Paper Fan
-* Sephiroth: Dark Heavens
-* Tifa: Class President's Bracelet
-* Tifa: Motor Drive
-* Vincent: Shortbarrel
-* Vincent: Transgressor
-* Yuffie: Diner Tray
-* Yuffie: Magic Shuriken
-* Zack: Beatrix Sword
-* Zack: Falchion
+* **Barret - Teacher's Paper Fan**
+  * `310% Phys. Wind Damage [Range: All Enemies]`
+  * `360% Phys. Wind Damage [Range: All Enemies]`
+  * `430% Phys. Wind Damage [Range: All Enemies]`
+  * `500% Phys. Wind Damage [Range: All Enemies]`
+* **Sephiroth - Dark Heavens**
+  * `440% Phys. Wind Damage [Range: Single Enemy]`
+  * `530% Phys. Wind Damage [Range: Single Enemy]`
+  * `660% Phys. Wind Damage [Range: Single Enemy]`
+  * `800% Phys. Wind Damage [Range: Single Enemy]`
+* **Tifa - Class President's Bracelet**
+  * `1060% Phys. Wind Damage [Range: Single Enemy]`
+  * `660% Phys. Wind Damage [Range: Single Enemy]`
+  * `760% Phys. Wind Damage [Range: Single Enemy]`
+  * `920% Phys. Wind Damage [Range: Single Enemy]`
+* **Tifa - Motor Drive**
+  * `420% Phys. Wind Damage [Range: Single Enemy]`
+  * `500% Phys. Wind Damage [Range: Single Enemy]`
+  * `660% Phys. Wind Damage [Range: Single Enemy]`
+  * `790% Phys. Wind Damage [Range: Single Enemy]`
+* **Vincent - Shortbarrel**
+  * `220% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]`
+  * `260% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]`
+  * `340% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]`
+  * `400% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]`
+* **Vincent - Transgressor**
+  * `1080% Phys. Wind Damage [Range: Single Enemy]`
+  * `1340% Phys. Wind Damage [Range: Single Enemy]`
+  * `600% Phys. Wind Damage [Range: Single Enemy]`
+  * `720% Phys. Wind Damage [Range: Single Enemy]`
+* **Yuffie - Diner Tray**
+  * `480% Phys. Wind Damage [Range: Single Enemy]`
+  * `580% Phys. Wind Damage [Range: Single Enemy]`
+  * `710% Phys. Wind Damage [Range: Single Enemy]`
+  * `850% Phys. Wind Damage [Range: Single Enemy]`
+* **Yuffie - Magic Shuriken**
+  * `280% Phys. Wind Damage [Range: All Enemies]`
+  * `340% Phys. Wind Damage [Range: All Enemies]`
+  * `440% Phys. Wind Damage [Range: All Enemies]`
+  * `520% Phys. Wind Damage [Range: All Enemies]`
+* **Zack - Beatrix Sword**
+  * `520% Phys. Wind Damage [Range: Single Enemy]`
+  * `620% Phys. Wind Damage [Range: Single Enemy]`
+  * `780% Phys. Wind Damage [Range: Single Enemy]`
+  * `940% Phys. Wind Damage [Range: Single Enemy]`
+* **Zack - Falchion**
+  * `280% Phys. Wind Damage [Range: All Enemies]`
+  * `340% Phys. Wind Damage [Range: All Enemies]`
+  * `440% Phys. Wind Damage [Range: All Enemies]`
+  * `520% Phys. Wind Damage [Range: All Enemies]`
 
 ---
 
@@ -868,29 +2667,56 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Egg Staff
-* Aerith: Team Leader's Bamboo Sword
-* Cid: Dragoon Lance
-* Cloud: Erdrick's Sword
-* Cloud: Holiday Blade
-* Sephiroth (Orig.): Omega Wing
-* Sephiroth: Edgar's Coiled Blade
-* Sephiroth: Immaculate Blade
-* Sephiroth: Pandemonic Sword
-* Sephiroth: Protector's Blade
-* Sephiroth: Withering Blaze
-* Sephiroth: World Tree Bough
-* Tifa: Shell Knuckles
-* Vincent: Crow Familiar
-* Vincent: Holiday Garm
-* Vincent: Silver Rifle
-* Vincent: White Dog
-* Yuffie: Bahamut Cutter
-* Yuffie: Hawkeye
-* Yuffie: Little Red Wreath
-* Zack: Beatrix Sword
-* Zack: Rousing Arc Sword
-* Zack: Zinogre Blade
+* **Aerith - Egg Staff**
+  * `1.3x Damage [Range: All Enemies] [Condition: Single Target]`
+* **Aerith - Team Leader's Bamboo Sword**
+  * `1.1x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]`
+  * `1.2x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]`
+  * `1.3x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]`
+  * `1.4x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]`
+* **Cid - Dragoon Lance**
+  * `1.2x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]`
+* **Cloud - Erdrick's Sword**
+  * `1.5x Damage [Range: All Enemies] [Condition: Single Target]`
+* **Cloud - Holiday Blade**
+  * `1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]`
+* **Sephiroth (Orig.) - Omega Wing**
+  * `1.5x Damage [Range: All Enemies] [Condition: Single Target]`
+* **Sephiroth - Edgar's Coiled Blade**
+  * `1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]`
+* **Sephiroth - Immaculate Blade**
+  * `1.3x Damage [Range: All Enemies] [Condition: Single Target]`
+* **Sephiroth - Pandemonic Sword**
+  * `1.2x Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
+  * `1.2x Damage [Range: All Enemies] [Condition: Self 70-100% HP]`
+* **Sephiroth - Protector's Blade**
+  * `1.3x Damage [Range: All Enemies] [Condition: Single Target]`
+* **Sephiroth - Withering Blaze**
+  * `1.2x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]`
+* **Sephiroth - World Tree Bough**
+  * `1.5x Damage [Range: Single Enemy] [Condition: Lv. 3 Attack Stance]`
+* **Tifa - Shell Knuckles**
+  * `1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]`
+* **Vincent - Crow Familiar**
+  * `1.2x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]`
+* **Vincent - Holiday Garm**
+  * `1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]`
+* **Vincent - Silver Rifle**
+  * `1.5x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff(s), Condition(s)]`
+* **Vincent - White Dog**
+  * `1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff(s), Condition(s)]`
+* **Yuffie - Bahamut Cutter**
+  * `1.3x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]`
+* **Yuffie - Hawkeye**
+  * `1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]`
+* **Yuffie - Little Red Wreath**
+  * `1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]`
+* **Zack - Beatrix Sword**
+  * `1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]`
+* **Zack - Rousing Arc Sword**
+  * `1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]`
+* **Zack - Zinogre Blade**
+  * `1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]`
 
 ---
 
@@ -898,7 +2724,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Yuffie: Heirloom Brush
+* **Yuffie - Heirloom Brush**
+  * `10s -1 ATB Mag. Weapon/Gear C. Ability Cost (+3s) [Range: Self]`
+  * `15s -1 ATB Mag. Weapon/Gear C. Ability Cost (+5s) [Range: Self]`
+  * `25s -1 ATB Mag. Weapon/Gear C. Ability Cost (+8s) [Range: Self]`
+  * `40s -1 ATB Mag. Weapon/Gear C. Ability Cost (+13s) [Range: Self]`
 
 ---
 
@@ -906,7 +2736,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Yuffie: Heirloom Brush
+* **Yuffie - Heirloom Brush**
+  * `10s -1 ATB Phys. Weapon/Gear C. Ability Cost (+3s) [Range: Self]`
+  * `15s -1 ATB Phys. Weapon/Gear C. Ability Cost (+5s) [Range: Self]`
+  * `25s -1 ATB Phys. Weapon/Gear C. Ability Cost (+8s) [Range: Self]`
+  * `40s -1 ATB Phys. Weapon/Gear C. Ability Cost (+13s) [Range: Self]`
 
 ---
 
@@ -914,7 +2748,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Barret: Sunrise Cannon
+* **Barret - Sunrise Cannon**
+  * `20s Fire Resistance Up (+6s) (Low -> Mid) [Range: All Allies]`
+  * `25s Fire Resistance Up (+8s) (Low -> Mid) [Range: All Allies]`
+  * `25s Fire Resistance Up (+8s) (Mid -> High) [Range: All Allies]`
+  * `30s Fire Resistance Up (+10s) (Mid -> High) [Range: All Allies]`
 
 ---
 
@@ -922,12 +2760,30 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cait Sith: Flower Vase
-* Cloud: Bahamut Greatsword
-* Cloud: Noble Parasol
-* Sephiroth (Orig.): Kikuichimonji
-* Tifa: Bahamut Fangs
-* Zack: Gelid Sword
+* **Cait Sith - Flower Vase**
+  * `10s Haste (+5s) [Range: Single Ally] [Rate: 20%]`
+  * `15s Haste (+5s) [Range: Single Ally] [Rate: 20%]`
+  * `20s Haste (+5s) [Range: Single Ally] [Rate: 20%]`
+* **Cloud - Bahamut Greatsword**
+  * `20s Haste (+6s) [Range: Self] [Condition: First Use]`
+  * `25s Haste (+8s) [Range: Self] [Condition: First Use]`
+  * `30s Haste (+10s) [Range: Self] [Condition: First Use]`
+* **Cloud - Noble Parasol**
+  * `10s Haste (+3s) [Range: All Allies] [Condition: First Use]`
+  * `15s Haste (+5s) [Range: All Allies] [Condition: First Use]`
+  * `20s Haste (+7s) [Range: All Allies] [Condition: First Use]`
+* **Sephiroth (Orig.) - Kikuichimonji**
+  * `20s Haste (+6s) [Range: Self] [Condition: First Use]`
+  * `25s Haste (+8s) [Range: Self] [Condition: First Use]`
+  * `30s Haste (+10s) [Range: Self] [Condition: First Use]`
+* **Tifa - Bahamut Fangs**
+  * `20s Haste (+6s) [Range: Self] [Condition: First Use]`
+  * `25s Haste (+8s) [Range: Self] [Condition: First Use]`
+  * `30s Haste (+10s) [Range: Self] [Condition: First Use]`
+* **Zack - Gelid Sword**
+  * `10s Haste (+3s) [Range: All Allies] [Condition: First Use]`
+  * `15s Haste (+5s) [Range: All Allies] [Condition: First Use]`
+  * `5s Haste (+2s) [Range: All Allies] [Condition: First Use]`
 
 ---
 
@@ -935,7 +2791,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Angeal: Festive Blade
+* **Angeal - Festive Blade**
+  * `30s Lightning Damage Up (+10s) (Low -> Mid) [Range: All Allies]`
+  * `40s Lightning Damage Up (+13s) (Low -> Mid) [Range: All Allies]`
+  * `50s Lightning Damage Up (+16s) (Mid -> High) [Range: All Allies]`
+  * `60s Lightning Damage Up (+20s) (Mid -> High) [Range: All Allies]`
 
 ---
 
@@ -943,7 +2803,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Tifa: Elegant Gloves
+* **Tifa - Elegant Gloves**
+  * `30s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
+  * `40s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
+  * `50s 40% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
+  * `60s 50% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
 
 ---
 
@@ -951,7 +2815,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Yuffie: Uber 4-Point Shuriken
+* **Yuffie - Uber 4-Point Shuriken**
+  * `15s 20% Earth Damage Bonus (+5s) [Range: All Allies]`
+  * `20s 20% Earth Damage Bonus (+6s) [Range: All Allies]`
+  * `20s 25% Earth Damage Bonus (+6s) [Range: All Allies]`
+  * `25s 30% Earth Damage Bonus (+8s) [Range: All Allies]`
 
 ---
 
@@ -959,9 +2827,21 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cloud: Cruel Successor
-* Tifa: Elegant Gloves
-* Vincent: Chrome Death Penalty
+* **Cloud - Cruel Successor**
+  * `15s 20% Earth Weapon Boost (+5s) [Range: All Allies]`
+  * `20s 20% Earth Weapon Boost (+6s) [Range: All Allies]`
+  * `20s 30% Earth Weapon Boost (+6s) [Range: All Allies]`
+  * `25s 35% Earth Weapon Boost (+8s) [Range: All Allies]`
+* **Tifa - Elegant Gloves**
+  * `30s 25% Earth Weapon Boost (+10s) [Range: All Allies]`
+  * `40s 25% Earth Weapon Boost (+13s) [Range: All Allies]`
+  * `50s 30% Earth Weapon Boost (+16s) [Range: All Allies]`
+  * `60s 35% Earth Weapon Boost (+20s) [Range: All Allies]`
+* **Vincent - Chrome Death Penalty**
+  * `30s 25% Earth Weapon Boost (+10s) [Range: All Allies]`
+  * `40s 25% Earth Weapon Boost (+13s) [Range: All Allies]`
+  * `50s 30% Earth Weapon Boost (+16s) [Range: All Allies]`
+  * `60s 35% Earth Weapon Boost (+20s) [Range: All Allies]`
 
 ---
 
@@ -969,8 +2849,16 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Gorgeous Staff
-* Sephiroth (Orig.): Shiranui
+* **Aerith - Gorgeous Staff**
+  * `30s 20% Fire Damage Bonus (+10s) [Range: All Allies]`
+  * `40s 20% Fire Damage Bonus (+13s) [Range: All Allies]`
+  * `50s 25% Fire Damage Bonus (+16s) [Range: All Allies]`
+  * `60s 30% Fire Damage Bonus (+20s) [Range: All Allies]`
+* **Sephiroth (Orig.) - Shiranui**
+  * `15s 20% Fire Damage Bonus (+5s) [Range: All Allies]`
+  * `20s 20% Fire Damage Bonus (+6s) [Range: All Allies]`
+  * `20s 25% Fire Damage Bonus (+6s) [Range: All Allies]`
+  * `25s 30% Fire Damage Bonus (+8s) [Range: All Allies]`
 
 ---
 
@@ -978,7 +2866,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Zack: Zenithian Sword
+* **Zack - Zenithian Sword**
+  * `30s 20% Fire Weakness (+6s) [Range: Single Enemy]`
+  * `40s 20% Fire Weakness (+8s) [Range: Single Enemy]`
+  * `50s 30% Fire Weakness (+10s) [Range: Single Enemy]`
+  * `60s 30% Fire Weakness (+12s) [Range: Single Enemy]`
 
 ---
 
@@ -986,8 +2878,16 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Lucia: Killer Falcon
-* Vincent: Chrome Death Penalty
+* **Lucia - Killer Falcon**
+  * `15s 20% Fire Weapon Boost (+5s) [Range: All Allies]`
+  * `20s 20% Fire Weapon Boost (+6s) [Range: All Allies]`
+  * `20s 30% Fire Weapon Boost (+6s) [Range: All Allies]`
+  * `25s 35% Fire Weapon Boost (+8s) [Range: All Allies]`
+* **Vincent - Chrome Death Penalty**
+  * `30s 25% Fire Weapon Boost (+10s) [Range: All Allies]`
+  * `40s 25% Fire Weapon Boost (+13s) [Range: All Allies]`
+  * `50s 30% Fire Weapon Boost (+16s) [Range: All Allies]`
+  * `60s 35% Fire Weapon Boost (+20s) [Range: All Allies]`
 
 ---
 
@@ -995,12 +2895,36 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cloud: Stream Saber
-* Cloud: Umbralschwert
-* Glenn: Pirate's Glaive
-* Lucia: Killer Falcon
-* Sephiroth (Orig.): Muramasa
-* Sephiroth: Overture
+* **Cloud - Stream Saber**
+  * `30s 4% HP Gain (+0s) [Range: All Allies]`
+  * `30s 5% HP Gain (+0s) [Range: All Allies]`
+  * `30s 6% HP Gain (+0s) [Range: All Allies]`
+  * `30s 8% HP Gain (+0s) [Range: All Allies]`
+* **Cloud - Umbralschwert**
+  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+* **Glenn - Pirate's Glaive**
+  * `30s 4% HP Gain (+0s) [Range: All Allies]`
+  * `30s 5% HP Gain (+0s) [Range: All Allies]`
+  * `30s 6% HP Gain (+0s) [Range: All Allies]`
+  * `30s 8% HP Gain (+0s) [Range: All Allies]`
+* **Lucia - Killer Falcon**
+  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+* **Sephiroth (Orig.) - Muramasa**
+  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+* **Sephiroth - Overture**
+  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
 
 ---
 
@@ -1008,9 +2932,21 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cid: Patissier's Spear
-* Cloud: Crimson Blitz
-* Sephiroth (Orig.): Omega Wing
+* **Cid - Patissier's Spear**
+  * `15s 20% Ice Damage Bonus (+5s) [Range: All Allies] [Condition: Self 70-100% HP]`
+  * `20s 20% Ice Damage Bonus (+6s) [Range: All Allies] [Condition: Self 70-100% HP]`
+  * `20s 25% Ice Damage Bonus (+6s) [Range: All Allies] [Condition: Self 70-100% HP]`
+  * `25s 30% Ice Damage Bonus (+8s) [Range: All Allies] [Condition: Self 70-100% HP]`
+* **Cloud - Crimson Blitz**
+  * `30s 20% Ice Damage Bonus (+10s) [Range: All Allies] [Condition: Self 50-100% HP]`
+  * `40s 20% Ice Damage Bonus (+13s) [Range: All Allies] [Condition: Self 50-100% HP]`
+  * `50s 25% Ice Damage Bonus (+16s) [Range: All Allies] [Condition: Self 50-100% HP]`
+  * `60s 30% Ice Damage Bonus (+20s) [Range: All Allies] [Condition: Self 50-100% HP]`
+* **Sephiroth (Orig.) - Omega Wing**
+  * `30s 20% Ice Damage Bonus (+10s) [Range: All Allies]`
+  * `40s 20% Ice Damage Bonus (+13s) [Range: All Allies]`
+  * `50s 25% Ice Damage Bonus (+16s) [Range: All Allies]`
+  * `60s 30% Ice Damage Bonus (+20s) [Range: All Allies]`
 
 ---
 
@@ -1018,7 +2954,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cloud: Crimson Blitz
+* **Cloud - Crimson Blitz**
+  * `30s 20% Ice Weakness (+6-10s) [Range: Single Enemy]`
+  * `40s 20% Ice Weakness (+8-13s) [Range: Single Enemy]`
+  * `50s 30% Ice Weakness (+10-16s) [Range: Single Enemy]`
+  * `60s 30% Ice Weakness (+12-20s) [Range: Single Enemy]`
 
 ---
 
@@ -1026,7 +2966,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Sephiroth: Sōba
+* **Sephiroth - Sōba**
+  * `15s 20% Ice Weapon Boost (+5s) [Range: All Allies]`
+  * `20s 20% Ice Weapon Boost (+6s) [Range: All Allies]`
+  * `20s 30% Ice Weapon Boost (+6s) [Range: All Allies]`
+  * `25s 35% Ice Weapon Boost (+8s) [Range: All Allies]`
 
 ---
 
@@ -1034,7 +2978,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Angeal: Festive Blade
+* **Angeal - Festive Blade**
+  * `30s 20% Lightning Weapon Boost (+10s) [Range: All Allies]`
+  * `40s 20% Lightning Weapon Boost (+13s) [Range: All Allies]`
+  * `50s 30% Lightning Weapon Boost (+16s) [Range: All Allies]`
+  * `60s 35% Lightning Weapon Boost (+20s) [Range: All Allies]`
 
 ---
 
@@ -1042,7 +2990,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Sephiroth (Orig.): Muramasa
+* **Sephiroth (Orig.) - Muramasa**
+  * `30s 25% Mag. Single Target Dmg. Received Up (+10s) [Range: All Enemies]`
+  * `40s 25% Mag. Single Target Dmg. Received Up (+13s) [Range: All Enemies]`
+  * `50s 40% Mag. Single Target Dmg. Received Up (+16s) [Range: All Enemies]`
+  * `60s 50% Mag. Single Target Dmg. Received Up (+20s) [Range: All Enemies]`
 
 ---
 
@@ -1050,9 +3002,21 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Festive Rod
-* Aerith: Lightning's Rod
-* Sephiroth (Orig.): Kikuichimonji
+* **Aerith - Festive Rod**
+  * `20s 20% Magic Damage Bonus (+6s) [Range: All Allies]`
+  * `25s 20% Magic Damage Bonus (+8s) [Range: All Allies]`
+  * `25s 25% Magic Damage Bonus (+8s) [Range: All Allies]`
+  * `30s 30% Magic Damage Bonus (+10s) [Range: All Allies]`
+* **Aerith - Lightning's Rod**
+  * `30s 20% Magic Damage Bonus (+10s) [Range: All Allies]`
+  * `40s 20% Magic Damage Bonus (+13s) [Range: All Allies]`
+  * `50s 25% Magic Damage Bonus (+16s) [Range: All Allies]`
+  * `60s 30% Magic Damage Bonus (+20s) [Range: All Allies]`
+* **Sephiroth (Orig.) - Kikuichimonji**
+  * `30s 20% Magic Damage Bonus (+10s) [Range: All Allies]`
+  * `40s 20% Magic Damage Bonus (+13s) [Range: All Allies]`
+  * `50s 25% Magic Damage Bonus (+16s) [Range: All Allies]`
+  * `60s 30% Magic Damage Bonus (+20s) [Range: All Allies]`
 
 ---
 
@@ -1060,11 +3024,31 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cloud: Fusion Sword
-* Glenn: Garish Greatblade
-* Red XIII: Patissier's Collar
-* Sephiroth (Orig.): Starsoul Blade
-* Sephiroth: Phoenix Odachi
+* **Cloud - Fusion Sword**
+  * `30s 25% Magic Weapon Boost (+10s) [Range: Self]`
+  * `40s 25% Magic Weapon Boost (+13s) [Range: Self]`
+  * `50s 35% Magic Weapon Boost (+16s) [Range: Self]`
+  * `60s 40% Magic Weapon Boost (+20s) [Range: Self]`
+* **Glenn - Garish Greatblade**
+  * `30s 20% Magic Weapon Boost (+10s) [Range: All Allies] [Condition: Self 50-100% HP]`
+  * `40s 20% Magic Weapon Boost (+13s) [Range: All Allies] [Condition: Self 50-100% HP]`
+  * `50s 30% Magic Weapon Boost (+16s) [Range: All Allies] [Condition: Self 50-100% HP]`
+  * `60s 35% Magic Weapon Boost (+20s) [Range: All Allies] [Condition: Self 50-100% HP]`
+* **Red XIII - Patissier's Collar**
+  * `20s 20% Magic Weapon Boost (+6s) [Range: All Allies] [Condition: Self 70-100% HP]`
+  * `25s 20% Magic Weapon Boost (+8s) [Range: All Allies] [Condition: Self 70-100% HP]`
+  * `30s 30% Magic Weapon Boost (+10s) [Range: All Allies] [Condition: Self 70-100% HP]`
+  * `40s 35% Magic Weapon Boost (+13s) [Range: All Allies] [Condition: Self 70-100% HP]`
+* **Sephiroth (Orig.) - Starsoul Blade**
+  * `30s 20% Magic Weapon Boost (+10s) [Range: All Allies]`
+  * `40s 20% Magic Weapon Boost (+13s) [Range: All Allies]`
+  * `50s 30% Magic Weapon Boost (+16s) [Range: All Allies]`
+  * `60s 35% Magic Weapon Boost (+20s) [Range: All Allies]`
+* **Sephiroth - Phoenix Odachi**
+  * `30s 20% Magic Weapon Boost (+10s) [Range: All Allies]`
+  * `40s 20% Magic Weapon Boost (+13s) [Range: All Allies]`
+  * `50s 30% Magic Weapon Boost (+16s) [Range: All Allies]`
+  * `60s 35% Magic Weapon Boost (+20s) [Range: All Allies]`
 
 ---
 
@@ -1072,7 +3056,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Sephiroth (Orig.): Muramasa
+* **Sephiroth (Orig.) - Muramasa**
+  * `30s 25% Phys. Single Target Dmg. Received Up (+10s) [Range: All Enemies]`
+  * `40s 25% Phys. Single Target Dmg. Received Up (+13s) [Range: All Enemies]`
+  * `50s 40% Phys. Single Target Dmg. Received Up (+16s) [Range: All Enemies]`
+  * `60s 50% Phys. Single Target Dmg. Received Up (+20s) [Range: All Enemies]`
 
 ---
 
@@ -1080,9 +3068,21 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Festive Rod
-* Sephiroth (Orig.): Kikuichimonji
-* Tifa: Demon's Impetus
+* **Aerith - Festive Rod**
+  * `20s 20% Physical Damage Bonus (+6s) [Range: All Allies]`
+  * `25s 20% Physical Damage Bonus (+8s) [Range: All Allies]`
+  * `25s 25% Physical Damage Bonus (+8s) [Range: All Allies]`
+  * `30s 30% Physical Damage Bonus (+10s) [Range: All Allies]`
+* **Sephiroth (Orig.) - Kikuichimonji**
+  * `30s 20% Physical Damage Bonus (+10s) [Range: All Allies]`
+  * `40s 20% Physical Damage Bonus (+13s) [Range: All Allies]`
+  * `50s 25% Physical Damage Bonus (+16s) [Range: All Allies]`
+  * `60s 30% Physical Damage Bonus (+20s) [Range: All Allies]`
+* **Tifa - Demon's Impetus**
+  * `20s 25% Physical Damage Bonus (+6s) [Range: Self]`
+  * `30s 25% Physical Damage Bonus (+10s) [Range: Self]`
+  * `45s 35% Physical Damage Bonus (+15s) [Range: Self]`
+  * `60s 40% Physical Damage Bonus (+20s) [Range: Self]`
 
 ---
 
@@ -1090,9 +3090,21 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cloud: Fusion Sword
-* Sephiroth: Phoenix Odachi
-* Vincent: Transgressor
+* **Cloud - Fusion Sword**
+  * `30s 25% Physical Weapon Boost (+10s) [Range: Self]`
+  * `40s 25% Physical Weapon Boost (+13s) [Range: Self]`
+  * `50s 35% Physical Weapon Boost (+16s) [Range: Self]`
+  * `60s 40% Physical Weapon Boost (+20s) [Range: Self]`
+* **Sephiroth - Phoenix Odachi**
+  * `30s 20% Physical Weapon Boost (+10s) [Range: All Allies]`
+  * `40s 20% Physical Weapon Boost (+13s) [Range: All Allies]`
+  * `50s 30% Physical Weapon Boost (+16s) [Range: All Allies]`
+  * `60s 35% Physical Weapon Boost (+20s) [Range: All Allies]`
+* **Vincent - Transgressor**
+  * `20s 20% Physical Weapon Boost (+6s) [Range: Self]`
+  * `25s 20% Physical Weapon Boost (+8s) [Range: Self]`
+  * `30s 25% Physical Weapon Boost (+10s) [Range: Self]`
+  * `40s 30% Physical Weapon Boost (+13s) [Range: Self]`
 
 ---
 
@@ -1100,7 +3112,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Tifa: Festive Gloves
+* **Tifa - Festive Gloves**
+  * `30s 25% PhysicalSingleVulnerable (+10s) [Range: Single Enemy]`
+  * `40s 25% PhysicalSingleVulnerable (+13s) [Range: Single Enemy]`
+  * `50s 40% PhysicalSingleVulnerable (+16s) [Range: Single Enemy]`
+  * `60s 50% PhysicalSingleVulnerable (+20s) [Range: Single Enemy]`
 
 ---
 
@@ -1108,27 +3124,88 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Garnet's Rod
-* Angeal: Master Tonberry's Blade
-* Angeal: Type-90 Longsword
-* Barret: Microlaser
-* Barret: Rhad Cannon
-* Cait Sith: Catsmegaphone
-* Cait Sith: Crystal Megaphone
-* Cait Sith: Flower Vase
-* Cait Sith: Marching Horn
-* Glenn: Pumpkin Lamppost
-* Matt: Bramble Spine
-* Matt: Giant Fork
-* Red XIII: Platinum Collar
-* Red XIII: Seaside Collar
-* Sephiroth: Aonibi
-* Sephiroth: Mythril Type-0 Katana
-* Tifa: Oven Mitts
-* Vincent: Gilded Age
-* Vincent: Rhad Gun
-* Yuffie: Crystal Cross
-* Zack: Defender
+* **Aerith - Garnet's Rod**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Angeal - Master Tonberry's Blade**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Angeal - Type-90 Longsword**
+  * `3s 15% Regen (+3s) [Range: Self]`
+  * `6s 15% Regen (+3s) [Range: Self]`
+  * `9s 15% Regen (+3s) [Range: Self]`
+* **Barret - Microlaser**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Barret - Rhad Cannon**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Cait Sith - Catsmegaphone**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Cait Sith - Crystal Megaphone**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Cait Sith - Flower Vase**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Cait Sith - Marching Horn**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Glenn - Pumpkin Lamppost**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Matt - Bramble Spine**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Matt - Giant Fork**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Red XIII - Platinum Collar**
+  * `12s 15% Regen (+3s) [Range: All Allies]`
+  * `15s 15% Regen (+3s) [Range: All Allies]`
+  * `18s 15% Regen (+6s) [Range: All Allies]`
+  * `9s 15% Regen (+3s) [Range: All Allies]`
+* **Red XIII - Seaside Collar**
+  * `3s 15% Regen (+3s) [Range: Self]`
+* **Sephiroth - Aonibi**
+  * `12s 15% Regen (+3s) [Range: Self]`
+  * `15s 15% Regen (+3s) [Range: Self]`
+  * `9s 15% Regen (+3s) [Range: Self]`
+* **Sephiroth - Mythril Type-0 Katana**
+  * `12s 15% Regen (+3s) [Range: Self]`
+  * `15s 15% Regen (+3s) [Range: Self]`
+  * `9s 15% Regen (+3s) [Range: Self]`
+* **Tifa - Oven Mitts**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Vincent - Gilded Age**
+  * `12s 15% Regen (+3s) [Range: Self]`
+  * `15s 15% Regen (+3s) [Range: Self]`
+  * `9s 15% Regen (+3s) [Range: Self]`
+* **Vincent - Rhad Gun**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Yuffie - Crystal Cross**
+  * `12s 15% Regen (+3s) [Range: Single Ally]`
+  * `15s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
+* **Zack - Defender**
+  * `6s 15% Regen (+3s) [Range: Single Ally]`
+  * `9s 15% Regen (+3s) [Range: Single Ally]`
 
 ---
 
@@ -1136,7 +3213,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Tifa: Riding Gloves
+* **Tifa - Riding Gloves**
+  * `30s 25% Single Target Ice Damage Received Up (+10s) [Range: Single Enemy]`
+  * `40s 25% Single Target Ice Damage Received Up (+13s) [Range: Single Enemy]`
+  * `50s 40% Single Target Ice Damage Received Up (+16s) [Range: Single Enemy]`
+  * `60s 50% Single Target Ice Damage Received Up (+20s) [Range: Single Enemy]`
 
 ---
 
@@ -1144,7 +3225,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cloud: Noble Parasol
+* **Cloud - Noble Parasol**
+  * `30s 25% Single Target Mag. Damage Received Up (+10s) [Range: All Enemies]`
+  * `40s 25% Single Target Mag. Damage Received Up (+13s) [Range: All Enemies]`
+  * `50s 40% Single Target Mag. Damage Received Up (+16s) [Range: All Enemies]`
+  * `60s 50% Single Target Mag. Damage Received Up (+20s) [Range: All Enemies]`
 
 ---
 
@@ -1152,7 +3237,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cloud: Noble Parasol
+* **Cloud - Noble Parasol**
+  * `30s 25% Single Target Phys. Damage Received Up (+10s) [Range: All Enemies]`
+  * `40s 25% Single Target Phys. Damage Received Up (+13s) [Range: All Enemies]`
+  * `50s 40% Single Target Phys. Damage Received Up (+16s) [Range: All Enemies]`
+  * `60s 50% Single Target Phys. Damage Received Up (+20s) [Range: All Enemies]`
 
 ---
 
@@ -1160,7 +3249,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cid: Antler Pike
+* **Cid - Antler Pike**
+  * `15s 20% Thunder Damage Bonus (+5s) [Range: All Allies]`
+  * `20s 20% Thunder Damage Bonus (+6s) [Range: All Allies]`
+  * `20s 25% Thunder Damage Bonus (+6s) [Range: All Allies]`
+  * `25s 30% Thunder Damage Bonus (+8s) [Range: All Allies]`
 
 ---
 
@@ -1168,7 +3261,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Angeal: Inflatable Buster Sword
+* **Angeal - Inflatable Buster Sword**
+  * `30s 15% Water Weakness (+6s) [Range: All Enemies]`
+  * `40s 20% Water Weakness (+8s) [Range: All Enemies]`
+  * `50s 30% Water Weakness (+10s) [Range: All Enemies]`
+  * `60s 30% Water Weakness (+12s) [Range: All Enemies]`
 
 ---
 
@@ -1176,7 +3273,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Aerith: Staff of the Possessed
+* **Aerith - Staff of the Possessed**
+  * `30s 20% Water Weapon Boost (+10s) [Range: All Allies]`
+  * `40s 20% Water Weapon Boost (+13s) [Range: All Allies]`
+  * `50s 30% Water Weapon Boost (+16s) [Range: All Allies]`
+  * `60s 35% Water Weapon Boost (+20s) [Range: All Allies]`
 
 ---
 
@@ -1184,7 +3285,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Zack: Battering Sword
+* **Zack - Battering Sword**
+  * `15s 20% Wind Damage Bonus (+5s) [Range: All Allies]`
+  * `20s 20% Wind Damage Bonus (+6s) [Range: All Allies]`
+  * `20s 25% Wind Damage Bonus (+6s) [Range: All Allies]`
+  * `25s 30% Wind Damage Bonus (+8s) [Range: All Allies]`
 
 ---
 
@@ -1192,7 +3297,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Vincent: Chrome Death Penalty
+* **Vincent - Chrome Death Penalty**
+  * `30s 25% Wind Weapon Boost (+10s) [Range: All Allies]`
+  * `40s 25% Wind Weapon Boost (+13s) [Range: All Allies]`
+  * `50s 30% Wind Weapon Boost (+16s) [Range: All Allies]`
+  * `60s 35% Wind Weapon Boost (+20s) [Range: All Allies]`
 
 ---
 
@@ -1200,7 +3309,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Sephiroth (Orig.): Omega Wing
+* **Sephiroth (Orig.) - Omega Wing**
+  * `30s 0.2% Ice ATB Conservation Effect (+10s) [Range: Self] [Condition: First Use]`
+  * `40s 0.2% Ice ATB Conservation Effect (+13s) [Range: Self] [Condition: First Use]`
+  * `50s 0.2% Ice ATB Conservation Effect (+16s) [Range: Self] [Condition: First Use]`
+  * `60s 0.2% Ice ATB Conservation Effect (+20s) [Range: Self] [Condition: First Use]`
 
 ---
 
@@ -1208,9 +3321,20 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cid: Trident
-* Vincent: Double Stem E
-* Yuffie: Twin Viper
+* **Cid - Trident**
+  * `24s Poison (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]`
+  * `26s Poison (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]`
+  * `30s Poison (+7s) [Range: Single Enemy] [Condition: Self 70-100% HP]`
+* **Vincent - Double Stem E**
+  * `12s Poison (+3s) [Range: All Enemies] [Condition: Self 0-30% HP]`
+  * `16s Poison (+4s) [Range: All Enemies] [Condition: Self 0-30% HP]`
+  * `20s Poison (+5s) [Range: All Enemies] [Condition: Self 0-30% HP]`
+  * `25s Poison (+6s) [Range: All Enemies] [Condition: Self 0-30% HP]`
+* **Yuffie - Twin Viper**
+  * `24s Poison (+6s) [Range: Single Enemy] [Rate: 50%]`
+  * `26s Poison (+6s) [Range: Single Enemy] [Rate: 50%]`
+  * `26s Poison (+6s) [Range: Single Enemy] [Rate: 70%]`
+  * `30s Poison (+7s) [Range: Single Enemy] [Rate: 70%]`
 
 ---
 
@@ -1218,7 +3342,9 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Lucia: Black Rifle
+* **Lucia - Black Rifle**
+  * `5s Silence (+2s) [Range: Single Enemy] [Rate: 20%]`
+  * `5s Silence (+2s) [Range: Single Enemy] [Rate: 30%]`
 
 ---
 
@@ -1226,7 +3352,9 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cloud: Organics
+* **Cloud - Organics**
+  * `5s Stun (+2s) [Range: Single Enemy] [Rate: 20%]`
+  * `5s Stun (+2s) [Range: Single Enemy] [Rate: 30%]`
 
 ---
 
@@ -1234,8 +3362,16 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Barret: Sunrise Cannon
-* Matt: Desperado Rapier
+* **Barret - Sunrise Cannon**
+  * `20s Thunder Resistance Up (+6s) (Low -> Mid) [Range: All Allies]`
+  * `25s Thunder Resistance Up (+8s) (Low -> Mid) [Range: All Allies]`
+  * `25s Thunder Resistance Up (+8s) (Mid -> High) [Range: All Allies]`
+  * `30s Thunder Resistance Up (+10s) (Mid -> High) [Range: All Allies]`
+* **Matt - Desperado Rapier**
+  * `20s Thunder Resistance Up (+6s) (Low -> Mid) [Range: All Allies]`
+  * `25s Thunder Resistance Up (+8s) (Low -> Mid) [Range: All Allies]`
+  * `25s Thunder Resistance Up (+8s) (Mid -> High) [Range: All Allies]`
+  * `30s Thunder Resistance Up (+10s) (Mid -> High) [Range: All Allies]`
 
 ---
 
@@ -1243,7 +3379,11 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Matt: Desperado Rapier
+* **Matt - Desperado Rapier**
+  * `20s Wind Resistance Up (+6s) (Low -> Mid) [Range: All Allies]`
+  * `25s Wind Resistance Up (+8s) (Low -> Mid) [Range: All Allies]`
+  * `25s Wind Resistance Up (+8s) (Mid -> High) [Range: All Allies]`
+  * `30s Wind Resistance Up (+10s) (Mid -> High) [Range: All Allies]`
 
 ---
 
@@ -1251,4 +3391,5 @@ Found 65 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-* Cait Sith: Yellow Megaphone
+* **Cait Sith - Yellow Megaphone**
+  * `3x Damage [Range: Single Enemy] [Condition: Critical Hit]`

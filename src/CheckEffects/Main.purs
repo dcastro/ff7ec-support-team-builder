@@ -84,14 +84,15 @@ main :: Effect Unit
 main = do
   rows <- readWeaponsValues "resources/weapons.json"
   let
-    unknownMap :: Map String (Set String)
+    -- Map with: effect grouping key → weapon label → set of unparseable effect lines
+    unknownMap :: Map String (Map String (Set String))
     unknownMap =
       Array.drop 1 rows # foldlWithIndex
         ( \rowIdx m row ->
             let
               weapon = fromMaybe "" (Array.index row 0)
               char = fromMaybe "" (Array.index row 1)
-              label = if char == "" then weapon else char <> ": " <> weapon
+              label = if char == "" then weapon else char <> " - " <> weapon
             in
               Array.foldl
                 ( \m' col ->
@@ -111,7 +112,7 @@ main = do
                                         let
                                           key = groupingKey line
                                         in
-                                          Map.insertWith Set.union key (Set.singleton label) m''
+                                          Map.insertWith (Map.unionWith Set.union) key (Map.singleton label (Set.singleton line)) m''
                               )
                               m'
                 )
@@ -123,7 +124,7 @@ main = do
     log "All weapon effects in weapons.json are supported by the parser."
   else do
     let
-      entries = Map.toUnfoldable unknownMap :: Array (Tuple String (Set String))
+      entries = Map.toUnfoldable unknownMap :: Array (Tuple String (Map String (Set String)))
       anchors = buildAnchors (entries <#> \(Tuple key _) -> key)
       entriesWithAnchors = Array.zip entries anchors
     log "<!-- LTEX: enabled=false -->"
@@ -134,7 +135,7 @@ main = do
     for_ entriesWithAnchors \(Tuple (Tuple key _) anchor) ->
       log $ "* [" <> key <> "](#" <> anchor <> ")"
     for_ entriesWithAnchors \(Tuple (Tuple key weapons) _) -> do
-      let ws = Set.toUnfoldable weapons :: Array String
+      let weaponEntries = Map.toUnfoldable weapons :: Array (Tuple String (Set String))
       log ""
       log "---"
       log ""
@@ -142,5 +143,7 @@ main = do
       log ""
       log "[↑ Back to top](#table-of-contents)"
       log ""
-      for_ ws \w ->
-        log $ "* " <> w
+      for_ weaponEntries \(Tuple label lines) -> do
+        log $ "* **" <> label <> "**"
+        for_ (Set.toUnfoldable lines :: Array String) \line ->
+          log $ "  * `" <> line <> "`"

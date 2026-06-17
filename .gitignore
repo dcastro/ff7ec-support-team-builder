@@ -3,6 +3,7 @@
 .psc-ide-port
 .purs-repl
 .spec-results
+.psci_modules
 !.gitignore
 !.github
 

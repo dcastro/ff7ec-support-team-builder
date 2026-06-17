@@ -5,7 +5,7 @@ import Prelude
 import Core.Weapons.Parser (parseWeaponEffect)
 import Data.Array as Array
 import Data.Either (Either(..))
-import Data.Foldable (fold, for_)
+import Data.Foldable (for_)
 import Data.FoldableWithIndex (foldlWithIndex)
 import Data.Map (Map)
 import Data.Map as Map
@@ -54,8 +54,31 @@ groupingKey line =
         | isDigit c -> go true (if wasDigit then acc else acc <> "N") cs
         | otherwise -> go false (acc <> CU.singleton c) cs
 
-padRight :: Int -> String -> String
-padRight n s = s <> fold (Array.replicate (max 0 (n - String.length s)) " ")
+-- Convert a header string to a GitHub-flavored markdown anchor ID.
+-- Lowercases, keeps only alphanumeric/space/hyphen chars, replaces spaces with hyphens.
+toAnchor :: String -> String
+toAnchor s =
+  CU.fromCharArray
+    $ map (\c -> if c == ' ' then '-' else c)
+    $ Array.filter (\c -> (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || c == ' ' || c == '-')
+    $ CU.toCharArray
+    $ String.toLower s
+
+-- Build deduplicated anchors matching GitHub's collision resolution:
+-- when a slug appears for the Nth time, it becomes slug-(N-1).
+--
+-- Without this deduplication, `+N% Additional Damage` and `N Additional Damage` would both produce the same anchor, `#n-additional-damage``
+buildAnchors :: Array String -> Array String
+buildAnchors keys =
+  ( Array.foldl
+      ( \(Tuple seen result) anchor ->
+          case Map.lookup anchor seen of
+            Nothing -> Tuple (Map.insert anchor 1 seen) (Array.snoc result anchor)
+            Just n -> Tuple (Map.insert anchor (n + 1) seen) (Array.snoc result (anchor <> "-" <> show n))
+      )
+      (Tuple Map.empty [])
+      (map toAnchor keys)
+  ) # \(Tuple _ result) -> result
 
 main :: Effect Unit
 main = do
@@ -96,16 +119,28 @@ main = do
                 obCols
         )
         Map.empty
-  if Map.isEmpty unknownMap then
+  if Map.isEmpty unknownMap then do
     log "All weapon effects in weapons.json are supported by the parser."
   else do
-    let entries = Map.toUnfoldable unknownMap :: Array (Tuple String (Set String))
-    let maxKeyLen = Array.foldl (\mx (Tuple k _) -> max mx (String.length k)) 0 entries
-    let sep = fold (Array.replicate (maxKeyLen + 14) "-")
-    log $ "Found " <> show (Array.length entries) <> " unsupported effect type(s):\n"
-    log $ padRight maxKeyLen "Effect type" <> "  Weapons"
-    log sep
-    for_ entries \(Tuple key weapons) -> do
+    let
+      entries = Map.toUnfoldable unknownMap :: Array (Tuple String (Set String))
+      anchors = buildAnchors (entries <#> \(Tuple key _) -> key)
+      entriesWithAnchors = Array.zip entries anchors
+    log "<!-- LTEX: enabled=false -->"
+    log $ "Found " <> show (Array.length entries) <> " unsupported effect type(s)."
+    log ""
+    log "# Table of Contents"
+    log ""
+    for_ entriesWithAnchors \(Tuple (Tuple key _) anchor) ->
+      log $ "* [" <> key <> "](#" <> anchor <> ")"
+    for_ entriesWithAnchors \(Tuple (Tuple key weapons) _) -> do
       let ws = Set.toUnfoldable weapons :: Array String
-      for_ (Array.mapWithIndex Tuple ws) \(Tuple i w) ->
-        log $ padRight maxKeyLen (if i == 0 then key else "") <> "  " <> w
+      log ""
+      log "---"
+      log ""
+      log $ "# " <> key
+      log ""
+      log "[↑ Back to top](#table-of-contents)"
+      log ""
+      for_ ws \w ->
+        log $ "* " <> w

@@ -49,11 +49,13 @@ bench:
 test:
     npm run ts
     spago test
+    just check-effects
 
 # Usage: just test-filter "MyTest"
 test-filter filter:
     npm run ts
     spago test -- --example "{{ filter }}"
+    just check-effects
 
 format:
     purs-tidy format-in-place "src/**/*.purs" "test/**/*.purs"

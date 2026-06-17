@@ -4519,6 +4519,17 @@
         "effects": [
           {
             "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 10,
+                "duration": 50
+              }
+            },
+            "type": "WaterWeakness"
+          },
+          {
+            "value": {
               "range": "Self",
               "durExt": {
                 "extension": 0,
@@ -4546,6 +4557,17 @@
       },
       "ob10": {
         "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 12,
+                "duration": 60
+              }
+            },
+            "type": "WaterWeakness"
+          },
           {
             "value": {
               "range": "Self",
@@ -4577,6 +4599,17 @@
         "effects": [
           {
             "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 8,
+                "duration": 40
+              }
+            },
+            "type": "WaterWeakness"
+          },
+          {
+            "value": {
               "range": "Self",
               "durExt": {
                 "extension": 0,
@@ -4604,6 +4637,17 @@
       },
       "ob0": {
         "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 15,
+              "durExt": {
+                "extension": 6,
+                "duration": 30
+              }
+            },
+            "type": "WaterWeakness"
+          },
           {
             "value": {
               "range": "Self",
@@ -30778,6 +30822,7 @@
           {
             "value": {
               "range": "SingleTarget",
+              "percentage": 50,
               "durExt": {
                 "extension": 0,
                 "duration": 100
@@ -30793,6 +30838,7 @@
           {
             "value": {
               "range": "SingleTarget",
+              "percentage": 50,
               "durExt": {
                 "extension": 0,
                 "duration": 150
@@ -30808,6 +30854,7 @@
           {
             "value": {
               "range": "SingleTarget",
+              "percentage": 50,
               "durExt": {
                 "extension": 0,
                 "duration": 70
@@ -30823,6 +30870,7 @@
           {
             "value": {
               "range": "SingleTarget",
+              "percentage": 50,
               "durExt": {
                 "extension": 0,
                 "duration": 60
@@ -36630,6 +36678,17 @@
         "effects": [
           {
             "value": {
+              "range": "SingleTarget",
+              "percentage": 30,
+              "durExt": {
+                "extension": 10,
+                "duration": 50
+              }
+            },
+            "type": "FireWeakness"
+          },
+          {
+            "value": {
               "range": "All",
               "potencies": {
                 "max": "High",
@@ -36647,6 +36706,17 @@
       },
       "ob10": {
         "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "percentage": 30,
+              "durExt": {
+                "extension": 12,
+                "duration": 60
+              }
+            },
+            "type": "FireWeakness"
+          },
           {
             "value": {
               "range": "All",
@@ -36668,6 +36738,17 @@
         "effects": [
           {
             "value": {
+              "range": "SingleTarget",
+              "percentage": 20,
+              "durExt": {
+                "extension": 8,
+                "duration": 40
+              }
+            },
+            "type": "FireWeakness"
+          },
+          {
+            "value": {
               "range": "All",
               "potencies": {
                 "max": "Mid",
@@ -36685,6 +36766,17 @@
       },
       "ob0": {
         "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 30
+              }
+            },
+            "type": "FireWeakness"
+          },
           {
             "value": {
               "range": "All",

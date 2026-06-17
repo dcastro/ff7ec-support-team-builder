@@ -59,7 +59,7 @@ spec =
           Enliven { range: Self, durExt: { duration: Duration 30, extension: Extension 10 } }
       "150s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]"
         `shouldParse`
-          IceWeakness { range: SingleTarget, durExt: { duration: Duration 150, extension: Extension 0 } }
+          IceWeakness { range: SingleTarget, durExt: { duration: Duration 150, extension: Extension 0 }, percentage: Percentage 50 }
     it "parses all weapons" do
       sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
       sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of

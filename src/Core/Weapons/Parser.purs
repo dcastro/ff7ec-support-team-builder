@@ -266,12 +266,15 @@ parseWeaponEffect coords =
       <|> P.try (withDurExtPotencies "Earth Resistance Down" EarthResistDown)
       <|> P.try (withDurExtPotencies "Water Resistance Down" WaterResistDown)
       <|> P.try (withDurExtPotencies "Wind Resistance Down" WindResistDown)
-      <|> P.try (withDurExt "Fire Weakness" FireWeakness)
-      <|> P.try (withDurExt "Ice Weakness" IceWeakness)
-      <|> P.try (withDurExt "Thunder Weakness" ThunderWeakness)
-      <|> P.try (withDurExt "Earth Weakness" EarthWeakness)
-      <|> P.try (withDurExt "Water Weakness" WaterWeakness)
-      <|> P.try (withDurExt "Wind Weakness" WindWeakness)
+      <|> P.try (withDurExtPercentage "Fire Weakness" FireWeakness)
+      -- NOTE: "Gun of the Worthy" has a malformed "Ice Weakness" entry in the
+      -- spreadsheet that omits the percentage. We fall back to 50% for that weapon.
+      <|> P.try (withDurExtPercentage "Ice Weakness" IceWeakness)
+      <|> P.try (withDurExtMissingPercentage (Percentage 50) "Ice Weakness" IceWeakness)
+      <|> P.try (withDurExtPercentage "Thunder Weakness" ThunderWeakness)
+      <|> P.try (withDurExtPercentage "Earth Weakness" EarthWeakness)
+      <|> P.try (withDurExtPercentage "Water Weakness" WaterWeakness)
+      <|> P.try (withDurExtPercentage "Wind Weakness" WindWeakness)
       <|> P.try (withDurExt "Enfeeble" Enfeeble)
       <|> P.try (withDurExt "Stop" Stop)
       <|> P.try (withDurExt "Enliven" Enliven)
@@ -306,6 +309,15 @@ parseWeaponEffect coords =
       extension <- parseExtension <* space
       range <- parseRange
       pure $ constructor $ { range, durExt: { duration, extension }, percentage }
+
+  withDurExtMissingPercentage :: Percentage -> String -> ({ range :: Range, durExt :: DurExt, percentage :: Percentage } -> WeaponEffect) -> Parser WeaponEffect
+  withDurExtMissingPercentage fallbackPercentage effectName constructor = do
+    inContext effectName do
+      duration <- parseDuration <* space
+      _ <- P.string effectName <* space
+      extension <- parseExtension <* space
+      range <- parseRange
+      pure $ constructor $ { range, durExt: { duration, extension }, percentage: fallbackPercentage }
 
   withDurExtPotencies :: String -> ({ range :: Range, durExt :: DurExt, potencies :: Potencies } -> WeaponEffect) -> Parser WeaponEffect
   withDurExtPotencies effectName constructor = do

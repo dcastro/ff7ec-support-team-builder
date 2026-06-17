@@ -8908,6 +8908,19 @@
     ]
   ],
   [
+    "FilterFireWeakness",
+    [
+      {
+        "weaponName": "Zenithian Sword",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      }
+    ]
+  ],
+  [
     "FilterIceWeakness",
     [
       {
@@ -8915,6 +8928,19 @@
         "ranges": [
           {
             "range": "SingleTarget"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterWaterWeakness",
+    [
+      {
+        "weaponName": "Inflatable Buster Sword",
+        "ranges": [
+          {
+            "range": "All"
           }
         ]
       }

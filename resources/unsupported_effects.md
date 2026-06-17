@@ -1,5 +1,5 @@
 <!-- LTEX: enabled=false -->
-Found 65 unsupported effect type(s).
+Found 63 unsupported effect type(s).
 
 # Table of Contents
 
@@ -33,7 +33,6 @@ Found 65 unsupported effect type(s).
 * [Ns N% Earth Damage Bonus](#ns-n-earth-damage-bonus)
 * [Ns N% Earth Weapon Boost](#ns-n-earth-weapon-boost)
 * [Ns N% Fire Damage Bonus](#ns-n-fire-damage-bonus)
-* [Ns N% Fire Weakness](#ns-n-fire-weakness)
 * [Ns N% Fire Weapon Boost](#ns-n-fire-weapon-boost)
 * [Ns N% HP Gain](#ns-n-hp-gain)
 * [Ns N% Ice Damage Bonus](#ns-n-ice-damage-bonus)
@@ -52,7 +51,6 @@ Found 65 unsupported effect type(s).
 * [Ns N% Single Target Mag. Damage Received Up](#ns-n-single-target-mag-damage-received-up)
 * [Ns N% Single Target Phys. Damage Received Up](#ns-n-single-target-phys-damage-received-up)
 * [Ns N% Thunder Damage Bonus](#ns-n-thunder-damage-bonus)
-* [Ns N% Water Weakness](#ns-n-water-weakness)
 * [Ns N% Water Weapon Boost](#ns-n-water-weapon-boost)
 * [Ns N% Wind Damage Bonus](#ns-n-wind-damage-bonus)
 * [Ns N% Wind Weapon Boost](#ns-n-wind-weapon-boost)
@@ -2358,18 +2356,6 @@ Found 65 unsupported effect type(s).
 
 ---
 
-# Ns N% Fire Weakness
-
-[↑ Back to top](#table-of-contents)
-
-* **Zack - Zenithian Sword**
-  * `30s 20% Fire Weakness (+6s) [Range: Single Enemy]`
-  * `40s 20% Fire Weakness (+8s) [Range: Single Enemy]`
-  * `50s 30% Fire Weakness (+10s) [Range: Single Enemy]`
-  * `60s 30% Fire Weakness (+12s) [Range: Single Enemy]`
-
----
-
 # Ns N% Fire Weapon Boost
 
 [↑ Back to top](#table-of-contents)
@@ -2750,18 +2736,6 @@ Found 65 unsupported effect type(s).
   * `20s 20% Thunder Damage Bonus (+6s) [Range: All Allies]`
   * `20s 25% Thunder Damage Bonus (+6s) [Range: All Allies]`
   * `25s 30% Thunder Damage Bonus (+8s) [Range: All Allies]`
-
----
-
-# Ns N% Water Weakness
-
-[↑ Back to top](#table-of-contents)
-
-* **Angeal - Inflatable Buster Sword**
-  * `30s 15% Water Weakness (+6s) [Range: All Enemies]`
-  * `40s 20% Water Weakness (+8s) [Range: All Enemies]`
-  * `50s 30% Water Weakness (+10s) [Range: All Enemies]`
-  * `60s 30% Water Weakness (+12s) [Range: All Enemies]`
 
 ---
 

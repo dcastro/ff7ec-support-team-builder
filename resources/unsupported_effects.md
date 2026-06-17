@@ -6,14 +6,9 @@ Found 65 unsupported effect type(s).
 * [+N ATB](#n-atb)
 * [+N Costume C. Ability Uses](#n-costume-c-ability-uses)
 * [+N Gear C. Ability Uses](#n-gear-c-ability-uses)
-* [+N% Additional Damage](#n-additional-damage)
-* [+N% Limit Break Gauge](#n-limit-break-gauge)
-* [+N% Stance Gauge](#n-stance-gauge)
 * [-N% Summon Gauge](#-n-summon-gauge)
-* [Cancel Effect](#cancel-effect)
 * [Enhance Buffs](#enhance-buffs)
-* [N Additional Damage](#n-additional-damage-1)
-* [N% Crit Rate](#n-crit-rate)
+* [N Additional Damage](#n-additional-damage)
 * [N% Mag. Earth Damage](#n-mag-earth-damage)
 * [N% Mag. Fire Damage](#n-mag-fire-damage)
 * [N% Mag. Ice Damage](#n-mag-ice-damage)
@@ -68,6 +63,12 @@ Found 65 unsupported effect type(s).
 * [Ns Thunder Resistance Up](#ns-thunder-resistance-up)
 * [Ns Wind Resistance Up](#ns-wind-resistance-up)
 * [Nx Damage](#nx-damage)
+* [Won't support](#wont-support)
+  * [+N% Additional Damage](#n-additional-damage-1)
+  * [+N% Limit Break Gauge](#n-limit-break-gauge)
+  * [+N% Stance Gauge](#n-stance-gauge)
+  * [Cancel Effect](#cancel-effect)
+  * [N% Crit Rate](#n-crit-rate)
 
 ---
 
@@ -131,113 +132,12 @@ Found 65 unsupported effect type(s).
 
 ---
 
-# +N% Additional Damage
-
-[↑ Back to top](#table-of-contents)
-
-* **Cloud - Buster Sword**
-  * `+200% Additional Damage [Range: Single Enemy] [Condition: Sigil Destruction]`
-
----
-
-# +N% Limit Break Gauge
-
-[↑ Back to top](#table-of-contents)
-
-* **Vincent - Chiron**
-  * `+2% Limit Break Gauge [Range: Self]`
-  * `+3% Limit Break Gauge [Range: Self]`
-* **Vincent - Crow Familiar**
-  * `+4% Limit Break Gauge [Range: Self]`
-  * `+5% Limit Break Gauge [Range: Self]`
-* **Vincent - Double Stem E**
-  * `+2% Limit Break Gauge [Range: Self]`
-  * `+3% Limit Break Gauge [Range: Self]`
-* **Vincent - Gilded Age**
-  * `+10% Limit Break Gauge [Range: Self]`
-  * `+5% Limit Break Gauge [Range: Self]`
-  * `+6% Limit Break Gauge [Range: Self]`
-  * `+8% Limit Break Gauge [Range: Self]`
-* **Vincent - Gun of the Worthy**
-  * `+4% Limit Break Gauge [Range: Self]`
-  * `+5% Limit Break Gauge [Range: Self]`
-* **Vincent - Holiday Garm**
-  * `+4% Limit Break Gauge [Range: Self]`
-  * `+5% Limit Break Gauge [Range: Self]`
-* **Vincent - Hugin & Munin**
-  * `+4% Limit Break Gauge [Range: Self]`
-  * `+5% Limit Break Gauge [Range: Self]`
-* **Vincent - Kugelblitz**
-  * `+4% Limit Break Gauge [Range: Self]`
-  * `+5% Limit Break Gauge [Range: Self]`
-* **Vincent - Quicksilver**
-  * `+3% Limit Break Gauge [Range: Self]`
-  * `+5% Limit Break Gauge [Range: Self]`
-* **Vincent - S1976C**
-  * `+2% Limit Break Gauge [Range: Self]`
-  * `+3% Limit Break Gauge [Range: Self]`
-* **Vincent - Sawed-Off GS**
-  * `+2% Limit Break Gauge [Range: Self]`
-  * `+3% Limit Break Gauge [Range: Self]`
-* **Vincent - Shortbarrel**
-  * `+3% Limit Break Gauge [Range: Self]`
-  * `+4% Limit Break Gauge [Range: Self]`
-* **Vincent - Silver Rifle**
-  * `+2% Limit Break Gauge [Range: Self]`
-  * `+3% Limit Break Gauge [Range: Self]`
-* **Vincent - T03 Model N**
-  * `+1% Limit Break Gauge [Range: Self]`
-  * `+2% Limit Break Gauge [Range: Self]`
-* **Vincent - White Dog**
-  * `+4% Limit Break Gauge [Range: Self]`
-  * `+5% Limit Break Gauge [Range: Self]`
-
----
-
-# +N% Stance Gauge
-
-[↑ Back to top](#table-of-contents)
-
-* **Aerith - Lightning's Rod**
-  * `+50% Stance Gauge [Condition: First Use]`
-  * `+75% Stance Gauge [Condition: First Use]`
-* **Cid - Radiant Lance**
-  * `+10% Stance Gauge`
-  * `+20% Stance Gauge`
-* **Glenn - Blade of Ruin**
-  * `+10% Stance Gauge`
-  * `+20% Stance Gauge`
-* **Lucia - Rubber Band Gun**
-  * `+20% Stance Gauge`
-* **Yuffie - Rocker's Guitar**
-  * `+10% Stance Gauge`
-  * `+20% Stance Gauge`
-
----
-
 # -N% Summon Gauge
 
 [↑ Back to top](#table-of-contents)
 
 * **Aerith - Supreme Sage's Staff**
   * `-100% Summon Gauge [Range: Self]`
-
----
-
-# Cancel Effect
-
-[↑ Back to top](#table-of-contents)
-
-* **Aerith - Umbrella**
-  * `Cancel Effect(s): PATK Down, MATK Down [Range: Single Ally]`
-* **Lucia - Tranquilizer Gun**
-  * `Cancel Effect(s): Poison, Darkness [Range: Self]`
-* **Matt - Foam Sword**
-  * `Cancel Effect(s): PDEF Up [Range: Single Enemy]`
-* **Red XIII - Headphones**
-  * `Cancel Effect(s): MDEF Up [Range: All Enemies]`
-* **Tifa - Grand Gloves**
-  * `Cancel Effect(s): Poison, Silence [Range: Self]`
 
 ---
 
@@ -288,410 +188,6 @@ Found 65 unsupported effect type(s).
   * `20000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
   * `30000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
   * `40000 Additional Damage [Range: All Enemies] [Condition: Self 50-100% HP]`
-
----
-
-# N% Crit Rate
-
-[↑ Back to top](#table-of-contents)
-
-* **Aerith - Crimson Staff**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Aerith - Dawn's Prayers**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Aerith - Floral Wand**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Aerith - Full Metal Staff**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Aerith - Gorgeous Staff**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Aerith - Magatsuchi Rod**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Aerith - Noblesse Rod**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Aerith - Sea Dragon Staff**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Aerith - Staff of the Possessed**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Aerith - Striking Staff**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Aerith - Sun Umbrella**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Aerith - Supreme Sage's Staff**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Aerith - Terra's Rod**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Angeal - Greatsword (A)**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Angeal - Inflatable Buster Sword**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Angeal - Lightning's Sword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Angeal - Orchard Shovel**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Angeal - Sea Dragon Greatsword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Angeal - Shinra Greatsword: Model I**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Angeal - Turks' Blade**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Angeal - Type-90 Longsword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Angeal - Type-91 Two-Hander**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Barret - Enemy Launcher**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Barret - Fafnir Rifle**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Barret - Gatling Gun**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Barret - Heavy Hauser**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Barret - Hell House Cannon**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Barret - Max Ray**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Barret - Quad Gatling Gun**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Barret - Rocket Punch**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Barret - Sharkslayer**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Barret - Solid Bazooka**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Barret - Sunrise Cannon**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Barret - W Machine**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cait Sith - Alba Megaphone**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cait Sith - Battle Trumpet**
-  * `20% Crit Rate [Range: All Enemies]`
-* **Cait Sith - Gold Megaphone**
-  * `20% Crit Rate [Range: Single Enemy]`
-* **Cait Sith - Icebolt Megaphone**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cait Sith - Silver Megaphone**
-  * `20% Crit Rate [Range: Single Enemy]`
-* **Cait Sith - Spirit Demon Megaphone**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cait Sith - Stilva Megaphone**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cait Sith - Witch's Broom**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cait Sith - Yellow Megaphone**
-  * `30% Crit Rate [Range: Single Enemy]`
-* **Cid - Captain's Spear**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cid - Flayer**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cid - Mop**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cid - Pole Axe**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cid - Radiant Lance**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cid - Rocket Lance**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cid - Slash Lance**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cid - Spear**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cid - Trident**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cloud - Apocalypse**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cloud - Bahamut Greatsword**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cloud - Buster Sword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cloud - Chocobo Paddle**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cloud - Crimson Blitz**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cloud - Fusion Sword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cloud - Glavenus Sword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cloud - Hardedge**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cloud - Iron Blade**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cloud - Locke's Sword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cloud - Mystic Sword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cloud - Mythril Saber**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cloud - Nail Bat**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cloud - Neo Bahamut Greatsword**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cloud - Noble Parasol**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cloud - Organics**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Cloud - Sleek Saber**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cloud - Umbral Blade**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Cloud - Zidane's Sword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Glenn - Apology in Hell**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Glenn - Best Wishes**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Glenn - Garish Greatblade**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Glenn - Personal Style**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Glenn - Piece of Cake**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Glenn - Pirate's Glaive**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Glenn - Rest in Peace**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Glenn - Revenant Mother's Glaive**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Glenn - Set Square**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Glenn - Slay the Day**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Glenn - Squeaky Hammer**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Glenn - Steiner's Blade**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Glenn - Stilva Glaive**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Glenn - Thousand Waves**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Glenn - Ultimatic**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Lucia - Bald Eagle**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Lucia - Barn Swallow**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Lucia - Black Rifle**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Lucia - Featherscatter**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Lucia - Mad Minute**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Lucia - Nightjar**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Lucia - Rubber Band Gun**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Lucia - Spirit Demon Rifle**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Lucia - Turks' Rifle**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Lucia - V39**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Matt - Bahamut Rapier**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Matt - Broadsword: Axis**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Matt - Dragontail Sword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Matt - Foam Sword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Matt - Hrotti**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Matt - Killer Hornet**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Matt - Nautilus Spiral**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Matt - Physician's Scalpel**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Matt - Slick Beetle**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Matt - Stingray**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Red XIII - Flame Dragon's Band**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Red XIII - Gold Collar**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Red XIII - Headphones**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Red XIII - Hell House Collar**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Red XIII - Iron Collar**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Red XIII - Ivy Collar**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Red XIII - Junk Collar**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Red XIII - Leather Collar**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Red XIII - Patissier's Collar**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Red XIII - Seaside Collar**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Red XIII - Silver Collar**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Red XIII - Steward Collar**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Red XIII - Tsviet Collar**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Sephiroth (Orig.) - Kikuichimonji**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Sephiroth (Orig.) - Kotetsu**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Sephiroth (Orig.) - Masamune**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Sephiroth (Orig.) - Muramasa**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Sephiroth - Blade of the Worthy**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Sephiroth - Flame Dragon Blade**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Sephiroth - Folding Ruler**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Sephiroth - Glaireid**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Sephiroth - Humus Saber**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Sephiroth - Infiltration Sword**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Sephiroth - Kuja's Spirit Blade**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Sephiroth - Nameless**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Sephiroth - Northern Lights**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Sephiroth - Phoenix Odachi**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Sephiroth - Protector's Blade**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Sephiroth - Radiant Edge**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Sephiroth - Shinra Blade: Model I**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Sephiroth - Shinra Military Sword**
-  * `10% Crit Rate [Range: Single Enemy`
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Sephiroth - Shinra Wyvern Blade**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Sephiroth - World Tree Bough**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Amarant's Claws**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Bahamut Fangs**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Bahamut Knuckles**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Blue Daffodil Gloves**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Demon's Impetus**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Feathered Gloves**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Guide Gloves**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Járngreipr**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Tifa - Kaiser Knuckles**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Leather Combat Gloves**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Tifa - Leather Gloves**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Powersoul**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Sabin's Claws**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Tifa - Sonic Striker**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Steward Gloves**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Striped Moogle Gloves**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Tiger Fangs**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Tifa - Turks' Gloves**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Vincent - Chiron**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Vincent - Chrome Death Penalty**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Vincent - Double Stem E**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Vincent - Galian Roar**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Vincent - Hugin & Munin**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Vincent - Icebolt Shooter**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Vincent - Kugelblitz**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Vincent - Merciless White**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Vincent - Noblesse Automatic**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Vincent - Quicksilver**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Vincent - S1976C**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Vincent - Silver Rifle**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Vincent - T03 Model N**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Yuffie - 4-Point Shuriken**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Yuffie - Bahamut Cutter**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Yuffie - Bamboo Ring**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Yuffie - Boomerang**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Yuffie - Fatum Ex Machina**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Yuffie - Heirloom Brush**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Yuffie - Mallet of Luck**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Yuffie - Pinwheel**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Yuffie - Risanautr**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Yuffie - Striped Moogle Flag**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Yuffie - Twin Viper**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Yuffie - Wind Slash**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Zack - Alba Blade**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Zack - Arc Sword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Zack - Beach Parasol**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Zack - Black Whiskers**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Zack - Bouquet**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Zack - Buster Sword Origin**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Zack - Ceremonial Sword (Z)**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Zack - Cutlass**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Zack - Festive Sword**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Zack - Iron Greatsword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Zack - Magatsuchi Blade**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Zack - Surfer Blade**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Zack - Twinkling Star**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Zack - Type-99 Longsword**
-  * `10% Crit Rate [Range: Single Enemy]`
-* **Zack - Virtuous Contract**
-  * `10% Crit Rate [Range: All Enemies]`
-* **Zack - Zweihander**
-  * `10% Crit Rate [Range: Single Enemy]`
 
 ---
 
@@ -3393,3 +2889,29 @@ Found 65 unsupported effect type(s).
 
 * **Cait Sith - Yellow Megaphone**
   * `3x Damage [Range: Single Enemy] [Condition: Critical Hit]`
+
+---
+
+# Won't support
+
+[↑ Back to top](#table-of-contents)
+
+## +N% Additional Damage
+
+1 weapon
+
+## +N% Limit Break Gauge
+
+15 weapons
+
+## +N% Stance Gauge
+
+5 weapons
+
+## Cancel Effect
+
+5 weapons
+
+## N% Crit Rate
+
+198 weapons

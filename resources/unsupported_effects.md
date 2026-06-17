@@ -1,7 +1,15 @@
-Found 64 unsupported effect type(s):
+Found 65 unsupported effect type(s):
 
 Effect type                                   Weapons
 ----------------------------------------------------------
++N ATB                                        Aerith: Bahamut Rod
+                                              Aerith: Gambanteinn
+                                              Cid: Antler Pike
+                                              Lucia: Shinra Ceremonial Rifle
+                                              Red XIII: Pirate Collar
+                                              Sephiroth: Phoenix Odachi
+                                              Tifa: Gauntlets of the Worthy
+                                              Yuffie: Winged Chakram
 +N Costume C. Ability Uses                    Aerith: Gorgeous Staff
                                               Vincent: Chrome Death Penalty
 +N Gear C. Ability Uses                       Tifa: Festive Gloves

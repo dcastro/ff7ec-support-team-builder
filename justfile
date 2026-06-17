@@ -74,7 +74,7 @@ repl:
 
 # Check for weapon effects in weapons.json not yet handled by the parser
 check-effects:
-    spago run -m CheckEffects.Main -p ff7ec-support-team-builder > "resources/unsupported_effects.json"
+    spago run -m CheckEffects.Main -p ff7ec-support-team-builder > "resources/unsupported_effects.md"
 
 # Regenerate the `weapons.json` file used in the tests
 regen-weapons:
@@ -83,3 +83,4 @@ regen-weapons:
     	"https://sheets.googleapis.com/v4/spreadsheets/1evoNzTA9veDRTvYJEMe-9F81QQ-CxUWN4mrd93kn2W4/values/Weapons!A%3AZ?key=${FF7EC_GOOGLE_SHEETS_KEY}" \
     	--header 'Accept: application/json' \
     	--compressed > resources/weapons.json
+    just check-effects

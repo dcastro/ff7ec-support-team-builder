@@ -1,4 +1,4 @@
-module CheckEffects.Main where
+module CheckEffects.Main (main) where
 
 import Prelude
 
@@ -18,8 +18,6 @@ import Data.Tuple (Tuple(..))
 import Effect (Effect)
 import Effect.Console (log)
 import Parsing (runParser)
-import Parsing.String as PS
-import Parsing.String.Basic as PSB
 
 foreign import readWeaponsValues :: String -> Effect (Array (Array String))
 
@@ -27,38 +25,34 @@ foreign import readWeaponsValues :: String -> Effect (Array (Array String))
 obCols :: Array Int
 obCols = [ 18, 19, 20, 21 ]
 
--- Skip lines like "+1 ATB [Range: Other Allies] [Condition: ...]"
-isAtbBonusLine :: String -> Boolean
-isAtbBonusLine line =
-  case runParser line (PS.char '+' *> void PSB.intDecimal *> PS.string " ATB" $> unit) of
-    Right _ -> true
-    Left _ -> false
-
--- Replace digit sequences with "N" for grouping:
--- "+3% Limit Break Gauge" and "+8% Limit Break Gauge" -> "+N% Limit Break Gauge"
-normalizeDigits :: String -> String
-normalizeDigits s = go false "" (CU.toCharArray s)
-  where
-  isDigit c = c >= '0' && c <= '9'
-  go wasDigit acc chars = case Array.uncons chars of
-    Nothing -> acc
-    Just { head: c, tail: cs }
-      | isDigit c -> go true (if wasDigit then acc else acc <> "N") cs
-      | otherwise -> go false (acc <> CU.singleton c) cs
-
 -- Produce a stable grouping key from a raw effect line.
 -- Strips [Range: ...] and trailing (...) then normalizes numbers.
 groupingKey :: String -> String
 groupingKey line =
   let
-    noTags = case String.indexOf (String.Pattern "[") line of
+    removeBrackets line = case String.indexOf (String.Pattern "[") line of
       Nothing -> line
       Just i -> String.trim (String.take i line)
-    noParens = case String.indexOf (String.Pattern "(") noTags of
-      Nothing -> noTags
-      Just i -> String.trim (String.take i noTags)
+    removeParens line = case String.indexOf (String.Pattern "(") line of
+      Nothing -> line
+      Just i -> String.trim (String.take i line)
   in
-    normalizeDigits noParens
+    line
+      # removeBrackets
+      # removeParens
+      # normalizeDigits
+  where
+  -- Replace digit sequences with "N" for grouping:
+  -- "+3% Limit Break Gauge" and "+8% Limit Break Gauge" -> "+N% Limit Break Gauge"
+  normalizeDigits :: String -> String
+  normalizeDigits s = go false "" (CU.toCharArray s)
+    where
+    isDigit c = c >= '0' && c <= '9'
+    go wasDigit acc chars = case Array.uncons chars of
+      Nothing -> acc
+      Just { head: c, tail: cs }
+        | isDigit c -> go true (if wasDigit then acc else acc <> "N") cs
+        | otherwise -> go false (acc <> CU.singleton c) cs
 
 padRight :: Int -> String -> String
 padRight n s = s <> fold (Array.replicate (max 0 (n - String.length s)) " ")
@@ -81,21 +75,20 @@ main = do
                     case Array.index row col of
                       Nothing -> m'
                       Just cell ->
-                        String.replaceAll (String.Pattern "\r\n") (String.Replacement "\n") cell
+                        cell
                           # String.split (String.Pattern "\n")
+                          <#> String.trim
                           # foldlWithIndex
                               ( \lineIdx m'' line ->
-                                  let trimmed = String.trim line
-                                  in
-                                    if trimmed == "" || lineIdx == 0 || isAtbBonusLine trimmed then m''
-                                    else
-                                      case runParser trimmed (parseWeaponEffect { rowId: rowIdx + 2, columnId: col + 1 }) of
-                                        Right _ -> m''
-                                        Left _ ->
-                                          let key = groupingKey trimmed
-                                          in
-                                            if key == "" then m''
-                                            else Map.insertWith Set.union key (Set.singleton label) m''
+                                  if line == "" || lineIdx == 0 then m''
+                                  else
+                                    case runParser line (parseWeaponEffect { rowId: rowIdx + 2, columnId: col + 1 }) of
+                                      Right _ -> m''
+                                      Left _ ->
+                                        let
+                                          key = groupingKey line
+                                        in
+                                          Map.insertWith Set.union key (Set.singleton label) m''
                               )
                               m'
                 )

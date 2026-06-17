@@ -14,34 +14,35 @@ Adds full support for a new weapon effect. The effect name comes from the `/add-
 ## Step 1 — Research
 
 Look up the effect in `resources/unsupported_effects.md`:
+
 - Find the section whose heading matches (or closely matches) the effect name
 - Read the example lines to learn the exact string the parser must match and what the format is
 
 Determine the **parser format** from the example lines:
 
-| Example line shape | Parser combinator | Effect record type |
-|-|-|-|
-| `30s Fire Resistance Up (+6s) [Range: All Allies]` | `withDurExt` | `{ range, durExt }` |
-| `40s 5% Veil (+8s) [Range: Self]` | `withDurExtPercentage` | `{ range, durExt, percentage }` |
-| `16s PATK Up (+5s) (Mid -> High) [Range: All Allies]` | `withDurExtPotencies` | `{ range, durExt, potencies }` |
-| `74% Heal [Range: All Allies]` | `withPercentage` | `{ range, percentage }` |
+| Example line shape                                    | Parser combinator      | Effect record type              |
+| ----------------------------------------------------- | ---------------------- | ------------------------------- |
+| `30s Fire Resistance Up (+6s) [Range: All Allies]`    | `withDurExt`           | `{ range, durExt }`             |
+| `40s 5% Veil (+8s) [Range: Self]`                     | `withDurExtPercentage` | `{ range, durExt, percentage }` |
+| `16s PATK Up (+5s) (Mid -> High) [Range: All Allies]` | `withDurExtPotencies`  | `{ range, durExt, potencies }`  |
+| `74% Heal [Range: All Allies]`                        | `withPercentage`       | `{ range, percentage }`         |
 
 Also decide on:
+
 - **PureScript constructor name** (CamelCase, no spaces, e.g. `FireResistUp`)
 - **Filter constructor name** (prefix `Filter`, e.g. `FilterFireResistUp`)
 - **Parser string** (the exact substring in the raw game text, e.g. `"Fire Resistance Up"`)
 - **Display string** (human-readable, e.g. `"Fire resistance up"`)
 - **Has potencies?** (true only for `withDurExtPotencies` effects)
 
-If an effect with the same name but a different shape already exists (e.g. `IceWeakness` exists without a percentage, and you're adding `IceWeakness` WITH a percentage), choose a distinct constructor name that includes the distinguishing feature (e.g. `IceWeaknessBonus` or similar) and note this to the user.
-
 ## Step 2 — Update `src/Core/Database/Types.purs`
 
 This file has several parallel structures that all need the new effect added. Do them in order:
 
-### 2a. `WeaponEffect` data type (around line 139)
+### 2a. `WeaponEffect` data type
 
 Add a new variant using the record type determined in Step 1:
+
 ```purescript
 -- for withDurExt:
 | FireResistUp { range :: Range, durExt :: DurExt }
@@ -53,7 +54,7 @@ Add a new variant using the record type determined in Step 1:
 | FireResistUp { range :: Range, percentage :: Percentage }
 ```
 
-### 2b. `FilterEffectType` data type (around line 181)
+### 2b. `FilterEffectType` data type
 
 Add `| FilterFireResistUp` in the logically appropriate group (buffs with buffs, debuffs with debuffs, etc.)
 
@@ -76,6 +77,7 @@ Add a case: `FilterFireResistUp -> writeImpl "FilterFireResistUp"`
 ### 2g. `ReadForeign WeaponEffect` instance
 
 Add a case inside `exhaustiveWeaponEffectMatch <#> \x -> case x of`:
+
 ```purescript
 FireResistUp _ -> tryRead FireResistUp recType value "FireResistUp"
 ```
@@ -83,6 +85,7 @@ FireResistUp _ -> tryRead FireResistUp recType value "FireResistUp"
 ### 2h. `ReadForeign FilterEffectType` instance
 
 Add a case inside `allFilterEffectTypes <#> \x -> case x of`:
+
 ```purescript
 FilterFireResistUp -> tryRead x str "FilterFireResistUp"
 ```
@@ -98,6 +101,7 @@ Add `FilterFireResistUp` to **both** the array and the `_ = case _ of` exhaustiv
 ### 2k. `exhaustiveWeaponEffectMatch` array AND its exhaustive check
 
 Add to **both** the array and the `_ = case _ of` exhaustive pattern match. Use the dummy values already defined in the `where` block:
+
 ```purescript
 -- for withDurExt:
 , FireResistUp { range, durExt }
@@ -170,6 +174,7 @@ FireResistUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
 ### 6a. `hasPotencies`
 
 Add a case:
+
 ```purescript
 FilterFireResistUp -> false  -- or true if effect has potencies
 ```
@@ -177,6 +182,7 @@ FilterFireResistUp -> false  -- or true if effect has potencies
 ### 6b. `hasRange`
 
 Add a case. Almost all effects have a range — set to `false` only if the effect genuinely has no range (like Sigil effects):
+
 ```purescript
 FilterFireResistUp -> true
 ```
@@ -186,6 +192,7 @@ FilterFireResistUp -> true
 ### 7a. `getPotencies`
 
 Add a case:
+
 ```purescript
 -- for effects WITHOUT potencies:
 FireResistUp {} -> Nothing
@@ -200,12 +207,16 @@ Add a variant: `| FireResistUp' Potencies`
 
 ## Step 8 — Verify
 
-Run:
+Run `just build` and verify the project compiles without warnings.
+
+Then run:
+
 ```
 just check-effects
 ```
 
 Open `resources/unsupported_effects.md` and confirm the effect no longer appears in the list. If the effect still appears, check:
+
 1. Does the parser string exactly match the raw game text?
 2. Is the effect in `groupForWeaponEffect` — that's what puts it in the DB
 

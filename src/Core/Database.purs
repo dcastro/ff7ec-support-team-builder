@@ -99,7 +99,7 @@ init = do
   -- Throws if we can't parse the Google Sheet.
   loadFromSpreadsheet :: forall f. MonadAff f => MonadThrow Unit f => f (Array Weapon)
   loadFromSpreadsheet = do
-    table <- liftAff $ SheetsApi.getSheet "Weapons!A:Z"
+    table <- liftAff $ SheetsApi.getSheet "Weapons!A:ZZ"
 
     let { weapons, errors } = P.parseWeapons table.result.values
     for_ errors \err -> Console.log $ "Failed to parse weapon:\n" <> err

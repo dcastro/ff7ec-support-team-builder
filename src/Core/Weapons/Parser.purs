@@ -8,6 +8,7 @@ import Control.Alt ((<|>))
 import Data.Array as Arr
 import Data.Bifunctor (lmap)
 import Data.Either (Either(..), hush)
+import Data.Foldable (foldMap)
 import Data.FoldableWithIndex as F
 import Data.Maybe (Maybe(..))
 import Data.String.NonEmpty (NonEmptyString)
@@ -82,7 +83,9 @@ parseWeapon rowIndex row = do
   getDescription columnIndex = do
     let
       columnId = columnIndex + 1
-    getCell columnIndex >>= parseDescription { rowId, columnId }
+      heartCustomDescription = getOptionalCell (columnIndex + 8)
+      spadeCustomDescription = getOptionalCell (columnIndex + 12)
+    getCell columnIndex >>= parseDescription { rowId, columnId } heartCustomDescription spadeCustomDescription
 
   getCell :: Int -> Result NonEmptyString
   getCell columnIndex = do
@@ -95,6 +98,9 @@ parseWeapon rowIndex row = do
     NES.fromString str
       `onErr`
         ("Cell at " <> show rowId <> ":" <> show columnId <> " is empty")
+
+  getOptionalCell :: Int -> Maybe NonEmptyString
+  getOptionalCell columnIndex = Arr.index row columnIndex >>= NES.fromString
 
 infixl 0 onErr as !@
 
@@ -114,16 +120,20 @@ type ParsedDescription =
 hasCureAllSAbility :: NonEmptyString -> Boolean
 hasCureAllSAbility = NES.toString >>> String.startsWith "All (Cure Spells)"
 
-parseDescription :: Coords -> NonEmptyString -> Result ParsedDescription
-parseDescription coords description = do
+parseEffects :: Coords -> NonEmptyString -> Array WeaponEffect
+parseEffects coords desc =
+  desc # NES.toString # String.lines
+    # Arr.mapMaybe \line -> hush $ runParser line (parseWeaponEffect coords)
+
+parseDescription :: Coords -> Maybe NonEmptyString -> Maybe NonEmptyString -> NonEmptyString -> Result ParsedDescription
+parseDescription coords heartCustomDescription spadeCustomDescription description = do
   let
     lines = description # NES.toString # String.lines
     firstLine = Arr.head lines `unsafeFromJust` "String.lines returned empty list"
-  let
-    -- Parse weapon effects, discarding parser failures
     effects =
-      lines
-        # Arr.mapMaybe \line -> hush $ runParser line (parseWeaponEffect coords)
+      parseEffects coords description
+        <> foldMap (parseEffects coords) heartCustomDescription
+        <> foldMap (parseEffects coords) spadeCustomDescription
   -- Every weapon must have an ATB cost
   atbCost <- runParser firstLine (parseAtbCost coords) #
     lmap P.parseErrorMessage
@@ -136,6 +146,8 @@ parseDescription coords description = do
     , commandAbilitySigil
     , obLevel:
         { description
+        , heartCustomDescription
+        , spadeCustomDescription
         , effects
         }
     }

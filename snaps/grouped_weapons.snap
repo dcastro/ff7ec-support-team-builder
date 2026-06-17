@@ -379,6 +379,14 @@
         ]
       },
       {
+        "weaponName": "Max Ray",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
         "weaponName": "Teacher's Paper Fan",
         "ranges": [
           {
@@ -581,6 +589,14 @@
         ]
       },
       {
+        "weaponName": "Shinra Blade: Model I",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
         "weaponName": "Omega Wing",
         "ranges": [
           {
@@ -656,6 +672,14 @@
     [
       {
         "weaponName": "Supreme Sage's Staff",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Dragoon Lance",
         "ranges": [
           {
             "range": "All"
@@ -747,6 +771,14 @@
   [
     "FilterEnliven",
     [
+      {
+        "weaponName": "Noble Parasol",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
       {
         "weaponName": "Festive Sword",
         "ranges": [
@@ -865,6 +897,32 @@
         ]
       },
       {
+        "weaponName": "Striking Staff",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Master Tonberry's Blade",
         "ranges": [
           {
@@ -911,6 +969,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Max Ray",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -1241,6 +1325,32 @@
               "ob10": {
                 "max": "Mid",
                 "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Immaculate Blade",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
               },
               "ob1": {
                 "max": "Mid",
@@ -1639,6 +1749,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Gargantuan Monolith",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -2664,6 +2800,32 @@
         ]
       },
       {
+        "weaponName": "Rest in Peace",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Centipede",
         "ranges": [
           {
@@ -3111,6 +3273,32 @@
         ]
       },
       {
+        "weaponName": "Battle Trumpet",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Viper Halberd",
         "ranges": [
           {
@@ -3423,6 +3611,32 @@
         ]
       },
       {
+        "weaponName": "Overture",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Sawed-Off GS",
         "ranges": [
           {
@@ -3505,6 +3719,32 @@
   [
     "FilterFireDamageUp",
     [
+      {
+        "weaponName": "Gambanteinn",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
       {
         "weaponName": "Locke's Sword",
         "ranges": [
@@ -3911,6 +4151,32 @@
         ]
       },
       {
+        "weaponName": "Mad Minute",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Gauntlets of the Worthy",
         "ranges": [
           {
@@ -4102,6 +4368,32 @@
   [
     "FilterWindDamageUp",
     [
+      {
+        "weaponName": "Teacher's Paper Fan",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
       {
         "weaponName": "Brilliant Collar",
         "ranges": [
@@ -4498,6 +4790,32 @@
         ]
       },
       {
+        "weaponName": "Rest in Peace",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Steiner's Blade",
         "ranges": [
           {
@@ -4784,6 +5102,32 @@
         ]
       },
       {
+        "weaponName": "Shinra Blade: Model I",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Kotetsu",
         "ranges": [
           {
@@ -4830,6 +5174,32 @@
               "ob0": {
                 "max": "High",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Lightning's Gloves",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -5407,6 +5777,32 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Guide Gloves",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -6271,6 +6667,32 @@
         ]
       },
       {
+        "weaponName": "Class President's Bracelet",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Járngreipr",
         "ranges": [
           {
@@ -6309,6 +6731,32 @@
               "ob10": {
                 "max": "Mid",
                 "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Hawkeye",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
               },
               "ob1": {
                 "max": "Mid",
@@ -7463,6 +7911,32 @@
               "ob10": {
                 "max": "High",
                 "base": "Low"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Guide Gloves",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
               },
               "ob1": {
                 "max": "Mid",

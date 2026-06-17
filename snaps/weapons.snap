@@ -764,6 +764,7 @@
         "slot1": "Boost ATK (All Allies)"
       },
       "ob6": {
+        "spadeCustomDescription": "+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -776,6 +777,7 @@
         "description": "Planet's Prayer+ (5 ATB)\n54% Heal [Range: All Allies]\n25s 25% Physical Damage Bonus (+8s) [Range: All Allies]\n25s 25% Magic Damage Bonus (+8s) [Range: All Allies]"
       },
       "ob10": {
+        "spadeCustomDescription": "+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -788,6 +790,7 @@
         "description": "Planet's Prayer++ (5 ATB)\n59% Heal [Range: All Allies]\n30s 30% Physical Damage Bonus (+10s) [Range: All Allies]\n30s 30% Magic Damage Bonus (+10s) [Range: All Allies]"
       },
       "ob1": {
+        "spadeCustomDescription": "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -800,6 +803,7 @@
         "description": "Planet's Prayer (5 ATB)\n50% Heal [Range: All Allies]\n25s 20% Physical Damage Bonus (+8s) [Range: All Allies]\n25s 20% Magic Damage Bonus (+8s) [Range: All Allies]"
       },
       "ob0": {
+        "spadeCustomDescription": "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -1068,6 +1072,7 @@
         "slot1": "Boost HEAL"
       },
       "ob6": {
+        "spadeCustomDescription": "12s Fire Damage Up (+4s) (Mid -> High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -1089,11 +1094,26 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 4,
+                "duration": 12
+              }
+            },
+            "type": "FireDamageUp"
           }
         ],
         "description": "Paeon+ (5 ATB)\n54% Heal [Range: All Allies]\n12s PATK Up (+4s) (Mid -> High) [Range: All Allies]\n+1 ATB [Range: Other Allies] [Condition: Self 0-70% HP]"
       },
       "ob10": {
+        "spadeCustomDescription": "16s Fire Damage Up (+5s) (Mid -> High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -1115,11 +1135,26 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 5,
+                "duration": 16
+              }
+            },
+            "type": "FireDamageUp"
           }
         ],
         "description": "Paeon++ (5 ATB)\n59% Heal [Range: All Allies]\n16s PATK Up (+5s) (Mid -> High) [Range: All Allies]\n+1 ATB [Range: Other Allies] [Condition: Self 0-90% HP]"
       },
       "ob1": {
+        "spadeCustomDescription": "12s Fire Damage Up (+4s) (Low -> Mid) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -1141,11 +1176,26 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 4,
+                "duration": 12
+              }
+            },
+            "type": "FireDamageUp"
           }
         ],
         "description": "Paeon (5 ATB)\n50% Heal [Range: All Allies]\n12s PATK Up (+4s) (Low -> Mid) [Range: All Allies]\n+1 ATB [Range: Other Allies] [Condition: Self 0-50% HP]"
       },
       "ob0": {
+        "spadeCustomDescription": "12s Fire Damage Up (+4s) (Low -> Mid) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -1167,6 +1217,20 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 4,
+                "duration": 12
+              }
+            },
+            "type": "FireDamageUp"
           }
         ],
         "description": "Paeon (5 ATB)\n42% Heal [Range: All Allies]\n12s PATK Up (+4s) (Low -> Mid) [Range: All Allies]\n+1 ATB [Range: Other Allies] [Condition: Self 0-40% HP]"
@@ -1308,6 +1372,7 @@
         "slot1": "Boost ATK (All Allies)"
       },
       "ob6": {
+        "spadeCustomDescription": "50s 30% Fire Weapon Boost (+16s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -1327,6 +1392,7 @@
         "description": "Luminous Bloom+ (4 ATB)\n760% Mag. Non-elem. Damage [Range: All Enemies]\n50s 25% Fire Damage Bonus (+16s) [Range: All Allies]\n25s MDEF Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob10": {
+        "spadeCustomDescription": "60s 35% Fire Weapon Boost (+20s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -1346,6 +1412,7 @@
         "description": "Luminous Bloom++ (4 ATB)\n920% Mag. Non-elem. Damage [Range: All Enemies]\n60s 30% Fire Damage Bonus (+20s) [Range: All Allies]\n30s MDEF Up (+10s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n+2 Costume C. Ability Uses [Range: Self] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob1": {
+        "spadeCustomDescription": "40s 25% Fire Weapon Boost (+13s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -1365,6 +1432,7 @@
         "description": "Luminous Bloom (4 ATB)\n590% Mag. Non-elem. Damage [Range: All Enemies]\n40s 20% Fire Damage Bonus (+13s) [Range: All Allies]\n25s MDEF Up (+8s) (Low -> Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob0": {
+        "spadeCustomDescription": "30s 25% Fire Weapon Boost (+10s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -1728,6 +1796,7 @@
         "slot1": "Boost HEAL"
       },
       "ob6": {
+        "spadeCustomDescription": "+15% Limit Break Gauge [Range: Self]",
         "effects": [
           {
             "value": {
@@ -1754,6 +1823,7 @@
         "description": "Enhancing Rose+ (4 ATB)\n50s 25% Magic Damage Bonus (+16s) [Range: All Allies]\n20s PDEF Up (+6s) (High) [Range: All Allies] [Condition: Self 70-100% HP]\n7% Heal [Range: All Allies]\n+75% Stance Gauge [Condition: First Use]"
       },
       "ob10": {
+        "spadeCustomDescription": "+20% Limit Break Gauge [Range: Self]",
         "effects": [
           {
             "value": {
@@ -1780,6 +1850,7 @@
         "description": "Enhancing Rose++ (4 ATB)\n60s 30% Magic Damage Bonus (+20s) [Range: All Allies]\n25s PDEF Up (+8s) (High) [Range: All Allies] [Condition: Self 70-100% HP]\n7% Heal [Range: All Allies]\n+75% Stance Gauge [Condition: First Use]"
       },
       "ob1": {
+        "spadeCustomDescription": "+10% Limit Break Gauge [Range: Self]",
         "effects": [
           {
             "value": {
@@ -1806,6 +1877,7 @@
         "description": "Enhancing Rose (4 ATB)\n40s 20% Magic Damage Bonus (+13s) [Range: All Allies]\n20s PDEF Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n6% Heal [Range: All Allies]\n+50% Stance Gauge [Condition: First Use]"
       },
       "ob0": {
+        "spadeCustomDescription": "+10% Limit Break Gauge [Range: Self]",
         "effects": [
           {
             "value": {
@@ -2964,19 +3036,83 @@
         "slot1": "Boost ATK"
       },
       "ob6": {
-        "effects": [],
+        "spadeCustomDescription": "25s Lightning Damage Down (+8s) (High) [Range: Single Enemy]\n25s PATK Up (+8s) (High) [Range: All Allies]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PatkUp"
+          }
+        ],
         "description": "Tempest Force+ (4 ATB)\n750% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
-        "effects": [],
+        "spadeCustomDescription": "30s Lightning Damage Down (+10s) (High) [Range: Single Enemy]\n30s PATK Up (+10s) (High) [Range: All Allies]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PatkUp"
+          }
+        ],
         "description": "Tempest Force++ (4 ATB)\n900% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
-        "effects": [],
+        "spadeCustomDescription": "25s Lightning Damage Down (+8s) (Low -> Mid) [Range: Single Enemy]\n25s PATK Up (+8s) (Low -> Mid) [Range: All Allies]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PatkUp"
+          }
+        ],
         "description": "Tempest Force (4 ATB)\n580% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
-        "effects": [],
+        "spadeCustomDescription": "20s Lightning Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s PATK Up (+6s) (Low -> Mid) [Range: All Allies]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PatkUp"
+          }
+        ],
         "description": "Tempest Force (4 ATB)\n480% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Striking Staff",
@@ -3224,6 +3360,7 @@
         "slot1": "Boost MATK"
       },
       "ob6": {
+        "spadeCustomDescription": "15s Haste (+5s) [Range: All Allies] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -3243,6 +3380,7 @@
         "description": "Water Orb Blast+ (4 ATB)\n460% Mag. Water Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]\n20s Water Damage Up (+6s) (Mid) [Range: All Allies] [Condition: Self 50-100% HP]"
       },
       "ob10": {
+        "spadeCustomDescription": "15s Haste (+5s) [Range: All Allies] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -3262,6 +3400,7 @@
         "description": "Water Orb Blast++ (4 ATB)\n530% Mag. Water Damage [Range: All Enemies]\n1.4x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]\n25s Water Damage Up (+8s) (High) [Range: All Allies] [Condition: Self 50-100% HP]"
       },
       "ob1": {
+        "spadeCustomDescription": "10s Haste (+3s) [Range: All Allies] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -3281,6 +3420,7 @@
         "description": "Water Orb Blast (4 ATB)\n380% Mag. Water Damage [Range: All Enemies]\n1.2x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]\n20s Water Damage Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 50-100% HP]"
       },
       "ob0": {
+        "spadeCustomDescription": "10s Haste (+3s) [Range: All Allies] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -3776,6 +3916,7 @@
         "slot1": "Boost MATK (All Allies)"
       },
       "ob6": {
+        "spadeCustomDescription": "+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -3791,6 +3932,7 @@
         "description": "Planet's Thunderstrike+ (4 ATB)\n760% Mag. Lightning Damage [Range: Single Enemy]\n60s Provoke (+0s) [Range: Self]\n50s 30% Lightning Weapon Boost (+16s) [Range: All Allies]\n50s Lightning Damage Up (+16s) (Mid -> High) [Range: All Allies]"
       },
       "ob10": {
+        "spadeCustomDescription": "+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -3806,6 +3948,7 @@
         "description": "Planet's Thunderstrike++ (4 ATB)\n920% Mag. Lightning Damage [Range: Single Enemy]\n60s Provoke (+0s) [Range: Self]\n60s 35% Lightning Weapon Boost (+20s) [Range: All Allies]\n60s Lightning Damage Up (+20s) (Mid -> High) [Range: All Allies]"
       },
       "ob1": {
+        "spadeCustomDescription": "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -3821,6 +3964,7 @@
         "description": "Planet's Thunderstrike (4 ATB)\n590% Mag. Lightning Damage [Range: Single Enemy]\n60s Provoke (+0s) [Range: Self]\n40s 20% Lightning Weapon Boost (+13s) [Range: All Allies]\n40s Lightning Damage Up (+13s) (Low -> Mid) [Range: All Allies]"
       },
       "ob0": {
+        "spadeCustomDescription": "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -3852,6 +3996,7 @@
         "slot1": "Boost HP"
       },
       "ob6": {
+        "spadeCustomDescription": "25s MATK Up (+8s) (High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -3883,11 +4028,26 @@
               "percentage": 14
             },
             "type": "Heal"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "MatkUp"
           }
         ],
         "description": "Mark of Bravery+ (4 ATB)\n60s Provoke (+0s) [Range: Self]\n40s MDEF Up (+13s) (High) [Range: Self]\n14% Heal [Range: Self]"
       },
       "ob10": {
+        "spadeCustomDescription": "30s MATK Up (+10s) (High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -3919,11 +4079,26 @@
               "percentage": 15
             },
             "type": "Heal"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "MatkUp"
           }
         ],
         "description": "Mark of Bravery++ (4 ATB)\n60s Provoke (+0s) [Range: Self]\n44s MDEF Up (+14s) (High) [Range: Self]\n15% Heal [Range: Self]"
       },
       "ob1": {
+        "spadeCustomDescription": "25s MATK Up (+8s) (Low -> Mid) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -3955,11 +4130,26 @@
               "percentage": 13
             },
             "type": "Heal"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "MatkUp"
           }
         ],
         "description": "Mark of Bravery (4 ATB)\n60s Provoke (+0s) [Range: Self]\n40s MDEF Up (+13s) (Mid -> High) [Range: Self]\n13% Heal [Range: Self]"
       },
       "ob0": {
+        "spadeCustomDescription": "20s MATK Up (+6s) (Low -> Mid) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -3991,6 +4181,20 @@
               "percentage": 11
             },
             "type": "Heal"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "MatkUp"
           }
         ],
         "description": "Mark of Bravery (4 ATB)\n60s Provoke (+0s) [Range: Self]\n36s MDEF Up (+12s) (Mid -> High) [Range: Self]\n11% Heal [Range: Self]"
@@ -6781,6 +6985,7 @@
         "slot1": "Boost HP"
       },
       "ob6": {
+        "spadeCustomDescription": "30s 25% Physical Damage Bonus (+10s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -6821,6 +7026,7 @@
         "description": "Dragon's Roar+ (4 ATB)\n480% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n50s 8% Veil (+10s) [Range: Self]\n16s PDEF Up (+5s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob10": {
+        "spadeCustomDescription": "40s 30% Physical Damage Bonus (+13s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -6861,6 +7067,7 @@
         "description": "Dragon's Roar++ (4 ATB)\n540% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n60s 10% Veil (+12s) [Range: Self]\n20s PDEF Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob1": {
+        "spadeCustomDescription": "30s 20% Physical Damage Bonus (+10s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -6901,6 +7108,7 @@
         "description": "Dragon's Roar (4 ATB)\n390% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n45s 6% Veil (+9s) [Range: Self]\n16s PDEF Up (+5s) (Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob0": {
+        "spadeCustomDescription": "20s 20% Physical Damage Bonus (+6s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -7450,19 +7658,127 @@
         "slot1": "Boost PDEF"
       },
       "ob6": {
-        "effects": [],
+        "spadeCustomDescription": "25s PATK Up (+8s) (High) [Range: All Allies]\n50s 8% Veil (+10s) [Range: Self]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 8,
+              "durExt": {
+                "extension": 10,
+                "duration": 50
+              }
+            },
+            "type": "Veil"
+          }
+        ],
         "description": "Energy Laser+ [Sigils: 1 \\◆] (4 ATB)\n620% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
-        "effects": [],
+        "spadeCustomDescription": "30s PATK Up (+10s) (High) [Range: All Allies]\n60s 10% Veil (+12s) [Range: Self]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 10,
+              "durExt": {
+                "extension": 12,
+                "duration": 60
+              }
+            },
+            "type": "Veil"
+          }
+        ],
         "description": "Energy Laser++ [Sigils: 1 \\◆] (4 ATB)\n750% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
-        "effects": [],
+        "spadeCustomDescription": "25s PATK Up (+8s) (Low -> Mid) [Range: All Allies]\n45s 6% Veil (+9s) [Range: Self]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 6,
+              "durExt": {
+                "extension": 9,
+                "duration": 45
+              }
+            },
+            "type": "Veil"
+          }
+        ],
         "description": "Energy Laser [Sigils: 1 \\◆] (4 ATB)\n480% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
-        "effects": [],
+        "spadeCustomDescription": "20s PATK Up (+6s) (Low -> Mid) [Range: All Allies]\n40s 5% Veil (+8s) [Range: Self]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 5,
+              "durExt": {
+                "extension": 8,
+                "duration": 40
+              }
+            },
+            "type": "Veil"
+          }
+        ],
         "description": "Energy Laser [Sigils: 1 \\◆] (4 ATB)\n400% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Max Ray",
@@ -8244,6 +8560,7 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
+        "spadeCustomDescription": "25s Wind Damage Up (+8s) (High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -8269,11 +8586,26 @@
               }
             },
             "type": "Veil"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "WindDamageUp"
           }
         ],
         "description": "Winds of Discipline+ (3 ATB)\n430% Phys. Wind Damage [Range: All Enemies]\n25s Wind Resistance Down (+8s) (High) [Range: All Enemies] [Condition: Self 50-100% HP]\n50s 8% Veil (+10s) [Range: Self]"
       },
       "ob10": {
+        "spadeCustomDescription": "30s Wind Damage Up (+10s) (High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -8299,11 +8631,26 @@
               }
             },
             "type": "Veil"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "WindDamageUp"
           }
         ],
         "description": "Winds of Discipline++ (3 ATB)\n500% Phys. Wind Damage [Range: All Enemies]\n30s Wind Resistance Down (+10s) (High) [Range: All Enemies] [Condition: Self 50-100% HP]\n60s 10% Veil (+12s) [Range: Self]"
       },
       "ob1": {
+        "spadeCustomDescription": "22s Wind Damage Up (+7s) (Low -> Mid) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -8329,11 +8676,26 @@
               }
             },
             "type": "Veil"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 7,
+                "duration": 22
+              }
+            },
+            "type": "WindDamageUp"
           }
         ],
         "description": "Winds of Discipline (3 ATB)\n360% Phys. Wind Damage [Range: All Enemies]\n22s Wind Resistance Down (+7s) (Low -> Mid) [Range: All Enemies] [Condition: Self 50-100% HP]\n45s 6% Veil (+9s) [Range: Self]"
       },
       "ob0": {
+        "spadeCustomDescription": "20s Wind Damage Up (+6s) (Low -> Mid) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -8359,6 +8721,20 @@
               }
             },
             "type": "Veil"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "WindDamageUp"
           }
         ],
         "description": "Winds of Discipline (3 ATB)\n310% Phys. Wind Damage [Range: All Enemies]\n20s Wind Resistance Down (+6s) (Low -> Mid) [Range: All Enemies] [Condition: Self 50-100% HP]\n40s 5% Veil (+8s) [Range: Self]"
@@ -8504,6 +8880,7 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
+        "spadeCustomDescription": "22s MDEF Up (+7s) (High) [Range: All Allies] [Condition: Self 50-100% HP]",
         "effects": [
           {
             "value": {
@@ -8532,11 +8909,26 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 7,
+                "duration": 22
+              }
+            },
+            "type": "MdefUp"
           }
         ],
         "description": "Battle Drum+ (4 ATB)\n310% Phys. Non-elem. Damage [Range: All Enemies]\n20% Crit Rate [Range: All Enemies]\n22s MATK Down (+7s) (Mid) [Range: All Enemies]\n52s PATK Down (+17s) (High) [Range: All Enemies] [Condition: Critical Hit]"
       },
       "ob10": {
+        "spadeCustomDescription": "25s MDEF Up (+8s) (High) [Range: All Allies] [Condition: Self 50-100% HP]",
         "effects": [
           {
             "value": {
@@ -8565,11 +8957,26 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "MdefUp"
           }
         ],
         "description": "Battle Drum++ (4 ATB)\r\n350% Phys. Non-elem. Damage [Range: All Enemies]\r\n20% Crit Rate [Range: All Enemies]\r\n25s MATK Down (+8s) (Mid) [Range: All Enemies]\r\n60s PATK Down (+20s) (High) [Range: All Enemies] [Condition: Critical Hit]"
       },
       "ob1": {
+        "spadeCustomDescription": "22s MDEF Up (+7s) (Low -> Mid) [Range: All Allies] [Condition: Self 50-100% HP]",
         "effects": [
           {
             "value": {
@@ -8598,11 +9005,26 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 7,
+                "duration": 22
+              }
+            },
+            "type": "MdefUp"
           }
         ],
         "description": "Battle Drum (4 ATB)\n250% Phys. Non-elem. Damage [Range: All Enemies]\n20% Crit Rate [Range: All Enemies]\n22s MATK Down (+7s) (Low -> Mid) [Range: All Enemies]\n44s PATK Down (+14s) (Mid -> High) [Range: All Enemies] [Condition: Critical Hit]"
       },
       "ob0": {
+        "spadeCustomDescription": "20s MDEF Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 50-100% HP]",
         "effects": [
           {
             "value": {
@@ -8631,6 +9053,20 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "MdefUp"
           }
         ],
         "description": "Battle Drum (4 ATB)\n220% Phys. Non-elem. Damage [Range: All Enemies]\n20% Crit Rate [Range: All Enemies]\n20s MATK Down (+6s) (Low -> Mid) [Range: All Enemies]\n40s PATK Down (+13s) (Mid -> High) [Range: All Enemies] [Condition: Critical Hit]"
@@ -10948,6 +11384,7 @@
         "slot1": "Boost MATK"
       },
       "ob6": {
+        "spadeCustomDescription": "25s 25% Exploit Weakness (+8s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -10962,11 +11399,23 @@
               }
             },
             "type": "ThunderResistDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "ExploitWeakness"
           }
         ],
         "description": "Spark Stick+ (4 ATB)\n590% Mag. Lightning Damage [Range: All Enemies]\n25s Thunder Resistance Down (+8s) (Mid -> High) [Range: All Enemies] [Condition: Self 50-100% HP]\n1.2x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]"
       },
       "ob10": {
+        "spadeCustomDescription": "30s 30% Exploit Weakness (+10s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -10981,11 +11430,23 @@
               }
             },
             "type": "ThunderResistDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "ExploitWeakness"
           }
         ],
         "description": "Spark Stick++ (4 ATB)\n670% Mag. Lightning Damage [Range: All Enemies]\n30s Thunder Resistance Down (+10s) (Mid -> High) [Range: All Enemies] [Condition: Self 50-100% HP]\n1.2x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]"
       },
       "ob1": {
+        "spadeCustomDescription": "22s 20% Exploit Weakness (+7s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -11000,11 +11461,23 @@
               }
             },
             "type": "ThunderResistDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 7,
+                "duration": 22
+              }
+            },
+            "type": "ExploitWeakness"
           }
         ],
         "description": "Spark Stick (4 ATB)\n480% Mag. Lightning Damage [Range: All Enemies]\n22s Thunder Resistance Down (+7s) (Low -> Mid) [Range: All Enemies] [Condition: Self 50-100% HP]\n1.2x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]"
       },
       "ob0": {
+        "spadeCustomDescription": "20s 20% Exploit Weakness (+6s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -11019,6 +11492,17 @@
               }
             },
             "type": "ThunderResistDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "ExploitWeakness"
           }
         ],
         "description": "Spark Stick (4 ATB)\n420% Mag. Lightning Damage [Range: All Enemies]\n20s Thunder Resistance Down (+6s) (Low -> Mid) [Range: All Enemies] [Condition: Self 50-100% HP]\n1.2x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]"
@@ -11149,6 +11633,7 @@
         "slot1": "Boost ATK"
       },
       "ob6": {
+        "spadeCustomDescription": "30s 6% HP Gain (+0s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -11178,6 +11663,7 @@
         "description": "Orbital Slice+ (4 ATB)\n670% Phys. Earth Damage [Range: All Enemies]\n25s Earth Damage Up (+8s) (Mid -> High) [Range: All Allies]\n50s Enfeeble (+16s) [Range: All Enemies] [Condition: Self 50-100% HP]"
       },
       "ob10": {
+        "spadeCustomDescription": "30s 8% HP Gain (+0s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -11207,6 +11693,7 @@
         "description": "Orbital Slice++ (4 ATB)\n780% Phys. Earth Damage [Range: All Enemies]\n30s Earth Damage Up (+10s) (Mid -> High) [Range: All Allies]\n60s Enfeeble (+20s) [Range: All Enemies] [Condition: Self 50-100% HP]"
       },
       "ob1": {
+        "spadeCustomDescription": "30s 5% HP Gain (+0s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -11236,6 +11723,7 @@
         "description": "Orbital Slice (4 ATB)\n520% Phys. Earth Damage [Range: All Enemies]\n25s Earth Damage Up (+8s) (Low -> Mid) [Range: All Allies]\n40s Enfeeble (+13s) [Range: All Enemies] [Condition: Self 50-100% HP]"
       },
       "ob0": {
+        "spadeCustomDescription": "30s 4% HP Gain (+0s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -12970,18 +13458,22 @@
         "slot1": "Boost ATK"
       },
       "ob6": {
+        "spadeCustomDescription": "15s -1 ATB Ice Weapon/Gear C. Ability Cost (+5s) [Range: All Allies] [Condition: First Use]",
         "effects": [],
         "description": "Lightning Rush+ (3 ATB)\n670% Mag. Non-elem. Damage [Range: Single Enemy]\n50s 30% Ice Weakness (+10-16s) [Range: Single Enemy]\n50s 25% Ice Damage Bonus (+16s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
+        "spadeCustomDescription": "25s -1 ATB Ice Weapon/Gear C. Ability Cost (+8s) [Range: All Allies] [Condition: First Use]",
         "effects": [],
         "description": "Lightning Rush++ (3 ATB)\n800% Mag. Non-elem. Damage [Range: Single Enemy]\n60s 30% Ice Weakness (+12-20s) [Range: Single Enemy]\n60s 30% Ice Damage Bonus (+20s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
+        "spadeCustomDescription": "15s -1 ATB Ice Weapon/Gear C. Ability Cost (+5s) [Range: All Allies] [Condition: First Use]",
         "effects": [],
         "description": "Lightning Rush (3 ATB)\n520% Mag. Non-elem. Damage [Range: Single Enemy]\n40s 20% Ice Weakness (+8-13s) [Range: Single Enemy]\n40s 20% Ice Damage Bonus (+13s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
+        "spadeCustomDescription": "10s -1 ATB Ice Weapon/Gear C. Ability Cost (+3s) [Range: All Allies] [Condition: First Use]",
         "effects": [],
         "description": "Lightning Rush (3 ATB)\n430% Mag. Non-elem. Damage [Range: Single Enemy]\n30s 20% Ice Weakness (+6-10s) [Range: Single Enemy]\n30s 20% Ice Damage Bonus (+10s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
@@ -14186,6 +14678,7 @@
         "slot1": "Boost ATK"
       },
       "ob6": {
+        "spadeCustomDescription": "Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -14219,6 +14712,7 @@
         "description": "Forcestream+ (3 ATB)\n360% Mag. Non-elem. Damage [Range: Single Enemy]\n20s MATK Down (+6s) (High) [Range: Single Enemy]\n20s PATK Down (+6s) (High) [Range: Single Enemy] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
+        "spadeCustomDescription": "Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -14252,6 +14746,7 @@
         "description": "Forcestream++ (3 ATB)\n420% Mag. Non-elem. Damage [Range: Single Enemy]\n24s MATK Down (+8s) (High) [Range: Single Enemy]\n24s PATK Down (+8s) (High) [Range: Single Enemy] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
+        "spadeCustomDescription": "Enhance Buffs (+10s) (Low -> High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -14285,6 +14780,7 @@
         "description": "Forcestream (3 ATB)\n300% Mag. Non-elem. Damage [Range: Single Enemy]\n18s MATK Down (+6s) (Mid) [Range: Single Enemy]\n18s PATK Down (+6s) (Mid) [Range: Single Enemy] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
+        "spadeCustomDescription": "Enhance Buffs (+10s) (Low -> High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -14490,19 +14986,67 @@
         "slot1": "Boost ATK (All Allies)"
       },
       "ob6": {
-        "effects": [],
+        "spadeCustomDescription": "50s Enliven (+16s) [Range: All Allies]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "Enliven"
+          }
+        ],
         "description": "Soaring Rose+ (4 ATB)\n1080% Phys. Non-elem. Damage [Range: All Enemies]\n50s 40% Single Target Phys. Damage Received Up (+16s) [Range: All Enemies]\n50s 40% Single Target Mag. Damage Received Up (+16s) [Range: All Enemies]\n15s Haste (+5s) [Range: All Allies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob10": {
-        "effects": [],
+        "spadeCustomDescription": "60s Enliven (+20s) [Range: All Allies]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "Enliven"
+          }
+        ],
         "description": "Soaring Rose++ (4 ATB)\n1340% Phys. Non-elem. Damage [Range: All Enemies]\n60s 50% Single Target Phys. Damage Received Up (+20s) [Range: All Enemies]\n60s 50% Single Target Mag. Damage Received Up (+20s) [Range: All Enemies]\n20s Haste (+7s) [Range: All Allies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob1": {
-        "effects": [],
+        "spadeCustomDescription": "40s Enliven (+13s) [Range: Self]",
+        "effects": [
+          {
+            "value": {
+              "range": "Self",
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "Enliven"
+          }
+        ],
         "description": "Soaring Rose (4 ATB)\n720% Phys. Non-elem. Damage [Range: All Enemies]\n40s 25% Single Target Phys. Damage Received Up (+13s) [Range: All Enemies]\n40s 25% Single Target Mag. Damage Received Up (+13s) [Range: All Enemies]\n10s Haste (+3s) [Range: All Allies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob0": {
-        "effects": [],
+        "spadeCustomDescription": "30s Enliven (+10s) [Range: Self]",
+        "effects": [
+          {
+            "value": {
+              "range": "Self",
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "Enliven"
+          }
+        ],
         "description": "Soaring Rose (4 ATB)\n600% Phys. Non-elem. Damage [Range: All Enemies]\n30s 25% Single Target Phys. Damage Received Up (+10s) [Range: All Enemies]\n30s 25% Single Target Mag. Damage Received Up (+10s) [Range: All Enemies]\n10s Haste (+3s) [Range: All Allies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "name": "Noble Parasol",
@@ -14838,6 +15382,7 @@
         "slot1": "Boost MATK"
       },
       "ob6": {
+        "heartCustomDescription": "1350% Mag. Water Damage [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -14867,6 +15412,7 @@
         "description": "Aquatic Wave+ (4 ATB)\n1080% Mag. Water Damage [Range: Single Enemy]\n25s Water Resistance Down (+8s) (Mid -> High) [Range: Single Enemy]\n25s Enfeeble (+8s) [Range: Single Enemy]\n60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
       },
       "ob10": {
+        "heartCustomDescription": "1680% Mag. Water Damage [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -14896,6 +15442,7 @@
         "description": "Aquatic Wave++ (4 ATB)\n1340% Mag. Water Damage [Range: Single Enemy]\n30s Water Resistance Down (+10s) (Mid -> High) [Range: Single Enemy]\n30s Enfeeble (+10s) [Range: Single Enemy]\n60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
       },
       "ob1": {
+        "heartCustomDescription": "900% Mag. Water Damage [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -14925,6 +15472,7 @@
         "description": "Aquatic Wave (4 ATB)\n720% Mag. Water Damage [Range: Single Enemy]\n25s Water Resistance Down (+8s) (Low -> Mid) [Range: Single Enemy]\n25s Enfeeble (+8s) [Range: Single Enemy]\n60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
       },
       "ob0": {
+        "heartCustomDescription": "750% Mag. Water Damage [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -15426,6 +15974,7 @@
         "slot1": "Boost ATK"
       },
       "ob6": {
+        "spadeCustomDescription": "+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -15445,6 +15994,7 @@
         "description": "Haphazard Strikes+ (4 ATB)\n760% Mag. Non-elem. Damage [Range: Single Enemy]\n25s MATK Up (+8s) (High) [Range: All Allies]\n50s 30% Magic Weapon Boost (+16s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
+        "spadeCustomDescription": "+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -15464,6 +16014,7 @@
         "description": "Haphazard Strikes++ (4 ATB)\n920% Mag. Non-elem. Damage [Range: Single Enemy]\n35s MATK Up (+13s) (High) [Range: All Allies]\n60s 35% Magic Weapon Boost (+20s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
+        "spadeCustomDescription": "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -15483,6 +16034,7 @@
         "description": "Haphazard Strikes (4 ATB)\n590% Mag. Non-elem. Damage [Range: Single Enemy]\n20s MATK Up (+7s) (Low -> Mid) [Range: All Allies]\n40s 20% Magic Weapon Boost (+13s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
+        "spadeCustomDescription": "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -16346,19 +16898,139 @@
         "slot1": "Boost ATK"
       },
       "ob6": {
-        "effects": [],
+        "spadeCustomDescription": "25s PATK Down (+8s) (High) [Range: Single Enemy]\n25s PDEF Up (+8s) (High) [Range: All Allies]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PdefUp"
+          }
+        ],
         "description": "Hell's Penalty+ [Sigils: 1 \\◆] (4 ATB)\n620% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
-        "effects": [],
+        "spadeCustomDescription": "30s PATK Down (+10s) (High) [Range: Single Enemy]\n30s PDEF Up (+10s) (High) [Range: All Allies]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PdefUp"
+          }
+        ],
         "description": "Hell's Penalty++ [Sigils: 1 \\◆] (4 ATB)\n750% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
-        "effects": [],
+        "spadeCustomDescription": "25s PATK Down (+8s) (Low -> Mid) [Range: Single Enemy]\n25s PDEF Up (+8s) (Low -> Mid) [Range: All Allies]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PdefUp"
+          }
+        ],
         "description": "Hell's Penalty [Sigils: 1 \\◆] (4 ATB)\n480% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
-        "effects": [],
+        "spadeCustomDescription": "20s PATK Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s PDEF Up (+6s) (Low -> Mid) [Range: All Allies]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PdefUp"
+          }
+        ],
         "description": "Hell's Penalty [Sigils: 1 \\◆] (4 ATB)\n400% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Rest in Peace",
@@ -16775,6 +17447,7 @@
         "slot1": "Boost HP"
       },
       "ob6": {
+        "spadeCustomDescription": "25s Fire Damage Down (+8s) (Mid -> High) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -16818,6 +17491,7 @@
         "description": "Chaos Geyser+ (4 ATB)\n760% Mag. Ice Damage [Range: Single Enemy]\n45s Enfeeble (+9s) [Range: Single Enemy]\n25s MATK Down (+8s) (Mid -> High) [Range: Single Enemy]\n25s MDEF Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]"
       },
       "ob10": {
+        "spadeCustomDescription": "35s Fire Damage Down (+11s) (Mid -> High) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -16861,6 +17535,7 @@
         "description": "Chaos Geyser++ (4 ATB)\n920% Mag. Ice Damage [Range: Single Enemy]\n60s Enfeeble (+12s) [Range: Single Enemy]\n35s MATK Down (+11s) (Mid -> High) [Range: Single Enemy]\n35s MDEF Up (+11s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]"
       },
       "ob1": {
+        "spadeCustomDescription": "20s Fire Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -16904,6 +17579,7 @@
         "description": "Chaos Geyser (4 ATB)\n590% Mag. Ice Damage [Range: Single Enemy]\n30s Enfeeble (+6s) [Range: Single Enemy]\n20s MATK Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s MDEF Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 70-100% HP]"
       },
       "ob0": {
+        "spadeCustomDescription": "16s Fire Damage Down (+5s) (Low -> Mid) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -17874,6 +18550,7 @@
         "slot1": "Boost HP"
       },
       "ob6": {
+        "spadeCustomDescription": "20s Earth Damage Up (+6s) (High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -17888,11 +18565,26 @@
               }
             },
             "type": "MatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "EarthDamageUp"
           }
         ],
         "description": "Barrage+ (4 ATB)\n480% Phys. Non-elem. Damage [Range: Single Enemy]\n22s MATK Down (+7s) (High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
+        "spadeCustomDescription": "25s Earth Damage Up (+8s) (High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -17907,11 +18599,26 @@
               }
             },
             "type": "MatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "EarthDamageUp"
           }
         ],
         "description": "Barrage++ (4 ATB)\n540% Phys. Non-elem. Damage [Range: Single Enemy]\n25s MATK Down (+8s) (High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
+        "spadeCustomDescription": "20s Earth Damage Up (+6s) (Low -> Mid) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -17926,11 +18633,26 @@
               }
             },
             "type": "MatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "EarthDamageUp"
           }
         ],
         "description": "Barrage (4 ATB)\n390% Phys. Non-elem. Damage [Range: Single Enemy]\n22s MATK Down (+7s) (Mid -> High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
+        "spadeCustomDescription": "15s Earth Damage Up (+5s) (Low -> Mid) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -17945,6 +18667,20 @@
               }
             },
             "type": "MatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "EarthDamageUp"
           }
         ],
         "description": "Barrage (4 ATB)\n340% Phys. Non-elem. Damage [Range: Single Enemy]\n20s MATK Down (+6s) (Mid -> High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -20897,6 +21633,7 @@
         "slot1": "Boost HEAL"
       },
       "ob6": {
+        "spadeCustomDescription": "20s Fire Damage Down (+6s) (High) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -20930,6 +21667,7 @@
         "description": "Spiral Edge+ [Sigils: 1 \\◆] (3 ATB)\n360% Phys. Non-elem. Damage [Range: Single Enemy]\n20s Ice Resistance Down (+6s) (High) [Range: Single Enemy]\n20s Thunder Resistance Down (+6s) (High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
+        "spadeCustomDescription": "24s Fire Damage Down (+8s) (High) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -20963,6 +21701,7 @@
         "description": "Spiral Edge++ [Sigils: 1 \\◆] (3 ATB)\n420% Phys. Non-elem. Damage [Range: Single Enemy]\n24s Ice Resistance Down (+8s) (High) [Range: Single Enemy]\n24s Thunder Resistance Down (+8s) (High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
+        "spadeCustomDescription": "18s Fire Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -20996,6 +21735,7 @@
         "description": "Spiral Edge [Sigils: 1 \\◆] (3 ATB)\n300% Phys. Non-elem. Damage [Range: Single Enemy]\n18s Ice Resistance Down (+6s) (Mid -> High) [Range: Single Enemy]\n18s Thunder Resistance Down (+6s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
+        "spadeCustomDescription": "16s Fire Damage Down (+5s) (Low -> Mid) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -21078,6 +21818,7 @@
         "slot1": "Boost HEAL"
       },
       "ob6": {
+        "spadeCustomDescription": "Enhance Debuffs (+10s) (Low -> Extra High) [Range: All Enemies]",
         "effects": [
           {
             "value": {
@@ -21111,6 +21852,7 @@
         "description": "Luminous Excision+ (3 ATB)\n760% Mag. Non-elem. Damage [Range: All Enemies]\n20s Water Damage Up (+6s) (Mid -> High) [Range: All Allies]\n20s MDEF Up (+6s) (Mid -> High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob10": {
+        "spadeCustomDescription": "Enhance Debuffs (+10s) (Low -> Extra High) [Range: All Enemies]",
         "effects": [
           {
             "value": {
@@ -21144,6 +21886,7 @@
         "description": "Luminous Excision++ (3 ATB)\n920% Mag. Non-elem. Damage [Range: All Enemies]\n25s Water Damage Up (+8s) (Mid -> High) [Range: All Allies]\n25s MDEF Up (+8s) (Mid -> High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob1": {
+        "spadeCustomDescription": "Enhance Debuffs (+10s) (Low -> High) [Range: All Enemies]",
         "effects": [
           {
             "value": {
@@ -21177,6 +21920,7 @@
         "description": "Luminous Excision (3 ATB)\n590% Mag. Non-elem. Damage [Range: All Enemies]\n20s Water Damage Up (+6s) (Low -> Mid) [Range: All Allies]\n20s MDEF Up (+6s) (Low -> Mid) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob0": {
+        "spadeCustomDescription": "Enhance Debuffs (+10s) (Low -> High) [Range: All Enemies]",
         "effects": [
           {
             "value": {
@@ -21682,6 +22426,7 @@
         "slot1": "Boost HP"
       },
       "ob6": {
+        "spadeCustomDescription": "+15% Limit Break Gauge [Range: Self]",
         "effects": [
           {
             "value": {
@@ -21722,6 +22467,7 @@
         "description": "Brilliant Sault+ (4 ATB)\n20s MATK Up (+6s) (Mid -> High) [Range: All Allies]\n20s Wind Damage Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n7% Heal [Range: All Allies]"
       },
       "ob10": {
+        "spadeCustomDescription": "+20% Limit Break Gauge [Range: Self]",
         "effects": [
           {
             "value": {
@@ -21762,6 +22508,7 @@
         "description": "Brilliant Sault++ (4 ATB)\n25s MATK Up (+8s) (Mid -> High) [Range: All Allies]\n25s Wind Damage Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n7% Heal [Range: All Allies]"
       },
       "ob1": {
+        "spadeCustomDescription": "+10% Limit Break Gauge [Range: Self]",
         "effects": [
           {
             "value": {
@@ -21802,6 +22549,7 @@
         "description": "Brilliant Sault (4 ATB)\n20s MATK Up (+6s) (Low -> Mid) [Range: All Allies]\n20s Wind Damage Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n6% Heal [Range: All Allies]"
       },
       "ob0": {
+        "spadeCustomDescription": "+10% Limit Break Gauge [Range: Self]",
         "effects": [
           {
             "value": {
@@ -24703,6 +25451,7 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
+        "spadeCustomDescription": "25s PATK Up (+8s) (Mid -> High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -24717,11 +25466,26 @@
               }
             },
             "type": "EarthResistDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PatkUp"
           }
         ],
         "description": "Sunder Earth+ (4 ATB)\n750% Phys. Earth Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n25s Earth Resistance Down (+8s) (Mid -> High) [Range: All Enemies]"
       },
       "ob10": {
+        "spadeCustomDescription": "30s PATK Up (+10s) (Mid -> High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -24736,11 +25500,26 @@
               }
             },
             "type": "EarthResistDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PatkUp"
           }
         ],
         "description": "Sunder Earth++ (4 ATB)\n900% Phys. Earth Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n30s Earth Resistance Down (+10s) (Mid -> High) [Range: All Enemies]"
       },
       "ob1": {
+        "spadeCustomDescription": "25s PATK Up (+8s) (Low -> Mid) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -24755,11 +25534,26 @@
               }
             },
             "type": "EarthResistDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PatkUp"
           }
         ],
         "description": "Sunder Earth (4 ATB)\n580% Phys. Earth Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n25s Earth Resistance Down (+8s) (Low -> Mid) [Range: All Enemies]"
       },
       "ob0": {
+        "spadeCustomDescription": "20s PATK Up (+6s) (Low -> Mid) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -24774,6 +25568,20 @@
               }
             },
             "type": "EarthResistDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PatkUp"
           }
         ],
         "description": "Sunder Earth (4 ATB)\n480% Phys. Earth Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n20s Earth Resistance Down (+6s) (Low -> Mid) [Range: All Enemies]"
@@ -24795,6 +25603,7 @@
         "slot1": "Boost ATK"
       },
       "ob6": {
+        "spadeCustomDescription": "Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -24825,6 +25634,7 @@
         "description": "Certain End+ (4 ATB)\n1080% Phys. Non-elem. Damage [Range: All Enemies]\n50s 30% Exploit Weakness (+16s) [Range: All Allies]\n50s PATK Down (+16s) (High) [Range: All Enemies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob10": {
+        "spadeCustomDescription": "Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -24855,6 +25665,7 @@
         "description": "Certain End++ (4 ATB)\n1340% Phys. Non-elem. Damage [Range: All Enemies]\n60s 40% Exploit Weakness (+20s) [Range: All Allies]\n60s PATK Down (+20s) (High) [Range: All Enemies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob1": {
+        "spadeCustomDescription": "Enhance Buffs (+10s) (Low -> High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -24885,6 +25696,7 @@
         "description": "Certain End (4 ATB)\n720% Phys. Non-elem. Damage [Range: All Enemies]\n40s 20% Exploit Weakness (+13s) [Range: All Allies]\n40s PATK Down (+13s) (Low -> Mid) [Range: All Enemies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob0": {
+        "spadeCustomDescription": "Enhance Buffs (+10s) (Low -> High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -25383,6 +26195,7 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
+        "spadeCustomDescription": "20s MDEF Up (+6s) (Mid -> High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -25411,11 +26224,26 @@
               }
             },
             "type": "WaterDamageUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "MdefUp"
           }
         ],
         "description": "Smite+ (4 ATB)\n1080% Phys. Water Damage [Range: Single Enemy]\n20s PDEF Down (+6s) (Mid -> High) [Range: Single Enemy]\n20s Water Damage Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]\n60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
       },
       "ob10": {
+        "spadeCustomDescription": "25s MDEF Up (+8s) (Mid -> High) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -25444,11 +26272,26 @@
               }
             },
             "type": "WaterDamageUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "MdefUp"
           }
         ],
         "description": "Smite++ (4 ATB)\n1340% Phys. Water Damage [Range: Single Enemy]\n25s PDEF Down (+8s) (Mid -> High) [Range: Single Enemy]\n25s Water Damage Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]\n60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
       },
       "ob1": {
+        "spadeCustomDescription": "20s MDEF Up (+6s) (Low -> Mid) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -25477,11 +26320,26 @@
               }
             },
             "type": "WaterDamageUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "MdefUp"
           }
         ],
         "description": "Smite (4 ATB)\n720% Phys. Water Damage [Range: Single Enemy]\n20s PDEF Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s Water Damage Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]\n60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
       },
       "ob0": {
+        "spadeCustomDescription": "15s MDEF Up (+5s) (Low -> Mid) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -25510,6 +26368,20 @@
               }
             },
             "type": "WaterDamageUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "MdefUp"
           }
         ],
         "description": "Smite (4 ATB)\n600% Phys. Water Damage [Range: Single Enemy]\n15s PDEF Down (+5s) (Low -> Mid) [Range: Single Enemy]\n15s Water Damage Up (+5s) (Low -> Mid) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]\n60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
@@ -26060,19 +26932,123 @@
         "slot1": "Boost ATK"
       },
       "ob6": {
-        "effects": [],
+        "spadeCustomDescription": "45s PATK Down (+15s) (High) [Range: Single Enemy]\n45s Enfeeble (+15s) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 15,
+                "duration": 45
+              }
+            },
+            "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 15,
+                "duration": 45
+              }
+            },
+            "type": "Enfeeble"
+          }
+        ],
         "description": "Shock Blast+ (4 ATB)\n780% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
-        "effects": [],
+        "spadeCustomDescription": "60s PATK Down (+20s) (High) [Range: Single Enemy]\n60s Enfeeble (+20s) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "Enfeeble"
+          }
+        ],
         "description": "Shock Blast++ (4 ATB)\n940% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
-        "effects": [],
+        "spadeCustomDescription": "30s PATK Down (+10s) (Low -> Mid) [Range: Single Enemy]\n30s Enfeeble (+10s) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "Enfeeble"
+          }
+        ],
         "description": "Shock Blast (4 ATB)\n600% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
-        "effects": [],
+        "spadeCustomDescription": "20s PATK Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s Enfeeble (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "Enfeeble"
+          }
+        ],
         "description": "Shock Blast (4 ATB)\n500% Mag. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Shinra Blade: Model I",
@@ -26796,6 +27772,7 @@
         "slot1": "Boost HP"
       },
       "ob6": {
+        "spadeCustomDescription": "15s Haste (+5s) [Range: All Allies] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -26829,6 +27806,7 @@
         "description": "Hell's Dominion+ (4 ATB)\n460% Phys. Non-elem. Damage [Range: All Enemies]\n35s PATK Down (+11s) (High) [Range: All Enemies]\n35s MATK Down (+11s) (High) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob10": {
+        "spadeCustomDescription": "15s Haste (+5s) [Range: All Allies] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -26862,6 +27840,7 @@
         "description": "Hell's Dominion++ (4 ATB)\n540% Phys. Non-elem. Damage [Range: All Enemies]\n40s PATK Down (+13s) (High) [Range: All Enemies]\n40s MATK Down (+13s) (High) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob1": {
+        "spadeCustomDescription": "10s Haste (+3s) [Range: All Allies] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -26895,6 +27874,7 @@
         "description": "Hell's Dominion (4 ATB)\n380% Phys. Non-elem. Damage [Range: All Enemies]\n30s PATK Down (+10s) (Low -> Mid) [Range: All Enemies]\n30s MATK Down (+10s) (Low -> Mid) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob0": {
+        "spadeCustomDescription": "10s Haste (+3s) [Range: All Allies] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -27037,6 +28017,7 @@
         "slot1": "Boost ATK"
       },
       "ob6": {
+        "heartCustomDescription": "940% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]",
         "effects": [
           {
             "value": {
@@ -27052,6 +28033,7 @@
         "description": "Cryostasis+ (5 ATB)\n750% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]\n50s Enfeeble (+16s) [Range: All Enemies]\n50s 25% Ice Damage Bonus (+16s) [Range: All Allies]\n50s 0.2% Ice ATB Conservation Effect (+16s) [Range: Self] [Condition: First Use]"
       },
       "ob10": {
+        "heartCustomDescription": "1120% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]",
         "effects": [
           {
             "value": {
@@ -27067,6 +28049,7 @@
         "description": "Cryostasis++ (5 ATB)\n900% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]\n60s Enfeeble (+20s) [Range: All Enemies]\n60s 30% Ice Damage Bonus (+20s) [Range: All Allies]\n60s 0.2% Ice ATB Conservation Effect (+20s) [Range: Self] [Condition: First Use]"
       },
       "ob1": {
+        "heartCustomDescription": "730% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]",
         "effects": [
           {
             "value": {
@@ -27082,6 +28065,7 @@
         "description": "Cryostasis (5 ATB)\n580% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]\n40s Enfeeble (+13s) [Range: All Enemies]\n40s 20% Ice Damage Bonus (+13s) [Range: All Allies]\n40s 0.2% Ice ATB Conservation Effect (+13s) [Range: Self] [Condition: First Use]"
       },
       "ob0": {
+        "heartCustomDescription": "600% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]",
         "effects": [
           {
             "value": {
@@ -27237,6 +28221,8 @@
         "slot1": "Boost MATK (All Allies)"
       },
       "ob6": {
+        "spadeCustomDescription": "+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+        "heartCustomDescription": "1350% Mag. Lightning Damage [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -27256,6 +28242,8 @@
         "description": "Planet's Purple Lightning+ (4 ATB)\n1080% Mag. Lightning Damage [Range: Single Enemy]\n50s MDEF Down (+16s) (High) [Range: Single Enemy]\n50s 30% Magic Weapon Boost (+16s) [Range: All Allies]"
       },
       "ob10": {
+        "spadeCustomDescription": "+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+        "heartCustomDescription": "1680% Mag. Lightning Damage [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -27275,6 +28263,8 @@
         "description": "Planet's Purple Lightning++ (4 ATB)\n1340% Mag. Lightning Damage [Range: Single Enemy]\n60s MDEF Down (+20s) (High) [Range: Single Enemy]\n60s 35% Magic Weapon Boost (+20s) [Range: All Allies]"
       },
       "ob1": {
+        "spadeCustomDescription": "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+        "heartCustomDescription": "900% Mag. Lightning Damage [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -27294,6 +28284,8 @@
         "description": "Planet's Purple Lightning (4 ATB)\n720% Mag. Lightning Damage [Range: Single Enemy]\n40s MDEF Down (+13s) (Low -> Mid) [Range: Single Enemy]\n40s 20% Magic Weapon Boost (+13s) [Range: All Allies]"
       },
       "ob0": {
+        "spadeCustomDescription": "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+        "heartCustomDescription": "750% Mag. Lightning Damage [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -27806,6 +28798,7 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
+        "spadeCustomDescription": "20s PDEF Down (+6s) (Mid -> High) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -27820,11 +28813,26 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PdefDown"
           }
         ],
         "description": "Student Council Windstrike+ (4 ATB)\n920% Phys. Wind Damage [Range: Single Enemy]\n20s PATK Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 50-100% HP]"
       },
       "ob10": {
+        "spadeCustomDescription": "25s PDEF Down (+8s) (Mid -> High) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -27839,11 +28847,26 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PdefDown"
           }
         ],
         "description": "Student Council Windstrike++ (4 ATB)\n1060% Phys. Wind Damage [Range: Single Enemy]\n25s PATK Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 50-100% HP]"
       },
       "ob1": {
+        "spadeCustomDescription": "20s PDEF Down (+6s) (Low -> Mid) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -27858,11 +28881,26 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PdefDown"
           }
         ],
         "description": "Student Council Windstrike (4 ATB)\n760% Phys. Wind Damage [Range: Single Enemy]\n20s PATK Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 50-100% HP]"
       },
       "ob0": {
+        "spadeCustomDescription": "15s PDEF Down (+5s) (Low -> Mid) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -27877,6 +28915,20 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "PdefDown"
           }
         ],
         "description": "Student Council Windstrike (4 ATB)\n660% Phys. Wind Damage [Range: Single Enemy]\n15s PATK Up (+5s) (Low -> Mid) [Range: All Allies] [Condition: Self 50-100% HP]"
@@ -28022,18 +29074,22 @@
         "slot1": "Boost MATK (All Allies)"
       },
       "ob6": {
+        "heartCustomDescription": "1350% Mag. Earth Damage [Range: Single Enemy]",
         "effects": [],
         "description": "Spiral Tremor+ (4 ATB)\n1080% Mag. Earth Damage [Range: Single Enemy]\n50s 30% Earth Weapon Boost (+16s) [Range: All Allies]\n50s 40% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]"
       },
       "ob10": {
+        "heartCustomDescription": "1680% Mag. Earth Damage [Range: Single Enemy]",
         "effects": [],
         "description": "Spiral Tremor++ (4 ATB)\n1340% Mag. Earth Damage [Range: Single Enemy]\n60s 35% Earth Weapon Boost (+20s) [Range: All Allies]\n60s 50% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]"
       },
       "ob1": {
+        "heartCustomDescription": "900% Mag. Earth Damage [Range: Single Enemy]",
         "effects": [],
         "description": "Spiral Tremor (4 ATB)\n720% Mag. Earth Damage [Range: Single Enemy]\n40s 25% Earth Weapon Boost (+13s) [Range: All Allies]\n40s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]"
       },
       "ob0": {
+        "heartCustomDescription": "750% Mag. Earth Damage [Range: Single Enemy]",
         "effects": [],
         "description": "Spiral Tremor (4 ATB)\n600% Mag. Earth Damage [Range: Single Enemy]\n30s 25% Earth Weapon Boost (+10s) [Range: All Allies]\n30s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]"
       },
@@ -28054,6 +29110,7 @@
         "slot1": "Boost ATK"
       },
       "ob6": {
+        "spadeCustomDescription": "60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -28087,6 +29144,7 @@
         "description": "Featherstrike+ (3 ATB)\n360% Phys. Non-elem. Damage [Range: Single Enemy]\n20s MDEF Down (+6s) (Mid) [Range: Single Enemy]\n30s Water Damage Up (+6s) (High) [Range: Self] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
+        "spadeCustomDescription": "60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -28120,6 +29178,7 @@
         "description": "Featherstrike++ (3 ATB)\n420% Phys. Non-elem. Damage [Range: Single Enemy]\n24s MDEF Down (+8s) (Mid) [Range: Single Enemy]\n35s Water Damage Up (+7s) (High) [Range: Self] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
+        "spadeCustomDescription": "60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -28153,6 +29212,7 @@
         "description": "Featherstrike (3 ATB)\n300% Phys. Non-elem. Damage [Range: Single Enemy]\n18s MDEF Down (+6s) (Mid) [Range: Single Enemy]\n28s Water Damage Up (+5s) (Mid) [Range: Self] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
+        "spadeCustomDescription": "60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -28202,18 +29262,22 @@
         "slot1": "Boost PATK (All Allies)"
       },
       "ob6": {
+        "heartCustomDescription": "1350% Phys. Fire Damage [Range: Single Enemy]",
         "effects": [],
         "description": "Planet's Flaming Fist+ (4 ATB)\n1080% Phys. Fire Damage [Range: Single Enemy]\n50s 40% PhysicalSingleVulnerable (+16s) [Range: Single Enemy]"
       },
       "ob10": {
+        "heartCustomDescription": "1680% Phys. Fire Damage [Range: Single Enemy]",
         "effects": [],
         "description": "Planet's Flaming Fist++ (4 ATB)\n1340% Phys. Fire Damage [Range: Single Enemy]\n60s 50% PhysicalSingleVulnerable (+20s) [Range: Single Enemy]\n+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]"
       },
       "ob1": {
+        "heartCustomDescription": "900% Phys. Fire Damage [Range: Single Enemy]",
         "effects": [],
         "description": "Planet's Flaming Fist (4 ATB)\n720% Phys. Fire Damage [Range: Single Enemy]\n40s 25% PhysicalSingleVulnerable (+13s) [Range: Single Enemy]"
       },
       "ob0": {
+        "heartCustomDescription": "750% Phys. Fire Damage [Range: Single Enemy]",
         "effects": [],
         "description": "Planet's Flaming Fist (4 ATB)\n600% Phys. Fire Damage [Range: Single Enemy]\n30s 25% PhysicalSingleVulnerable (+10s) [Range: Single Enemy]"
       },
@@ -28390,19 +29454,139 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
-        "effects": [],
+        "spadeCustomDescription": "25s MATK Down (+8s) (Mid -> High) [Range: Single Enemy]\n25s Fire Resistance Down (+8s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "MatkDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "FireResistDown"
+          }
+        ],
         "description": "Zangan Fist+ (4 ATB)\n1140% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
-        "effects": [],
+        "spadeCustomDescription": "30s MATK Down (+10s) (Mid -> High) [Range: Single Enemy]\n30s Fire Resistance Down (+10s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "MatkDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "FireResistDown"
+          }
+        ],
         "description": "Zangan Fist++ (4 ATB)\n1300% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
-        "effects": [],
+        "spadeCustomDescription": "25s MATK Down (+8s) (Low -> Mid) [Range: Single Enemy]\n25s Fire Resistance Down (+8s) (Low -> Mid) [Range: Single Enemy] [Condition: Self 50-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "MatkDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "FireResistDown"
+          }
+        ],
         "description": "Zangan Fist (4 ATB)\n780% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
-        "effects": [],
+        "spadeCustomDescription": "20s MATK Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s Fire Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy] [Condition: Self 50-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "MatkDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "FireResistDown"
+          }
+        ],
         "description": "Zangan Fist (4 ATB)\n650% Phys. Non-elem. Damage [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Guide Gloves",
@@ -28962,6 +30146,7 @@
         "slot1": "Boost MATK"
       },
       "ob6": {
+        "spadeCustomDescription": "20s PATK Down (+6s) (Mid -> High) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -28987,11 +30172,26 @@
               }
             },
             "type": "ExploitWeakness"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PatkDown"
           }
         ],
         "description": "Army of Strikes+ (4 ATB)\n1080% Mag. Ice Damage [Range: Single Enemy]\n20s Ice Resistance Down (+6s) (Mid -> High) [Range: Single Enemy]\n20s 25% Exploit Weakness (+6s) [Range: Self] [Condition: Self 70-100% HP]"
       },
       "ob10": {
+        "spadeCustomDescription": "25s PATK Down (+8s) (Mid -> High) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -29017,11 +30217,26 @@
               }
             },
             "type": "ExploitWeakness"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PatkDown"
           }
         ],
         "description": "Army of Strikes++ (4 ATB)\n1340% Mag. Ice Damage [Range: Single Enemy]\n25s Ice Resistance Down (+8s) (Mid -> High) [Range: Single Enemy]\n25s 30% Exploit Weakness (+8s) [Range: Self] [Condition: Self 70-100% HP]"
       },
       "ob1": {
+        "spadeCustomDescription": "20s PATK Down (+6s) (Low -> Mid) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -29047,11 +30262,26 @@
               }
             },
             "type": "ExploitWeakness"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PatkDown"
           }
         ],
         "description": "Army of Strikes (4 ATB)\n720% Mag. Ice Damage [Range: Single Enemy]\n20s Ice Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s 20% Exploit Weakness (+6s) [Range: Self] [Condition: Self 70-100% HP]"
       },
       "ob0": {
+        "spadeCustomDescription": "15s PATK Down (+5s) (Low -> Mid) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -29077,6 +30307,20 @@
               }
             },
             "type": "ExploitWeakness"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "PatkDown"
           }
         ],
         "description": "Army of Strikes (4 ATB)\n600% Mag. Ice Damage [Range: Single Enemy]\n15s Ice Resistance Down (+5s) (Low -> Mid) [Range: Single Enemy]\n15s 15% Exploit Weakness (+5s) [Range: Self] [Condition: Self 70-100% HP]"
@@ -29346,18 +30590,22 @@
         "slot1": "Boost Phys. Ability Pot."
       },
       "ob6": {
+        "heartCustomDescription": "1350% Phys. Ice Damage [Range: Single Enemy]",
         "effects": [],
         "description": "Freezing Drive+ (4 ATB)\n1080% Phys. Ice Damage [Range: Single Enemy]\n50s 40% Single Target Ice Damage Received Up (+16s) [Range: Single Enemy]"
       },
       "ob10": {
+        "heartCustomDescription": "1680% Phys. Ice Damage [Range: Single Enemy]",
         "effects": [],
         "description": "Freezing Drive++ (4 ATB)\n1340% Phys. Ice Damage [Range: Single Enemy]\n60s 50% Single Target Ice Damage Received Up (+20s) [Range: Single Enemy]"
       },
       "ob1": {
+        "heartCustomDescription": "900% Phys. Ice Damage [Range: Single Enemy]",
         "effects": [],
         "description": "Freezing Drive (4 ATB)\n720% Phys. Ice Damage [Range: Single Enemy]\n40s 25% Single Target Ice Damage Received Up (+13s) [Range: Single Enemy]"
       },
       "ob0": {
+        "heartCustomDescription": "750% Phys. Ice Damage [Range: Single Enemy]",
         "effects": [],
         "description": "Freezing Drive (4 ATB)\n600% Phys. Ice Damage [Range: Single Enemy]\n30s 25% Single Target Ice Damage Received Up (+10s) [Range: Single Enemy]"
       },
@@ -30406,18 +31654,22 @@
         "slot1": "Boost ATK"
       },
       "ob6": {
+        "spadeCustomDescription": "Enhance Debuffs (+10s) (Low -> Extra High) [Range: All Enemies]",
         "effects": [],
         "description": "Terminal Sentence+ (4 ATB)\n1080% Phys. Non-elem. Damage [Range: All Enemies]\n50s 30% Fire Weapon Boost (+16s) [Range: All Allies]\n50s 30% Earth Weapon Boost (+16s) [Range: All Allies]\n50s 30% Wind Weapon Boost (+16s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob10": {
+        "spadeCustomDescription": "Enhance Debuffs (+10s) (Low -> Extra High) [Range: All Enemies]",
         "effects": [],
         "description": "Terminal Sentence++ (4 ATB)\n1340% Phys. Non-elem. Damage [Range: All Enemies]\n60s 35% Fire Weapon Boost (+20s) [Range: All Allies]\n60s 35% Earth Weapon Boost (+20s) [Range: All Allies]\n60s 35% Wind Weapon Boost (+20s) [Range: All Allies]\n+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob1": {
+        "spadeCustomDescription": "Enhance Debuffs (+10s) (Low -> High) [Range: All Enemies]",
         "effects": [],
         "description": "Terminal Sentence (4 ATB)\n720% Phys. Non-elem. Damage [Range: All Enemies]\n40s 25% Fire Weapon Boost (+13s) [Range: All Allies]\n40s 25% Earth Weapon Boost (+13s) [Range: All Allies]\n40s 25% Wind Weapon Boost (+13s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob0": {
+        "spadeCustomDescription": "Enhance Debuffs (+10s) (Low -> High) [Range: All Enemies]",
         "effects": [],
         "description": "Terminal Sentence (4 ATB)\n600% Phys. Non-elem. Damage [Range: All Enemies]\n30s 25% Fire Weapon Boost (+10s) [Range: All Allies]\n30s 25% Earth Weapon Boost (+10s) [Range: All Allies]\n30s 25% Wind Weapon Boost (+10s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
       },
@@ -31918,18 +33170,22 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
+        "spadeCustomDescription": "25s Earth Damage Down (+8s) (High) [Range: Single Enemy]\nEnhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]",
         "effects": [],
         "description": "Stormround+ (4 ATB)\n340% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+4% Limit Break Gauge [Range: Self]"
       },
       "ob10": {
+        "spadeCustomDescription": "30s Earth Damage Down (+10s) (High) [Range: Single Enemy]\nEnhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]",
         "effects": [],
         "description": "Stormround++ (4 ATB)\n400% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+4% Limit Break Gauge [Range: Self]"
       },
       "ob1": {
+        "spadeCustomDescription": "25s Earth Damage Down (+8s) (Low -> Mid) [Range: Single Enemy]\nEnhance Buffs (+10s) (Low -> High) [Range: All Allies]",
         "effects": [],
         "description": "Stormround (4 ATB)\n260% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+3% Limit Break Gauge [Range: Self]"
       },
       "ob0": {
+        "spadeCustomDescription": "20s Earth Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]\nEnhance Buffs (+10s) (Low -> High) [Range: All Allies]",
         "effects": [],
         "description": "Stormround (4 ATB)\n220% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+3% Limit Break Gauge [Range: Self]"
       },
@@ -32550,6 +33806,7 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
+        "spadeCustomDescription": "35s 25% Physical Weapon Boost (+7s) [Range: Self] [Condition: Self 70-100% HP]",
         "effects": [
           {
             "value": {
@@ -32566,6 +33823,7 @@
         "description": "Raging Torrent+ (4 ATB)\n780% Phys. Water Damage [Range: Single Enemy]\n35s 30% Exploit Weakness (+7s) [Range: Self]"
       },
       "ob10": {
+        "spadeCustomDescription": "45s 30% Physical Weapon Boost (+9s) [Range: Self] [Condition: Self 70-100% HP]",
         "effects": [
           {
             "value": {
@@ -32582,6 +33840,7 @@
         "description": "Raging Torrent++ (4 ATB)\n940% Phys. Water Damage [Range: Single Enemy]\n45s 30% Exploit Weakness (+9s) [Range: Self]"
       },
       "ob1": {
+        "spadeCustomDescription": "35s 20% Physical Weapon Boost (+7s) [Range: Self] [Condition: Self 70-100% HP]",
         "effects": [
           {
             "value": {
@@ -32598,6 +33857,7 @@
         "description": "Raging Torrent (4 ATB)\n620% Phys. Water Damage [Range: Single Enemy]\n35s 20% Exploit Weakness (+7s) [Range: Self]"
       },
       "ob0": {
+        "spadeCustomDescription": "30s 20% Physical Weapon Boost (+6s) [Range: Self] [Condition: Self 70-100% HP]",
         "effects": [
           {
             "value": {
@@ -33126,19 +34386,83 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
-        "effects": [],
+        "spadeCustomDescription": "25s PDEF Down (+8s) (High) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PdefDown"
+          }
+        ],
         "description": "Earth Ninjutsu+ (4 ATB)\n710% Phys. Earth Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]"
       },
       "ob10": {
-        "effects": [],
+        "spadeCustomDescription": "30s PDEF Down (+10s) (High) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PdefDown"
+          }
+        ],
         "description": "Earth Ninjutsu++ (4 ATB)\n850% Phys. Earth Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]"
       },
       "ob1": {
-        "effects": [],
+        "spadeCustomDescription": "25s PDEF Down (+8s) (Low -> Mid) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PdefDown"
+          }
+        ],
         "description": "Earth Ninjutsu (4 ATB)\n580% Phys. Earth Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]"
       },
       "ob0": {
-        "effects": [],
+        "spadeCustomDescription": "20s PDEF Down (+6s) (Low -> Mid) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PdefDown"
+          }
+        ],
         "description": "Earth Ninjutsu (4 ATB)\n480% Phys. Earth Damage [Range: Single Enemy]\n1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]"
       },
       "name": "Hawkeye",
@@ -35386,6 +36710,7 @@
         "slot1": "Boost ATK (All Allies)"
       },
       "ob6": {
+        "spadeCustomDescription": "+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -35412,6 +36737,7 @@
         "description": "Planet's Lightwave+ (4 ATB)\n1080% Mag. Non-elem. Damage [Range: All Enemies]\n45s 30% Exploit Weakness (+15s) [Range: All Allies]\n45s Enliven (+15s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob10": {
+        "spadeCustomDescription": "+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -35438,6 +36764,7 @@
         "description": "Planet's Lightwave++ (4 ATB)\n1340% Mag. Non-elem. Damage [Range: All Enemies]\n60s 40% Exploit Weakness (+20s) [Range: All Allies]\n60s Enliven (+20s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob1": {
+        "spadeCustomDescription": "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -35464,6 +36791,7 @@
         "description": "Planet's Lightwave (4 ATB)\n720% Mag. Non-elem. Damage [Range: All Enemies]\n30s 20% Exploit Weakness (+10s) [Range: All Allies]\n30s Enliven (+10s) [Range: Self]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob0": {
+        "spadeCustomDescription": "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
         "effects": [
           {
             "value": {
@@ -35506,6 +36834,7 @@
         "slot1": "Boost MATK"
       },
       "ob6": {
+        "heartCustomDescription": "1350% Mag. Ice Damage [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -35539,6 +36868,7 @@
         "description": "Riven Glacier+ (4 ATB)\n1080% Mag. Ice Damage [Range: Single Enemy]\n20s Ice Resistance Down (+6s) (Mid -> High) [Range: Single Enemy]\n20s Ice Damage Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]\n10s Haste (+3s) [Range: All Allies] [Condition: First Use]"
       },
       "ob10": {
+        "heartCustomDescription": "1680% Mag. Ice Damage [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -35572,6 +36902,7 @@
         "description": "Riven Glacier++ (4 ATB)\n1340% Mag. Ice Damage [Range: Single Enemy]\n25s Ice Resistance Down (+8s) (Mid -> High) [Range: Single Enemy]\n25s Ice Damage Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]\n15s Haste (+5s) [Range: All Allies] [Condition: First Use]"
       },
       "ob1": {
+        "heartCustomDescription": "900% Mag. Ice Damage [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -35605,6 +36936,7 @@
         "description": "Riven Glacier (4 ATB)\n720% Mag. Ice Damage [Range: Single Enemy]\n20s Ice Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s Ice Damage Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]\n10s Haste (+3s) [Range: All Allies] [Condition: First Use]"
       },
       "ob0": {
+        "heartCustomDescription": "750% Mag. Ice Damage [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -35870,6 +37202,7 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
+        "spadeCustomDescription": "1.5x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]\n26s 35% Phys. Single Target Dmg. Received Up (+8s) [Range: Single Enemy] [Condition: Weakness Hit]",
         "effects": [
           {
             "value": {
@@ -35889,6 +37222,7 @@
         "description": "Freezing Cleave+ (4 ATB)\n550% Phys. Ice Damage [Range: Single Enemy]\n26s Ice Resistance Down (+8s) (High) [Range: Single Enemy] [Condition: Self 50-100% HP]"
       },
       "ob10": {
+        "spadeCustomDescription": "1.5x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]\n30s 40% Phys. Single Target Dmg. Received Up (+10s) [Range: Single Enemy] [Condition: Weakness Hit]",
         "effects": [
           {
             "value": {
@@ -35908,6 +37242,7 @@
         "description": "Freezing Cleave++ (4 ATB)\n620% Phys. Ice Damage [Range: Single Enemy]\n30s Ice Resistance Down (+10s) (High) [Range: Single Enemy] [Condition: Self 50-100% HP]"
       },
       "ob1": {
+        "spadeCustomDescription": "1.5x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]\n22s 25% Phys. Single Target Dmg. Received Up (+7s) [Range: Single Enemy] [Condition: Weakness Hit]",
         "effects": [
           {
             "value": {
@@ -35927,6 +37262,7 @@
         "description": "Freezing Cleave (4 ATB)\n450% Phys. Ice Damage [Range: Single Enemy]\n22s Ice Resistance Down (+7s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]"
       },
       "ob0": {
+        "spadeCustomDescription": "1.5x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]\n20s 25% Phys. Single Target Dmg. Received Up (+6s) [Range: Single Enemy] [Condition: Weakness Hit]",
         "effects": [
           {
             "value": {

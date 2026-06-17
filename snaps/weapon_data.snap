@@ -1225,10 +1225,11 @@
   [
     "Guide Gloves",
     {
-      "ownedOb": "OB0-10",
+      "ownedOb": "OB6-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-10"
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -1267,10 +1268,11 @@
   [
     "Hawkeye",
     {
-      "ownedOb": "OB0-10",
+      "ownedOb": "OB6-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-10"
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -1845,10 +1847,11 @@
   [
     "Max Ray",
     {
-      "ownedOb": "OB0-10",
+      "ownedOb": "OB6-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-10"
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -2025,10 +2028,11 @@
   [
     "Noble Parasol",
     {
-      "ownedOb": "OB0-10",
+      "ownedOb": "OB6-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-10"
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -2375,10 +2379,11 @@
   [
     "Rest in Peace",
     {
-      "ownedOb": "OB0-10",
+      "ownedOb": "OB6-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-10"
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -2665,6 +2670,17 @@
         "OB0-5",
         "OB6-9",
         "OB10"
+      ]
+    }
+  ],
+  [
+    "Shinra Blade: Model I",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -3004,6 +3020,17 @@
         "OB0-5",
         "OB6-9",
         "OB10"
+      ]
+    }
+  ],
+  [
+    "Striking Staff",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],

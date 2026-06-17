@@ -434,10 +434,10 @@ mkWeapon id character =
       , source: nes @"Gacha"
       , image: nes @" "
       , atbCost: 3
-      , ob0: { description: nes @" ", effects: [] }
-      , ob1: { description: nes @" ", effects: [] }
-      , ob6: { description: nes @" ", effects: [] }
-      , ob10: { description: nes @" ", effects: [] }
+      , ob0: { description: nes @" ", heartCustomDescription: Nothing, spadeCustomDescription: Nothing, effects: [] }
+      , ob1: { description: nes @" ", heartCustomDescription: Nothing, spadeCustomDescription: Nothing, effects: [] }
+      , ob6: { description: nes @" ", heartCustomDescription: Nothing, spadeCustomDescription: Nothing, effects: [] }
+      , ob10: { description: nes @" ", heartCustomDescription: Nothing, spadeCustomDescription: Nothing, effects: [] }
       , commandAbilitySigil: Nothing
       , sAbilities: { slot1: nes @"MATK Boost I", slot2: nes @"MATK Boost I", slot3: nes @"▲ Sigil Boost I" }
       , rAbilities: { slot1: nes @"Boost MATK", slot2: nes @"Boost Earth Pot." }

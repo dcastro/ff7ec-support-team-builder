@@ -2,8 +2,54 @@
   [
     {
       "weapons": [
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Kamura Wand",
         "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Hardedge",
+        "Mystic Sword"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
       ],
       "character": "Aerith"
     },
@@ -146,6 +192,38 @@
   [
     {
       "weapons": [
+        "Shinra Blade: Model I",
+        "Tempest"
+      ],
+      "character": "Sephiroth"
+    },
+    {
+      "weapons": [
+        "Surfer Blade",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Junk Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Leather Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Electrocannon",
         "Sharkslayer"
       ],
@@ -205,6 +283,102 @@
         "Overture"
       ],
       "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Kuja's Spirit Blade",
+        "Overture"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Junk Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Lightning's Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Junk Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Mystic Sword",
+        "Umbralschwert"
+      ],
+      "character": "Cloud"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Lifeguard Wraps"
+      ],
+      "character": "Tifa"
     }
   ],
   [
@@ -276,6 +450,22 @@
       "weapons": [
         "Desperado Glaive",
         "Pumpkin Lamppost"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Pumpkin Lamppost",
+        "Rest in Peace"
       ],
       "character": "Glenn"
     },
@@ -386,10 +576,378 @@
   [
     {
       "weapons": [
+        "Gambanteinn",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Mermaid Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Egg Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Fairy Tale",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Festive Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gorgeous Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Lightning's Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Snowflake",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Supreme Sage's Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Microlaser",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Brilliant Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Headphones",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Pilot's Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Pirate Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kuja's Spirit Blade",
+        "Tempest"
+      ],
+      "character": "Sephiroth"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Lifeguard Wraps"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Leather Gloves"
+      ],
+      "character": "Tifa"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Stalwart Integrity",
         "Type-91 Two-Hander"
       ],
       "character": "Angeal"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Electrocannon",
+        "Max Ray"
+      ],
+      "character": "Barret"
     },
     {
       "weapons": [
@@ -466,8 +1024,56 @@
   [
     {
       "weapons": [
-        "Class President's Bracelet",
-        "Leather Gloves"
+        "Immaculate Blade",
+        "Infiltration Sword"
+      ],
+      "character": "Sephiroth"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Immaculate Blade",
+        "Northern Lights"
+      ],
+      "character": "Sephiroth"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Immaculate Blade",
+        "Shinra Blade: Model I"
+      ],
+      "character": "Sephiroth"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Demon's Impetus",
+        "Lightning's Gloves"
       ],
       "character": "Tifa"
     },
@@ -514,10 +1120,26 @@
   [
     {
       "weapons": [
-        "Pole Axe",
-        "Scimitar"
+        "Crystal Sword",
+        "Umbralschwert"
       ],
-      "character": "Cid"
+      "character": "Cloud"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Lightning's Gloves"
+      ],
+      "character": "Tifa"
     },
     {
       "weapons": [
@@ -546,6 +1168,54 @@
   [
     {
       "weapons": [
+        "Pole Axe",
+        "Scimitar"
+      ],
+      "character": "Cid"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Immaculate Blade",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Immaculate Blade",
+        "Pandemonic Sword"
+      ],
+      "character": "Sephiroth"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Kamura Wand",
         "Staff of the Possessed"
       ],
@@ -562,8 +1232,40 @@
   [
     {
       "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Battle Trumpet",
+        "Silver Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Kamura Wand",
         "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Glavenus Sword",
+        "Mystic Sword"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
       ],
       "character": "Aerith"
     },
@@ -610,6 +1312,22 @@
   [
     {
       "weapons": [
+        "Floral Wand",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Mystic Sword",
+        "Umbralschwert"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Kamura Wand",
         "Sun Umbrella"
       ],
@@ -642,8 +1360,40 @@
   [
     {
       "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Greatsword (A)",
+        "Type-91 Two-Hander"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Kamura Wand",
         "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Electrocannon",
+        "W Machine"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
       ],
       "character": "Aerith"
     },
@@ -802,6 +1552,22 @@
   [
     {
       "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Mystic Sword",
+        "Sleek Saber"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Full Metal Staff",
         "Staff of the Possessed"
       ],
@@ -893,6 +1659,22 @@
         "Umbralschwert"
       ],
       "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Kuja's Spirit Blade",
+        "Tempest"
+      ],
+      "character": "Sephiroth"
     }
   ],
   [
@@ -1154,6 +1936,54 @@
   [
     {
       "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Kuja's Spirit Blade",
+        "Radiant Edge"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Full Metal Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Tiger Fangs"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Battle Trumpet",
+        "Green Megaphone"
+      ],
+      "character": "Cait Sith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Lifeguard Wraps"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Noblesse Rod",
         "Staff of the Possessed"
       ],
@@ -1267,6 +2097,22 @@
     {
       "weapons": [
         "Desperado Glaive",
+        "Revenant Mother's Glaive"
+      ],
+      "character": "Glenn"
+    },
+    {
+      "weapons": [
+        "Surfer Blade",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rest in Peace",
         "Revenant Mother's Glaive"
       ],
       "character": "Glenn"
@@ -1417,10 +2263,10 @@
     },
     {
       "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
+        "Immaculate Blade",
+        "Kuja's Spirit Blade"
       ],
-      "character": "Tifa"
+      "character": "Sephiroth"
     }
   ],
   [
@@ -1481,6 +2327,22 @@
     },
     {
       "weapons": [
+        "Immaculate Blade",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Sun Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Class President's Bracelet",
         "Shining Gloves"
       ],
@@ -1506,6 +2368,22 @@
   [
     {
       "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Captain's Spear",
+        "Pole Axe"
+      ],
+      "character": "Cid"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Pole Axe",
         "Scimitar"
       ],
@@ -1517,6 +2395,22 @@
         "Silver Collar"
       ],
       "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Immaculate Blade",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
     }
   ],
   [
@@ -1556,6 +2450,22 @@
       "weapons": [
         "Kamura Wand",
         "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Folding Ruler",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
       ],
       "character": "Aerith"
     },
@@ -1635,7 +2545,167 @@
     {
       "weapons": [
         "Kamura Wand",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Full Metal Staff",
         "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Amarant's Claws",
+        "Class President's Bracelet"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Full Metal Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Guide Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Full Metal Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Noblesse Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Tiger Fangs"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Magatsuchi Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Leather Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Silver Collar",
+        "Steward Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Tiger Fangs"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Junk Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Steward Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Electrocannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Lifeguard Wraps"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Járngreipr",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
       ],
       "character": "Aerith"
     },
@@ -1652,6 +2722,22 @@
       "weapons": [
         "Kamura Wand",
         "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Shining Gloves",
+        "Turks' Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
       ],
       "character": "Aerith"
     },
@@ -1684,6 +2770,22 @@
       "weapons": [
         "Full Metal Staff",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Full Metal Staff",
+        "Striking Staff"
       ],
       "character": "Aerith"
     },
@@ -1801,6 +2903,22 @@
     },
     {
       "weapons": [
+        "Immaculate Blade",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Dawn's Prayers",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Class President's Bracelet",
         "Shining Gloves"
       ],
@@ -1881,6 +2999,22 @@
     },
     {
       "weapons": [
+        "Immaculate Blade",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Iron Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
         "Class President's Bracelet",
         "Shining Gloves"
       ],
@@ -1965,6 +3099,390 @@
         "Overture"
       ],
       "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gambanteinn",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Bahamut Rod",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Crimson Staff",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Egg Staff",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Fairy Tale",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Festive Rod",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gorgeous Staff",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Lightning's Rod",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Sea Dragon Staff",
+        "Snowflake"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Sea Dragon Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Noblesse Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Amarant's Claws",
+        "Class President's Bracelet"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Noblesse Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Guide Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Noblesse Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Magatsuchi Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Lightning's Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Magatsuchi Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Sea Dragon Staff",
+        "Supreme Sage's Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Sea Dragon Staff",
+        "Terra's Rod"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Sea Dragon Staff",
+        "Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Silver Collar",
+        "Steward Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Amarant's Claws",
+        "Class President's Bracelet"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Silver Collar",
+        "Steward Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Guide Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Silver Collar",
+        "Steward Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Shining Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Mythril Slasher",
+        "Type-91 Two-Hander"
+      ],
+      "character": "Angeal"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Lifeguard Wraps"
+      ],
+      "character": "Tifa"
     }
   ],
   [
@@ -2116,6 +3634,22 @@
       "weapons": [
         "Full Metal Staff",
         "Rousing Wizer Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Noblesse Rod",
+        "Striking Staff"
       ],
       "character": "Aerith"
     },
@@ -2274,6 +3808,22 @@
   [
     {
       "weapons": [
+        "Class President's Bracelet",
+        "Steward Gloves"
+      ],
+      "character": "Tifa"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Gambanteinn",
         "Noblesse Rod"
       ],
@@ -2402,8 +3952,8 @@
   [
     {
       "weapons": [
-        "Class President's Bracelet",
-        "Steward Gloves"
+        "Lightning's Gloves",
+        "Oven Mitts"
       ],
       "character": "Tifa"
     },
@@ -2452,6 +4002,22 @@
       "weapons": [
         "Floral Wand",
         "Kamura Wand"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Battle Trumpet",
+        "Green Megaphone"
+      ],
+      "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Striking Staff"
       ],
       "character": "Aerith"
     },
@@ -2723,6 +4289,22 @@
     {
       "weapons": [
         "Floral Wand",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Electrocannon",
+        "Sharkslayer"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
         "Staff of the Possessed"
       ],
       "character": "Aerith"
@@ -2733,6 +4315,22 @@
         "Type-91 Two-Hander"
       ],
       "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Electrocannon",
+        "Max Ray"
+      ],
+      "character": "Barret"
     }
   ],
   [
@@ -2813,6 +4411,22 @@
         "Type-91 Two-Hander"
       ],
       "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Sun Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Electrocannon",
+        "Max Ray"
+      ],
+      "character": "Barret"
     }
   ],
   [
@@ -2950,6 +4564,22 @@
         "Type-91 Two-Hander"
       ],
       "character": "Angeal"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Electrocannon",
+        "Max Ray"
+      ],
+      "character": "Barret"
     },
     {
       "weapons": [
@@ -3129,6 +4759,22 @@
     },
     {
       "weapons": [
+        "Electrocannon",
+        "Max Ray"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Dawn's Prayers",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Battle Trumpet",
         "Cool Cat's Megaphone"
       ],
@@ -3197,6 +4843,22 @@
         "Sharkslayer"
       ],
       "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Mythril Slasher",
+        "Type-91 Two-Hander"
+      ],
+      "character": "Angeal"
     }
   ],
   [
@@ -3314,6 +4976,22 @@
   [
     {
       "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Electrocannon",
+        "Quad Gatling Gun"
+      ],
+      "character": "Barret"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Gambanteinn",
         "Sea Dragon Staff"
       ],
@@ -3382,6 +5060,22 @@
         "Type-91 Two-Hander"
       ],
       "character": "Angeal"
+    },
+    {
+      "weapons": [
+        "Iron Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Electrocannon",
+        "Max Ray"
+      ],
+      "character": "Barret"
     },
     {
       "weapons": [
@@ -3625,10 +5319,10 @@
     },
     {
       "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
+        "Immaculate Blade",
+        "Kuja's Spirit Blade"
       ],
-      "character": "Tifa"
+      "character": "Sephiroth"
     }
   ],
   [
@@ -3869,6 +5563,38 @@
         "Radiant Edge"
       ],
       "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Full Metal Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Striped Moogle Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Sea Dragon Greatsword",
+        "Type-91 Two-Hander"
+      ],
+      "character": "Angeal"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Lifeguard Wraps"
+      ],
+      "character": "Tifa"
     }
   ],
   [
@@ -4109,6 +5835,54 @@
         "Kuja's Spirit Blade"
       ],
       "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Noblesse Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Striped Moogle Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Magatsuchi Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Steward Gloves"
+      ],
+      "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Silver Collar",
+        "Steward Collar"
+      ],
+      "character": "Red XIII"
+    },
+    {
+      "weapons": [
+        "Class President's Bracelet",
+        "Striped Moogle Gloves"
+      ],
+      "character": "Tifa"
     }
   ],
   [
@@ -4403,6 +6177,22 @@
     {
       "weapons": [
         "Floral Wand",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Sea Dragon Greatsword",
+        "Type-91 Two-Hander"
+      ],
+      "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
         "Sea Dragon Staff"
       ],
       "character": "Aerith"
@@ -4413,6 +6203,22 @@
         "Type-91 Two-Hander"
       ],
       "character": "Angeal"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Electrocannon",
+        "Max Ray"
+      ],
+      "character": "Barret"
     }
   ],
   [

@@ -5,6 +5,7 @@ import Prelude
 
 import Core.Database.UserState.VLatest (FromOb(..), ObRange(..), ToOb(..))
 import Core.Display (display)
+import Data.Array as Arr
 import Data.Maybe (Maybe(..))
 import Data.String.NonEmpty (NonEmptyString)
 import Data.String.NonEmpty as NES
@@ -131,12 +132,16 @@ render { weapon, selectedOb } =
     ]
 
 renderObLevel :: forall w i. ObLevel -> HH.HTML w i
-renderObLevel { description } =
+renderObLevel { description, heartCustomDescription, spadeCustomDescription } =
   HH.div_ $
-    description
-      # NES.toString
-      # String.lines
-      <#> \line -> HH.p [] [ HH.text line ]
+    renderLines description
+      <> renderCustom "Heart Custom" heartCustomDescription
+      <> renderCustom "Spade Custom" spadeCustomDescription
+  where
+  renderLines desc = desc # NES.toString # String.lines <#> \line -> HH.p [] [ HH.text line ]
+  renderCustom label = case _ of
+    Nothing -> []
+    Just desc -> Arr.cons (HH.p [ classes' "title is-6 mb-1 mt-3" ] [ HH.text label ]) (renderLines desc)
 
 renderAbility :: forall w i. NonEmptyString -> HH.HTML w i
 renderAbility ability =

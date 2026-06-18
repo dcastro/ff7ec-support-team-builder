@@ -83,4 +83,7 @@ regen-weapons:
     	"https://sheets.googleapis.com/v4/spreadsheets/1evoNzTA9veDRTvYJEMe-9F81QQ-CxUWN4mrd93kn2W4/values/Weapons!A%3AZZ?key=${FF7EC_GOOGLE_SHEETS_KEY}" \
     	--header 'Accept: application/json' \
     	--compressed > resources/weapons.json
+    # update .snap files
+    just test
+    # update unsupported_effects.md
     just check-effects

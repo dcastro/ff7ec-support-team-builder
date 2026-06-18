@@ -13,6 +13,7 @@ import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Set (Set)
 import Data.Set as Set
 import Data.String as String
+import Data.String.Utils as StringUtils
 import Data.String.CodeUnits as CU
 import Data.Tuple (Tuple(..))
 import Effect (Effect)
@@ -113,7 +114,7 @@ main = do
                         Nothing -> m'
                         Just cell ->
                           cell
-                            # String.split (String.Pattern "\n")
+                            # StringUtils.lines
                             <#> String.trim
                             # foldlWithIndex
                                 ( \lineIdx m'' line ->

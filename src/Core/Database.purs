@@ -285,13 +285,12 @@ createDbState newWeapons existingUserState = do
     newDb
     newWeapons
 
-  -- If new weapons were added to the db, we need to create "empty states" for them.
   let
     (finalUserState :: UserState) =
       F.foldl
         ( \userState weaponData ->
             case Map.lookup weaponData.weapon.name userState.weapons of
-              Just _ -> userState
+              -- If new weapons were added to the db, we need to create "empty states" for them.
               Nothing -> do
                 let
                   updatedUserStateWeapons =
@@ -301,6 +300,31 @@ createDbState newWeapons existingUserState = do
                       }
                       userState.weapons
                 userState { weapons = updatedUserStateWeapons }
+              Just existingWeaponState -> do
+                -- @(ref:owned-ob-invariant)
+                --
+                -- Enforce the `UserStateWeapon.ownedOb` invariant: it must match one of
+                -- the items in the corresponding `WeaponData.distinctObs`.
+                -- If it doesn't, reset it.
+                --
+                -- This can happen when a new weapon with new effects is added to the sheet
+                -- (and we set `distinctObs` to [OB0-10] and `ownedOb` to OB0-10),
+                -- and then later we add support for that new effect,
+                -- which changes the `distinctObs` for that weapon to e.g. [OB0-5, OB6-10].
+                -- In that scenario, we have to manually correct the `ownedOb` to OB6-10.
+                let
+                  ownedObIsValid =
+                    case existingWeaponState.ownedOb of
+                      Just ownedOb -> NAR.elem ownedOb weaponData.distinctObs
+                      Nothing -> true
+                if ownedObIsValid then userState
+                else do
+                  let
+                    updatedUserStateWeapons =
+                      Map.insert weaponData.weapon.name
+                        (existingWeaponState { ownedOb = Just $ NAR.last weaponData.distinctObs })
+                        userState.weapons
+                  userState { weapons = updatedUserStateWeapons }
         )
         existingUserState
         finalDb.allWeapons

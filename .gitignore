@@ -23,3 +23,7 @@ staging/*
 tmp/*
 
 tsconfig.tsbuildinfo
+
+# Local env overrides (e.g. private dev API key). `.env` and `.env.example` stay tracked.
+.env.local
+.env.*.local

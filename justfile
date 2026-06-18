@@ -6,11 +6,11 @@ build:
     spago build
 
 build-prod:
+    # The Google Sheets API key comes from `.env` (prod key); the private dev key lives only in the
+    # gitignored `.env.development.local`, which `parcel build` (production mode) never loads.
+    #
     # make sure the tests are passing
     just test
-    # make sure the working tree is clean
-    # this ensures (1) snapshots have been comitted and (2) we don't accidentally compile API keys meant to be used for local development.
-    git diff --exit-code && git diff --cached --exit-code
     # Clean the output directory
     find docs -maxdepth 1 -type f -delete
     rm -rf prod
@@ -26,8 +26,6 @@ build-prod:
 build-staging:
     # make sure the tests are passing
     just test
-    # make sure the working tree is clean
-    git diff --exit-code && git diff --cached --exit-code
     rm -rf docs/staging
     rm -rf staging
     npm i

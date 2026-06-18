@@ -9,7 +9,17 @@ export const _getSheet = range => async () => {
 export function _loadGoogleApi() {
   return new Promise(function(resolve, reject) {
     gapi.load('client', async () => {
-      await gapiLogin("AIzaSyARUnvuw1DvqJRISnPyOLEkqPvra4MF6fQ");
+      // The key is injected at build time by Parcel from the appropriate .env file
+      // (`.env.development.local` for `just run`, `.env` for `just build-prod`).
+      const apiKey = process.env.FF7EC_GOOGLE_API_KEY;
+      if (!apiKey) {
+        reject(new Error(
+          "FF7EC_GOOGLE_API_KEY is not set. For local dev, copy .env.example to " +
+          ".env.development.local and add your dev key."
+        ));
+        return;
+      }
+      await gapiLogin(apiKey);
       resolve();
     });
   });

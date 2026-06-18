@@ -62,8 +62,11 @@ parseWeapon rowIndex row = do
   sAbility2 <- getCell 24
   sAbility3 <- getCell 25
 
+  let diamondCustomDescription = getOptionalCell 34
+
   {-
     NOTE: we only parse the text for R.Abilities so we can display them in the UI.
+    NOTE: we only parse the text for Diamond Custom Abilities so we can display them in the UI.
     NOTE: for S.Abilities, we only care about sigil boosts.
       * `parseSAbilitySigilBoost` is used in `Database.groupsForWeapon`
       * @(ref:parse-sigil-boosts)
@@ -84,6 +87,7 @@ parseWeapon rowIndex row = do
     , commandAbilitySigil
     , sAbilities: { slot1: sAbility1, slot2: sAbility2, slot3: sAbility3 }
     , rAbilities: { slot1: rAbility1, slot2: rAbility2 }
+    , diamondCustomDescription
     }
   where
   rowId = rowIndex + 1

@@ -62,6 +62,7 @@ type Weapon =
   , commandAbilitySigil :: Maybe Sigil
   , sAbilities :: SAbilities
   , rAbilities :: RAbilities
+  , diamondCustomDescription :: Maybe NonEmptyString
   }
 
 type SAbilities =

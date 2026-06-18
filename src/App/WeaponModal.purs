@@ -121,10 +121,17 @@ render { weapon, selectedOb } =
                     ]
                 , HH.div [ classes' "column " ]
                     [ HH.div_
-                        [ HH.p [ classes' "title is-4 mb-1" ] [ HH.text "R. Abilities" ]
-                        , renderAbility weapon.rAbilities.slot1
-                        , renderAbility weapon.rAbilities.slot2
-                        ]
+                        ( [ HH.p [ classes' "title is-4 mb-1" ] [ HH.text "R. Abilities" ]
+                          , renderAbility weapon.rAbilities.slot1
+                          , renderAbility weapon.rAbilities.slot2
+                          ] <>
+                          case weapon.diamondCustomDescription of
+                            Nothing -> []
+                            Just desc ->
+                              [ HH.p [ classes' "title is-6 mb-1 mt-3" ] [ HH.text "Diamond Custom" ]
+                              , renderAbility desc
+                              ]
+                        )
                     ]
                 ]
             ]

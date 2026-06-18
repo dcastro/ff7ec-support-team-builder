@@ -817,6 +817,7 @@
       },
       "name": "Festive Rod",
       "image": "https://i.imgur.com/tts721Y.png",
+      "diamondCustomDescription": "Stream Phase Amp. Healing",
       "character": "Aerith",
       "atbCost": 5
     },
@@ -1237,6 +1238,7 @@
       },
       "name": "Gambanteinn",
       "image": "https://i.imgur.com/Oc0JlfT.png",
+      "diamondCustomDescription": "Stream Phase Amp. Healing",
       "character": "Aerith",
       "atbCost": 5
     },
@@ -1453,6 +1455,7 @@
       },
       "name": "Gorgeous Staff",
       "image": "https://i.imgur.com/7Bvn1qU.png",
+      "diamondCustomDescription": "Ultimate Fire Interruption (All Allies)",
       "character": "Aerith",
       "atbCost": 4
     },
@@ -1905,6 +1908,7 @@
       },
       "name": "Lightning's Rod",
       "image": "https://i.imgur.com/CmJTzKI.png",
+      "diamondCustomDescription": "Ultimate Magic Interruption (All Allies)",
       "character": "Aerith",
       "atbCost": 4
     },
@@ -3117,6 +3121,7 @@
       },
       "name": "Striking Staff",
       "image": "https://i.imgur.com/Cs9meyf.png",
+      "diamondCustomDescription": "Stream Phase Amp. Healing",
       "character": "Aerith",
       "atbCost": 4
     },
@@ -3441,6 +3446,7 @@
       },
       "name": "Team Leader's Bamboo Sword",
       "image": "https://i.imgur.com/hjFqyS2.png",
+      "diamondCustomDescription": "Stream Phase Amp. Healing",
       "character": "Aerith",
       "atbCost": 4
     },
@@ -3741,6 +3747,7 @@
       },
       "name": "Umbrella",
       "image": "https://i.imgur.com/a59TGEP.png",
+      "diamondCustomDescription": "Boost Healing Pot. (Self) & Water Mastery (All Allies)",
       "character": "Aerith",
       "atbCost": 4
     },
@@ -3981,6 +3988,7 @@
       },
       "name": "Festive Blade",
       "image": "https://i.imgur.com/bHG2YjP.png",
+      "diamondCustomDescription": "Ultimate Lightning Interruption (All Allies)",
       "character": "Angeal",
       "atbCost": 4
     },
@@ -4201,6 +4209,7 @@
       },
       "name": "Gargantuan Monolith",
       "image": "https://i.imgur.com/stkUxAN.png",
+      "diamondCustomDescription": "Stream Phase Mag. Resist. Boost",
       "character": "Angeal",
       "atbCost": 4
     },
@@ -5389,6 +5398,7 @@
       },
       "name": "Orchard Shovel",
       "image": "https://i.imgur.com/IsYueMs.png",
+      "diamondCustomDescription": "Boost PDEF (Self) & Wind Mastery (All Allies)",
       "character": "Angeal",
       "atbCost": 4
     },
@@ -7150,6 +7160,7 @@
       },
       "name": "Fafnir Rifle",
       "image": "https://i.imgur.com/mELRgLv.png",
+      "diamondCustomDescription": "Stream Phase Phys. Resist. Boost",
       "character": "Barret",
       "atbCost": 4
     },
@@ -7783,6 +7794,7 @@
       },
       "name": "Max Ray",
       "image": "https://i.imgur.com/qZHroeX.png",
+      "diamondCustomDescription": "Stream Phase Phys. Resist. Boost",
       "commandAbilitySigil": "SigilDiamond",
       "character": "Barret",
       "atbCost": 4
@@ -8148,6 +8160,7 @@
       },
       "name": "Rocket Punch",
       "image": "https://i.imgur.com/bxsEIZi.png",
+      "diamondCustomDescription": "Boost PDEF (Self) & Wind Mastery (All Allies)",
       "character": "Barret",
       "atbCost": 4
     },
@@ -8741,6 +8754,7 @@
       },
       "name": "Teacher's Paper Fan",
       "image": "https://i.imgur.com/FYAapfR.png",
+      "diamondCustomDescription": "Stream Phase Phys. Resist. Boost",
       "character": "Barret",
       "atbCost": 3
     },
@@ -9073,6 +9087,7 @@
       },
       "name": "Battle Trumpet",
       "image": "https://i.imgur.com/78BTB37.png",
+      "diamondCustomDescription": "Boost Summon Ability Pot. (All Allies)",
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -11065,6 +11080,7 @@
       },
       "name": "Trumpet Shell",
       "image": "https://i.imgur.com/g7KyOgg.png",
+      "diamondCustomDescription": "Buff & Debuff Extension (Self) & Fire Mastery (All Allies)",
       "character": "Cait Sith",
       "atbCost": 4
     },
@@ -11509,6 +11525,7 @@
       },
       "name": "Dragoon Lance",
       "image": "https://i.imgur.com/RTcvcMZ.png",
+      "diamondCustomDescription": "Boost Summon Ability Pot. (All Allies)",
       "character": "Cid",
       "atbCost": 4
     },
@@ -11754,6 +11771,7 @@
       },
       "name": "Grinding Gear",
       "image": "https://i.imgur.com/VCsa3NL.png",
+      "diamondCustomDescription": "Boost Summon Ability Pot. (All Allies)",
       "character": "Cid",
       "atbCost": 4
     },
@@ -11862,6 +11880,7 @@
       },
       "name": "Mop",
       "image": "https://i.imgur.com/ri1NRRr.png",
+      "diamondCustomDescription": "Buff & Debuff Extension (Self) & Wind Mastery (All Allies)",
       "character": "Cid",
       "atbCost": 4
     },
@@ -13447,6 +13466,7 @@
       },
       "name": "Chevron Blade",
       "image": "https://i.imgur.com/4OSxgtO.png",
+      "diamondCustomDescription": "Ultimate Wind Interruption (All Allies)",
       "character": "Cloud",
       "atbCost": 4
     },
@@ -13575,6 +13595,7 @@
       },
       "name": "Crimson Blitz",
       "image": "https://i.imgur.com/SNvCMgX.png",
+      "diamondCustomDescription": "Ultimate Ice Interruption (All Allies)",
       "character": "Cloud",
       "atbCost": 3
     },
@@ -14911,6 +14932,7 @@
       },
       "name": "Mystic Sword",
       "image": "https://i.imgur.com/FLut8JI.png",
+      "diamondCustomDescription": "Quintessential Interruption (All Allies)",
       "character": "Cloud",
       "atbCost": 3
     },
@@ -14975,6 +14997,7 @@
       },
       "name": "Nail Bat",
       "image": "https://i.imgur.com/LXlF0Ik.png",
+      "diamondCustomDescription": "Boost ATB (Self) & Ice Mastery (All Allies)",
       "character": "Cloud",
       "atbCost": 5
     },
@@ -15147,6 +15170,7 @@
       },
       "name": "Noble Parasol",
       "image": "https://i.imgur.com/AFi0joe.png",
+      "diamondCustomDescription": "Quintessential Interruption (All Allies)",
       "character": "Cloud",
       "atbCost": 4
     },
@@ -15599,6 +15623,7 @@
       },
       "name": "Umbralschwert",
       "image": "https://i.imgur.com/6IJGCwc.png",
+      "diamondCustomDescription": "Ultimate Water Interruption (All Allies)",
       "character": "Cloud",
       "atbCost": 4
     },
@@ -16151,6 +16176,7 @@
       },
       "name": "Garish Greatblade",
       "image": "https://i.imgur.com/coVu9gI.png",
+      "diamondCustomDescription": "Stream Phase Veil Boost (All Allies)",
       "character": "Glenn",
       "atbCost": 4
     },
@@ -17131,6 +17157,7 @@
       },
       "name": "Rest in Peace",
       "image": "https://i.imgur.com/EZuy4dG.png",
+      "diamondCustomDescription": "Stream Phase Phys. Resist. Boost",
       "commandAbilitySigil": "SigilDiamond",
       "character": "Glenn",
       "atbCost": 4
@@ -17720,6 +17747,7 @@
       },
       "name": "Snow's Bardiche",
       "image": "https://i.imgur.com/R4mHQUI.png",
+      "diamondCustomDescription": "Stream Phase Mag. Resist. Boost",
       "character": "Glenn",
       "atbCost": 4
     },
@@ -17752,6 +17780,7 @@
       },
       "name": "Squeaky Hammer",
       "image": "https://i.imgur.com/jchyfTy.png",
+      "diamondCustomDescription": "Boost PDEF (Self) & Lightning Mastery (All Allies)",
       "character": "Glenn",
       "atbCost": 4
     },
@@ -18783,6 +18812,7 @@
       },
       "name": "Mad Minute",
       "image": "https://i.imgur.com/45eZllP.png",
+      "diamondCustomDescription": "Boost Summon Ability Pot. (All Allies)",
       "character": "Lucia",
       "atbCost": 4
     },
@@ -19536,6 +19566,7 @@
       },
       "name": "Rubber Band Gun",
       "image": "https://i.imgur.com/Tl40n2s.png",
+      "diamondCustomDescription": "Buff & Debuff Extension (Self) & Earth Mastery (All Allies)",
       "character": "Lucia",
       "atbCost": 4
     },
@@ -21229,6 +21260,7 @@
       },
       "name": "Foam Sword",
       "image": "https://i.imgur.com/3nwQ0v3.png",
+      "diamondCustomDescription": "Boost Healing Pot. (Self) & Water Mastery (All Allies)",
       "character": "Matt",
       "atbCost": 4
     },
@@ -21866,6 +21898,7 @@
       },
       "name": "Nautilus Spiral",
       "image": "https://i.imgur.com/dBCxFk0.png",
+      "diamondCustomDescription": "Stream Phase Amp. Healing",
       "commandAbilitySigil": "SigilDiamond",
       "character": "Matt",
       "atbCost": 3
@@ -22051,6 +22084,7 @@
       },
       "name": "Physician's Scalpel",
       "image": "https://i.imgur.com/8CZgwGO.png",
+      "diamondCustomDescription": "Stream Phase Amp. Healing",
       "character": "Matt",
       "atbCost": 3
     },
@@ -22687,6 +22721,7 @@
       },
       "name": "Brilliant Collar",
       "image": "https://i.imgur.com/eUjI7gT.png",
+      "diamondCustomDescription": "Stream Phase Amp. Healing",
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -23175,6 +23210,7 @@
       },
       "name": "Headphones",
       "image": "https://i.imgur.com/x8iNY0F.png",
+      "diamondCustomDescription": "Boost Healing Pot. (Self) & Fire Mastery (All Allies)",
       "character": "Red XIII",
       "atbCost": 4
     },
@@ -25264,6 +25300,7 @@
       },
       "name": "Cerulean Sky",
       "image": "https://i.imgur.com/QqZsFtz.png",
+      "diamondCustomDescription": "Ultimate Wind Interruption (All Allies)",
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -25820,6 +25857,7 @@
       },
       "name": "Immaculate Blade",
       "image": "https://i.imgur.com/HOu27Ka.png",
+      "diamondCustomDescription": "Ultimate Earth Interruption (All Allies)",
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -25960,6 +25998,7 @@
       },
       "name": "Infiltration Sword",
       "image": "https://i.imgur.com/EEQfARH.png",
+      "diamondCustomDescription": "Ultimate Physical Interruption (All Allies)",
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -26620,6 +26659,7 @@
       },
       "name": "Overture",
       "image": "https://i.imgur.com/ObGuEAJ.png",
+      "diamondCustomDescription": "Ultimate Water Interruption (All Allies)",
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -27285,6 +27325,7 @@
       },
       "name": "Shinra Blade: Model I",
       "image": "https://i.imgur.com/NlByyYt.png",
+      "diamondCustomDescription": "Quintessential Interruption (All Allies)",
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -27925,6 +27966,7 @@
       },
       "name": "World Tree Bough",
       "image": "https://i.imgur.com/j1NENTA.png",
+      "diamondCustomDescription": "Boost ATB (Self) & Wind Mastery (All Allies)",
       "character": "Sephiroth",
       "atbCost": 4
     },
@@ -28141,6 +28183,7 @@
       },
       "name": "Kotetsu",
       "image": "https://i.imgur.com/ZgjvBkh.png",
+      "diamondCustomDescription": "Quintessential Interruption (All Allies)",
       "character": "Sephiroth (Orig.)",
       "atbCost": 4
     },
@@ -28314,6 +28357,7 @@
       },
       "name": "Omega Wing",
       "image": "https://i.imgur.com/mWAWDaW.png",
+      "diamondCustomDescription": "Ultimate Ice Interruption (All Allies)",
       "character": "Sephiroth (Orig.)",
       "atbCost": 5
     },
@@ -29167,6 +29211,7 @@
       },
       "name": "Class President's Bracelet",
       "image": "https://i.imgur.com/94Cj9s7.png",
+      "diamondCustomDescription": "Ultimate Wind Interruption (All Allies)",
       "character": "Tifa",
       "atbCost": 4
     },
@@ -29327,6 +29372,7 @@
       },
       "name": "Elegant Gloves",
       "image": "https://i.imgur.com/BYA16kY.png",
+      "diamondCustomDescription": "Ultimate Earth Interruption (All Allies)",
       "character": "Tifa",
       "atbCost": 4
     },
@@ -29479,6 +29525,7 @@
       },
       "name": "Feathered Gloves",
       "image": "https://i.imgur.com/ij9nYIX.png",
+      "diamondCustomDescription": "Ultimate Water Interruption (All Allies)",
       "character": "Tifa",
       "atbCost": 3
     },
@@ -29515,6 +29562,7 @@
       },
       "name": "Festive Gloves",
       "image": "https://i.imgur.com/JE5c4Nd.png",
+      "diamondCustomDescription": "Ultimate Fire Interruption (All Allies)",
       "character": "Tifa",
       "atbCost": 4
     },
@@ -29823,6 +29871,7 @@
       },
       "name": "Guide Gloves",
       "image": "https://i.imgur.com/NWRZ8pa.png",
+      "diamondCustomDescription": "Ultimate Physical Interruption (All Allies)",
       "character": "Tifa",
       "atbCost": 4
     },
@@ -30559,6 +30608,7 @@
       },
       "name": "Lightning's Gloves",
       "image": "https://i.imgur.com/93KvVeW.png",
+      "diamondCustomDescription": "Ultimate Ice Interruption (All Allies)",
       "character": "Tifa",
       "atbCost": 4
     },
@@ -30843,6 +30893,7 @@
       },
       "name": "Riding Gloves",
       "image": "https://i.imgur.com/fORCZJe.png",
+      "diamondCustomDescription": "Ultimate Ice Interruption (All Allies)",
       "character": "Tifa",
       "atbCost": 4
     },
@@ -31747,6 +31798,7 @@
       },
       "name": "Work Gloves",
       "image": "https://i.imgur.com/kOguQnA.png",
+      "diamondCustomDescription": "Boost ATB (Self) & Fire Mastery (All Allies)",
       "character": "Tifa",
       "atbCost": 4
     },
@@ -31907,6 +31959,7 @@
       },
       "name": "Chrome Death Penalty",
       "image": "https://i.imgur.com/8YyqBHD.png",
+      "diamondCustomDescription": "Quintessential Interruption (All Allies)",
       "character": "Vincent",
       "atbCost": 4
     },
@@ -33423,6 +33476,7 @@
       },
       "name": "Shortbarrel",
       "image": "https://i.imgur.com/tlcIegj.png",
+      "diamondCustomDescription": "Ultimate Wind Interruption (All Allies)",
       "character": "Vincent",
       "atbCost": 4
     },
@@ -33455,6 +33509,7 @@
       },
       "name": "Silver Rifle",
       "image": "https://i.imgur.com/b0RnYFY.png",
+      "diamondCustomDescription": "Boost ATB (Self) & Lightning Mastery (All Allies)",
       "character": "Vincent",
       "atbCost": 4
     },
@@ -34023,6 +34078,7 @@
       },
       "name": "Bamboo Ring",
       "image": "https://i.imgur.com/3BbocmH.png",
+      "diamondCustomDescription": "Boost ATB (Self) & Earth Mastery (All Allies)",
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -34107,6 +34163,7 @@
       },
       "name": "Bird of Prey",
       "image": "https://i.imgur.com/pXcOXpn.png",
+      "diamondCustomDescription": "Ultimate Water Interruption (All Allies)",
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -34699,6 +34756,7 @@
       },
       "name": "Hawkeye",
       "image": "https://i.imgur.com/0aLrL2M.png",
+      "diamondCustomDescription": "Ultimate Earth Interruption (All Allies)",
       "character": "Yuffie",
       "atbCost": 4
     },
@@ -36431,6 +36489,7 @@
       },
       "name": "Bouquet",
       "image": "https://i.imgur.com/y2yDOzk.png",
+      "diamondCustomDescription": "Boost ATB (Self) & Ice Mastery (All Allies)",
       "character": "Zack",
       "atbCost": 4
     },
@@ -37051,6 +37110,7 @@
       },
       "name": "Festive Sword",
       "image": "https://i.imgur.com/yeZioCt.png",
+      "diamondCustomDescription": "Quintessential Interruption (All Allies)",
       "character": "Zack",
       "atbCost": 4
     },
@@ -37203,6 +37263,7 @@
       },
       "name": "Gelid Sword",
       "image": "https://i.imgur.com/Wdi86Hr.png",
+      "diamondCustomDescription": "Ultimate Ice Interruption (All Allies)",
       "character": "Zack",
       "atbCost": 4
     },
@@ -37515,6 +37576,7 @@
       },
       "name": "Pressure Ridge",
       "image": "https://i.imgur.com/9gtbj0B.png",
+      "diamondCustomDescription": "Ultimate Ice Interruption (All Allies)",
       "character": "Zack",
       "atbCost": 4
     },

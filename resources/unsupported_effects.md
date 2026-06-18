@@ -1,5 +1,5 @@
 <!-- LTEX: enabled=false -->
-Found 63 unsupported effect type(s).
+Found 69 unsupported effect type(s).
 
 # Table of Contents
 
@@ -8,6 +8,7 @@ Found 63 unsupported effect type(s).
 * [+N Gear C. Ability Uses](#n-gear-c-ability-uses)
 * [-N% Summon Gauge](#-n-summon-gauge)
 * [Enhance Buffs](#enhance-buffs)
+* [Enhance Debuffs](#enhance-debuffs)
 * [N Additional Damage](#n-additional-damage)
 * [N% Mag. Earth Damage](#n-mag-earth-damage)
 * [N% Mag. Fire Damage](#n-mag-fire-damage)
@@ -24,12 +25,17 @@ Found 63 unsupported effect type(s).
 * [N% Phys. Water Damage](#n-phys-water-damage)
 * [N% Phys. Wind Damage](#n-phys-wind-damage)
 * [N.Nx Damage](#nnx-damage)
+* [Ns -N ATB Ice Weapon/Gear C. Ability Cost](#ns--n-atb-ice-weapongear-c-ability-cost)
 * [Ns -N ATB Mag. Weapon/Gear C. Ability Cost](#ns--n-atb-mag-weapongear-c-ability-cost)
 * [Ns -N ATB Phys. Weapon/Gear C. Ability Cost](#ns--n-atb-phys-weapongear-c-ability-cost)
+* [Ns Earth Damage Down](#ns-earth-damage-down)
+* [Ns Fire Damage Down](#ns-fire-damage-down)
 * [Ns Fire Resistance Up](#ns-fire-resistance-up)
 * [Ns Haste](#ns-haste)
+* [Ns Lightning Damage Down](#ns-lightning-damage-down)
 * [Ns Lightning Damage Up](#ns-lightning-damage-up)
 * [Ns N% Amp. Earth Abilities](#ns-n-amp-earth-abilities)
+* [Ns N% Amp. Phys. Abilities](#ns-n-amp-phys-abilities)
 * [Ns N% Earth Damage Bonus](#ns-n-earth-damage-bonus)
 * [Ns N% Earth Weapon Boost](#ns-n-earth-weapon-boost)
 * [Ns N% Fire Damage Bonus](#ns-n-fire-damage-bonus)
@@ -116,6 +122,8 @@ Found 63 unsupported effect type(s).
 * **Aerith - Gorgeous Staff**
   * `+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]`
   * `+2 Costume C. Ability Uses [Range: Self] [Condition: First Use]`
+* **Sephiroth - Cerulean Sky**
+  * `+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]`
 * **Vincent - Chrome Death Penalty**
   * `+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]`
 
@@ -125,8 +133,28 @@ Found 63 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
+* **Aerith - Festive Rod**
+  * `+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+  * `+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+  * `+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+* **Angeal - Festive Blade**
+  * `+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+  * `+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+  * `+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+* **Glenn - Garish Greatblade**
+  * `+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+  * `+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+  * `+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+* **Sephiroth (Orig.) - Starsoul Blade**
+  * `+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+  * `+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+  * `+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
 * **Tifa - Festive Gloves**
   * `+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+* **Zack - Festive Sword**
+  * `+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+  * `+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+  * `+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
 
 ---
 
@@ -143,12 +171,34 @@ Found 63 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
+* **Cloud - Mystic Sword**
+  * `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`
+  * `Enhance Buffs (+10s) (Low -> High) [Range: All Allies]`
+* **Sephiroth - Infiltration Sword**
+  * `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`
+  * `Enhance Buffs (+10s) (Low -> High) [Range: All Allies]`
 * **Tifa - Leather Combat Gloves**
+  * `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`
+  * `Enhance Buffs (+10s) (Low -> High) [Range: All Allies]`
+* **Vincent - Shortbarrel**
   * `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`
   * `Enhance Buffs (+10s) (Low -> High) [Range: All Allies]`
 * **Yuffie - Heirloom Brush**
   * `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`
   * `Enhance Buffs (+10s) (Low -> High) [Range: All Allies]`
+
+---
+
+# Enhance Debuffs
+
+[↑ Back to top](#table-of-contents)
+
+* **Matt - Physician's Scalpel**
+  * `Enhance Debuffs (+10s) (Low -> Extra High) [Range: All Enemies]`
+  * `Enhance Debuffs (+10s) (Low -> High) [Range: All Enemies]`
+* **Vincent - Chrome Death Penalty**
+  * `Enhance Debuffs (+10s) (Low -> Extra High) [Range: All Enemies]`
+  * `Enhance Debuffs (+10s) (Low -> High) [Range: All Enemies]`
 
 ---
 
@@ -251,8 +301,12 @@ Found 63 unsupported effect type(s).
 * **Tifa - Elegant Gloves**
   * `1080% Mag. Earth Damage [Range: Single Enemy]`
   * `1340% Mag. Earth Damage [Range: Single Enemy]`
+  * `1350% Mag. Earth Damage [Range: Single Enemy]`
+  * `1680% Mag. Earth Damage [Range: Single Enemy]`
   * `600% Mag. Earth Damage [Range: Single Enemy]`
   * `720% Mag. Earth Damage [Range: Single Enemy]`
+  * `750% Mag. Earth Damage [Range: Single Enemy]`
+  * `900% Mag. Earth Damage [Range: Single Enemy]`
 * **Vincent - White Dog**
   * `520% Mag. Earth Damage [Range: Single Enemy]`
   * `620% Mag. Earth Damage [Range: Single Enemy]`
@@ -483,10 +537,14 @@ Found 63 unsupported effect type(s).
   * `280% Mag. Ice Damage [Range: All Enemies]`
   * `290% Mag. Ice Damage [Range: All Enemies]`
 * **Sephiroth (Orig.) - Omega Wing**
+  * `1120% Mag. Ice Damage [Range: All Enemies]`
   * `480% Mag. Ice Damage [Range: All Enemies]`
   * `580% Mag. Ice Damage [Range: All Enemies]`
+  * `600% Mag. Ice Damage [Range: All Enemies]`
+  * `730% Mag. Ice Damage [Range: All Enemies]`
   * `750% Mag. Ice Damage [Range: All Enemies]`
   * `900% Mag. Ice Damage [Range: All Enemies]`
+  * `940% Mag. Ice Damage [Range: All Enemies]`
 * **Sephiroth - Edged Wings**
   * `440% Mag. Ice Damage [Range: Single Enemy]`
   * `530% Mag. Ice Damage [Range: Single Enemy]`
@@ -525,8 +583,12 @@ Found 63 unsupported effect type(s).
 * **Zack - Gelid Sword**
   * `1080% Mag. Ice Damage [Range: Single Enemy]`
   * `1340% Mag. Ice Damage [Range: Single Enemy]`
+  * `1350% Mag. Ice Damage [Range: Single Enemy]`
+  * `1680% Mag. Ice Damage [Range: Single Enemy]`
   * `600% Mag. Ice Damage [Range: Single Enemy]`
   * `720% Mag. Ice Damage [Range: Single Enemy]`
+  * `750% Mag. Ice Damage [Range: Single Enemy]`
+  * `900% Mag. Ice Damage [Range: Single Enemy]`
 * **Zack - Sword of the Hunt**
   * `440% Mag. Ice Damage [Range: All Enemies]`
   * `530% Mag. Ice Damage [Range: All Enemies]`
@@ -612,8 +674,12 @@ Found 63 unsupported effect type(s).
 * **Sephiroth (Orig.) - Starsoul Blade**
   * `1080% Mag. Lightning Damage [Range: Single Enemy]`
   * `1340% Mag. Lightning Damage [Range: Single Enemy]`
+  * `1350% Mag. Lightning Damage [Range: Single Enemy]`
+  * `1680% Mag. Lightning Damage [Range: Single Enemy]`
   * `600% Mag. Lightning Damage [Range: Single Enemy]`
   * `720% Mag. Lightning Damage [Range: Single Enemy]`
+  * `750% Mag. Lightning Damage [Range: Single Enemy]`
+  * `900% Mag. Lightning Damage [Range: Single Enemy]`
 * **Sephiroth - CC Alloy Sword**
   * `280% Mag. Lightning Damage [Range: All Enemies]`
   * `340% Mag. Lightning Damage [Range: All Enemies]`
@@ -1136,8 +1202,12 @@ Found 63 unsupported effect type(s).
 * **Cloud - Umbralschwert**
   * `1080% Mag. Water Damage [Range: Single Enemy]`
   * `1340% Mag. Water Damage [Range: Single Enemy]`
+  * `1350% Mag. Water Damage [Range: Single Enemy]`
+  * `1680% Mag. Water Damage [Range: Single Enemy]`
   * `600% Mag. Water Damage [Range: Single Enemy]`
   * `720% Mag. Water Damage [Range: Single Enemy]`
+  * `750% Mag. Water Damage [Range: Single Enemy]`
+  * `900% Mag. Water Damage [Range: Single Enemy]`
 * **Glenn - Radglaive**
   * `210% Mag. Water Damage [Range: All Enemies]`
   * `240% Mag. Water Damage [Range: All Enemies]`
@@ -1352,8 +1422,12 @@ Found 63 unsupported effect type(s).
 * **Tifa - Festive Gloves**
   * `1080% Phys. Fire Damage [Range: Single Enemy]`
   * `1340% Phys. Fire Damage [Range: Single Enemy]`
+  * `1350% Phys. Fire Damage [Range: Single Enemy]`
+  * `1680% Phys. Fire Damage [Range: Single Enemy]`
   * `600% Phys. Fire Damage [Range: Single Enemy]`
   * `720% Phys. Fire Damage [Range: Single Enemy]`
+  * `750% Phys. Fire Damage [Range: Single Enemy]`
+  * `900% Phys. Fire Damage [Range: Single Enemy]`
 * **Vincent - Holiday Garm**
   * `520% Phys. Fire Damage [Range: Single Enemy]`
   * `620% Phys. Fire Damage [Range: Single Enemy]`
@@ -1414,8 +1488,12 @@ Found 63 unsupported effect type(s).
 * **Tifa - Riding Gloves**
   * `1080% Phys. Ice Damage [Range: Single Enemy]`
   * `1340% Phys. Ice Damage [Range: Single Enemy]`
+  * `1350% Phys. Ice Damage [Range: Single Enemy]`
+  * `1680% Phys. Ice Damage [Range: Single Enemy]`
   * `600% Phys. Ice Damage [Range: Single Enemy]`
   * `720% Phys. Ice Damage [Range: Single Enemy]`
+  * `750% Phys. Ice Damage [Range: Single Enemy]`
+  * `900% Phys. Ice Damage [Range: Single Enemy]`
 * **Vincent - Gun of the Worthy**
   * `1120% Phys. Ice Damage [Range: Single Enemy]`
   * `620% Phys. Ice Damage [Range: Single Enemy]`
@@ -2109,6 +2187,20 @@ Found 63 unsupported effect type(s).
   * `360% Phys. Wind Damage [Range: All Enemies]`
   * `430% Phys. Wind Damage [Range: All Enemies]`
   * `500% Phys. Wind Damage [Range: All Enemies]`
+* **Cloud - Chevron Blade**
+  * `480% Phys. Wind Damage [Range: All Enemies]`
+  * `580% Phys. Wind Damage [Range: All Enemies]`
+  * `750% Phys. Wind Damage [Range: All Enemies]`
+  * `900% Phys. Wind Damage [Range: All Enemies]`
+* **Sephiroth - Cerulean Sky**
+  * `1080% Phys. Wind Damage [Range: Single Enemy]`
+  * `1340% Phys. Wind Damage [Range: Single Enemy]`
+  * `1350% Phys. Wind Damage [Range: Single Enemy]`
+  * `1680% Phys. Wind Damage [Range: Single Enemy]`
+  * `600% Phys. Wind Damage [Range: Single Enemy]`
+  * `720% Phys. Wind Damage [Range: Single Enemy]`
+  * `750% Phys. Wind Damage [Range: Single Enemy]`
+  * `900% Phys. Wind Damage [Range: Single Enemy]`
 * **Sephiroth - Dark Heavens**
   * `440% Phys. Wind Damage [Range: Single Enemy]`
   * `530% Phys. Wind Damage [Range: Single Enemy]`
@@ -2170,6 +2262,8 @@ Found 63 unsupported effect type(s).
   * `1.4x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]`
 * **Cid - Dragoon Lance**
   * `1.2x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]`
+* **Cloud - Chevron Blade**
+  * `1.3x Damage [Range: All Enemies] [Condition: Single Target]`
 * **Cloud - Erdrick's Sword**
   * `1.5x Damage [Range: All Enemies] [Condition: Single Target]`
 * **Cloud - Holiday Blade**
@@ -2207,10 +2301,23 @@ Found 63 unsupported effect type(s).
   * `1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]`
 * **Zack - Beatrix Sword**
   * `1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]`
+* **Zack - Pressure Ridge**
+  * `1.5x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]`
 * **Zack - Rousing Arc Sword**
   * `1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]`
 * **Zack - Zinogre Blade**
   * `1.2x Damage [Range: Single Enemy] [Condition: Self 70-100% HP]`
+
+---
+
+# Ns -N ATB Ice Weapon/Gear C. Ability Cost
+
+[↑ Back to top](#table-of-contents)
+
+* **Cloud - Crimson Blitz**
+  * `10s -1 ATB Ice Weapon/Gear C. Ability Cost (+3s) [Range: All Allies] [Condition: First Use]`
+  * `15s -1 ATB Ice Weapon/Gear C. Ability Cost (+5s) [Range: All Allies] [Condition: First Use]`
+  * `25s -1 ATB Ice Weapon/Gear C. Ability Cost (+8s) [Range: All Allies] [Condition: First Use]`
 
 ---
 
@@ -2238,6 +2345,35 @@ Found 63 unsupported effect type(s).
 
 ---
 
+# Ns Earth Damage Down
+
+[↑ Back to top](#table-of-contents)
+
+* **Vincent - Shortbarrel**
+  * `20s Earth Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]`
+  * `25s Earth Damage Down (+8s) (High) [Range: Single Enemy]`
+  * `25s Earth Damage Down (+8s) (Low -> Mid) [Range: Single Enemy]`
+  * `30s Earth Damage Down (+10s) (High) [Range: Single Enemy]`
+
+---
+
+# Ns Fire Damage Down
+
+[↑ Back to top](#table-of-contents)
+
+* **Glenn - Snow's Bardiche**
+  * `16s Fire Damage Down (+5s) (Low -> Mid) [Range: Single Enemy]`
+  * `20s Fire Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]`
+  * `25s Fire Damage Down (+8s) (Mid -> High) [Range: Single Enemy]`
+  * `35s Fire Damage Down (+11s) (Mid -> High) [Range: Single Enemy]`
+* **Matt - Nautilus Spiral**
+  * `16s Fire Damage Down (+5s) (Low -> Mid) [Range: Single Enemy]`
+  * `18s Fire Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]`
+  * `20s Fire Damage Down (+6s) (High) [Range: Single Enemy]`
+  * `24s Fire Damage Down (+8s) (High) [Range: Single Enemy]`
+
+---
+
 # Ns Fire Resistance Up
 
 [↑ Back to top](#table-of-contents)
@@ -2254,6 +2390,9 @@ Found 63 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
+* **Aerith - Team Leader's Bamboo Sword**
+  * `10s Haste (+3s) [Range: All Allies] [Condition: First Use]`
+  * `15s Haste (+5s) [Range: All Allies] [Condition: First Use]`
 * **Cait Sith - Flower Vase**
   * `10s Haste (+5s) [Range: Single Ally] [Rate: 20%]`
   * `15s Haste (+5s) [Range: Single Ally] [Rate: 20%]`
@@ -2270,6 +2409,9 @@ Found 63 unsupported effect type(s).
   * `20s Haste (+6s) [Range: Self] [Condition: First Use]`
   * `25s Haste (+8s) [Range: Self] [Condition: First Use]`
   * `30s Haste (+10s) [Range: Self] [Condition: First Use]`
+* **Sephiroth (Orig.) - Kotetsu**
+  * `10s Haste (+3s) [Range: All Allies] [Condition: First Use]`
+  * `15s Haste (+5s) [Range: All Allies] [Condition: First Use]`
 * **Tifa - Bahamut Fangs**
   * `20s Haste (+6s) [Range: Self] [Condition: First Use]`
   * `25s Haste (+8s) [Range: Self] [Condition: First Use]`
@@ -2278,6 +2420,18 @@ Found 63 unsupported effect type(s).
   * `10s Haste (+3s) [Range: All Allies] [Condition: First Use]`
   * `15s Haste (+5s) [Range: All Allies] [Condition: First Use]`
   * `5s Haste (+2s) [Range: All Allies] [Condition: First Use]`
+
+---
+
+# Ns Lightning Damage Down
+
+[↑ Back to top](#table-of-contents)
+
+* **Aerith - Striking Staff**
+  * `20s Lightning Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]`
+  * `25s Lightning Damage Down (+8s) (High) [Range: Single Enemy]`
+  * `25s Lightning Damage Down (+8s) (Low -> Mid) [Range: Single Enemy]`
+  * `30s Lightning Damage Down (+10s) (High) [Range: Single Enemy]`
 
 ---
 
@@ -2302,6 +2456,18 @@ Found 63 unsupported effect type(s).
   * `40s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
   * `50s 40% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
   * `60s 50% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
+
+---
+
+# Ns N% Amp. Phys. Abilities
+
+[↑ Back to top](#table-of-contents)
+
+* **Cloud - Chevron Blade**
+  * `30s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
+  * `40s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
+  * `50s 20% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
+  * `60s 30% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
 
 ---
 
@@ -2360,6 +2526,11 @@ Found 63 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
+* **Aerith - Gorgeous Staff**
+  * `30s 25% Fire Weapon Boost (+10s) [Range: All Allies]`
+  * `40s 25% Fire Weapon Boost (+13s) [Range: All Allies]`
+  * `50s 30% Fire Weapon Boost (+16s) [Range: All Allies]`
+  * `60s 35% Fire Weapon Boost (+20s) [Range: All Allies]`
 * **Lucia - Killer Falcon**
   * `15s 20% Fire Weapon Boost (+5s) [Range: All Allies]`
   * `20s 20% Fire Weapon Boost (+6s) [Range: All Allies]`
@@ -2377,6 +2548,11 @@ Found 63 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
+* **Cid - Grinding Gear**
+  * `30s 4% HP Gain (+0s) [Range: All Allies]`
+  * `30s 5% HP Gain (+0s) [Range: All Allies]`
+  * `30s 6% HP Gain (+0s) [Range: All Allies]`
+  * `30s 8% HP Gain (+0s) [Range: All Allies]`
 * **Cloud - Stream Saber**
   * `30s 4% HP Gain (+0s) [Range: All Allies]`
   * `30s 5% HP Gain (+0s) [Range: All Allies]`
@@ -2402,7 +2578,17 @@ Found 63 unsupported effect type(s).
   * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
   * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
   * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+* **Sephiroth - Cerulean Sky**
+  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
 * **Sephiroth - Overture**
+  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+* **Tifa - Feathered Gloves**
   * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
   * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
   * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
@@ -2543,6 +2729,11 @@ Found 63 unsupported effect type(s).
   * `40s 25% Phys. Single Target Dmg. Received Up (+13s) [Range: All Enemies]`
   * `50s 40% Phys. Single Target Dmg. Received Up (+16s) [Range: All Enemies]`
   * `60s 50% Phys. Single Target Dmg. Received Up (+20s) [Range: All Enemies]`
+* **Zack - Pressure Ridge**
+  * `20s 25% Phys. Single Target Dmg. Received Up (+6s) [Range: Single Enemy] [Condition: Weakness Hit]`
+  * `22s 25% Phys. Single Target Dmg. Received Up (+7s) [Range: Single Enemy] [Condition: Weakness Hit]`
+  * `26s 35% Phys. Single Target Dmg. Received Up (+8s) [Range: Single Enemy] [Condition: Weakness Hit]`
+  * `30s 40% Phys. Single Target Dmg. Received Up (+10s) [Range: Single Enemy] [Condition: Weakness Hit]`
 
 ---
 
@@ -2555,6 +2746,11 @@ Found 63 unsupported effect type(s).
   * `25s 20% Physical Damage Bonus (+8s) [Range: All Allies]`
   * `25s 25% Physical Damage Bonus (+8s) [Range: All Allies]`
   * `30s 30% Physical Damage Bonus (+10s) [Range: All Allies]`
+* **Barret - Fafnir Rifle**
+  * `20s 20% Physical Damage Bonus (+6s) [Range: All Allies]`
+  * `30s 20% Physical Damage Bonus (+10s) [Range: All Allies]`
+  * `30s 25% Physical Damage Bonus (+10s) [Range: All Allies]`
+  * `40s 30% Physical Damage Bonus (+13s) [Range: All Allies]`
 * **Sephiroth (Orig.) - Kikuichimonji**
   * `30s 20% Physical Damage Bonus (+10s) [Range: All Allies]`
   * `40s 20% Physical Damage Bonus (+13s) [Range: All Allies]`
@@ -2587,6 +2783,11 @@ Found 63 unsupported effect type(s).
   * `25s 20% Physical Weapon Boost (+8s) [Range: Self]`
   * `30s 25% Physical Weapon Boost (+10s) [Range: Self]`
   * `40s 30% Physical Weapon Boost (+13s) [Range: Self]`
+* **Yuffie - Bird of Prey**
+  * `30s 20% Physical Weapon Boost (+6s) [Range: Self] [Condition: Self 70-100% HP]`
+  * `35s 20% Physical Weapon Boost (+7s) [Range: Self] [Condition: Self 70-100% HP]`
+  * `35s 25% Physical Weapon Boost (+7s) [Range: Self] [Condition: Self 70-100% HP]`
+  * `45s 30% Physical Weapon Boost (+9s) [Range: Self] [Condition: Self 70-100% HP]`
 
 ---
 
@@ -2767,6 +2968,11 @@ Found 63 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
+* **Cloud - Chevron Blade**
+  * `30s 25% Wind Weapon Boost (+10s) [Range: All Allies] [Condition: Self 50-100% HP]`
+  * `40s 25% Wind Weapon Boost (+13s) [Range: All Allies] [Condition: Self 50-100% HP]`
+  * `50s 30% Wind Weapon Boost (+16s) [Range: All Allies] [Condition: Self 50-100% HP]`
+  * `60s 35% Wind Weapon Boost (+20s) [Range: All Allies] [Condition: Self 50-100% HP]`
 * **Vincent - Chrome Death Penalty**
   * `30s 25% Wind Weapon Boost (+10s) [Range: All Allies]`
   * `40s 25% Wind Weapon Boost (+13s) [Range: All Allies]`
@@ -2876,7 +3082,7 @@ Found 63 unsupported effect type(s).
 
 ## +N% Limit Break Gauge
 
-15 weapons
+17 weapons
 
 ## +N% Stance Gauge
 

@@ -20,6 +20,7 @@ import Data.Set (Set)
 import Data.Set as Set
 import Data.Tuple (Tuple(..))
 import Data.Unfoldable (unfoldr)
+import Effect (Effect)
 import Foreign (MultipleErrors, renderForeignError)
 import Partial.Unsafe (unsafeCrashWith)
 import Yoga.JSON (class ReadForeign, class WriteForeign)
@@ -115,3 +116,5 @@ predCyclic a =
 -- Similar to `Data.Foldable.oneOf`, but only requires `Alt` instead of `Plus`.
 oneOf' :: forall f g a. Foldable f => Alt g => g a -> f (g a) -> g a
 oneOf' = F.foldr alt
+
+foreign import jsLog :: forall a. a -> Effect Unit

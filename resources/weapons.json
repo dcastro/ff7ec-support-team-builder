@@ -1,5 +1,5 @@
 {
-  "range": "Weapons!A1:Z1018",
+  "range": "Weapons!A1:AI1018",
   "majorDimension": "ROWS",
   "values": [
     [
@@ -28,7 +28,16 @@
       "Image Link",
       "Materia 1",
       "Materia 2",
-      "Materia 3"
+      "Materia 3",
+      "Heart Custom 1 (additional C. Ability Pot.)",
+      "Heart Custom 2 (additional C. Ability Pot.)",
+      "Heart Custom 3 (additional C. Ability Pot.)",
+      "Heart Custom 4 (additional C. Ability Pot.)",
+      "Spade Custom 1 (additional C. Ability Effect)",
+      "Spade Custom 2 (additional C. Ability Effect)",
+      "Spade Custom 3 (additional C. Ability Effect)",
+      "Spade Custom 4 (additional C. Ability Effect)",
+      "Diamond Custom (additional R.Ability)"
     ],
     [
       "Bahamut Rod",
@@ -252,7 +261,16 @@
       "https://i.imgur.com/tts721Y.png",
       "MATK Boost I",
       "HEAL Boost I",
-      "All (Esuna) I"
+      "All (Esuna) I",
+      "",
+      "",
+      "",
+      "",
+      "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "Stream Phase Amp. Healing"
     ],
     [
       "Floral Wand",
@@ -336,7 +354,16 @@
       "https://i.imgur.com/Oc0JlfT.png",
       "PATK Boost I",
       "HEAL Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "12s Fire Damage Up (+4s) (Low -\u003e Mid) [Range: All Allies]",
+      "12s Fire Damage Up (+4s) (Low -\u003e Mid) [Range: All Allies]",
+      "12s Fire Damage Up (+4s) (Mid -\u003e High) [Range: All Allies]",
+      "16s Fire Damage Up (+5s) (Mid -\u003e High) [Range: All Allies]",
+      "Stream Phase Amp. Healing"
     ],
     [
       "Garnet's Rod",
@@ -392,7 +419,16 @@
       "https://i.imgur.com/7Bvn1qU.png",
       "MATK Boost I",
       "HEAL Boost I",
-      "All (Cure Spells) I"
+      "All (Cure Spells) I",
+      "",
+      "",
+      "",
+      "",
+      "30s 25% Fire Weapon Boost (+10s) [Range: All Allies]",
+      "40s 25% Fire Weapon Boost (+13s) [Range: All Allies]",
+      "50s 30% Fire Weapon Boost (+16s) [Range: All Allies]",
+      "60s 35% Fire Weapon Boost (+20s) [Range: All Allies]",
+      "Ultimate Fire Interruption (All Allies)"
     ],
     [
       "Guard Stick",
@@ -504,7 +540,16 @@
       "https://i.imgur.com/CmJTzKI.png",
       "MATK Boost I",
       "HEAL Boost I",
-      "All (Cure Spells) I"
+      "All (Cure Spells) I",
+      "",
+      "",
+      "",
+      "",
+      "+10% Limit Break Gauge [Range: Self]",
+      "+10% Limit Break Gauge [Range: Self]",
+      "+15% Limit Break Gauge [Range: Self]",
+      "+20% Limit Break Gauge [Range: Self]",
+      "Ultimate Magic Interruption (All Allies)"
     ],
     [
       "Magatsuchi Rod",
@@ -868,7 +913,16 @@
       "https://i.imgur.com/Cs9meyf.png",
       "ATK Boost I",
       "ATK Boost I",
-      "HEAL Boost I"
+      "HEAL Boost I",
+      "",
+      "",
+      "",
+      "",
+      "20s Lightning Damage Down (+6s) (Low -\u003e Mid) [Range: Single Enemy]\n20s PATK Up (+6s) (Low -\u003e Mid) [Range: All Allies]",
+      "25s Lightning Damage Down (+8s) (Low -\u003e Mid) [Range: Single Enemy]\n25s PATK Up (+8s) (Low -\u003e Mid) [Range: All Allies]",
+      "25s Lightning Damage Down (+8s) (High) [Range: Single Enemy]\n25s PATK Up (+8s) (High) [Range: All Allies]",
+      "30s Lightning Damage Down (+10s) (High) [Range: Single Enemy]\n30s PATK Up (+10s) (High) [Range: All Allies]",
+      "Stream Phase Amp. Healing"
     ],
     [
       "Sun Umbrella",
@@ -952,7 +1006,16 @@
       "https://i.imgur.com/hjFqyS2.png",
       "MATK Boost I",
       "HEAL Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "10s Haste (+3s) [Range: All Allies] [Condition: First Use]",
+      "10s Haste (+3s) [Range: All Allies] [Condition: First Use]",
+      "15s Haste (+5s) [Range: All Allies] [Condition: First Use]",
+      "15s Haste (+5s) [Range: All Allies] [Condition: First Use]",
+      "Stream Phase Amp. Healing"
     ],
     [
       "Terra's Rod",
@@ -1036,7 +1099,16 @@
       "https://i.imgur.com/a59TGEP.png",
       "MATK Boost I",
       "MATK Boost I",
-      "All (Cure Spells) I"
+      "All (Cure Spells) I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Boost Healing Pot. (Self) & Water Mastery (All Allies)"
     ],
     [
       "Wizard Staff",
@@ -1204,7 +1276,16 @@
       "https://i.imgur.com/bHG2YjP.png",
       "MATK Boost I",
       "MATK Boost I",
-      "▲ Sigil Boost I"
+      "▲ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "Ultimate Lightning Interruption (All Allies)"
     ],
     [
       "Gargantuan Monolith",
@@ -1232,7 +1313,16 @@
       "https://i.imgur.com/stkUxAN.png",
       "ATK Boost I",
       "PATK Boost I",
-      "MATK Boost I"
+      "MATK Boost I",
+      "",
+      "",
+      "",
+      "",
+      "20s MATK Up (+6s) (Low -\u003e Mid) [Range: All Allies]",
+      "25s MATK Up (+8s) (Low -\u003e Mid) [Range: All Allies]",
+      "25s MATK Up (+8s) (High) [Range: All Allies]",
+      "30s MATK Up (+10s) (High) [Range: All Allies]",
+      "Stream Phase Mag. Resist. Boost"
     ],
     [
       "Ghost Ensis",
@@ -1484,7 +1574,16 @@
       "https://i.imgur.com/IsYueMs.png",
       "PATK Boost I",
       "PATK Boost I",
-      "PATK Boost I"
+      "PATK Boost I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Boost PDEF (Self) & Wind Mastery (All Allies)"
     ],
     [
       "Penance Blade",
@@ -1960,7 +2059,16 @@
       "https://i.imgur.com/mELRgLv.png",
       "PATK Boost I",
       "PATK Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "20s 20% Physical Damage Bonus (+6s) [Range: All Allies]",
+      "30s 20% Physical Damage Bonus (+10s) [Range: All Allies]",
+      "30s 25% Physical Damage Bonus (+10s) [Range: All Allies]",
+      "40s 30% Physical Damage Bonus (+13s) [Range: All Allies]",
+      "Stream Phase Phys. Resist. Boost"
     ],
     [
       "Flame Projector",
@@ -2212,7 +2320,16 @@
       "https://i.imgur.com/qZHroeX.png",
       "ATK Boost I",
       "ATK Boost I",
-      "ATK Boost (Earth) I"
+      "ATK Boost (Earth) I",
+      "",
+      "",
+      "",
+      "",
+      "20s PATK Up (+6s) (Low -\u003e Mid) [Range: All Allies]\n40s 5% Veil (+8s) [Range: Self]",
+      "25s PATK Up (+8s) (Low -\u003e Mid) [Range: All Allies]\n45s 6% Veil (+9s) [Range: Self]",
+      "25s PATK Up (+8s) (High) [Range: All Allies]\n50s 8% Veil (+10s) [Range: Self]",
+      "30s PATK Up (+10s) (High) [Range: All Allies]\n60s 10% Veil (+12s) [Range: Self]",
+      "Stream Phase Phys. Resist. Boost"
     ],
     [
       "Microlaser",
@@ -2324,7 +2441,16 @@
       "https://i.imgur.com/bxsEIZi.png",
       "PATK Boost I",
       "PATK Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Boost PDEF (Self) & Wind Mastery (All Allies)"
     ],
     [
       "Sharkslayer",
@@ -2492,7 +2618,16 @@
       "https://i.imgur.com/FYAapfR.png",
       "PATK Boost I",
       "PATK Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "20s Wind Damage Up (+6s) (Low -\u003e Mid) [Range: All Allies]",
+      "22s Wind Damage Up (+7s) (Low -\u003e Mid) [Range: All Allies]",
+      "25s Wind Damage Up (+8s) (High) [Range: All Allies]",
+      "30s Wind Damage Up (+10s) (High) [Range: All Allies]",
+      "Stream Phase Phys. Resist. Boost"
     ],
     [
       "W Machine",
@@ -2576,7 +2711,16 @@
       "https://i.imgur.com/78BTB37.png",
       "ATK Boost I",
       "ATK Boost I",
-      "PATK Boost I"
+      "PATK Boost I",
+      "",
+      "",
+      "",
+      "",
+      "20s MDEF Up (+6s) (Low -\u003e Mid) [Range: All Allies] [Condition: Self 50-100% HP]",
+      "22s MDEF Up (+7s) (Low -\u003e Mid) [Range: All Allies] [Condition: Self 50-100% HP]",
+      "22s MDEF Up (+7s) (High) [Range: All Allies] [Condition: Self 50-100% HP]",
+      "25s MDEF Up (+8s) (High) [Range: All Allies] [Condition: Self 50-100% HP]",
+      "Boost Summon Ability Pot. (All Allies)"
     ],
     [
       "Blue Megaphone",
@@ -3108,7 +3252,16 @@
       "https://i.imgur.com/g7KyOgg.png",
       "PATK Boost I",
       "MATK Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Buff & Debuff Extension (Self) & Fire Mastery (All Allies)"
     ],
     [
       "Witch's Broom",
@@ -3248,7 +3401,16 @@
       "https://i.imgur.com/RTcvcMZ.png",
       "MATK Boost I",
       "MATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "20s 20% Exploit Weakness (+6s) [Range: All Allies]",
+      "22s 20% Exploit Weakness (+7s) [Range: All Allies]",
+      "25s 25% Exploit Weakness (+8s) [Range: All Allies]",
+      "30s 30% Exploit Weakness (+10s) [Range: All Allies]",
+      "Boost Summon Ability Pot. (All Allies)"
     ],
     [
       "Festive Spear",
@@ -3332,7 +3494,16 @@
       "https://i.imgur.com/VCsa3NL.png",
       "PATK Boost I",
       "PATK Boost I",
-      "✖ Sigil Boost II"
+      "✖ Sigil Boost II",
+      "",
+      "",
+      "",
+      "",
+      "30s 4% HP Gain (+0s) [Range: All Allies]",
+      "30s 5% HP Gain (+0s) [Range: All Allies]",
+      "30s 6% HP Gain (+0s) [Range: All Allies]",
+      "30s 8% HP Gain (+0s) [Range: All Allies]",
+      "Boost Summon Ability Pot. (All Allies)"
     ],
     [
       "Lance of the Hunt",
@@ -3388,7 +3559,16 @@
       "https://i.imgur.com/ri1NRRr.png",
       "PATK Boost I",
       "PATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Buff & Debuff Extension (Self) & Wind Mastery (All Allies)"
     ],
     [
       "Odin Spear",
@@ -3867,6 +4047,43 @@
       "ATK Boost (Ice) I"
     ],
     [
+      "Chevron Blade",
+      "Cloud",
+      "Gacha (Non-Limited)",
+      "Boost PATK",
+      "High",
+      "Boost Wind Pot.",
+      "Mid",
+      "",
+      "",
+      "",
+      "Devastating Cyclone",
+      "1052",
+      "42",
+      "32",
+      "34",
+      "208",
+      "161",
+      "92",
+      "Devastating Cyclone (4 ATB)\n480% Phys. Wind Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n30s PATK Up (+10s) (Low -\u003e Mid) [Range: All Allies]\n30s 25% Wind Weapon Boost (+10s) [Range: All Allies] [Condition: Self 50-100% HP]",
+      "Devastating Cyclone (4 ATB)\n580% Phys. Wind Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n40s PATK Up (+13s) (Low -\u003e Mid) [Range: All Allies]\n40s 25% Wind Weapon Boost (+13s) [Range: All Allies] [Condition: Self 50-100% HP]",
+      "Devastating Cyclone+ (4 ATB)\n750% Phys. Wind Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n50s PATK Up (+16s) (Mid -\u003e High) [Range: All Allies]\n50s 30% Wind Weapon Boost (+16s) [Range: All Allies] [Condition: Self 50-100% HP]",
+      "Devastating Cyclone++ (4 ATB)\n900% Phys. Wind Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n60s PATK Up (+20s) (Mid -\u003e High) [Range: All Allies]\n60s 35% Wind Weapon Boost (+20s) [Range: All Allies] [Condition: Self 50-100% HP]",
+      "https://i.imgur.com/4OSxgtO.png",
+      "PATK Boost I",
+      "PATK Boost I",
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "30s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]",
+      "40s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]",
+      "50s 20% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]",
+      "60s 30% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]",
+      "Ultimate Wind Interruption (All Allies)"
+    ],
+    [
       "Chocobo Paddle",
       "Cloud",
       "Event",
@@ -3920,7 +4137,16 @@
       "https://i.imgur.com/SNvCMgX.png",
       "PATK Boost I",
       "MATK Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "10s -1 ATB Ice Weapon/Gear C. Ability Cost (+3s) [Range: All Allies] [Condition: First Use]",
+      "15s -1 ATB Ice Weapon/Gear C. Ability Cost (+5s) [Range: All Allies] [Condition: First Use]",
+      "15s -1 ATB Ice Weapon/Gear C. Ability Cost (+5s) [Range: All Allies] [Condition: First Use]",
+      "25s -1 ATB Ice Weapon/Gear C. Ability Cost (+8s) [Range: All Allies] [Condition: First Use]",
+      "Ultimate Ice Interruption (All Allies)"
     ],
     [
       "Cruel Successor",
@@ -4368,7 +4594,16 @@
       "https://i.imgur.com/FLut8JI.png",
       "PATK Boost I",
       "MATK Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "Enhance Buffs (+10s) (Low -\u003e High) [Range: All Allies]",
+      "Enhance Buffs (+10s) (Low -\u003e High) [Range: All Allies]",
+      "Enhance Buffs (+10s) (Low -\u003e Extra High) [Range: All Allies]",
+      "Enhance Buffs (+10s) (Low -\u003e Extra High) [Range: All Allies]",
+      "Quintessential Interruption (All Allies)"
     ],
     [
       "Mythril Saber",
@@ -4424,7 +4659,16 @@
       "https://i.imgur.com/LXlF0Ik.png",
       "PATK Boost I",
       "PATK Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Boost ATB (Self) & Ice Mastery (All Allies)"
     ],
     [
       "Neo Bahamut Greatsword",
@@ -4480,7 +4724,16 @@
       "https://i.imgur.com/AFi0joe.png",
       "PATK Boost I",
       "MATK Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "30s Enliven (+10s) [Range: Self]",
+      "40s Enliven (+13s) [Range: Self]",
+      "50s Enliven (+16s) [Range: All Allies]",
+      "60s Enliven (+20s) [Range: All Allies]",
+      "Quintessential Interruption (All Allies)"
     ],
     [
       "Organics",
@@ -4732,7 +4985,16 @@
       "https://i.imgur.com/6IJGCwc.png",
       "MATK Boost I",
       "MATK Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "750% Mag. Water Damage [Range: Single Enemy]",
+      "900% Mag. Water Damage [Range: Single Enemy]",
+      "1350% Mag. Water Damage [Range: Single Enemy]",
+      "1680% Mag. Water Damage [Range: Single Enemy]",
+      "",
+      "",
+      "",
+      "",
+      "Ultimate Water Interruption (All Allies)"
     ],
     [
       "Zidane's Sword",
@@ -4928,7 +5190,16 @@
       "https://i.imgur.com/coVu9gI.png",
       "MATK Boost I",
       "MATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "Stream Phase Veil Boost (All Allies)"
     ],
     [
       "Hardcore Squad",
@@ -5208,7 +5479,16 @@
       "https://i.imgur.com/EZuy4dG.png",
       "ATK Boost I",
       "ATK Boost I",
-      "ATK Boost I"
+      "ATK Boost I",
+      "",
+      "",
+      "",
+      "",
+      "20s PATK Down (+6s) (Low -\u003e Mid) [Range: Single Enemy]\n20s PDEF Up (+6s) (Low -\u003e Mid) [Range: All Allies]",
+      "25s PATK Down (+8s) (Low -\u003e Mid) [Range: Single Enemy]\n25s PDEF Up (+8s) (Low -\u003e Mid) [Range: All Allies]",
+      "25s PATK Down (+8s) (High) [Range: Single Enemy]\n25s PDEF Up (+8s) (High) [Range: All Allies]",
+      "30s PATK Down (+10s) (High) [Range: Single Enemy]\n30s PDEF Up (+10s) (High) [Range: All Allies]",
+      "Stream Phase Phys. Resist. Boost"
     ],
     [
       "Revenant Mother's Glaive",
@@ -5376,7 +5656,16 @@
       "https://i.imgur.com/R4mHQUI.png",
       "MATK Boost I",
       "MATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "16s Fire Damage Down (+5s) (Low -\u003e Mid) [Range: Single Enemy]",
+      "20s Fire Damage Down (+6s) (Low -\u003e Mid) [Range: Single Enemy]",
+      "25s Fire Damage Down (+8s) (Mid -\u003e High) [Range: Single Enemy]",
+      "35s Fire Damage Down (+11s) (Mid -\u003e High) [Range: Single Enemy]",
+      "Stream Phase Mag. Resist. Boost"
     ],
     [
       "Squeaky Hammer",
@@ -5404,7 +5693,16 @@
       "https://i.imgur.com/jchyfTy.png",
       "PATK Boost I",
       "PATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Boost PDEF (Self) & Lightning Mastery (All Allies)"
     ],
     [
       "Steiner's Blade",
@@ -5796,7 +6094,16 @@
       "https://i.imgur.com/45eZllP.png",
       "PATK Boost I",
       "PATK Boost I",
-      "PATK Boost I"
+      "PATK Boost I",
+      "",
+      "",
+      "",
+      "",
+      "15s Earth Damage Up (+5s) (Low -\u003e Mid) [Range: All Allies]",
+      "20s Earth Damage Up (+6s) (Low -\u003e Mid) [Range: All Allies]",
+      "20s Earth Damage Up (+6s) (High) [Range: All Allies]",
+      "25s Earth Damage Up (+8s) (High) [Range: All Allies]",
+      "Boost Summon Ability Pot. (All Allies)"
     ],
     [
       "Marine Shooter",
@@ -6020,7 +6327,16 @@
       "https://i.imgur.com/Tl40n2s.png",
       "PATK Boost I",
       "PATK Boost I",
-      "▲ Sigil Boost I"
+      "▲ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Buff & Debuff Extension (Self) & Earth Mastery (All Allies)"
     ],
     [
       "Serpent Eater",
@@ -6636,7 +6952,16 @@
       "https://i.imgur.com/3nwQ0v3.png",
       "PATK Boost I",
       "PATK Boost I",
-      "All (Cure Spells) I"
+      "All (Cure Spells) I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Boost Healing Pot. (Self) & Water Mastery (All Allies)"
     ],
     [
       "Giant Fork",
@@ -6832,7 +7157,16 @@
       "https://i.imgur.com/dBCxFk0.png",
       "PATK Boost I",
       "HEAL Boost I",
-      "All (Cure Spells) I"
+      "All (Cure Spells) I",
+      "",
+      "",
+      "",
+      "",
+      "16s Fire Damage Down (+5s) (Low -\u003e Mid) [Range: Single Enemy]",
+      "18s Fire Damage Down (+6s) (Low -\u003e Mid) [Range: Single Enemy]",
+      "20s Fire Damage Down (+6s) (High) [Range: Single Enemy]",
+      "24s Fire Damage Down (+8s) (High) [Range: Single Enemy]",
+      "Stream Phase Amp. Healing"
     ],
     [
       "Orthodox Raven",
@@ -6888,7 +7222,16 @@
       "https://i.imgur.com/8CZgwGO.png",
       "ATK Boost I",
       "HEAL Boost I",
-      "All (Cure Spells) I"
+      "All (Cure Spells) I",
+      "",
+      "",
+      "",
+      "",
+      "Enhance Debuffs (+10s) (Low -\u003e High) [Range: All Enemies]",
+      "Enhance Debuffs (+10s) (Low -\u003e High) [Range: All Enemies]",
+      "Enhance Debuffs (+10s) (Low -\u003e Extra High) [Range: All Enemies]",
+      "Enhance Debuffs (+10s) (Low -\u003e Extra High) [Range: All Enemies]",
+      "Stream Phase Amp. Healing"
     ],
     [
       "Prime Number",
@@ -7056,7 +7399,16 @@
       "https://i.imgur.com/eUjI7gT.png",
       "MATK Boost I",
       "MATK Boost I",
-      "All (Cure Spells) I"
+      "All (Cure Spells) I",
+      "",
+      "",
+      "",
+      "",
+      "+10% Limit Break Gauge [Range: Self]",
+      "+10% Limit Break Gauge [Range: Self]",
+      "+15% Limit Break Gauge [Range: Self]",
+      "+20% Limit Break Gauge [Range: Self]",
+      "Stream Phase Amp. Healing"
     ],
     [
       "Canyon Collar",
@@ -7224,7 +7576,16 @@
       "https://i.imgur.com/x8iNY0F.png",
       "MATK Boost I",
       "MATK Boost I",
-      "All (Cure Spells) I"
+      "All (Cure Spells) I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Boost Healing Pot. (Self) & Fire Mastery (All Allies)"
     ],
     [
       "Hell House Collar",
@@ -7871,6 +8232,43 @@
       "MATK Boost I"
     ],
     [
+      "Cerulean Sky",
+      "Sephiroth",
+      "Gacha (Non-Limited)",
+      "Boost PATK",
+      "Mid",
+      "Boost Wind Pot.",
+      "High",
+      "",
+      "",
+      "",
+      "Blue Triad",
+      "49040",
+      "40",
+      "36",
+      "31",
+      "198",
+      "180",
+      "86",
+      "Blue Triad (4 ATB)\n600% Phys. Wind Damage [Range: Single Enemy]\n30s PDEF Down (+10s) (Low -\u003e Mid) [Range: Single Enemy]\n30s Enfeeble (+10s) [Range: Single Enemy] [Condition: Self 50-100% HP]\n60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]",
+      "Blue Triad (4 ATB)\n720% Phys. Wind Damage [Range: Single Enemy]\n40s PDEF Down (+13s) (Low -\u003e Mid) [Range: Single Enemy]\n40s Enfeeble (+13s) [Range: Single Enemy] [Condition: Self 50-100% HP]\n60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]",
+      "Blue Triad+ (4 ATB)\n1080% Phys. Wind Damage [Range: Single Enemy]\n50s PDEF Down (+16s) (Mid -\u003e High) [Range: Single Enemy]\n50s Enfeeble (+16s) [Range: Single Enemy] [Condition: Self 50-100% HP]\n60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]",
+      "Blue Triad++ (4 ATB)\n1340% Phys. Wind Damage [Range: Single Enemy]\n60s PDEF Down (+20s) (Mid -\u003e High) [Range: Single Enemy]\n60s Enfeeble (+20s) [Range: Single Enemy] [Condition: Self 50-100% HP]\n60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]\n+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]",
+      "https://i.imgur.com/QqZsFtz.png",
+      "PATK Boost I",
+      "PATK Boost I",
+      "▲ Sigil Boost I",
+      "750% Phys. Wind Damage [Range: Single Enemy]",
+      "900% Phys. Wind Damage [Range: Single Enemy]",
+      "1350% Phys. Wind Damage [Range: Single Enemy]",
+      "1680% Phys. Wind Damage [Range: Single Enemy]",
+      "",
+      "",
+      "",
+      "",
+      "Ultimate Wind Interruption (All Allies)"
+    ],
+    [
       "Dark Heavens",
       "Sephiroth",
       "Gacha (Non-Limited)",
@@ -8092,7 +8490,16 @@
       "https://i.imgur.com/HOu27Ka.png",
       "PATK Boost I",
       "PATK Boost I",
-      "▲ Sigil Boost I"
+      "▲ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "20s PATK Up (+6s) (Low -\u003e Mid) [Range: All Allies]",
+      "25s PATK Up (+8s) (Low -\u003e Mid) [Range: All Allies]",
+      "25s PATK Up (+8s) (Mid -\u003e High) [Range: All Allies]",
+      "30s PATK Up (+10s) (Mid -\u003e High) [Range: All Allies]",
+      "Ultimate Earth Interruption (All Allies)"
     ],
     [
       "Infiltration Sword",
@@ -8120,7 +8527,16 @@
       "https://i.imgur.com/EEQfARH.png",
       "PATK Boost I",
       "PATK Boost I",
-      "▲ Sigil Boost I"
+      "▲ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "Enhance Buffs (+10s) (Low -\u003e High) [Range: All Allies]",
+      "Enhance Buffs (+10s) (Low -\u003e High) [Range: All Allies]",
+      "Enhance Buffs (+10s) (Low -\u003e Extra High) [Range: All Allies]",
+      "Enhance Buffs (+10s) (Low -\u003e Extra High) [Range: All Allies]",
+      "Ultimate Physical Interruption (All Allies)"
     ],
     [
       "Kuja's Spirit Blade",
@@ -8260,7 +8676,16 @@
       "https://i.imgur.com/ObGuEAJ.png",
       "PATK Boost I",
       "PATK Boost I",
-      "▲ Sigil Boost I"
+      "▲ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "15s MDEF Up (+5s) (Low -\u003e Mid) [Range: All Allies]",
+      "20s MDEF Up (+6s) (Low -\u003e Mid) [Range: All Allies]",
+      "20s MDEF Up (+6s) (Mid -\u003e High) [Range: All Allies]",
+      "25s MDEF Up (+8s) (Mid -\u003e High) [Range: All Allies]",
+      "Ultimate Water Interruption (All Allies)"
     ],
     [
       "Pandemonic Sword",
@@ -8456,7 +8881,16 @@
       "https://i.imgur.com/NlByyYt.png",
       "MATK Boost I",
       "MATK Boost I",
-      "ATK Boost (Water) I"
+      "ATK Boost (Water) I",
+      "",
+      "",
+      "",
+      "",
+      "20s PATK Down (+6s) (Low -\u003e Mid) [Range: Single Enemy]\n20s Enfeeble (+6s) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+      "30s PATK Down (+10s) (Low -\u003e Mid) [Range: Single Enemy]\n30s Enfeeble (+10s) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+      "45s PATK Down (+15s) (High) [Range: Single Enemy]\n45s Enfeeble (+15s) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+      "60s PATK Down (+20s) (High) [Range: Single Enemy]\n60s Enfeeble (+20s) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+      "Quintessential Interruption (All Allies)"
     ],
     [
       "Shinra Military Sword",
@@ -8680,7 +9114,16 @@
       "https://i.imgur.com/j1NENTA.png",
       "PATK Boost I",
       "PATK Boost I",
-      "▲ Sigil Boost I"
+      "▲ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Boost ATB (Self) & Wind Mastery (All Allies)"
     ],
     [
       "Divine Steed Blade",
@@ -8764,7 +9207,16 @@
       "https://i.imgur.com/ZgjvBkh.png",
       "PATK Boost I",
       "PATK Boost I",
-      "▲ Sigil Boost I"
+      "▲ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "10s Haste (+3s) [Range: All Allies] [Condition: First Use]",
+      "10s Haste (+3s) [Range: All Allies] [Condition: First Use]",
+      "15s Haste (+5s) [Range: All Allies] [Condition: First Use]",
+      "15s Haste (+5s) [Range: All Allies] [Condition: First Use]",
+      "Quintessential Interruption (All Allies)"
     ],
     [
       "Masamune",
@@ -8848,7 +9300,16 @@
       "https://i.imgur.com/mWAWDaW.png",
       "MATK Boost I",
       "MATK Boost I",
-      "▲ Sigil Boost I"
+      "▲ Sigil Boost I",
+      "600% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]",
+      "730% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]",
+      "940% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]",
+      "1120% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]",
+      "",
+      "",
+      "",
+      "",
+      "Ultimate Ice Interruption (All Allies)"
     ],
     [
       "Osafune",
@@ -8932,7 +9393,15 @@
       "https://i.imgur.com/OAGok18.png",
       "MATK Boost I",
       "MATK Boost I",
-      "▲ Sigil Boost I"
+      "▲ Sigil Boost I",
+      "750% Mag. Lightning Damage [Range: Single Enemy]",
+      "900% Mag. Lightning Damage [Range: Single Enemy]",
+      "1350% Mag. Lightning Damage [Range: Single Enemy]",
+      "1680% Mag. Lightning Damage [Range: Single Enemy]",
+      "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]"
     ],
     [
       "Amarant's Claws",
@@ -9128,7 +9597,16 @@
       "https://i.imgur.com/94Cj9s7.png",
       "PATK Boost I",
       "PATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "15s PDEF Down (+5s) (Low -\u003e Mid) [Range: Single Enemy]",
+      "20s PDEF Down (+6s) (Low -\u003e Mid) [Range: Single Enemy]",
+      "20s PDEF Down (+6s) (Mid -\u003e High) [Range: Single Enemy]",
+      "25s PDEF Down (+8s) (Mid -\u003e High) [Range: Single Enemy]",
+      "Ultimate Wind Interruption (All Allies)"
     ],
     [
       "Crystal Gloves",
@@ -9212,7 +9690,16 @@
       "https://i.imgur.com/BYA16kY.png",
       "MATK Boost I",
       "MATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "750% Mag. Earth Damage [Range: Single Enemy]",
+      "900% Mag. Earth Damage [Range: Single Enemy]",
+      "1350% Mag. Earth Damage [Range: Single Enemy]",
+      "1680% Mag. Earth Damage [Range: Single Enemy]",
+      "",
+      "",
+      "",
+      "",
+      "Ultimate Earth Interruption (All Allies)"
     ],
     [
       "Feathered Gloves",
@@ -9240,7 +9727,16 @@
       "https://i.imgur.com/ij9nYIX.png",
       "ATK Boost I",
       "ATK Boost (Water) I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]",
+      "60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]",
+      "60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]",
+      "60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]",
+      "Ultimate Water Interruption (All Allies)"
     ],
     [
       "Festive Gloves",
@@ -9268,7 +9764,16 @@
       "https://i.imgur.com/JE5c4Nd.png",
       "PATK Boost I",
       "PATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "750% Phys. Fire Damage [Range: Single Enemy]",
+      "900% Phys. Fire Damage [Range: Single Enemy]",
+      "1350% Phys. Fire Damage [Range: Single Enemy]",
+      "1680% Phys. Fire Damage [Range: Single Enemy]",
+      "",
+      "",
+      "",
+      "",
+      "Ultimate Fire Interruption (All Allies)"
     ],
     [
       "Gauntlets of the Worthy",
@@ -9352,7 +9857,16 @@
       "https://i.imgur.com/NWRZ8pa.png",
       "PATK Boost I",
       "ATK Boost (Fire) I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "20s MATK Down (+6s) (Low -\u003e Mid) [Range: Single Enemy]\n20s Fire Resistance Down (+6s) (Low -\u003e Mid) [Range: Single Enemy] [Condition: Self 50-100% HP]",
+      "25s MATK Down (+8s) (Low -\u003e Mid) [Range: Single Enemy]\n25s Fire Resistance Down (+8s) (Low -\u003e Mid) [Range: Single Enemy] [Condition: Self 50-100% HP]",
+      "25s MATK Down (+8s) (Mid -\u003e High) [Range: Single Enemy]\n25s Fire Resistance Down (+8s) (Mid -\u003e High) [Range: Single Enemy] [Condition: Self 50-100% HP]",
+      "30s MATK Down (+10s) (Mid -\u003e High) [Range: Single Enemy]\n30s Fire Resistance Down (+10s) (Mid -\u003e High) [Range: Single Enemy] [Condition: Self 50-100% HP]",
+      "Ultimate Physical Interruption (All Allies)"
     ],
     [
       "Holy Flame Gloves",
@@ -9576,7 +10090,16 @@
       "https://i.imgur.com/93KvVeW.png",
       "MATK Boost I",
       "MATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "15s PATK Down (+5s) (Low -\u003e Mid) [Range: Single Enemy]",
+      "20s PATK Down (+6s) (Low -\u003e Mid) [Range: Single Enemy]",
+      "20s PATK Down (+6s) (Mid -\u003e High) [Range: Single Enemy]",
+      "25s PATK Down (+8s) (Mid -\u003e High) [Range: Single Enemy]",
+      "Ultimate Ice Interruption (All Allies)"
     ],
     [
       "Motor Drive",
@@ -9744,7 +10267,16 @@
       "https://i.imgur.com/fORCZJe.png",
       "PATK Boost I",
       "PATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "750% Phys. Ice Damage [Range: Single Enemy]",
+      "900% Phys. Ice Damage [Range: Single Enemy]",
+      "1350% Phys. Ice Damage [Range: Single Enemy]",
+      "1680% Phys. Ice Damage [Range: Single Enemy]",
+      "",
+      "",
+      "",
+      "",
+      "Ultimate Ice Interruption (All Allies)"
     ],
     [
       "Sabin's Claws",
@@ -9996,7 +10528,16 @@
       "https://i.imgur.com/kOguQnA.png",
       "PATK Boost I",
       "PATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Boost ATB (Self) & Fire Mastery (All Allies)"
     ],
     [
       "Cath Palug",
@@ -10080,7 +10621,16 @@
       "https://i.imgur.com/8YyqBHD.png",
       "PATK Boost I",
       "MATK Boost I",
-      "▲ Sigil Boost I"
+      "▲ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "Enhance Debuffs (+10s) (Low -\u003e High) [Range: All Enemies]",
+      "Enhance Debuffs (+10s) (Low -\u003e High) [Range: All Enemies]",
+      "Enhance Debuffs (+10s) (Low -\u003e Extra High) [Range: All Enemies]",
+      "Enhance Debuffs (+10s) (Low -\u003e Extra High) [Range: All Enemies]",
+      "Quintessential Interruption (All Allies)"
     ],
     [
       "Crow Familiar",
@@ -10584,7 +11134,16 @@
       "https://i.imgur.com/tlcIegj.png",
       "PATK Boost I",
       "PATK Boost I",
-      "PATK Boost I"
+      "PATK Boost I",
+      "",
+      "",
+      "",
+      "",
+      "20s Earth Damage Down (+6s) (Low -\u003e Mid) [Range: Single Enemy]\nEnhance Buffs (+10s) (Low -\u003e High) [Range: All Allies]",
+      "25s Earth Damage Down (+8s) (Low -\u003e Mid) [Range: Single Enemy]\nEnhance Buffs (+10s) (Low -\u003e High) [Range: All Allies]",
+      "25s Earth Damage Down (+8s) (High) [Range: Single Enemy]\nEnhance Buffs (+10s) (Low -\u003e Extra High) [Range: All Allies]",
+      "30s Earth Damage Down (+10s) (High) [Range: Single Enemy]\nEnhance Buffs (+10s) (Low -\u003e Extra High) [Range: All Allies]",
+      "Ultimate Wind Interruption (All Allies)"
     ],
     [
       "Silver Rifle",
@@ -10612,7 +11171,16 @@
       "https://i.imgur.com/b0RnYFY.png",
       "PATK Boost I",
       "PATK Boost I",
-      "PATK Boost I"
+      "PATK Boost I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Boost ATB (Self) & Lightning Mastery (All Allies)"
     ],
     [
       "T03 Model N",
@@ -10836,7 +11404,16 @@
       "https://i.imgur.com/3BbocmH.png",
       "ATK Boost I",
       "MATK Boost I",
-      "MATK Boost I"
+      "MATK Boost I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Boost ATB (Self) & Earth Mastery (All Allies)"
     ],
     [
       "Bird of Prey",
@@ -10864,7 +11441,16 @@
       "https://i.imgur.com/pXcOXpn.png",
       "PATK Boost I",
       "PATK Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "30s 20% Physical Weapon Boost (+6s) [Range: Self] [Condition: Self 70-100% HP]",
+      "35s 20% Physical Weapon Boost (+7s) [Range: Self] [Condition: Self 70-100% HP]",
+      "35s 25% Physical Weapon Boost (+7s) [Range: Self] [Condition: Self 70-100% HP]",
+      "45s 30% Physical Weapon Boost (+9s) [Range: Self] [Condition: Self 70-100% HP]",
+      "Ultimate Water Interruption (All Allies)"
     ],
     [
       "Boomerang",
@@ -11060,7 +11646,16 @@
       "https://i.imgur.com/0aLrL2M.png",
       "ATK Boost I",
       "PATK Boost I",
-      "⏺ Sigil Boost I"
+      "⏺ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "20s PDEF Down (+6s) (Low -\u003e Mid) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+      "25s PDEF Down (+8s) (Low -\u003e Mid) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+      "25s PDEF Down (+8s) (High) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+      "30s PDEF Down (+10s) (High) [Range: Single Enemy] [Condition: Self 70-100% HP]",
+      "Ultimate Earth Interruption (All Allies)"
     ],
     [
       "Heirloom Brush",
@@ -11760,7 +12355,16 @@
       "https://i.imgur.com/y2yDOzk.png",
       "PATK Boost I",
       "PATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Boost ATB (Self) & Ice Mastery (All Allies)"
     ],
     [
       "Buster Sword Origin",
@@ -12012,7 +12616,16 @@
       "https://i.imgur.com/yeZioCt.png",
       "MATK Boost I",
       "MATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]",
+      "Quintessential Interruption (All Allies)"
     ],
     [
       "Gelid Sword",
@@ -12040,7 +12653,16 @@
       "https://i.imgur.com/Wdi86Hr.png",
       "MATK Boost I",
       "MATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "750% Mag. Ice Damage [Range: Single Enemy]",
+      "900% Mag. Ice Damage [Range: Single Enemy]",
+      "1350% Mag. Ice Damage [Range: Single Enemy]",
+      "1680% Mag. Ice Damage [Range: Single Enemy]",
+      "",
+      "",
+      "",
+      "",
+      "Ultimate Ice Interruption (All Allies)"
     ],
     [
       "Ifrit's Sword",
@@ -12152,7 +12774,16 @@
       "https://i.imgur.com/9gtbj0B.png",
       "PATK Boost I",
       "PATK Boost I",
-      "✖ Sigil Boost I"
+      "✖ Sigil Boost I",
+      "",
+      "",
+      "",
+      "",
+      "1.5x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]\n20s 25% Phys. Single Target Dmg. Received Up (+6s) [Range: Single Enemy] [Condition: Weakness Hit]",
+      "1.5x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]\n22s 25% Phys. Single Target Dmg. Received Up (+7s) [Range: Single Enemy] [Condition: Weakness Hit]",
+      "1.5x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]\n26s 35% Phys. Single Target Dmg. Received Up (+8s) [Range: Single Enemy] [Condition: Weakness Hit]",
+      "1.5x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]\n30s 40% Phys. Single Target Dmg. Received Up (+10s) [Range: Single Enemy] [Condition: Weakness Hit]",
+      "Ultimate Ice Interruption (All Allies)"
     ],
     [
       "Rousing Arc Sword",

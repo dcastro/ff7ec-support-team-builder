@@ -80,7 +80,8 @@ check-effects:
 regen-weapons:
     # NOTE: you must set the `FF7EC_GOOGLE_SHEETS_KEY` environment variable with a Google API key first.
     curl \
-    	"https://sheets.googleapis.com/v4/spreadsheets/1evoNzTA9veDRTvYJEMe-9F81QQ-CxUWN4mrd93kn2W4/values/Weapons!A%3AZ?key=${FF7EC_GOOGLE_SHEETS_KEY}" \
+    	"https://sheets.googleapis.com/v4/spreadsheets/1evoNzTA9veDRTvYJEMe-9F81QQ-CxUWN4mrd93kn2W4/values/Weapons!A%3AZZ?key=${FF7EC_GOOGLE_SHEETS_KEY}" \
     	--header 'Accept: application/json' \
     	--compressed > resources/weapons.json
-    just check-effects
+    # update .snap files and unsupported_effects.md
+    just test

@@ -75,6 +75,8 @@ type UserStateWeapon =
   { ignored :: Boolean
   -- | The OB range owned by the user. E.g. if the user has this weapon at OB3, this range could be OB0-5.
   -- INVARIANT: this needs to match one of the items in the corresponding `WeaponData.distinctObs`.
+  --
+  -- #(ref:owned-ob-invariant)
   , ownedOb :: Maybe ObRange
   }
 

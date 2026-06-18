@@ -62,6 +62,7 @@ type Weapon =
   , commandAbilitySigil :: Maybe Sigil
   , sAbilities :: SAbilities
   , rAbilities :: RAbilities
+  , diamondCustomDescription :: Maybe NonEmptyString
   }
 
 type SAbilities =
@@ -83,6 +84,8 @@ data Sigil
 
 type ObLevel =
   { description :: NonEmptyString -- ^ The source text from which the buffs/debuffs were parsed.
+  , heartCustomDescription :: Maybe NonEmptyString -- ^ The source text from which the buffs/debuffs were parsed.
+  , spadeCustomDescription :: Maybe NonEmptyString -- ^ The source text from which the buffs/debuffs were parsed.
   , effects :: Array WeaponEffect
   }
 

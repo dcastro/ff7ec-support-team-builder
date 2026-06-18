@@ -8,6 +8,7 @@ import Control.Alt ((<|>))
 import Data.Array as Arr
 import Data.Bifunctor (lmap)
 import Data.Either (Either(..), hush)
+import Data.Foldable (foldMap)
 import Data.FoldableWithIndex as F
 import Data.Maybe (Maybe(..))
 import Data.String.NonEmpty (NonEmptyString)
@@ -61,6 +62,18 @@ parseWeapon rowIndex row = do
   sAbility2 <- getCell 24
   sAbility3 <- getCell 25
 
+  let diamondCustomDescription = getOptionalCell 34
+
+  {-
+    NOTE: we only parse the text for R.Abilities so we can display them in the UI.
+    NOTE: we only parse the text for Diamond Custom Abilities so we can display them in the UI.
+    NOTE: for S.Abilities, we only care about sigil boosts.
+      * `parseSAbilitySigilBoost` is used in `Database.groupsForWeapon`
+      * @(ref:parse-sigil-boosts)
+      * @(ref:use-sigil-boosts)
+
+  -}
+
   pure
     { name
     , character
@@ -74,6 +87,7 @@ parseWeapon rowIndex row = do
     , commandAbilitySigil
     , sAbilities: { slot1: sAbility1, slot2: sAbility2, slot3: sAbility3 }
     , rAbilities: { slot1: rAbility1, slot2: rAbility2 }
+    , diamondCustomDescription
     }
   where
   rowId = rowIndex + 1
@@ -82,7 +96,9 @@ parseWeapon rowIndex row = do
   getDescription columnIndex = do
     let
       columnId = columnIndex + 1
-    getCell columnIndex >>= parseDescription { rowId, columnId }
+      heartCustomDescription = getOptionalCell (columnIndex + 8)
+      spadeCustomDescription = getOptionalCell (columnIndex + 12)
+    getCell columnIndex >>= parseDescription { rowId, columnId } heartCustomDescription spadeCustomDescription
 
   getCell :: Int -> Result NonEmptyString
   getCell columnIndex = do
@@ -95,6 +111,9 @@ parseWeapon rowIndex row = do
     NES.fromString str
       `onErr`
         ("Cell at " <> show rowId <> ":" <> show columnId <> " is empty")
+
+  getOptionalCell :: Int -> Maybe NonEmptyString
+  getOptionalCell columnIndex = Arr.index row columnIndex >>= NES.fromString
 
 infixl 0 onErr as !@
 
@@ -114,16 +133,23 @@ type ParsedDescription =
 hasCureAllSAbility :: NonEmptyString -> Boolean
 hasCureAllSAbility = NES.toString >>> String.startsWith "All (Cure Spells)"
 
-parseDescription :: Coords -> NonEmptyString -> Result ParsedDescription
-parseDescription coords description = do
+parseDescription :: Coords -> Maybe NonEmptyString -> Maybe NonEmptyString -> NonEmptyString -> Result ParsedDescription
+parseDescription coords heartCustomDescription spadeCustomDescription description = do
   let
+
     lines = description # NES.toString # String.lines
     firstLine = Arr.head lines `unsafeFromJust` "String.lines returned empty list"
-  let
+
     -- Parse weapon effects, discarding parser failures
-    effects =
-      lines
+    parseEffects :: Coords -> NonEmptyString -> Array WeaponEffect
+    parseEffects coords desc =
+      desc # NES.toString # String.lines
         # Arr.mapMaybe \line -> hush $ runParser line (parseWeaponEffect coords)
+
+    effects =
+      parseEffects coords description
+        <> foldMap (parseEffects coords) heartCustomDescription
+        <> foldMap (parseEffects coords) spadeCustomDescription
   -- Every weapon must have an ATB cost
   atbCost <- runParser firstLine (parseAtbCost coords) #
     lmap P.parseErrorMessage
@@ -136,6 +162,8 @@ parseDescription coords description = do
     , commandAbilitySigil
     , obLevel:
         { description
+        , heartCustomDescription
+        , spadeCustomDescription
         , effects
         }
     }
@@ -160,6 +188,8 @@ parseCommandAbilitySigil coords = do
 
 -- | Example input:
 -- "✖ Sigil Boost I"
+--
+-- #(ref:parse-sigil-boosts)
 parseSAbilitySigilBoost :: Parser Sigil
 parseSAbilitySigilBoost =
   parseSigilSymbol <* P.string " Sigil Boost"

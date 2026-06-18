@@ -13,6 +13,7 @@ import Data.Maybe (Maybe(..), fromMaybe)
 import Data.Set (Set)
 import Data.Set as Set
 import Data.String as String
+import Data.String.Utils as StringUtils
 import Data.String.CodeUnits as CU
 import Data.Tuple (Tuple(..))
 import Effect (Effect)
@@ -21,9 +22,13 @@ import Parsing (runParser)
 
 foreign import readWeaponsValues :: String -> Effect (Array (Array String))
 
--- OB0/OB1/OB6/OB10 are in columns 18-21 (0-indexed)
+-- OB0/OB1/OB6/OB10 description columns (0-indexed); first line is the ATB cost, not an effect
 obCols :: Array Int
 obCols = [ 18, 19, 20, 21 ]
+
+-- Heart custom (cols 26-29) and Spade custom (cols 30-33); every line is an effect
+customCols :: Array Int
+customCols = [ 26, 27, 28, 29, 30, 31, 32, 33 ]
 
 -- Produce a stable grouping key from a raw effect line.
 -- Strips [Range: ...] and trailing (...) then normalizes numbers.
@@ -102,31 +107,34 @@ main = do
               weapon = fromMaybe "" (Array.index row 0)
               char = fromMaybe "" (Array.index row 1)
               label = if char == "" then weapon else char <> " - " <> weapon
+              checkCols skipFirst acc cols =
+                Array.foldl
+                  ( \m' col ->
+                      case Array.index row col of
+                        Nothing -> m'
+                        Just cell ->
+                          cell
+                            # StringUtils.lines
+                            <#> String.trim
+                            # foldlWithIndex
+                                ( \lineIdx m'' line ->
+                                    if line == "" || (skipFirst && lineIdx == 0) then m''
+                                    else
+                                      case runParser line (parseWeaponEffect { rowId: rowIdx + 2, columnId: col + 1 }) of
+                                        Right _ -> m''
+                                        Left _ ->
+                                          let
+                                            key = groupingKey line
+                                          in
+                                            Map.insertWith (Map.unionWith Set.union) key (Map.singleton label (Set.singleton line)) m''
+                                )
+                                m'
+                  )
+                  acc
+                  cols
             in
-              Array.foldl
-                ( \m' col ->
-                    case Array.index row col of
-                      Nothing -> m'
-                      Just cell ->
-                        cell
-                          # String.split (String.Pattern "\n")
-                          <#> String.trim
-                          # foldlWithIndex
-                              ( \lineIdx m'' line ->
-                                  if line == "" || lineIdx == 0 then m''
-                                  else
-                                    case runParser line (parseWeaponEffect { rowId: rowIdx + 2, columnId: col + 1 }) of
-                                      Right _ -> m''
-                                      Left _ ->
-                                        let
-                                          key = groupingKey line
-                                        in
-                                          Map.insertWith (Map.unionWith Set.union) key (Map.singleton label (Set.singleton line)) m''
-                              )
-                              m'
-                )
-                m
-                obCols
+              checkCols true m obCols
+                # \m' -> checkCols false m' customCols
         )
         Map.empty
   if Map.isEmpty unknownMap then do

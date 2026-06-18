@@ -62,6 +62,15 @@ parseWeapon rowIndex row = do
   sAbility2 <- getCell 24
   sAbility3 <- getCell 25
 
+  {-
+    NOTE: we only parse the text for R.Abilities so we can display them in the UI.
+    NOTE: for S.Abilities, we only care about sigil boosts.
+      * `parseSAbilitySigilBoost` is used in `Database.groupsForWeapon`
+      * @(ref:parse-sigil-boosts)
+      * @(ref:use-sigil-boosts)
+
+  -}
+
   pure
     { name
     , character
@@ -175,6 +184,8 @@ parseCommandAbilitySigil coords = do
 
 -- | Example input:
 -- "✖ Sigil Boost I"
+--
+-- #(ref:parse-sigil-boosts)
 parseSAbilitySigilBoost :: Parser Sigil
 parseSAbilitySigilBoost =
   parseSigilSymbol <* P.string " Sigil Boost"

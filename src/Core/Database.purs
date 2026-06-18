@@ -432,6 +432,7 @@ groupsForWeapon weapon = do
         }
       _ -> LazyList.nil
 
+  -- #(ref:use-sigil-boosts)
   getSigilBoost :: LazyList.List GroupEntry
   getSigilBoost =
     LazyList.fromFoldable [ weapon.sAbilities.slot1, weapon.sAbilities.slot2, weapon.sAbilities.slot3 ]

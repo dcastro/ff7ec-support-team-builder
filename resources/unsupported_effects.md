@@ -1,5 +1,5 @@
 <!-- LTEX: enabled=false -->
-Found 68 unsupported effect type(s).
+Found 69 unsupported effect type(s).
 
 # Table of Contents
 
@@ -35,6 +35,7 @@ Found 68 unsupported effect type(s).
 * [Ns Lightning Damage Down](#ns-lightning-damage-down)
 * [Ns Lightning Damage Up](#ns-lightning-damage-up)
 * [Ns N% Amp. Earth Abilities](#ns-n-amp-earth-abilities)
+* [Ns N% Amp. Phys. Abilities](#ns-n-amp-phys-abilities)
 * [Ns N% Earth Damage Bonus](#ns-n-earth-damage-bonus)
 * [Ns N% Earth Weapon Boost](#ns-n-earth-weapon-boost)
 * [Ns N% Fire Damage Bonus](#ns-n-fire-damage-bonus)
@@ -121,6 +122,8 @@ Found 68 unsupported effect type(s).
 * **Aerith - Gorgeous Staff**
   * `+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]`
   * `+2 Costume C. Ability Uses [Range: Self] [Condition: First Use]`
+* **Sephiroth - Cerulean Sky**
+  * `+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]`
 * **Vincent - Chrome Death Penalty**
   * `+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]`
 
@@ -2184,6 +2187,20 @@ Found 68 unsupported effect type(s).
   * `360% Phys. Wind Damage [Range: All Enemies]`
   * `430% Phys. Wind Damage [Range: All Enemies]`
   * `500% Phys. Wind Damage [Range: All Enemies]`
+* **Cloud - Chevron Blade**
+  * `480% Phys. Wind Damage [Range: All Enemies]`
+  * `580% Phys. Wind Damage [Range: All Enemies]`
+  * `750% Phys. Wind Damage [Range: All Enemies]`
+  * `900% Phys. Wind Damage [Range: All Enemies]`
+* **Sephiroth - Cerulean Sky**
+  * `1080% Phys. Wind Damage [Range: Single Enemy]`
+  * `1340% Phys. Wind Damage [Range: Single Enemy]`
+  * `1350% Phys. Wind Damage [Range: Single Enemy]`
+  * `1680% Phys. Wind Damage [Range: Single Enemy]`
+  * `600% Phys. Wind Damage [Range: Single Enemy]`
+  * `720% Phys. Wind Damage [Range: Single Enemy]`
+  * `750% Phys. Wind Damage [Range: Single Enemy]`
+  * `900% Phys. Wind Damage [Range: Single Enemy]`
 * **Sephiroth - Dark Heavens**
   * `440% Phys. Wind Damage [Range: Single Enemy]`
   * `530% Phys. Wind Damage [Range: Single Enemy]`
@@ -2245,6 +2262,8 @@ Found 68 unsupported effect type(s).
   * `1.4x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]`
 * **Cid - Dragoon Lance**
   * `1.2x Damage [Range: All Enemies] [Condition: Self 1+ Buff, Enhancement]`
+* **Cloud - Chevron Blade**
+  * `1.3x Damage [Range: All Enemies] [Condition: Single Target]`
 * **Cloud - Erdrick's Sword**
   * `1.5x Damage [Range: All Enemies] [Condition: Single Target]`
 * **Cloud - Holiday Blade**
@@ -2440,6 +2459,18 @@ Found 68 unsupported effect type(s).
 
 ---
 
+# Ns N% Amp. Phys. Abilities
+
+[↑ Back to top](#table-of-contents)
+
+* **Cloud - Chevron Blade**
+  * `30s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
+  * `40s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
+  * `50s 20% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
+  * `60s 30% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
+
+---
+
 # Ns N% Earth Damage Bonus
 
 [↑ Back to top](#table-of-contents)
@@ -2543,6 +2574,11 @@ Found 68 unsupported effect type(s).
   * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
   * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
 * **Sephiroth (Orig.) - Muramasa**
+  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
+* **Sephiroth - Cerulean Sky**
   * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
   * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
   * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
@@ -2932,6 +2968,11 @@ Found 68 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
+* **Cloud - Chevron Blade**
+  * `30s 25% Wind Weapon Boost (+10s) [Range: All Allies] [Condition: Self 50-100% HP]`
+  * `40s 25% Wind Weapon Boost (+13s) [Range: All Allies] [Condition: Self 50-100% HP]`
+  * `50s 30% Wind Weapon Boost (+16s) [Range: All Allies] [Condition: Self 50-100% HP]`
+  * `60s 35% Wind Weapon Boost (+20s) [Range: All Allies] [Condition: Self 50-100% HP]`
 * **Vincent - Chrome Death Penalty**
   * `30s 25% Wind Weapon Boost (+10s) [Range: All Allies]`
   * `40s 25% Wind Weapon Boost (+13s) [Range: All Allies]`

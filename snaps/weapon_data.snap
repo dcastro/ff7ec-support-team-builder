@@ -413,6 +413,28 @@
     }
   ],
   [
+    "Cerulean Sky",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
+    "Chevron Blade",
+    {
+      "ownedOb": "OB6-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-5",
+        "OB6-10"
+      ]
+    }
+  ],
+  [
     "Chiron",
     {
       "ownedOb": "OB6-10",

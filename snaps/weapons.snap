@@ -13355,6 +13355,102 @@
       "atbCost": 4
     },
     {
+      "source": "Gacha (Non-Limited)",
+      "sAbilities": {
+        "slot3": "⏺ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost PATK"
+      },
+      "ob6": {
+        "spadeCustomDescription": "50s 20% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "PatkUp"
+          }
+        ],
+        "description": "Devastating Cyclone+ (4 ATB)\n750% Phys. Wind Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n50s PATK Up (+16s) (Mid -> High) [Range: All Allies]\n50s 30% Wind Weapon Boost (+16s) [Range: All Allies] [Condition: Self 50-100% HP]"
+      },
+      "ob10": {
+        "spadeCustomDescription": "60s 30% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "PatkUp"
+          }
+        ],
+        "description": "Devastating Cyclone++ (4 ATB)\n900% Phys. Wind Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n60s PATK Up (+20s) (Mid -> High) [Range: All Allies]\n60s 35% Wind Weapon Boost (+20s) [Range: All Allies] [Condition: Self 50-100% HP]"
+      },
+      "ob1": {
+        "spadeCustomDescription": "40s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "PatkUp"
+          }
+        ],
+        "description": "Devastating Cyclone (4 ATB)\n580% Phys. Wind Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n40s PATK Up (+13s) (Low -> Mid) [Range: All Allies]\n40s 25% Wind Weapon Boost (+13s) [Range: All Allies] [Condition: Self 50-100% HP]"
+      },
+      "ob0": {
+        "spadeCustomDescription": "30s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]",
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PatkUp"
+          }
+        ],
+        "description": "Devastating Cyclone (4 ATB)\n480% Phys. Wind Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n30s PATK Up (+10s) (Low -> Mid) [Range: All Allies]\n30s 25% Wind Weapon Boost (+10s) [Range: All Allies] [Condition: Self 50-100% HP]"
+      },
+      "name": "Chevron Blade",
+      "image": "https://i.imgur.com/4OSxgtO.png",
+      "character": "Cloud",
+      "atbCost": 4
+    },
+    {
       "source": "Event",
       "sAbilities": {
         "slot3": "MATK Boost I",
@@ -25032,6 +25128,142 @@
       },
       "name": "CC Alloy Sword",
       "image": "https://i.imgur.com/KJpErRv.png",
+      "character": "Sephiroth",
+      "atbCost": 4
+    },
+    {
+      "source": "Gacha (Non-Limited)",
+      "sAbilities": {
+        "slot3": "▲ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Wind Pot.",
+        "slot1": "Boost PATK"
+      },
+      "ob6": {
+        "heartCustomDescription": "1350% Phys. Wind Damage [Range: Single Enemy]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "PdefDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "Enfeeble"
+          }
+        ],
+        "description": "Blue Triad+ (4 ATB)\n1080% Phys. Wind Damage [Range: Single Enemy]\n50s PDEF Down (+16s) (Mid -> High) [Range: Single Enemy]\n50s Enfeeble (+16s) [Range: Single Enemy] [Condition: Self 50-100% HP]\n60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
+      },
+      "ob10": {
+        "heartCustomDescription": "1680% Phys. Wind Damage [Range: Single Enemy]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "PdefDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "Enfeeble"
+          }
+        ],
+        "description": "Blue Triad++ (4 ATB)\n1340% Phys. Wind Damage [Range: Single Enemy]\n60s PDEF Down (+20s) (Mid -> High) [Range: Single Enemy]\n60s Enfeeble (+20s) [Range: Single Enemy] [Condition: Self 50-100% HP]\n60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]\n+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]"
+      },
+      "ob1": {
+        "heartCustomDescription": "900% Phys. Wind Damage [Range: Single Enemy]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "PdefDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "Enfeeble"
+          }
+        ],
+        "description": "Blue Triad (4 ATB)\n720% Phys. Wind Damage [Range: Single Enemy]\n40s PDEF Down (+13s) (Low -> Mid) [Range: Single Enemy]\n40s Enfeeble (+13s) [Range: Single Enemy] [Condition: Self 50-100% HP]\n60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
+      },
+      "ob0": {
+        "heartCustomDescription": "750% Phys. Wind Damage [Range: Single Enemy]",
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PdefDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "Enfeeble"
+          }
+        ],
+        "description": "Blue Triad (4 ATB)\n600% Phys. Wind Damage [Range: Single Enemy]\n30s PDEF Down (+10s) (Low -> Mid) [Range: Single Enemy]\n30s Enfeeble (+10s) [Range: Single Enemy] [Condition: Self 50-100% HP]\n60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
+      },
+      "name": "Cerulean Sky",
+      "image": "https://i.imgur.com/QqZsFtz.png",
       "character": "Sephiroth",
       "atbCost": 4
     },

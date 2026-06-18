@@ -581,6 +581,14 @@
         ]
       },
       {
+        "weaponName": "Cerulean Sky",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
         "weaponName": "Serrated Remiges",
         "ranges": [
           {
@@ -1177,6 +1185,32 @@
               "ob0": {
                 "max": "Mid",
                 "base": "Mid"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Chevron Blade",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
               }
             }
           }
@@ -6589,6 +6623,32 @@
         ]
       },
       {
+        "weaponName": "Cerulean Sky",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Folding Ruler",
         "ranges": [
           {
@@ -9484,6 +9544,9 @@
         "weaponName": "Bahamut Greatsword"
       },
       {
+        "weaponName": "Chevron Blade"
+      },
+      {
         "weaponName": "Crimson Blitz"
       },
       {
@@ -9834,6 +9897,9 @@
       },
       {
         "weaponName": "Blue Bramble"
+      },
+      {
+        "weaponName": "Cerulean Sky"
       },
       {
         "weaponName": "Edgar's Coiled Blade"

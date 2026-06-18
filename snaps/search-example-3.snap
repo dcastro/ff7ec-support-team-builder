@@ -279,6 +279,38 @@
     },
     {
       "weapons": [
+        "Cerulean Sky",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Staff of the Possessed",
+        "Striking Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Cerulean Sky",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
         "Kuja's Spirit Blade",
         "Overture"
       ],
@@ -448,6 +480,22 @@
   [
     {
       "weapons": [
+        "Chevron Blade",
+        "Mystic Sword"
+      ],
+      "character": "Cloud"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Desperado Glaive",
         "Pumpkin Lamppost"
       ],
@@ -523,6 +571,54 @@
         "Twinkling Star"
       ],
       "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gambanteinn",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Cerulean Sky",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Mermaid Rod",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Cerulean Sky",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Cerulean Sky",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
     }
   ],
   [
@@ -1328,6 +1424,22 @@
   [
     {
       "weapons": [
+        "Floral Wand",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chevron Blade",
+        "Mystic Sword"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Kamura Wand",
         "Sun Umbrella"
       ],
@@ -1344,6 +1456,22 @@
   [
     {
       "weapons": [
+        "Staff of the Possessed",
+        "Sun Umbrella"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chevron Blade",
+        "Mystic Sword"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Kamura Wand",
         "Staff of the Possessed"
       ],
@@ -1563,6 +1691,22 @@
         "Sleek Saber"
       ],
       "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Chevron Blade",
+        "Mystic Sword"
+      ],
+      "character": "Cloud"
+    },
+    {
+      "weapons": [
+        "Great Sabrecat Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
     }
   ],
   [
@@ -1593,6 +1737,22 @@
       "weapons": [
         "Mystic Sword",
         "Umbralschwert"
+      ],
+      "character": "Cloud"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Dawn's Prayers",
+        "Staff of the Possessed"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chevron Blade",
+        "Mystic Sword"
       ],
       "character": "Cloud"
     }
@@ -1915,6 +2075,22 @@
         "Shining Gloves"
       ],
       "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Chevron Blade",
+        "Mystic Sword"
+      ],
+      "character": "Cloud"
+    },
+    {
+      "weapons": [
+        "Iron Collar",
+        "Silver Collar"
+      ],
+      "character": "Red XIII"
     }
   ],
   [
@@ -2443,6 +2619,22 @@
         "Shining Gloves"
       ],
       "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Kamura Wand",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Cerulean Sky",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
     }
   ],
   [
@@ -3019,6 +3211,38 @@
         "Shining Gloves"
       ],
       "character": "Tifa"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Gambanteinn",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Cerulean Sky",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Rousing Wizer Staff",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Cerulean Sky",
+        "Kuja's Spirit Blade"
+      ],
+      "character": "Sephiroth"
     }
   ],
   [
@@ -3728,6 +3952,22 @@
   [
     {
       "weapons": [
+        "Chevron Blade",
+        "Iron Blade"
+      ],
+      "character": "Cloud"
+    },
+    {
+      "weapons": [
+        "Black Whiskers",
+        "Twinkling Star"
+      ],
+      "character": "Zack"
+    }
+  ],
+  [
+    {
+      "weapons": [
         "Pumpkin Lamppost",
         "Steiner's Blade"
       ],
@@ -4347,6 +4587,22 @@
         "Cool Cat's Megaphone"
       ],
       "character": "Cait Sith"
+    }
+  ],
+  [
+    {
+      "weapons": [
+        "Floral Wand",
+        "Sea Dragon Staff"
+      ],
+      "character": "Aerith"
+    },
+    {
+      "weapons": [
+        "Chevron Blade",
+        "Mystic Sword"
+      ],
+      "character": "Cloud"
     }
   ],
   [

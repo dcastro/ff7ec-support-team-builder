@@ -141,7 +141,7 @@ renderObLevel { description, heartCustomDescription, spadeCustomDescription } =
   renderLines desc = desc # NES.toString # String.lines <#> \line -> HH.p [] [ HH.text line ]
   renderCustom label = case _ of
     Nothing -> []
-    Just desc -> Arr.cons (HH.p [ classes' "title is-6 mb-1 mt-3" ] [ HH.text label ]) (renderLines desc)
+    Just desc -> Arr.cons (HH.p [ classes' "title is-4 mb-1 mt-3" ] [ HH.text label ]) (renderLines desc)
 
 renderAbility :: forall w i. NonEmptyString -> HH.HTML w i
 renderAbility ability =

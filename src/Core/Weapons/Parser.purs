@@ -120,16 +120,19 @@ type ParsedDescription =
 hasCureAllSAbility :: NonEmptyString -> Boolean
 hasCureAllSAbility = NES.toString >>> String.startsWith "All (Cure Spells)"
 
-parseEffects :: Coords -> NonEmptyString -> Array WeaponEffect
-parseEffects coords desc =
-  desc # NES.toString # String.lines
-    # Arr.mapMaybe \line -> hush $ runParser line (parseWeaponEffect coords)
-
 parseDescription :: Coords -> Maybe NonEmptyString -> Maybe NonEmptyString -> NonEmptyString -> Result ParsedDescription
 parseDescription coords heartCustomDescription spadeCustomDescription description = do
   let
+
     lines = description # NES.toString # String.lines
     firstLine = Arr.head lines `unsafeFromJust` "String.lines returned empty list"
+
+    -- Parse weapon effects, discarding parser failures
+    parseEffects :: Coords -> NonEmptyString -> Array WeaponEffect
+    parseEffects coords desc =
+      desc # NES.toString # String.lines
+        # Arr.mapMaybe \line -> hush $ runParser line (parseWeaponEffect coords)
+
     effects =
       parseEffects coords description
         <> foldMap (parseEffects coords) heartCustomDescription

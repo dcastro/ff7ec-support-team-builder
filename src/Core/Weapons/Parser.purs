@@ -71,7 +71,6 @@ parseWeapon rowIndex row = do
       * `parseSAbilitySigilBoost` is used in `Database.groupsForWeapon`
       * @(ref:parse-sigil-boosts)
       * @(ref:use-sigil-boosts)
-
   -}
 
   pure
@@ -213,13 +212,21 @@ parseDuration = inContext "Duration" $ Duration <$> P.intDecimal <* P.char 's'
 parsePercentage :: Parser Percentage
 parsePercentage = inContext "Percentage" $ Percentage <$> P.intDecimal <* P.char '%'
 
--- E.g. `(+30s)`
+-- E.g. `(+30s)` or `(+12-20s)`
+--
+-- NOTE: "Crimson Blitz" seems to have a malformed "duration extension" in the sheet.
+-- The in-game description shows `(+20s)`, but the spreadsheet says "(+12-20s)".
+-- To account for this, we also parse "duration ranges", but then discard the 1st number and keep only the 2nd.
 parseExtension :: Parser Extension
 parseExtension =
   inContext "Extension" do
     Extension <$>
-      inParens do
-        (P.char '+' *> P.intDecimal <* P.char 's')
+      inParens (P.char '+' *> (P.try parseRangeUpper <|> parseSingle))
+  where
+  -- Try parsing a range (for Crimson Blitz)
+  parseRangeUpper = P.intDecimal *> P.char '-' *> P.intDecimal <* P.char 's'
+  -- Try parsing a single number
+  parseSingle = P.intDecimal <* P.char 's'
 
 {-
 

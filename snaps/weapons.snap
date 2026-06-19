@@ -13575,22 +13575,70 @@
       },
       "ob6": {
         "spadeCustomDescription": "15s -1 ATB Ice Weapon/Gear C. Ability Cost (+5s) [Range: All Allies] [Condition: First Use]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "IceWeakness"
+          }
+        ],
         "description": "Lightning Rush+ (3 ATB)\n670% Mag. Non-elem. Damage [Range: Single Enemy]\n50s 30% Ice Weakness (+10-16s) [Range: Single Enemy]\n50s 25% Ice Damage Bonus (+16s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
         "spadeCustomDescription": "25s -1 ATB Ice Weapon/Gear C. Ability Cost (+8s) [Range: All Allies] [Condition: First Use]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "percentage": 30,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "IceWeakness"
+          }
+        ],
         "description": "Lightning Rush++ (3 ATB)\n800% Mag. Non-elem. Damage [Range: Single Enemy]\n60s 30% Ice Weakness (+12-20s) [Range: Single Enemy]\n60s 30% Ice Damage Bonus (+20s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
         "spadeCustomDescription": "15s -1 ATB Ice Weapon/Gear C. Ability Cost (+5s) [Range: All Allies] [Condition: First Use]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "IceWeakness"
+          }
+        ],
         "description": "Lightning Rush (3 ATB)\n520% Mag. Non-elem. Damage [Range: Single Enemy]\n40s 20% Ice Weakness (+8-13s) [Range: Single Enemy]\n40s 20% Ice Damage Bonus (+13s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
         "spadeCustomDescription": "10s -1 ATB Ice Weapon/Gear C. Ability Cost (+3s) [Range: All Allies] [Condition: First Use]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "IceWeakness"
+          }
+        ],
         "description": "Lightning Rush (3 ATB)\n430% Mag. Non-elem. Damage [Range: Single Enemy]\n30s 20% Ice Weakness (+6-10s) [Range: Single Enemy]\n30s 20% Ice Damage Bonus (+10s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Crimson Blitz",

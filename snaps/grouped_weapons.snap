@@ -9458,6 +9458,14 @@
     "FilterIceWeakness",
     [
       {
+        "weaponName": "Crimson Blitz",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
         "weaponName": "Gun of the Worthy",
         "ranges": [
           {

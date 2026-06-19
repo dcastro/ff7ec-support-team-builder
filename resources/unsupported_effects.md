@@ -1,5 +1,5 @@
 <!-- LTEX: enabled=false -->
-Found 69 unsupported effect type(s).
+Found 68 unsupported effect type(s).
 
 # Table of Contents
 
@@ -42,7 +42,6 @@ Found 69 unsupported effect type(s).
 * [Ns N% Fire Weapon Boost](#ns-n-fire-weapon-boost)
 * [Ns N% HP Gain](#ns-n-hp-gain)
 * [Ns N% Ice Damage Bonus](#ns-n-ice-damage-bonus)
-* [Ns N% Ice Weakness](#ns-n-ice-weakness)
 * [Ns N% Ice Weapon Boost](#ns-n-ice-weapon-boost)
 * [Ns N% Lightning Weapon Boost](#ns-n-lightning-weapon-boost)
 * [Ns N% Mag. Single Target Dmg. Received Up](#ns-n-mag-single-target-dmg-received-up)
@@ -2615,18 +2614,6 @@ Found 69 unsupported effect type(s).
   * `40s 20% Ice Damage Bonus (+13s) [Range: All Allies]`
   * `50s 25% Ice Damage Bonus (+16s) [Range: All Allies]`
   * `60s 30% Ice Damage Bonus (+20s) [Range: All Allies]`
-
----
-
-# Ns N% Ice Weakness
-
-[↑ Back to top](#table-of-contents)
-
-* **Cloud - Crimson Blitz**
-  * `30s 20% Ice Weakness (+6-10s) [Range: Single Enemy]`
-  * `40s 20% Ice Weakness (+8-13s) [Range: Single Enemy]`
-  * `50s 30% Ice Weakness (+10-16s) [Range: Single Enemy]`
-  * `60s 30% Ice Weakness (+12-20s) [Range: Single Enemy]`
 
 ---
 

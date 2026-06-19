@@ -92,6 +92,28 @@ wontSupportKeys = Set.fromFoldable
   , "+N% Stance Gauge"
   , "+N% Limit Break Gauge"
   , "+N% Additional Damage"
+  , "+N ATB"
+  , "N Additional Damage"
+  , "N% Mag. Earth Damage"
+  , "N% Mag. Fire Damage"
+  , "N% Mag. Ice Damage"
+  , "N% Mag. Lightning Damage"
+  , "N% Mag. Non-elem. Damage"
+  , "N% Mag. Water Damage"
+  , "N% Mag. Wind Damage"
+  , "N% Phys. Earth Damage"
+  , "N% Phys. Fire Damage"
+  , "N% Phys. Ice Damage"
+  , "N% Phys. Lightning Damage"
+  , "N% Phys. Non-elem. Damage"
+  , "N% Phys. Water Damage"
+  , "N% Phys. Wind Damage"
+  , "N.Nx Damage"
+  , "Ns N% Regen"
+  , "Ns Poison"
+  , "Ns Silence"
+  , "Ns Stun"
+  , "Nx Damage"
   ]
 
 main :: Effect Unit
@@ -152,7 +174,7 @@ main = do
       mainWithAnchors = Array.zip mainEntries mainAnchors
       wontSupportWithAnchors = Array.zip wontSupportEntries wontSupportAnchors
     log "<!-- LTEX: enabled=false -->"
-    log $ "Found " <> show (Array.length allEntries) <> " unsupported effect type(s)."
+    log $ "Found " <> show (Array.length mainEntries) <> " unsupported effect type(s)."
     log ""
     log "# Table of Contents"
     log ""

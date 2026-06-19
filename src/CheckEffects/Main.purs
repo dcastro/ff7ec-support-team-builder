@@ -167,12 +167,7 @@ main = do
       isWontSupport (Tuple key _) = Set.member key wontSupportKeys
       mainEntries = Array.filter (not <<< isWontSupport) allEntries
       wontSupportEntries = Array.filter isWontSupport allEntries
-      -- Compute anchors for all entries in document order so deduplication matches GitHub
-      allAnchors = buildAnchors ((mainEntries <> wontSupportEntries) <#> \(Tuple key _) -> key)
-      mainAnchors = Array.take (Array.length mainEntries) allAnchors
-      wontSupportAnchors = Array.drop (Array.length mainEntries) allAnchors
-      mainWithAnchors = Array.zip mainEntries mainAnchors
-      wontSupportWithAnchors = Array.zip wontSupportEntries wontSupportAnchors
+      mainWithAnchors = Array.zip mainEntries (buildAnchors (mainEntries <#> \(Tuple key _) -> key))
     log "<!-- LTEX: enabled=false -->"
     log $ "Found " <> show (Array.length mainEntries) <> " unsupported effect type(s)."
     log ""
@@ -182,8 +177,6 @@ main = do
       log $ "* [" <> key <> "](#" <> anchor <> ")"
     when (not Array.null wontSupportEntries) do
       log "* [Won't support](#wont-support)"
-      for_ wontSupportWithAnchors \(Tuple (Tuple key _) anchor) ->
-        log $ "  * [" <> key <> "](#" <> anchor <> ")"
     for_ mainWithAnchors \(Tuple (Tuple key weapons) _) -> do
       let weaponEntries = Map.toUnfoldable weapons :: Array (Tuple String (Set String))
       log ""
@@ -204,9 +197,6 @@ main = do
       log "# Won't support"
       log ""
       log "[↑ Back to top](#table-of-contents)"
-      for_ wontSupportWithAnchors \(Tuple (Tuple key weapons) _) -> do
-        let weaponCount = Map.size weapons
-        log ""
-        log $ "## " <> key
-        log ""
-        log $ show weaponCount <> if weaponCount == 1 then " weapon" else " weapons"
+      log ""
+      for_ wontSupportEntries \(Tuple key _) ->
+        log $ "* " <> key

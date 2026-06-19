@@ -45,33 +45,6 @@ Found 41 unsupported effect type(s).
 * [Ns Thunder Resistance Up](#ns-thunder-resistance-up)
 * [Ns Wind Resistance Up](#ns-wind-resistance-up)
 * [Won't support](#wont-support)
-  * [+N ATB](#n-atb)
-  * [+N% Additional Damage](#n-additional-damage)
-  * [+N% Limit Break Gauge](#n-limit-break-gauge)
-  * [+N% Stance Gauge](#n-stance-gauge)
-  * [Cancel Effect](#cancel-effect)
-  * [N Additional Damage](#n-additional-damage-1)
-  * [N% Crit Rate](#n-crit-rate)
-  * [N% Mag. Earth Damage](#n-mag-earth-damage)
-  * [N% Mag. Fire Damage](#n-mag-fire-damage)
-  * [N% Mag. Ice Damage](#n-mag-ice-damage)
-  * [N% Mag. Lightning Damage](#n-mag-lightning-damage)
-  * [N% Mag. Non-elem. Damage](#n-mag-non-elem-damage)
-  * [N% Mag. Water Damage](#n-mag-water-damage)
-  * [N% Mag. Wind Damage](#n-mag-wind-damage)
-  * [N% Phys. Earth Damage](#n-phys-earth-damage)
-  * [N% Phys. Fire Damage](#n-phys-fire-damage)
-  * [N% Phys. Ice Damage](#n-phys-ice-damage)
-  * [N% Phys. Lightning Damage](#n-phys-lightning-damage)
-  * [N% Phys. Non-elem. Damage](#n-phys-non-elem-damage)
-  * [N% Phys. Water Damage](#n-phys-water-damage)
-  * [N% Phys. Wind Damage](#n-phys-wind-damage)
-  * [N.Nx Damage](#nnx-damage)
-  * [Ns N% Regen](#ns-n-regen)
-  * [Ns Poison](#ns-poison)
-  * [Ns Silence](#ns-silence)
-  * [Ns Stun](#ns-stun)
-  * [Nx Damage](#nx-damage)
 
 ---
 
@@ -777,110 +750,30 @@ Found 41 unsupported effect type(s).
 
 [↑ Back to top](#table-of-contents)
 
-## +N ATB
-
-8 weapons
-
-## +N% Additional Damage
-
-1 weapon
-
-## +N% Limit Break Gauge
-
-17 weapons
-
-## +N% Stance Gauge
-
-5 weapons
-
-## Cancel Effect
-
-5 weapons
-
-## N Additional Damage
-
-6 weapons
-
-## N% Crit Rate
-
-198 weapons
-
-## N% Mag. Earth Damage
-
-15 weapons
-
-## N% Mag. Fire Damage
-
-24 weapons
-
-## N% Mag. Ice Damage
-
-26 weapons
-
-## N% Mag. Lightning Damage
-
-23 weapons
-
-## N% Mag. Non-elem. Damage
-
-86 weapons
-
-## N% Mag. Water Damage
-
-16 weapons
-
-## N% Mag. Wind Damage
-
-15 weapons
-
-## N% Phys. Earth Damage
-
-8 weapons
-
-## N% Phys. Fire Damage
-
-11 weapons
-
-## N% Phys. Ice Damage
-
-11 weapons
-
-## N% Phys. Lightning Damage
-
-7 weapons
-
-## N% Phys. Non-elem. Damage
-
-113 weapons
-
-## N% Phys. Water Damage
-
-9 weapons
-
-## N% Phys. Wind Damage
-
-12 weapons
-
-## N.Nx Damage
-
-25 weapons
-
-## Ns N% Regen
-
-21 weapons
-
-## Ns Poison
-
-3 weapons
-
-## Ns Silence
-
-1 weapon
-
-## Ns Stun
-
-1 weapon
-
-## Nx Damage
-
-1 weapon
+* +N ATB
+* +N% Additional Damage
+* +N% Limit Break Gauge
+* +N% Stance Gauge
+* Cancel Effect
+* N Additional Damage
+* N% Crit Rate
+* N% Mag. Earth Damage
+* N% Mag. Fire Damage
+* N% Mag. Ice Damage
+* N% Mag. Lightning Damage
+* N% Mag. Non-elem. Damage
+* N% Mag. Water Damage
+* N% Mag. Wind Damage
+* N% Phys. Earth Damage
+* N% Phys. Fire Damage
+* N% Phys. Ice Damage
+* N% Phys. Lightning Damage
+* N% Phys. Non-elem. Damage
+* N% Phys. Water Damage
+* N% Phys. Wind Damage
+* N.Nx Damage
+* Ns N% Regen
+* Ns Poison
+* Ns Silence
+* Ns Stun
+* Nx Damage

@@ -181,16 +181,13 @@ type Potencies =
   , max :: Potency
   }
 
+-- NOTE: the order of the variants of this type determines the order in which the filters are displayed in the UI.
 data FilterEffectType
   = FilterHeal
-
-  | FilterVeil
   | FilterProvoke
-  | FilterEnfeeble
-  | FilterStop
-  | FilterExploitWeakness
-  | FilterEnliven
 
+  -- Buffs
+  | FilterVeil
   | FilterPatkUp
   | FilterMatkUp
   | FilterPdefUp
@@ -202,6 +199,11 @@ data FilterEffectType
   | FilterWaterDamageUp
   | FilterWindDamageUp
 
+  -- Debuffs
+  | FilterEnfeeble
+  | FilterStop
+  | FilterExploitWeakness
+  | FilterEnliven
   | FilterPatkDown
   | FilterMatkDown
   | FilterPdefDown

@@ -1,5 +1,5 @@
 <!-- LTEX: enabled=false -->
-Found 68 unsupported effect type(s).
+Found 63 unsupported effect type(s).
 
 # Table of Contents
 

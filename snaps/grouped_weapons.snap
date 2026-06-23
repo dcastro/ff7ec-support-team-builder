@@ -328,6 +328,91 @@
     ]
   ],
   [
+    "FilterProvoke",
+    [
+      {
+        "weaponName": "Festive Blade",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Gargantuan Monolith",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Inflatable Buster Sword",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Mythril Slasher",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Orchard Shovel",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Tranquility",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Type-90 Longsword",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Fafnir Rifle",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Blade of Ruin",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Pirate's Glaive",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      }
+    ]
+  ],
+  [
     "FilterVeil",
     [
       {
@@ -423,375 +508,6 @@
         "ranges": [
           {
             "range": "All"
-          }
-        ]
-      }
-    ]
-  ],
-  [
-    "FilterProvoke",
-    [
-      {
-        "weaponName": "Festive Blade",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Gargantuan Monolith",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Inflatable Buster Sword",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Mythril Slasher",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Orchard Shovel",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Tranquility",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Type-90 Longsword",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Fafnir Rifle",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Blade of Ruin",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Pirate's Glaive",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      }
-    ]
-  ],
-  [
-    "FilterEnfeeble",
-    [
-      {
-        "weaponName": "Cool Cat's Megaphone",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      },
-      {
-        "weaponName": "Grinding Gear",
-        "ranges": [
-          {
-            "range": "All"
-          }
-        ]
-      },
-      {
-        "weaponName": "Rocket Lance",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      },
-      {
-        "weaponName": "Erdrick's Sword",
-        "ranges": [
-          {
-            "range": "All"
-          }
-        ]
-      },
-      {
-        "weaponName": "Umbralschwert",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      },
-      {
-        "weaponName": "Snow's Bardiche",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      },
-      {
-        "weaponName": "Shinra Ceremonial Rifle",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      },
-      {
-        "weaponName": "Patissier's Collar",
-        "ranges": [
-          {
-            "range": "All"
-          }
-        ]
-      },
-      {
-        "weaponName": "Cerulean Sky",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      },
-      {
-        "weaponName": "Serrated Remiges",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      },
-      {
-        "weaponName": "Shinra Blade: Model I",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      },
-      {
-        "weaponName": "Omega Wing",
-        "ranges": [
-          {
-            "range": "All"
-          }
-        ]
-      },
-      {
-        "weaponName": "Leather Combat Gloves",
-        "ranges": [
-          {
-            "range": "All"
-          }
-        ]
-      },
-      {
-        "weaponName": "Galian Roar",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      },
-      {
-        "weaponName": "Fatum Ex Machina",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      }
-    ]
-  ],
-  [
-    "FilterStop",
-    [
-      {
-        "weaponName": "Flayer",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      },
-      {
-        "weaponName": "Mop",
-        "ranges": [
-          {
-            "range": "All"
-          }
-        ]
-      },
-      {
-        "weaponName": "Spear",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      },
-      {
-        "weaponName": "Trident",
-        "ranges": [
-          {
-            "range": "SingleTarget"
-          }
-        ]
-      }
-    ]
-  ],
-  [
-    "FilterExploitWeakness",
-    [
-      {
-        "weaponName": "Supreme Sage's Staff",
-        "ranges": [
-          {
-            "range": "All"
-          }
-        ]
-      },
-      {
-        "weaponName": "Dragoon Lance",
-        "ranges": [
-          {
-            "range": "All"
-          }
-        ]
-      },
-      {
-        "weaponName": "Fusion Sword",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Blade of the Worthy",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Infiltration Sword",
-        "ranges": [
-          {
-            "range": "All"
-          }
-        ]
-      },
-      {
-        "weaponName": "Blue Daffodil Gloves",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Lightning's Gloves",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Transgressor",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Bird of Prey",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Rocker's Guitar",
-        "ranges": [
-          {
-            "range": "All"
-          }
-        ]
-      },
-      {
-        "weaponName": "Festive Sword",
-        "ranges": [
-          {
-            "range": "All"
-          }
-        ]
-      },
-      {
-        "weaponName": "Sword of the Hunt",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      }
-    ]
-  ],
-  [
-    "FilterEnliven",
-    [
-      {
-        "weaponName": "Noble Parasol",
-        "ranges": [
-          {
-            "range": "Self"
-          }
-        ]
-      },
-      {
-        "weaponName": "Festive Sword",
-        "ranges": [
-          {
-            "range": "Self"
           }
         ]
       }
@@ -4477,6 +4193,290 @@
                 "base": "Mid"
               }
             }
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterEnfeeble",
+    [
+      {
+        "weaponName": "Cool Cat's Megaphone",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Grinding Gear",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Rocket Lance",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Erdrick's Sword",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Umbralschwert",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Snow's Bardiche",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Shinra Ceremonial Rifle",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Patissier's Collar",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Cerulean Sky",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Serrated Remiges",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Shinra Blade: Model I",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Omega Wing",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Leather Combat Gloves",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Galian Roar",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Fatum Ex Machina",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterStop",
+    [
+      {
+        "weaponName": "Flayer",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Mop",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Spear",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      },
+      {
+        "weaponName": "Trident",
+        "ranges": [
+          {
+            "range": "SingleTarget"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterExploitWeakness",
+    [
+      {
+        "weaponName": "Supreme Sage's Staff",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Dragoon Lance",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Fusion Sword",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Blade of the Worthy",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Infiltration Sword",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Blue Daffodil Gloves",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Lightning's Gloves",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Transgressor",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Bird of Prey",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Rocker's Guitar",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Festive Sword",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Sword of the Hunt",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterEnliven",
+    [
+      {
+        "weaponName": "Noble Parasol",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Festive Sword",
+        "ranges": [
+          {
+            "range": "Self"
           }
         ]
       }

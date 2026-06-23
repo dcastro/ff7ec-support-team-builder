@@ -275,6 +275,22 @@ getDistinctObs weapon = do
         case y of
           WindWeakness { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
+      Phys.weaponboost { range: range1, durExt: _ } ->
+        case y of
+          Phys.weaponboost { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      Mag.weaponboost { range: range1, durExt: _ } ->
+        case y of
+          Mag.weaponboost { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      Phys.DamageBonus { range: range1, durExt: _ } ->
+        case y of
+          Phys.DamageBonus { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      Mag.DamageBonus { range: range1, durExt: _ } ->
+        case y of
+          Mag.DamageBonus { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
 
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
 
@@ -536,6 +552,11 @@ groupsForWeapon weapon = do
       EarthWeakness { range } -> Just { effectType: FilterEarthWeakness, range: Just range, potencies: Nothing }
       WaterWeakness { range } -> Just { effectType: FilterWaterWeakness, range: Just range, potencies: Nothing }
       WindWeakness { range } -> Just { effectType: FilterWindWeakness, range: Just range, potencies: Nothing }
+
+      Phys.weaponboost { range } -> Just { effectType: FilterPhys.weaponboost, range: Just range, potencies: Nothing }
+      Mag.weaponboost { range } -> Just { effectType: FilterMag.weaponboost, range: Just range, potencies: Nothing }
+      Phys.DamageBonus { range } -> Just { effectType: FilterPhys.DamageBonus, range: Just range, potencies: Nothing }
+      Mag.DamageBonus { range } -> Just { effectType: FilterMag.DamageBonus, range: Just range, potencies: Nothing }
 
       PatkUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
         PatkUp ob1, PatkUp ob6, PatkUp ob10 -> Just { effectType: FilterPatkUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }

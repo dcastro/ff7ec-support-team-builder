@@ -62,16 +62,16 @@ spec =
           IceWeakness { range: SingleTarget, durExt: { duration: Duration 150, extension: Extension 0 }, percentage: Percentage 50 }
       "60s Phys. weapon boost (+20s) [Range: Self]"
         `shouldParse`
-          Phys.weaponboost { range: Self, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 40 }
+          PhysicalWeaponBoost { range: Self, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 40 }
       "60s Mag. weapon boost (+20s) [Range: Self]"
         `shouldParse`
-          Mag.weaponboost { range: Self, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 40 }
+          MagicWeaponBoost { range: Self, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 40 }
       "60s Phys. Damage Bonus (+20s) [Range: All Allies]"
         `shouldParse`
-          Phys.DamageBonus { range: all, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 30 }
+          PhysicalDamageBonus { range: all, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 30 }
       "60s Mag. Damage Bonus (+20s) [Range: All allies]"
         `shouldParse`
-          Mag.DamageBonus { range: all, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 30 }
+          MagicDamageBonus { range: all, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 30 }
     it "parses all weapons" do
       sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
       sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of

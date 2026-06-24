@@ -275,21 +275,21 @@ getDistinctObs weapon = do
         case y of
           WindWeakness { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
-      Phys.weaponboost { range: range1, durExt: _ } ->
+      PhysicalWeaponBoost { range: range1, durExt: _ } ->
         case y of
-          Phys.weaponboost { range: range2, durExt: _ } -> range1 == range2
+          PhysicalWeaponBoost { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
-      Mag.weaponboost { range: range1, durExt: _ } ->
+      MagicWeaponBoost { range: range1, durExt: _ } ->
         case y of
-          Mag.weaponboost { range: range2, durExt: _ } -> range1 == range2
+          MagicWeaponBoost { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
-      Phys.DamageBonus { range: range1, durExt: _ } ->
+      PhysicalDamageBonus { range: range1, durExt: _ } ->
         case y of
-          Phys.DamageBonus { range: range2, durExt: _ } -> range1 == range2
+          PhysicalDamageBonus { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
-      Mag.DamageBonus { range: range1, durExt: _ } ->
+      MagicDamageBonus { range: range1, durExt: _ } ->
         case y of
-          Mag.DamageBonus { range: range2, durExt: _ } -> range1 == range2
+          MagicDamageBonus { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
 
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"

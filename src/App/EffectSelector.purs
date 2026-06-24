@@ -412,10 +412,10 @@ hasPotencies = case _ of
     FilterMatkUp -> true
     FilterPdefUp -> true
     FilterMdefUp -> true
-    FilterPhys.weaponboost -> true
-    FilterMag.weaponboost -> true
-    FilterPhys.DamageBonus -> true
-    FilterMag.DamageBonus -> true
+    FilterPhysicalWeaponBoost -> false
+    FilterMagicWeaponBoost -> false
+    FilterPhysicalDamageBonus -> false
+    FilterMagicDamageBonus -> false
     FilterFireDamageUp -> true
     FilterIceDamageUp -> true
     FilterThunderDamageUp -> true

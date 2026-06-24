@@ -158,10 +158,10 @@ getPotencies = case _ of
   MatkUp { potencies } -> Just $ MatkUp' potencies
   PdefUp { potencies } -> Just $ PdefUp' potencies
   MdefUp { potencies } -> Just $ MdefUp' potencies
-  Phys.weaponboost {} -> Nothing
-  Mag.weaponboost {} -> Nothing
-  Phys.DamageBonus {} -> Nothing
-  Mag.DamageBonus {} -> Nothing
+  PhysicalWeaponBoost {} -> Nothing
+  MagicWeaponBoost {} -> Nothing
+  PhysicalDamageBonus {} -> Nothing
+  MagicDamageBonus {} -> Nothing
   FireDamageUp { potencies } -> Just $ FireDamageUp' potencies
   IceDamageUp { potencies } -> Just $ IceDamageUp' potencies
   ThunderDamageUp { potencies } -> Just $ ThunderDamageUp' potencies

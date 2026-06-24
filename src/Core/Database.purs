@@ -553,10 +553,10 @@ groupsForWeapon weapon = do
       WaterWeakness { range } -> Just { effectType: FilterWaterWeakness, range: Just range, potencies: Nothing }
       WindWeakness { range } -> Just { effectType: FilterWindWeakness, range: Just range, potencies: Nothing }
 
-      Phys.weaponboost { range } -> Just { effectType: FilterPhys.weaponboost, range: Just range, potencies: Nothing }
-      Mag.weaponboost { range } -> Just { effectType: FilterMag.weaponboost, range: Just range, potencies: Nothing }
-      Phys.DamageBonus { range } -> Just { effectType: FilterPhys.DamageBonus, range: Just range, potencies: Nothing }
-      Mag.DamageBonus { range } -> Just { effectType: FilterMag.DamageBonus, range: Just range, potencies: Nothing }
+      PhysicalWeaponBoost { range } -> Just { effectType: FilterPhysicalWeaponBoost, range: Just range, potencies: Nothing }
+      MagicWeaponBoost { range } -> Just { effectType: FilterMagicWeaponBoost, range: Just range, potencies: Nothing }
+      PhysicalDamageBonus { range } -> Just { effectType: FilterPhysicalDamageBonus, range: Just range, potencies: Nothing }
+      MagicDamageBonus { range } -> Just { effectType: FilterMagicDamageBonus, range: Just range, potencies: Nothing }
 
       PatkUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
         PatkUp ob1, PatkUp ob6, PatkUp ob10 -> Just { effectType: FilterPatkUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }

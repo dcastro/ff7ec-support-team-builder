@@ -462,10 +462,10 @@ hasRange = case _ of
     FilterMatkUp -> true
     FilterPdefUp -> true
     FilterMdefUp -> true
-    FilterPhys.weaponboost -> true
-    FilterMag.weaponboost -> true
-    FilterPhys.DamageBonus -> true
-    FilterMag.DamageBonus -> true
+    FilterPhysicalWeaponBoost -> true
+    FilterMagicWeaponBoost -> true
+    FilterPhysicalDamageBonus -> true
+    FilterMagicDamageBonus -> true
     FilterFireDamageUp -> true
     FilterIceDamageUp -> true
     FilterThunderDamageUp -> true

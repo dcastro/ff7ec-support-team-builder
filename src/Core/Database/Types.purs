@@ -594,6 +594,7 @@ derive newtype instance ReadForeign CharacterName
 instance Display CharacterName where
   display = display <<< unwrap
 
+-- | NOTE: this is how filters are displayed in the UI.
 instance Display FilterEffectType where
   display = case _ of
     FilterHeal -> "Heal"
@@ -611,8 +612,8 @@ instance Display FilterEffectType where
     FilterMdefUp -> "MDEF up"
     FilterPhysicalWeaponBoost -> "Phys. weapon boost"
     FilterMagicWeaponBoost -> "Mag. weapon boost"
-    FilterPhysicalDamageBonus -> "Phys. Damage Bonus"
-    FilterMagicDamageBonus -> "Mag. Damage Bonus"
+    FilterPhysicalDamageBonus -> "Phys. damage bonus"
+    FilterMagicDamageBonus -> "Mag. damage bonus"
     FilterFireDamageUp -> "Fire damage up"
     FilterIceDamageUp -> "Ice damage up"
     FilterThunderDamageUp -> "Thunder damage up"
@@ -809,10 +810,10 @@ exhaustiveWeaponEffectMatch =
     MatkDown _ -> unit
     PdefDown _ -> unit
     MdefDown _ -> unit
-    FilterPhysicalWeaponBoost _ -> unit
-    FilterMagicWeaponBoost _ -> unit
-    FilterPhysicalDamageBonus _ -> unit
-    FilterMagicDamageBonus _ -> unit
+    PhysicalWeaponBoost _ -> unit
+    MagicWeaponBoost _ -> unit
+    PhysicalDamageBonus _ -> unit
+    MagicDamageBonus _ -> unit
     FireResistDown _ -> unit
     IceResistDown _ -> unit
     ThunderResistDown _ -> unit

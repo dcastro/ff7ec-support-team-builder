@@ -60,18 +60,18 @@ spec =
       "150s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]"
         `shouldParse`
           IceWeakness { range: SingleTarget, durExt: { duration: Duration 150, extension: Extension 0 }, percentage: Percentage 50 }
-      "60s Physical Weapon Boost (+20s) [Range: Self]"
+      "30s 25% Physical Weapon Boost (+10s) [Range: Self]"
         `shouldParse`
-          PhysicalWeaponBoost { range: Self, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 40 }
-      "60s Magic Weapon Boost (+20s) [Range: Self]"
+          PhysicalWeaponBoost { range: Self, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 25 }
+      "30s 20% Magic Weapon Boost (+10s) [Range: All Allies] [Condition: Self 50-100% HP]"
         `shouldParse`
-          MagicWeaponBoost { range: Self, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 40 }
-      "60s Physical Damage Bonus (+20s) [Range: All Allies]"
+          MagicWeaponBoost { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 20 }
+      "20s 20% Physical Damage Bonus (+6s) [Range: All Allies]"
         `shouldParse`
-          PhysicalDamageBonus { range: all, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 30 }
-      "60s Magic Damage Bonus (+20s) [Range: All allies]"
+          PhysicalDamageBonus { range: All, durExt: { duration: Duration 20, extension: Extension 6 }, percentage: Percentage 20 }
+      "30s 20% Magic Damage Bonus (+10s) [Range: All Allies]"
         `shouldParse`
-          MagicDamageBonus { range: all, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 30 }
+          MagicDamageBonus { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 20 }
     it "parses all weapons" do
       sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
       sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of

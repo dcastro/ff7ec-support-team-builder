@@ -1,5 +1,5 @@
 {
-  "range": "Weapons!A1:AI1018",
+  "range": "Weapons!A1:AM1018",
   "majorDimension": "ROWS",
   "values": [
     [
@@ -37,7 +37,11 @@
       "Spade Custom 2 (additional C. Ability Effect)",
       "Spade Custom 3 (additional C. Ability Effect)",
       "Spade Custom 4 (additional C. Ability Effect)",
-      "Diamond Custom (additional R.Ability)"
+      "Diamond Custom (additional R.Ability)",
+      "Club Custom 1 (replaces original C. Ability Effect)",
+      "Club Custom 2 (replaces original C. Ability Effect)",
+      "Club Custom 3 (replaces original C. Ability Effect)",
+      "Club Custom 4 (replaces original C. Ability Effect)"
     ],
     [
       "Bahamut Rod",

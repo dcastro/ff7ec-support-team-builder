@@ -772,6 +772,28 @@
               "percentage": 54
             },
             "type": "Heal"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PhysicalDamageBonus"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "MagicDamageBonus"
           }
         ],
         "description": "Planet's Prayer+ (5 ATB)\n54% Heal [Range: All Allies]\n25s 25% Physical Damage Bonus (+8s) [Range: All Allies]\n25s 25% Magic Damage Bonus (+8s) [Range: All Allies]"
@@ -785,6 +807,28 @@
               "percentage": 59
             },
             "type": "Heal"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PhysicalDamageBonus"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "MagicDamageBonus"
           }
         ],
         "description": "Planet's Prayer++ (5 ATB)\n59% Heal [Range: All Allies]\n30s 30% Physical Damage Bonus (+10s) [Range: All Allies]\n30s 30% Magic Damage Bonus (+10s) [Range: All Allies]"
@@ -798,6 +842,28 @@
               "percentage": 50
             },
             "type": "Heal"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PhysicalDamageBonus"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "MagicDamageBonus"
           }
         ],
         "description": "Planet's Prayer (5 ATB)\n50% Heal [Range: All Allies]\n25s 20% Physical Damage Bonus (+8s) [Range: All Allies]\n25s 20% Magic Damage Bonus (+8s) [Range: All Allies]"
@@ -811,6 +877,28 @@
               "percentage": 42
             },
             "type": "Heal"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PhysicalDamageBonus"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "MagicDamageBonus"
           }
         ],
         "description": "Planet's Prayer (5 ATB)\n42% Heal [Range: All Allies]\n20s 20% Physical Damage Bonus (+6s) [Range: All Allies]\n20s 20% Magic Damage Bonus (+6s) [Range: All Allies]"
@@ -1804,6 +1892,17 @@
           {
             "value": {
               "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "MagicDamageBonus"
+          },
+          {
+            "value": {
+              "range": "All",
               "potencies": {
                 "max": "High",
                 "base": "High"
@@ -1828,6 +1927,17 @@
       "ob10": {
         "spadeCustomDescription": "+20% Limit Break Gauge [Range: Self]",
         "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "MagicDamageBonus"
+          },
           {
             "value": {
               "range": "All",
@@ -1858,6 +1968,17 @@
           {
             "value": {
               "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "MagicDamageBonus"
+          },
+          {
+            "value": {
+              "range": "All",
               "potencies": {
                 "max": "Mid",
                 "base": "Low"
@@ -1882,6 +2003,17 @@
       "ob0": {
         "spadeCustomDescription": "+10% Limit Break Gauge [Range: Self]",
         "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "MagicDamageBonus"
+          },
           {
             "value": {
               "range": "All",
@@ -7031,6 +7163,17 @@
               }
             },
             "type": "PdefUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PhysicalDamageBonus"
           }
         ],
         "description": "Dragon's Roar+ (4 ATB)\n480% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n50s 8% Veil (+10s) [Range: Self]\n16s PDEF Up (+5s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -7072,6 +7215,17 @@
               }
             },
             "type": "PdefUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "PhysicalDamageBonus"
           }
         ],
         "description": "Dragon's Roar++ (4 ATB)\n540% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n60s 10% Veil (+12s) [Range: Self]\n20s PDEF Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -7113,6 +7267,17 @@
               }
             },
             "type": "PdefUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PhysicalDamageBonus"
           }
         ],
         "description": "Dragon's Roar (4 ATB)\n390% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n45s 6% Veil (+9s) [Range: Self]\n16s PDEF Up (+5s) (Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -7154,6 +7319,17 @@
               }
             },
             "type": "PdefUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PhysicalDamageBonus"
           }
         ],
         "description": "Dragon's Roar (4 ATB)\n340% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n40s 5% Veil (+8s) [Range: Self]\n12s PDEF Up (+4s) (Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -14077,6 +14253,28 @@
                 "duration": 50
               }
             },
+            "type": "PhysicalWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 35,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "MagicWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 35,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
             "type": "ExploitWeakness"
           }
         ],
@@ -14084,6 +14282,28 @@
       },
       "ob10": {
         "effects": [
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 40,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "PhysicalWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 40,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "MagicWeaponBoost"
+          },
           {
             "value": {
               "range": "Self",
@@ -14109,6 +14329,28 @@
                 "duration": 40
               }
             },
+            "type": "PhysicalWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 25,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "MagicWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 25,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
             "type": "ExploitWeakness"
           }
         ],
@@ -14116,6 +14358,28 @@
       },
       "ob0": {
         "effects": [
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 25,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PhysicalWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 25,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "MagicWeaponBoost"
+          },
           {
             "value": {
               "range": "Self",
@@ -16158,6 +16422,17 @@
               }
             },
             "type": "MatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "MagicWeaponBoost"
           }
         ],
         "description": "Haphazard Strikes+ (4 ATB)\n760% Mag. Non-elem. Damage [Range: Single Enemy]\n25s MATK Up (+8s) (High) [Range: All Allies]\n50s 30% Magic Weapon Boost (+16s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -16178,6 +16453,17 @@
               }
             },
             "type": "MatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "MagicWeaponBoost"
           }
         ],
         "description": "Haphazard Strikes++ (4 ATB)\n920% Mag. Non-elem. Damage [Range: Single Enemy]\n35s MATK Up (+13s) (High) [Range: All Allies]\n60s 35% Magic Weapon Boost (+20s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -16198,6 +16484,17 @@
               }
             },
             "type": "MatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "MagicWeaponBoost"
           }
         ],
         "description": "Haphazard Strikes (4 ATB)\n590% Mag. Non-elem. Damage [Range: Single Enemy]\n20s MATK Up (+7s) (Low -> Mid) [Range: All Allies]\n40s 20% Magic Weapon Boost (+13s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -16218,6 +16515,17 @@
               }
             },
             "type": "MatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "MagicWeaponBoost"
           }
         ],
         "description": "Haphazard Strikes (4 ATB)\n490% Mag. Non-elem. Damage [Range: Single Enemy]\n15s MATK Up (+5s) (Low -> Mid) [Range: All Allies]\n30s 20% Magic Weapon Boost (+10s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -23804,6 +24112,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "MagicWeaponBoost"
           }
         ],
         "description": "Whisking Claw+ (4 ATB)\n760% Phys. Non-elem. Damage [Range: All Enemies]\n30s Enfeeble (+10s) [Range: All Enemies]\n30s 30% Magic Weapon Boost (+10s) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -23819,6 +24138,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "MagicWeaponBoost"
           }
         ],
         "description": "Whisking Claw++ (4 ATB)\n920% Phys. Non-elem. Damage [Range: All Enemies]\n40s Enfeeble (+13s) [Range: All Enemies]\n40s 35% Magic Weapon Boost (+13s) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -23834,6 +24164,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "MagicWeaponBoost"
           }
         ],
         "description": "Whisking Claw (4 ATB)\n590% Phys. Non-elem. Damage [Range: All Enemies]\n25s Enfeeble (+8s) [Range: All Enemies]\n25s 20% Magic Weapon Boost (+8s) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -23849,6 +24190,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "MagicWeaponBoost"
           }
         ],
         "description": "Whisking Claw (4 ATB)\n490% Phys. Non-elem. Damage [Range: All Enemies]\n20s Enfeeble (+6s) [Range: All Enemies]\n20s 20% Magic Weapon Boost (+6s) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -26871,19 +27223,111 @@
         "slot1": "Boost ATK"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "PhysicalWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "MagicWeaponBoost"
+          }
+        ],
         "description": "Dark Manifestation+ (4 ATB)\n1080% Mag. Non-elem. Damage [Range: Single Enemy]\n50s 30% Physical Weapon Boost (+16s) [Range: All Allies]\n50s 30% Magic Weapon Boost (+16s) [Range: All Allies]\n+2 ATB [Range: Self] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "PhysicalWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "MagicWeaponBoost"
+          }
+        ],
         "description": "Dark Manifestation++ (4 ATB)\n1340% Mag. Non-elem. Damage [Range: Single Enemy]\n60s 35% Physical Weapon Boost (+20s) [Range: All Allies]\n60s 35% Magic Weapon Boost (+20s) [Range: All Allies]\n+3 ATB [Range: Self] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "PhysicalWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "MagicWeaponBoost"
+          }
+        ],
         "description": "Dark Manifestation (4 ATB)\n720% Mag. Non-elem. Damage [Range: Single Enemy]\n40s 20% Physical Weapon Boost (+13s) [Range: All Allies]\n40s 20% Magic Weapon Boost (+13s) [Range: All Allies]\n+1 ATB [Range: Self] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PhysicalWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "MagicWeaponBoost"
+          }
+        ],
         "description": "Dark Manifestation (4 ATB)\n600% Mag. Non-elem. Damage [Range: Single Enemy]\n30s 20% Physical Weapon Boost (+10s) [Range: All Allies]\n30s 20% Magic Weapon Boost (+10s) [Range: All Allies]\n+1 ATB [Range: Self] [Condition: First Use]\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Phoenix Odachi",
@@ -28062,19 +28506,111 @@
         "slot1": "Boost ATK (All Allies)"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "PhysicalDamageBonus"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "MagicDamageBonus"
+          }
+        ],
         "description": "Shadow Disaster+ (4 ATB)\n1080% Mag. Non-elem. Damage [Range: All Enemies]\r\n50s 25% Physical Damage Bonus (+16s) [Range: All Allies]\r\n50s 25% Magic Damage Bonus (+16s) [Range: All Allies]\r\n10% Crit Rate [Range: All Enemies]\r\n25s Haste (+8s) [Range: Self] [Condition: First Use]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "PhysicalDamageBonus"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "MagicDamageBonus"
+          }
+        ],
         "description": "Shadow Disaster++ (4 ATB)\n1340% Mag. Non-elem. Damage [Range: All Enemies]\r\n60s 30% Physical Damage Bonus (+20s) [Range: All Allies]\r\n60s 30% Magic Damage Bonus (+20s) [Range: All Allies]\r\n10% Crit Rate [Range: All Enemies]\r\n30s Haste (+10s) [Range: Self] [Condition: First Use]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "PhysicalDamageBonus"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "MagicDamageBonus"
+          }
+        ],
         "description": "Shadow Disaster (4 ATB)\n720% Mag. Non-elem. Damage [Range: All Enemies]\r\n40s 20% Physical Damage Bonus (+13s) [Range: All Allies]\r\n40s 20% Magic Damage Bonus (+13s) [Range: All Allies]\r\n10% Crit Rate [Range: All Enemies]\r\n20s Haste (+6s) [Range: Self] [Condition: First Use]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PhysicalDamageBonus"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "MagicDamageBonus"
+          }
+        ],
         "description": "Shadow Disaster (4 ATB)\n600% Mag. Non-elem. Damage [Range: All Enemies]\r\n30s 20% Physical Damage Bonus (+10s) [Range: All Allies]\r\n30s 20% Magic Damage Bonus (+10s) [Range: All Allies]\r\n10% Crit Rate [Range: All Enemies]\r\n20s Haste (+6s) [Range: Self] [Condition: First Use]"
       },
       "name": "Kikuichimonji",
@@ -28561,6 +29097,17 @@
               }
             },
             "type": "MdefDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "MagicWeaponBoost"
           }
         ],
         "description": "Planet's Purple Lightning+ (4 ATB)\n1080% Mag. Lightning Damage [Range: Single Enemy]\n50s MDEF Down (+16s) (High) [Range: Single Enemy]\n50s 30% Magic Weapon Boost (+16s) [Range: All Allies]"
@@ -28582,6 +29129,17 @@
               }
             },
             "type": "MdefDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "MagicWeaponBoost"
           }
         ],
         "description": "Planet's Purple Lightning++ (4 ATB)\n1340% Mag. Lightning Damage [Range: Single Enemy]\n60s MDEF Down (+20s) (High) [Range: Single Enemy]\n60s 35% Magic Weapon Boost (+20s) [Range: All Allies]"
@@ -28603,6 +29161,17 @@
               }
             },
             "type": "MdefDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "MagicWeaponBoost"
           }
         ],
         "description": "Planet's Purple Lightning (4 ATB)\n720% Mag. Lightning Damage [Range: Single Enemy]\n40s MDEF Down (+13s) (Low -> Mid) [Range: Single Enemy]\n40s 20% Magic Weapon Boost (+13s) [Range: All Allies]"
@@ -28624,6 +29193,17 @@
               }
             },
             "type": "MdefDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "MagicWeaponBoost"
           }
         ],
         "description": "Planet's Purple Lightning (4 ATB)\n600% Mag. Lightning Damage [Range: Single Enemy]\n30s MDEF Down (+10s) (Low -> Mid) [Range: Single Enemy]\n30s 20% Magic Weapon Boost (+10s) [Range: All Allies]"
@@ -29310,6 +29890,17 @@
         "effects": [
           {
             "value": {
+              "range": "Self",
+              "percentage": 35,
+              "durExt": {
+                "extension": 15,
+                "duration": 45
+              }
+            },
+            "type": "PhysicalDamageBonus"
+          },
+          {
+            "value": {
               "range": "All",
               "potencies": {
                 "max": "High",
@@ -29327,6 +29918,17 @@
       },
       "ob10": {
         "effects": [
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 40,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "PhysicalDamageBonus"
+          },
           {
             "value": {
               "range": "All",
@@ -29348,6 +29950,17 @@
         "effects": [
           {
             "value": {
+              "range": "Self",
+              "percentage": 25,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PhysicalDamageBonus"
+          },
+          {
+            "value": {
               "range": "All",
               "potencies": {
                 "max": "Mid",
@@ -29365,6 +29978,17 @@
       },
       "ob0": {
         "effects": [
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 25,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PhysicalDamageBonus"
+          },
           {
             "value": {
               "range": "All",
@@ -33615,6 +34239,17 @@
                 "duration": 30
               }
             },
+            "type": "PhysicalWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 25,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
             "type": "ExploitWeakness"
           }
         ],
@@ -33622,6 +34257,17 @@
       },
       "ob10": {
         "effects": [
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 30,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "PhysicalWeaponBoost"
+          },
           {
             "value": {
               "range": "Self",
@@ -33647,6 +34293,17 @@
                 "duration": 25
               }
             },
+            "type": "PhysicalWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 20,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
             "type": "ExploitWeakness"
           }
         ],
@@ -33654,6 +34311,17 @@
       },
       "ob0": {
         "effects": [
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PhysicalWeaponBoost"
+          },
           {
             "value": {
               "range": "Self",
@@ -34154,6 +34822,17 @@
               }
             },
             "type": "ExploitWeakness"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 25,
+              "durExt": {
+                "extension": 7,
+                "duration": 35
+              }
+            },
+            "type": "PhysicalWeaponBoost"
           }
         ],
         "description": "Raging Torrent+ (4 ATB)\n780% Phys. Water Damage [Range: Single Enemy]\n35s 30% Exploit Weakness (+7s) [Range: Self]"
@@ -34171,6 +34850,17 @@
               }
             },
             "type": "ExploitWeakness"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 30,
+              "durExt": {
+                "extension": 9,
+                "duration": 45
+              }
+            },
+            "type": "PhysicalWeaponBoost"
           }
         ],
         "description": "Raging Torrent++ (4 ATB)\n940% Phys. Water Damage [Range: Single Enemy]\n45s 30% Exploit Weakness (+9s) [Range: Self]"
@@ -34188,6 +34878,17 @@
               }
             },
             "type": "ExploitWeakness"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 20,
+              "durExt": {
+                "extension": 7,
+                "duration": 35
+              }
+            },
+            "type": "PhysicalWeaponBoost"
           }
         ],
         "description": "Raging Torrent (4 ATB)\n620% Phys. Water Damage [Range: Single Enemy]\n35s 20% Exploit Weakness (+7s) [Range: Self]"
@@ -34205,6 +34906,17 @@
               }
             },
             "type": "ExploitWeakness"
+          },
+          {
+            "value": {
+              "range": "Self",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 30
+              }
+            },
+            "type": "PhysicalWeaponBoost"
           }
         ],
         "description": "Raging Torrent (4 ATB)\n520% Phys. Water Damage [Range: Single Enemy]\n30s 20% Exploit Weakness (+6s) [Range: Self]"

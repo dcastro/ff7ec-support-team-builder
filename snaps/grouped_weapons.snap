@@ -3467,6 +3467,154 @@
     ]
   ],
   [
+    "FilterPhysicalWeaponBoost",
+    [
+      {
+        "weaponName": "Fusion Sword",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Phoenix Odachi",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Transgressor",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Bird of Prey",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterMagicWeaponBoost",
+    [
+      {
+        "weaponName": "Fusion Sword",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      },
+      {
+        "weaponName": "Garish Greatblade",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Patissier's Collar",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Phoenix Odachi",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Starsoul Blade",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterPhysicalDamageBonus",
+    [
+      {
+        "weaponName": "Festive Rod",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Fafnir Rifle",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Kikuichimonji",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Demon's Impetus",
+        "ranges": [
+          {
+            "range": "Self"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterMagicDamageBonus",
+    [
+      {
+        "weaponName": "Festive Rod",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Lightning's Rod",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Kikuichimonji",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
     "FilterFireDamageUp",
     [
       {

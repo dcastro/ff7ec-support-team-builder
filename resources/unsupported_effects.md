@@ -1,5 +1,5 @@
 <!-- LTEX: enabled=false -->
-Found 41 unsupported effect type(s).
+Found 37 unsupported effect type(s).
 
 # Table of Contents
 
@@ -28,11 +28,7 @@ Found 41 unsupported effect type(s).
 * [Ns N% Ice Weapon Boost](#ns-n-ice-weapon-boost)
 * [Ns N% Lightning Weapon Boost](#ns-n-lightning-weapon-boost)
 * [Ns N% Mag. Single Target Dmg. Received Up](#ns-n-mag-single-target-dmg-received-up)
-* [Ns N% Magic Damage Bonus](#ns-n-magic-damage-bonus)
-* [Ns N% Magic Weapon Boost](#ns-n-magic-weapon-boost)
 * [Ns N% Phys. Single Target Dmg. Received Up](#ns-n-phys-single-target-dmg-received-up)
-* [Ns N% Physical Damage Bonus](#ns-n-physical-damage-bonus)
-* [Ns N% Physical Weapon Boost](#ns-n-physical-weapon-boost)
 * [Ns N% PhysicalSingleVulnerable](#ns-n-physicalsinglevulnerable)
 * [Ns N% Single Target Ice Damage Received Up](#ns-n-single-target-ice-damage-received-up)
 * [Ns N% Single Target Mag. Damage Received Up](#ns-n-single-target-mag-damage-received-up)
@@ -479,60 +475,6 @@ Found 41 unsupported effect type(s).
 
 ---
 
-# Ns N% Magic Damage Bonus
-
-[↑ Back to top](#table-of-contents)
-
-* **Aerith - Festive Rod**
-  * `20s 20% Magic Damage Bonus (+6s) [Range: All Allies]`
-  * `25s 20% Magic Damage Bonus (+8s) [Range: All Allies]`
-  * `25s 25% Magic Damage Bonus (+8s) [Range: All Allies]`
-  * `30s 30% Magic Damage Bonus (+10s) [Range: All Allies]`
-* **Aerith - Lightning's Rod**
-  * `30s 20% Magic Damage Bonus (+10s) [Range: All Allies]`
-  * `40s 20% Magic Damage Bonus (+13s) [Range: All Allies]`
-  * `50s 25% Magic Damage Bonus (+16s) [Range: All Allies]`
-  * `60s 30% Magic Damage Bonus (+20s) [Range: All Allies]`
-* **Sephiroth (Orig.) - Kikuichimonji**
-  * `30s 20% Magic Damage Bonus (+10s) [Range: All Allies]`
-  * `40s 20% Magic Damage Bonus (+13s) [Range: All Allies]`
-  * `50s 25% Magic Damage Bonus (+16s) [Range: All Allies]`
-  * `60s 30% Magic Damage Bonus (+20s) [Range: All Allies]`
-
----
-
-# Ns N% Magic Weapon Boost
-
-[↑ Back to top](#table-of-contents)
-
-* **Cloud - Fusion Sword**
-  * `30s 25% Magic Weapon Boost (+10s) [Range: Self]`
-  * `40s 25% Magic Weapon Boost (+13s) [Range: Self]`
-  * `50s 35% Magic Weapon Boost (+16s) [Range: Self]`
-  * `60s 40% Magic Weapon Boost (+20s) [Range: Self]`
-* **Glenn - Garish Greatblade**
-  * `30s 20% Magic Weapon Boost (+10s) [Range: All Allies] [Condition: Self 50-100% HP]`
-  * `40s 20% Magic Weapon Boost (+13s) [Range: All Allies] [Condition: Self 50-100% HP]`
-  * `50s 30% Magic Weapon Boost (+16s) [Range: All Allies] [Condition: Self 50-100% HP]`
-  * `60s 35% Magic Weapon Boost (+20s) [Range: All Allies] [Condition: Self 50-100% HP]`
-* **Red XIII - Patissier's Collar**
-  * `20s 20% Magic Weapon Boost (+6s) [Range: All Allies] [Condition: Self 70-100% HP]`
-  * `25s 20% Magic Weapon Boost (+8s) [Range: All Allies] [Condition: Self 70-100% HP]`
-  * `30s 30% Magic Weapon Boost (+10s) [Range: All Allies] [Condition: Self 70-100% HP]`
-  * `40s 35% Magic Weapon Boost (+13s) [Range: All Allies] [Condition: Self 70-100% HP]`
-* **Sephiroth (Orig.) - Starsoul Blade**
-  * `30s 20% Magic Weapon Boost (+10s) [Range: All Allies]`
-  * `40s 20% Magic Weapon Boost (+13s) [Range: All Allies]`
-  * `50s 30% Magic Weapon Boost (+16s) [Range: All Allies]`
-  * `60s 35% Magic Weapon Boost (+20s) [Range: All Allies]`
-* **Sephiroth - Phoenix Odachi**
-  * `30s 20% Magic Weapon Boost (+10s) [Range: All Allies]`
-  * `40s 20% Magic Weapon Boost (+13s) [Range: All Allies]`
-  * `50s 30% Magic Weapon Boost (+16s) [Range: All Allies]`
-  * `60s 35% Magic Weapon Boost (+20s) [Range: All Allies]`
-
----
-
 # Ns N% Phys. Single Target Dmg. Received Up
 
 [↑ Back to top](#table-of-contents)
@@ -547,60 +489,6 @@ Found 41 unsupported effect type(s).
   * `22s 25% Phys. Single Target Dmg. Received Up (+7s) [Range: Single Enemy] [Condition: Weakness Hit]`
   * `26s 35% Phys. Single Target Dmg. Received Up (+8s) [Range: Single Enemy] [Condition: Weakness Hit]`
   * `30s 40% Phys. Single Target Dmg. Received Up (+10s) [Range: Single Enemy] [Condition: Weakness Hit]`
-
----
-
-# Ns N% Physical Damage Bonus
-
-[↑ Back to top](#table-of-contents)
-
-* **Aerith - Festive Rod**
-  * `20s 20% Physical Damage Bonus (+6s) [Range: All Allies]`
-  * `25s 20% Physical Damage Bonus (+8s) [Range: All Allies]`
-  * `25s 25% Physical Damage Bonus (+8s) [Range: All Allies]`
-  * `30s 30% Physical Damage Bonus (+10s) [Range: All Allies]`
-* **Barret - Fafnir Rifle**
-  * `20s 20% Physical Damage Bonus (+6s) [Range: All Allies]`
-  * `30s 20% Physical Damage Bonus (+10s) [Range: All Allies]`
-  * `30s 25% Physical Damage Bonus (+10s) [Range: All Allies]`
-  * `40s 30% Physical Damage Bonus (+13s) [Range: All Allies]`
-* **Sephiroth (Orig.) - Kikuichimonji**
-  * `30s 20% Physical Damage Bonus (+10s) [Range: All Allies]`
-  * `40s 20% Physical Damage Bonus (+13s) [Range: All Allies]`
-  * `50s 25% Physical Damage Bonus (+16s) [Range: All Allies]`
-  * `60s 30% Physical Damage Bonus (+20s) [Range: All Allies]`
-* **Tifa - Demon's Impetus**
-  * `20s 25% Physical Damage Bonus (+6s) [Range: Self]`
-  * `30s 25% Physical Damage Bonus (+10s) [Range: Self]`
-  * `45s 35% Physical Damage Bonus (+15s) [Range: Self]`
-  * `60s 40% Physical Damage Bonus (+20s) [Range: Self]`
-
----
-
-# Ns N% Physical Weapon Boost
-
-[↑ Back to top](#table-of-contents)
-
-* **Cloud - Fusion Sword**
-  * `30s 25% Physical Weapon Boost (+10s) [Range: Self]`
-  * `40s 25% Physical Weapon Boost (+13s) [Range: Self]`
-  * `50s 35% Physical Weapon Boost (+16s) [Range: Self]`
-  * `60s 40% Physical Weapon Boost (+20s) [Range: Self]`
-* **Sephiroth - Phoenix Odachi**
-  * `30s 20% Physical Weapon Boost (+10s) [Range: All Allies]`
-  * `40s 20% Physical Weapon Boost (+13s) [Range: All Allies]`
-  * `50s 30% Physical Weapon Boost (+16s) [Range: All Allies]`
-  * `60s 35% Physical Weapon Boost (+20s) [Range: All Allies]`
-* **Vincent - Transgressor**
-  * `20s 20% Physical Weapon Boost (+6s) [Range: Self]`
-  * `25s 20% Physical Weapon Boost (+8s) [Range: Self]`
-  * `30s 25% Physical Weapon Boost (+10s) [Range: Self]`
-  * `40s 30% Physical Weapon Boost (+13s) [Range: Self]`
-* **Yuffie - Bird of Prey**
-  * `30s 20% Physical Weapon Boost (+6s) [Range: Self] [Condition: Self 70-100% HP]`
-  * `35s 20% Physical Weapon Boost (+7s) [Range: Self] [Condition: Self 70-100% HP]`
-  * `35s 25% Physical Weapon Boost (+7s) [Range: Self] [Condition: Self 70-100% HP]`
-  * `45s 30% Physical Weapon Boost (+9s) [Range: Self] [Condition: Self 70-100% HP]`
 
 ---
 

@@ -146,10 +146,10 @@ data WeaponEffect
   | MatkUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | PdefUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | MdefUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
-  | Phys.weaponboost { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | Mag.weaponboost { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | Phys.DamagBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | Phys.DamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | PhysicalWeaponBoost { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | MagicWeaponBoost { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | PhysicalDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | MagicDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | FireDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | IceDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | ThunderDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
@@ -196,10 +196,10 @@ data FilterEffectType
   | FilterMatkUp
   | FilterPdefUp
   | FilterMdefUp
-  | FilterPhys.weaponboost
-  | FilterMag.weaponboost
-  | FilterPhys.DamageBonus
-  | FilterMag.DamageBonus
+  | FilterPhysicalWeaponBoost
+  | FilterMagicWeaponBoost
+  | FilterPhysicalDamageBonus
+  | FilterMagicDamageBonus
   | FilterFireDamageUp
   | FilterIceDamageUp
   | FilterThunderDamageUp
@@ -274,10 +274,10 @@ instance Show WeaponEffect where
       MatkUp rec -> showRec rec "MatkUp"
       PdefUp rec -> showRec rec "PdefUp"
       MdefUp rec -> showRec rec "MdefUp"
-      Phys.weaponboost rec -> showRec rec "Phys.weaponboost"
-      Mag.weaponboost rec -> showRec rec "Mag.weaponboost"
-      Phys.DamageBonus rec -> showRec rec "Phys.DamageBonus"
-      Mag.DamageBonus rec -> showRec rec "Mag.DamageBonus"
+      PhysicalWeaponBoost rec -> showRec rec "Phys.weaponboost"
+      MagicWeaponBoost rec -> showRec rec "Mag.weaponboost"
+      PhysicalDamageBonus rec -> showRec rec "Phys.DamageBonus"
+      MagicDamageBonus rec -> showRec rec "Mag.DamageBonus"
       FireDamageUp rec -> showRec rec "FireDamageUp"
       IceDamageUp rec -> showRec rec "IceDamageUp"
       ThunderDamageUp rec -> showRec rec "ThunderDamageUp"
@@ -326,10 +326,10 @@ instance Show FilterEffectType where
     FilterMatkUp -> "FilterMatkUp"
     FilterPdefUp -> "FilterPdefUp"
     FilterMdefUp -> "FilterMdefUp"
-    FilterPhys.weaponboost -> "FilterPhys.weaponboost"
-    FilterMag.weaponboost -> "FilterMag.weaponboost"
-    FilterPhys.DamageBonus -> "FilterPhys.DamageBonus"
-    FilterMag.DamageBonus -> "FilterMag.DamageBonus"
+    FilterPhysicalWeaponBoost -> "FilterPhys.weaponboost"
+    FilterMagicWeaponBoost -> "FilterMag.weaponboost"
+    FilterPhysicalDamageBonus -> "FilterPhys.DamageBonus"
+    FilterMagicDamageBonus -> "FilterMag.DamageBonus"
     FilterFireDamageUp -> "FilterFireDamageUp"
     FilterIceDamageUp -> "FilterIceDamageUp"
     FilterThunderDamageUp -> "FilterThunderDamageUp"
@@ -376,10 +376,10 @@ instance WriteForeign WeaponEffect where
       MatkUp rec -> writeRecord rec "MatkUp"
       PdefUp rec -> writeRecord rec "PdefUp"
       MdefUp rec -> writeRecord rec "MdefUp"
-      Phys.weaponboost rec -> writeRecord rec "Phys.weaponboost"
-      Mag.weaponboost rec -> writeRecord rec "Mag.weaponboost"
-      Phys.DamageBonus rec -> writeRecord rec "Phys.DamageBonus"
-      Mag.DamageBonus rec -> writeRecord rec "Mag.DamageBonus"
+      PhysicalWeaponBoost rec -> writeRecord rec "Phys.weaponboost"
+      MagicWeaponBoost rec -> writeRecord rec "Mag.weaponboost"
+      PhysicalDamageBonus rec -> writeRecord rec "Phys.DamageBonus"
+      MagicDamageBonus rec -> writeRecord rec "Mag.DamageBonus"
       FireDamageUp rec -> writeRecord rec "FireDamageUp"
       IceDamageUp rec -> writeRecord rec "IceDamageUp"
       ThunderDamageUp rec -> writeRecord rec "ThunderDamageUp"
@@ -431,10 +431,10 @@ instance WriteForeign FilterEffectType where
     FilterMatkUp -> writeImpl "FilterMatkUp"
     FilterPdefUp -> writeImpl "FilterPdefUp"
     FilterMdefUp -> writeImpl "FilterMdefUp"
-    FilterPhys.weaponboost -> writeImpl "FilterPhys.weaponboost"
-    FilterMag.weaponboost -> writeImpl "FilterMag.weaponboost"
-    FilterPhys.DamageBonus -> writeImpl "FilterPhys.DamageBonus"
-    FilterMag.DamageBonus -> writeImpl "FilterMag.DamageBonus"
+    FilterPhysicalWeaponBoost -> writeImpl "FilterPhys.weaponboost"
+    FilterMagicWeaponBoost -> writeImpl "FilterMag.weaponboost"
+    FilterPhysicalDamageBonus -> writeImpl "FilterPhys.DamageBonus"
+    FilterMagicDamageBonus -> writeImpl "FilterMag.DamageBonus"
     FilterFireDamageUp -> writeImpl "FilterFireDamageUp"
     FilterIceDamageUp -> writeImpl "FilterIceDamageUp"
     FilterThunderDamageUp -> writeImpl "FilterThunderDamageUp"
@@ -489,10 +489,10 @@ instance ReadForeign WeaponEffect where
         MatkUp _ -> tryRead MatkUp recType value "MatkUp"
         PdefUp _ -> tryRead PdefUp recType value "PdefUp"
         MdefUp _ -> tryRead MdefUp recType value "MdefUp"
-        Phys.weaponboost _ -> tryRead Phys.weaponboost recType value "Phys.weaponboost"
-        Mag.weaponboost _ -> tryRead Mag.weaponboost recType value "Mag.weaponboost"
-        Phys.DamageBonus _ -> tryRead Phys.DamageBonus recType value "Phys.DamageBonus"
-        Mag.DamageBonus _ -> tryRead Mag.DamageBonus recType value "Mag.DamageBonus"
+        PhysicalWeaponBoost _ -> tryRead PhysicalWeaponBoost recType value "Phys.weaponboost"
+        MagicWeaponBoost _ -> tryRead MagicWeaponBoost recType value "Mag.weaponboost"
+        PhysicalDamageBonus _ -> tryRead PhysicalDamageBonus recType value "Phys.DamageBonus"
+        MagicDamageBonus _ -> tryRead MagicDamageBonus recType value "Mag.DamageBonus"
         FireDamageUp _ -> tryRead FireDamageUp recType value "FireDamageUp"
         IceDamageUp _ -> tryRead IceDamageUp recType value "IceDamageUp"
         ThunderDamageUp _ -> tryRead ThunderDamageUp recType value "ThunderDamageUp"
@@ -545,10 +545,10 @@ instance ReadForeign FilterEffectType where
         FilterMatkUp -> tryRead x str "FilterMatkUp"
         FilterPdefUp -> tryRead x str "FilterPdefUp"
         FilterMdefUp -> tryRead x str "FilterMdefUp"
-        FilterPhys.weaponboost -> tryRead x str "FilterPhys.weaponboost"
-        FilterMag.weaponboost -> tryRead x str "FilterMag.weaponboost"
-        FilterPhys.DamageBonus -> tryRead x str "FilterPhys.DamageBonus"
-        FilterMag.DamageBonus -> tryRead x str "FilterMag.DamageBonus"
+        FilterPhysicalWeaponBoost -> tryRead x str "FilterPhys.weaponboost"
+        FilterMagicWeaponBoost -> tryRead x str "FilterMag.weaponboost"
+        FilterPhysicalDamageBonus -> tryRead x str "FilterPhys.DamageBonus"
+        FilterMagicDamageBonus -> tryRead x str "FilterMag.DamageBonus"
         FilterFireDamageUp -> tryRead x str "FilterFireDamageUp"
         FilterIceDamageUp -> tryRead x str "FilterIceDamageUp"
         FilterThunderDamageUp -> tryRead x str "FilterThunderDamageUp"
@@ -609,10 +609,10 @@ instance Display FilterEffectType where
     FilterMatkUp -> "MATK up"
     FilterPdefUp -> "PDEF up"
     FilterMdefUp -> "MDEF up"
-    FilterPhys.weaponboost -> "Phys. weapon boost"
-    FilterMag.weaponboost -> "Mag. weapon boost"
-    FilterPhys.DamageBonus -> "Phys. Damage Bonus"
-    FilterMag.DamageBonus -> "Mag. Damage Bonus"
+    FilterPhysicalWeaponBoost -> "Phys. weapon boost"
+    FilterMagicWeaponBoost -> "Mag. weapon boost"
+    FilterPhysicalDamageBonus -> "Phys. Damage Bonus"
+    FilterMagicDamageBonus -> "Mag. Damage Bonus"
     FilterFireDamageUp -> "Fire damage up"
     FilterIceDamageUp -> "Ice damage up"
     FilterThunderDamageUp -> "Thunder damage up"
@@ -658,10 +658,10 @@ allFilterEffectTypes =
   , FilterMatkUp
   , FilterPdefUp
   , FilterMdefUp
-  , FilterPhys.weaponboost
-  , FilterMag.weaponboost
-  , FilterPhys.DamageBonus
-  , FilterMag.DamageBonus
+  , FilterPhysicalWeaponBoost
+  , FilterMagicWeaponBoost
+  , FilterPhysicalDamageBonus
+  , FilterMagicDamageBonus
   , FilterFireDamageUp
   , FilterIceDamageUp
   , FilterThunderDamageUp
@@ -706,10 +706,10 @@ allFilterEffectTypes =
     FilterMatkUp -> unit
     FilterPdefUp -> unit
     FilterMdefUp -> unit
-    FilterPhys.weaponboost -> unit
-    FilterMag.weaponboost -> unit
-    FilterPhys.DamageBonus -> unit
-    FilterMag.DamageBonus -> unit
+    FilterPhysicalWeaponBoost -> unit
+    FilterMagicWeaponBoost -> unit
+    FilterPhysicalDamageBonus -> unit
+    FilterMagicDamageBonus -> unit
     FilterFireDamageUp -> unit
     FilterIceDamageUp -> unit
     FilterThunderDamageUp -> unit
@@ -748,10 +748,10 @@ exhaustiveWeaponEffectMatch =
   , MatkUp { range, durExt, potencies }
   , PdefUp { range, durExt, potencies }
   , MdefUp { range, durExt, potencies }
-  , Phys.weaponboost { range, durExt, percentage }
-  , Mag.weaponboost { range, durExt, percentage }
-  , Phys.DamagBonus { range, durExt, percentage }
-  , Phys.DamageBonus { range, durExt, percentage }
+  , PhysicalWeaponBoost { range, durExt, percentage }
+  , MagicWeaponBoost { range, durExt, percentage }
+  , PhysicalDamageBonus { range, durExt, percentage }
+  , MagicDamageBonus { range, durExt, percentage }
   , FireDamageUp { range, durExt, potencies }
   , IceDamageUp { range, durExt, potencies }
   , ThunderDamageUp { range, durExt, potencies }
@@ -809,10 +809,10 @@ exhaustiveWeaponEffectMatch =
     MatkDown _ -> unit
     PdefDown _ -> unit
     MdefDown _ -> unit
-    FilterPhys.weaponboost _ -> unit
-    FilterMag.weaponboost _ -> unit
-    FilterPhys.DamageBonus _ -> unit
-    FilterMag.DamageBonus _ -> unit
+    FilterPhysicalWeaponBoost _ -> unit
+    FilterMagicWeaponBoost _ -> unit
+    FilterPhysicalDamageBonus _ -> unit
+    FilterMagicDamageBonus _ -> unit
     FireResistDown _ -> unit
     IceResistDown _ -> unit
     ThunderResistDown _ -> unit

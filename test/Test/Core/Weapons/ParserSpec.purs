@@ -60,16 +60,16 @@ spec =
       "150s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]"
         `shouldParse`
           IceWeakness { range: SingleTarget, durExt: { duration: Duration 150, extension: Extension 0 }, percentage: Percentage 50 }
-      "60s Phys. weapon boost (+20s) [Range: Self]"
+      "60s Physical Weapon Boost (+20s) [Range: Self]"
         `shouldParse`
           PhysicalWeaponBoost { range: Self, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 40 }
-      "60s Mag. weapon boost (+20s) [Range: Self]"
+      "60s Magic Weapon Boost (+20s) [Range: Self]"
         `shouldParse`
           MagicWeaponBoost { range: Self, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 40 }
-      "60s Phys. Damage Bonus (+20s) [Range: All Allies]"
+      "60s Physical Damage Bonus (+20s) [Range: All Allies]"
         `shouldParse`
           PhysicalDamageBonus { range: all, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 30 }
-      "60s Mag. Damage Bonus (+20s) [Range: All allies]"
+      "60s Magic Damage Bonus (+20s) [Range: All allies]"
         `shouldParse`
           MagicDamageBonus { range: all, durExt: { duration: Duration 60, extension: Extension 20 }, percentage: Percentage 30 }
     it "parses all weapons" do

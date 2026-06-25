@@ -418,13 +418,13 @@ hasPotencies = case _ of
     FilterMagicDamageBonus -> false
     FilterFireDamageUp -> true
     FilterIceDamageUp -> true
-    FilterThunderDamageUp -> true
+    FilterLightningDamageUp -> true
     FilterEarthDamageUp -> true
     FilterWaterDamageUp -> true
     FilterWindDamageUp -> true
     FilterFireResistUp -> true
     FilterIceResistUp -> true
-    FilterThunderResistUp -> true
+    FilterLightningResistUp -> true
     FilterEarthResistUp -> true
     FilterWaterResistUp -> true
     FilterWindResistUp -> true
@@ -447,19 +447,19 @@ hasPotencies = case _ of
     FilterMdefDown -> true
     FilterFireDamageDown -> true
     FilterIceDamageDown -> true
-    FilterThunderDamageDown -> true
+    FilterLightningDamageDown -> true
     FilterEarthDamageDown -> true
     FilterWaterDamageDown -> true
     FilterWindDamageDown -> true
     FilterFireResistDown -> true
     FilterIceResistDown -> true
-    FilterThunderResistDown -> true
+    FilterLightningResistDown -> true
     FilterEarthResistDown -> true
     FilterWaterResistDown -> true
     FilterWindResistDown -> true
     FilterFireWeakness -> false
     FilterIceWeakness -> false
-    FilterThunderWeakness -> false
+    FilterLightningWeakness -> false
     FilterEarthWeakness -> false
     FilterWaterWeakness -> false
     FilterWindWeakness -> false
@@ -492,7 +492,7 @@ hasRange = case _ of
     FilterMagicDamageBonus -> true
     FilterFireDamageUp -> true
     FilterIceDamageUp -> true
-    FilterThunderDamageUp -> true
+    FilterLightningDamageUp -> true
     FilterEarthDamageUp -> true
     FilterWaterDamageUp -> true
     FilterWindDamageUp -> true
@@ -503,13 +503,13 @@ hasRange = case _ of
     FilterMdefDown -> true
     FilterFireResistDown -> true
     FilterIceResistDown -> true
-    FilterThunderResistDown -> true
+    FilterLightningResistDown -> true
     FilterEarthResistDown -> true
     FilterWaterResistDown -> true
     FilterWindResistDown -> true
     FilterFireWeakness -> true
     FilterIceWeakness -> true
-    FilterThunderWeakness -> true
+    FilterLightningWeakness -> true
     FilterEarthWeakness -> true
     FilterWaterWeakness -> true
     FilterWindWeakness -> true

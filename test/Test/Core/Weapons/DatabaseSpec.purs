@@ -134,7 +134,7 @@ data EffectTypeAndPotencies
   | MdefUp' Potencies
   | FireDamageUp' Potencies
   | IceDamageUp' Potencies
-  | ThunderDamageUp' Potencies
+  | LightningDamageUp' Potencies
   | EarthDamageUp' Potencies
   | WaterDamageUp' Potencies
   | WindDamageUp' Potencies
@@ -144,7 +144,7 @@ data EffectTypeAndPotencies
   | MdefDown' Potencies
   | FireResistDown' Potencies
   | IceResistDown' Potencies
-  | ThunderResistDown' Potencies
+  | LightningResistDown' Potencies
   | EarthResistDown' Potencies
   | WaterResistDown' Potencies
   | WindResistDown' Potencies
@@ -164,13 +164,13 @@ getPotencies = case _ of
   MagicDamageBonus {} -> Nothing
   FireDamageUp { potencies } -> Just $ FireDamageUp' potencies
   IceDamageUp { potencies } -> Just $ IceDamageUp' potencies
-  ThunderDamageUp { potencies } -> Just $ ThunderDamageUp' potencies
+  LightningDamageUp { potencies } -> Just $ LightningDamageUp' potencies
   EarthDamageUp { potencies } -> Just $ EarthDamageUp' potencies
   WaterDamageUp { potencies } -> Just $ WaterDamageUp' potencies
   WindDamageUp { potencies } -> Just $ WindDamageUp' potencies
   FireResistUp { potencies } -> Just $ FireResistUp' potencies
   IceResistUp { potencies } -> Just $ IceResistUp' potencies
-  ThunderResistUp { potencies } -> Just $ ThunderResistUp' potencies
+  LightningResistUp { potencies } -> Just $ LightningResistUp' potencies
   EarthResistUp { potencies } -> Just $ EarthResistUp' potencies
   WaterResistUp { potencies } -> Just $ WaterResistUp' potencies
   WindResistUp { potencies } -> Just $ WindResistUp' potencies
@@ -200,7 +200,7 @@ getPotencies = case _ of
   WindDamageDown { potencies } -> Just $ WindDamageDown' potencies
   FireResistDown { potencies } -> Just $ FireResistDown' potencies
   IceResistDown { potencies } -> Just $ IceResistDown' potencies
-  ThunderResistDown { potencies } -> Just $ ThunderResistDown' potencies
+  LightningResistDown { potencies } -> Just $ LightningResistDown' potencies
   EarthResistDown { potencies } -> Just $ EarthResistDown' potencies
   WaterResistDown { potencies } -> Just $ WaterResistDown' potencies
   WindResistDown { potencies } -> Just $ WindResistDown' potencies
@@ -210,7 +210,7 @@ getPotencies = case _ of
   Enliven {} -> Nothing
   FireWeakness {} -> Nothing
   IceWeakness {} -> Nothing
-  ThunderWeakness {} -> Nothing
+  LightningWeakness {} -> Nothing
   EarthWeakness {} -> Nothing
   WaterWeakness {} -> Nothing
   WindWeakness {} -> Nothing

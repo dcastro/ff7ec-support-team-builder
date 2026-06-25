@@ -291,6 +291,102 @@ getDistinctObs weapon = do
         case y of
           MagicDamageBonus { range: range2, durExt: _ } -> range1 == range2
           _ -> crash unit
+      FireWeaponBoost { range: range1, durExt: _ } ->
+        case y of
+          FireWeaponBoost { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      IceWeaponBoost { range: range1, durExt: _ } ->
+        case y of
+          IceWeaponBoost { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      LightningWeaponBoost { range: range1, durExt: _ } ->
+        case y of
+          LightningWeaponBoost { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      EarthWeaponBoost { range: range1, durExt: _ } ->
+        case y of
+          EarthWeaponBoost { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      WaterWeaponBoost { range: range1, durExt: _ } ->
+        case y of
+          WaterWeaponBoost { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      WindWeaponBoost { range: range1, durExt: _ } ->
+        case y of
+          WindWeaponBoost { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      FireDamageBonus { range: range1, durExt: _ } ->
+        case y of
+          FireDamageBonus { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      IceDamageBonus { range: range1, durExt: _ } ->
+        case y of
+          IceDamageBonus { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      LightningDamageBonus { range: range1, durExt: _ } ->
+        case y of
+          LightningDamageBonus { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      EarthDamageBonus { range: range1, durExt: _ } ->
+        case y of
+          EarthDamageBonus { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      WaterDamageBonus { range: range1, durExt: _ } ->
+        case y of
+          WaterDamageBonus { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      WindDamageBonus { range: range1, durExt: _ } ->
+        case y of
+          WindDamageBonus { range: range2, durExt: _ } -> range1 == range2
+          _ -> crash unit
+      FireDamageDown { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          FireDamageDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
+      IceDamageDown { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          IceDamageDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
+      LightningDamageDown { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          LightningDamageDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
+      EarthDamageDown { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          EarthDamageDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
+      WaterDamageDown { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          WaterDamageDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
+      WindDamageDown { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          WindDamageDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
+      WindResistUp { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          WindResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
+      WindResistUp { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          WindResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
+      WindResistUp { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          WindResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
+      WindResistUp { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          WindResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
+      WindResistUp { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          WindResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
+      WindResistUp { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          WindResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
 
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
 

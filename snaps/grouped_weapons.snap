@@ -3885,7 +3885,7 @@
     ]
   ],
   [
-    "FilterThunderDamageUp",
+    "FilterLightningDamageUp",
     [
       {
         "weaponName": "Mermaid Rod",
@@ -8582,7 +8582,7 @@
     ]
   ],
   [
-    "FilterThunderResistDown",
+    "FilterLightningResistDown",
     [
       {
         "weaponName": "Terra's Rod",

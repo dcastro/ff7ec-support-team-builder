@@ -422,11 +422,35 @@ hasPotencies = case _ of
     FilterEarthDamageUp -> true
     FilterWaterDamageUp -> true
     FilterWindDamageUp -> true
+    FilterFireResistUp -> true
+    FilterIceResistUp -> true
+    FilterThunderResistUp -> true
+    FilterEarthResistUp -> true
+    FilterWaterResistUp -> true
+    FilterWindResistUp -> true
+    FilterFireWeaponBoost -> false
+    FilterIceWeaponBoost -> false
+    FilterLightningWeaponBoost -> false
+    FilterEarthWeaponBoost -> false
+    FilterWaterWeaponBoost -> false
+    FilterWindWeaponBoost -> false
+    FilterFireDamageBonus -> false
+    FilterIceDamageBonus -> false
+    FilterLightningDamageBonus -> false
+    FilterEarthDamageBonus -> false
+    FilterWaterDamageBonus -> false
+    FilterWindDamageBonus -> false
 
     FilterPatkDown -> true
     FilterMatkDown -> true
     FilterPdefDown -> true
     FilterMdefDown -> true
+    FilterFireDamageDown -> true
+    FilterIceDamageDown -> true
+    FilterThunderDamageDown -> true
+    FilterEarthDamageDown -> true
+    FilterWaterDamageDown -> true
+    FilterWindDamageDown -> true
     FilterFireResistDown -> true
     FilterIceResistDown -> true
     FilterThunderResistDown -> true

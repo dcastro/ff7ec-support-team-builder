@@ -134,17 +134,29 @@ data EffectTypeAndPotencies
   | MdefUp' Potencies
   | FireDamageUp' Potencies
   | IceDamageUp' Potencies
-  | ThunderDamageUp' Potencies
+  | LightningDamageUp' Potencies
   | EarthDamageUp' Potencies
   | WaterDamageUp' Potencies
   | WindDamageUp' Potencies
+  | FireResistUp' Potencies
+  | IceResistUp' Potencies
+  | LightningResistUp' Potencies
+  | EarthResistUp' Potencies
+  | WaterResistUp' Potencies
+  | WindResistUp' Potencies
   | PatkDown' Potencies
   | MatkDown' Potencies
   | PdefDown' Potencies
   | MdefDown' Potencies
+  | FireDamageDown' Potencies
+  | IceDamageDown' Potencies
+  | LightningDamageDown' Potencies
+  | EarthDamageDown' Potencies
+  | WaterDamageDown' Potencies
+  | WindDamageDown' Potencies
   | FireResistDown' Potencies
   | IceResistDown' Potencies
-  | ThunderResistDown' Potencies
+  | LightningResistDown' Potencies
   | EarthResistDown' Potencies
   | WaterResistDown' Potencies
   | WindResistDown' Potencies
@@ -164,19 +176,43 @@ getPotencies = case _ of
   MagicDamageBonus {} -> Nothing
   FireDamageUp { potencies } -> Just $ FireDamageUp' potencies
   IceDamageUp { potencies } -> Just $ IceDamageUp' potencies
-  ThunderDamageUp { potencies } -> Just $ ThunderDamageUp' potencies
+  LightningDamageUp { potencies } -> Just $ LightningDamageUp' potencies
   EarthDamageUp { potencies } -> Just $ EarthDamageUp' potencies
   WaterDamageUp { potencies } -> Just $ WaterDamageUp' potencies
   WindDamageUp { potencies } -> Just $ WindDamageUp' potencies
+  FireResistUp { potencies } -> Just $ FireResistUp' potencies
+  IceResistUp { potencies } -> Just $ IceResistUp' potencies
+  LightningResistUp { potencies } -> Just $ LightningResistUp' potencies
+  EarthResistUp { potencies } -> Just $ EarthResistUp' potencies
+  WaterResistUp { potencies } -> Just $ WaterResistUp' potencies
+  WindResistUp { potencies } -> Just $ WindResistUp' potencies
+  FireWeaponBoost {} -> Nothing
+  IceWeaponBoost {} -> Nothing
+  LightningWeaponBoost {} -> Nothing
+  EarthWeaponBoost {} -> Nothing
+  WaterWeaponBoost {} -> Nothing
+  WindWeaponBoost {} -> Nothing
+  FireDamageBonus {} -> Nothing
+  IceDamageBonus {} -> Nothing
+  LightningDamageBonus {} -> Nothing
+  EarthDamageBonus {} -> Nothing
+  WaterDamageBonus {} -> Nothing
+  WindDamageBonus {} -> Nothing
   Veil {} -> Nothing
   Provoke {} -> Nothing
   PatkDown { potencies } -> Just $ PatkDown' potencies
   MatkDown { potencies } -> Just $ MatkDown' potencies
   PdefDown { potencies } -> Just $ PdefDown' potencies
   MdefDown { potencies } -> Just $ MdefDown' potencies
+  FireDamageDown { potencies } -> Just $ FireDamageDown' potencies
+  IceDamageDown { potencies } -> Just $ IceDamageDown' potencies
+  LightningDamageDown { potencies } -> Just $ LightningDamageDown' potencies
+  EarthDamageDown { potencies } -> Just $ EarthDamageDown' potencies
+  WaterDamageDown { potencies } -> Just $ WaterDamageDown' potencies
+  WindDamageDown { potencies } -> Just $ WindDamageDown' potencies
   FireResistDown { potencies } -> Just $ FireResistDown' potencies
   IceResistDown { potencies } -> Just $ IceResistDown' potencies
-  ThunderResistDown { potencies } -> Just $ ThunderResistDown' potencies
+  LightningResistDown { potencies } -> Just $ LightningResistDown' potencies
   EarthResistDown { potencies } -> Just $ EarthResistDown' potencies
   WaterResistDown { potencies } -> Just $ WaterResistDown' potencies
   WindResistDown { potencies } -> Just $ WindResistDown' potencies
@@ -186,7 +222,7 @@ getPotencies = case _ of
   Enliven {} -> Nothing
   FireWeakness {} -> Nothing
   IceWeakness {} -> Nothing
-  ThunderWeakness {} -> Nothing
+  LightningWeakness {} -> Nothing
   EarthWeakness {} -> Nothing
   WaterWeakness {} -> Nothing
   WindWeakness {} -> Nothing

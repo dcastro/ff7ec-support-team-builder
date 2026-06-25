@@ -418,24 +418,48 @@ hasPotencies = case _ of
     FilterMagicDamageBonus -> false
     FilterFireDamageUp -> true
     FilterIceDamageUp -> true
-    FilterThunderDamageUp -> true
+    FilterLightningDamageUp -> true
     FilterEarthDamageUp -> true
     FilterWaterDamageUp -> true
     FilterWindDamageUp -> true
+    FilterFireResistUp -> true
+    FilterIceResistUp -> true
+    FilterLightningResistUp -> true
+    FilterEarthResistUp -> true
+    FilterWaterResistUp -> true
+    FilterWindResistUp -> true
+    FilterFireWeaponBoost -> false
+    FilterIceWeaponBoost -> false
+    FilterLightningWeaponBoost -> false
+    FilterEarthWeaponBoost -> false
+    FilterWaterWeaponBoost -> false
+    FilterWindWeaponBoost -> false
+    FilterFireDamageBonus -> false
+    FilterIceDamageBonus -> false
+    FilterLightningDamageBonus -> false
+    FilterEarthDamageBonus -> false
+    FilterWaterDamageBonus -> false
+    FilterWindDamageBonus -> false
 
     FilterPatkDown -> true
     FilterMatkDown -> true
     FilterPdefDown -> true
     FilterMdefDown -> true
+    FilterFireDamageDown -> true
+    FilterIceDamageDown -> true
+    FilterLightningDamageDown -> true
+    FilterEarthDamageDown -> true
+    FilterWaterDamageDown -> true
+    FilterWindDamageDown -> true
     FilterFireResistDown -> true
     FilterIceResistDown -> true
-    FilterThunderResistDown -> true
+    FilterLightningResistDown -> true
     FilterEarthResistDown -> true
     FilterWaterResistDown -> true
     FilterWindResistDown -> true
     FilterFireWeakness -> false
     FilterIceWeakness -> false
-    FilterThunderWeakness -> false
+    FilterLightningWeakness -> false
     FilterEarthWeakness -> false
     FilterWaterWeakness -> false
     FilterWindWeakness -> false
@@ -468,24 +492,48 @@ hasRange = case _ of
     FilterMagicDamageBonus -> true
     FilterFireDamageUp -> true
     FilterIceDamageUp -> true
-    FilterThunderDamageUp -> true
+    FilterLightningDamageUp -> true
     FilterEarthDamageUp -> true
     FilterWaterDamageUp -> true
     FilterWindDamageUp -> true
+    FilterFireResistUp -> true
+    FilterIceResistUp -> true
+    FilterLightningResistUp -> true
+    FilterEarthResistUp -> true
+    FilterWaterResistUp -> true
+    FilterWindResistUp -> true
+    FilterFireWeaponBoost -> true
+    FilterIceWeaponBoost -> true
+    FilterLightningWeaponBoost -> true
+    FilterEarthWeaponBoost -> true
+    FilterWaterWeaponBoost -> true
+    FilterWindWeaponBoost -> true
+    FilterFireDamageBonus -> true
+    FilterIceDamageBonus -> true
+    FilterLightningDamageBonus -> true
+    FilterEarthDamageBonus -> true
+    FilterWaterDamageBonus -> true
+    FilterWindDamageBonus -> true
 
     FilterPatkDown -> true
     FilterMatkDown -> true
     FilterPdefDown -> true
     FilterMdefDown -> true
+    FilterFireDamageDown -> true
+    FilterIceDamageDown -> true
+    FilterLightningDamageDown -> true
+    FilterEarthDamageDown -> true
+    FilterWaterDamageDown -> true
+    FilterWindDamageDown -> true
     FilterFireResistDown -> true
     FilterIceResistDown -> true
-    FilterThunderResistDown -> true
+    FilterLightningResistDown -> true
     FilterEarthResistDown -> true
     FilterWaterResistDown -> true
     FilterWindResistDown -> true
     FilterFireWeakness -> true
     FilterIceWeakness -> true
-    FilterThunderWeakness -> true
+    FilterLightningWeakness -> true
     FilterEarthWeakness -> true
     FilterWaterWeakness -> true
     FilterWindWeakness -> true

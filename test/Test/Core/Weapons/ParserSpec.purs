@@ -72,6 +72,78 @@ spec =
       "30s 20% Magic Damage Bonus (+10s) [Range: All Allies]"
         `shouldParse`
           MagicDamageBonus { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 20 }
+      "30s 25% Fire Weapon Boost (+10s) [Range: All Allies]"
+        `shouldParse`
+          FireWeaponBoost { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 25 }
+      "15s 20% Ice Weapon Boost (+5s) [Range: All Allies]"
+        `shouldParse`
+          IceWeaponBoost { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "30s 20% Lightning Weapon Boost (+10s) [Range: All Allies]"
+        `shouldParse`
+          LightningWeaponBoost { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 20 }
+      "30s 25% Earth Weapon Boost (+10s) [Range: All Allies]"
+        `shouldParse`
+          EarthWeaponBoost { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 25 }
+      "30s 20% Water Weapon Boost (+10s) [Range: All Allies]"
+        `shouldParse`
+          WaterWeaponBoost { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 20 }
+      "30s 25% Wind Weapon Boost (+10s) [Range: All Allies]"
+        `shouldParse`
+          WindWeaponBoost { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 25 }
+      "30s 20% Fire Damage Bonus (+10s) [Range: All Allies]"
+        `shouldParse`
+          FireDamageBonus { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 20 }
+      "30s 20% Ice Damage Bonus (+10s) [Range: All Allies]"
+        `shouldParse`
+          IceDamageBonus { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 20 }
+      "15s 20% Lightning Damage Bonus (+5s) [Range: All Allies]"
+        `shouldParse`
+          LightningDamageBonus { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% Earth Damage Bonus (+5s) [Range: All Allies]"
+        `shouldParse`
+          EarthDamageBonus { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "30s 20% Water Damage Bonus (+10s) [Range: All Allies]"
+        `shouldParse`
+          WaterDamageBonus { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 20 }
+      "15s 20% Wind Damage Bonus (+5s) [Range: All Allies]"
+        `shouldParse`
+          WindDamageBonus { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% Fire Damage Down (+5s) [Range: All Allies]"
+        `shouldParse`
+          FireDamageDown { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s 20% Ice Damage Down (+5s) [Range: All Allies]"
+        `shouldParse`
+          IceDamageDown { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s 20% Lightning Damage Down (+5s) [Range: All Allies]"
+        `shouldParse`
+          LightningDamageDown { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s 20% Earth Damage Down (+5s) [Range: All Allies]"
+        `shouldParse`
+          EarthDamageDown { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s 20% Water Damage Down (+5s) [Range: All Allies]"
+        `shouldParse`
+          WaterDamageDown { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s 20% Wind Damage Down (+5s) [Range: All Allies]"
+        `shouldParse`
+          WindDamageDown { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s 20% Fire Resistance Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          FireResistanceUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s 20% Ice Resistance Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          IceResistanceUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s 20% Lightning Resistance Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          LightningResistanceUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s 20% Earth Resistance Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          EarthResistanceUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s 20% Water Resistance Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          WaterResistanceUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s 20% Wind Resistance Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          WindResistanceUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
     it "parses all weapons" do
       sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
       sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of

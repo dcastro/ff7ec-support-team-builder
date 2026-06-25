@@ -152,7 +152,7 @@ data WeaponEffect
   | MagicDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | FireDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | IceDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
-  | ThunderDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | LightningDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | EarthDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | WaterDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | WindDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
@@ -165,13 +165,13 @@ data WeaponEffect
   | MdefDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | FireResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | IceResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
-  | ThunderResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | LightningResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | EarthResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | WaterResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | WindResistDown { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | FireWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | IceWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | ThunderWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | LightningWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | EarthWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | WaterWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | WindWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
@@ -202,7 +202,7 @@ data FilterEffectType
   | FilterMagicDamageBonus
   | FilterFireDamageUp
   | FilterIceDamageUp
-  | FilterThunderDamageUp
+  | FilterLightningDamageUp
   | FilterEarthDamageUp
   | FilterWaterDamageUp
   | FilterWindDamageUp
@@ -218,13 +218,13 @@ data FilterEffectType
   | FilterMdefDown
   | FilterFireResistDown
   | FilterIceResistDown
-  | FilterThunderResistDown
+  | FilterLightningResistDown
   | FilterEarthResistDown
   | FilterWaterResistDown
   | FilterWindResistDown
   | FilterFireWeakness
   | FilterIceWeakness
-  | FilterThunderWeakness
+  | FilterLightningWeakness
   | FilterEarthWeakness
   | FilterWaterWeakness
   | FilterWindWeakness
@@ -280,7 +280,7 @@ instance Show WeaponEffect where
       MagicDamageBonus rec -> showRec rec "MagicDamageBonus"
       FireDamageUp rec -> showRec rec "FireDamageUp"
       IceDamageUp rec -> showRec rec "IceDamageUp"
-      ThunderDamageUp rec -> showRec rec "ThunderDamageUp"
+      LightningDamageUp rec -> showRec rec "LightningDamageUp"
       EarthDamageUp rec -> showRec rec "EarthDamageUp"
       WaterDamageUp rec -> showRec rec "WaterDamageUp"
       WindDamageUp rec -> showRec rec "WindDamageUp"
@@ -292,13 +292,13 @@ instance Show WeaponEffect where
       MdefDown rec -> showRec rec "MdefDown"
       FireResistDown rec -> showRec rec "FireResistDown"
       IceResistDown rec -> showRec rec "IceResistDown"
-      ThunderResistDown rec -> showRec rec "ThunderResistDown"
+      LightningResistDown rec -> showRec rec "LightningResistDown"
       EarthResistDown rec -> showRec rec "EarthResistDown"
       WaterResistDown rec -> showRec rec "WaterResistDown"
       WindResistDown rec -> showRec rec "WindResistDown"
       FireWeakness rec -> showRec rec "FireWeakness"
       IceWeakness rec -> showRec rec "IceWeakness"
-      ThunderWeakness rec -> showRec rec "ThunderWeakness"
+      LightningWeakness rec -> showRec rec "LightningWeakness"
       EarthWeakness rec -> showRec rec "EarthWeakness"
       WaterWeakness rec -> showRec rec "WaterWeakness"
       WindWeakness rec -> showRec rec "WindWeakness"
@@ -332,7 +332,7 @@ instance Show FilterEffectType where
     FilterMagicDamageBonus -> "FilterMagicDamageBonus"
     FilterFireDamageUp -> "FilterFireDamageUp"
     FilterIceDamageUp -> "FilterIceDamageUp"
-    FilterThunderDamageUp -> "FilterThunderDamageUp"
+    FilterLightningDamageUp -> "FilterLightningDamageUp"
     FilterEarthDamageUp -> "FilterEarthDamageUp"
     FilterWaterDamageUp -> "FilterWaterDamageUp"
     FilterWindDamageUp -> "FilterWindDamageUp"
@@ -342,13 +342,13 @@ instance Show FilterEffectType where
     FilterMdefDown -> "FilterMdefDown"
     FilterFireResistDown -> "FilterFireResistDown"
     FilterIceResistDown -> "FilterIceResistDown"
-    FilterThunderResistDown -> "FilterThunderResistDown"
+    FilterLightningResistDown -> "FilterLightningResistDown"
     FilterEarthResistDown -> "FilterEarthResistDown"
     FilterWaterResistDown -> "FilterWaterResistDown"
     FilterWindResistDown -> "FilterWindResistDown"
     FilterFireWeakness -> "FilterFireWeakness"
     FilterIceWeakness -> "FilterIceWeakness"
-    FilterThunderWeakness -> "FilterThunderWeakness"
+    FilterLightningWeakness -> "FilterLightningWeakness"
     FilterEarthWeakness -> "FilterEarthWeakness"
     FilterWaterWeakness -> "FilterWaterWeakness"
     FilterWindWeakness -> "FilterWindWeakness"
@@ -382,7 +382,7 @@ instance WriteForeign WeaponEffect where
       MagicDamageBonus rec -> writeRecord rec "MagicDamageBonus"
       FireDamageUp rec -> writeRecord rec "FireDamageUp"
       IceDamageUp rec -> writeRecord rec "IceDamageUp"
-      ThunderDamageUp rec -> writeRecord rec "ThunderDamageUp"
+      LightningDamageUp rec -> writeRecord rec "LightningDamageUp"
       EarthDamageUp rec -> writeRecord rec "EarthDamageUp"
       WaterDamageUp rec -> writeRecord rec "WaterDamageUp"
       WindDamageUp rec -> writeRecord rec "WindDamageUp"
@@ -394,13 +394,13 @@ instance WriteForeign WeaponEffect where
       MdefDown rec -> writeRecord rec "MdefDown"
       FireResistDown rec -> writeRecord rec "FireResistDown"
       IceResistDown rec -> writeRecord rec "IceResistDown"
-      ThunderResistDown rec -> writeRecord rec "ThunderResistDown"
+      LightningResistDown rec -> writeRecord rec "LightningResistDown"
       EarthResistDown rec -> writeRecord rec "EarthResistDown"
       WaterResistDown rec -> writeRecord rec "WaterResistDown"
       WindResistDown rec -> writeRecord rec "WindResistDown"
       FireWeakness rec -> writeRecord rec "FireWeakness"
       IceWeakness rec -> writeRecord rec "IceWeakness"
-      ThunderWeakness rec -> writeRecord rec "ThunderWeakness"
+      LightningWeakness rec -> writeRecord rec "LightningWeakness"
       EarthWeakness rec -> writeRecord rec "EarthWeakness"
       WaterWeakness rec -> writeRecord rec "WaterWeakness"
       WindWeakness rec -> writeRecord rec "WindWeakness"
@@ -437,7 +437,7 @@ instance WriteForeign FilterEffectType where
     FilterMagicDamageBonus -> writeImpl "FilterMagicDamageBonus"
     FilterFireDamageUp -> writeImpl "FilterFireDamageUp"
     FilterIceDamageUp -> writeImpl "FilterIceDamageUp"
-    FilterThunderDamageUp -> writeImpl "FilterThunderDamageUp"
+    FilterLightningDamageUp -> writeImpl "FilterLightningDamageUp"
     FilterEarthDamageUp -> writeImpl "FilterEarthDamageUp"
     FilterWaterDamageUp -> writeImpl "FilterWaterDamageUp"
     FilterWindDamageUp -> writeImpl "FilterWindDamageUp"
@@ -447,13 +447,13 @@ instance WriteForeign FilterEffectType where
     FilterMdefDown -> writeImpl "FilterMdefDown"
     FilterFireResistDown -> writeImpl "FilterFireResistDown"
     FilterIceResistDown -> writeImpl "FilterIceResistDown"
-    FilterThunderResistDown -> writeImpl "FilterThunderResistDown"
+    FilterLightningResistDown -> writeImpl "FilterLightningResistDown"
     FilterEarthResistDown -> writeImpl "FilterEarthResistDown"
     FilterWaterResistDown -> writeImpl "FilterWaterResistDown"
     FilterWindResistDown -> writeImpl "FilterWindResistDown"
     FilterFireWeakness -> writeImpl "FilterFireWeakness"
     FilterIceWeakness -> writeImpl "FilterIceWeakness"
-    FilterThunderWeakness -> writeImpl "FilterThunderWeakness"
+    FilterLightningWeakness -> writeImpl "FilterLightningWeakness"
     FilterEarthWeakness -> writeImpl "FilterEarthWeakness"
     FilterWaterWeakness -> writeImpl "FilterWaterWeakness"
     FilterWindWeakness -> writeImpl "FilterWindWeakness"
@@ -495,7 +495,7 @@ instance ReadForeign WeaponEffect where
         MagicDamageBonus _ -> tryRead MagicDamageBonus recType value "MagicDamageBonus"
         FireDamageUp _ -> tryRead FireDamageUp recType value "FireDamageUp"
         IceDamageUp _ -> tryRead IceDamageUp recType value "IceDamageUp"
-        ThunderDamageUp _ -> tryRead ThunderDamageUp recType value "ThunderDamageUp"
+        LightningDamageUp _ -> tryRead LightningDamageUp recType value "LightningDamageUp"
         EarthDamageUp _ -> tryRead EarthDamageUp recType value "EarthDamageUp"
         WaterDamageUp _ -> tryRead WaterDamageUp recType value "WaterDamageUp"
         WindDamageUp _ -> tryRead WindDamageUp recType value "WindDamageUp"
@@ -505,13 +505,13 @@ instance ReadForeign WeaponEffect where
         MdefDown _ -> tryRead MdefDown recType value "MdefDown"
         FireResistDown _ -> tryRead FireResistDown recType value "FireResistDown"
         IceResistDown _ -> tryRead IceResistDown recType value "IceResistDown"
-        ThunderResistDown _ -> tryRead ThunderResistDown recType value "ThunderResistDown"
+        LightningResistDown _ -> tryRead LightningResistDown recType value "LightningResistDown"
         EarthResistDown _ -> tryRead EarthResistDown recType value "EarthResistDown"
         WaterResistDown _ -> tryRead WaterResistDown recType value "WaterResistDown"
         WindResistDown _ -> tryRead WindResistDown recType value "WindResistDown"
         FireWeakness _ -> tryRead FireWeakness recType value "FireWeakness"
         IceWeakness _ -> tryRead IceWeakness recType value "IceWeakness"
-        ThunderWeakness _ -> tryRead ThunderWeakness recType value "ThunderWeakness"
+        LightningWeakness _ -> tryRead LightningWeakness recType value "LightningWeakness"
         EarthWeakness _ -> tryRead EarthWeakness recType value "EarthWeakness"
         WaterWeakness _ -> tryRead WaterWeakness recType value "WaterWeakness"
         WindWeakness _ -> tryRead WindWeakness recType value "WindWeakness"
@@ -551,7 +551,7 @@ instance ReadForeign FilterEffectType where
         FilterMagicDamageBonus -> tryRead x str "FilterMagicDamageBonus"
         FilterFireDamageUp -> tryRead x str "FilterFireDamageUp"
         FilterIceDamageUp -> tryRead x str "FilterIceDamageUp"
-        FilterThunderDamageUp -> tryRead x str "FilterThunderDamageUp"
+        FilterLightningDamageUp -> tryRead x str "FilterLightningDamageUp"
         FilterEarthDamageUp -> tryRead x str "FilterEarthDamageUp"
         FilterWaterDamageUp -> tryRead x str "FilterWaterDamageUp"
         FilterWindDamageUp -> tryRead x str "FilterWindDamageUp"
@@ -561,13 +561,13 @@ instance ReadForeign FilterEffectType where
         FilterMdefDown -> tryRead x str "FilterMdefDown"
         FilterFireResistDown -> tryRead x str "FilterFireResistDown"
         FilterIceResistDown -> tryRead x str "FilterIceResistDown"
-        FilterThunderResistDown -> tryRead x str "FilterThunderResistDown"
+        FilterLightningResistDown -> tryRead x str "FilterLightningResistDown"
         FilterEarthResistDown -> tryRead x str "FilterEarthResistDown"
         FilterWaterResistDown -> tryRead x str "FilterWaterResistDown"
         FilterWindResistDown -> tryRead x str "FilterWindResistDown"
         FilterFireWeakness -> tryRead x str "FilterFireWeakness"
         FilterIceWeakness -> tryRead x str "FilterIceWeakness"
-        FilterThunderWeakness -> tryRead x str "FilterThunderWeakness"
+        FilterLightningWeakness -> tryRead x str "FilterLightningWeakness"
         FilterEarthWeakness -> tryRead x str "FilterEarthWeakness"
         FilterWaterWeakness -> tryRead x str "FilterWaterWeakness"
         FilterWindWeakness -> tryRead x str "FilterWindWeakness"
@@ -616,7 +616,7 @@ instance Display FilterEffectType where
     FilterMagicDamageBonus -> "Mag. damage bonus"
     FilterFireDamageUp -> "Fire damage up"
     FilterIceDamageUp -> "Ice damage up"
-    FilterThunderDamageUp -> "Thunder damage up"
+    FilterLightningDamageUp -> "Lightning damage up"
     FilterEarthDamageUp -> "Earth damage up"
     FilterWaterDamageUp -> "Water damage up"
     FilterWindDamageUp -> "Wind damage up"
@@ -627,13 +627,13 @@ instance Display FilterEffectType where
     FilterMdefDown -> "MDEF down"
     FilterFireResistDown -> "Fire resist down"
     FilterIceResistDown -> "Ice resist down"
-    FilterThunderResistDown -> "Thunder resist down"
+    FilterLightningResistDown -> "Lightning resist down"
     FilterEarthResistDown -> "Earth resist down"
     FilterWaterResistDown -> "Water resist down"
     FilterWindResistDown -> "Wind resist down"
     FilterFireWeakness -> "Fire weakness"
     FilterIceWeakness -> "Ice weakness"
-    FilterThunderWeakness -> "Thunder weakness"
+    FilterLightningWeakness -> "Lightning weakness"
     FilterEarthWeakness -> "Earth weakness"
     FilterWaterWeakness -> "Water weakness"
     FilterWindWeakness -> "Wind weakness"
@@ -665,7 +665,7 @@ allFilterEffectTypes =
   , FilterMagicDamageBonus
   , FilterFireDamageUp
   , FilterIceDamageUp
-  , FilterThunderDamageUp
+  , FilterLightningDamageUp
   , FilterEarthDamageUp
   , FilterWaterDamageUp
   , FilterWindDamageUp
@@ -675,13 +675,13 @@ allFilterEffectTypes =
   , FilterMdefDown
   , FilterFireResistDown
   , FilterIceResistDown
-  , FilterThunderResistDown
+  , FilterLightningResistDown
   , FilterEarthResistDown
   , FilterWaterResistDown
   , FilterWindResistDown
   , FilterFireWeakness
   , FilterIceWeakness
-  , FilterThunderWeakness
+  , FilterLightningWeakness
   , FilterEarthWeakness
   , FilterWaterWeakness
   , FilterWindWeakness
@@ -713,7 +713,7 @@ allFilterEffectTypes =
     FilterMagicDamageBonus -> unit
     FilterFireDamageUp -> unit
     FilterIceDamageUp -> unit
-    FilterThunderDamageUp -> unit
+    FilterLightningDamageUp -> unit
     FilterEarthDamageUp -> unit
     FilterWaterDamageUp -> unit
     FilterWindDamageUp -> unit
@@ -723,13 +723,13 @@ allFilterEffectTypes =
     FilterMdefDown -> unit
     FilterFireResistDown -> unit
     FilterIceResistDown -> unit
-    FilterThunderResistDown -> unit
+    FilterLightningResistDown -> unit
     FilterEarthResistDown -> unit
     FilterWaterResistDown -> unit
     FilterWindResistDown -> unit
     FilterFireWeakness -> unit
     FilterIceWeakness -> unit
-    FilterThunderWeakness -> unit
+    FilterLightningWeakness -> unit
     FilterEarthWeakness -> unit
     FilterWaterWeakness -> unit
     FilterWindWeakness -> unit
@@ -755,7 +755,7 @@ exhaustiveWeaponEffectMatch =
   , MagicDamageBonus { range, durExt, percentage }
   , FireDamageUp { range, durExt, potencies }
   , IceDamageUp { range, durExt, potencies }
-  , ThunderDamageUp { range, durExt, potencies }
+  , LightningDamageUp { range, durExt, potencies }
   , EarthDamageUp { range, durExt, potencies }
   , WaterDamageUp { range, durExt, potencies }
   , WindDamageUp { range, durExt, potencies }
@@ -767,13 +767,13 @@ exhaustiveWeaponEffectMatch =
   , MdefDown { range, durExt, potencies }
   , FireResistDown { range, durExt, potencies }
   , IceResistDown { range, durExt, potencies }
-  , ThunderResistDown { range, durExt, potencies }
+  , LightningResistDown { range, durExt, potencies }
   , EarthResistDown { range, durExt, potencies }
   , WaterResistDown { range, durExt, potencies }
   , WindResistDown { range, durExt, potencies }
   , FireWeakness { range, durExt, percentage }
   , IceWeakness { range, durExt, percentage }
-  , ThunderWeakness { range, durExt, percentage }
+  , LightningWeakness { range, durExt, percentage }
   , EarthWeakness { range, durExt, percentage }
   , WaterWeakness { range, durExt, percentage }
   , WindWeakness { range, durExt, percentage }
@@ -800,7 +800,7 @@ exhaustiveWeaponEffectMatch =
     MdefUp _ -> unit
     FireDamageUp _ -> unit
     IceDamageUp _ -> unit
-    ThunderDamageUp _ -> unit
+    LightningDamageUp _ -> unit
     EarthDamageUp _ -> unit
     WaterDamageUp _ -> unit
     WindDamageUp _ -> unit
@@ -816,13 +816,13 @@ exhaustiveWeaponEffectMatch =
     MagicDamageBonus _ -> unit
     FireResistDown _ -> unit
     IceResistDown _ -> unit
-    ThunderResistDown _ -> unit
+    LightningResistDown _ -> unit
     EarthResistDown _ -> unit
     WaterResistDown _ -> unit
     WindResistDown _ -> unit
     FireWeakness _ -> unit
     IceWeakness _ -> unit
-    ThunderWeakness _ -> unit
+    LightningWeakness _ -> unit
     EarthWeakness _ -> unit
     WaterWeakness _ -> unit
     WindWeakness _ -> unit

@@ -340,7 +340,7 @@ instance Show WeaponEffect where
       EarthWeaponBoost rec -> showRec rec "EarthWeaponBoost"
       WaterWeaponBoost rec -> showRec rec "WaterWeaponBoost"
       WindWeaponBoost rec -> showRec rec "WindWeaponBoost"
-      MagicDamageBonus rec -> showRec rec "MagicDamageBonus"
+      FireDamageBonus rec -> showRec rec "FireDamageBonus"
       IceDamageBonus rec -> showRec rec "IceDamageBonus"
       LightningDamageBonus rec -> showRec rec "LightningDamageBonus"
       EarthDamageBonus rec -> showRec rec "EarthDamageBonus"
@@ -575,8 +575,8 @@ instance WriteForeign FilterEffectType where
     FilterEarthWeaponBoost -> writeImpl "FilterEarthWeaponBoost"
     FilterWaterWeaponBoost -> writeImpl "FilterWaterWeaponBoost"
     FilterWindWeaponBoost -> writeImpl "FilterWindWeaponBoost"
-    FilterMagicDamageBonus -> writeImpl "FilterMagicDamageBonus"
-    FilterMagicDamageBonus -> writeImpl "FilterMagicDamageBonus"
+    FilterFireDamageBonus -> writeImpl "FilterFireDamageBonus"
+    FilterIceDamageBonus -> writeImpl "FilterIceDamageBonus"
     FilterLightningDamageBonus -> writeImpl "FilterLightningDamageBonus"
     FilterEarthDamageBonus -> writeImpl "FilterEarthDamageBonus"
     FilterWaterDamageBonus -> writeImpl "FilterWaterDamageBonus"
@@ -645,12 +645,12 @@ instance ReadForeign WeaponEffect where
         EarthDamageUp _ -> tryRead EarthDamageUp recType value "EarthDamageUp"
         WaterDamageUp _ -> tryRead WaterDamageUp recType value "WaterDamageUp"
         WindDamageUp _ -> tryRead WindDamageUp recType value "WindDamageUp"
-        FireResistUp _ -> tryRead FireResistDown recType value "FireResistUp"
-        IceResistUp _ -> tryRead IceResistDown recType value "IceResistUp"
-        LightningResistUp _ -> tryRead LightningResistDown recType value "LightningResistUp"
-        EarthResistUp _ -> tryRead EarthResistDown recType value "EarthResistUp"
-        WaterResistUp _ -> tryRead WaterResistDown recType value "WaterResistUp"
-        WindResistUp _ -> tryRead WindResistDown recType value "WindResistUp"
+        FireResistUp _ -> tryRead FireResistUp recType value "FireResistUp"
+        IceResistUp _ -> tryRead IceResistUp recType value "IceResistUp"
+        LightningResistUp _ -> tryRead LightningResistUp recType value "LightningResistUp"
+        EarthResistUp _ -> tryRead EarthResistUp recType value "EarthResistUp"
+        WaterResistUp _ -> tryRead WaterResistUp recType value "WaterResistUp"
+        WindResistUp _ -> tryRead WindResistUp recType value "WindResistUp"
         FireWeaponBoost _ -> tryRead FireWeaponBoost recType value "FireWeaponBoost"
         IceWeaponBoost _ -> tryRead IceWeaponBoost recType value "IceWeaponBoost"
         LightningWeaponBoost _ -> tryRead LightningWeaponBoost recType value "LightningWeaponBoost"
@@ -909,6 +909,8 @@ allFilterEffectTypes =
   , FilterMatkDown
   , FilterPdefDown
   , FilterMdefDown
+  , FilterFireDamageDown
+  , FilterIceDamageDown
   , FilterLightningDamageDown
   , FilterEarthDamageDown
   , FilterWaterDamageDown

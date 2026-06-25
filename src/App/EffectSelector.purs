@@ -496,11 +496,35 @@ hasRange = case _ of
     FilterEarthDamageUp -> true
     FilterWaterDamageUp -> true
     FilterWindDamageUp -> true
+    FilterFireResistUp -> true
+    FilterIceResistUp -> true
+    FilterLightningResistUp -> true
+    FilterEarthResistUp -> true
+    FilterWaterResistUp -> true
+    FilterWindResistUp -> true
+    FilterFireWeaponBoost -> true
+    FilterIceWeaponBoost -> true
+    FilterLightningWeaponBoost -> true
+    FilterEarthWeaponBoost -> true
+    FilterWaterWeaponBoost -> true
+    FilterWindWeaponBoost -> true
+    FilterFireDamageBonus -> true
+    FilterIceDamageBonus -> true
+    FilterLightningDamageBonus -> true
+    FilterEarthDamageBonus -> true
+    FilterWaterDamageBonus -> true
+    FilterWindDamageBonus -> true
 
     FilterPatkDown -> true
     FilterMatkDown -> true
     FilterPdefDown -> true
     FilterMdefDown -> true
+    FilterFireDamageDown -> true
+    FilterIceDamageDown -> true
+    FilterLightningDamageDown -> true
+    FilterEarthDamageDown -> true
+    FilterWaterDamageDown -> true
+    FilterWindDamageDown -> true
     FilterFireResistDown -> true
     FilterIceResistDown -> true
     FilterLightningResistDown -> true

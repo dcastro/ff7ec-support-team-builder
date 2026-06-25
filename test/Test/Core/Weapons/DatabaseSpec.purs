@@ -138,10 +138,22 @@ data EffectTypeAndPotencies
   | EarthDamageUp' Potencies
   | WaterDamageUp' Potencies
   | WindDamageUp' Potencies
+  | FireResistUp' Potencies
+  | IceResistUp' Potencies
+  | LightningResistUp' Potencies
+  | EarthResistUp' Potencies
+  | WaterResistUp' Potencies
+  | WindResistUp' Potencies
   | PatkDown' Potencies
   | MatkDown' Potencies
   | PdefDown' Potencies
   | MdefDown' Potencies
+  | FireDamageDown' Potencies
+  | IceDamageDown' Potencies
+  | LightningDamageDown' Potencies
+  | EarthDamageDown' Potencies
+  | WaterDamageDown' Potencies
+  | WindDamageDown' Potencies
   | FireResistDown' Potencies
   | IceResistDown' Potencies
   | LightningResistDown' Potencies

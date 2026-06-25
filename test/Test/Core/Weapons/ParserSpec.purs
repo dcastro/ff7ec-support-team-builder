@@ -108,42 +108,50 @@ spec =
       "15s 20% Wind Damage Bonus (+5s) [Range: All Allies]"
         `shouldParse`
           WindDamageBonus { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
-      "15s 20% Fire Damage Down (+5s) [Range: All Allies]"
+      "15s Fire Damage Down (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
           FireDamageDown { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
-      "15s 20% Ice Damage Down (+5s) [Range: All Allies]"
+      "15s Ice Damage Down (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
           IceDamageDown { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
-      "15s 20% Lightning Damage Down (+5s) [Range: All Allies]"
+      "15s Lightning Damage Down (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
           LightningDamageDown { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
-      "15s 20% Earth Damage Down (+5s) [Range: All Allies]"
+      "15s Earth Damage Down (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
           EarthDamageDown { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
-      "15s 20% Water Damage Down (+5s) [Range: All Allies]"
+      "15s Water Damage Down (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
           WaterDamageDown { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
-      "15s 20% Wind Damage Down (+5s) [Range: All Allies]"
+      "15s Wind Damage Down (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
           WindDamageDown { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
-      "15s 20% Fire Resistance Up (+5s) [Range: All Allies]"
+      "15s Fire Resistance Up (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
-          FireResistanceUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
-      "15s 20% Ice Resistance Up (+5s) [Range: All Allies]"
+          FireResistUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s Ice Resistance Up (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
-          IceResistanceUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
-      "15s 20% Lightning Resistance Up (+5s) [Range: All Allies]"
+          IceResistUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s Lightning Resistance Up (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
-          LightningResistanceUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
-      "15s 20% Earth Resistance Up (+5s) [Range: All Allies]"
+          LightningResistUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s Earth Resistance Up (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
-          EarthResistanceUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
-      "15s 20% Water Resistance Up (+5s) [Range: All Allies]"
+          EarthResistUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s Water Resistance Up (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
-          WaterResistanceUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
-      "15s 20% Wind Resistance Up (+5s) [Range: All Allies]"
+          WaterResistUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "15s Wind Resistance Up (+5s) (Mid -> High) [Range: All Allies]"
         `shouldParse`
-          WindResistanceUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+          WindResistUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      -- The spreadsheet uses "Thunder" and "Lightning" interchangeably for the
+      -- lightning element; both spellings must map to the same effect.
+      "16s Thunder Damage Up (+5s) (Mid -> High) [Range: All Allies]"
+        `shouldParse`
+          LightningDamageUp { range: All, durExt: { duration: Duration 16, extension: Extension 5 }, potencies: { base: Mid, max: High } }
+      "20s Thunder Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy]"
+        `shouldParse`
+          LightningResistDown { range: SingleTarget, durExt: { duration: Duration 20, extension: Extension 6 }, potencies: { base: Low, max: Mid } }
     it "parses all weapons" do
       sourceWeaponsJson <- Node.readTextFile Node.UTF8 "resources/weapons.json"
       sourceWeapons <- case J.readJSON sourceWeaponsJson :: _ GetSheetResult of

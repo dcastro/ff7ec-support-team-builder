@@ -1467,6 +1467,17 @@
           {
             "value": {
               "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "FireDamageBonus"
+          },
+          {
+            "value": {
+              "range": "All",
               "potencies": {
                 "max": "High",
                 "base": "Mid"
@@ -1477,6 +1488,17 @@
               }
             },
             "type": "MdefUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "FireWeaponBoost"
           }
         ],
         "description": "Luminous Bloom+ (4 ATB)\n760% Mag. Non-elem. Damage [Range: All Enemies]\n50s 25% Fire Damage Bonus (+16s) [Range: All Allies]\n25s MDEF Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
@@ -1484,6 +1506,17 @@
       "ob10": {
         "spadeCustomDescription": "60s 35% Fire Weapon Boost (+20s) [Range: All Allies]",
         "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "FireDamageBonus"
+          },
           {
             "value": {
               "range": "All",
@@ -1497,6 +1530,17 @@
               }
             },
             "type": "MdefUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "FireWeaponBoost"
           }
         ],
         "description": "Luminous Bloom++ (4 ATB)\n920% Mag. Non-elem. Damage [Range: All Enemies]\n60s 30% Fire Damage Bonus (+20s) [Range: All Allies]\n30s MDEF Up (+10s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n+2 Costume C. Ability Uses [Range: Self] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
@@ -1504,6 +1548,17 @@
       "ob1": {
         "spadeCustomDescription": "40s 25% Fire Weapon Boost (+13s) [Range: All Allies]",
         "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "FireDamageBonus"
+          },
           {
             "value": {
               "range": "All",
@@ -1517,6 +1572,17 @@
               }
             },
             "type": "MdefUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "FireWeaponBoost"
           }
         ],
         "description": "Luminous Bloom (4 ATB)\n590% Mag. Non-elem. Damage [Range: All Enemies]\n40s 20% Fire Damage Bonus (+13s) [Range: All Allies]\n25s MDEF Up (+8s) (Low -> Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -1524,6 +1590,17 @@
       "ob0": {
         "spadeCustomDescription": "30s 25% Fire Weapon Boost (+10s) [Range: All Allies]",
         "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "FireDamageBonus"
+          },
           {
             "value": {
               "range": "All",
@@ -1537,6 +1614,17 @@
               }
             },
             "type": "MdefUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "FireWeaponBoost"
           }
         ],
         "description": "Luminous Bloom (4 ATB)\n490% Mag. Non-elem. Damage [Range: All Enemies]\n30s 20% Fire Damage Bonus (+10s) [Range: All Allies]\n20s MDEF Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -2182,7 +2270,7 @@
                 "duration": 20
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Pink Aura+ (4 ATB)\n20s PATK Up (+6s) (Mid) [Range: All Allies]\n7% Heal [Range: All Allies]\n20s Thunder Damage Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]"
@@ -2222,7 +2310,7 @@
                 "duration": 25
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Pink Aura++ (4 ATB)\n25s PATK Up (+8s) (Mid -> High) [Range: All Allies]\n7% Heal [Range: All Allies]\n25s Thunder Damage Up (+8s) (Mid -> High) [Range: All Allies]"
@@ -2262,7 +2350,7 @@
                 "duration": 20
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Pink Aura (4 ATB)\n20s PATK Up (+6s) (Low) [Range: All Allies]\n6% Heal [Range: All Allies]\n20s Thunder Damage Up (+6s) (Low) [Range: All Allies] [Condition: Self 70-100% HP]"
@@ -2302,7 +2390,7 @@
                 "duration": 15
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Pink Aura (4 ATB)\n15s PATK Up (+5s) (Low) [Range: All Allies]\n5% Heal [Range: All Allies]\n15s Thunder Damage Up (+5s) (Low) [Range: All Allies] [Condition: Self 70-100% HP]"
@@ -3084,6 +3172,17 @@
           {
             "value": {
               "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "WaterWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
               "potencies": {
                 "max": "High",
                 "base": "High"
@@ -3100,6 +3199,17 @@
       },
       "ob10": {
         "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "WaterWeaponBoost"
+          },
           {
             "value": {
               "range": "All",
@@ -3122,6 +3232,17 @@
           {
             "value": {
               "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "WaterWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
               "potencies": {
                 "max": "Mid",
                 "base": "Low"
@@ -3138,6 +3259,17 @@
       },
       "ob0": {
         "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "WaterWeaponBoost"
+          },
           {
             "value": {
               "range": "All",
@@ -3176,6 +3308,20 @@
         "effects": [
           {
             "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "LightningDamageDown"
+          },
+          {
+            "value": {
               "range": "All",
               "potencies": {
                 "max": "High",
@@ -3194,6 +3340,20 @@
       "ob10": {
         "spadeCustomDescription": "30s Lightning Damage Down (+10s) (High) [Range: Single Enemy]\n30s PATK Up (+10s) (High) [Range: All Allies]",
         "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "LightningDamageDown"
+          },
           {
             "value": {
               "range": "All",
@@ -3216,6 +3376,20 @@
         "effects": [
           {
             "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "LightningDamageDown"
+          },
+          {
+            "value": {
               "range": "All",
               "potencies": {
                 "max": "Mid",
@@ -3234,6 +3408,20 @@
       "ob0": {
         "spadeCustomDescription": "20s Lightning Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s PATK Up (+6s) (Low -> Mid) [Range: All Allies]",
         "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "LightningDamageDown"
+          },
           {
             "value": {
               "range": "All",
@@ -3635,7 +3823,7 @@
                 "duration": 25
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Riot Blade+ (4 ATB)\n660% Mag. Non-elem. Damage [Range: All Enemies]\n25s Fire Resistance Down (+8s) (High) [Range: All Enemies]\n25s Ice Resistance Down (+8s) (High) [Range: All Enemies]\n25s Thunder Resistance Down (+8s) (High) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
@@ -3682,7 +3870,7 @@
                 "duration": 35
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Riot Blade++ (4 ATB)\n750% Mag. Non-elem. Damage [Range: All Enemies]\n35s Fire Resistance Down (+11s) (High) [Range: All Enemies]\n35s Ice Resistance Down (+11s) (High) [Range: All Enemies]\n35s Thunder Resistance Down (+11s) (High) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
@@ -3729,7 +3917,7 @@
                 "duration": 22
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Riot Blade (4 ATB)\n540% Mag. Non-elem. Damage [Range: All Enemies]\n22s Fire Resistance Down (+7s) (Mid -> High) [Range: All Enemies]\n22s Ice Resistance Down (+7s) (Mid -> High) [Range: All Enemies]\n22s Thunder Resistance Down (+7s) (Mid -> High) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
@@ -3776,7 +3964,7 @@
                 "duration": 20
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Riot Blade (4 ATB)\n470% Mag. Non-elem. Damage [Range: All Enemies]\n20s Fire Resistance Down (+6s) (Mid -> High) [Range: All Enemies]\n20s Ice Resistance Down (+6s) (Mid -> High) [Range: All Enemies]\n20s Thunder Resistance Down (+6s) (Mid -> High) [Range: All Enemies]\n10% Crit Rate [Range: All Enemies]"
@@ -4066,6 +4254,31 @@
               }
             },
             "type": "Provoke"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "LightningWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Planet's Thunderstrike+ (4 ATB)\n760% Mag. Lightning Damage [Range: Single Enemy]\n60s Provoke (+0s) [Range: Self]\n50s 30% Lightning Weapon Boost (+16s) [Range: All Allies]\n50s Lightning Damage Up (+16s) (Mid -> High) [Range: All Allies]"
@@ -4082,6 +4295,31 @@
               }
             },
             "type": "Provoke"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "LightningWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Planet's Thunderstrike++ (4 ATB)\n920% Mag. Lightning Damage [Range: Single Enemy]\n60s Provoke (+0s) [Range: Self]\n60s 35% Lightning Weapon Boost (+20s) [Range: All Allies]\n60s Lightning Damage Up (+20s) (Mid -> High) [Range: All Allies]"
@@ -4098,6 +4336,31 @@
               }
             },
             "type": "Provoke"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "LightningWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Planet's Thunderstrike (4 ATB)\n590% Mag. Lightning Damage [Range: Single Enemy]\n60s Provoke (+0s) [Range: Self]\n40s 20% Lightning Weapon Boost (+13s) [Range: All Allies]\n40s Lightning Damage Up (+13s) (Low -> Mid) [Range: All Allies]"
@@ -4114,6 +4377,31 @@
               }
             },
             "type": "Provoke"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "LightningWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Planet's Thunderstrike (4 ATB)\n490% Mag. Lightning Damage [Range: Single Enemy]\n60s Provoke (+0s) [Range: Self]\n30s 20% Lightning Weapon Boost (+10s) [Range: All Allies]\n30s Lightning Damage Up (+10s) (Low -> Mid) [Range: All Allies]"
@@ -8670,6 +8958,34 @@
                 "duration": 25
               }
             },
+            "type": "FireResistUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "LightningResistUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
             "type": "PdefUp"
           }
         ],
@@ -8677,6 +8993,34 @@
       },
       "ob10": {
         "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "FireResistUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "LightningResistUp"
+          },
           {
             "value": {
               "range": "All",
@@ -8708,6 +9052,34 @@
                 "duration": 25
               }
             },
+            "type": "FireResistUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "LightningResistUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
             "type": "PdefUp"
           }
         ],
@@ -8715,6 +9087,34 @@
       },
       "ob0": {
         "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "FireResistUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "LightningResistUp"
+          },
           {
             "value": {
               "range": "All",
@@ -10134,7 +10534,7 @@
                 "duration": 22
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Deblizzara & Dethundara Surge+ (4 ATB)\n320% Mag. Non-elem. Damage [Range: Single Enemy]\n22s Ice Resistance Down (+7s) (Mid) [Range: Single Enemy]\n22s Thunder Resistance Down (+7s) (Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -10167,7 +10567,7 @@
                 "duration": 25
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Deblizzara & Dethundara Surge++ (4 ATB)\n340% Mag. Non-elem. Damage [Range: Single Enemy]\n25s Ice Resistance Down (+8s) (Mid) [Range: Single Enemy]\n25s Thunder Resistance Down (+8s) (Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -10200,7 +10600,7 @@
                 "duration": 22
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Deblizzara & Dethundara Surge (4 ATB)\n280% Mag. Non-elem. Damage [Range: Single Enemy]\n22s Ice Resistance Down (+7s) (Low -> Mid) [Range: Single Enemy]\n22s Thunder Resistance Down (+7s) (Low -> Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -10233,7 +10633,7 @@
                 "duration": 20
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Deblizzara & Dethundara Surge (4 ATB)\n240% Mag. Non-elem. Damage [Range: Single Enemy]\n20s Ice Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s Thunder Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -11299,7 +11699,7 @@
                 "duration": 20
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Tumbling Tackle+ (3 ATB)\n360% Phys. Non-elem. Damage [Range: Single Enemy]\n20s MDEF Down (+6s) (Mid) [Range: Single Enemy]\n20s Thunder Resistance Down (+6s) (High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -11332,7 +11732,7 @@
                 "duration": 24
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Tumbling Tackle++ (3 ATB)\n420% Phys. Non-elem. Damage [Range: Single Enemy]\n24s MDEF Down (+8s) (Mid) [Range: Single Enemy]\n24s Thunder Resistance Down (+8s) (High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -11365,7 +11765,7 @@
                 "duration": 18
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Tumbling Tackle (3 ATB)\n300% Phys. Non-elem. Damage [Range: Single Enemy]\n18s MDEF Down (+6s) (Mid) [Range: Single Enemy]\n18s Thunder Resistance Down (+6s) (Mid) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -11398,7 +11798,7 @@
                 "duration": 16
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Tumbling Tackle (3 ATB)\n260% Phys. Non-elem. Damage [Range: Single Enemy]\n16s MDEF Down (+5s) (Mid) [Range: Single Enemy]\n16s Thunder Resistance Down (+5s) (Mid) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -11452,19 +11852,67 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "LightningDamageBonus"
+          }
+        ],
         "description": "Holidays Spark+ (4 ATB)\n760% Phys. Lightning Damage [Range: Single Enemy]\n20s 25% Thunder Damage Bonus (+6s) [Range: All Allies]\n+2 ATB [Range: All Allies] [Condition: First Use]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "LightningDamageBonus"
+          }
+        ],
         "description": "Holidays Spark++ (4 ATB)\n920% Phys. Lightning Damage [Range: Single Enemy]\n25s 30% Thunder Damage Bonus (+8s) [Range: All Allies]\n+2 ATB [Range: All Allies] [Condition: First Use]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "LightningDamageBonus"
+          }
+        ],
         "description": "Holidays Spark (4 ATB)\n590% Phys. Lightning Damage [Range: Single Enemy]\n20s 20% Thunder Damage Bonus (+6s) [Range: All Allies]\n+1 ATB [Range: All Allies] [Condition: First Use]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "LightningDamageBonus"
+          }
+        ],
         "description": "Holidays Spark (4 ATB)\n490% Phys. Lightning Damage [Range: Single Enemy]\n15s 20% Thunder Damage Bonus (+5s) [Range: All Allies]\n+1 ATB [Range: All Allies] [Condition: First Use]"
       },
       "name": "Antler Pike",
@@ -11590,7 +12038,7 @@
                 "duration": 25
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           },
           {
             "value": {
@@ -11621,7 +12069,7 @@
                 "duration": 30
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           },
           {
             "value": {
@@ -11652,7 +12100,7 @@
                 "duration": 22
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           },
           {
             "value": {
@@ -11683,7 +12131,7 @@
                 "duration": 20
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           },
           {
             "value": {
@@ -12150,6 +12598,17 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "IceDamageBonus"
           }
         ],
         "description": "Icicle Candy+ (4 ATB)\n760% Phys. Ice Damage [Range: Single Enemy]\n25s PATK Down (+8s) (High) [Range: Single Enemy]\n20s 25% Ice Damage Bonus (+6s) [Range: All Allies] [Condition: Self 70-100% HP]"
@@ -12169,6 +12628,17 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "IceDamageBonus"
           }
         ],
         "description": "Icicle Candy++ (4 ATB)\n920% Phys. Ice Damage [Range: Single Enemy]\n30s PATK Down (+10s) (High) [Range: Single Enemy]\n25s 30% Ice Damage Bonus (+8s) [Range: All Allies] [Condition: Self 70-100% HP]"
@@ -12188,6 +12658,17 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "IceDamageBonus"
           }
         ],
         "description": "Icicle Candy (4 ATB)\n590% Phys. Ice Damage [Range: Single Enemy]\n25s PATK Down (+8s) (Low -> Mid) [Range: Single Enemy]\n20s 20% Ice Damage Bonus (+6s) [Range: All Allies] [Condition: Self 70-100% HP]"
@@ -12207,6 +12688,17 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "IceDamageBonus"
           }
         ],
         "description": "Icicle Candy (4 ATB)\n490% Phys. Ice Damage [Range: Single Enemy]\n20s PATK Down (+6s) (Low -> Mid) [Range: Single Enemy]\n15s 20% Ice Damage Bonus (+5s) [Range: All Allies] [Condition: Self 70-100% HP]"
@@ -13576,6 +14068,17 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "WindWeaponBoost"
           }
         ],
         "description": "Devastating Cyclone+ (4 ATB)\n750% Phys. Wind Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n50s PATK Up (+16s) (Mid -> High) [Range: All Allies]\n50s 30% Wind Weapon Boost (+16s) [Range: All Allies] [Condition: Self 50-100% HP]"
@@ -13596,6 +14099,17 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "WindWeaponBoost"
           }
         ],
         "description": "Devastating Cyclone++ (4 ATB)\n900% Phys. Wind Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n60s PATK Up (+20s) (Mid -> High) [Range: All Allies]\n60s 35% Wind Weapon Boost (+20s) [Range: All Allies] [Condition: Self 50-100% HP]"
@@ -13616,6 +14130,17 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "WindWeaponBoost"
           }
         ],
         "description": "Devastating Cyclone (4 ATB)\n580% Phys. Wind Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n40s PATK Up (+13s) (Low -> Mid) [Range: All Allies]\n40s 25% Wind Weapon Boost (+13s) [Range: All Allies] [Condition: Self 50-100% HP]"
@@ -13636,6 +14161,17 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "WindWeaponBoost"
           }
         ],
         "description": "Devastating Cyclone (4 ATB)\n480% Phys. Wind Damage [Range: All Enemies]\n1.3x Damage [Range: All Enemies] [Condition: Single Target]\n30s PATK Up (+10s) (Low -> Mid) [Range: All Allies]\n30s 25% Wind Weapon Boost (+10s) [Range: All Allies] [Condition: Self 50-100% HP]"
@@ -13762,6 +14298,17 @@
               }
             },
             "type": "IceWeakness"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "IceDamageBonus"
           }
         ],
         "description": "Lightning Rush+ (3 ATB)\n670% Mag. Non-elem. Damage [Range: Single Enemy]\n50s 30% Ice Weakness (+10-16s) [Range: Single Enemy]\n50s 25% Ice Damage Bonus (+16s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -13779,6 +14326,17 @@
               }
             },
             "type": "IceWeakness"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "IceDamageBonus"
           }
         ],
         "description": "Lightning Rush++ (3 ATB)\n800% Mag. Non-elem. Damage [Range: Single Enemy]\n60s 30% Ice Weakness (+12-20s) [Range: Single Enemy]\n60s 30% Ice Damage Bonus (+20s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -13796,6 +14354,17 @@
               }
             },
             "type": "IceWeakness"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "IceDamageBonus"
           }
         ],
         "description": "Lightning Rush (3 ATB)\n520% Mag. Non-elem. Damage [Range: Single Enemy]\n40s 20% Ice Weakness (+8-13s) [Range: Single Enemy]\n40s 20% Ice Damage Bonus (+13s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -13813,6 +14382,17 @@
               }
             },
             "type": "IceWeakness"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "IceDamageBonus"
           }
         ],
         "description": "Lightning Rush (3 ATB)\n430% Mag. Non-elem. Damage [Range: Single Enemy]\n30s 20% Ice Weakness (+6-10s) [Range: Single Enemy]\n30s 20% Ice Damage Bonus (+10s) [Range: All Allies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -13835,19 +14415,67 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "EarthWeaponBoost"
+          }
+        ],
         "description": "Gyral Slash+ (4 ATB)\n1080% Phys. Earth Damage [Range: Single Enemy]\n20s 30% Earth Weapon Boost (+6s) [Range: All Allies]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "EarthWeaponBoost"
+          }
+        ],
         "description": "Gyral Slash++ (4 ATB)\n1340% Phys. Earth Damage [Range: Single Enemy]\n25s 35% Earth Weapon Boost (+8s) [Range: All Allies]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "EarthWeaponBoost"
+          }
+        ],
         "description": "Gyral Slash (4 ATB)\n720% Phys. Earth Damage [Range: Single Enemy]\n20s 20% Earth Weapon Boost (+6s) [Range: All Allies]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "EarthWeaponBoost"
+          }
+        ],
         "description": "Gyral Slash (4 ATB)\n600% Phys. Earth Damage [Range: Single Enemy]\n15s 20% Earth Weapon Boost (+5s) [Range: All Allies]"
       },
       "name": "Cruel Successor",
@@ -14880,7 +15508,7 @@
                 "duration": 45
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Slashing Rush+ (3 ATB)\n880% Phys. Non-elem. Damage [Range: Single Enemy]\n45s Fire Damage Up (+9s) (High) [Range: Self]\n45s Ice Damage Up (+9s) (High) [Range: Self]\n45s Thunder Damage Up (+9s) (High) [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
@@ -14927,7 +15555,7 @@
                 "duration": 55
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Slashing Rush++ (3 ATB)\n1010% Phys. Non-elem. Damage [Range: Single Enemy]\n55s Fire Damage Up (+11s) (High) [Range: Self]\n55s Ice Damage Up (+11s) (High) [Range: Self]\n55s Thunder Damage Up (+11s) (High) [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
@@ -14974,7 +15602,7 @@
                 "duration": 35
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Slashing Rush (3 ATB)\n720% Phys. Non-elem. Damage [Range: Single Enemy]\n35s Fire Damage Up (+7s) (Mid) [Range: Self]\n35s Ice Damage Up (+7s) (Mid) [Range: Self]\n35s Thunder Damage Up (+7s) (Mid) [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
@@ -15021,7 +15649,7 @@
                 "duration": 30
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Slashing Rush (3 ATB)\n630% Phys. Non-elem. Damage [Range: Single Enemy]\n30s Fire Damage Up (+6s) (Mid) [Range: Self]\n30s Ice Damage Up (+6s) (Mid) [Range: Self]\n30s Thunder Damage Up (+6s) (Mid) [Range: Self]\n10% Crit Rate [Range: Single Enemy]"
@@ -17965,6 +18593,20 @@
               }
             },
             "type": "MdefUp"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "FireDamageDown"
           }
         ],
         "description": "Chaos Geyser+ (4 ATB)\n760% Mag. Ice Damage [Range: Single Enemy]\n45s Enfeeble (+9s) [Range: Single Enemy]\n25s MATK Down (+8s) (Mid -> High) [Range: Single Enemy]\n25s MDEF Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]"
@@ -18009,6 +18651,20 @@
               }
             },
             "type": "MdefUp"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 11,
+                "duration": 35
+              }
+            },
+            "type": "FireDamageDown"
           }
         ],
         "description": "Chaos Geyser++ (4 ATB)\n920% Mag. Ice Damage [Range: Single Enemy]\n60s Enfeeble (+12s) [Range: Single Enemy]\n35s MATK Down (+11s) (Mid -> High) [Range: Single Enemy]\n35s MDEF Up (+11s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]"
@@ -18053,6 +18709,20 @@
               }
             },
             "type": "MdefUp"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "FireDamageDown"
           }
         ],
         "description": "Chaos Geyser (4 ATB)\n590% Mag. Ice Damage [Range: Single Enemy]\n30s Enfeeble (+6s) [Range: Single Enemy]\n20s MATK Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s MDEF Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 70-100% HP]"
@@ -18097,6 +18767,20 @@
               }
             },
             "type": "MdefUp"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 5,
+                "duration": 16
+              }
+            },
+            "type": "FireDamageDown"
           }
         ],
         "description": "Chaos Geyser (4 ATB)\n490% Mag. Ice Damage [Range: Single Enemy]\n20s Enfeeble (+4s) [Range: Single Enemy]\n16s MATK Down (+5s) (Low -> Mid) [Range: Single Enemy]\n16s MDEF Up (+5s) (Low -> Mid) [Range: All Allies] [Condition: Self 70-100% HP]"
@@ -18999,19 +19683,67 @@
         "slot1": "Boost MATK"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "FireWeaponBoost"
+          }
+        ],
         "description": "Explosive Bullets+ (4 ATB)\n760% Mag. Fire Damage [Range: Single Enemy]\n20s 30% Fire Weapon Boost (+6s) [Range: All Allies]\n60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "FireWeaponBoost"
+          }
+        ],
         "description": "Explosive Bullets++ (4 ATB)\n920% Mag. Fire Damage [Range: Single Enemy]\n25s 35% Fire Weapon Boost (+8s) [Range: All Allies]\n60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "FireWeaponBoost"
+          }
+        ],
         "description": "Explosive Bullets (4 ATB)\n590% Mag. Fire Damage [Range: Single Enemy]\n20s 20% Fire Weapon Boost (+6s) [Range: All Allies]\n60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "FireWeaponBoost"
+          }
+        ],
         "description": "Explosive Bullets (4 ATB)\n490% Mag. Fire Damage [Range: Single Enemy]\n15s 20% Fire Weapon Boost (+5s) [Range: All Allies]\n60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
       },
       "name": "Killer Falcon",
@@ -21311,6 +22043,34 @@
                 "duration": 25
               }
             },
+            "type": "LightningResistUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "WindResistUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
             "type": "PatkUp"
           }
         ],
@@ -21324,6 +22084,34 @@
               "percentage": 59
             },
             "type": "Heal"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "LightningResistUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "WindResistUp"
           },
           {
             "value": {
@@ -21363,6 +22151,34 @@
                 "duration": 25
               }
             },
+            "type": "LightningResistUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "WindResistUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
             "type": "PatkUp"
           }
         ],
@@ -21376,6 +22192,34 @@
               "percentage": 42
             },
             "type": "Heal"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "LightningResistUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "WindResistUp"
           },
           {
             "value": {
@@ -22145,7 +22989,21 @@
                 "duration": 20
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "FireDamageDown"
           }
         ],
         "description": "Spiral Edge+ [Sigils: 1 \\◆] (3 ATB)\n360% Phys. Non-elem. Damage [Range: Single Enemy]\n20s Ice Resistance Down (+6s) (High) [Range: Single Enemy]\n20s Thunder Resistance Down (+6s) (High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -22179,7 +23037,21 @@
                 "duration": 24
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 24
+              }
+            },
+            "type": "FireDamageDown"
           }
         ],
         "description": "Spiral Edge++ [Sigils: 1 \\◆] (3 ATB)\n420% Phys. Non-elem. Damage [Range: Single Enemy]\n24s Ice Resistance Down (+8s) (High) [Range: Single Enemy]\n24s Thunder Resistance Down (+8s) (High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -22213,7 +23085,21 @@
                 "duration": 18
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 18
+              }
+            },
+            "type": "FireDamageDown"
           }
         ],
         "description": "Spiral Edge [Sigils: 1 \\◆] (3 ATB)\n300% Phys. Non-elem. Damage [Range: Single Enemy]\n18s Ice Resistance Down (+6s) (Mid -> High) [Range: Single Enemy]\n18s Thunder Resistance Down (+6s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -22247,7 +23133,21 @@
                 "duration": 16
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 5,
+                "duration": 16
+              }
+            },
+            "type": "FireDamageDown"
           }
         ],
         "description": "Spiral Edge [Sigils: 1 \\◆] (3 ATB)\n260% Phys. Non-elem. Damage [Range: Single Enemy]\n16s Ice Resistance Down (+5s) (Mid -> High) [Range: Single Enemy]\n16s Thunder Resistance Down (+5s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -24376,7 +25276,7 @@
                 "duration": 20
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Energy Wave+ (5 ATB)\n54% Heal [Range: All Allies]\n20s MATK Up (+6s) (Mid -> High) [Range: All Allies]\n20s Thunder Damage Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n+1 ATB [Range: Other Allies] [Condition: Self 0-70% HP]"
@@ -24416,7 +25316,7 @@
                 "duration": 25
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Energy Wave++ (5 ATB)\n59% Heal [Range: All Allies]\n25s MATK Up (+8s) (Mid -> High) [Range: All Allies]\n25s Thunder Damage Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]\n+1 ATB [Range: Other Allies] [Condition: Self 0-90% HP]"
@@ -24456,7 +25356,7 @@
                 "duration": 20
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Energy Wave (5 ATB)\n50% Heal [Range: All Allies]\n20s MATK Up (+6s) (Low) [Range: All Allies]\n20s Thunder Damage Up (+6s) (Low) [Range: All Allies] [Condition: Self 70-100% HP]\n+1 ATB [Range: Other Allies] [Condition: Self 0-50% HP]"
@@ -24496,7 +25396,7 @@
                 "duration": 15
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Energy Wave (5 ATB)\n42% Heal [Range: All Allies]\n15s MATK Up (+5s) (Low) [Range: All Allies]\n15s Thunder Damage Up (+5s) (Low) [Range: All Allies] [Condition: Self 70-100% HP]\n+1 ATB [Range: Other Allies] [Condition: Self 0-40% HP]"
@@ -24691,7 +25591,7 @@
                 "duration": 18
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Power Fang+ (4 ATB)\n450% Phys. Non-elem. Damage [Range: Single Enemy]\n18s Thunder Resistance Down (+6s) (High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]\n3s 15% Regen (+3s) [Range: Self]"
@@ -24710,7 +25610,7 @@
                 "duration": 21
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Power Fang++ (4 ATB)\n510% Phys. Non-elem. Damage [Range: Single Enemy]\n21s Thunder Resistance Down (+7s) (High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]\n3s 15% Regen (+3s) [Range: Self]"
@@ -24729,7 +25629,7 @@
                 "duration": 18
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Power Fang (4 ATB)\n370% Phys. Non-elem. Damage [Range: Single Enemy]\n18s Thunder Resistance Down (+6s) (Mid -> High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]\n3s 15% Regen (+3s) [Range: Self]"
@@ -24748,7 +25648,7 @@
                 "duration": 15
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Power Fang (4 ATB)\n320% Phys. Non-elem. Damage [Range: Single Enemy]\n15s Thunder Resistance Down (+5s) (Mid -> High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]\n3s 15% Regen (+3s) [Range: Self]"
@@ -28073,19 +28973,67 @@
         "slot1": "Boost PATK (All Allies)"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "IceWeaponBoost"
+          }
+        ],
         "description": "Tearing Frost+ (4 ATB)\n1080% Phys. Ice Damage [Range: Single Enemy]\r\n20s 30% Ice Weapon Boost (+6s) [Range: All Allies]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "IceWeaponBoost"
+          }
+        ],
         "description": "Tearing Frost++ (4 ATB)\n1340% Phys. Ice Damage [Range: Single Enemy]\r\n25s 35% Ice Weapon Boost (+8s) [Range: All Allies]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "IceWeaponBoost"
+          }
+        ],
         "description": "Tearing Frost (4 ATB)\n720% Phys. Ice Damage [Range: Single Enemy]\r\n20s 20% Ice Weapon Boost (+6s) [Range: All Allies]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "IceWeaponBoost"
+          }
+        ],
         "description": "Tearing Frost (4 ATB)\r\n600% Phys. Ice Damage [Range: Single Enemy]\r\n15s 20% Ice Weapon Boost (+5s) [Range: All Allies]"
       },
       "name": "Sōba",
@@ -28887,6 +29835,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "IceDamageBonus"
           }
         ],
         "description": "Cryostasis+ (5 ATB)\n750% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]\n50s Enfeeble (+16s) [Range: All Enemies]\n50s 25% Ice Damage Bonus (+16s) [Range: All Allies]\n50s 0.2% Ice ATB Conservation Effect (+16s) [Range: Self] [Condition: First Use]"
@@ -28903,6 +29862,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "IceDamageBonus"
           }
         ],
         "description": "Cryostasis++ (5 ATB)\n900% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]\n60s Enfeeble (+20s) [Range: All Enemies]\n60s 30% Ice Damage Bonus (+20s) [Range: All Allies]\n60s 0.2% Ice ATB Conservation Effect (+20s) [Range: Self] [Condition: First Use]"
@@ -28919,6 +29889,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "IceDamageBonus"
           }
         ],
         "description": "Cryostasis (5 ATB)\n580% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]\n40s Enfeeble (+13s) [Range: All Enemies]\n40s 20% Ice Damage Bonus (+13s) [Range: All Allies]\n40s 0.2% Ice ATB Conservation Effect (+13s) [Range: Self] [Condition: First Use]"
@@ -28935,6 +29916,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "IceDamageBonus"
           }
         ],
         "description": "Cryostasis (5 ATB)\n480% Mag. Ice Damage [Range: All Enemies]\n1.5x Damage [Range: All Enemies] [Condition: Single Target]\n30s Enfeeble (+10s) [Range: All Enemies]\n30s 20% Ice Damage Bonus (+10s) [Range: All Allies]\n30s 0.2% Ice ATB Conservation Effect (+10s) [Range: Self] [Condition: First Use]"
@@ -29049,19 +30041,67 @@
         "slot1": "Boost MATK (All Allies)"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "FireDamageBonus"
+          }
+        ],
         "description": "Scarlet Inferno+ (4 ATB)\n1080% Mag. Fire Damage [Range: Single Enemy]\n20s 25% Fire Damage Bonus (+6s) [Range: All Allies]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "FireDamageBonus"
+          }
+        ],
         "description": "Scarlet Inferno++ (4 ATB)\n1340% Mag. Fire Damage [Range: Single Enemy]\n25s 30% Fire Damage Bonus (+8s) [Range: All Allies]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "FireDamageBonus"
+          }
+        ],
         "description": "Scarlet Inferno (4 ATB)\n720% Mag. Fire Damage [Range: Single Enemy]\n20s 20% Fire Damage Bonus (+6s) [Range: All Allies]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "FireDamageBonus"
+          }
+        ],
         "description": "Scarlet Inferno (4 ATB)\n600% Mag. Fire Damage [Range: Single Enemy]\n15s 20% Fire Damage Bonus (+5s) [Range: All Allies]"
       },
       "name": "Shiranui",
@@ -30024,22 +31064,70 @@
       },
       "ob6": {
         "heartCustomDescription": "1350% Mag. Earth Damage [Range: Single Enemy]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "EarthWeaponBoost"
+          }
+        ],
         "description": "Spiral Tremor+ (4 ATB)\n1080% Mag. Earth Damage [Range: Single Enemy]\n50s 30% Earth Weapon Boost (+16s) [Range: All Allies]\n50s 40% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]"
       },
       "ob10": {
         "heartCustomDescription": "1680% Mag. Earth Damage [Range: Single Enemy]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "EarthWeaponBoost"
+          }
+        ],
         "description": "Spiral Tremor++ (4 ATB)\n1340% Mag. Earth Damage [Range: Single Enemy]\n60s 35% Earth Weapon Boost (+20s) [Range: All Allies]\n60s 50% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]"
       },
       "ob1": {
         "heartCustomDescription": "900% Mag. Earth Damage [Range: Single Enemy]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "EarthWeaponBoost"
+          }
+        ],
         "description": "Spiral Tremor (4 ATB)\n720% Mag. Earth Damage [Range: Single Enemy]\n40s 25% Earth Weapon Boost (+13s) [Range: All Allies]\n40s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]"
       },
       "ob0": {
         "heartCustomDescription": "750% Mag. Earth Damage [Range: Single Enemy]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "EarthWeaponBoost"
+          }
+        ],
         "description": "Spiral Tremor (4 ATB)\n600% Mag. Earth Damage [Range: Single Enemy]\n30s 25% Earth Weapon Boost (+10s) [Range: All Allies]\n30s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]"
       },
       "name": "Elegant Gloves",
@@ -32611,22 +33699,158 @@
       },
       "ob6": {
         "spadeCustomDescription": "Enhance Debuffs (+10s) (Low -> Extra High) [Range: All Enemies]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "FireWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "EarthWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 16,
+                "duration": 50
+              }
+            },
+            "type": "WindWeaponBoost"
+          }
+        ],
         "description": "Terminal Sentence+ (4 ATB)\n1080% Phys. Non-elem. Damage [Range: All Enemies]\n50s 30% Fire Weapon Boost (+16s) [Range: All Allies]\n50s 30% Earth Weapon Boost (+16s) [Range: All Allies]\n50s 30% Wind Weapon Boost (+16s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob10": {
         "spadeCustomDescription": "Enhance Debuffs (+10s) (Low -> Extra High) [Range: All Enemies]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "FireWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "EarthWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 20,
+                "duration": 60
+              }
+            },
+            "type": "WindWeaponBoost"
+          }
+        ],
         "description": "Terminal Sentence++ (4 ATB)\n1340% Phys. Non-elem. Damage [Range: All Enemies]\n60s 35% Fire Weapon Boost (+20s) [Range: All Allies]\n60s 35% Earth Weapon Boost (+20s) [Range: All Allies]\n60s 35% Wind Weapon Boost (+20s) [Range: All Allies]\n+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob1": {
         "spadeCustomDescription": "Enhance Debuffs (+10s) (Low -> High) [Range: All Enemies]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "FireWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "EarthWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "WindWeaponBoost"
+          }
+        ],
         "description": "Terminal Sentence (4 ATB)\n720% Phys. Non-elem. Damage [Range: All Enemies]\n40s 25% Fire Weapon Boost (+13s) [Range: All Allies]\n40s 25% Earth Weapon Boost (+13s) [Range: All Allies]\n40s 25% Wind Weapon Boost (+13s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob0": {
         "spadeCustomDescription": "Enhance Debuffs (+10s) (Low -> High) [Range: All Enemies]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "FireWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "EarthWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "WindWeaponBoost"
+          }
+        ],
         "description": "Terminal Sentence (4 ATB)\n600% Phys. Non-elem. Damage [Range: All Enemies]\n30s 25% Fire Weapon Boost (+10s) [Range: All Allies]\n30s 25% Earth Weapon Boost (+10s) [Range: All Allies]\n30s 25% Wind Weapon Boost (+10s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
       },
       "name": "Chrome Death Penalty",
@@ -33198,7 +34422,7 @@
                 "duration": 22
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Deblizzara & Dethundara Surge+ (4 ATB)\n320% Mag. Non-elem. Damage [Range: Single Enemy]\n22s Ice Resistance Down (+7s) (Mid) [Range: Single Enemy]\n22s Thunder Resistance Down (+7s) (Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -33231,7 +34455,7 @@
                 "duration": 25
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Deblizzara & Dethundara Surge++ (4 ATB)\n340% Mag. Non-elem. Damage [Range: Single Enemy]\n25s Ice Resistance Down (+8s) (Mid) [Range: Single Enemy]\n25s Thunder Resistance Down (+8s) (Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -33264,7 +34488,7 @@
                 "duration": 22
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Deblizzara & Dethundara Surge (4 ATB)\n280% Mag. Non-elem. Damage [Range: Single Enemy]\n22s Ice Resistance Down (+7s) (Low -> Mid) [Range: Single Enemy]\n22s Thunder Resistance Down (+7s) (Low -> Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -33297,7 +34521,7 @@
                 "duration": 20
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Deblizzara & Dethundara Surge (4 ATB)\n240% Mag. Non-elem. Damage [Range: Single Enemy]\n20s Ice Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s Thunder Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -34128,22 +35352,82 @@
       },
       "ob6": {
         "spadeCustomDescription": "25s Earth Damage Down (+8s) (High) [Range: Single Enemy]\nEnhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "EarthDamageDown"
+          }
+        ],
         "description": "Stormround+ (4 ATB)\n340% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+4% Limit Break Gauge [Range: Self]"
       },
       "ob10": {
         "spadeCustomDescription": "30s Earth Damage Down (+10s) (High) [Range: Single Enemy]\nEnhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "High",
+                "base": "High"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "EarthDamageDown"
+          }
+        ],
         "description": "Stormround++ (4 ATB)\n400% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+4% Limit Break Gauge [Range: Self]"
       },
       "ob1": {
         "spadeCustomDescription": "25s Earth Damage Down (+8s) (Low -> Mid) [Range: Single Enemy]\nEnhance Buffs (+10s) (Low -> High) [Range: All Allies]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "EarthDamageDown"
+          }
+        ],
         "description": "Stormround (4 ATB)\n260% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+3% Limit Break Gauge [Range: Self]"
       },
       "ob0": {
         "spadeCustomDescription": "20s Earth Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]\nEnhance Buffs (+10s) (Low -> High) [Range: All Allies]",
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "SingleTarget",
+              "potencies": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "EarthDamageDown"
+          }
+        ],
         "description": "Stormround (4 ATB)\n220% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+3% Limit Break Gauge [Range: Self]"
       },
       "name": "Shortbarrel",
@@ -36444,19 +37728,67 @@
         "slot1": "Boost MATK (All Allies)"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "EarthDamageBonus"
+          }
+        ],
         "description": "Great Sandstorm+ (4 ATB)\n1080% Mag. Earth Damage [Range: Single Enemy]\r\n20s 25% Earth Damage Bonus (+6s) [Range: All Allies]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "EarthDamageBonus"
+          }
+        ],
         "description": "Great Sandstorm++ (4 ATB)\n1340% Mag. Earth Damage [Range: Single Enemy]\r\n25s 30% Earth Damage Bonus (+8s) [Range: All Allies]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "EarthDamageBonus"
+          }
+        ],
         "description": "Great Sandstorm (4 ATB)\n720% Mag. Earth Damage [Range: Single Enemy]\r\n20s 20% Earth Damage Bonus (+6s) [Range: All Allies]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "EarthDamageBonus"
+          }
+        ],
         "description": "Great Sandstorm (4 ATB)\n600% Mag. Earth Damage [Range: Single Enemy]\r\n15s 20% Earth Damage Bonus (+5s) [Range: All Allies]"
       },
       "name": "Uber 4-Point Shuriken",
@@ -36637,7 +37969,7 @@
                 "duration": 22
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Nimble Wind Slash+ (4 ATB)\n450% Phys. Non-elem. Damage [Range: Single Enemy]\n22s Thunder Resistance Down (+7s) (High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -36656,7 +37988,7 @@
                 "duration": 25
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Nimble Wind Slash++ (4 ATB)\n510% Phys. Non-elem. Damage [Range: Single Enemy]\n25s Thunder Resistance Down (+8s) (High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -36675,7 +38007,7 @@
                 "duration": 22
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Nimble Wind Slash (4 ATB)\n370% Phys. Non-elem. Damage [Range: Single Enemy]\n22s Thunder Resistance Down (+7s) (Mid -> High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -36694,7 +38026,7 @@
                 "duration": 20
               }
             },
-            "type": "ThunderResistDown"
+            "type": "LightningResistDown"
           }
         ],
         "description": "Nimble Wind Slash (4 ATB)\n320% Phys. Non-elem. Damage [Range: Single Enemy]\n20s Thunder Resistance Down (+6s) (Mid -> High) [Range: Single Enemy]\n10% Crit Rate [Range: Single Enemy]"
@@ -36743,7 +38075,7 @@
                 "duration": 20
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Rumbling Thunder Slash+ (4 ATB)\n1080% Phys. Lightning Damage [Range: Single Enemy]\n20s PDEF Down (+6s) (Mid -> High) [Range: Single Enemy]\n20s Thunder Damage Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]\n+2 ATB [Range: All Allies] [Condition: First Use]"
@@ -36776,7 +38108,7 @@
                 "duration": 25
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Rumbling Thunder Slash++ (4 ATB)\n1340% Phys. Lightning Damage [Range: Single Enemy]\n25s PDEF Down (+8s) (Mid -> High) [Range: Single Enemy]\n25s Thunder Damage Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]\n+2 ATB [Range: All Allies] [Condition: First Use]"
@@ -36809,7 +38141,7 @@
                 "duration": 20
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Rumbling Thunder Slash (4 ATB)\n720% Phys. Lightning Damage [Range: Single Enemy]\n20s PDEF Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s Thunder Damage Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]\n+1 ATB [Range: All Allies] [Condition: First Use]"
@@ -36842,7 +38174,7 @@
                 "duration": 15
               }
             },
-            "type": "ThunderDamageUp"
+            "type": "LightningDamageUp"
           }
         ],
         "description": "Rumbling Thunder Slash (4 ATB)\n600% Phys. Lightning Damage [Range: Single Enemy]\n15s PDEF Down (+5s) (Low -> Mid) [Range: Single Enemy]\n15s Thunder Damage Up (+5s) (Low -> Mid) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]\n+1 ATB [Range: All Allies] [Condition: First Use]"
@@ -36988,19 +38320,67 @@
         "slot1": "Boost MATK"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "WindDamageBonus"
+          }
+        ],
         "description": "X-Gale+ (4 ATB)\n1080% Mag. Wind Damage [Range: Single Enemy]\n20s 25% Wind Damage Bonus (+6s) [Range: All Allies]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "WindDamageBonus"
+          }
+        ],
         "description": "X-Gale++ (4 ATB)\n1340% Mag. Wind Damage [Range: Single Enemy]\n25s 30% Wind Damage Bonus (+8s) [Range: All Allies]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "WindDamageBonus"
+          }
+        ],
         "description": "X-Gale (4 ATB)\n720% Mag. Wind Damage [Range: Single Enemy]\n20s 20% Wind Damage Bonus (+6s) [Range: All Allies]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 20,
+              "durExt": {
+                "extension": 5,
+                "duration": 15
+              }
+            },
+            "type": "WindDamageBonus"
+          }
+        ],
         "description": "X-Gale (4 ATB)\n600% Mag. Wind Damage [Range: Single Enemy]\n15s 20% Wind Damage Bonus (+5s) [Range: All Allies]"
       },
       "name": "Battering Sword",

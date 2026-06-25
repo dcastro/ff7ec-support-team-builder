@@ -3914,6 +3914,32 @@
         ]
       },
       {
+        "weaponName": "Festive Blade",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
         "weaponName": "Locke's Sword",
         "ranges": [
           {
@@ -4341,6 +4367,332 @@
                 "base": "Mid"
               }
             }
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterFireResistUp",
+    [
+      {
+        "weaponName": "Sunrise Cannon",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterLightningResistUp",
+    [
+      {
+        "weaponName": "Sunrise Cannon",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Desperado Rapier",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterWindResistUp",
+    [
+      {
+        "weaponName": "Desperado Rapier",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterFireWeaponBoost",
+    [
+      {
+        "weaponName": "Gorgeous Staff",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Killer Falcon",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Chrome Death Penalty",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterIceWeaponBoost",
+    [
+      {
+        "weaponName": "Sōba",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterLightningWeaponBoost",
+    [
+      {
+        "weaponName": "Festive Blade",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterEarthWeaponBoost",
+    [
+      {
+        "weaponName": "Cruel Successor",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Elegant Gloves",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Chrome Death Penalty",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterWaterWeaponBoost",
+    [
+      {
+        "weaponName": "Staff of the Possessed",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterWindWeaponBoost",
+    [
+      {
+        "weaponName": "Chevron Blade",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Chrome Death Penalty",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterFireDamageBonus",
+    [
+      {
+        "weaponName": "Gorgeous Staff",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Shiranui",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterIceDamageBonus",
+    [
+      {
+        "weaponName": "Patissier's Spear",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Crimson Blitz",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Omega Wing",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterLightningDamageBonus",
+    [
+      {
+        "weaponName": "Antler Pike",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterEarthDamageBonus",
+    [
+      {
+        "weaponName": "Uber 4-Point Shuriken",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterWindDamageBonus",
+    [
+      {
+        "weaponName": "Battering Sword",
+        "ranges": [
+          {
+            "range": "All"
           }
         ]
       }
@@ -7783,6 +8135,125 @@
               },
               "ob0": {
                 "max": "Low",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterFireDamageDown",
+    [
+      {
+        "weaponName": "Snow's Bardiche",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "Mid"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Nautilus Spiral",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterLightningDamageDown",
+    [
+      {
+        "weaponName": "Striking Staff",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterEarthDamageDown",
+    [
+      {
+        "weaponName": "Shortbarrel",
+        "ranges": [
+          {
+            "range": "SingleTarget",
+            "allPotencies": {
+              "ob6": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob10": {
+                "max": "High",
+                "base": "High"
+              },
+              "ob1": {
+                "max": "Mid",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "Mid",
                 "base": "Low"
               }
             }

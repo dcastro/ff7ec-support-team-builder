@@ -586,6 +586,76 @@ rangeOf = case _ of
   EnhanceDebuffs r -> r.range
   Enliven r -> r.range
 
+-- The potencies of an effect, if it has any.
+-- Some effects have no potencies (e.g. `Heal`, `Provoke`, `Enliven`,
+-- and the percentage-based boosts), in which case this returns `Nothing`.
+potenciesOf :: WeaponEffect -> Maybe Potencies
+potenciesOf = case _ of
+  Heal _ -> Nothing
+  PatkUp r -> Just r.potencies
+  MatkUp r -> Just r.potencies
+  PdefUp r -> Just r.potencies
+  MdefUp r -> Just r.potencies
+  HPGain _ -> Nothing
+  EnhanceBuffs r -> Just r.potencies
+  PhysicalWeaponBoost _ -> Nothing
+  MagicWeaponBoost _ -> Nothing
+  PhysicalDamageBonus _ -> Nothing
+  MagicDamageBonus _ -> Nothing
+  FireDamageUp r -> Just r.potencies
+  IceDamageUp r -> Just r.potencies
+  LightningDamageUp r -> Just r.potencies
+  EarthDamageUp r -> Just r.potencies
+  WaterDamageUp r -> Just r.potencies
+  WindDamageUp r -> Just r.potencies
+  FireWeaponBoost _ -> Nothing
+  IceWeaponBoost _ -> Nothing
+  LightningWeaponBoost _ -> Nothing
+  EarthWeaponBoost _ -> Nothing
+  WaterWeaponBoost _ -> Nothing
+  WindWeaponBoost _ -> Nothing
+  FireDamageBonus _ -> Nothing
+  IceDamageBonus _ -> Nothing
+  LightningDamageBonus _ -> Nothing
+  EarthDamageBonus _ -> Nothing
+  WaterDamageBonus _ -> Nothing
+  WindDamageBonus _ -> Nothing
+  FireResistUp r -> Just r.potencies
+  IceResistUp r -> Just r.potencies
+  LightningResistUp r -> Just r.potencies
+  EarthResistUp r -> Just r.potencies
+  WaterResistUp r -> Just r.potencies
+  WindResistUp r -> Just r.potencies
+  Veil _ -> Nothing
+  Provoke _ -> Nothing
+  PatkDown r -> Just r.potencies
+  MatkDown r -> Just r.potencies
+  PdefDown r -> Just r.potencies
+  MdefDown r -> Just r.potencies
+  FireDamageDown r -> Just r.potencies
+  IceDamageDown r -> Just r.potencies
+  LightningDamageDown r -> Just r.potencies
+  EarthDamageDown r -> Just r.potencies
+  WaterDamageDown r -> Just r.potencies
+  WindDamageDown r -> Just r.potencies
+  FireResistDown r -> Just r.potencies
+  IceResistDown r -> Just r.potencies
+  LightningResistDown r -> Just r.potencies
+  EarthResistDown r -> Just r.potencies
+  WaterResistDown r -> Just r.potencies
+  WindResistDown r -> Just r.potencies
+  FireWeakness _ -> Nothing
+  IceWeakness _ -> Nothing
+  LightningWeakness _ -> Nothing
+  EarthWeakness _ -> Nothing
+  WaterWeakness _ -> Nothing
+  WindWeakness _ -> Nothing
+  Enfeeble _ -> Nothing
+  Stop _ -> Nothing
+  ExploitWeakness _ -> Nothing
+  EnhanceDebuffs r -> Just r.potencies
+  Enliven _ -> Nothing
+
 groupsForWeapon :: Weapon -> List.List GroupEntry
 groupsForWeapon weapon = do
   mergeRanges $ Arr.fold
@@ -706,160 +776,101 @@ groupsForWeapon weapon = do
          , potencies :: Maybe AllPotencies
          , allRanges :: AllRanges
          }
-  -- NOTE: an effect can have a different range at each overboost level
-  -- (e.g. Festive Sword's Enliven is `Self` at OB0/OB1 and `All` at OB6/OB10),
-  -- so we record the range at every level via `rangeOf`.
-  -- The `effectType`/`potencies` are still determined from the OB0 effect.
+  -- NOTE: an effect can have a different range and different potencies at each
+  -- overboost level (e.g. Festive Sword's Enliven is `Self` at OB0/OB1 and `All`
+  -- at OB6/OB10), so we read both from every level via `rangeOf` / `potenciesOf`.
+  -- Only the `effectType` is determined from the OB0 effect.
+  --
+  -- This assumes effects are listed in the same order at all overboost levels.
+  -- That invariant is enforced by `getDistinctObs` (via `areWeaponEffectsEquivalent`),
+  -- which runs for every weapon and crashes on a mismatch.
   groupForWeaponEffect ob0 ob1 ob6 ob10 =
-    inner <#> \{ effectType, potencies } ->
+    effectTypeOf <#> \effectType ->
       { effectType
-      , potencies
+      , potencies: allPotencies
       , allRanges: { ob0: rangeOf ob0, ob1: rangeOf ob1, ob6: rangeOf ob6, ob10: rangeOf ob10 }
       }
     where
-    inner = case ob0 of
-      Heal { percentage } ->
-        -- #(ref:heal-threshold)
-        if unwrap percentage >= 30 then Just { effectType: FilterHeal, potencies: Nothing }
-        else Nothing
-      Veil {} -> Just { effectType: FilterVeil, potencies: Nothing }
-      Provoke {} -> Just { effectType: FilterProvoke, potencies: Nothing }
-      Enfeeble {} -> Just { effectType: FilterEnfeeble, potencies: Nothing }
-      Stop {} -> Just { effectType: FilterStop, potencies: Nothing }
-      ExploitWeakness {} -> Just { effectType: FilterExploitWeakness, potencies: Nothing }
-      Enliven {} -> Just { effectType: FilterEnliven, potencies: Nothing }
-      HPGain {} -> Just { effectType: FilterHPGain, potencies: Nothing }
+    -- `Just` only for effects that have potencies; `Nothing` otherwise.
+    allPotencies = do
+      ob0Potencies <- potenciesOf ob0
+      ob1Potencies <- potenciesOf ob1
+      ob6Potencies <- potenciesOf ob6
+      ob10Potencies <- potenciesOf ob10
+      pure { ob0: ob0Potencies, ob1: ob1Potencies, ob6: ob6Potencies, ob10: ob10Potencies }
 
-      FireWeakness {} -> Just { effectType: FilterFireWeakness, potencies: Nothing }
-      IceWeakness {} -> Just { effectType: FilterIceWeakness, potencies: Nothing }
-      LightningWeakness {} -> Just { effectType: FilterLightningWeakness, potencies: Nothing }
-      EarthWeakness {} -> Just { effectType: FilterEarthWeakness, potencies: Nothing }
-      WaterWeakness {} -> Just { effectType: FilterWaterWeakness, potencies: Nothing }
-      WindWeakness {} -> Just { effectType: FilterWindWeakness, potencies: Nothing }
+    effectTypeOf = case ob0 of
+      -- #(ref:heal-threshold)
+      Heal { percentage } -> if unwrap percentage >= 30 then Just FilterHeal else Nothing
+      Veil {} -> Just FilterVeil
+      Provoke {} -> Just FilterProvoke
+      Enfeeble {} -> Just FilterEnfeeble
+      Stop {} -> Just FilterStop
+      ExploitWeakness {} -> Just FilterExploitWeakness
+      Enliven {} -> Just FilterEnliven
+      HPGain {} -> Just FilterHPGain
 
-      PhysicalWeaponBoost {} -> Just { effectType: FilterPhysicalWeaponBoost, potencies: Nothing }
-      MagicWeaponBoost {} -> Just { effectType: FilterMagicWeaponBoost, potencies: Nothing }
-      PhysicalDamageBonus {} -> Just { effectType: FilterPhysicalDamageBonus, potencies: Nothing }
-      MagicDamageBonus {} -> Just { effectType: FilterMagicDamageBonus, potencies: Nothing }
+      FireWeakness {} -> Just FilterFireWeakness
+      IceWeakness {} -> Just FilterIceWeakness
+      LightningWeakness {} -> Just FilterLightningWeakness
+      EarthWeakness {} -> Just FilterEarthWeakness
+      WaterWeakness {} -> Just FilterWaterWeakness
+      WindWeakness {} -> Just FilterWindWeakness
 
-      FireWeaponBoost {} -> Just { effectType: FilterFireWeaponBoost, potencies: Nothing }
-      IceWeaponBoost {} -> Just { effectType: FilterIceWeaponBoost, potencies: Nothing }
-      LightningWeaponBoost {} -> Just { effectType: FilterLightningWeaponBoost, potencies: Nothing }
-      EarthWeaponBoost {} -> Just { effectType: FilterEarthWeaponBoost, potencies: Nothing }
-      WaterWeaponBoost {} -> Just { effectType: FilterWaterWeaponBoost, potencies: Nothing }
-      WindWeaponBoost {} -> Just { effectType: FilterWindWeaponBoost, potencies: Nothing }
+      PhysicalWeaponBoost {} -> Just FilterPhysicalWeaponBoost
+      MagicWeaponBoost {} -> Just FilterMagicWeaponBoost
+      PhysicalDamageBonus {} -> Just FilterPhysicalDamageBonus
+      MagicDamageBonus {} -> Just FilterMagicDamageBonus
 
-      FireDamageBonus {} -> Just { effectType: FilterFireDamageBonus, potencies: Nothing }
-      IceDamageBonus {} -> Just { effectType: FilterIceDamageBonus, potencies: Nothing }
-      LightningDamageBonus {} -> Just { effectType: FilterLightningDamageBonus, potencies: Nothing }
-      EarthDamageBonus {} -> Just { effectType: FilterEarthDamageBonus, potencies: Nothing }
-      WaterDamageBonus {} -> Just { effectType: FilterWaterDamageBonus, potencies: Nothing }
-      WindDamageBonus {} -> Just { effectType: FilterWindDamageBonus, potencies: Nothing }
+      FireWeaponBoost {} -> Just FilterFireWeaponBoost
+      IceWeaponBoost {} -> Just FilterIceWeaponBoost
+      LightningWeaponBoost {} -> Just FilterLightningWeaponBoost
+      EarthWeaponBoost {} -> Just FilterEarthWeaponBoost
+      WaterWeaponBoost {} -> Just FilterWaterWeaponBoost
+      WindWeaponBoost {} -> Just FilterWindWeaponBoost
 
-      PatkUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        PatkUp ob1, PatkUp ob6, PatkUp ob10 -> Just { effectType: FilterPatkUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      MatkUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        MatkUp ob1, MatkUp ob6, MatkUp ob10 -> Just { effectType: FilterMatkUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      PdefUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        PdefUp ob1, PdefUp ob6, PdefUp ob10 -> Just { effectType: FilterPdefUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      MdefUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        MdefUp ob1, MdefUp ob6, MdefUp ob10 -> Just { effectType: FilterMdefUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      FireDamageUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        FireDamageUp ob1, FireDamageUp ob6, FireDamageUp ob10 -> Just { effectType: FilterFireDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      IceDamageUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        IceDamageUp ob1, IceDamageUp ob6, IceDamageUp ob10 -> Just { effectType: FilterIceDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      LightningDamageUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        LightningDamageUp ob1, LightningDamageUp ob6, LightningDamageUp ob10 -> Just { effectType: FilterLightningDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      EarthDamageUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        EarthDamageUp ob1, EarthDamageUp ob6, EarthDamageUp ob10 -> Just { effectType: FilterEarthDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      WaterDamageUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        WaterDamageUp ob1, WaterDamageUp ob6, WaterDamageUp ob10 -> Just { effectType: FilterWaterDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      WindDamageUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        WindDamageUp ob1, WindDamageUp ob6, WindDamageUp ob10 -> Just { effectType: FilterWindDamageUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      FireResistUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        FireResistUp ob1, FireResistUp ob6, FireResistUp ob10 -> Just { effectType: FilterFireResistUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      IceResistUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        IceResistUp ob1, IceResistUp ob6, IceResistUp ob10 -> Just { effectType: FilterIceResistUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      LightningResistUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        LightningResistUp ob1, LightningResistUp ob6, LightningResistUp ob10 -> Just { effectType: FilterLightningResistUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      EarthResistUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        EarthResistUp ob1, EarthResistUp ob6, EarthResistUp ob10 -> Just { effectType: FilterEarthResistUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      WaterResistUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        WaterResistUp ob1, WaterResistUp ob6, WaterResistUp ob10 -> Just { effectType: FilterWaterResistUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      WindResistUp { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        WindResistUp ob1, WindResistUp ob6, WindResistUp ob10 -> Just { effectType: FilterWindResistUp, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      EnhanceBuffs { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        EnhanceBuffs ob1, EnhanceBuffs ob6, EnhanceBuffs ob10 -> Just { effectType: FilterEnhanceBuffs, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      PatkDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        PatkDown ob1, PatkDown ob6, PatkDown ob10 -> Just { effectType: FilterPatkDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      MatkDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        MatkDown ob1, MatkDown ob6, MatkDown ob10 -> Just { effectType: FilterMatkDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      PdefDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        PdefDown ob1, PdefDown ob6, PdefDown ob10 -> Just { effectType: FilterPdefDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      MdefDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        MdefDown ob1, MdefDown ob6, MdefDown ob10 -> Just { effectType: FilterMdefDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      FireDamageDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        FireDamageDown ob1, FireDamageDown ob6, FireDamageDown ob10 -> Just { effectType: FilterFireDamageDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      IceDamageDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        IceDamageDown ob1, IceDamageDown ob6, IceDamageDown ob10 -> Just { effectType: FilterIceDamageDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      LightningDamageDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        LightningDamageDown ob1, LightningDamageDown ob6, LightningDamageDown ob10 -> Just { effectType: FilterLightningDamageDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      EarthDamageDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        EarthDamageDown ob1, EarthDamageDown ob6, EarthDamageDown ob10 -> Just { effectType: FilterEarthDamageDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      WaterDamageDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        WaterDamageDown ob1, WaterDamageDown ob6, WaterDamageDown ob10 -> Just { effectType: FilterWaterDamageDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      WindDamageDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        WindDamageDown ob1, WindDamageDown ob6, WindDamageDown ob10 -> Just { effectType: FilterWindDamageDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      FireResistDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        FireResistDown ob1, FireResistDown ob6, FireResistDown ob10 -> Just { effectType: FilterFireResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      IceResistDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        IceResistDown ob1, IceResistDown ob6, IceResistDown ob10 -> Just { effectType: FilterIceResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      LightningResistDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        LightningResistDown ob1, LightningResistDown ob6, LightningResistDown ob10 -> Just { effectType: FilterLightningResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      EarthResistDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        EarthResistDown ob1, EarthResistDown ob6, EarthResistDown ob10 -> Just { effectType: FilterEarthResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      WaterResistDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        WaterResistDown ob1, WaterResistDown ob6, WaterResistDown ob10 -> Just { effectType: FilterWaterResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      WindResistDown { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        WindResistDown ob1, WindResistDown ob6, WindResistDown ob10 -> Just { effectType: FilterWindResistDown, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
-      EnhanceDebuffs { potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-        EnhanceDebuffs ob1, EnhanceDebuffs ob6, EnhanceDebuffs ob10 -> Just { effectType: FilterEnhanceDebuffs, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-        _, _, _ -> crash unit
+      FireDamageBonus {} -> Just FilterFireDamageBonus
+      IceDamageBonus {} -> Just FilterIceDamageBonus
+      LightningDamageBonus {} -> Just FilterLightningDamageBonus
+      EarthDamageBonus {} -> Just FilterEarthDamageBonus
+      WaterDamageBonus {} -> Just FilterWaterDamageBonus
+      WindDamageBonus {} -> Just FilterWindDamageBonus
 
-  crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
+      PatkUp {} -> Just FilterPatkUp
+      MatkUp {} -> Just FilterMatkUp
+      PdefUp {} -> Just FilterPdefUp
+      MdefUp {} -> Just FilterMdefUp
+      FireDamageUp {} -> Just FilterFireDamageUp
+      IceDamageUp {} -> Just FilterIceDamageUp
+      LightningDamageUp {} -> Just FilterLightningDamageUp
+      EarthDamageUp {} -> Just FilterEarthDamageUp
+      WaterDamageUp {} -> Just FilterWaterDamageUp
+      WindDamageUp {} -> Just FilterWindDamageUp
+      FireResistUp {} -> Just FilterFireResistUp
+      IceResistUp {} -> Just FilterIceResistUp
+      LightningResistUp {} -> Just FilterLightningResistUp
+      EarthResistUp {} -> Just FilterEarthResistUp
+      WaterResistUp {} -> Just FilterWaterResistUp
+      WindResistUp {} -> Just FilterWindResistUp
+      EnhanceBuffs {} -> Just FilterEnhanceBuffs
+
+      PatkDown {} -> Just FilterPatkDown
+      MatkDown {} -> Just FilterMatkDown
+      PdefDown {} -> Just FilterPdefDown
+      MdefDown {} -> Just FilterMdefDown
+      FireDamageDown {} -> Just FilterFireDamageDown
+      IceDamageDown {} -> Just FilterIceDamageDown
+      LightningDamageDown {} -> Just FilterLightningDamageDown
+      EarthDamageDown {} -> Just FilterEarthDamageDown
+      WaterDamageDown {} -> Just FilterWaterDamageDown
+      WindDamageDown {} -> Just FilterWindDamageDown
+      FireResistDown {} -> Just FilterFireResistDown
+      IceResistDown {} -> Just FilterIceResistDown
+      LightningResistDown {} -> Just FilterLightningResistDown
+      EarthResistDown {} -> Just FilterEarthResistDown
+      WaterResistDown {} -> Just FilterWaterResistDown
+      WindResistDown {} -> Just FilterWindResistDown
+      EnhanceDebuffs {} -> Just FilterEnhanceDebuffs
 
 type ReadCacheResult =
   { userState :: UserState

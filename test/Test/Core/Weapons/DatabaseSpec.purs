@@ -160,6 +160,9 @@ data EffectTypeAndPotencies
   | EarthResistDown' Potencies
   | WaterResistDown' Potencies
   | WindResistDown' Potencies
+  | EnhanceBuffs' Potencies
+  | EnhanceDebuffs' Potencies
+
 
 derive instance Eq EffectTypeAndPotencies
 
@@ -220,6 +223,9 @@ getPotencies = case _ of
   Stop {} -> Nothing
   ExploitWeakness {} -> Nothing
   Enliven {} -> Nothing
+  HPGain {} -> Nothing
+  EnhanceBuffs { potencies } -> Just $ EnhanceBuffs' potencies
+  EnhanceDebuffs { potencies } -> Just $ EnhanceBuffs' potencies
   FireWeakness {} -> Nothing
   IceWeakness {} -> Nothing
   LightningWeakness {} -> Nothing

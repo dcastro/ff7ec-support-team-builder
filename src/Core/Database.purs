@@ -263,75 +263,76 @@ type GroupEntry =
   , groupedWeapon :: GroupedWeapon
   }
 
--- The range of an effect. Every `WeaponEffect` constructor carries a `range` field;
--- this extracts it without caring which constructor it is.
-rangeOf :: WeaponEffect -> Range
+-- The range of an effect, if it has one. Most `WeaponEffect` constructors carry a
+-- `range` field, but a few (e.g. `IncreaseCommandGauge`) have no range in the game
+-- data, in which case this returns `Nothing` (and they're grouped with `ranges: Nothing`).
+rangeOf :: WeaponEffect -> Maybe Range
 rangeOf = case _ of
-  Heal r -> r.range
-  PatkUp r -> r.range
-  MatkUp r -> r.range
-  PdefUp r -> r.range
-  MdefUp r -> r.range
-  HPGain r -> r.range
-  IncreaseCommandGauge r -> r.range
-  EnhanceBuffs r -> r.range
-  PhysicalWeaponBoost r -> r.range
-  MagicWeaponBoost r -> r.range
-  PhysicalDamageBonus r -> r.range
-  MagicDamageBonus r -> r.range
-  FireDamageUp r -> r.range
-  IceDamageUp r -> r.range
-  LightningDamageUp r -> r.range
-  EarthDamageUp r -> r.range
-  WaterDamageUp r -> r.range
-  WindDamageUp r -> r.range
-  FireWeaponBoost r -> r.range
-  IceWeaponBoost r -> r.range
-  LightningWeaponBoost r -> r.range
-  EarthWeaponBoost r -> r.range
-  WaterWeaponBoost r -> r.range
-  WindWeaponBoost r -> r.range
-  FireDamageBonus r -> r.range
-  IceDamageBonus r -> r.range
-  LightningDamageBonus r -> r.range
-  EarthDamageBonus r -> r.range
-  WaterDamageBonus r -> r.range
-  WindDamageBonus r -> r.range
-  FireResistUp r -> r.range
-  IceResistUp r -> r.range
-  LightningResistUp r -> r.range
-  EarthResistUp r -> r.range
-  WaterResistUp r -> r.range
-  WindResistUp r -> r.range
-  Veil r -> r.range
-  Provoke r -> r.range
-  PatkDown r -> r.range
-  MatkDown r -> r.range
-  PdefDown r -> r.range
-  MdefDown r -> r.range
-  FireDamageDown r -> r.range
-  IceDamageDown r -> r.range
-  LightningDamageDown r -> r.range
-  EarthDamageDown r -> r.range
-  WaterDamageDown r -> r.range
-  WindDamageDown r -> r.range
-  FireResistDown r -> r.range
-  IceResistDown r -> r.range
-  LightningResistDown r -> r.range
-  EarthResistDown r -> r.range
-  WaterResistDown r -> r.range
-  WindResistDown r -> r.range
-  FireWeakness r -> r.range
-  IceWeakness r -> r.range
-  LightningWeakness r -> r.range
-  EarthWeakness r -> r.range
-  WaterWeakness r -> r.range
-  WindWeakness r -> r.range
-  Enfeeble r -> r.range
-  Stop r -> r.range
-  ExploitWeakness r -> r.range
-  EnhanceDebuffs r -> r.range
-  Enliven r -> r.range
+  Heal r -> Just r.range
+  PatkUp r -> Just r.range
+  MatkUp r -> Just r.range
+  PdefUp r -> Just r.range
+  MdefUp r -> Just r.range
+  HPGain r -> Just r.range
+  IncreaseCommandGauge _ -> Nothing
+  EnhanceBuffs r -> Just r.range
+  PhysicalWeaponBoost r -> Just r.range
+  MagicWeaponBoost r -> Just r.range
+  PhysicalDamageBonus r -> Just r.range
+  MagicDamageBonus r -> Just r.range
+  FireDamageUp r -> Just r.range
+  IceDamageUp r -> Just r.range
+  LightningDamageUp r -> Just r.range
+  EarthDamageUp r -> Just r.range
+  WaterDamageUp r -> Just r.range
+  WindDamageUp r -> Just r.range
+  FireWeaponBoost r -> Just r.range
+  IceWeaponBoost r -> Just r.range
+  LightningWeaponBoost r -> Just r.range
+  EarthWeaponBoost r -> Just r.range
+  WaterWeaponBoost r -> Just r.range
+  WindWeaponBoost r -> Just r.range
+  FireDamageBonus r -> Just r.range
+  IceDamageBonus r -> Just r.range
+  LightningDamageBonus r -> Just r.range
+  EarthDamageBonus r -> Just r.range
+  WaterDamageBonus r -> Just r.range
+  WindDamageBonus r -> Just r.range
+  FireResistUp r -> Just r.range
+  IceResistUp r -> Just r.range
+  LightningResistUp r -> Just r.range
+  EarthResistUp r -> Just r.range
+  WaterResistUp r -> Just r.range
+  WindResistUp r -> Just r.range
+  Veil r -> Just r.range
+  Provoke r -> Just r.range
+  PatkDown r -> Just r.range
+  MatkDown r -> Just r.range
+  PdefDown r -> Just r.range
+  MdefDown r -> Just r.range
+  FireDamageDown r -> Just r.range
+  IceDamageDown r -> Just r.range
+  LightningDamageDown r -> Just r.range
+  EarthDamageDown r -> Just r.range
+  WaterDamageDown r -> Just r.range
+  WindDamageDown r -> Just r.range
+  FireResistDown r -> Just r.range
+  IceResistDown r -> Just r.range
+  LightningResistDown r -> Just r.range
+  EarthResistDown r -> Just r.range
+  WaterResistDown r -> Just r.range
+  WindResistDown r -> Just r.range
+  FireWeakness r -> Just r.range
+  IceWeakness r -> Just r.range
+  LightningWeakness r -> Just r.range
+  EarthWeakness r -> Just r.range
+  WaterWeakness r -> Just r.range
+  WindWeakness r -> Just r.range
+  Enfeeble r -> Just r.range
+  Stop r -> Just r.range
+  ExploitWeakness r -> Just r.range
+  EnhanceDebuffs r -> Just r.range
+  Enliven r -> Just r.range
 
 -- The potencies of an effect, if it has any.
 -- Some effects have no potencies (e.g. `Heal`, `Provoke`, `Enliven`,
@@ -549,8 +550,10 @@ groupsForWeapon weapon = do
         { effectType
         , groupedWeapon:
             { weaponName: weapon.name
-            , ranges: Just
-                [ { allRanges
+            -- Effects with no range (e.g. `IncreaseCommandGauge`) get `ranges: Nothing`,
+            -- like Sigil effects.
+            , ranges: allRanges <#> \ranges ->
+                [ { allRanges: ranges
                   , allPotencies: potencies
                   }
                 ]
@@ -593,12 +596,14 @@ groupsForWeapon weapon = do
     -> Maybe
          { effectType :: FilterEffectType
          , potencies :: Maybe AllPotencies
-         , allRanges :: AllRanges
+         , allRanges :: Maybe AllRanges
          }
   -- NOTE: an effect can have a different range and different potencies at each
   -- overboost level (e.g. Festive Sword's Enliven is `Self` at OB0/OB1 and `All`
   -- at OB6/OB10), so we read both from every level via `rangeOf` / `potenciesOf`.
   -- Only the `effectType` is determined from the OB0 effect.
+  --
+  -- `allRanges` is `Nothing` for effects that have no range (e.g. `IncreaseCommandGauge`).
   --
   -- This assumes effects are listed in the same order at all overboost levels.
   -- That invariant is enforced here: @(ref:effects-same-order)
@@ -606,7 +611,7 @@ groupsForWeapon weapon = do
     effectTypeOf <#> \effectType ->
       { effectType
       , potencies: allPotencies
-      , allRanges: { ob0: rangeOf ob0, ob1: rangeOf ob1, ob6: rangeOf ob6, ob10: rangeOf ob10 }
+      , allRanges
       }
     where
     -- `Just` only for effects that have potencies; `Nothing` otherwise.
@@ -616,6 +621,14 @@ groupsForWeapon weapon = do
       ob6Potencies <- potenciesOf ob6
       ob10Potencies <- potenciesOf ob10
       pure { ob0: ob0Potencies, ob1: ob1Potencies, ob6: ob6Potencies, ob10: ob10Potencies }
+
+    -- `Just` only for effects that have a range; `Nothing` otherwise.
+    allRanges = do
+      ob0Range <- rangeOf ob0
+      ob1Range <- rangeOf ob1
+      ob6Range <- rangeOf ob6
+      ob10Range <- rangeOf ob10
+      pure { ob0: ob0Range, ob1: ob1Range, ob6: ob6Range, ob10: ob10Range }
 
     effectTypeOf = case ob0 of
       -- #(ref:heal-threshold)

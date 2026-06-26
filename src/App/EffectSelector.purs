@@ -484,8 +484,8 @@ hasRange = case _ of
     FilterStop -> true
     FilterExploitWeakness -> true
     FilterHPGain -> true
-    -- This effect has no range in the game data; the parser records `All` so the
-    -- default range filter matches it, and we hide the (meaningless) range selector.
+    -- This effect has no range in the game data (its weapons are grouped with
+    -- `ranges: Nothing`), so there's no range selector to show.
     FilterIncreaseCommandGauge -> false
     FilterEnhanceBuffs -> true
     FilterEnhanceDebuffs -> true

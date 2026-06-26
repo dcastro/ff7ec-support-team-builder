@@ -380,15 +380,14 @@ parseWeaponEffect coords =
 
   -- Like `withPercentage`, but the percentage is prefixed with a `+` and the
   -- effect has no range in the game data, e.g. `+50% Stance Gauge [Condition: First Use]`.
-  -- We record `All` as the range so the default range filter matches it.
   -- Any trailing text (like `[Condition: ...]`) is left unparsed and ignored.
-  withPrefixedPercentage :: String -> ({ range :: Range, percentage :: Percentage } -> WeaponEffect) -> Parser WeaponEffect
+  withPrefixedPercentage :: String -> ({ percentage :: Percentage } -> WeaponEffect) -> Parser WeaponEffect
   withPrefixedPercentage effectName constructor = do
     inContext effectName do
       _ <- P.char '+'
       percentage <- parsePercentage <* space
       _ <- P.string effectName
-      pure $ constructor $ { range: All, percentage }
+      pure $ constructor $ { percentage }
 
   withDurExt :: String -> ({ range :: Range, durExt :: DurExt } -> WeaponEffect) -> Parser WeaponEffect
   withDurExt effectName constructor = do

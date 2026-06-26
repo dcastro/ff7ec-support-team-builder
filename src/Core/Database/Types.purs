@@ -157,9 +157,7 @@ data WeaponEffect
   | PdefUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | MdefUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | HPGain { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  -- NOTE: this effect has no range in the game data (e.g. `+50% Stance Gauge`);
-  -- we record `All` so the default range filter matches it. See `hasRange` in `App.EffectSelector`.
-  | IncreaseCommandGauge { range :: Range, percentage :: Percentage }
+  | IncreaseCommandGauge { percentage :: Percentage }
   | EnhanceBuffs { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | PhysicalWeaponBoost { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | MagicWeaponBoost { range :: Range, durExt :: DurExt, percentage :: Percentage }
@@ -267,8 +265,6 @@ data FilterEffectType
   | FilterEarthDamageBonus
   | FilterWaterDamageBonus
   | FilterWindDamageBonus
-
-
 
   -- Debuffs
   | FilterEnfeeble
@@ -1106,8 +1102,6 @@ exhaustiveWeaponEffectMatch =
   , PdefDown { range, durExt, potencies }
   , MdefDown { range, durExt, potencies }
 
-
-
   , FireDamageDown { range, durExt, potencies }
   , IceDamageDown { range, durExt, potencies }
   , LightningDamageDown { range, durExt, potencies }
@@ -1130,7 +1124,7 @@ exhaustiveWeaponEffectMatch =
   , Stop { range, durExt }
   , ExploitWeakness { range, durExt, percentage }
   , HPGain { range, durExt, percentage }
-  , IncreaseCommandGauge { range, percentage }
+  , IncreaseCommandGauge { percentage }
   , EnhanceBuffs { range, durExt, potencies }
   , EnhanceDebuffs { range, durExt, potencies }
   , Enliven { range, durExt }

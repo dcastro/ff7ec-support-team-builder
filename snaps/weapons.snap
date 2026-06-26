@@ -1536,7 +1536,6 @@ weapons:
             percentage: 7
           type: Heal
         - value:
-            range: All
             percentage: 75
           type: IncreaseCommandGauge
       description: |-
@@ -1569,7 +1568,6 @@ weapons:
             percentage: 7
           type: Heal
         - value:
-            range: All
             percentage: 75
           type: IncreaseCommandGauge
       description: |-
@@ -1602,7 +1600,6 @@ weapons:
             percentage: 6
           type: Heal
         - value:
-            range: All
             percentage: 50
           type: IncreaseCommandGauge
       description: |-
@@ -1635,7 +1632,6 @@ weapons:
             percentage: 5
           type: Heal
         - value:
-            range: All
             percentage: 50
           type: IncreaseCommandGauge
       description: |-
@@ -1759,7 +1755,6 @@ weapons:
               duration: 20
           type: LightningDamageUp
         - value:
-            range: All
             percentage: 20
           type: IncreaseCommandGauge
       description: |-
@@ -1793,7 +1788,6 @@ weapons:
               duration: 25
           type: LightningDamageUp
         - value:
-            range: All
             percentage: 20
           type: IncreaseCommandGauge
       description: |-
@@ -1827,7 +1821,6 @@ weapons:
               duration: 20
           type: LightningDamageUp
         - value:
-            range: All
             percentage: 10
           type: IncreaseCommandGauge
       description: |-
@@ -1861,7 +1854,6 @@ weapons:
               duration: 15
           type: LightningDamageUp
         - value:
-            range: All
             percentage: 10
           type: IncreaseCommandGauge
       description: |-
@@ -10237,7 +10229,6 @@ weapons:
     ob6:
       effects:
         - value:
-            range: All
             percentage: 20
           type: IncreaseCommandGauge
       description: |-
@@ -10248,7 +10239,6 @@ weapons:
     ob10:
       effects:
         - value:
-            range: All
             percentage: 20
           type: IncreaseCommandGauge
       description: |-
@@ -10259,7 +10249,6 @@ weapons:
     ob1:
       effects:
         - value:
-            range: All
             percentage: 10
           type: IncreaseCommandGauge
       description: |-
@@ -10270,7 +10259,6 @@ weapons:
     ob0:
       effects:
         - value:
-            range: All
             percentage: 10
           type: IncreaseCommandGauge
       description: |-
@@ -13575,7 +13563,6 @@ weapons:
               duration: 60
           type: Provoke
         - value:
-            range: All
             percentage: 20
           type: IncreaseCommandGauge
       description: |-
@@ -13592,7 +13579,6 @@ weapons:
               duration: 60
           type: Provoke
         - value:
-            range: All
             percentage: 20
           type: IncreaseCommandGauge
       description: |-
@@ -13609,7 +13595,6 @@ weapons:
               duration: 60
           type: Provoke
         - value:
-            range: All
             percentage: 10
           type: IncreaseCommandGauge
       description: |-
@@ -13626,7 +13611,6 @@ weapons:
               duration: 60
           type: Provoke
         - value:
-            range: All
             percentage: 10
           type: IncreaseCommandGauge
       description: |-
@@ -16817,14 +16801,12 @@ weapons:
     ob6:
       effects:
         - value:
-            range: All
             percentage: 20
           type: IncreaseCommandGauge
       description: "Parading Shot+ (4 ATB)\r\n510% Phys. Non-elem. Damage [Range: Single Enemy]\r\n+20% Stance Gauge\r\n10% Crit Rate [Range: Single Enemy]"
     ob10:
       effects:
         - value:
-            range: All
             percentage: 20
           type: IncreaseCommandGauge
       description: |-
@@ -16835,7 +16817,6 @@ weapons:
     ob1:
       effects:
         - value:
-            range: All
             percentage: 20
           type: IncreaseCommandGauge
       description: |-
@@ -16846,7 +16827,6 @@ weapons:
     ob0:
       effects:
         - value:
-            range: All
             percentage: 20
           type: IncreaseCommandGauge
       description: |-
@@ -30905,7 +30885,6 @@ weapons:
               duration: 30
           type: ExploitWeakness
         - value:
-            range: All
             percentage: 20
           type: IncreaseCommandGauge
       description: |-
@@ -30923,7 +30902,6 @@ weapons:
               duration: 40
           type: ExploitWeakness
         - value:
-            range: All
             percentage: 20
           type: IncreaseCommandGauge
       description: |-
@@ -30941,7 +30919,6 @@ weapons:
               duration: 25
           type: ExploitWeakness
         - value:
-            range: All
             percentage: 10
           type: IncreaseCommandGauge
       description: |-
@@ -30959,7 +30936,6 @@ weapons:
               duration: 20
           type: ExploitWeakness
         - value:
-            range: All
             percentage: 10
           type: IncreaseCommandGauge
       description: |-

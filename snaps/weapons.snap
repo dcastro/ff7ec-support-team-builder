@@ -12299,6 +12299,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 6,
+              "durExt": {
+                "extension": 0,
+                "duration": 30
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Orbital Slice+ (4 ATB)\n670% Phys. Earth Damage [Range: All Enemies]\n25s Earth Damage Up (+8s) (Mid -> High) [Range: All Allies]\n50s Enfeeble (+16s) [Range: All Enemies] [Condition: Self 50-100% HP]"
@@ -12329,6 +12340,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 8,
+              "durExt": {
+                "extension": 0,
+                "duration": 30
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Orbital Slice++ (4 ATB)\n780% Phys. Earth Damage [Range: All Enemies]\n30s Earth Damage Up (+10s) (Mid -> High) [Range: All Allies]\n60s Enfeeble (+20s) [Range: All Enemies] [Condition: Self 50-100% HP]"
@@ -12359,6 +12381,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 5,
+              "durExt": {
+                "extension": 0,
+                "duration": 30
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Orbital Slice (4 ATB)\n520% Phys. Earth Damage [Range: All Enemies]\n25s Earth Damage Up (+8s) (Low -> Mid) [Range: All Allies]\n40s Enfeeble (+13s) [Range: All Enemies] [Condition: Self 50-100% HP]"
@@ -12389,6 +12422,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 4,
+              "durExt": {
+                "extension": 0,
+                "duration": 30
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Orbital Slice (4 ATB)\n430% Phys. Earth Damage [Range: All Enemies]\n20s Earth Damage Up (+6s) (Low -> Mid) [Range: All Allies]\n30s Enfeeble (+10s) [Range: All Enemies] [Condition: Self 50-100% HP]"
@@ -15764,6 +15808,20 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Forcestream+ (3 ATB)\n360% Mag. Non-elem. Damage [Range: Single Enemy]\n20s MATK Down (+6s) (High) [Range: Single Enemy]\n20s PATK Down (+6s) (High) [Range: Single Enemy] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -15798,6 +15856,20 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Forcestream++ (3 ATB)\n420% Mag. Non-elem. Damage [Range: Single Enemy]\n24s MATK Down (+8s) (High) [Range: Single Enemy]\n24s PATK Down (+8s) (High) [Range: Single Enemy] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -15832,6 +15904,20 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Forcestream (3 ATB)\n300% Mag. Non-elem. Damage [Range: Single Enemy]\n18s MATK Down (+6s) (Mid) [Range: Single Enemy]\n18s PATK Down (+6s) (Mid) [Range: Single Enemy] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -15866,6 +15952,20 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Forcestream (3 ATB)\n260% Mag. Non-elem. Damage [Range: Single Enemy]\n16s MATK Down (+5s) (Mid) [Range: Single Enemy]\n16s PATK Down (+5s) (Mid) [Range: Single Enemy] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -16378,19 +16478,67 @@
         "slot1": "Boost PATK (All Allies)"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 6,
+              "durExt": {
+                "extension": 0,
+                "duration": 30
+              }
+            },
+            "type": "HPGain"
+          }
+        ],
         "description": "Freezing Stream+ (4 ATB)\n840% Phys. Ice Damage [Range: Single Enemy]\r\n30s 6% HP Gain (+0s) [Range: All Allies]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 8,
+              "durExt": {
+                "extension": 0,
+                "duration": 30
+              }
+            },
+            "type": "HPGain"
+          }
+        ],
         "description": "Freezing Stream++ (4 ATB)\n1020% Phys. Ice Damage [Range: Single Enemy]\n30s 8% HP Gain (+0s) [Range: All Allies]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 5,
+              "durExt": {
+                "extension": 0,
+                "duration": 30
+              }
+            },
+            "type": "HPGain"
+          }
+        ],
         "description": "Freezing Stream (4 ATB)\n680% Phys. Ice Damage [Range: Single Enemy]\r\n30s 5% HP Gain (+0s) [Range: All Allies]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 4,
+              "durExt": {
+                "extension": 0,
+                "duration": 30
+              }
+            },
+            "type": "HPGain"
+          }
+        ],
         "description": "Freezing Stream (4 ATB)\n570% Phys. Ice Damage [Range: Single Enemy]\r\n30s 4% HP Gain (+0s) [Range: All Allies]"
       },
       "name": "Stream Saber",
@@ -16467,6 +16615,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 6,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Aquatic Wave+ (4 ATB)\n1080% Mag. Water Damage [Range: Single Enemy]\n25s Water Resistance Down (+8s) (Mid -> High) [Range: Single Enemy]\n25s Enfeeble (+8s) [Range: Single Enemy]\n60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
@@ -16497,6 +16656,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 8,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Aquatic Wave++ (4 ATB)\n1340% Mag. Water Damage [Range: Single Enemy]\n30s Water Resistance Down (+10s) (Mid -> High) [Range: Single Enemy]\n30s Enfeeble (+10s) [Range: Single Enemy]\n60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
@@ -16527,6 +16697,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 5,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Aquatic Wave (4 ATB)\n720% Mag. Water Damage [Range: Single Enemy]\n25s Water Resistance Down (+8s) (Low -> Mid) [Range: Single Enemy]\n25s Enfeeble (+8s) [Range: Single Enemy]\n60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
@@ -16557,6 +16738,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 4,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Aquatic Wave (4 ATB)\n600% Mag. Water Damage [Range: Single Enemy]\n20s Water Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s Enfeeble (+6s) [Range: Single Enemy]\n60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
@@ -17753,6 +17945,17 @@
               }
             },
             "type": "Veil"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 6,
+              "durExt": {
+                "extension": 0,
+                "duration": 30
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Hurricane Strike+ (4 ATB)\n670% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n50s 8% Veil (+10s) [Range: Self]\n30s 6% HP Gain (+0s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -17779,6 +17982,17 @@
               }
             },
             "type": "Veil"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 8,
+              "durExt": {
+                "extension": 0,
+                "duration": 30
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Hurricane Strike++ (4 ATB)\n800% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n60s 10% Veil (+12s) [Range: Self]\n30s 8% HP Gain (+0s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -17805,6 +18019,17 @@
               }
             },
             "type": "Veil"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 5,
+              "durExt": {
+                "extension": 0,
+                "duration": 30
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Hurricane Strike (4 ATB)\n520% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n45s 6% Veil (+9s) [Range: Self]\n30s 5% HP Gain (+0s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -17831,6 +18056,17 @@
               }
             },
             "type": "Veil"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 4,
+              "durExt": {
+                "extension": 0,
+                "duration": 30
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Hurricane Strike (4 ATB)\n430% Phys. Non-elem. Damage [Range: All Enemies]\n60s Provoke (+0s) [Range: Self]\n40s 5% Veil (+8s) [Range: Self]\n30s 4% HP Gain (+0s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -19694,6 +19930,17 @@
               }
             },
             "type": "FireWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 6,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Explosive Bullets+ (4 ATB)\n760% Mag. Fire Damage [Range: Single Enemy]\n20s 30% Fire Weapon Boost (+6s) [Range: All Allies]\n60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
@@ -19710,6 +19957,17 @@
               }
             },
             "type": "FireWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 8,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Explosive Bullets++ (4 ATB)\n920% Mag. Fire Damage [Range: Single Enemy]\n25s 35% Fire Weapon Boost (+8s) [Range: All Allies]\n60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
@@ -19726,6 +19984,17 @@
               }
             },
             "type": "FireWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 5,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Explosive Bullets (4 ATB)\n590% Mag. Fire Damage [Range: Single Enemy]\n20s 20% Fire Weapon Boost (+6s) [Range: All Allies]\n60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
@@ -19742,6 +20011,17 @@
               }
             },
             "type": "FireWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 4,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Explosive Bullets (4 ATB)\n490% Mag. Fire Damage [Range: Single Enemy]\n15s 20% Fire Weapon Boost (+5s) [Range: All Allies]\n60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
@@ -23232,6 +23512,20 @@
               }
             },
             "type": "MdefUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceDebuffs"
           }
         ],
         "description": "Luminous Excision+ (3 ATB)\n760% Mag. Non-elem. Damage [Range: All Enemies]\n20s Water Damage Up (+6s) (Mid -> High) [Range: All Allies]\n20s MDEF Up (+6s) (Mid -> High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -23266,6 +23560,20 @@
               }
             },
             "type": "MdefUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceDebuffs"
           }
         ],
         "description": "Luminous Excision++ (3 ATB)\n920% Mag. Non-elem. Damage [Range: All Enemies]\n25s Water Damage Up (+8s) (Mid -> High) [Range: All Allies]\n25s MDEF Up (+8s) (Mid -> High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -23300,6 +23608,20 @@
               }
             },
             "type": "MdefUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceDebuffs"
           }
         ],
         "description": "Luminous Excision (3 ATB)\n590% Mag. Non-elem. Damage [Range: All Enemies]\n20s Water Damage Up (+6s) (Low -> Mid) [Range: All Allies]\n20s MDEF Up (+6s) (Low -> Mid) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -23334,6 +23656,20 @@
               }
             },
             "type": "MdefUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceDebuffs"
           }
         ],
         "description": "Luminous Excision (3 ATB)\n490% Mag. Non-elem. Damage [Range: All Enemies]\n15s Water Damage Up (+5s) (Low -> Mid) [Range: All Allies]\n15s MDEF Up (+5s) (Low -> Mid) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -26504,6 +26840,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 6,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Blue Triad+ (4 ATB)\n1080% Phys. Wind Damage [Range: Single Enemy]\n50s PDEF Down (+16s) (Mid -> High) [Range: Single Enemy]\n50s Enfeeble (+16s) [Range: Single Enemy] [Condition: Self 50-100% HP]\n60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
@@ -26534,6 +26881,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 8,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Blue Triad++ (4 ATB)\n1340% Phys. Wind Damage [Range: Single Enemy]\n60s PDEF Down (+20s) (Mid -> High) [Range: Single Enemy]\n60s Enfeeble (+20s) [Range: Single Enemy] [Condition: Self 50-100% HP]\n60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]\n+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]"
@@ -26564,6 +26922,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 5,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Blue Triad (4 ATB)\n720% Phys. Wind Damage [Range: Single Enemy]\n40s PDEF Down (+13s) (Low -> Mid) [Range: Single Enemy]\n40s Enfeeble (+13s) [Range: Single Enemy] [Condition: Self 50-100% HP]\n60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
@@ -26594,6 +26963,17 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 4,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Blue Triad (4 ATB)\n600% Phys. Wind Damage [Range: Single Enemy]\n30s PDEF Down (+10s) (Low -> Mid) [Range: Single Enemy]\n30s Enfeeble (+10s) [Range: Single Enemy] [Condition: Self 50-100% HP]\n60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]"
@@ -27199,6 +27579,20 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Certain End+ (4 ATB)\n1080% Phys. Non-elem. Damage [Range: All Enemies]\n50s 30% Exploit Weakness (+16s) [Range: All Allies]\n50s PATK Down (+16s) (High) [Range: All Enemies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -27230,6 +27624,20 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Certain End++ (4 ATB)\n1340% Phys. Non-elem. Damage [Range: All Enemies]\n60s 40% Exploit Weakness (+20s) [Range: All Allies]\n60s PATK Down (+20s) (High) [Range: All Enemies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -27261,6 +27669,20 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Certain End (4 ATB)\n720% Phys. Non-elem. Damage [Range: All Enemies]\n40s 20% Exploit Weakness (+13s) [Range: All Allies]\n40s PATK Down (+13s) (Low -> Mid) [Range: All Enemies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -27292,6 +27714,20 @@
               }
             },
             "type": "PatkDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Certain End (4 ATB)\n600% Phys. Non-elem. Damage [Range: All Enemies]\n30s 20% Exploit Weakness (+10s) [Range: All Allies]\n30s PATK Down (+10s) (Low -> Mid) [Range: All Enemies] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: All Enemies]"
@@ -27799,6 +28235,17 @@
           {
             "value": {
               "range": "All",
+              "percentage": 6,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
+          },
+          {
+            "value": {
+              "range": "All",
               "potencies": {
                 "max": "High",
                 "base": "Mid"
@@ -27843,6 +28290,17 @@
               }
             },
             "type": "WaterDamageUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 8,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           },
           {
             "value": {
@@ -27895,6 +28353,17 @@
           {
             "value": {
               "range": "All",
+              "percentage": 5,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
+          },
+          {
+            "value": {
+              "range": "All",
               "potencies": {
                 "max": "Mid",
                 "base": "Low"
@@ -27939,6 +28408,17 @@
               }
             },
             "type": "WaterDamageUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 4,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           },
           {
             "value": {
@@ -29792,19 +30272,67 @@
         "slot1": "Boost ATK (All Allies)"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 6,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
+          }
+        ],
         "description": "Flash of Ruin+ (4 ATB)\n1080% Mag. Non-elem. Damage [Range: All Enemies]\n50s 40% Phys. Single Target Dmg. Received Up (+16s) [Range: All Enemies]\n50s 40% Mag. Single Target Dmg. Received Up (+16s) [Range: All Enemies]\n60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 8,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
+          }
+        ],
         "description": "Flash of Ruin++ (4 ATB)\n1340% Mag. Non-elem. Damage [Range: All Enemies]\n60s 50% Phys. Single Target Dmg. Received Up (+20s) [Range: All Enemies]\n60s 50% Mag. Single Target Dmg. Received Up (+20s) [Range: All Enemies]\n60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 5,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
+          }
+        ],
         "description": "Flash of Ruin (4 ATB)\n720% Mag. Non-elem. Damage [Range: All Enemies]\n40s 25% Phys. Single Target Dmg. Received Up (+13s) [Range: All Enemies]\n40s 25% Mag. Single Target Dmg. Received Up (+13s) [Range: All Enemies]\n60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "percentage": 4,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
+          }
+        ],
         "description": "Flash of Ruin (4 ATB)\n600% Mag. Non-elem. Damage [Range: All Enemies]\n30s 25% Phys. Single Target Dmg. Received Up (+10s) [Range: All Enemies]\n30s 25% Mag. Single Target Dmg. Received Up (+10s) [Range: All Enemies]\n60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
       },
       "name": "Muramasa",
@@ -31177,6 +31705,17 @@
               }
             },
             "type": "WaterDamageUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 6,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Featherstrike+ (3 ATB)\n360% Phys. Non-elem. Damage [Range: Single Enemy]\n20s MDEF Down (+6s) (Mid) [Range: Single Enemy]\n30s Water Damage Up (+6s) (High) [Range: Self] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -31211,6 +31750,17 @@
               }
             },
             "type": "WaterDamageUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 8,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Featherstrike++ (3 ATB)\n420% Phys. Non-elem. Damage [Range: Single Enemy]\n24s MDEF Down (+8s) (Mid) [Range: Single Enemy]\n35s Water Damage Up (+7s) (High) [Range: Self] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -31245,6 +31795,17 @@
               }
             },
             "type": "WaterDamageUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 5,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Featherstrike (3 ATB)\n300% Phys. Non-elem. Damage [Range: Single Enemy]\n18s MDEF Down (+6s) (Mid) [Range: Single Enemy]\n28s Water Damage Up (+5s) (Mid) [Range: Self] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -31279,6 +31840,17 @@
               }
             },
             "type": "WaterDamageUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 4,
+              "durExt": {
+                "extension": 0,
+                "duration": 60
+              }
+            },
+            "type": "HPGain"
           }
         ],
         "description": "Featherstrike (3 ATB)\n260% Phys. Non-elem. Damage [Range: Single Enemy]\n16s MDEF Down (+5s) (Mid) [Range: Single Enemy]\n25s Water Damage Up (+5s) (Mid) [Range: Self] [Condition: Self 50-100% HP]\n10% Crit Rate [Range: Single Enemy]"
@@ -31965,6 +32537,20 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Detonating Blow+ (4 ATB)\n1080% Mag. Non-elem. Damage [Range: All Enemies]\n35s Enfeeble (+7s) [Range: All Enemies] [Condition: Self 50-100% HP]\nEnhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -31980,6 +32566,20 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Detonating Blow++ (4 ATB)\n1340% Mag. Non-elem. Damage [Range: All Enemies]\n60s Enfeeble (+12s) [Range: All Enemies] [Condition: Self 50-100% HP]\nEnhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -31995,6 +32595,20 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Detonating Blow (4 ATB)\n720% Mag. Non-elem. Damage [Range: All Enemies]\n30s Enfeeble (+6s) [Range: All Enemies] [Condition: Self 50-100% HP]\nEnhance Buffs (+10s) (Low -> High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -32010,6 +32624,20 @@
               }
             },
             "type": "Enfeeble"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Detonating Blow (4 ATB)\n600% Mag. Non-elem. Damage [Range: All Enemies]\n20s Enfeeble (+4s) [Range: All Enemies] [Condition: Self 50-100% HP]\nEnhance Buffs (+10s) (Low -> High) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -33732,6 +34360,20 @@
               }
             },
             "type": "WindWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceDebuffs"
           }
         ],
         "description": "Terminal Sentence+ (4 ATB)\n1080% Phys. Non-elem. Damage [Range: All Enemies]\n50s 30% Fire Weapon Boost (+16s) [Range: All Allies]\n50s 30% Earth Weapon Boost (+16s) [Range: All Allies]\n50s 30% Wind Weapon Boost (+16s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -33771,6 +34413,20 @@
               }
             },
             "type": "WindWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceDebuffs"
           }
         ],
         "description": "Terminal Sentence++ (4 ATB)\n1340% Phys. Non-elem. Damage [Range: All Enemies]\n60s 35% Fire Weapon Boost (+20s) [Range: All Allies]\n60s 35% Earth Weapon Boost (+20s) [Range: All Allies]\n60s 35% Wind Weapon Boost (+20s) [Range: All Allies]\n+1 Costume C. Ability Uses [Range: Self] [Condition: First Use]\n10% Crit Rate [Range: All Enemies]"
@@ -33810,6 +34466,20 @@
               }
             },
             "type": "WindWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceDebuffs"
           }
         ],
         "description": "Terminal Sentence (4 ATB)\n720% Phys. Non-elem. Damage [Range: All Enemies]\n40s 25% Fire Weapon Boost (+13s) [Range: All Allies]\n40s 25% Earth Weapon Boost (+13s) [Range: All Allies]\n40s 25% Wind Weapon Boost (+13s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -33849,6 +34519,20 @@
               }
             },
             "type": "WindWeaponBoost"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceDebuffs"
           }
         ],
         "description": "Terminal Sentence (4 ATB)\n600% Phys. Non-elem. Damage [Range: All Enemies]\n30s 25% Fire Weapon Boost (+10s) [Range: All Allies]\n30s 25% Earth Weapon Boost (+10s) [Range: All Allies]\n30s 25% Wind Weapon Boost (+10s) [Range: All Allies]\n10% Crit Rate [Range: All Enemies]"
@@ -35366,6 +36050,20 @@
               }
             },
             "type": "EarthDamageDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Stormround+ (4 ATB)\n340% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+4% Limit Break Gauge [Range: Self]"
@@ -35386,6 +36084,20 @@
               }
             },
             "type": "EarthDamageDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Stormround++ (4 ATB)\n400% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+4% Limit Break Gauge [Range: Self]"
@@ -35406,6 +36118,20 @@
               }
             },
             "type": "EarthDamageDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Stormround (4 ATB)\n260% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+3% Limit Break Gauge [Range: Self]"
@@ -35426,6 +36152,20 @@
               }
             },
             "type": "EarthDamageDown"
+          },
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
           }
         ],
         "description": "Stormround (4 ATB)\n220% Phys. Wind Damage [Mult.: 3x (100% HP), 1x (30% HP)] [Range: Single Enemy]\n+3% Limit Break Gauge [Range: Self]"
@@ -36816,19 +37556,79 @@
         "slot1": "Boost ATK (All Allies)"
       },
       "ob6": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
+          }
+        ],
         "description": "Calligraphy: Dawn+ (4 ATB)\n1080% Mag. Non-elem. Damage [Range: Single Enemy]\n25s -1 ATB Phys. Weapon/Gear C. Ability Cost (+8s) [Range: Self]\n25s -1 ATB Mag. Weapon/Gear C. Ability Cost (+8s) [Range: Self]\nEnhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob10": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
+          }
+        ],
         "description": "Calligraphy: Dawn++ (4 ATB)\n1340% Mag. Non-elem. Damage [Range: Single Enemy]\n40s -1 ATB Phys. Weapon/Gear C. Ability Cost (+13s) [Range: Self]\n40s -1 ATB Mag. Weapon/Gear C. Ability Cost (+13s) [Range: Self]\nEnhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob1": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
+          }
+        ],
         "description": "Calligraphy: Dawn (4 ATB)\n720% Mag. Non-elem. Damage [Range: Single Enemy]\n15s -1 ATB Phys. Weapon/Gear C. Ability Cost (+5s) [Range: Self]\n15s -1 ATB Mag. Weapon/Gear C. Ability Cost (+5s) [Range: Self]\nEnhance Buffs (+10s) (Low -> High) [Range: All Allies]\n10% Crit Rate [Range: Single Enemy]"
       },
       "ob0": {
-        "effects": [],
+        "effects": [
+          {
+            "value": {
+              "range": "All",
+              "potencies": {
+                "max": "High",
+                "base": "Low"
+              },
+              "durExt": {
+                "extension": 10,
+                "duration": 0
+              }
+            },
+            "type": "EnhanceBuffs"
+          }
+        ],
         "description": "Calligraphy: Dawn (4 ATB)\n600% Mag. Non-elem. Damage [Range: Single Enemy]\n10s -1 ATB Phys. Weapon/Gear C. Ability Cost (+3s) [Range: Self]\n10s -1 ATB Mag. Weapon/Gear C. Ability Cost (+3s) [Range: Self]\nEnhance Buffs (+10s) (Low -> High) [Range: All Allies]\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Heirloom Brush",

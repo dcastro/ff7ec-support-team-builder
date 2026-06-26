@@ -351,6 +351,9 @@ parseWeaponEffect coords =
       <|> P.try (withDurExtPercentage "Wind Weakness" WindWeakness)
       <|> P.try (withDurExt "Enfeeble" Enfeeble)
       <|> P.try (withDurExt "Stop" Stop)
+      <|> P.try (withDurExtPercentage "HP Gain" HPGain)
+      <|> P.try (withExtPotencies "Enhance Buffs" EnhanceBuffs)
+      <|> P.try (withExtPotencies "Enhance Debuffs" EnhanceDebuffs)
       <|> P.try (withDurExt "Enliven" Enliven)
       -- NOTE: The effect on "Blue Daffodil Gloves" is named "WeaknessAttackUp",
       -- but on "Bird of Prey" it's named "Exploit Weakness".
@@ -402,6 +405,19 @@ parseWeaponEffect coords =
       potencies <- parsePotencies <* space
       range <- parseRange
       pure $ constructor $ { range, durExt: { duration, extension }, potencies }
+
+  -- Like `withDurExtPotencies`, but for effects that have no base duration in the
+  -- game data, e.g. `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`.
+  -- These effects only extend the duration of *other* buffs/debuffs, so we record
+  -- a duration of 0 (it's never displayed).
+  withExtPotencies :: String -> ({ range :: Range, durExt :: DurExt, potencies :: Potencies } -> WeaponEffect) -> Parser WeaponEffect
+  withExtPotencies effectName constructor = do
+    inContext effectName do
+      _ <- P.string effectName <* space
+      extension <- parseExtension <* space
+      potencies <- parsePotencies <* space
+      range <- parseRange
+      pure $ constructor $ { range, durExt: { duration: Duration 0, extension }, potencies }
 
 inContext :: forall a. String -> Parser a -> Parser a
 inContext context =

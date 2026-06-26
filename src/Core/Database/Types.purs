@@ -146,6 +146,8 @@ data WeaponEffect
   | MatkUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | PdefUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | MdefUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
+  | HPGain { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | EnhanceBuffs { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | PhysicalWeaponBoost { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | MagicWeaponBoost { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | PhysicalDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
@@ -202,6 +204,7 @@ data WeaponEffect
   | Enfeeble { range :: Range, durExt :: DurExt }
   | Stop { range :: Range, durExt :: DurExt }
   | ExploitWeakness { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | EnhanceDebuffs { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | Enliven { range :: Range, durExt :: DurExt }
 
 type Potencies =
@@ -220,6 +223,8 @@ data FilterEffectType
   | FilterMatkUp
   | FilterPdefUp
   | FilterMdefUp
+  | FilterHPGain
+  | FilterEnhanceBuffs
   | FilterPhysicalWeaponBoost
   | FilterMagicWeaponBoost
   | FilterPhysicalDamageBonus
@@ -255,6 +260,7 @@ data FilterEffectType
   | FilterEnfeeble
   | FilterStop
   | FilterExploitWeakness
+  | FilterEnhanceDebuffs
   | FilterEnliven
   | FilterPatkDown
   | FilterMatkDown
@@ -379,6 +385,9 @@ instance Show WeaponEffect where
       Enfeeble rec -> showRec rec "Enfeeble"
       Stop rec -> showRec rec "Stop"
       ExploitWeakness rec -> showRec rec "ExploitWeakness"
+      HPGain rec -> showRec rec "HPGain"
+      EnhanceBuffs rec -> showRec rec "EnhanceBuffs"
+      EnhanceDebuffs rec -> showRec rec "EnhanceDebuffs"
       Enliven rec -> showRec rec "Enliven"
     where
     showRec :: forall rec. Show rec => rec -> String -> String
@@ -395,6 +404,9 @@ instance Show FilterEffectType where
     FilterEnfeeble -> "FilterEnfeeble"
     FilterStop -> "FilterStop"
     FilterExploitWeakness -> "FilterExploitWeakness"
+    FilterHPGain -> "FilterHPGain"
+    FilterEnhanceBuffs -> "FilterEnhanceBuffs"
+    FilterEnhanceDebuffs -> "FilterEnhanceDebuffs"
     FilterEnliven -> "FilterEnliven"
     FilterPatkUp -> "FilterPatkUp"
     FilterMatkUp -> "FilterMatkUp"
@@ -529,6 +541,9 @@ instance WriteForeign WeaponEffect where
       Enfeeble rec -> writeRecord rec "Enfeeble"
       Stop rec -> writeRecord rec "Stop"
       ExploitWeakness rec -> writeRecord rec "ExploitWeakness"
+      HPGain rec -> writeRecord rec "HPGain"
+      EnhanceBuffs rec -> writeRecord rec "EnhanceBuffs"
+      EnhanceDebuffs rec -> writeRecord rec "EnhanceDebuffs"
       Enliven rec -> writeRecord rec "Enliven"
     where
     writeRecord :: forall rec. WriteForeign rec => rec -> String -> Foreign
@@ -548,6 +563,9 @@ instance WriteForeign FilterEffectType where
     FilterEnfeeble -> writeImpl "FilterEnfeeble"
     FilterStop -> writeImpl "FilterStop"
     FilterExploitWeakness -> writeImpl "FilterExploitWeakness"
+    FilterHPGain -> writeImpl "FilterHPGain"
+    FilterEnhanceBuffs -> writeImpl "FilterEnhanceBuffs"
+    FilterEnhanceDebuffs -> writeImpl "FilterEnhanceDebuffs"
     FilterEnliven -> writeImpl "FilterEnliven"
     FilterPatkUp -> writeImpl "FilterPatkUp"
     FilterMatkUp -> writeImpl "FilterMatkUp"
@@ -630,6 +648,9 @@ instance ReadForeign WeaponEffect where
         Enfeeble _ -> tryRead Enfeeble recType value "Enfeeble"
         Stop _ -> tryRead Stop recType value "Stop"
         ExploitWeakness _ -> tryRead ExploitWeakness recType value "ExploitWeakness"
+        HPGain _ -> tryRead HPGain recType value "HPGain"
+        EnhanceBuffs _ -> tryRead EnhanceBuffs recType value "EnhanceBuffs"
+        EnhanceDebuffs _ -> tryRead EnhanceDebuffs recType value "EnhanceDebuffs"
         Enliven _ -> tryRead Enliven recType value "Enliven"
         PatkUp _ -> tryRead PatkUp recType value "PatkUp"
         MatkUp _ -> tryRead MatkUp recType value "MatkUp"
@@ -710,6 +731,9 @@ instance ReadForeign FilterEffectType where
         FilterEnfeeble -> tryRead x str "FilterEnfeeble"
         FilterStop -> tryRead x str "FilterStop"
         FilterExploitWeakness -> tryRead x str "FilterExploitWeakness"
+        FilterHPGain -> tryRead x str "FilterHPGain"
+        FilterEnhanceBuffs -> tryRead x str "FilterEnhanceBuffs"
+        FilterEnhanceDebuffs -> tryRead x str "FilterEnhanceDebuffs"
         FilterEnliven -> tryRead x str "FilterEnliven"
         FilterPatkUp -> tryRead x str "FilterPatkUp"
         FilterMatkUp -> tryRead x str "FilterMatkUp"
@@ -798,6 +822,9 @@ instance Display FilterEffectType where
     FilterEnfeeble -> "Enfeeble"
     FilterStop -> "Stop"
     FilterExploitWeakness -> "Exploit Weakness"
+    FilterHPGain -> "HP Gain"
+    FilterEnhanceBuffs -> "Enhance Buffs"
+    FilterEnhanceDebuffs -> "Enhance Debuffs"
     FilterEnliven -> "Enliven"
 
     FilterPatkUp -> "PATK up"
@@ -872,6 +899,9 @@ allFilterEffectTypes =
   , FilterEnfeeble
   , FilterStop
   , FilterExploitWeakness
+  , FilterHPGain
+  , FilterEnhanceBuffs
+  , FilterEnhanceDebuffs
   , FilterEnliven
   , FilterPatkUp
   , FilterMatkUp
@@ -944,6 +974,9 @@ allFilterEffectTypes =
     FilterEnfeeble -> unit
     FilterStop -> unit
     FilterExploitWeakness -> unit
+    FilterHPGain -> unit
+    FilterEnhanceBuffs -> unit
+    FilterEnhanceDebuffs -> unit
     FilterEnliven -> unit
     FilterPatkUp -> unit
     FilterMatkUp -> unit
@@ -1073,6 +1106,9 @@ exhaustiveWeaponEffectMatch =
   , Enfeeble { range, durExt }
   , Stop { range, durExt }
   , ExploitWeakness { range, durExt, percentage }
+  , HPGain { range, durExt, percentage }
+  , EnhanceBuffs { range, durExt, potencies }
+  , EnhanceDebuffs { range, durExt, potencies }
   , Enliven { range, durExt }
   ]
   where
@@ -1146,6 +1182,9 @@ exhaustiveWeaponEffectMatch =
     Enfeeble _ -> unit
     Stop _ -> unit
     ExploitWeakness _ -> unit
+    HPGain _ -> unit
+    EnhanceBuffs _ -> unit
+    EnhanceDebuffs _ -> unit
     -- Unfortunately, there's no way to ensure our returns values are exhaustive
     -- https://alistairb.dev/exhaustive-return-warning/
     --

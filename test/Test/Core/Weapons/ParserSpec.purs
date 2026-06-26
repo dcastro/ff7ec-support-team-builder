@@ -57,6 +57,15 @@ spec =
       "30s Enliven (+10s) [Range: Self]"
         `shouldParse`
           Enliven { range: Self, durExt: { duration: Duration 30, extension: Extension 10 } }
+      "30s 4% HP Gain (+0s) [Range: All Allies]"
+        `shouldParse`
+          HPGain { range: All, durExt: { duration: Duration 30, extension: Extension 0 }, percentage: Percentage 4 }
+      "Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]"
+        `shouldParse`
+          EnhanceBuffs { range: All, durExt: { duration: Duration 0, extension: Extension 10 }, potencies: { base: Low, max: ExtraHigh } }
+      "Enhance Debuffs (+10s) (Low -> High) [Range: All Enemies]"
+        `shouldParse`
+          EnhanceDebuffs { range: All, durExt: { duration: Duration 0, extension: Extension 10 }, potencies: { base: Low, max: High } }
       "150s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]"
         `shouldParse`
           IceWeakness { range: SingleTarget, durExt: { duration: Duration 150, extension: Extension 0 }, percentage: Percentage 50 }

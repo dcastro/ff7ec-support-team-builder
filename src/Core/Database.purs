@@ -139,14 +139,14 @@ getDistinctObs weapon = do
 
   -- Two effects are equivalent if they're the same kind of effect with the same
   -- range and potencies. Duration, extension, and percentages are not considered.
-  -- Crashes if `x` and `y` are different kinds of effect: that would mean a weapon's
-  -- effects aren't listed in the same order at every overboost level.
   areWeaponEffectsEquivalent :: WeaponEffect -> WeaponEffect -> Boolean
   areWeaponEffectsEquivalent x y
-    | tagOf x /= tagOf y = crash unit
+    | tagOf x /= tagOf y =
+        -- INVARIANT: We assume a weapon's effects are always listed in the same order at every overboost level.
+        -- This function crashes if that invariant is violated.
+        -- #(ref:effects-same-order)
+        unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
     | otherwise = rangeOf x == rangeOf y && potenciesOf x == potenciesOf y
-
-  crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
 
 createDbState :: forall m. MonadEffect m => MonadRec m => Array Weapon -> UserState -> m DbState
 createDbState newWeapons existingUserState = do
@@ -536,6 +536,7 @@ groupsForWeapon weapon = do
   groupsForWeapon' :: ZipList (Maybe GroupEntry)
   groupsForWeapon' = ado
     -- INVARIANT: this assumes weapon effects are listed in the same order at all overboost levels.
+    -- @(ref:effects-same-order)
     ob0 <- ZipList $ LazyList.fromFoldable weapon.ob0.effects
     ob1 <- ZipList $ LazyList.fromFoldable weapon.ob1.effects
     ob6 <- ZipList $ LazyList.fromFoldable weapon.ob6.effects
@@ -597,8 +598,7 @@ groupsForWeapon weapon = do
   -- Only the `effectType` is determined from the OB0 effect.
   --
   -- This assumes effects are listed in the same order at all overboost levels.
-  -- That invariant is enforced by `getDistinctObs` (via `areWeaponEffectsEquivalent`),
-  -- which runs for every weapon and crashes on a mismatch.
+  -- That invariant is enforced here: @(ref:effects-same-order)
   groupForWeaponEffect ob0 ob1 ob6 ob10 =
     effectTypeOf <#> \effectType ->
       { effectType

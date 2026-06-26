@@ -163,7 +163,6 @@ data EffectTypeAndPotencies
   | EnhanceBuffs' Potencies
   | EnhanceDebuffs' Potencies
 
-
 derive instance Eq EffectTypeAndPotencies
 
 getPotencies :: WeaponEffect -> Maybe EffectTypeAndPotencies
@@ -225,7 +224,7 @@ getPotencies = case _ of
   Enliven {} -> Nothing
   HPGain {} -> Nothing
   EnhanceBuffs { potencies } -> Just $ EnhanceBuffs' potencies
-  EnhanceDebuffs { potencies } -> Just $ EnhanceBuffs' potencies
+  EnhanceDebuffs { potencies } -> Just $ EnhanceDebuffs' potencies
   FireWeakness {} -> Nothing
   IceWeakness {} -> Nothing
   LightningWeakness {} -> Nothing

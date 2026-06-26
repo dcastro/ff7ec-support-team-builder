@@ -253,9 +253,11 @@ getDistinctObs weapon = do
       EnhanceBuffs { range: range1, durExt: _, potencies: pot1 } ->
         case y of
           EnhanceBuffs { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
       EnhanceDebuffs { range: range1, durExt: _, potencies: pot1 } ->
         case y of
           EnhanceDebuffs { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+          _ -> crash unit
       Enliven { range: range1, durExt: _ } ->
         case y of
           Enliven { range: range2, durExt: _ } -> range1 == range2
@@ -651,6 +653,7 @@ groupsForWeapon weapon = do
       Stop { range } -> Just { effectType: FilterStop, range: Just range, potencies: Nothing }
       ExploitWeakness { range } -> Just { effectType: FilterExploitWeakness, range: Just range, potencies: Nothing }
       Enliven { range } -> Just { effectType: FilterEnliven, range: Just range, potencies: Nothing }
+      HPGain { range } -> Just { effectType: FilterHPGain, range: Just range, potencies: Nothing }
 
       FireWeakness { range } -> Just { effectType: FilterFireWeakness, range: Just range, potencies: Nothing }
       IceWeakness { range } -> Just { effectType: FilterIceWeakness, range: Just range, potencies: Nothing }
@@ -726,6 +729,9 @@ groupsForWeapon weapon = do
       WindResistUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
         WindResistUp ob1, WindResistUp ob6, WindResistUp ob10 -> Just { effectType: FilterWindResistUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
+      EnhanceBuffs { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        EnhanceBuffs ob1, EnhanceBuffs ob6, EnhanceBuffs ob10 -> Just { effectType: FilterEnhanceBuffs, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
       PatkDown { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
         PatkDown ob1, PatkDown ob6, PatkDown ob10 -> Just { effectType: FilterPatkDown, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
@@ -773,6 +779,9 @@ groupsForWeapon weapon = do
         _, _, _ -> crash unit
       WindResistDown { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
         WindResistDown ob1, WindResistDown ob6, WindResistDown ob10 -> Just { effectType: FilterWindResistDown, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
+        _, _, _ -> crash unit
+      EnhanceDebuffs { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
+        EnhanceDebuffs ob1, EnhanceDebuffs ob6, EnhanceDebuffs ob10 -> Just { effectType: FilterEnhanceDebuffs, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
         _, _, _ -> crash unit
 
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"

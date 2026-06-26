@@ -517,6 +517,75 @@ type GroupEntry =
   , groupedWeapon :: GroupedWeapon
   }
 
+-- The range of an effect. Every `WeaponEffect` constructor carries a `range` field;
+-- this extracts it without caring which constructor it is.
+rangeOf :: WeaponEffect -> Range
+rangeOf = case _ of
+  Heal r -> r.range
+  PatkUp r -> r.range
+  MatkUp r -> r.range
+  PdefUp r -> r.range
+  MdefUp r -> r.range
+  HPGain r -> r.range
+  EnhanceBuffs r -> r.range
+  PhysicalWeaponBoost r -> r.range
+  MagicWeaponBoost r -> r.range
+  PhysicalDamageBonus r -> r.range
+  MagicDamageBonus r -> r.range
+  FireDamageUp r -> r.range
+  IceDamageUp r -> r.range
+  LightningDamageUp r -> r.range
+  EarthDamageUp r -> r.range
+  WaterDamageUp r -> r.range
+  WindDamageUp r -> r.range
+  FireWeaponBoost r -> r.range
+  IceWeaponBoost r -> r.range
+  LightningWeaponBoost r -> r.range
+  EarthWeaponBoost r -> r.range
+  WaterWeaponBoost r -> r.range
+  WindWeaponBoost r -> r.range
+  FireDamageBonus r -> r.range
+  IceDamageBonus r -> r.range
+  LightningDamageBonus r -> r.range
+  EarthDamageBonus r -> r.range
+  WaterDamageBonus r -> r.range
+  WindDamageBonus r -> r.range
+  FireResistUp r -> r.range
+  IceResistUp r -> r.range
+  LightningResistUp r -> r.range
+  EarthResistUp r -> r.range
+  WaterResistUp r -> r.range
+  WindResistUp r -> r.range
+  Veil r -> r.range
+  Provoke r -> r.range
+  PatkDown r -> r.range
+  MatkDown r -> r.range
+  PdefDown r -> r.range
+  MdefDown r -> r.range
+  FireDamageDown r -> r.range
+  IceDamageDown r -> r.range
+  LightningDamageDown r -> r.range
+  EarthDamageDown r -> r.range
+  WaterDamageDown r -> r.range
+  WindDamageDown r -> r.range
+  FireResistDown r -> r.range
+  IceResistDown r -> r.range
+  LightningResistDown r -> r.range
+  EarthResistDown r -> r.range
+  WaterResistDown r -> r.range
+  WindResistDown r -> r.range
+  FireWeakness r -> r.range
+  IceWeakness r -> r.range
+  LightningWeakness r -> r.range
+  EarthWeakness r -> r.range
+  WaterWeakness r -> r.range
+  WindWeakness r -> r.range
+  Enfeeble r -> r.range
+  Stop r -> r.range
+  ExploitWeakness r -> r.range
+  EnhanceDebuffs r -> r.range
+  Enliven r -> r.range
+
 groupsForWeapon :: Weapon -> List.List GroupEntry
 groupsForWeapon weapon = do
   mergeRanges $ Arr.fold
@@ -526,6 +595,7 @@ groupsForWeapon weapon = do
     , getSigilBoost
     ]
   where
+  -- Check if the weapon has a Cure All S-Ability.
   -- #(ref:use-cure-spell)
   getCureAllAbility :: LazyList.List GroupEntry
   getCureAllAbility = do
@@ -536,7 +606,7 @@ groupsForWeapon weapon = do
         , groupedWeapon:
             { weaponName: weapon.name
             , ranges: Just
-                [ { range: All
+                [ { allRanges: { ob0: All, ob1: All, ob6: All, ob10: All }
                   , allPotencies: Nothing
                   }
                 ]
@@ -545,6 +615,7 @@ groupsForWeapon weapon = do
     else
       LazyList.nil
 
+  -- Check if the weapon has a C. Ability Diamond Sigil.
   getCommandAbilityDiamondSigil :: LazyList.List GroupEntry
   getCommandAbilityDiamondSigil =
     case weapon.commandAbilitySigil of
@@ -557,6 +628,7 @@ groupsForWeapon weapon = do
         }
       _ -> LazyList.nil
 
+  -- Check if the weapon has a Sigil Boost S. Ability.
   -- #(ref:use-sigil-boosts)
   getSigilBoost :: LazyList.List GroupEntry
   getSigilBoost =
@@ -584,27 +656,20 @@ groupsForWeapon weapon = do
     ob6 <- ZipList $ LazyList.fromFoldable weapon.ob6.effects
     ob10 <- ZipList $ LazyList.fromFoldable weapon.ob10.effects
     in
-      groupForWeaponEffect ob0 ob1 ob6 ob10 <#> \{ effectType, potencies, range } -> do
-        let
-          ranges =
-            case range of
-              Just range ->
-                Just
-                  [ { range
-                    , allPotencies: potencies
-                    }
-                  ]
-              Nothing -> Nothing
-
+      groupForWeaponEffect ob0 ob1 ob6 ob10 <#> \{ effectType, potencies, allRanges } ->
         { effectType
         , groupedWeapon:
             { weaponName: weapon.name
-            , ranges
+            , ranges: Just
+                [ { allRanges
+                  , allPotencies: potencies
+                  }
+                ]
             }
         }
 
   -- If there are many ranges for the same effect (e.g. Arctic Star has PATK Up SingleTarget & PATK Up Self),
-  -- this function will merge those `GroupEntry`s into a single one.
+  -- this function will merge those `GroupEntry`s (with one `GroupedWeaponRange` each) into a single one (with many `GroupedWeaponRange`s).
   mergeRanges :: LazyList.List GroupEntry -> List.List GroupEntry
   mergeRanges groupEntries = do
     let
@@ -631,8 +696,6 @@ groupsForWeapon weapon = do
           groupEntries
     Map.values merged
 
-  -- INVARIANT: this function assumes an effect has the same range at all overboost levels,
-  -- so it just returns the range for the effect at OB0.
   groupForWeaponEffect
     :: WeaponEffect
     -> WeaponEffect
@@ -641,10 +704,20 @@ groupsForWeapon weapon = do
     -> Maybe
          { effectType :: FilterEffectType
          , potencies :: Maybe AllPotencies
-         , range :: Maybe Range
+         , allRanges :: AllRanges
          }
-  groupForWeaponEffect ob0 ob1 ob6 ob10 = do
-    case ob0 of
+  -- NOTE: an effect can have a different range at each overboost level
+  -- (e.g. Festive Sword's Enliven is `Self` at OB0/OB1 and `All` at OB6/OB10),
+  -- so we record the range at every level via `rangeOf`.
+  -- The `effectType`/`potencies` are still determined from the OB0 effect.
+  groupForWeaponEffect ob0 ob1 ob6 ob10 =
+    inner <#> \{ effectType, potencies } ->
+      { effectType
+      , potencies
+      , allRanges: { ob0: rangeOf ob0, ob1: rangeOf ob1, ob6: rangeOf ob6, ob10: rangeOf ob10 }
+      }
+    where
+    inner = case ob0 of
       Heal { range, percentage } ->
         if unwrap percentage >= 30 then Just { effectType: FilterHeal, range: Just range, potencies: Nothing }
         else Nothing

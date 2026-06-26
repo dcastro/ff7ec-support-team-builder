@@ -3712,6 +3712,14 @@
             "range": "Self"
           }
         ]
+      },
+      {
+        "weaponName": "Surfer Blade",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
       }
     ]
   ],
@@ -5014,6 +5022,14 @@
         "ranges": [
           {
             "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Shining Gloves",
+        "ranges": [
+          {
+            "range": "SingleTarget"
           }
         ]
       },
@@ -10719,6 +10735,9 @@
       },
       {
         "weaponName": "Sword of the Hunt"
+      },
+      {
+        "weaponName": "Wheel Edge"
       },
       {
         "weaponName": "Zenithian Sword"

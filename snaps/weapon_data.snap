@@ -3473,6 +3473,16 @@
     }
   ],
   [
+    "Wheel Edge",
+    {
+      "ownedOb": "OB0-10",
+      "ignored": false,
+      "distinctObs": [
+        "OB0-10"
+      ]
+    }
+  ],
+  [
     "White Dog",
     {
       "ownedOb": "OB0-10",

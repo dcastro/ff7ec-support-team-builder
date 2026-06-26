@@ -46,14 +46,14 @@ bench:
 
 test:
     npm run ts
-    spago test
     just check-effects
+    spago test
 
 # Usage: just test-filter "MyTest"
 test-filter filter:
     npm run ts
-    spago test -- --example "{{ filter }}"
     just check-effects
+    spago test -- --example "{{ filter }}"
 
 format:
     purs-tidy format-in-place "src/**/*.purs" "test/**/*.purs"

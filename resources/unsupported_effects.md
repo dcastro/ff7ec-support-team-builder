@@ -1,5 +1,5 @@
 <!-- LTEX: enabled=false -->
-Found 16 unsupported effect type(s).
+Found 17 unsupported effect type(s).
 
 # Table of Contents
 
@@ -18,6 +18,7 @@ Found 16 unsupported effect type(s).
 * [Ns N% Single Target Ice Damage Received Up](#ns-n-single-target-ice-damage-received-up)
 * [Ns N% Single Target Mag. Damage Received Up](#ns-n-single-target-mag-damage-received-up)
 * [Ns N% Single Target Phys. Damage Received Up](#ns-n-single-target-phys-damage-received-up)
+* [Ns N% Single Target Water Damage Received Up](#ns-n-single-target-water-damage-received-up)
 * [Ns N.N% Ice ATB Conservation Effect](#ns-nn-ice-atb-conservation-effect)
 * [Won't support](#wont-support)
 
@@ -245,6 +246,18 @@ Found 16 unsupported effect type(s).
   * `40s 25% Single Target Phys. Damage Received Up (+13s) [Range: All Enemies]`
   * `50s 40% Single Target Phys. Damage Received Up (+16s) [Range: All Enemies]`
   * `60s 50% Single Target Phys. Damage Received Up (+20s) [Range: All Enemies]`
+
+---
+
+# Ns N% Single Target Water Damage Received Up
+
+[↑ Back to top](#table-of-contents)
+
+* **Zack - Wheel Edge**
+  * `30s 25% Single Target Water Damage Received Up (+10s) [Range: Single Enemy]`
+  * `40s 25% Single Target Water Damage Received Up (+13s) [Range: Single Enemy]`
+  * `50s 40% Single Target Water Damage Received Up (+16s) [Range: Single Enemy]`
+  * `60s 50% Single Target Water Damage Received Up (+20s) [Range: Single Enemy]`
 
 ---
 

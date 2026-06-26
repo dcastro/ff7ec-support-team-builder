@@ -2236,6 +2236,7 @@
         "slot1": "Boost HEAL"
       },
       "ob6": {
+        "spadeCustomDescription": "+20% Stance Gauge",
         "effects": [
           {
             "value": {
@@ -2276,6 +2277,7 @@
         "description": "Pink Aura+ (4 ATB)\n20s PATK Up (+6s) (Mid) [Range: All Allies]\n7% Heal [Range: All Allies]\n20s Thunder Damage Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 70-100% HP]"
       },
       "ob10": {
+        "spadeCustomDescription": "+20% Stance Gauge",
         "effects": [
           {
             "value": {
@@ -2316,6 +2318,7 @@
         "description": "Pink Aura++ (4 ATB)\n25s PATK Up (+8s) (Mid -> High) [Range: All Allies]\n7% Heal [Range: All Allies]\n25s Thunder Damage Up (+8s) (Mid -> High) [Range: All Allies]"
       },
       "ob1": {
+        "spadeCustomDescription": "+10% Stance Gauge",
         "effects": [
           {
             "value": {
@@ -2356,6 +2359,7 @@
         "description": "Pink Aura (4 ATB)\n20s PATK Up (+6s) (Low) [Range: All Allies]\n6% Heal [Range: All Allies]\n20s Thunder Damage Up (+6s) (Low) [Range: All Allies] [Condition: Self 70-100% HP]"
       },
       "ob0": {
+        "spadeCustomDescription": "+10% Stance Gauge",
         "effects": [
           {
             "value": {
@@ -2397,6 +2401,7 @@
       },
       "name": "Mermaid Rod",
       "image": "https://i.imgur.com/sES4i7f.png",
+      "diamondCustomDescription": "Ultimate Lightning Interruption (All Allies)",
       "character": "Aerith",
       "atbCost": 4
     },
@@ -5310,6 +5315,7 @@
       },
       "name": "Inflatable Buster Sword",
       "image": "https://i.imgur.com/1RT4kI8.png",
+      "diamondCustomDescription": "Stream Phase Phys. Resist. Boost",
       "character": "Angeal",
       "atbCost": 4
     },
@@ -20930,7 +20936,7 @@
       },
       "ob0": {
         "effects": [],
-        "description": "Parading Shot (4 ATB)\r\n330% Phys. Non-elem. Damage [Range: Single Enemy]\r\n+20% Stance Gauge\r\n10% Crit Rate [Range: Single Enemy]"
+        "description": "Parading Shot (4 ATB)\n330% Phys. Non-elem. Damage [Range: Single Enemy]\n+20% Stance Gauge\n10% Crit Rate [Range: Single Enemy]"
       },
       "name": "Rubber Band Gun",
       "image": "https://i.imgur.com/Tl40n2s.png",
@@ -33477,6 +33483,7 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
+        "spadeCustomDescription": "25s Enfeeble (+8s) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -33505,11 +33512,22 @@
               }
             },
             "type": "MatkDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "Enfeeble"
           }
         ],
         "description": "Hydrospike+ (4 ATB)\n940% Phys. Water Damage [Range: Single Enemy]\n25s PATK Down (+8s) (Mid) [Range: Single Enemy]\n25s MATK Down (+8s) (Mid) [Range: Single Enemy] [Condition: Self 70-100% HP]"
       },
       "ob10": {
+        "spadeCustomDescription": "30s Enfeeble (+10s) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -33538,11 +33556,22 @@
               }
             },
             "type": "MatkDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "Enfeeble"
           }
         ],
         "description": "Hydrospike++ (4 ATB)\n1120% Phys. Water Damage [Range: Single Enemy]\n30s PATK Down (+10s) (Mid -> High) [Range: Single Enemy]\n30s MATK Down (+10s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]"
       },
       "ob1": {
+        "spadeCustomDescription": "25s Enfeeble (+8s) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -33571,11 +33600,22 @@
               }
             },
             "type": "MatkDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "Enfeeble"
           }
         ],
         "description": "Hydrospike (4 ATB)\n720% Phys. Water Damage [Range: Single Enemy]\n25s PATK Down (+8s) (Low -> Mid) [Range: Single Enemy]\n25s MATK Down (+8s) (Low -> Mid) [Range: Single Enemy] [Condition: Self 70-100% HP]"
       },
       "ob0": {
+        "spadeCustomDescription": "20s Enfeeble (+6s) [Range: Single Enemy]",
         "effects": [
           {
             "value": {
@@ -33604,12 +33644,23 @@
               }
             },
             "type": "MatkDown"
+          },
+          {
+            "value": {
+              "range": "SingleTarget",
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "Enfeeble"
           }
         ],
         "description": "Hydrospike (4 ATB)\n600% Phys. Water Damage [Range: Single Enemy]\n20s PATK Down (+6s) (Low -> Mid) [Range: Single Enemy]\n20s MATK Down (+6s) (Low -> Mid) [Range: Single Enemy] [Condition: Self 70-100% HP]"
       },
       "name": "Shining Gloves",
       "image": "https://i.imgur.com/U7Hv3Jm.png",
+      "diamondCustomDescription": "Ultimate Water Interruption (All Allies)",
       "character": "Tifa",
       "atbCost": 4
     },
@@ -40712,6 +40763,7 @@
         "slot1": "Boost PATK"
       },
       "ob6": {
+        "spadeCustomDescription": "30s 30% Physical Weapon Boost (+10s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -40740,11 +40792,23 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 30,
+              "durExt": {
+                "extension": 10,
+                "duration": 30
+              }
+            },
+            "type": "PhysicalWeaponBoost"
           }
         ],
         "description": "Off the Rip+ (4 ATB)\n640% Phys. Non-elem. Damage [Range: All Enemies]\n30s PDEF Down (+10s) (High) [Range: All Enemies]\n30s PATK Up (+10s) (High) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob10": {
+        "spadeCustomDescription": "40s 35% Physical Weapon Boost (+13s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -40773,11 +40837,23 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 35,
+              "durExt": {
+                "extension": 13,
+                "duration": 40
+              }
+            },
+            "type": "PhysicalWeaponBoost"
           }
         ],
         "description": "Off the Rip++ (4 ATB)\n740% Phys. Non-elem. Damage [Range: All Enemies]\n40s PDEF Down (+13s) (High) [Range: All Enemies]\n40s PATK Up (+13s) (High) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob1": {
+        "spadeCustomDescription": "25s 25% Physical Weapon Boost (+8s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -40806,11 +40882,23 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 8,
+                "duration": 25
+              }
+            },
+            "type": "PhysicalWeaponBoost"
           }
         ],
         "description": "Off the Rip (4 ATB)\n530% Phys. Non-elem. Damage [Range: All Enemies]\n25s PDEF Down (+8s) (Low -> Mid) [Range: All Enemies]\n25s PATK Up (+8s) (Low -> Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
       },
       "ob0": {
+        "spadeCustomDescription": "20s 25% Physical Weapon Boost (+6s) [Range: All Allies]",
         "effects": [
           {
             "value": {
@@ -40839,12 +40927,24 @@
               }
             },
             "type": "PatkUp"
+          },
+          {
+            "value": {
+              "range": "All",
+              "percentage": 25,
+              "durExt": {
+                "extension": 6,
+                "duration": 20
+              }
+            },
+            "type": "PhysicalWeaponBoost"
           }
         ],
         "description": "Off the Rip (4 ATB)\n460% Phys. Non-elem. Damage [Range: All Enemies]\n20s PDEF Down (+6s) (Low -> Mid) [Range: All Enemies]\n20s PATK Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 70-100% HP]\n10% Crit Rate [Range: All Enemies]"
       },
       "name": "Surfer Blade",
       "image": "https://i.imgur.com/YvIwU1r.png",
+      "diamondCustomDescription": "Ultimate Physical Interruption (All Allies)",
       "character": "Zack",
       "atbCost": 4
     },
@@ -41198,6 +41298,43 @@
       },
       "name": "Virtuous Contract",
       "image": "https://i.imgur.com/j9910f2.png",
+      "character": "Zack",
+      "atbCost": 4
+    },
+    {
+      "source": "Gacha (Non-Limited)",
+      "sAbilities": {
+        "slot3": "✖ Sigil Boost I",
+        "slot2": "PATK Boost I",
+        "slot1": "PATK Boost I"
+      },
+      "rAbilities": {
+        "slot2": "Boost Water Pot.",
+        "slot1": "Boost PATK"
+      },
+      "ob6": {
+        "heartCustomDescription": "1350% Phys. Water Damage [Range: Single Enemy]",
+        "effects": [],
+        "description": "Hydrocleave+ (4 ATB)\n1080% Phys. Water Damage [Range: Single Enemy]\n50s 40% Single Target Water Damage Received Up (+16s) [Range: Single Enemy]"
+      },
+      "ob10": {
+        "heartCustomDescription": "1680% Phys. Water Damage [Range: Single Enemy]",
+        "effects": [],
+        "description": "Hydrocleave++ (4 ATB)\n1340% Phys. Water Damage [Range: Single Enemy]\n60s 50% Single Target Water Damage Received Up (+20s) [Range: Single Enemy]"
+      },
+      "ob1": {
+        "heartCustomDescription": "900% Phys. Water Damage [Range: Single Enemy]",
+        "effects": [],
+        "description": "Hydrocleave (4 ATB)\n720% Phys. Water Damage [Range: Single Enemy]\n40s 25% Single Target Water Damage Received Up (+13s) [Range: Single Enemy]"
+      },
+      "ob0": {
+        "heartCustomDescription": "750% Phys. Water Damage [Range: Single Enemy]",
+        "effects": [],
+        "description": "Hydrocleave (4 ATB)\n600% Phys. Water Damage [Range: Single Enemy]\n30s 25% Single Target Water Damage Received Up (+10s) [Range: Single Enemy]"
+      },
+      "name": "Wheel Edge",
+      "image": "https://i.imgur.com/nmKv5Lo.png",
+      "diamondCustomDescription": "Ultimate Water Interruption (All Allies)",
       "character": "Zack",
       "atbCost": 4
     },

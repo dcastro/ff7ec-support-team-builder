@@ -3467,6 +3467,218 @@
     ]
   ],
   [
+    "FilterHPGain",
+    [
+      {
+        "weaponName": "Grinding Gear",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Stream Saber",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Umbralschwert",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Pirate's Glaive",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Killer Falcon",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Cerulean Sky",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Overture",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Muramasa",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      },
+      {
+        "weaponName": "Feathered Gloves",
+        "ranges": [
+          {
+            "range": "All"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterEnhanceBuffs",
+    [
+      {
+        "weaponName": "Mystic Sword",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "High",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "High",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Infiltration Sword",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "High",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "High",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Leather Combat Gloves",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "High",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "High",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Shortbarrel",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "High",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "High",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Heirloom Brush",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "High",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "High",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  [
     "FilterPhysicalWeaponBoost",
     [
       {
@@ -4956,6 +5168,63 @@
         "ranges": [
           {
             "range": "Self"
+          }
+        ]
+      }
+    ]
+  ],
+  [
+    "FilterEnhanceDebuffs",
+    [
+      {
+        "weaponName": "Physician's Scalpel",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "High",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "High",
+                "base": "Low"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "weaponName": "Chrome Death Penalty",
+        "ranges": [
+          {
+            "range": "All",
+            "allPotencies": {
+              "ob6": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob10": {
+                "max": "ExtraHigh",
+                "base": "Low"
+              },
+              "ob1": {
+                "max": "High",
+                "base": "Low"
+              },
+              "ob0": {
+                "max": "High",
+                "base": "Low"
+              }
+            }
           }
         ]
       }

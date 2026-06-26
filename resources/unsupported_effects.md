@@ -1,20 +1,17 @@
 <!-- LTEX: enabled=false -->
-Found 19 unsupported effect type(s).
+Found 16 unsupported effect type(s).
 
 # Table of Contents
 
 * [+N Costume C. Ability Uses](#n-costume-c-ability-uses)
 * [+N Gear C. Ability Uses](#n-gear-c-ability-uses)
 * [-N% Summon Gauge](#-n-summon-gauge)
-* [Enhance Buffs](#enhance-buffs)
-* [Enhance Debuffs](#enhance-debuffs)
 * [Ns -N ATB Ice Weapon/Gear C. Ability Cost](#ns--n-atb-ice-weapongear-c-ability-cost)
 * [Ns -N ATB Mag. Weapon/Gear C. Ability Cost](#ns--n-atb-mag-weapongear-c-ability-cost)
 * [Ns -N ATB Phys. Weapon/Gear C. Ability Cost](#ns--n-atb-phys-weapongear-c-ability-cost)
 * [Ns Haste](#ns-haste)
 * [Ns N% Amp. Earth Abilities](#ns-n-amp-earth-abilities)
 * [Ns N% Amp. Phys. Abilities](#ns-n-amp-phys-abilities)
-* [Ns N% HP Gain](#ns-n-hp-gain)
 * [Ns N% Mag. Single Target Dmg. Received Up](#ns-n-mag-single-target-dmg-received-up)
 * [Ns N% Phys. Single Target Dmg. Received Up](#ns-n-phys-single-target-dmg-received-up)
 * [Ns N% PhysicalSingleVulnerable](#ns-n-physicalsinglevulnerable)
@@ -75,41 +72,6 @@ Found 19 unsupported effect type(s).
 
 * **Aerith - Supreme Sage's Staff**
   * `-100% Summon Gauge [Range: Self]`
-
----
-
-# Enhance Buffs
-
-[↑ Back to top](#table-of-contents)
-
-* **Cloud - Mystic Sword**
-  * `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`
-  * `Enhance Buffs (+10s) (Low -> High) [Range: All Allies]`
-* **Sephiroth - Infiltration Sword**
-  * `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`
-  * `Enhance Buffs (+10s) (Low -> High) [Range: All Allies]`
-* **Tifa - Leather Combat Gloves**
-  * `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`
-  * `Enhance Buffs (+10s) (Low -> High) [Range: All Allies]`
-* **Vincent - Shortbarrel**
-  * `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`
-  * `Enhance Buffs (+10s) (Low -> High) [Range: All Allies]`
-* **Yuffie - Heirloom Brush**
-  * `Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]`
-  * `Enhance Buffs (+10s) (Low -> High) [Range: All Allies]`
-
----
-
-# Enhance Debuffs
-
-[↑ Back to top](#table-of-contents)
-
-* **Matt - Physician's Scalpel**
-  * `Enhance Debuffs (+10s) (Low -> Extra High) [Range: All Enemies]`
-  * `Enhance Debuffs (+10s) (Low -> High) [Range: All Enemies]`
-* **Vincent - Chrome Death Penalty**
-  * `Enhance Debuffs (+10s) (Low -> Extra High) [Range: All Enemies]`
-  * `Enhance Debuffs (+10s) (Low -> High) [Range: All Enemies]`
 
 ---
 
@@ -206,58 +168,6 @@ Found 19 unsupported effect type(s).
   * `40s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
   * `50s 20% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
   * `60s 30% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
-
----
-
-# Ns N% HP Gain
-
-[↑ Back to top](#table-of-contents)
-
-* **Cid - Grinding Gear**
-  * `30s 4% HP Gain (+0s) [Range: All Allies]`
-  * `30s 5% HP Gain (+0s) [Range: All Allies]`
-  * `30s 6% HP Gain (+0s) [Range: All Allies]`
-  * `30s 8% HP Gain (+0s) [Range: All Allies]`
-* **Cloud - Stream Saber**
-  * `30s 4% HP Gain (+0s) [Range: All Allies]`
-  * `30s 5% HP Gain (+0s) [Range: All Allies]`
-  * `30s 6% HP Gain (+0s) [Range: All Allies]`
-  * `30s 8% HP Gain (+0s) [Range: All Allies]`
-* **Cloud - Umbralschwert**
-  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-* **Glenn - Pirate's Glaive**
-  * `30s 4% HP Gain (+0s) [Range: All Allies]`
-  * `30s 5% HP Gain (+0s) [Range: All Allies]`
-  * `30s 6% HP Gain (+0s) [Range: All Allies]`
-  * `30s 8% HP Gain (+0s) [Range: All Allies]`
-* **Lucia - Killer Falcon**
-  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-* **Sephiroth (Orig.) - Muramasa**
-  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-* **Sephiroth - Cerulean Sky**
-  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-* **Sephiroth - Overture**
-  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-* **Tifa - Feathered Gloves**
-  * `60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
-  * `60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]`
 
 ---
 

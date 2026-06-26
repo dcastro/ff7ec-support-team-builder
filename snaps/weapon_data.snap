@@ -469,10 +469,11 @@
   [
     "Chrome Death Penalty",
     {
-      "ownedOb": "OB0-10",
+      "ownedOb": "OB6-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-10"
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -1333,10 +1334,11 @@
   [
     "Heirloom Brush",
     {
-      "ownedOb": "OB0-10",
+      "ownedOb": "OB6-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-10"
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],
@@ -1670,10 +1672,11 @@
   [
     "Leather Combat Gloves",
     {
-      "ownedOb": "OB0-10",
+      "ownedOb": "OB6-10",
       "ignored": false,
       "distinctObs": [
-        "OB0-10"
+        "OB0-5",
+        "OB6-10"
       ]
     }
   ],

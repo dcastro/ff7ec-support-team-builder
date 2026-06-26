@@ -406,8 +406,10 @@ hasPotencies = case _ of
     FilterEnfeeble -> false
     FilterStop -> false
     FilterExploitWeakness -> false
+    FilterHPGain -> false
+    FilterEnhanceBuffs -> true
+    FilterEnhanceDebuffs -> true
     FilterEnliven -> false
-
     FilterPatkUp -> true
     FilterMatkUp -> true
     FilterPdefUp -> true
@@ -480,6 +482,9 @@ hasRange = case _ of
     FilterEnfeeble -> true
     FilterStop -> true
     FilterExploitWeakness -> true
+    FilterHPGain -> true
+    FilterEnhanceBuffs -> true
+    FilterEnhanceDebuffs -> true
     FilterEnliven -> true
 
     FilterPatkUp -> true

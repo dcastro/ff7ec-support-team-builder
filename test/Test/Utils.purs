@@ -29,6 +29,7 @@ import Node.Path (FilePath)
 import Node.Path as Path
 import Parsing (runParser)
 import Test.Spec.Assertions (fail, shouldEqual)
+import Test.Yaml (writePrettyYAML)
 import Type.Proxy (Proxy(..))
 import Utils (SetAsArray(..))
 import Utils as Utils
@@ -67,28 +68,28 @@ shouldParse' parser input expectedOutput = case runParser input parser of
 
 goldenTest :: forall a. WriteForeign a => FilePath -> a -> Aff Unit
 goldenTest expectedFilePath value = do
-  -- Serialize the actual value
+  -- Serialize the actual value to YAML (the trailing newline is included by the serializer)
   let
-    actualJson = J.writePrettyJSON 2 value
+    actualYaml = writePrettyYAML value
   -- Check if a snapshot file already exists
   liftEffect (NodeSync.exists expectedFilePath)
     >>= case _ of
       true -> pure unit
       false -> do
         Console.log $ "Snapshot file '" <> expectedFilePath <> "' does not yet exist; creating it..."
-        overwriteSnapshotFile actualJson
-  result <- shouldEqualFile actualJson expectedFilePath
+        overwriteSnapshotFile actualYaml
+  result <- shouldEqualFile actualYaml expectedFilePath
   when (result.exitCode /= Just 0) do
     -- The snapshot file did not match the expected string.
     -- Update the snapshot file and fail the test.
-    overwriteSnapshotFile actualJson
+    overwriteSnapshotFile actualYaml
     fail result.stdout
   where
-  overwriteSnapshotFile actualJson = do
+  overwriteSnapshotFile actualYaml = do
     -- Create the parent directory if need be
     let dir = Path.dirname expectedFilePath
     mkDirRecursive dir
-    Node.writeTextFile Node.UTF8 expectedFilePath (actualJson <> "\n")
+    Node.writeTextFile Node.UTF8 expectedFilePath actualYaml
 
 -- | Adapted from: https://github.com/jordanmartinez/purescript-spec-golden/blob/v1.0.0/src/Test/Spec/Golden/Assertions.purs#L29-L36
 shouldEqualFile :: String -> FilePath -> Aff ExecaResult

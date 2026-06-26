@@ -1,7184 +1,3590 @@
-[
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Hardedge",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Hardedge",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Hardedge",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Hardedge",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Hardedge",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crystal Sword",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Surfer Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Infiltration Sword",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Northern Lights",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Shinra Blade: Model I",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Junk Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Leather Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Pandemonic Sword",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Cerulean Sky",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Cerulean Sky",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Overture"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Overture"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Junk Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Lightning's Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Junk Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Lifeguard Wraps"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Lifeguard Wraps",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Surfer Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Marching Horn"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Quina Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Chevron Blade",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Desperado Glaive",
-        "Pumpkin Lamppost"
-      ],
-      "character": "Glenn"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Pumpkin Lamppost",
-        "Rest in Peace"
-      ],
-      "character": "Glenn"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Bramble Spine",
-        "Slick Beetle"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Demon's Impetus",
-        "Leather Gloves"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Arctic Star",
-        "Fatum Ex Machina"
-      ],
-      "character": "Yuffie"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Cerulean Sky",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Cerulean Sky",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Cerulean Sky",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Overture"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Overture"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Overture"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Bahamut Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Egg Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Fairy Tale",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Festive Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gorgeous Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Lightning's Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Snowflake",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Supreme Sage's Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Terra's Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Microlaser",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Brilliant Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Headphones",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Pilot's Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Pirate Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Lifeguard Wraps"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Leather Gloves"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Stalwart Integrity",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Electrocannon",
-        "Max Ray"
-      ],
-      "character": "Barret"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Cool Cat's Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Patissier's Spear",
-        "Scimitar"
-      ],
-      "character": "Cid"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Deroplatys",
-        "Slick Beetle"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Desperado Rapier",
-        "Slick Beetle"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Immaculate Blade",
-        "Infiltration Sword"
-      ],
-      "character": "Sephiroth"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Immaculate Blade",
-        "Northern Lights"
-      ],
-      "character": "Sephiroth"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Immaculate Blade",
-        "Shinra Blade: Model I"
-      ],
-      "character": "Sephiroth"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Demon's Impetus",
-        "Lightning's Gloves"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Demon's Impetus",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Arctic Star",
-        "Watch of the Hunt"
-      ],
-      "character": "Yuffie"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crystal Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Lightning's Gloves"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Pole Axe",
-        "Scimitar"
-      ],
-      "character": "Cid"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Immaculate Blade",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Immaculate Blade",
-        "Pandemonic Sword"
-      ],
-      "character": "Sephiroth"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Silver Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Silver Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Glavenus Sword",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Glavenus Sword",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Hardedge",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Chevron Blade",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Chevron Blade",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Greatsword (A)",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Greatsword (A)",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "W Machine"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "W Machine"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Silver Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Silver Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Silver Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Glavenus Sword",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Glavenus Sword",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Glavenus Sword",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Hardedge",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Hardedge",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Sleek Saber"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Sleek Saber"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Chevron Blade",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    },
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Chevron Blade",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Mermaid Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Demon's Impetus",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Demon's Impetus",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Greatsword (A)",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Greatsword (A)",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Greatsword (A)",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "W Machine"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "W Machine"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "W Machine"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Sleek Saber"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Sleek Saber"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Sleek Saber"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Demon's Impetus",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Chevron Blade",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Radiant Edge"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Radiant Edge"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Tiger Fangs"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Lifeguard Wraps"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Noblesse Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Electrocannon",
-        "Microlaser"
-      ],
-      "character": "Barret"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Surfer Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Silver Collar",
-        "Steward Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Lightning's Sword",
-        "Mythril Slasher"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Green Megaphone",
-        "Spirit Demon Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Iron Blade",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Desperado Glaive",
-        "Revenant Mother's Glaive"
-      ],
-      "character": "Glenn"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rest in Peace",
-        "Revenant Mother's Glaive"
-      ],
-      "character": "Glenn"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Umbralschwert"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Demon's Impetus",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Mermaid Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Pole Axe",
-        "Scimitar"
-      ],
-      "character": "Cid"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Immaculate Blade",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Pole Axe",
-        "Scimitar"
-      ],
-      "character": "Cid"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Immaculate Blade",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Captain's Spear",
-        "Pole Axe"
-      ],
-      "character": "Cid"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Captain's Spear",
-        "Pole Axe"
-      ],
-      "character": "Cid"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Pole Axe",
-        "Scimitar"
-      ],
-      "character": "Cid"
-    },
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Immaculate Blade",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Demon's Impetus",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Cerulean Sky",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Folding Ruler",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Folding Ruler",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Overture"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Radiant Edge"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Radiant Edge"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Radiant Edge"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Amarant's Claws",
-        "Class President's Bracelet"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Guide Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Noblesse Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Tiger Fangs"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Magatsuchi Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Leather Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Silver Collar",
-        "Steward Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Tiger Fangs"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Junk Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Steward Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Lifeguard Wraps"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Járngreipr",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Járngreipr",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Shining Gloves",
-        "Turks' Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Shining Gloves",
-        "Turks' Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Turks' Blade"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Lightning's Sword",
-        "Stalwart Integrity"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Trumpet Shell"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "4-Point Shuriken",
-        "Arctic Star"
-      ],
-      "character": "Yuffie"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Tempest"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Pole Axe",
-        "Scimitar"
-      ],
-      "character": "Cid"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Immaculate Blade",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Captain's Spear",
-        "Pole Axe"
-      ],
-      "character": "Cid"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Captain's Spear",
-        "Pole Axe"
-      ],
-      "character": "Cid"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Captain's Spear",
-        "Pole Axe"
-      ],
-      "character": "Cid"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Pole Axe",
-        "Scimitar"
-      ],
-      "character": "Cid"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Immaculate Blade",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Cerulean Sky",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Cerulean Sky",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Folding Ruler",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Folding Ruler",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Folding Ruler",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Overture"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Overture"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Bahamut Rod",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Crimson Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Egg Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Fairy Tale",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Festive Rod",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gorgeous Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Lightning's Rod",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Sea Dragon Staff",
-        "Snowflake"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Sea Dragon Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Noblesse Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Amarant's Claws",
-        "Class President's Bracelet"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Noblesse Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Guide Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Noblesse Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Magatsuchi Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Lightning's Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Magatsuchi Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Sea Dragon Staff",
-        "Supreme Sage's Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Sea Dragon Staff",
-        "Terra's Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Sea Dragon Staff",
-        "Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Silver Collar",
-        "Steward Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Amarant's Claws",
-        "Class President's Bracelet"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Silver Collar",
-        "Steward Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Guide Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Silver Collar",
-        "Steward Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Lifeguard Wraps"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Járngreipr",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Járngreipr",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Járngreipr",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Shining Gloves",
-        "Turks' Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Shining Gloves",
-        "Turks' Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Shining Gloves",
-        "Turks' Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Noblesse Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Mermaid Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Noblesse Rod",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Stalwart Integrity",
-        "Turks' Blade"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Catsmegaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Marching Horn",
-        "Spirit Demon Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Quina Megaphone",
-        "Spirit Demon Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Chevron Blade",
-        "Iron Blade"
-      ],
-      "character": "Cloud"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Pumpkin Lamppost",
-        "Steiner's Blade"
-      ],
-      "character": "Glenn"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Bramble Spine",
-        "Dragontail Sword"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Giant Fork",
-        "Slick Beetle"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Demon's Impetus",
-        "Steward Gloves"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Leather Gloves",
-        "Oven Mitts"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Steward Gloves"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Noblesse Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Noblesse Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Noblesse Rod",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Master Tonberry's Blade",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Electrocannon",
-        "Rhad Cannon"
-      ],
-      "character": "Barret"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Cool Cat's Megaphone",
-        "Spirit Demon Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Deroplatys",
-        "Dragontail Sword"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Desperado Rapier",
-        "Dragontail Sword"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Lightning's Gloves",
-        "Oven Mitts"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Oven Mitts",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rhad Gun",
-        "S1976C"
-      ],
-      "character": "Vincent"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Marching Horn"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Quina Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Marching Horn"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Quina Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Silver Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Glavenus Sword",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Marching Horn"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Quina Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Marching Horn"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Quina Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Mermaid Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Stalwart Integrity",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Max Ray"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Cool Cat's Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Chevron Blade",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Stalwart Integrity",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Max Ray"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Cool Cat's Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Greatsword (A)",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "W Machine"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Silver Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Silver Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Glavenus Sword",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Glavenus Sword",
-        "Mystic Sword"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Sleek Saber"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Stalwart Integrity",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Electrocannon",
-        "Max Ray"
-      ],
-      "character": "Barret"
-    },
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Cool Cat's Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Marching Horn"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Quina Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Magatsuchi Blade",
-        "Surfer Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Lightning's Sword",
-        "Sea Dragon Greatsword"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Green Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Stalwart Integrity",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Max Ray"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Cool Cat's Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Mermaid Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Demon's Impetus",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Greatsword (A)",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Greatsword (A)",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Quad Gatling Gun"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Quad Gatling Gun"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "W Machine"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "W Machine"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Sleek Saber"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mystic Sword",
-        "Sleek Saber"
-      ],
-      "character": "Cloud"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Stalwart Integrity",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Electrocannon",
-        "Max Ray"
-      ],
-      "character": "Barret"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Cool Cat's Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Radiant Edge"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Bramble Spine",
-        "Slick Beetle"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Magatsuchi Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Noblesse Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Magatsuchi Blade",
-        "Surfer Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Silver Collar",
-        "Steward Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Magatsuchi Blade",
-        "Surfer Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Noblesse Rod",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Turks' Blade"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Sharkslayer"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Mermaid Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Pole Axe",
-        "Scimitar"
-      ],
-      "character": "Cid"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Immaculate Blade",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Oven Mitts",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Rhad Gun",
-        "S1976C"
-      ],
-      "character": "Vincent"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Oven Mitts",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Rhad Gun",
-        "S1976C"
-      ],
-      "character": "Vincent"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Quad Gatling Gun"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Mermaid Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Quad Gatling Gun"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Quad Gatling Gun"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Captain's Spear",
-        "Pole Axe"
-      ],
-      "character": "Cid"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Oven Mitts",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Rhad Gun",
-        "S1976C"
-      ],
-      "character": "Vincent"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Folding Ruler",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Radiant Edge"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Kuja's Spirit Blade",
-        "Radiant Edge"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Striped Moogle Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Lifeguard Wraps"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Járngreipr",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Shining Gloves",
-        "Turks' Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Deroplatys",
-        "Slick Beetle"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Magatsuchi Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Desperado Rapier",
-        "Slick Beetle"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Magatsuchi Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Revenant Mother's Glaive",
-        "Steiner's Blade"
-      ],
-      "character": "Glenn"
-    },
-    {
-      "weapons": [
-        "Surfer Blade",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Mythril Slasher",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Oven Mitts",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Rhad Gun",
-        "S1976C"
-      ],
-      "character": "Vincent"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Captain's Spear",
-        "Pole Axe"
-      ],
-      "character": "Cid"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Captain's Spear",
-        "Pole Axe"
-      ],
-      "character": "Cid"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Oven Mitts",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Rhad Gun",
-        "S1976C"
-      ],
-      "character": "Vincent"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Folding Ruler",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Folding Ruler",
-        "Kuja's Spirit Blade"
-      ],
-      "character": "Sephiroth"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Noblesse Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Striped Moogle Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Magatsuchi Rod",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Steward Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Silver Collar",
-        "Steward Collar"
-      ],
-      "character": "Red XIII"
-    },
-    {
-      "weapons": [
-        "Class President's Bracelet",
-        "Striped Moogle Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Járngreipr",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Járngreipr",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Shining Gloves",
-        "Turks' Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Shining Gloves",
-        "Turks' Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Lightning's Sword",
-        "Master Tonberry's Blade"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Spirit Demon Megaphone",
-        "Trumpet Shell"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Master Tonberry's Blade",
-        "Turks' Blade"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Catsmegaphone",
-        "Spirit Demon Megaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dragontail Sword",
-        "Giant Fork"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Oven Mitts",
-        "Steward Gloves"
-      ],
-      "character": "Tifa"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Noblesse Automatic",
-        "Rhad Gun"
-      ],
-      "character": "Vincent"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Twinkling Star"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Marching Horn"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Quina Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Trumpet Shell"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Trumpet Shell"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Trumpet Shell"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Trumpet Shell"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Striking Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Stalwart Integrity",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Max Ray"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Catsmegaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Cool Cat's Megaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Catsmegaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Catsmegaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Trumpet Shell"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Catsmegaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Mermaid Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Master Tonberry's Blade",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Rhad Cannon"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Master Tonberry's Blade",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Staff of the Possessed",
-        "Sun Umbrella"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Rhad Cannon"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Quad Gatling Gun"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Master Tonberry's Blade",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Electrocannon",
-        "Rhad Cannon"
-      ],
-      "character": "Barret"
-    },
-    {
-      "weapons": [
-        "Great Sabrecat Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Catsmegaphone"
-      ],
-      "character": "Cait Sith"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Magatsuchi Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Sea Dragon Greatsword",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Master Tonberry's Blade",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Dawn's Prayers",
-        "Staff of the Possessed"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Rhad Cannon"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Oven Mitts",
-        "Shining Gloves"
-      ],
-      "character": "Tifa"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Rhad Gun",
-        "S1976C"
-      ],
-      "character": "Vincent"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Quad Gatling Gun"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Rousing Wizer Staff",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Quad Gatling Gun"
-      ],
-      "character": "Barret"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Master Tonberry's Blade",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Electrocannon",
-        "Rhad Cannon"
-      ],
-      "character": "Barret"
-    },
-    {
-      "weapons": [
-        "Iron Collar",
-        "Silver Collar"
-      ],
-      "character": "Red XIII"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Magatsuchi Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Kamura Wand",
-        "Noblesse Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Magatsuchi Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Magatsuchi Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Bramble Spine",
-        "Dragontail Sword"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Magatsuchi Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Gambanteinn",
-        "Noblesse Rod"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Magatsuchi Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Noblesse Rod",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Magatsuchi Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Deroplatys",
-        "Dragontail Sword"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Magatsuchi Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Desperado Rapier",
-        "Dragontail Sword"
-      ],
-      "character": "Matt"
-    },
-    {
-      "weapons": [
-        "Black Whiskers",
-        "Magatsuchi Blade"
-      ],
-      "character": "Zack"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Trumpet Shell"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Battle Trumpet",
-        "Catsmegaphone"
-      ],
-      "character": "Cait Sith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Master Tonberry's Blade",
-        "Type-91 Two-Hander"
-      ],
-      "character": "Angeal"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Floral Wand",
-        "Sea Dragon Staff"
-      ],
-      "character": "Aerith"
-    },
-    {
-      "weapons": [
-        "Electrocannon",
-        "Rhad Cannon"
-      ],
-      "character": "Barret"
-    }
-  ]
-]
+- - weapons:
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Hardedge
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Hardedge
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Hardedge
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Hardedge
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Hardedge
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Crystal Sword
+      - Mystic Sword
+    character: Cloud
+  - weapons:
+      - Black Whiskers
+      - Surfer Blade
+    character: Zack
+- - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Infiltration Sword
+      - Tempest
+    character: Sephiroth
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Northern Lights
+      - Tempest
+    character: Sephiroth
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - 'Shinra Blade: Model I'
+      - Tempest
+    character: Sephiroth
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Junk Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Leather Gloves
+    character: Tifa
+- - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Pandemonic Sword
+      - Tempest
+    character: Sephiroth
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Cerulean Sky
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Cerulean Sky
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Overture
+    character: Sephiroth
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Overture
+    character: Sephiroth
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Junk Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Lightning's Gloves
+    character: Tifa
+- - weapons:
+      - Junk Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+  - weapons:
+      - Class President's Bracelet
+      - Lifeguard Wraps
+    character: Tifa
+- - weapons:
+      - Lifeguard Wraps
+      - Shining Gloves
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Surfer Blade
+    character: Zack
+- - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Battle Trumpet
+      - Marching Horn
+    character: Cait Sith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Battle Trumpet
+      - Quina Megaphone
+    character: Cait Sith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Chevron Blade
+      - Mystic Sword
+    character: Cloud
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Desperado Glaive
+      - Pumpkin Lamppost
+    character: Glenn
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Pumpkin Lamppost
+      - Rest in Peace
+    character: Glenn
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Bramble Spine
+      - Slick Beetle
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Demon's Impetus
+      - Leather Gloves
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Arctic Star
+      - Fatum Ex Machina
+    character: Yuffie
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Cerulean Sky
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Cerulean Sky
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Cerulean Sky
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Overture
+    character: Sephiroth
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Overture
+    character: Sephiroth
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Overture
+    character: Sephiroth
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Bahamut Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Crimson Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Egg Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Fairy Tale
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Festive Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Gorgeous Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Lightning's Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Snowflake
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Staff of the Possessed
+      - Supreme Sage's Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Staff of the Possessed
+      - Terra's Rod
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Staff of the Possessed
+      - Umbrella
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Microlaser
+      - Sharkslayer
+    character: Barret
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Brilliant Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Headphones
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Pilot's Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Pirate Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+  - weapons:
+      - Class President's Bracelet
+      - Lifeguard Wraps
+    character: Tifa
+- - weapons:
+      - Class President's Bracelet
+      - Leather Gloves
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Stalwart Integrity
+      - Type-91 Two-Hander
+    character: Angeal
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Electrocannon
+      - Max Ray
+    character: Barret
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Battle Trumpet
+      - Cool Cat's Megaphone
+    character: Cait Sith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Patissier's Spear
+      - Scimitar
+    character: Cid
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Deroplatys
+      - Slick Beetle
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Desperado Rapier
+      - Slick Beetle
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Immaculate Blade
+      - Infiltration Sword
+    character: Sephiroth
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Immaculate Blade
+      - Northern Lights
+    character: Sephiroth
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Immaculate Blade
+      - 'Shinra Blade: Model I'
+    character: Sephiroth
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Demon's Impetus
+      - Lightning's Gloves
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Demon's Impetus
+      - Shining Gloves
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Arctic Star
+      - Watch of the Hunt
+    character: Yuffie
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Crystal Sword
+      - Umbralschwert
+    character: Cloud
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Class President's Bracelet
+      - Lightning's Gloves
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Pole Axe
+      - Scimitar
+    character: Cid
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Immaculate Blade
+      - Kuja's Spirit Blade
+    character: Sephiroth
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Immaculate Blade
+      - Pandemonic Sword
+    character: Sephiroth
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Silver Megaphone
+    character: Cait Sith
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Silver Megaphone
+    character: Cait Sith
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Glavenus Sword
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Glavenus Sword
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Hardedge
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Floral Wand
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+- - weapons:
+      - Floral Wand
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Chevron Blade
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Kamura Wand
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Chevron Blade
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Greatsword (A)
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Greatsword (A)
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - W Machine
+    character: Barret
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - W Machine
+    character: Barret
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Silver Megaphone
+    character: Cait Sith
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Silver Megaphone
+    character: Cait Sith
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Silver Megaphone
+    character: Cait Sith
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Glavenus Sword
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Glavenus Sword
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Glavenus Sword
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Hardedge
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Hardedge
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Sleek Saber
+    character: Cloud
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Sleek Saber
+    character: Cloud
+- - weapons:
+      - Chevron Blade
+      - Mystic Sword
+    character: Cloud
+  - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Full Metal Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Dawn's Prayers
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Chevron Blade
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Floral Wand
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+- - weapons:
+      - Floral Wand
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+- - weapons:
+      - Floral Wand
+      - Mermaid Rod
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+- - weapons:
+      - Floral Wand
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+- - weapons:
+      - Floral Wand
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Demon's Impetus
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Gambanteinn
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+- - weapons:
+      - Kamura Wand
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+- - weapons:
+      - Rousing Wizer Staff
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Demon's Impetus
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Greatsword (A)
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Greatsword (A)
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Greatsword (A)
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - W Machine
+    character: Barret
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - W Machine
+    character: Barret
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - W Machine
+    character: Barret
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Sleek Saber
+    character: Cloud
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Sleek Saber
+    character: Cloud
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Sleek Saber
+    character: Cloud
+- - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Demon's Impetus
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Chevron Blade
+      - Mystic Sword
+    character: Cloud
+  - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Radiant Edge
+    character: Sephiroth
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Radiant Edge
+    character: Sephiroth
+- - weapons:
+      - Full Metal Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Tiger Fangs
+    character: Tifa
+- - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+  - weapons:
+      - Class President's Bracelet
+      - Lifeguard Wraps
+    character: Tifa
+- - weapons:
+      - Noblesse Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Electrocannon
+      - Microlaser
+    character: Barret
+  - weapons:
+      - Black Whiskers
+      - Surfer Blade
+    character: Zack
+- - weapons:
+      - Silver Collar
+      - Steward Collar
+    character: Red XIII
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Lightning's Sword
+      - Mythril Slasher
+    character: Angeal
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Green Megaphone
+      - Spirit Demon Megaphone
+    character: Cait Sith
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Iron Blade
+      - Umbralschwert
+    character: Cloud
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Desperado Glaive
+      - Revenant Mother's Glaive
+    character: Glenn
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Rest in Peace
+      - Revenant Mother's Glaive
+    character: Glenn
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Dawn's Prayers
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+- - weapons:
+      - Dawn's Prayers
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+- - weapons:
+      - Dawn's Prayers
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Umbralschwert
+    character: Cloud
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Demon's Impetus
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Floral Wand
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+- - weapons:
+      - Floral Wand
+      - Mermaid Rod
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+- - weapons:
+      - Floral Wand
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Pole Axe
+      - Scimitar
+    character: Cid
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Immaculate Blade
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Gambanteinn
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+- - weapons:
+      - Rousing Wizer Staff
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Pole Axe
+      - Scimitar
+    character: Cid
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Immaculate Blade
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Captain's Spear
+      - Pole Axe
+    character: Cid
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Captain's Spear
+      - Pole Axe
+    character: Cid
+- - weapons:
+      - Pole Axe
+      - Scimitar
+    character: Cid
+  - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Immaculate Blade
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Demon's Impetus
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Cerulean Sky
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Folding Ruler
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Folding Ruler
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Overture
+    character: Sephiroth
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Radiant Edge
+    character: Sephiroth
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Radiant Edge
+    character: Sephiroth
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Radiant Edge
+    character: Sephiroth
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Full Metal Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Amarant's Claws
+      - Class President's Bracelet
+    character: Tifa
+- - weapons:
+      - Full Metal Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Guide Gloves
+    character: Tifa
+- - weapons:
+      - Full Metal Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Noblesse Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Tiger Fangs
+    character: Tifa
+- - weapons:
+      - Magatsuchi Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Leather Gloves
+    character: Tifa
+- - weapons:
+      - Silver Collar
+      - Steward Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Tiger Fangs
+    character: Tifa
+- - weapons:
+      - Junk Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Steward Gloves
+    character: Tifa
+- - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+  - weapons:
+      - Class President's Bracelet
+      - Lifeguard Wraps
+    character: Tifa
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Járngreipr
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Járngreipr
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Shining Gloves
+      - Turks' Gloves
+    character: Tifa
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Shining Gloves
+      - Turks' Gloves
+    character: Tifa
+- - weapons:
+      - Mythril Slasher
+      - Turks' Blade
+    character: Angeal
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Full Metal Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Full Metal Staff
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Lightning's Sword
+      - Stalwart Integrity
+    character: Angeal
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Battle Trumpet
+      - Trumpet Shell
+    character: Cait Sith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - 4-Point Shuriken
+      - Arctic Star
+    character: Yuffie
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Dawn's Prayers
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+- - weapons:
+      - Dawn's Prayers
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Tempest
+    character: Sephiroth
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Pole Axe
+      - Scimitar
+    character: Cid
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Immaculate Blade
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Captain's Spear
+      - Pole Axe
+    character: Cid
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Captain's Spear
+      - Pole Axe
+    character: Cid
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Captain's Spear
+      - Pole Axe
+    character: Cid
+- - weapons:
+      - Pole Axe
+      - Scimitar
+    character: Cid
+  - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Immaculate Blade
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Cerulean Sky
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Cerulean Sky
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Folding Ruler
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Folding Ruler
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Folding Ruler
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Overture
+    character: Sephiroth
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Overture
+    character: Sephiroth
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Bahamut Rod
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Crimson Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Egg Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Fairy Tale
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Festive Rod
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Gorgeous Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Lightning's Rod
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Sea Dragon Staff
+      - Snowflake
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Sea Dragon Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Noblesse Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Amarant's Claws
+      - Class President's Bracelet
+    character: Tifa
+- - weapons:
+      - Noblesse Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Guide Gloves
+    character: Tifa
+- - weapons:
+      - Noblesse Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Magatsuchi Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Lightning's Gloves
+    character: Tifa
+- - weapons:
+      - Magatsuchi Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Sea Dragon Staff
+      - Supreme Sage's Staff
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Sea Dragon Staff
+      - Terra's Rod
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Sea Dragon Staff
+      - Umbrella
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Silver Collar
+      - Steward Collar
+    character: Red XIII
+  - weapons:
+      - Amarant's Claws
+      - Class President's Bracelet
+    character: Tifa
+- - weapons:
+      - Silver Collar
+      - Steward Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Guide Gloves
+    character: Tifa
+- - weapons:
+      - Silver Collar
+      - Steward Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+  - weapons:
+      - Class President's Bracelet
+      - Lifeguard Wraps
+    character: Tifa
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Járngreipr
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Járngreipr
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Járngreipr
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Shining Gloves
+      - Turks' Gloves
+    character: Tifa
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Shining Gloves
+      - Turks' Gloves
+    character: Tifa
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Shining Gloves
+      - Turks' Gloves
+    character: Tifa
+- - weapons:
+      - Full Metal Staff
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Kamura Wand
+      - Noblesse Rod
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Full Metal Staff
+      - Mermaid Rod
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Full Metal Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Noblesse Rod
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Stalwart Integrity
+      - Turks' Blade
+    character: Angeal
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Battle Trumpet
+      - Catsmegaphone
+    character: Cait Sith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Marching Horn
+      - Spirit Demon Megaphone
+    character: Cait Sith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Quina Megaphone
+      - Spirit Demon Megaphone
+    character: Cait Sith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Chevron Blade
+      - Iron Blade
+    character: Cloud
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Pumpkin Lamppost
+      - Steiner's Blade
+    character: Glenn
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Bramble Spine
+      - Dragontail Sword
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Giant Fork
+      - Slick Beetle
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Demon's Impetus
+      - Steward Gloves
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Leather Gloves
+      - Oven Mitts
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Class President's Bracelet
+      - Steward Gloves
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Gambanteinn
+      - Noblesse Rod
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Mermaid Rod
+      - Noblesse Rod
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Noblesse Rod
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Master Tonberry's Blade
+      - Type-91 Two-Hander
+    character: Angeal
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Electrocannon
+      - Rhad Cannon
+    character: Barret
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Cool Cat's Megaphone
+      - Spirit Demon Megaphone
+    character: Cait Sith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Deroplatys
+      - Dragontail Sword
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Desperado Rapier
+      - Dragontail Sword
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Lightning's Gloves
+      - Oven Mitts
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Oven Mitts
+      - Shining Gloves
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Rhad Gun
+      - S1976C
+    character: Vincent
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Floral Wand
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Marching Horn
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Quina Megaphone
+    character: Cait Sith
+- - weapons:
+      - Kamura Wand
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Marching Horn
+    character: Cait Sith
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Quina Megaphone
+    character: Cait Sith
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Silver Megaphone
+    character: Cait Sith
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Glavenus Sword
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Battle Trumpet
+      - Marching Horn
+    character: Cait Sith
+  - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Battle Trumpet
+      - Quina Megaphone
+    character: Cait Sith
+  - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Dawn's Prayers
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Marching Horn
+    character: Cait Sith
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Quina Megaphone
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Floral Wand
+      - Mermaid Rod
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Stalwart Integrity
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Max Ray
+    character: Barret
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Cool Cat's Megaphone
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Chevron Blade
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Gambanteinn
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+- - weapons:
+      - Kamura Wand
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Rousing Wizer Staff
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Stalwart Integrity
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Max Ray
+    character: Barret
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Cool Cat's Megaphone
+    character: Cait Sith
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Greatsword (A)
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - W Machine
+    character: Barret
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Silver Megaphone
+    character: Cait Sith
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Silver Megaphone
+    character: Cait Sith
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Glavenus Sword
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Glavenus Sword
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Sleek Saber
+    character: Cloud
+- - weapons:
+      - Stalwart Integrity
+      - Type-91 Two-Hander
+    character: Angeal
+  - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Electrocannon
+      - Max Ray
+    character: Barret
+  - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Battle Trumpet
+      - Cool Cat's Megaphone
+    character: Cait Sith
+  - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Battle Trumpet
+      - Marching Horn
+    character: Cait Sith
+  - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Battle Trumpet
+      - Quina Megaphone
+    character: Cait Sith
+  - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Full Metal Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Magatsuchi Blade
+      - Surfer Blade
+    character: Zack
+- - weapons:
+      - Full Metal Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Lightning's Sword
+      - Sea Dragon Greatsword
+    character: Angeal
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Dawn's Prayers
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+- - weapons:
+      - Dawn's Prayers
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Dawn's Prayers
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Green Megaphone
+    character: Cait Sith
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Stalwart Integrity
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Max Ray
+    character: Barret
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Cool Cat's Megaphone
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Floral Wand
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Mermaid Rod
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Floral Wand
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Floral Wand
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Demon's Impetus
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Gambanteinn
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Kamura Wand
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Rousing Wizer Staff
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Greatsword (A)
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Greatsword (A)
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Quad Gatling Gun
+    character: Barret
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Quad Gatling Gun
+    character: Barret
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - W Machine
+    character: Barret
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - W Machine
+    character: Barret
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Sleek Saber
+    character: Cloud
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Mystic Sword
+      - Sleek Saber
+    character: Cloud
+- - weapons:
+      - Stalwart Integrity
+      - Type-91 Two-Hander
+    character: Angeal
+  - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Electrocannon
+      - Max Ray
+    character: Barret
+  - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Battle Trumpet
+      - Cool Cat's Megaphone
+    character: Cait Sith
+  - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Radiant Edge
+    character: Sephiroth
+- - weapons:
+      - Bramble Spine
+      - Slick Beetle
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Magatsuchi Blade
+    character: Zack
+- - weapons:
+      - Noblesse Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Magatsuchi Blade
+      - Surfer Blade
+    character: Zack
+- - weapons:
+      - Silver Collar
+      - Steward Collar
+    character: Red XIII
+  - weapons:
+      - Magatsuchi Blade
+      - Surfer Blade
+    character: Zack
+- - weapons:
+      - Noblesse Rod
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Sea Dragon Greatsword
+      - Turks' Blade
+    character: Angeal
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Dawn's Prayers
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Dawn's Prayers
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Dawn's Prayers
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Floral Wand
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Mermaid Rod
+    character: Aerith
+  - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Pole Axe
+      - Scimitar
+    character: Cid
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Immaculate Blade
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Oven Mitts
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Rhad Gun
+      - S1976C
+    character: Vincent
+- - weapons:
+      - Gambanteinn
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Rousing Wizer Staff
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Oven Mitts
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Rhad Gun
+      - S1976C
+    character: Vincent
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Quad Gatling Gun
+    character: Barret
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Quad Gatling Gun
+    character: Barret
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Quad Gatling Gun
+    character: Barret
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Captain's Spear
+      - Pole Axe
+    character: Cid
+- - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Oven Mitts
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Rhad Gun
+      - S1976C
+    character: Vincent
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Folding Ruler
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Radiant Edge
+    character: Sephiroth
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Radiant Edge
+    character: Sephiroth
+- - weapons:
+      - Full Metal Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Striped Moogle Gloves
+    character: Tifa
+- - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+  - weapons:
+      - Class President's Bracelet
+      - Lifeguard Wraps
+    character: Tifa
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Járngreipr
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Shining Gloves
+      - Turks' Gloves
+    character: Tifa
+- - weapons:
+      - Deroplatys
+      - Slick Beetle
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Magatsuchi Blade
+    character: Zack
+- - weapons:
+      - Desperado Rapier
+      - Slick Beetle
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Magatsuchi Blade
+    character: Zack
+- - weapons:
+      - Revenant Mother's Glaive
+      - Steiner's Blade
+    character: Glenn
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Dawn's Prayers
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Dawn's Prayers
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Mythril Slasher
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Oven Mitts
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Rhad Gun
+      - S1976C
+    character: Vincent
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Captain's Spear
+      - Pole Axe
+    character: Cid
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Captain's Spear
+      - Pole Axe
+    character: Cid
+- - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Oven Mitts
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Rhad Gun
+      - S1976C
+    character: Vincent
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Folding Ruler
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Folding Ruler
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Noblesse Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Striped Moogle Gloves
+    character: Tifa
+- - weapons:
+      - Magatsuchi Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Steward Gloves
+    character: Tifa
+- - weapons:
+      - Silver Collar
+      - Steward Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Striped Moogle Gloves
+    character: Tifa
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Járngreipr
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Járngreipr
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Shining Gloves
+      - Turks' Gloves
+    character: Tifa
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Shining Gloves
+      - Turks' Gloves
+    character: Tifa
+- - weapons:
+      - Lightning's Sword
+      - Master Tonberry's Blade
+    character: Angeal
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Spirit Demon Megaphone
+      - Trumpet Shell
+    character: Cait Sith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Master Tonberry's Blade
+      - Turks' Blade
+    character: Angeal
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Catsmegaphone
+      - Spirit Demon Megaphone
+    character: Cait Sith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Dragontail Sword
+      - Giant Fork
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Oven Mitts
+      - Steward Gloves
+    character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Noblesse Automatic
+      - Rhad Gun
+    character: Vincent
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Marching Horn
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Quina Megaphone
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Trumpet Shell
+    character: Cait Sith
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Trumpet Shell
+    character: Cait Sith
+- - weapons:
+      - Battle Trumpet
+      - Trumpet Shell
+    character: Cait Sith
+  - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Trumpet Shell
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Stalwart Integrity
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Max Ray
+    character: Barret
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Catsmegaphone
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Cool Cat's Megaphone
+    character: Cait Sith
+- - weapons:
+      - Kamura Wand
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Catsmegaphone
+    character: Cait Sith
+- - weapons:
+      - Battle Trumpet
+      - Catsmegaphone
+    character: Cait Sith
+  - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Battle Trumpet
+      - Trumpet Shell
+    character: Cait Sith
+  - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Dawn's Prayers
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Catsmegaphone
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Mermaid Rod
+    character: Aerith
+  - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Master Tonberry's Blade
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Rhad Cannon
+    character: Barret
+- - weapons:
+      - Gambanteinn
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Rousing Wizer Staff
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Master Tonberry's Blade
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Rhad Cannon
+    character: Barret
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Quad Gatling Gun
+    character: Barret
+- - weapons:
+      - Master Tonberry's Blade
+      - Type-91 Two-Hander
+    character: Angeal
+  - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Electrocannon
+      - Rhad Cannon
+    character: Barret
+  - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Battle Trumpet
+      - Catsmegaphone
+    character: Cait Sith
+  - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Full Metal Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Magatsuchi Blade
+    character: Zack
+- - weapons:
+      - Dawn's Prayers
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Dawn's Prayers
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Sea Dragon Greatsword
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Master Tonberry's Blade
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Rhad Cannon
+    character: Barret
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Oven Mitts
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Rhad Gun
+      - S1976C
+    character: Vincent
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Quad Gatling Gun
+    character: Barret
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Quad Gatling Gun
+    character: Barret
+- - weapons:
+      - Master Tonberry's Blade
+      - Type-91 Two-Hander
+    character: Angeal
+  - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Electrocannon
+      - Rhad Cannon
+    character: Barret
+  - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Full Metal Staff
+      - Gambanteinn
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Magatsuchi Blade
+    character: Zack
+- - weapons:
+      - Kamura Wand
+      - Noblesse Rod
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Magatsuchi Blade
+    character: Zack
+- - weapons:
+      - Full Metal Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Magatsuchi Blade
+    character: Zack
+- - weapons:
+      - Bramble Spine
+      - Dragontail Sword
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Magatsuchi Blade
+    character: Zack
+- - weapons:
+      - Gambanteinn
+      - Noblesse Rod
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Magatsuchi Blade
+    character: Zack
+- - weapons:
+      - Noblesse Rod
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Magatsuchi Blade
+    character: Zack
+- - weapons:
+      - Deroplatys
+      - Dragontail Sword
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Magatsuchi Blade
+    character: Zack
+- - weapons:
+      - Desperado Rapier
+      - Dragontail Sword
+    character: Matt
+  - weapons:
+      - Black Whiskers
+      - Magatsuchi Blade
+    character: Zack
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Trumpet Shell
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Battle Trumpet
+      - Catsmegaphone
+    character: Cait Sith
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Master Tonberry's Blade
+      - Type-91 Two-Hander
+    character: Angeal
+- - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Electrocannon
+      - Rhad Cannon
+    character: Barret

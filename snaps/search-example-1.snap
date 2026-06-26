@@ -1,29 +1,12 @@
-[
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Kamura Wand"
-      ],
-      "character": "Aerith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Gambanteinn"
-      ],
-      "character": "Aerith"
-    }
-  ],
-  [
-    {
-      "weapons": [
-        "Full Metal Staff",
-        "Rousing Wizer Staff"
-      ],
-      "character": "Aerith"
-    }
-  ]
-]
+- - weapons:
+      - Full Metal Staff
+      - Kamura Wand
+    character: Aerith
+- - weapons:
+      - Full Metal Staff
+      - Gambanteinn
+    character: Aerith
+- - weapons:
+      - Full Metal Staff
+      - Rousing Wizer Staff
+    character: Aerith

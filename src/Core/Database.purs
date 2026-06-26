@@ -246,6 +246,16 @@ getDistinctObs weapon = do
         case y of
           ExploitWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
           _ -> crash unit
+      HPGain { range: range1, durExt: _, percentage: _ } ->
+        case y of
+          HPGain { range: range2, durExt: _, percentage: _ } -> range1 == range2
+          _ -> crash unit
+      EnhanceBuffs { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          EnhanceBuffs { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
+      EnhanceDebuffs { range: range1, durExt: _, potencies: pot1 } ->
+        case y of
+          EnhanceDebuffs { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
       Enliven { range: range1, durExt: _ } ->
         case y of
           Enliven { range: range2, durExt: _ } -> range1 == range2

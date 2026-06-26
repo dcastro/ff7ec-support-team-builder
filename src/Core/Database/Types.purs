@@ -107,9 +107,19 @@ type GroupedWeapon =
   }
 
 type GroupedWeaponRange =
-  { range :: Range
+  -- The range an effect has at each overboost level.
+  -- Most effects have the same range at all levels, but some don't:
+  -- e.g. Festive Sword's Enliven is `Self` at OB0/OB1 and `All` at OB6/OB10.
+  { allRanges :: AllRanges
   -- This will be `None` for effects that don't have potencies (e.g. `Heal`)
   , allPotencies :: Maybe AllPotencies
+  }
+
+type AllRanges =
+  { ob0 :: Range
+  , ob1 :: Range
+  , ob6 :: Range
+  , ob10 :: Range
   }
 
 type AllPotencies =

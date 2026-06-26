@@ -137,37 +137,42 @@ Pick a real example and fill in the actual values.
 
 ## Step 5 — Update `src/Core/Database.purs`
 
-### 5a. `areWeaponEffectsEquivalent` (inside `getDistinctObs`)
+The grouping logic is driven by three small top-level helper functions, each an exhaustive `case _ of` over **every** `WeaponEffect` constructor. Add a branch to each one. (Because they're exhaustive, a missing branch surfaces as a non-exhaustiveness warning at build time — see Step 8.)
 
-Add a case. Two effects of the same type are "equivalent" (same OB slot) if their potencies AND range match — duration/extension are ignored.
+### 5a. `rangeOf`
 
-```purescript
--- for withDurExt or withDurExtPercentage (no potencies):
-FireResistUp { range: range1, durExt: _ } ->
-  case y of
-    FireResistUp { range: range2, durExt: _ } -> range1 == range2
-    _ -> crash unit
-
--- for withDurExtPotencies (has potencies):
-FireResistUp { range: range1, durExt: _, potencies: pot1 } ->
-  case y of
-    FireResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-    _ -> crash unit
-```
-
-### 5b. `groupForWeaponEffect`
-
-Add a case that determines how the effect is grouped in the database:
+Every constructor carries a `range` field, so the branch is always the same:
 
 ```purescript
--- for effects WITHOUT potencies:
-FireResistUp { range } -> Just { effectType: FilterFireResistUp, range: Just range, potencies: Nothing }
-
--- for effects WITH potencies — must extract potencies from all 4 OB levels:
-FireResistUp { range, potencies: ob0Potencies } -> case ob1, ob6, ob10 of
-  FireResistUp ob1, FireResistUp ob6, FireResistUp ob10 -> Just { effectType: FilterFireResistUp, range: Just range, potencies: Just { ob0: ob0Potencies, ob1: ob1.potencies, ob6: ob6.potencies, ob10: ob10.potencies } }
-  _, _, _ -> crash unit
+FireResistUp r -> r.range
 ```
+
+### 5b. `potenciesOf`
+
+```purescript
+-- for effects WITH potencies (withDurExtPotencies):
+FireResistUp r -> Just r.potencies
+
+-- for effects WITHOUT potencies (withDurExt / withDurExtPercentage / withPercentage):
+FireResistUp _ -> Nothing
+```
+
+### 5c. `tagOf`
+
+Maps the constructor to its `FilterEffectType`. This is what makes the effect show up in the database (it's used by `groupForWeaponEffect` to pick the `effectType`):
+
+```purescript
+FireResistUp _ -> FilterFireResistUp
+```
+
+### 5d. `groupForWeaponEffect` and `areWeaponEffectsEquivalent` — usually NO change
+
+Both now derive everything from the helpers above:
+
+- `groupForWeaponEffect` builds `allRanges` via `rangeOf`, `allPotencies` via `potenciesOf`, and the `effectType` via `tagOf` (its `effectTypeOf` has a catch-all `_ -> Just (tagOf ob0)`).
+- `areWeaponEffectsEquivalent` is just `tagOf x /= tagOf y` (crash on mismatch) otherwise `rangeOf x == rangeOf y && potenciesOf x == potenciesOf y`.
+
+So a normal effect needs no edits here. **Only** add an explicit case if the effect needs special inclusion logic — e.g. `Heal` is only grouped when its percentage ≥ 30, so it has its own branch in `effectTypeOf`. If your effect should always be included whenever present, do nothing in this step beyond 5a–5c.
 
 ## Step 6 — Update `src/App/EffectSelector.purs`
 
@@ -218,6 +223,6 @@ just check-effects
 Open `resources/unsupported_effects.md` and confirm the effect no longer appears in the list. If the effect still appears, check:
 
 1. Does the parser string exactly match the raw game text?
-2. Is the effect in `groupForWeaponEffect` — that's what puts it in the DB
+2. Is the effect in `tagOf` — that's what gives it a `FilterEffectType` and puts it in the DB (alongside `rangeOf` / `potenciesOf`)
 
-If the tests fail with exhaustiveness errors, you missed one of the parallel pattern-match blocks in `Types.purs`.
+If the tests fail with exhaustiveness warnings/errors, you missed one of the parallel pattern-match blocks. These live in `Types.purs` (the `Show`/`WriteForeign`/`ReadForeign` instances and the two `exhaustive*` arrays) and in `Database.purs` (the `rangeOf` / `potenciesOf` / `tagOf` helpers).

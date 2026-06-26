@@ -6,7 +6,12 @@
         "weaponName": "Bahamut Rod",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -14,7 +19,12 @@
         "weaponName": "Crimson Staff",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -22,7 +32,12 @@
         "weaponName": "Egg Staff",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -30,7 +45,12 @@
         "weaponName": "Fairy Tale",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -38,7 +58,12 @@
         "weaponName": "Festive Rod",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -46,7 +71,12 @@
         "weaponName": "Floral Wand",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -54,7 +84,12 @@
         "weaponName": "Gambanteinn",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -62,7 +97,12 @@
         "weaponName": "Gorgeous Staff",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -70,7 +110,12 @@
         "weaponName": "Kamura Wand",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -78,7 +123,12 @@
         "weaponName": "Lightning's Rod",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -86,7 +136,12 @@
         "weaponName": "Rousing Wizer Staff",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -94,7 +149,12 @@
         "weaponName": "Snowflake",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -102,7 +162,12 @@
         "weaponName": "Staff of the Possessed",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -110,7 +175,12 @@
         "weaponName": "Supreme Sage's Staff",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -118,7 +188,12 @@
         "weaponName": "Terra's Rod",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -126,10 +201,20 @@
         "weaponName": "Umbrella",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           },
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -137,7 +222,12 @@
         "weaponName": "Microlaser",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -145,7 +235,12 @@
         "weaponName": "Crystal Sword",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -153,7 +248,12 @@
         "weaponName": "Tranquilizer Gun",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -161,7 +261,12 @@
         "weaponName": "Bramble Spine",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -169,7 +274,12 @@
         "weaponName": "Centipede",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -177,7 +287,12 @@
         "weaponName": "Deroplatys",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -185,7 +300,12 @@
         "weaponName": "Desperado Rapier",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -193,7 +313,12 @@
         "weaponName": "Espee Rapiere Next-G",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -201,7 +326,12 @@
         "weaponName": "Foam Sword",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -209,7 +339,12 @@
         "weaponName": "Luminary Sword",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -217,7 +352,12 @@
         "weaponName": "Nautilus Spiral",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -225,7 +365,12 @@
         "weaponName": "Physician's Scalpel",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -233,7 +378,12 @@
         "weaponName": "Prime Number",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -241,7 +391,12 @@
         "weaponName": "Syringe Rapier",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -249,7 +404,12 @@
         "weaponName": "Brilliant Collar",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -257,7 +417,12 @@
         "weaponName": "Headphones",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -265,7 +430,12 @@
         "weaponName": "Pilot's Collar",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -273,7 +443,12 @@
         "weaponName": "Pirate Collar",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -281,7 +456,12 @@
         "weaponName": "Rubber Collar",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -289,7 +469,12 @@
         "weaponName": "Silver Collar",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -297,7 +482,12 @@
         "weaponName": "Grand Gloves",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -305,7 +495,12 @@
         "weaponName": "Lifeguard Wraps",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -313,7 +508,12 @@
         "weaponName": "Enhance Sword (Z)",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -321,7 +521,12 @@
         "weaponName": "Twinkling Star",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -334,7 +539,12 @@
         "weaponName": "Festive Blade",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -342,7 +552,12 @@
         "weaponName": "Gargantuan Monolith",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -350,7 +565,12 @@
         "weaponName": "Inflatable Buster Sword",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -358,7 +578,12 @@
         "weaponName": "Mythril Slasher",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -366,7 +591,12 @@
         "weaponName": "Orchard Shovel",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -374,7 +604,12 @@
         "weaponName": "Tranquility",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -382,7 +617,12 @@
         "weaponName": "Type-90 Longsword",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -390,7 +630,12 @@
         "weaponName": "Fafnir Rifle",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -398,7 +643,12 @@
         "weaponName": "Blade of Ruin",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -406,7 +656,12 @@
         "weaponName": "Pirate's Glaive",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       }
@@ -419,7 +674,12 @@
         "weaponName": "Greatsword (A)",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -427,7 +687,12 @@
         "weaponName": "Greatsword of the Worthy",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -435,7 +700,12 @@
         "weaponName": "Shinra Greatsword: Model I",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -443,7 +713,12 @@
         "weaponName": "Tranquility",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -451,7 +726,12 @@
         "weaponName": "Volcanic Heat",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -459,7 +739,12 @@
         "weaponName": "Fafnir Rifle",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -467,7 +752,12 @@
         "weaponName": "Max Ray",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -475,7 +765,12 @@
         "weaponName": "Teacher's Paper Fan",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -483,7 +778,12 @@
         "weaponName": "Desperado Glaive",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -491,7 +791,12 @@
         "weaponName": "Patissier's Glaive",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -499,7 +804,12 @@
         "weaponName": "Pirate's Glaive",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -507,7 +817,12 @@
         "weaponName": "Stream Slasher",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -520,7 +835,12 @@
         "weaponName": "Gambanteinn",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -546,7 +866,12 @@
         "weaponName": "Kamura Wand",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -572,7 +897,12 @@
         "weaponName": "Mermaid Rod",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -598,7 +928,12 @@
         "weaponName": "Rousing Wizer Staff",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -624,7 +959,12 @@
         "weaponName": "Striking Staff",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -650,7 +990,12 @@
         "weaponName": "Master Tonberry's Blade",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -676,7 +1021,12 @@
         "weaponName": "Stalwart Integrity",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -702,7 +1052,12 @@
         "weaponName": "Max Ray",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -728,7 +1083,12 @@
         "weaponName": "Rhad Cannon",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -754,7 +1114,12 @@
         "weaponName": "Catsmegaphone",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -780,7 +1145,12 @@
         "weaponName": "Cool Cat's Megaphone",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -806,7 +1176,12 @@
         "weaponName": "Marching Horn",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -832,7 +1207,12 @@
         "weaponName": "Quina Megaphone",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -858,7 +1238,12 @@
         "weaponName": "Trumpet Shell",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -884,7 +1269,12 @@
         "weaponName": "Scimitar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -910,7 +1300,12 @@
         "weaponName": "Chevron Blade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -936,7 +1331,12 @@
         "weaponName": "Glavenus Sword",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -962,7 +1362,12 @@
         "weaponName": "Pumpkin Lamppost",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -988,7 +1393,12 @@
         "weaponName": "Bramble Spine",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1014,7 +1424,12 @@
         "weaponName": "Deroplatys",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1040,7 +1455,12 @@
         "weaponName": "Desperado Rapier",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1066,7 +1486,12 @@
         "weaponName": "Giant Fork",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -1092,7 +1517,12 @@
         "weaponName": "Immaculate Blade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1118,7 +1548,12 @@
         "weaponName": "Shinra Military Sword",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -1144,7 +1579,12 @@
         "weaponName": "Amarant's Claws",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1170,7 +1610,12 @@
         "weaponName": "Class President's Bracelet",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1196,7 +1641,12 @@
         "weaponName": "Demon's Impetus",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1222,7 +1672,12 @@
         "weaponName": "Oven Mitts",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -1248,7 +1703,12 @@
         "weaponName": "Sabin's Claws",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1274,7 +1734,12 @@
         "weaponName": "Work Gloves",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1300,7 +1765,12 @@
         "weaponName": "Rhad Gun",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -1326,7 +1796,12 @@
         "weaponName": "Arctic Star",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1347,7 +1822,12 @@
             }
           },
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1373,7 +1853,12 @@
         "weaponName": "Ceremonial Sword (Z)",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1399,7 +1884,12 @@
         "weaponName": "Surfer Blade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1430,7 +1920,12 @@
         "weaponName": "Citric Wand",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1456,7 +1951,12 @@
         "weaponName": "Crimson Staff",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1482,7 +1982,12 @@
         "weaponName": "Garnet's Rod",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1508,7 +2013,12 @@
         "weaponName": "Gargantuan Monolith",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1534,7 +2044,12 @@
         "weaponName": "Escutcheon Cannon",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1560,7 +2075,12 @@
         "weaponName": "Microlaser",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1586,7 +2106,12 @@
         "weaponName": "Flower Vase",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1612,7 +2137,12 @@
         "weaponName": "Trumpet Shell",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -1638,7 +2168,12 @@
         "weaponName": "Scimitar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1664,7 +2199,12 @@
         "weaponName": "Full Throttle",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1690,7 +2230,12 @@
         "weaponName": "Garish Greatblade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1716,7 +2261,12 @@
         "weaponName": "Patissier's Glaive",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1742,7 +2292,12 @@
         "weaponName": "Luminary Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1768,7 +2323,12 @@
         "weaponName": "Brilliant Collar",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1794,7 +2354,12 @@
         "weaponName": "Pirate Collar",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1820,7 +2385,12 @@
         "weaponName": "Aonibi",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1846,7 +2416,12 @@
         "weaponName": "Pandemonic Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1872,7 +2447,12 @@
         "weaponName": "Osafune",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1898,7 +2478,12 @@
         "weaponName": "Bahamut Fangs",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1924,7 +2509,12 @@
         "weaponName": "Bunny Gloves",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -1950,7 +2540,12 @@
         "weaponName": "Kirin Gloves",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -1976,7 +2571,12 @@
         "weaponName": "Sabin's Claws",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2002,7 +2602,12 @@
         "weaponName": "Galian Roar",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2028,7 +2633,12 @@
         "weaponName": "Sawed-Off GS",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2054,7 +2664,12 @@
         "weaponName": "Crystal Cross",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2080,7 +2695,12 @@
         "weaponName": "Stream Guard",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -2111,7 +2731,12 @@
         "weaponName": "Bahamut Rod",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -2137,7 +2762,12 @@
         "weaponName": "Lightning's Rod",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2163,7 +2793,12 @@
         "weaponName": "Mythril Rod",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -2189,7 +2824,12 @@
         "weaponName": "Greatsword of the Worthy",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2215,7 +2855,12 @@
         "weaponName": "Inflatable Buster Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2241,7 +2886,12 @@
         "weaponName": "Lightning's Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -2267,7 +2917,12 @@
         "weaponName": "Stalwart Integrity",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2293,7 +2948,12 @@
         "weaponName": "Assault Gun",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2319,7 +2979,12 @@
         "weaponName": "Fafnir Rifle",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2345,7 +3010,12 @@
         "weaponName": "Lefko Kypseli",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2371,7 +3041,12 @@
         "weaponName": "Sunrise Cannon",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2397,7 +3072,12 @@
         "weaponName": "Crystal Megaphone",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2423,7 +3103,12 @@
         "weaponName": "Quina Megaphone",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2449,7 +3134,12 @@
         "weaponName": "Slash Lance",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2475,7 +3165,12 @@
         "weaponName": "Viper Halberd",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2501,7 +3196,12 @@
         "weaponName": "Butterfly Edge",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2527,7 +3227,12 @@
         "weaponName": "Hardcore Squad",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -2553,7 +3258,12 @@
         "weaponName": "Rest in Peace",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2579,7 +3289,12 @@
         "weaponName": "Centipede",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2605,7 +3320,12 @@
         "weaponName": "Syringe Rapier",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2631,7 +3351,12 @@
         "weaponName": "Mythril Type-0 Katana",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2657,7 +3382,12 @@
         "weaponName": "Torn Wing",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2683,7 +3413,12 @@
         "weaponName": "Work Gloves",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2709,7 +3444,12 @@
         "weaponName": "Watch of the Hunt",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2735,7 +3475,12 @@
         "weaponName": "Defender",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2766,7 +3511,12 @@
         "weaponName": "Chocobo Staff",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2792,7 +3542,12 @@
         "weaponName": "Gorgeous Staff",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2818,7 +3573,12 @@
         "weaponName": "Guard Stick",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2844,7 +3604,12 @@
         "weaponName": "Kamura Wand",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2870,7 +3635,12 @@
         "weaponName": "Mythril Rod",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -2896,7 +3666,12 @@
         "weaponName": "Rousing Wizer Staff",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2922,7 +3697,12 @@
         "weaponName": "Gargantuan Monolith",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2948,7 +3728,12 @@
         "weaponName": "Greatsword of the Worthy",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -2974,7 +3759,12 @@
         "weaponName": "Escutcheon Cannon",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3000,7 +3790,12 @@
         "weaponName": "Heavy Vulcan",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3026,7 +3821,12 @@
         "weaponName": "Battle Trumpet",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3052,7 +3852,12 @@
         "weaponName": "Viper Halberd",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3078,7 +3883,12 @@
         "weaponName": "Bandaged Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3104,7 +3914,12 @@
         "weaponName": "Hardcore Squad",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -3130,7 +3945,12 @@
         "weaponName": "Snow's Bardiche",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3156,7 +3976,12 @@
         "weaponName": "Pumpkin Blaster",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3182,7 +4007,12 @@
         "weaponName": "SSR1976",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3208,7 +4038,12 @@
         "weaponName": "Core Defender",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3234,7 +4069,12 @@
         "weaponName": "Deroplatys",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3260,7 +4100,12 @@
         "weaponName": "Physician's Scalpel",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3286,7 +4131,12 @@
         "weaponName": "Syringe Rapier",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3312,7 +4162,12 @@
         "weaponName": "Pilot's Collar",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3338,7 +4193,12 @@
         "weaponName": "Sleek Collar",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3364,7 +4224,12 @@
         "weaponName": "Overture",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3390,7 +4255,12 @@
         "weaponName": "Sawed-Off GS",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3416,7 +4286,12 @@
         "weaponName": "Bahamut Cutter",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3442,7 +4317,12 @@
         "weaponName": "Zenithian Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3473,7 +4353,12 @@
         "weaponName": "Grinding Gear",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3481,7 +4366,12 @@
         "weaponName": "Stream Saber",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3489,7 +4379,12 @@
         "weaponName": "Umbralschwert",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3497,7 +4392,12 @@
         "weaponName": "Pirate's Glaive",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3505,7 +4405,12 @@
         "weaponName": "Killer Falcon",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3513,7 +4418,12 @@
         "weaponName": "Cerulean Sky",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3521,7 +4431,12 @@
         "weaponName": "Overture",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3529,7 +4444,12 @@
         "weaponName": "Muramasa",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3537,7 +4457,12 @@
         "weaponName": "Feathered Gloves",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -3550,7 +4475,12 @@
         "weaponName": "Mystic Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "ExtraHigh",
@@ -3576,7 +4506,12 @@
         "weaponName": "Infiltration Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "ExtraHigh",
@@ -3602,7 +4537,12 @@
         "weaponName": "Leather Combat Gloves",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "ExtraHigh",
@@ -3628,7 +4568,12 @@
         "weaponName": "Shortbarrel",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "ExtraHigh",
@@ -3654,7 +4599,12 @@
         "weaponName": "Heirloom Brush",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "ExtraHigh",
@@ -3685,7 +4635,12 @@
         "weaponName": "Fusion Sword",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -3693,7 +4648,12 @@
         "weaponName": "Phoenix Odachi",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3701,7 +4661,12 @@
         "weaponName": "Transgressor",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -3709,7 +4674,12 @@
         "weaponName": "Bird of Prey",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -3717,7 +4687,12 @@
         "weaponName": "Surfer Blade",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -3730,7 +4705,12 @@
         "weaponName": "Fusion Sword",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -3738,7 +4718,12 @@
         "weaponName": "Garish Greatblade",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3746,7 +4731,12 @@
         "weaponName": "Patissier's Collar",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3754,7 +4744,12 @@
         "weaponName": "Phoenix Odachi",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3762,7 +4757,12 @@
         "weaponName": "Starsoul Blade",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -3775,7 +4775,12 @@
         "weaponName": "Festive Rod",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3783,7 +4788,12 @@
         "weaponName": "Fafnir Rifle",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3791,7 +4801,12 @@
         "weaponName": "Kikuichimonji",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3799,7 +4814,12 @@
         "weaponName": "Demon's Impetus",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       }
@@ -3812,7 +4832,12 @@
         "weaponName": "Festive Rod",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3820,7 +4845,12 @@
         "weaponName": "Lightning's Rod",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -3828,7 +4858,12 @@
         "weaponName": "Kikuichimonji",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -3841,7 +4876,12 @@
         "weaponName": "Gambanteinn",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3867,7 +4907,12 @@
         "weaponName": "Locke's Sword",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3893,7 +4938,12 @@
         "weaponName": "Shinra Ceremonial Rifle",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3919,7 +4969,12 @@
         "weaponName": "Luminary Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3945,7 +5000,12 @@
         "weaponName": "Striped Moogle Float",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -3976,7 +5036,12 @@
         "weaponName": "Citric Wand",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4002,7 +5067,12 @@
         "weaponName": "Scimitar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4028,7 +5098,12 @@
         "weaponName": "Locke's Sword",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4054,7 +5129,12 @@
         "weaponName": "Desperado Rifle",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4080,7 +5160,12 @@
         "weaponName": "Gelid Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4111,7 +5196,12 @@
         "weaponName": "Mermaid Rod",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4137,7 +5227,12 @@
         "weaponName": "Festive Blade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4163,7 +5258,12 @@
         "weaponName": "Locke's Sword",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4189,7 +5289,12 @@
         "weaponName": "Pirate Collar",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4215,7 +5320,12 @@
         "weaponName": "Winged Chakram",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4246,7 +5356,12 @@
         "weaponName": "Ghost Ensis",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4272,7 +5387,12 @@
         "weaponName": "Grinding Gear",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4298,7 +5418,12 @@
         "weaponName": "Mad Minute",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4324,7 +5449,12 @@
         "weaponName": "Gauntlets of the Worthy",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4350,7 +5480,12 @@
         "weaponName": "Kugelblitz",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4381,7 +5516,12 @@
         "weaponName": "Team Leader's Bamboo Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -4407,7 +5547,12 @@
         "weaponName": "Slay the Day",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4433,7 +5578,12 @@
         "weaponName": "Physician's Scalpel",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4459,7 +5609,12 @@
         "weaponName": "Overture",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4485,7 +5640,12 @@
         "weaponName": "Feathered Gloves",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4516,7 +5676,12 @@
         "weaponName": "Teacher's Paper Fan",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4542,7 +5707,12 @@
         "weaponName": "Brilliant Collar",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4568,7 +5738,12 @@
         "weaponName": "Shinra Military Sword",
         "ranges": [
           {
-            "range": "Self",
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4599,7 +5774,12 @@
         "weaponName": "Sunrise Cannon",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4630,7 +5810,12 @@
         "weaponName": "Sunrise Cannon",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4656,7 +5841,12 @@
         "weaponName": "Desperado Rapier",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4687,7 +5877,12 @@
         "weaponName": "Desperado Rapier",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -4718,7 +5913,12 @@
         "weaponName": "Gorgeous Staff",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -4726,7 +5926,12 @@
         "weaponName": "Killer Falcon",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -4734,7 +5939,12 @@
         "weaponName": "Chrome Death Penalty",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -4747,7 +5957,12 @@
         "weaponName": "Sōba",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -4760,7 +5975,12 @@
         "weaponName": "Festive Blade",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -4773,7 +5993,12 @@
         "weaponName": "Cruel Successor",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -4781,7 +6006,12 @@
         "weaponName": "Elegant Gloves",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -4789,7 +6019,12 @@
         "weaponName": "Chrome Death Penalty",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -4802,7 +6037,12 @@
         "weaponName": "Staff of the Possessed",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -4815,7 +6055,12 @@
         "weaponName": "Chevron Blade",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -4823,7 +6068,12 @@
         "weaponName": "Chrome Death Penalty",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -4836,7 +6086,12 @@
         "weaponName": "Gorgeous Staff",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -4844,7 +6099,12 @@
         "weaponName": "Shiranui",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -4857,7 +6117,12 @@
         "weaponName": "Patissier's Spear",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -4865,7 +6130,12 @@
         "weaponName": "Crimson Blitz",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -4873,7 +6143,12 @@
         "weaponName": "Omega Wing",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -4886,7 +6161,12 @@
         "weaponName": "Antler Pike",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -4899,7 +6179,12 @@
         "weaponName": "Uber 4-Point Shuriken",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -4912,7 +6197,12 @@
         "weaponName": "Battering Sword",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }
@@ -4925,7 +6215,12 @@
         "weaponName": "Cool Cat's Megaphone",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -4933,7 +6228,12 @@
         "weaponName": "Grinding Gear",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -4941,7 +6241,12 @@
         "weaponName": "Rocket Lance",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -4949,7 +6254,12 @@
         "weaponName": "Erdrick's Sword",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -4957,7 +6267,12 @@
         "weaponName": "Umbralschwert",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -4965,7 +6280,12 @@
         "weaponName": "Snow's Bardiche",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -4973,7 +6293,12 @@
         "weaponName": "Shinra Ceremonial Rifle",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -4981,7 +6306,12 @@
         "weaponName": "Patissier's Collar",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -4989,7 +6319,12 @@
         "weaponName": "Cerulean Sky",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -4997,7 +6332,12 @@
         "weaponName": "Serrated Remiges",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -5005,7 +6345,12 @@
         "weaponName": "Shinra Blade: Model I",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -5013,7 +6358,12 @@
         "weaponName": "Omega Wing",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -5021,7 +6371,12 @@
         "weaponName": "Leather Combat Gloves",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -5029,7 +6384,12 @@
         "weaponName": "Shining Gloves",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -5037,7 +6397,12 @@
         "weaponName": "Galian Roar",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -5045,7 +6410,12 @@
         "weaponName": "Fatum Ex Machina",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       }
@@ -5058,7 +6428,12 @@
         "weaponName": "Flayer",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -5066,7 +6441,12 @@
         "weaponName": "Mop",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -5074,7 +6454,12 @@
         "weaponName": "Spear",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -5082,7 +6467,12 @@
         "weaponName": "Trident",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       }
@@ -5095,7 +6485,12 @@
         "weaponName": "Supreme Sage's Staff",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -5103,7 +6498,12 @@
         "weaponName": "Dragoon Lance",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -5111,7 +6511,12 @@
         "weaponName": "Fusion Sword",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -5119,7 +6524,12 @@
         "weaponName": "Blade of the Worthy",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -5127,7 +6537,12 @@
         "weaponName": "Infiltration Sword",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -5135,7 +6550,12 @@
         "weaponName": "Blue Daffodil Gloves",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -5143,7 +6563,12 @@
         "weaponName": "Lightning's Gloves",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -5151,7 +6576,12 @@
         "weaponName": "Transgressor",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -5159,7 +6589,12 @@
         "weaponName": "Bird of Prey",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -5167,7 +6602,12 @@
         "weaponName": "Rocker's Guitar",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -5175,7 +6615,12 @@
         "weaponName": "Festive Sword",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       },
@@ -5183,7 +6628,12 @@
         "weaponName": "Sword of the Hunt",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "Self",
+              "ob10": "Self",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       }
@@ -5196,7 +6646,12 @@
         "weaponName": "Physician's Scalpel",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "ExtraHigh",
@@ -5222,7 +6677,12 @@
         "weaponName": "Chrome Death Penalty",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "ExtraHigh",
@@ -5253,7 +6713,12 @@
         "weaponName": "Noble Parasol",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       },
@@ -5261,7 +6726,12 @@
         "weaponName": "Festive Sword",
         "ranges": [
           {
-            "range": "Self"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "Self",
+              "ob0": "Self"
+            }
           }
         ]
       }
@@ -5274,7 +6744,12 @@
         "weaponName": "Full Metal Staff",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -5300,7 +6775,12 @@
         "weaponName": "Noblesse Rod",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -5326,7 +6806,12 @@
         "weaponName": "Lightning's Sword",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -5352,7 +6837,12 @@
         "weaponName": "Turks' Blade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -5378,7 +6868,12 @@
         "weaponName": "Type-91 Two-Hander",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5404,7 +6899,12 @@
         "weaponName": "Electrocannon",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5430,7 +6930,12 @@
         "weaponName": "Battle Trumpet",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5456,7 +6961,12 @@
         "weaponName": "Spirit Demon Megaphone",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -5482,7 +6992,12 @@
         "weaponName": "Patissier's Spear",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5508,7 +7023,12 @@
         "weaponName": "Pole Axe",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5534,7 +7054,12 @@
         "weaponName": "Iron Blade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -5560,7 +7085,12 @@
         "weaponName": "Mystic Sword",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5586,7 +7116,12 @@
         "weaponName": "Desperado Glaive",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5612,7 +7147,12 @@
         "weaponName": "Rest in Peace",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5638,7 +7178,12 @@
         "weaponName": "Steiner's Blade",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -5664,7 +7209,12 @@
         "weaponName": "Featherscatter",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -5690,7 +7240,12 @@
         "weaponName": "Marine Shooter",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5716,7 +7271,12 @@
         "weaponName": "Spirit Demon Rifle",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -5742,7 +7302,12 @@
         "weaponName": "Dragontail Sword",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -5768,7 +7333,12 @@
         "weaponName": "Slick Beetle",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5794,7 +7364,12 @@
         "weaponName": "Steward Collar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -5820,7 +7395,12 @@
         "weaponName": "Infiltration Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5846,7 +7426,12 @@
         "weaponName": "Kuja's Spirit Blade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5872,7 +7457,12 @@
         "weaponName": "Northern Lights",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5898,7 +7488,12 @@
         "weaponName": "Pandemonic Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5924,7 +7519,12 @@
         "weaponName": "Shinra Blade: Model I",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5950,7 +7550,12 @@
         "weaponName": "Kotetsu",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -5976,7 +7581,12 @@
         "weaponName": "Leather Gloves",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6002,7 +7612,12 @@
         "weaponName": "Lightning's Gloves",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6028,7 +7643,12 @@
         "weaponName": "Shining Gloves",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6054,7 +7674,12 @@
         "weaponName": "Steward Gloves",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6080,7 +7705,12 @@
         "weaponName": "Noblesse Automatic",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6106,7 +7736,12 @@
         "weaponName": "S1976C",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6132,7 +7767,12 @@
         "weaponName": "4-Point Shuriken",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6158,7 +7798,12 @@
         "weaponName": "Fatum Ex Machina",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6184,7 +7829,12 @@
         "weaponName": "Watch of the Hunt",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6215,7 +7865,12 @@
         "weaponName": "Magatsuchi Rod",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6241,7 +7896,12 @@
         "weaponName": "Type-91 Two-Hander",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6267,7 +7927,12 @@
         "weaponName": "Electrocannon",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6293,7 +7958,12 @@
         "weaponName": "Solid Bazooka",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6319,7 +7989,12 @@
         "weaponName": "Battle Trumpet",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6345,7 +8020,12 @@
         "weaponName": "Gold Megaphone",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6371,7 +8051,12 @@
         "weaponName": "Pole Axe",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6397,7 +8082,12 @@
         "weaponName": "Erdrick's Sword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6423,7 +8113,12 @@
         "weaponName": "Mystic Sword",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6449,7 +8144,12 @@
         "weaponName": "Snow's Bardiche",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6475,7 +8175,12 @@
         "weaponName": "Mad Minute",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6501,7 +8206,12 @@
         "weaponName": "Junk Collar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6527,7 +8237,12 @@
         "weaponName": "Kuja's Spirit Blade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6553,7 +8268,12 @@
         "weaponName": "Kotetsu",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6579,7 +8299,12 @@
         "weaponName": "Amarant's Claws",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6605,7 +8330,12 @@
         "weaponName": "Guide Gloves",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6631,7 +8361,12 @@
         "weaponName": "Shining Gloves",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6657,7 +8392,12 @@
         "weaponName": "Striped Moogle Gloves",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6683,7 +8423,12 @@
         "weaponName": "Tiger Fangs",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6709,7 +8454,12 @@
         "weaponName": "S1976C",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6735,7 +8485,12 @@
         "weaponName": "Striped Moogle Flag",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6761,7 +8516,12 @@
         "weaponName": "Magatsuchi Blade",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6787,7 +8547,12 @@
         "weaponName": "Twinkling Star",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6818,7 +8583,12 @@
         "weaponName": "Dawn's Prayers",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6844,7 +8614,12 @@
         "weaponName": "Floral Wand",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6870,7 +8645,12 @@
         "weaponName": "Sun Umbrella",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6896,7 +8676,12 @@
         "weaponName": "Greatsword (A)",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6922,7 +8707,12 @@
         "weaponName": "Quad Gatling Gun",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -6948,7 +8738,12 @@
         "weaponName": "W Machine",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -6974,7 +8769,12 @@
         "weaponName": "Silver Megaphone",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Low",
@@ -6995,7 +8795,12 @@
             }
           },
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7021,7 +8826,12 @@
         "weaponName": "Captain's Spear",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7047,7 +8857,12 @@
         "weaponName": "Glavenus Sword",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7073,7 +8888,12 @@
         "weaponName": "Hardedge",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7099,7 +8919,12 @@
         "weaponName": "Sleek Saber",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7125,7 +8950,12 @@
         "weaponName": "Best Wishes",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7151,7 +8981,12 @@
         "weaponName": "Piece of Cake",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7177,7 +9012,12 @@
         "weaponName": "Set Square",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7203,7 +9043,12 @@
         "weaponName": "Slay the Day",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7229,7 +9074,12 @@
         "weaponName": "Stream Slasher",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7255,7 +9105,12 @@
         "weaponName": "Desperado Rifle",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7281,7 +9136,12 @@
         "weaponName": "Nightjar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7307,7 +9167,12 @@
         "weaponName": "Rifle of the Hunt",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7333,7 +9198,12 @@
         "weaponName": "Turks' Rifle",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7359,7 +9229,12 @@
         "weaponName": "Great Sabrecat Collar",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7385,7 +9260,12 @@
         "weaponName": "Iron Collar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7411,7 +9291,12 @@
         "weaponName": "Cerulean Sky",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7437,7 +9322,12 @@
         "weaponName": "Folding Ruler",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7463,7 +9353,12 @@
         "weaponName": "Overture",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7489,7 +9384,12 @@
         "weaponName": "Radiant Edge",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7515,7 +9415,12 @@
         "weaponName": "Class President's Bracelet",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7541,7 +9446,12 @@
         "weaponName": "Járngreipr",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7567,7 +9477,12 @@
         "weaponName": "Turks' Gloves",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7593,7 +9508,12 @@
         "weaponName": "Hawkeye",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7619,7 +9539,12 @@
         "weaponName": "Winged Chakram",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7645,7 +9570,12 @@
         "weaponName": "Black Whiskers",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7671,7 +9601,12 @@
         "weaponName": "Cutlass",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7697,7 +9632,12 @@
         "weaponName": "Iron Greatsword",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7723,7 +9663,12 @@
         "weaponName": "Surfer Blade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7749,7 +9694,12 @@
         "weaponName": "Twinkling Star",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7780,7 +9730,12 @@
         "weaponName": "Crimson Staff",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7806,7 +9761,12 @@
         "weaponName": "Snowflake",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7832,7 +9792,12 @@
         "weaponName": "Sun Umbrella",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7858,7 +9823,12 @@
         "weaponName": "Hell House Cannon",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7884,7 +9854,12 @@
         "weaponName": "Nocturne Horn",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7910,7 +9885,12 @@
         "weaponName": "Witch's Broom",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7936,7 +9916,12 @@
         "weaponName": "Full Throttle",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -7962,7 +9947,12 @@
         "weaponName": "Nightjar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -7988,7 +9978,12 @@
         "weaponName": "Rose Musket",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8014,7 +10009,12 @@
         "weaponName": "Thunderbird",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8040,7 +10040,12 @@
         "weaponName": "Stingray",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8066,7 +10071,12 @@
         "weaponName": "Canyon Collar",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8092,7 +10102,12 @@
         "weaponName": "Gold Collar",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -8118,7 +10133,12 @@
         "weaponName": "Great Sabrecat Collar",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -8144,7 +10164,12 @@
         "weaponName": "Hell House Collar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -8170,7 +10195,12 @@
         "weaponName": "Nameless",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -8196,7 +10226,12 @@
         "weaponName": "Protector's Blade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8222,7 +10257,12 @@
         "weaponName": "Starsoul Blade",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8248,7 +10288,12 @@
         "weaponName": "Feathered Gloves",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -8274,7 +10319,12 @@
         "weaponName": "Kaiser Knuckles",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8300,7 +10350,12 @@
         "weaponName": "Galian Roar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8326,7 +10381,12 @@
         "weaponName": "Kugelblitz",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8352,7 +10412,12 @@
         "weaponName": "Holiday Bell",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8378,7 +10443,12 @@
         "weaponName": "Arc Sword",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8404,7 +10474,12 @@
         "weaponName": "Stream Guard",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -8435,7 +10510,12 @@
         "weaponName": "Snow's Bardiche",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8461,7 +10541,12 @@
         "weaponName": "Nautilus Spiral",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8492,7 +10577,12 @@
         "weaponName": "Striking Staff",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8523,7 +10613,12 @@
         "weaponName": "Shortbarrel",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8554,7 +10649,12 @@
         "weaponName": "Terra's Rod",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8580,7 +10680,12 @@
         "weaponName": "Volcanic Heat",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8606,7 +10711,12 @@
         "weaponName": "Sharkslayer",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8632,7 +10742,12 @@
         "weaponName": "Gold Megaphone",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8658,7 +10773,12 @@
         "weaponName": "Chocobo Paddle",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -8684,7 +10804,12 @@
         "weaponName": "Patissier's Glaive",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8710,7 +10835,12 @@
         "weaponName": "Marine Shooter",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8736,7 +10866,12 @@
         "weaponName": "Flame Dragon's Band",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -8762,7 +10897,12 @@
         "weaponName": "Ivy Collar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8788,7 +10928,12 @@
         "weaponName": "Flame Dragon Blade",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -8814,7 +10959,12 @@
         "weaponName": "Radiant Edge",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8840,7 +10990,12 @@
         "weaponName": "Shinra Wyvern Blade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -8866,7 +11021,12 @@
         "weaponName": "Withering Blaze",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8892,7 +11052,12 @@
         "weaponName": "Guide Gloves",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8918,7 +11083,12 @@
         "weaponName": "Boomerang",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -8944,7 +11114,12 @@
         "weaponName": "Mallet of Luck",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -8975,7 +11150,12 @@
         "weaponName": "Terra's Rod",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9001,7 +11181,12 @@
         "weaponName": "Icebolt Megaphone",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -9027,7 +11212,12 @@
         "weaponName": "Stilva Megaphone",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -9053,7 +11243,12 @@
         "weaponName": "Rocket Lance",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9079,7 +11274,12 @@
         "weaponName": "Neo Bahamut Greatsword",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -9105,7 +11305,12 @@
         "weaponName": "Stilva Glaive",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -9131,7 +11336,12 @@
         "weaponName": "Bald Eagle",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9157,7 +11367,12 @@
         "weaponName": "Nautilus Spiral",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9183,7 +11398,12 @@
         "weaponName": "Ivy Collar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9209,7 +11429,12 @@
         "weaponName": "Lightning's Gloves",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9235,7 +11460,12 @@
         "weaponName": "Icebolt Shooter",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -9261,7 +11491,12 @@
         "weaponName": "Pinwheel",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9287,7 +11522,12 @@
         "weaponName": "Gelid Sword",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9313,7 +11553,12 @@
         "weaponName": "Pressure Ridge",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9344,7 +11589,12 @@
         "weaponName": "Terra's Rod",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9370,7 +11620,12 @@
         "weaponName": "Icebolt Megaphone",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -9396,7 +11651,12 @@
         "weaponName": "Witch's Broom",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9422,7 +11682,12 @@
         "weaponName": "Dragoon Lance",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9448,7 +11713,12 @@
         "weaponName": "Nautilus Spiral",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9474,7 +11744,12 @@
         "weaponName": "Seaside Collar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9500,7 +11775,12 @@
         "weaponName": "Icebolt Shooter",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -9526,7 +11806,12 @@
         "weaponName": "Wind Slash",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9557,7 +11842,12 @@
         "weaponName": "Ghost Ensis",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9583,7 +11873,12 @@
         "weaponName": "Shinra Greatsword: Model I",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9609,7 +11904,12 @@
         "weaponName": "Desperado Glaive",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9635,7 +11935,12 @@
         "weaponName": "Rifle of the Hunt",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9661,7 +11966,12 @@
         "weaponName": "Hrotti",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -9687,7 +11997,12 @@
         "weaponName": "Blue Bramble",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9713,7 +12028,12 @@
         "weaponName": "Immaculate Blade",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9739,7 +12059,12 @@
         "weaponName": "Chiron",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9765,7 +12090,12 @@
         "weaponName": "Fatum Ex Machina",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9791,7 +12121,12 @@
         "weaponName": "Risanautr",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -9817,7 +12152,12 @@
         "weaponName": "Virtuous Contract",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -9848,7 +12188,12 @@
         "weaponName": "Sea Dragon Staff",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -9874,7 +12219,12 @@
         "weaponName": "Staff of the Possessed",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9900,7 +12250,12 @@
         "weaponName": "Mythril Slasher",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9926,7 +12281,12 @@
         "weaponName": "Sea Dragon Greatsword",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -9952,7 +12312,12 @@
         "weaponName": "Sharkslayer",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -9978,7 +12343,12 @@
         "weaponName": "Green Megaphone",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -10004,7 +12374,12 @@
         "weaponName": "Umbralschwert",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -10030,7 +12405,12 @@
         "weaponName": "Revenant Mother's Glaive",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -10056,7 +12436,12 @@
         "weaponName": "Silver Collar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -10082,7 +12467,12 @@
         "weaponName": "Tempest",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -10108,7 +12498,12 @@
         "weaponName": "Black Whiskers",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -10139,7 +12534,12 @@
         "weaponName": "Floral Wand",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -10165,7 +12565,12 @@
         "weaponName": "Teacher's Paper Fan",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -10191,7 +12596,12 @@
         "weaponName": "Nocturne Horn",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -10217,7 +12627,12 @@
         "weaponName": "Silver Collar",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -10243,7 +12658,12 @@
         "weaponName": "Tsviet Collar",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -10269,7 +12689,12 @@
         "weaponName": "Humus Saber",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -10295,7 +12720,12 @@
         "weaponName": "Merciless White",
         "ranges": [
           {
-            "range": "All",
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "Mid",
@@ -10321,7 +12751,12 @@
         "weaponName": "Holiday Bell",
         "ranges": [
           {
-            "range": "SingleTarget",
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            },
             "allPotencies": {
               "ob6": {
                 "max": "High",
@@ -10352,7 +12787,12 @@
         "weaponName": "Zenithian Sword",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       }
@@ -10365,7 +12805,12 @@
         "weaponName": "Crimson Blitz",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       },
@@ -10373,7 +12818,12 @@
         "weaponName": "Gun of the Worthy",
         "ranges": [
           {
-            "range": "SingleTarget"
+            "allRanges": {
+              "ob6": "SingleTarget",
+              "ob10": "SingleTarget",
+              "ob1": "SingleTarget",
+              "ob0": "SingleTarget"
+            }
           }
         ]
       }
@@ -10386,7 +12836,12 @@
         "weaponName": "Inflatable Buster Sword",
         "ranges": [
           {
-            "range": "All"
+            "allRanges": {
+              "ob6": "All",
+              "ob10": "All",
+              "ob1": "All",
+              "ob0": "All"
+            }
           }
         ]
       }

@@ -104,7 +104,7 @@ findMatchingWeapons filter dbState = do
                 -- The effect has associated ranges.
                 -- We either fail if they don't match the range specified by the user,
                 -- or succeed with a nonempty array.
-                matchingRanges <- matchRanges filter.range ranges
+                matchingRanges <- matchRanges weaponState.ownedOb filter.range ranges
                 pure $ Just matchingRanges
 
           let
@@ -173,11 +173,24 @@ findMatchingWeapons filter dbState = do
           FromOb6 -> Just allPotencies.ob6
           FromOb10 -> Just allPotencies.ob10
 
-  matchRanges :: FilterRange -> Array GroupedWeaponRange -> Maybe (NonEmptyArray GroupedWeaponRange)
-  matchRanges filterRange ranges =
+  matchRanges :: Maybe ObRange -> FilterRange -> Array GroupedWeaponRange -> Maybe (NonEmptyArray GroupedWeaponRange)
+  matchRanges ownedOb filterRange ranges =
     ranges
-      # Arr.filter (\r -> matchRange filterRange r.range)
+      # Arr.filter (\r -> matchRange filterRange (rangeForOb ownedOb r.allRanges))
       # NAR.fromArray
+
+  -- An effect's range can vary by overboost level,
+  -- e.g. Festive Sword's Enliven is `Self` at OB0/OB1 and `All` at OB6/OB10.
+  -- So we match against the range at the user's owned OB.
+  -- For an unowned weapon (no selected OB), we match on its
+  -- OB0 range.
+  rangeForOb :: Maybe ObRange -> AllRanges -> Range
+  rangeForOb = case _ of
+    Just (ObRange { from: FromOb0 }) -> _.ob0
+    Just (ObRange { from: FromOb1 }) -> _.ob1
+    Just (ObRange { from: FromOb6 }) -> _.ob6
+    Just (ObRange { from: FromOb10 }) -> _.ob10
+    Nothing -> _.ob0
 
   matchRange :: FilterRange -> Range -> Boolean
   matchRange =

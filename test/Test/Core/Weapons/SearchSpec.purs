@@ -12,7 +12,7 @@ import Core.Weapons.Search as Search
 import Data.Array as Arr
 import Data.Array.NonEmpty as NAR
 import Data.Map as Map
-import Data.Maybe (Maybe(..), maybe)
+import Data.Maybe (Maybe(..), isJust, maybe)
 import Data.Newtype (unwrap)
 import Data.Set as Set
 import Data.String.NonEmpty (NonEmptyString)
@@ -30,6 +30,7 @@ spec =
     assignWeaponSpec
     searchExamplesSpec
     findMatchingWeaponsSpec
+    enlivenObRangeSpec
 
 combinationsSpec :: Spec Unit
 combinationsSpec = do
@@ -425,6 +426,49 @@ findMatchingWeaponsSpec = do
         dbState.userState.weapons
 
     pure $ dbState { userState { weapons = weapons } }
+
+-- Regression test for effects whose range varies by overboost level.
+-- Festive Sword's Enliven is `Self` at OB0/OB1 but `All` at OB6/OB10,
+-- so whether it matches a range filter depends on the owned OB level.
+enlivenObRangeSpec :: Spec Unit
+enlivenObRangeSpec = do
+  describe "effect range that varies by overboost level" do
+    it "filters Enliven by the range at the owned OB level" do
+      dbState <- T.loadTestDbState
+
+      let
+        festiveSword = WeaponName (nes @"Festive Sword")
+        ob0to5 = ObRange { from: FromOb0, to: ToOb5 }
+        ob6to10 = ObRange { from: FromOb6, to: ToOb10 }
+        enlivenAll = { effectType: FilterEnliven, range: FilterAll, minBasePotency: Low, minMaxPotency: Low }
+        enlivenSelf = { effectType: FilterEnliven, range: FilterSelfOrSingleTargetOrAll, minBasePotency: Low, minMaxPotency: Low }
+
+        matches :: ObRange -> Filter -> Maybe FilterResultWeapon
+        matches obRange filter =
+          dbState
+            # setOwned festiveSword obRange
+            # Search.findMatchingWeapons filter
+            # _.matchingWeapons
+            # findByName festiveSword
+
+      -- Enliven is `All` at OB6/OB10: owned at OB6-10, it matches a "range: All" filter.
+      (matches ob6to10 enlivenAll <#> _.matchesFilters) `shouldEqual` Just true
+
+      -- Enliven is `Self` at OB0/OB1: owned at OB0-5, it must NOT match a "range: All" filter...
+      (isJust $ matches ob0to5 enlivenAll) `shouldEqual` false
+
+      -- ...but it must match a "Self / Single Target / All" filter.
+      (matches ob0to5 enlivenSelf <#> _.matchesFilters) `shouldEqual` Just true
+  where
+  findByName :: WeaponName -> Array FilterResultWeapon -> Maybe FilterResultWeapon
+  findByName name = Arr.find (\w -> w.weapon.weapon.name == name)
+
+  setOwned :: WeaponName -> ObRange -> DbState -> DbState
+  setOwned name obRange dbState =
+    dbState
+      { userState
+          { weapons = Map.update (\w -> Just $ w { ownedOb = Just obRange }) name dbState.userState.weapons }
+      }
 
 mkWeapon :: NonEmptyString -> CharacterName -> WeaponData
 mkWeapon id character =

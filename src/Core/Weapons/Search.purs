@@ -179,9 +179,11 @@ findMatchingWeapons filter dbState = do
       # Arr.filter (\r -> matchRange filterRange (rangeForOb ownedOb r.allRanges))
       # NAR.fromArray
 
-  -- An effect's range can vary by overboost level, so we match against the range
-  -- at the user's owned OB. For an unowned weapon (no selected OB), we match on its
-  -- OB0 range, preserving the previous behavior.
+  -- An effect's range can vary by overboost level,
+  -- e.g. Festive Sword's Enliven is `Self` at OB0/OB1 and `All` at OB6/OB10.
+  -- So we match against the range at the user's owned OB.
+  -- For an unowned weapon (no selected OB), we match on its
+  -- OB0 range.
   rangeForOb :: Maybe ObRange -> AllRanges -> Range
   rangeForOb = case _ of
     Just (ObRange { from: FromOb0 }) -> _.ob0

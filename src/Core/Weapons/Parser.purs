@@ -67,10 +67,16 @@ parseWeapon rowIndex row = do
   {-
     NOTE: we only parse the text for R.Abilities so we can display them in the UI.
     NOTE: we only parse the text for Diamond Custom Abilities so we can display them in the UI.
-    NOTE: for S.Abilities, we only care about sigil boosts.
-      * `parseSAbilitySigilBoost` is used in `Database.groupsForWeapon`
-      * @(ref:parse-sigil-boosts)
-      * @(ref:use-sigil-boosts)
+    NOTE: for S.Abilities, we only care about:
+      * sigil boosts.
+        * `parseSAbilitySigilBoost` is used in `Database.groupsForWeapon`
+        * @(ref:parse-sigil-boosts)
+        * @(ref:use-sigil-boosts)
+      * All (Cure Spells)
+        * `hasCureAllSAbility``
+        * @(ref:parse-cure-spell)
+        * @(ref:use-cure-spell)
+
   -}
 
   pure
@@ -129,6 +135,7 @@ type ParsedDescription =
   , commandAbilitySigil :: Maybe Sigil
   }
 
+-- #(ref:parse-cure-spell)
 hasCureAllSAbility :: NonEmptyString -> Boolean
 hasCureAllSAbility = NES.toString >>> String.startsWith "All (Cure Spells)"
 

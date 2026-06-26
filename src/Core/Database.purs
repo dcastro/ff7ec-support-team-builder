@@ -526,6 +526,7 @@ groupsForWeapon weapon = do
     , getSigilBoost
     ]
   where
+  -- #(ref:use-cure-spell)
   getCureAllAbility :: LazyList.List GroupEntry
   getCureAllAbility = do
     let sAbilities = [ weapon.sAbilities.slot1, weapon.sAbilities.slot2, weapon.sAbilities.slot3 ]

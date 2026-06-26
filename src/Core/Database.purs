@@ -137,268 +137,14 @@ getDistinctObs weapon = do
   indices :: Int -> Array Int
   indices n = if n <= 0 then [] else Arr.range 0 (n - 1)
 
-  -- Two effects are equivalent if they have the same potencies and range
-  -- Duration, extension, and percentages are not considered.
+  -- Two effects are equivalent if they're the same kind of effect with the same
+  -- range and potencies. Duration, extension, and percentages are not considered.
+  -- Crashes if `x` and `y` are different kinds of effect: that would mean a weapon's
+  -- effects aren't listed in the same order at every overboost level.
   areWeaponEffectsEquivalent :: WeaponEffect -> WeaponEffect -> Boolean
-  areWeaponEffectsEquivalent x y =
-    case x of
-      Heal { range: range1, percentage: _ } ->
-        case y of
-          Heal { range: range2, percentage: _ } -> range1 == range2
-          _ -> crash unit
-      PatkUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          PatkUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      MatkUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          MatkUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      PdefUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          PdefUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      MdefUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          MdefUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      FireDamageUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          FireDamageUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      IceDamageUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          IceDamageUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      LightningDamageUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          LightningDamageUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      EarthDamageUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          EarthDamageUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      WaterDamageUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          WaterDamageUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      WindDamageUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          WindDamageUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      Veil { range: range1, durExt: _, percentage: _ } ->
-        case y of
-          Veil { range: range2, durExt: _, percentage: _ } -> range1 == range2
-          _ -> crash unit
-      Provoke { range: range1, durExt: _ } ->
-        case y of
-          Provoke { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      PatkDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          PatkDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      MatkDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          MatkDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      PdefDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          PdefDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      MdefDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          MdefDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      FireResistDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          FireResistDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      IceResistDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          IceResistDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      LightningResistDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          LightningResistDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      EarthResistDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          EarthResistDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      WaterResistDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          WaterResistDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      WindResistDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          WindResistDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      Enfeeble { range: range1, durExt: _ } ->
-        case y of
-          Enfeeble { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      Stop { range: range1, durExt: _ } ->
-        case y of
-          Stop { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      ExploitWeakness { range: range1, durExt: _, percentage: _ } ->
-        case y of
-          ExploitWeakness { range: range2, durExt: _, percentage: _ } -> range1 == range2
-          _ -> crash unit
-      HPGain { range: range1, durExt: _, percentage: _ } ->
-        case y of
-          HPGain { range: range2, durExt: _, percentage: _ } -> range1 == range2
-          _ -> crash unit
-      EnhanceBuffs { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          EnhanceBuffs { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      EnhanceDebuffs { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          EnhanceDebuffs { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      Enliven { range: range1, durExt: _ } ->
-        case y of
-          Enliven { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-
-      FireWeakness { range: range1, durExt: _ } ->
-        case y of
-          FireWeakness { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      IceWeakness { range: range1, durExt: _ } ->
-        case y of
-          IceWeakness { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      LightningWeakness { range: range1, durExt: _ } ->
-        case y of
-          LightningWeakness { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      EarthWeakness { range: range1, durExt: _ } ->
-        case y of
-          EarthWeakness { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      WaterWeakness { range: range1, durExt: _ } ->
-        case y of
-          WaterWeakness { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      WindWeakness { range: range1, durExt: _ } ->
-        case y of
-          WindWeakness { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      PhysicalWeaponBoost { range: range1, durExt: _ } ->
-        case y of
-          PhysicalWeaponBoost { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      MagicWeaponBoost { range: range1, durExt: _ } ->
-        case y of
-          MagicWeaponBoost { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      PhysicalDamageBonus { range: range1, durExt: _ } ->
-        case y of
-          PhysicalDamageBonus { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      MagicDamageBonus { range: range1, durExt: _ } ->
-        case y of
-          MagicDamageBonus { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      FireWeaponBoost { range: range1, durExt: _ } ->
-        case y of
-          FireWeaponBoost { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      IceWeaponBoost { range: range1, durExt: _ } ->
-        case y of
-          IceWeaponBoost { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      LightningWeaponBoost { range: range1, durExt: _ } ->
-        case y of
-          LightningWeaponBoost { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      EarthWeaponBoost { range: range1, durExt: _ } ->
-        case y of
-          EarthWeaponBoost { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      WaterWeaponBoost { range: range1, durExt: _ } ->
-        case y of
-          WaterWeaponBoost { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      WindWeaponBoost { range: range1, durExt: _ } ->
-        case y of
-          WindWeaponBoost { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      FireDamageBonus { range: range1, durExt: _ } ->
-        case y of
-          FireDamageBonus { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      IceDamageBonus { range: range1, durExt: _ } ->
-        case y of
-          IceDamageBonus { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      LightningDamageBonus { range: range1, durExt: _ } ->
-        case y of
-          LightningDamageBonus { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      EarthDamageBonus { range: range1, durExt: _ } ->
-        case y of
-          EarthDamageBonus { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      WaterDamageBonus { range: range1, durExt: _ } ->
-        case y of
-          WaterDamageBonus { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      WindDamageBonus { range: range1, durExt: _ } ->
-        case y of
-          WindDamageBonus { range: range2, durExt: _ } -> range1 == range2
-          _ -> crash unit
-      FireDamageDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          FireDamageDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      IceDamageDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          IceDamageDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      LightningDamageDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          LightningDamageDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      EarthDamageDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          EarthDamageDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      WaterDamageDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          WaterDamageDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      WindDamageDown { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          WindDamageDown { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      FireResistUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          FireResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      IceResistUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          IceResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      LightningResistUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          LightningResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      EarthResistUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          EarthResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      WaterResistUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          WaterResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
-      WindResistUp { range: range1, durExt: _, potencies: pot1 } ->
-        case y of
-          WindResistUp { range: range2, durExt: _, potencies: pot2 } -> pot1 == pot2 && range1 == range2
-          _ -> crash unit
+  areWeaponEffectsEquivalent x y
+    | tagOf x /= tagOf y = crash unit
+    | otherwise = rangeOf x == rangeOf y && potenciesOf x == potenciesOf y
 
   crash _ = unsafeCrashWith $ "Effects for weapon " <> display weapon.name <> " are not in the same order"
 
@@ -656,6 +402,75 @@ potenciesOf = case _ of
   EnhanceDebuffs r -> Just r.potencies
   Enliven _ -> Nothing
 
+-- A tag identifying which kind of effect this is (i.e. its constructor), so two
+-- effects can be checked for "same kind" regardless of their range or potencies.
+tagOf :: WeaponEffect -> FilterEffectType
+tagOf = case _ of
+  Heal _ -> FilterHeal
+  PatkUp _ -> FilterPatkUp
+  MatkUp _ -> FilterMatkUp
+  PdefUp _ -> FilterPdefUp
+  MdefUp _ -> FilterMdefUp
+  HPGain _ -> FilterHPGain
+  EnhanceBuffs _ -> FilterEnhanceBuffs
+  PhysicalWeaponBoost _ -> FilterPhysicalWeaponBoost
+  MagicWeaponBoost _ -> FilterMagicWeaponBoost
+  PhysicalDamageBonus _ -> FilterPhysicalDamageBonus
+  MagicDamageBonus _ -> FilterMagicDamageBonus
+  FireDamageUp _ -> FilterFireDamageUp
+  IceDamageUp _ -> FilterIceDamageUp
+  LightningDamageUp _ -> FilterLightningDamageUp
+  EarthDamageUp _ -> FilterEarthDamageUp
+  WaterDamageUp _ -> FilterWaterDamageUp
+  WindDamageUp _ -> FilterWindDamageUp
+  FireWeaponBoost _ -> FilterFireWeaponBoost
+  IceWeaponBoost _ -> FilterIceWeaponBoost
+  LightningWeaponBoost _ -> FilterLightningWeaponBoost
+  EarthWeaponBoost _ -> FilterEarthWeaponBoost
+  WaterWeaponBoost _ -> FilterWaterWeaponBoost
+  WindWeaponBoost _ -> FilterWindWeaponBoost
+  FireDamageBonus _ -> FilterFireDamageBonus
+  IceDamageBonus _ -> FilterIceDamageBonus
+  LightningDamageBonus _ -> FilterLightningDamageBonus
+  EarthDamageBonus _ -> FilterEarthDamageBonus
+  WaterDamageBonus _ -> FilterWaterDamageBonus
+  WindDamageBonus _ -> FilterWindDamageBonus
+  FireResistUp _ -> FilterFireResistUp
+  IceResistUp _ -> FilterIceResistUp
+  LightningResistUp _ -> FilterLightningResistUp
+  EarthResistUp _ -> FilterEarthResistUp
+  WaterResistUp _ -> FilterWaterResistUp
+  WindResistUp _ -> FilterWindResistUp
+  Veil _ -> FilterVeil
+  Provoke _ -> FilterProvoke
+  PatkDown _ -> FilterPatkDown
+  MatkDown _ -> FilterMatkDown
+  PdefDown _ -> FilterPdefDown
+  MdefDown _ -> FilterMdefDown
+  FireDamageDown _ -> FilterFireDamageDown
+  IceDamageDown _ -> FilterIceDamageDown
+  LightningDamageDown _ -> FilterLightningDamageDown
+  EarthDamageDown _ -> FilterEarthDamageDown
+  WaterDamageDown _ -> FilterWaterDamageDown
+  WindDamageDown _ -> FilterWindDamageDown
+  FireResistDown _ -> FilterFireResistDown
+  IceResistDown _ -> FilterIceResistDown
+  LightningResistDown _ -> FilterLightningResistDown
+  EarthResistDown _ -> FilterEarthResistDown
+  WaterResistDown _ -> FilterWaterResistDown
+  WindResistDown _ -> FilterWindResistDown
+  FireWeakness _ -> FilterFireWeakness
+  IceWeakness _ -> FilterIceWeakness
+  LightningWeakness _ -> FilterLightningWeakness
+  EarthWeakness _ -> FilterEarthWeakness
+  WaterWeakness _ -> FilterWaterWeakness
+  WindWeakness _ -> FilterWindWeakness
+  Enfeeble _ -> FilterEnfeeble
+  Stop _ -> FilterStop
+  ExploitWeakness _ -> FilterExploitWeakness
+  EnhanceDebuffs _ -> FilterEnhanceDebuffs
+  Enliven _ -> FilterEnliven
+
 groupsForWeapon :: Weapon -> List.List GroupEntry
 groupsForWeapon weapon = do
   mergeRanges $ Arr.fold
@@ -802,75 +617,7 @@ groupsForWeapon weapon = do
     effectTypeOf = case ob0 of
       -- #(ref:heal-threshold)
       Heal { percentage } -> if unwrap percentage >= 30 then Just FilterHeal else Nothing
-      Veil {} -> Just FilterVeil
-      Provoke {} -> Just FilterProvoke
-      Enfeeble {} -> Just FilterEnfeeble
-      Stop {} -> Just FilterStop
-      ExploitWeakness {} -> Just FilterExploitWeakness
-      Enliven {} -> Just FilterEnliven
-      HPGain {} -> Just FilterHPGain
-
-      FireWeakness {} -> Just FilterFireWeakness
-      IceWeakness {} -> Just FilterIceWeakness
-      LightningWeakness {} -> Just FilterLightningWeakness
-      EarthWeakness {} -> Just FilterEarthWeakness
-      WaterWeakness {} -> Just FilterWaterWeakness
-      WindWeakness {} -> Just FilterWindWeakness
-
-      PhysicalWeaponBoost {} -> Just FilterPhysicalWeaponBoost
-      MagicWeaponBoost {} -> Just FilterMagicWeaponBoost
-      PhysicalDamageBonus {} -> Just FilterPhysicalDamageBonus
-      MagicDamageBonus {} -> Just FilterMagicDamageBonus
-
-      FireWeaponBoost {} -> Just FilterFireWeaponBoost
-      IceWeaponBoost {} -> Just FilterIceWeaponBoost
-      LightningWeaponBoost {} -> Just FilterLightningWeaponBoost
-      EarthWeaponBoost {} -> Just FilterEarthWeaponBoost
-      WaterWeaponBoost {} -> Just FilterWaterWeaponBoost
-      WindWeaponBoost {} -> Just FilterWindWeaponBoost
-
-      FireDamageBonus {} -> Just FilterFireDamageBonus
-      IceDamageBonus {} -> Just FilterIceDamageBonus
-      LightningDamageBonus {} -> Just FilterLightningDamageBonus
-      EarthDamageBonus {} -> Just FilterEarthDamageBonus
-      WaterDamageBonus {} -> Just FilterWaterDamageBonus
-      WindDamageBonus {} -> Just FilterWindDamageBonus
-
-      PatkUp {} -> Just FilterPatkUp
-      MatkUp {} -> Just FilterMatkUp
-      PdefUp {} -> Just FilterPdefUp
-      MdefUp {} -> Just FilterMdefUp
-      FireDamageUp {} -> Just FilterFireDamageUp
-      IceDamageUp {} -> Just FilterIceDamageUp
-      LightningDamageUp {} -> Just FilterLightningDamageUp
-      EarthDamageUp {} -> Just FilterEarthDamageUp
-      WaterDamageUp {} -> Just FilterWaterDamageUp
-      WindDamageUp {} -> Just FilterWindDamageUp
-      FireResistUp {} -> Just FilterFireResistUp
-      IceResistUp {} -> Just FilterIceResistUp
-      LightningResistUp {} -> Just FilterLightningResistUp
-      EarthResistUp {} -> Just FilterEarthResistUp
-      WaterResistUp {} -> Just FilterWaterResistUp
-      WindResistUp {} -> Just FilterWindResistUp
-      EnhanceBuffs {} -> Just FilterEnhanceBuffs
-
-      PatkDown {} -> Just FilterPatkDown
-      MatkDown {} -> Just FilterMatkDown
-      PdefDown {} -> Just FilterPdefDown
-      MdefDown {} -> Just FilterMdefDown
-      FireDamageDown {} -> Just FilterFireDamageDown
-      IceDamageDown {} -> Just FilterIceDamageDown
-      LightningDamageDown {} -> Just FilterLightningDamageDown
-      EarthDamageDown {} -> Just FilterEarthDamageDown
-      WaterDamageDown {} -> Just FilterWaterDamageDown
-      WindDamageDown {} -> Just FilterWindDamageDown
-      FireResistDown {} -> Just FilterFireResistDown
-      IceResistDown {} -> Just FilterIceResistDown
-      LightningResistDown {} -> Just FilterLightningResistDown
-      EarthResistDown {} -> Just FilterEarthResistDown
-      WaterResistDown {} -> Just FilterWaterResistDown
-      WindResistDown {} -> Just FilterWindResistDown
-      EnhanceDebuffs {} -> Just FilterEnhanceDebuffs
+      _ -> Just (tagOf ob0)
 
 type ReadCacheResult =
   { userState :: UserState

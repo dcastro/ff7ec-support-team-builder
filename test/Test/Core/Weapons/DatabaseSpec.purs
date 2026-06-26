@@ -223,6 +223,7 @@ getPotencies = case _ of
   ExploitWeakness {} -> Nothing
   Enliven {} -> Nothing
   HPGain {} -> Nothing
+  IncreaseCommandGauge {} -> Nothing
   EnhanceBuffs { potencies } -> Just $ EnhanceBuffs' potencies
   EnhanceDebuffs { potencies } -> Just $ EnhanceDebuffs' potencies
   FireWeakness {} -> Nothing

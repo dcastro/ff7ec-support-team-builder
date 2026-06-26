@@ -407,6 +407,7 @@ hasPotencies = case _ of
     FilterStop -> false
     FilterExploitWeakness -> false
     FilterHPGain -> false
+    FilterIncreaseCommandGauge -> false
     FilterEnhanceBuffs -> true
     FilterEnhanceDebuffs -> true
     FilterEnliven -> false
@@ -483,6 +484,9 @@ hasRange = case _ of
     FilterStop -> true
     FilterExploitWeakness -> true
     FilterHPGain -> true
+    -- This effect has no range in the game data; the parser records `All` so the
+    -- default range filter matches it, and we hide the (meaningless) range selector.
+    FilterIncreaseCommandGauge -> false
     FilterEnhanceBuffs -> true
     FilterEnhanceDebuffs -> true
     FilterEnliven -> true

@@ -60,6 +60,12 @@ spec =
       "30s 4% HP Gain (+0s) [Range: All Allies]"
         `shouldParse`
           HPGain { range: All, durExt: { duration: Duration 30, extension: Extension 0 }, percentage: Percentage 4 }
+      "+50% Stance Gauge [Condition: First Use]"
+        `shouldParse`
+          IncreaseCommandGauge { range: All, percentage: Percentage 50 }
+      "+10% Stance Gauge"
+        `shouldParse`
+          IncreaseCommandGauge { range: All, percentage: Percentage 10 }
       "Enhance Buffs (+10s) (Low -> Extra High) [Range: All Allies]"
         `shouldParse`
           EnhanceBuffs { range: All, durExt: { duration: Duration 0, extension: Extension 10 }, potencies: { base: Low, max: ExtraHigh } }

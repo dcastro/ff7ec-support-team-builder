@@ -1535,6 +1535,10 @@ weapons:
             range: All
             percentage: 7
           type: Heal
+        - value:
+            range: All
+            percentage: 75
+          type: IncreaseCommandGauge
       description: |-
         Enhancing Rose+ (4 ATB)
         50s 25% Magic Damage Bonus (+16s) [Range: All Allies]
@@ -1564,6 +1568,10 @@ weapons:
             range: All
             percentage: 7
           type: Heal
+        - value:
+            range: All
+            percentage: 75
+          type: IncreaseCommandGauge
       description: |-
         Enhancing Rose++ (4 ATB)
         60s 30% Magic Damage Bonus (+20s) [Range: All Allies]
@@ -1593,6 +1601,10 @@ weapons:
             range: All
             percentage: 6
           type: Heal
+        - value:
+            range: All
+            percentage: 50
+          type: IncreaseCommandGauge
       description: |-
         Enhancing Rose (4 ATB)
         40s 20% Magic Damage Bonus (+13s) [Range: All Allies]
@@ -1622,6 +1634,10 @@ weapons:
             range: All
             percentage: 5
           type: Heal
+        - value:
+            range: All
+            percentage: 50
+          type: IncreaseCommandGauge
       description: |-
         Enhancing Rose (4 ATB)
         30s 20% Magic Damage Bonus (+10s) [Range: All Allies]
@@ -1742,6 +1758,10 @@ weapons:
               extension: 6
               duration: 20
           type: LightningDamageUp
+        - value:
+            range: All
+            percentage: 20
+          type: IncreaseCommandGauge
       description: |-
         Pink Aura+ (4 ATB)
         20s PATK Up (+6s) (Mid) [Range: All Allies]
@@ -1772,6 +1792,10 @@ weapons:
               extension: 8
               duration: 25
           type: LightningDamageUp
+        - value:
+            range: All
+            percentage: 20
+          type: IncreaseCommandGauge
       description: |-
         Pink Aura++ (4 ATB)
         25s PATK Up (+8s) (Mid -> High) [Range: All Allies]
@@ -1802,6 +1826,10 @@ weapons:
               extension: 6
               duration: 20
           type: LightningDamageUp
+        - value:
+            range: All
+            percentage: 10
+          type: IncreaseCommandGauge
       description: |-
         Pink Aura (4 ATB)
         20s PATK Up (+6s) (Low) [Range: All Allies]
@@ -1832,6 +1860,10 @@ weapons:
               extension: 5
               duration: 15
           type: LightningDamageUp
+        - value:
+            range: All
+            percentage: 10
+          type: IncreaseCommandGauge
       description: |-
         Pink Aura (4 ATB)
         15s PATK Up (+5s) (Low) [Range: All Allies]
@@ -10203,28 +10235,44 @@ weapons:
       slot2: Boost Ability Pot.
       slot1: Boost ATK
     ob6:
-      effects: []
+      effects:
+        - value:
+            range: All
+            percentage: 20
+          type: IncreaseCommandGauge
       description: |-
         Flying Spiral+ (4 ATB)
         620% Phys. Non-elem. Damage [Range: Single Enemy]
         +20% Stance Gauge
         10% Crit Rate [Range: Single Enemy]
     ob10:
-      effects: []
+      effects:
+        - value:
+            range: All
+            percentage: 20
+          type: IncreaseCommandGauge
       description: |-
         Flying Spiral++ (4 ATB)
         750% Phys. Non-elem. Damage [Range: Single Enemy]
         +20% Stance Gauge
         10% Crit Rate [Range: Single Enemy]
     ob1:
-      effects: []
+      effects:
+        - value:
+            range: All
+            percentage: 10
+          type: IncreaseCommandGauge
       description: |-
         Flying Spiral (4 ATB)
         480% Phys. Non-elem. Damage [Range: Single Enemy]
         +10% Stance Gauge
         10% Crit Rate [Range: Single Enemy]
     ob0:
-      effects: []
+      effects:
+        - value:
+            range: All
+            percentage: 10
+          type: IncreaseCommandGauge
       description: |-
         Flying Spiral (4 ATB)
         400% Phys. Non-elem. Damage [Range: Single Enemy]
@@ -13526,6 +13574,10 @@ weapons:
               extension: 0
               duration: 60
           type: Provoke
+        - value:
+            range: All
+            percentage: 20
+          type: IncreaseCommandGauge
       description: |-
         Frost Slash+ (4 ATB)
         780% Phys. Ice Damage [Range: Single Enemy]
@@ -13539,6 +13591,10 @@ weapons:
               extension: 0
               duration: 60
           type: Provoke
+        - value:
+            range: All
+            percentage: 20
+          type: IncreaseCommandGauge
       description: |-
         Frost Slash++ (4 ATB)
         940% Phys. Ice Damage [Range: Single Enemy]
@@ -13552,6 +13608,10 @@ weapons:
               extension: 0
               duration: 60
           type: Provoke
+        - value:
+            range: All
+            percentage: 10
+          type: IncreaseCommandGauge
       description: |-
         Frost Slash (4 ATB)
         620% Phys. Ice Damage [Range: Single Enemy]
@@ -13565,6 +13625,10 @@ weapons:
               extension: 0
               duration: 60
           type: Provoke
+        - value:
+            range: All
+            percentage: 10
+          type: IncreaseCommandGauge
       description: |-
         Frost Slash (4 ATB)
         520% Phys. Ice Damage [Range: Single Enemy]
@@ -16751,24 +16815,40 @@ weapons:
       slot2: Boost PDEF (All Allies)
       slot1: Boost Wind Resist
     ob6:
-      effects: []
+      effects:
+        - value:
+            range: All
+            percentage: 20
+          type: IncreaseCommandGauge
       description: "Parading Shot+ (4 ATB)\r\n510% Phys. Non-elem. Damage [Range: Single Enemy]\r\n+20% Stance Gauge\r\n10% Crit Rate [Range: Single Enemy]"
     ob10:
-      effects: []
+      effects:
+        - value:
+            range: All
+            percentage: 20
+          type: IncreaseCommandGauge
       description: |-
         Parading Shot++ (4 ATB)
         620% Phys. Non-elem. Damage [Range: Single Enemy]
         +20% Stance Gauge
         10% Crit Rate [Range: Single Enemy]
     ob1:
-      effects: []
+      effects:
+        - value:
+            range: All
+            percentage: 20
+          type: IncreaseCommandGauge
       description: |-
         Parading Shot (4 ATB)
         400% Phys. Non-elem. Damage [Range: Single Enemy]
         +20% Stance Gauge
         10% Crit Rate [Range: Single Enemy]
     ob0:
-      effects: []
+      effects:
+        - value:
+            range: All
+            percentage: 20
+          type: IncreaseCommandGauge
       description: |-
         Parading Shot (4 ATB)
         330% Phys. Non-elem. Damage [Range: Single Enemy]
@@ -30824,6 +30904,10 @@ weapons:
               extension: 10
               duration: 30
           type: ExploitWeakness
+        - value:
+            range: All
+            percentage: 20
+          type: IncreaseCommandGauge
       description: |-
         Freezing Riff+ (4 ATB)
         500% Mag. Ice Damage [Range: Single Enemy]
@@ -30838,6 +30922,10 @@ weapons:
               extension: 13
               duration: 40
           type: ExploitWeakness
+        - value:
+            range: All
+            percentage: 20
+          type: IncreaseCommandGauge
       description: |-
         Freezing Riff++ (4 ATB)
         600% Mag. Ice Damage [Range: Single Enemy]
@@ -30852,6 +30940,10 @@ weapons:
               extension: 8
               duration: 25
           type: ExploitWeakness
+        - value:
+            range: All
+            percentage: 10
+          type: IncreaseCommandGauge
       description: |-
         Freezing Riff (4 ATB)
         380% Mag. Ice Damage [Range: Single Enemy]
@@ -30866,6 +30958,10 @@ weapons:
               extension: 6
               duration: 20
           type: ExploitWeakness
+        - value:
+            range: All
+            percentage: 10
+          type: IncreaseCommandGauge
       description: |-
         Freezing Riff (4 ATB)
         320% Mag. Ice Damage [Range: Single Enemy]

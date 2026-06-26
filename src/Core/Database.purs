@@ -273,6 +273,7 @@ rangeOf = case _ of
   PdefUp r -> r.range
   MdefUp r -> r.range
   HPGain r -> r.range
+  IncreaseCommandGauge r -> r.range
   EnhanceBuffs r -> r.range
   PhysicalWeaponBoost r -> r.range
   MagicWeaponBoost r -> r.range
@@ -343,6 +344,7 @@ potenciesOf = case _ of
   PdefUp r -> Just r.potencies
   MdefUp r -> Just r.potencies
   HPGain _ -> Nothing
+  IncreaseCommandGauge _ -> Nothing
   EnhanceBuffs r -> Just r.potencies
   PhysicalWeaponBoost _ -> Nothing
   MagicWeaponBoost _ -> Nothing
@@ -412,6 +414,7 @@ tagOf = case _ of
   PdefUp _ -> FilterPdefUp
   MdefUp _ -> FilterMdefUp
   HPGain _ -> FilterHPGain
+  IncreaseCommandGauge _ -> FilterIncreaseCommandGauge
   EnhanceBuffs _ -> FilterEnhanceBuffs
   PhysicalWeaponBoost _ -> FilterPhysicalWeaponBoost
   MagicWeaponBoost _ -> FilterMagicWeaponBoost

@@ -2766,6 +2766,49 @@
             ob10: All
             ob1: All
             ob0: All
+- - FilterIncreaseCommandGauge
+  - - weaponName: Lightning's Rod
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Mermaid Rod
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Radiant Lance
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Blade of Ruin
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Rubber Band Gun
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Rocker's Guitar
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
 - - FilterEnhanceBuffs
   - - weaponName: Mystic Sword
       ranges:

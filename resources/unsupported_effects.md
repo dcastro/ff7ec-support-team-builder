@@ -280,7 +280,6 @@ Found 17 unsupported effect type(s).
 * +N ATB
 * +N% Additional Damage
 * +N% Limit Break Gauge
-* +N% Stance Gauge
 * Cancel Effect
 * N Additional Damage
 * N% Crit Rate

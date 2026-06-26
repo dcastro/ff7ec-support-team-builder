@@ -157,6 +157,7 @@ data WeaponEffect
   | PdefUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | MdefUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | HPGain { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | IncreaseCommandGauge { percentage :: Percentage }
   | EnhanceBuffs { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | PhysicalWeaponBoost { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | MagicWeaponBoost { range :: Range, durExt :: DurExt, percentage :: Percentage }
@@ -234,6 +235,7 @@ data FilterEffectType
   | FilterPdefUp
   | FilterMdefUp
   | FilterHPGain
+  | FilterIncreaseCommandGauge
   | FilterEnhanceBuffs
   | FilterPhysicalWeaponBoost
   | FilterMagicWeaponBoost
@@ -263,8 +265,6 @@ data FilterEffectType
   | FilterEarthDamageBonus
   | FilterWaterDamageBonus
   | FilterWindDamageBonus
-
-
 
   -- Debuffs
   | FilterEnfeeble
@@ -396,6 +396,7 @@ instance Show WeaponEffect where
       Stop rec -> showRec rec "Stop"
       ExploitWeakness rec -> showRec rec "ExploitWeakness"
       HPGain rec -> showRec rec "HPGain"
+      IncreaseCommandGauge rec -> showRec rec "IncreaseCommandGauge"
       EnhanceBuffs rec -> showRec rec "EnhanceBuffs"
       EnhanceDebuffs rec -> showRec rec "EnhanceDebuffs"
       Enliven rec -> showRec rec "Enliven"
@@ -415,6 +416,7 @@ instance Show FilterEffectType where
     FilterStop -> "FilterStop"
     FilterExploitWeakness -> "FilterExploitWeakness"
     FilterHPGain -> "FilterHPGain"
+    FilterIncreaseCommandGauge -> "FilterIncreaseCommandGauge"
     FilterEnhanceBuffs -> "FilterEnhanceBuffs"
     FilterEnhanceDebuffs -> "FilterEnhanceDebuffs"
     FilterEnliven -> "FilterEnliven"
@@ -552,6 +554,7 @@ instance WriteForeign WeaponEffect where
       Stop rec -> writeRecord rec "Stop"
       ExploitWeakness rec -> writeRecord rec "ExploitWeakness"
       HPGain rec -> writeRecord rec "HPGain"
+      IncreaseCommandGauge rec -> writeRecord rec "IncreaseCommandGauge"
       EnhanceBuffs rec -> writeRecord rec "EnhanceBuffs"
       EnhanceDebuffs rec -> writeRecord rec "EnhanceDebuffs"
       Enliven rec -> writeRecord rec "Enliven"
@@ -574,6 +577,7 @@ instance WriteForeign FilterEffectType where
     FilterStop -> writeImpl "FilterStop"
     FilterExploitWeakness -> writeImpl "FilterExploitWeakness"
     FilterHPGain -> writeImpl "FilterHPGain"
+    FilterIncreaseCommandGauge -> writeImpl "FilterIncreaseCommandGauge"
     FilterEnhanceBuffs -> writeImpl "FilterEnhanceBuffs"
     FilterEnhanceDebuffs -> writeImpl "FilterEnhanceDebuffs"
     FilterEnliven -> writeImpl "FilterEnliven"
@@ -659,6 +663,7 @@ instance ReadForeign WeaponEffect where
         Stop _ -> tryRead Stop recType value "Stop"
         ExploitWeakness _ -> tryRead ExploitWeakness recType value "ExploitWeakness"
         HPGain _ -> tryRead HPGain recType value "HPGain"
+        IncreaseCommandGauge _ -> tryRead IncreaseCommandGauge recType value "IncreaseCommandGauge"
         EnhanceBuffs _ -> tryRead EnhanceBuffs recType value "EnhanceBuffs"
         EnhanceDebuffs _ -> tryRead EnhanceDebuffs recType value "EnhanceDebuffs"
         Enliven _ -> tryRead Enliven recType value "Enliven"
@@ -742,6 +747,7 @@ instance ReadForeign FilterEffectType where
         FilterStop -> tryRead x str "FilterStop"
         FilterExploitWeakness -> tryRead x str "FilterExploitWeakness"
         FilterHPGain -> tryRead x str "FilterHPGain"
+        FilterIncreaseCommandGauge -> tryRead x str "FilterIncreaseCommandGauge"
         FilterEnhanceBuffs -> tryRead x str "FilterEnhanceBuffs"
         FilterEnhanceDebuffs -> tryRead x str "FilterEnhanceDebuffs"
         FilterEnliven -> tryRead x str "FilterEnliven"
@@ -833,6 +839,7 @@ instance Display FilterEffectType where
     FilterStop -> "Stop"
     FilterExploitWeakness -> "Exploit Weakness"
     FilterHPGain -> "HP Gain"
+    FilterIncreaseCommandGauge -> "Increase command gauge"
     FilterEnhanceBuffs -> "Enhance Buffs"
     FilterEnhanceDebuffs -> "Enhance Debuffs"
     FilterEnliven -> "Enliven"
@@ -910,6 +917,7 @@ allFilterEffectTypes =
   , FilterStop
   , FilterExploitWeakness
   , FilterHPGain
+  , FilterIncreaseCommandGauge
   , FilterEnhanceBuffs
   , FilterEnhanceDebuffs
   , FilterEnliven
@@ -985,6 +993,7 @@ allFilterEffectTypes =
     FilterStop -> unit
     FilterExploitWeakness -> unit
     FilterHPGain -> unit
+    FilterIncreaseCommandGauge -> unit
     FilterEnhanceBuffs -> unit
     FilterEnhanceDebuffs -> unit
     FilterEnliven -> unit
@@ -1093,8 +1102,6 @@ exhaustiveWeaponEffectMatch =
   , PdefDown { range, durExt, potencies }
   , MdefDown { range, durExt, potencies }
 
-
-
   , FireDamageDown { range, durExt, potencies }
   , IceDamageDown { range, durExt, potencies }
   , LightningDamageDown { range, durExt, potencies }
@@ -1117,6 +1124,7 @@ exhaustiveWeaponEffectMatch =
   , Stop { range, durExt }
   , ExploitWeakness { range, durExt, percentage }
   , HPGain { range, durExt, percentage }
+  , IncreaseCommandGauge { percentage }
   , EnhanceBuffs { range, durExt, potencies }
   , EnhanceDebuffs { range, durExt, potencies }
   , Enliven { range, durExt }
@@ -1193,6 +1201,7 @@ exhaustiveWeaponEffectMatch =
     Stop _ -> unit
     ExploitWeakness _ -> unit
     HPGain _ -> unit
+    IncreaseCommandGauge _ -> unit
     EnhanceBuffs _ -> unit
     EnhanceDebuffs _ -> unit
     -- Unfortunately, there's no way to ensure our returns values are exhaustive

@@ -407,6 +407,7 @@ hasPotencies = case _ of
     FilterStop -> false
     FilterExploitWeakness -> false
     FilterHPGain -> false
+    FilterIncreaseCommandGauge -> false
     FilterEnhanceBuffs -> true
     FilterEnhanceDebuffs -> true
     FilterEnliven -> false
@@ -483,6 +484,9 @@ hasRange = case _ of
     FilterStop -> true
     FilterExploitWeakness -> true
     FilterHPGain -> true
+    -- This effect has no range in the game data (its weapons are grouped with
+    -- `ranges: Nothing`), so there's no range selector to show.
+    FilterIncreaseCommandGauge -> false
     FilterEnhanceBuffs -> true
     FilterEnhanceDebuffs -> true
     FilterEnliven -> true

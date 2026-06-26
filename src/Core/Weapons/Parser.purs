@@ -359,6 +359,9 @@ parseWeaponEffect coords =
       <|> P.try (withDurExt "Enfeeble" Enfeeble)
       <|> P.try (withDurExt "Stop" Stop)
       <|> P.try (withDurExtPercentage "HP Gain" HPGain)
+      -- NOTE: the spreadsheet names this effect "Stance Gauge" (e.g. `+50% Stance Gauge`),
+      -- but in-game it's the "Command Gauge", which is the name we use internally.
+      <|> P.try (withPrefixedPercentage "Stance Gauge" IncreaseCommandGauge)
       <|> P.try (withExtPotencies "Enhance Buffs" EnhanceBuffs)
       <|> P.try (withExtPotencies "Enhance Debuffs" EnhanceDebuffs)
       <|> P.try (withDurExt "Enliven" Enliven)
@@ -374,6 +377,17 @@ parseWeaponEffect coords =
       _ <- P.string effectName <* space
       range <- parseRange
       pure $ constructor $ { range, percentage }
+
+  -- Like `withPercentage`, but the percentage is prefixed with a `+` and the
+  -- effect has no range in the game data, e.g. `+50% Stance Gauge [Condition: First Use]`.
+  -- Any trailing text (like `[Condition: ...]`) is left unparsed and ignored.
+  withPrefixedPercentage :: String -> ({ percentage :: Percentage } -> WeaponEffect) -> Parser WeaponEffect
+  withPrefixedPercentage effectName constructor = do
+    inContext effectName do
+      _ <- P.char '+'
+      percentage <- parsePercentage <* space
+      _ <- P.string effectName
+      pure $ constructor $ { percentage }
 
   withDurExt :: String -> ({ range :: Range, durExt :: DurExt } -> WeaponEffect) -> Parser WeaponEffect
   withDurExt effectName constructor = do

@@ -1,10 +1,11 @@
 <!-- LTEX: enabled=false -->
-Found 17 unsupported effect type(s).
+Found 18 unsupported effect type(s).
 
 # Table of Contents
 
 * [+N Costume C. Ability Uses](#n-costume-c-ability-uses)
 * [+N Gear C. Ability Uses](#n-gear-c-ability-uses)
+* [+N% Stance Gauge](#n-stance-gauge)
 * [-N% Summon Gauge](#-n-summon-gauge)
 * [Ns -N ATB Ice Weapon/Gear C. Ability Cost](#ns--n-atb-ice-weapongear-c-ability-cost)
 * [Ns -N ATB Mag. Weapon/Gear C. Ability Cost](#ns--n-atb-mag-weapongear-c-ability-cost)
@@ -64,6 +65,30 @@ Found 17 unsupported effect type(s).
   * `+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
   * `+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
   * `+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]`
+
+---
+
+# +N% Stance Gauge
+
+[↑ Back to top](#table-of-contents)
+
+* **Aerith - Lightning's Rod**
+  * `+50% Stance Gauge [Condition: First Use]`
+  * `+75% Stance Gauge [Condition: First Use]`
+* **Aerith - Mermaid Rod**
+  * `+10% Stance Gauge`
+  * `+20% Stance Gauge`
+* **Cid - Radiant Lance**
+  * `+10% Stance Gauge`
+  * `+20% Stance Gauge`
+* **Glenn - Blade of Ruin**
+  * `+10% Stance Gauge`
+  * `+20% Stance Gauge`
+* **Lucia - Rubber Band Gun**
+  * `+20% Stance Gauge`
+* **Yuffie - Rocker's Guitar**
+  * `+10% Stance Gauge`
+  * `+20% Stance Gauge`
 
 ---
 
@@ -280,7 +305,6 @@ Found 17 unsupported effect type(s).
 * +N ATB
 * +N% Additional Damage
 * +N% Limit Break Gauge
-* +N% Stance Gauge
 * Cancel Effect
 * N Additional Damage
 * N% Crit Rate

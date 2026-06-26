@@ -89,7 +89,6 @@ wontSupportKeys :: Set String
 wontSupportKeys = Set.fromFoldable
   [ "N% Crit Rate"
   , "Cancel Effect"
-  , "+N% Stance Gauge"
   , "+N% Limit Break Gauge"
   , "+N% Additional Damage"
   , "+N ATB"

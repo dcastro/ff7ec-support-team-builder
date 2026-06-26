@@ -719,6 +719,7 @@ groupsForWeapon weapon = do
     where
     inner = case ob0 of
       Heal { percentage } ->
+        -- #(ref:heal-threshold)
         if unwrap percentage >= 30 then Just { effectType: FilterHeal, potencies: Nothing }
         else Nothing
       Veil {} -> Just { effectType: FilterVeil, potencies: Nothing }

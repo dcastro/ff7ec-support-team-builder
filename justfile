@@ -6,6 +6,7 @@ build:
     spago build
 
 build-prod:
+    xreferee
     # The Google Sheets API key comes from `.env` (prod key); the private dev key lives only in the
     # gitignored `.env.development.local`, which `parcel build` (production mode) never loads.
     #

@@ -6,11 +6,14 @@ import Prelude
 
 import Control.Alt ((<|>))
 import Data.Array as Arr
+import Data.Array.NonEmpty (NonEmptyArray)
+import Data.Array.NonEmpty as NAR
 import Data.Bifunctor (lmap)
 import Data.Either (Either(..), hush)
 import Data.Foldable (foldMap)
 import Data.FoldableWithIndex as F
 import Data.Maybe (Maybe(..))
+import Data.Newtype (unwrap)
 import Data.String.NonEmpty (NonEmptyString)
 import Data.String.NonEmpty as NES
 import Data.String.Utils as String
@@ -39,12 +42,19 @@ parseWeapons lines =
     # F.foldlWithIndex
         ( \rowIndex result row ->
             case parseWeapon rowIndex row of
-              Right weapon -> result { weapons = Arr.snoc result.weapons weapon }
+              Right weapons -> result { weapons = result.weapons <> NAR.toArray weapons }
               Left err -> result { errors = Arr.snoc result.errors err }
         )
         { weapons: [], errors: [] }
 
-parseWeapon :: Int -> Array String -> Result Weapon
+-- | Parses a single spreadsheet row into one or more `Weapon`s.
+--
+-- Most rows produce exactly one weapon. However, a weapon with "Club Custom"
+-- columns (the 4 rightmost columns) produces *two* weapons: the original weapon,
+-- and a variant whose C. Ability (columns S through V) is replaced by the Club
+-- Custom columns. The variant's name is suffixed with " (Club Custom)".
+-- #(ref:club-custom)
+parseWeapon :: Int -> Array String -> Result (NonEmptyArray Weapon)
 parseWeapon rowIndex row = do
   name <- WeaponName <$> getCell 0
   character <- CharacterName <$> getCell 1
@@ -79,21 +89,46 @@ parseWeapon rowIndex row = do
 
   -}
 
-  pure
-    { name
-    , character
-    , source
-    , image
-    , atbCost
-    , ob0
-    , ob1
-    , ob6
-    , ob10
-    , commandAbilitySigil
-    , sAbilities: { slot1: sAbility1, slot2: sAbility2, slot3: sAbility3 }
-    , rAbilities: { slot1: rAbility1, slot2: rAbility2 }
-    , diamondCustomDescription
-    }
+  let
+    mkWeapon weaponName obLevels =
+      { name: weaponName
+      , character
+      , source
+      , image
+      , atbCost: obLevels.atbCost
+      , ob0: obLevels.ob0
+      , ob1: obLevels.ob1
+      , ob6: obLevels.ob6
+      , ob10: obLevels.ob10
+      , commandAbilitySigil: obLevels.commandAbilitySigil
+      , sAbilities: { slot1: sAbility1, slot2: sAbility2, slot3: sAbility3 }
+      , rAbilities: { slot1: rAbility1, slot2: rAbility2 }
+      , diamondCustomDescription
+      }
+
+    weapon = mkWeapon name { atbCost, ob0, ob1, ob6, ob10, commandAbilitySigil }
+
+  -- A weapon with Club Custom columns produces an extra "(Club Custom)" variant.
+  -- @(ref:club-custom)
+  clubWeapon <-
+    case getOptionalCell 35 of
+      Nothing -> pure Nothing
+      Just _ -> do
+        { obLevel: clubOb0 } <- getClubDescription 35
+        { obLevel: clubOb1 } <- getClubDescription 36
+        { obLevel: clubOb6 } <- getClubDescription 37
+        { obLevel: clubOb10, atbCost: clubAtbCost, commandAbilitySigil: clubSigil } <- getClubDescription 38
+        let clubName = WeaponName $ NES.appendString (unwrap name) " (Club Custom)"
+        pure $ Just $ mkWeapon clubName
+          { atbCost: clubAtbCost
+          , ob0: clubOb0
+          , ob1: clubOb1
+          , ob6: clubOb6
+          , ob10: clubOb10
+          , commandAbilitySigil: clubSigil
+          }
+
+  pure $ NAR.cons' weapon $ Arr.fromFoldable clubWeapon
   where
   rowId = rowIndex + 1
 
@@ -104,6 +139,18 @@ parseWeapon rowIndex row = do
       heartCustomDescription = getOptionalCell (columnIndex + 8)
       spadeCustomDescription = getOptionalCell (columnIndex + 12)
     getCell columnIndex >>= parseDescription { rowId, columnId } heartCustomDescription spadeCustomDescription
+
+  -- Like `getDescription`, but for the Club Custom columns. The Club Custom
+  -- *replaces* the original C. Ability entirely, so the Heart/Spade customizations
+  -- (which add to the original ability) don't apply to this variant.
+  -- @(ref:club-custom)
+  getClubDescription :: Int -> Result ParsedDescription
+  getClubDescription columnIndex = do
+    let columnId = columnIndex + 1
+    getCell columnIndex >>= parseDescription { rowId, columnId }
+      -- #(ref:club-heart-spade-mutually-exclusive)
+      Nothing
+      Nothing
 
   getCell :: Int -> Result NonEmptyString
   getCell columnIndex = do

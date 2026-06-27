@@ -794,6 +794,12 @@
       - OB0-5
       - OB6-9
       - OB10
+- - Inflatable Buster Sword (Club Custom)
+  - ownedOb: OB6-10
+    ignored: false
+    distinctObs:
+      - OB0-5
+      - OB6-10
 - - Iron Blade
   - ownedOb: OB6-10
     ignored: false

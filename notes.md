@@ -36,3 +36,31 @@ List of weapons that escape the norm:
   Silver Megaphone has PDEF Down Low SingleTarget + PDEF Down High SingleTarget (Condition: Critical Hit)
 * Most weapons have either a C.Ability with healing _or_ have a Cure All S. Ability.
   But Aerith's "Umbrella" does Single Target Heal _and_ has a Cure All S. Ability.
+
+## Invariants
+
+These are the invariants the codebase relies on. Each one is enforced and/or assumed at
+one or more sites in the code.
+
+* **A weapon's effects are listed in the same order at every overboost level.** @(ref:effects-same-order)
+    * The `effects` array is parsed independently for OB0/OB1/OB6/OB10. We assume the Nth
+      effect is the "same kind" of effect (same constructor) at every level, so we can zip
+      the four levels together and read how a single effect's range/potencies change as
+      the weapon is overboosted.
+    * `getDistinctObs` enforces this: it crashes if two levels list their effects in a
+      different order. `groupsForWeapon'` / `groupForWeaponEffect` then rely on it.
+
+* **Every effect that has potencies also has a range.** @(ref:potencies-have-range)
+    * Some effects have a range but no potencies (e.g. `Heal`, `Provoke`, `Veil`), and a
+      few have neither (e.g. `IncreaseCommandGauge`, Sigil effects) - but none have
+      potencies _without_ a range.
+    * Because of this, potencies are stored grouped by range (`GroupedWeaponRange`). When
+      an effect has no range we can safely conclude it has no potencies either: e.g.
+      `groupForWeaponEffect` drops the potencies along with the (absent) range, and
+      `findMatchingWeapons` returns `Nothing` potencies when there are no ranges.
+
+* **`UserStateWeapon.ownedOb` matches one of the weapon's `distinctObs`.** @(ref:owned-ob-invariant)
+    * The OB range the user owns must be one of the distinct OB ranges computed for that
+      weapon. When a weapon's `distinctObs` changes - e.g. after adding support for a new
+      effect that splits `OB0-10` into `OB0-5` / `OB6-10` - `createDbState` resets any
+      `ownedOb` that no longer matches.

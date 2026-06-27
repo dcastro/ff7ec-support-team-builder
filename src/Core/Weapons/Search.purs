@@ -120,6 +120,7 @@ findMatchingWeapons filter dbState = do
                   --
                   -- INVARIANT: at the moment, all effects with potencies also have a range.
                   -- Therefore, we have potencies grouped by ranges.
+                  -- @(ref:potencies-have-range)
                   Nothing
 
             matchesFilters =

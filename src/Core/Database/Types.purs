@@ -103,6 +103,7 @@ type GroupedWeapon =
   --
   -- INVARIANT: at the moment, all effects with potencies also have a range.
   -- Therefore, we have potencies grouped by ranges.
+  -- #(ref:potencies-have-range)
   , ranges :: Maybe (Array GroupedWeaponRange)
   }
 

@@ -551,7 +551,8 @@ groupsForWeapon weapon = do
         , groupedWeapon:
             { weaponName: weapon.name
             -- Effects with no range (e.g. `IncreaseCommandGauge`) get `ranges: Nothing`,
-            -- like Sigil effects.
+            -- like Sigil effects. Dropping `potencies` along with the range here is safe
+            -- because of @(ref:potencies-have-range).
             , ranges: allRanges <#> \ranges ->
                 [ { allRanges: ranges
                   , allPotencies: potencies

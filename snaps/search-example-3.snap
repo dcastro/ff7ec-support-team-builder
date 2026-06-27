@@ -109,6 +109,14 @@
       - Leather Gloves
     character: Tifa
 - - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Mythril Slasher
+    character: Angeal
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
       - Electrocannon
       - Sharkslayer
     character: Barret
@@ -218,6 +226,14 @@
     character: Angeal
   - weapons:
       - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Stalwart Integrity
+    character: Angeal
+  - weapons:
+      - Black Whiskers
       - Twinkling Star
     character: Zack
 - - weapons:
@@ -856,6 +872,14 @@
       - Full Metal Staff
       - Staff of the Possessed
     character: Aerith
+  - weapons:
+      - Surfer Blade
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Sea Dragon Greatsword
+    character: Angeal
   - weapons:
       - Surfer Blade
       - Twinkling Star
@@ -1936,6 +1960,14 @@
       - Noblesse Rod
       - Striking Staff
     character: Aerith
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Master Tonberry's Blade
+    character: Angeal
   - weapons:
       - Black Whiskers
       - Twinkling Star

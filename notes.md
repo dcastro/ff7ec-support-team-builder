@@ -36,8 +36,16 @@ List of weapons that escape the norm:
   Silver Megaphone has PDEF Down Low SingleTarget + PDEF Down High SingleTarget (Condition: Critical Hit)
 * Most weapons have either a C.Ability with healing _or_ have a Cure All S. Ability.
   But Aerith's "Umbrella" does Single Target Heal _and_ has a Cure All S. Ability.
+* Some weapons have a "Club Custom" (the 4 rightmost columns) which, in-game, _replaces_
+  the weapon's C. Ability (columns S through V). We model this by parsing such a row into
+  _two_ `Weapon`s: the original, and a `... (Club Custom)` variant whose C. Ability comes
+  from the Club Custom columns. @(ref:club-custom)
+    * The variant keeps everything else (R./S. Abilities, Diamond Custom, image, etc.).
+    * Heart/Spade customizations add to the _original_ C. Ability, so they're not applied
+      to the Club Custom variant.
+    * At the moment, only Angeal's "Inflatable Buster Sword" has a Club Custom.
 
-## Invariants
+## Invariants and assumptions
 
 These are the invariants the codebase relies on. Each one is enforced and/or assumed at
 one or more sites in the code.
@@ -64,3 +72,6 @@ one or more sites in the code.
       weapon. When a weapon's `distinctObs` changes - e.g. after adding support for a new
       effect that splits `OB0-10` into `OB0-5` / `OB6-10` - `createDbState` resets any
       `ownedOb` that no longer matches.
+
+* **Club and Heart/Spade customizations are mutually exclusive** @(ref:club-heart-spade-mutually-exclusive)
+  * Weapon's can't simultaneously have Club and Heart/Space customizations

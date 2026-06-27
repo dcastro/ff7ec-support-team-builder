@@ -3940,6 +3940,13 @@
             ob10: All
             ob1: All
             ob0: All
+    - weaponName: Inflatable Buster Sword (Club Custom)
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
     - weaponName: Dragoon Lance
       ranges:
         - allRanges:
@@ -4108,6 +4115,26 @@
             ob10:
               max: Mid
               base: Low
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
+    - weaponName: Inflatable Buster Sword (Club Custom)
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+          allPotencies:
+            ob6:
+              max: High
+              base: High
+            ob10:
+              max: High
+              base: High
             ob1:
               max: Mid
               base: Low
@@ -6049,6 +6076,26 @@
             ob10:
               max: Mid
               base: Mid
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
+    - weaponName: Inflatable Buster Sword (Club Custom)
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+          allPotencies:
+            ob6:
+              max: High
+              base: High
+            ob10:
+              max: High
+              base: High
             ob1:
               max: Mid
               base: Low
@@ -8097,6 +8144,7 @@
     - weaponName: Ghost Ensis
     - weaponName: Greatsword of the Worthy
     - weaponName: Inflatable Buster Sword
+    - weaponName: Inflatable Buster Sword (Club Custom)
     - weaponName: Mythril Slasher
     - weaponName: Tranquility
     - weaponName: Volcanic Heat

@@ -4190,6 +4190,155 @@ weapons:
     atbCost: 4
   - source: Gacha (Non-Limited)
     sAbilities:
+      slot3: ▲ Sigil Boost I
+      slot2: PATK Boost I
+      slot1: PATK Boost I
+    rAbilities:
+      slot2: Buff/Debuff Extension (Stats/Pot./Res.)
+      slot1: Boost HP
+    ob6:
+      effects:
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 8
+              duration: 25
+          type: MdefDown
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 8
+              duration: 25
+          type: PatkDown
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 16
+              duration: 50
+          type: ExploitWeakness
+      description: |-
+        Torque Slash+ (4 ATB)
+        560% Phys. Non-elem. Damage [Range: All Enemies]
+        25s MDEF Down (+8s) (High) [Range: All Enemies]
+        25s PATK Down (+8s) (High) [Range: All Enemies]
+        50s 25% Exploit Weakness (+16s) [Range: All Allies] [Condition: Self 70-100% HP]
+        10% Crit Rate [Range: All Enemies]
+    ob10:
+      effects:
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 10
+              duration: 30
+          type: MdefDown
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 10
+              duration: 30
+          type: PatkDown
+        - value:
+            range: All
+            percentage: 30
+            durExt:
+              extension: 20
+              duration: 60
+          type: ExploitWeakness
+      description: |-
+        Torque Slash++ (4 ATB)
+        640% Phys. Non-elem. Damage [Range: All Enemies]
+        30s MDEF Down (+10s) (High) [Range: All Enemies]
+        30s PATK Down (+10s) (High) [Range: All Enemies]
+        60s 30% Exploit Weakness (+20s) [Range: All Allies] [Condition: Self 70-100% HP]
+        10% Crit Rate [Range: All Enemies]
+    ob1:
+      effects:
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: MdefDown
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: PatkDown
+        - value:
+            range: All
+            percentage: 20
+            durExt:
+              extension: 13
+              duration: 40
+          type: ExploitWeakness
+      description: |-
+        Torque Slash (4 ATB)
+        460% Phys. Non-elem. Damage [Range: All Enemies]
+        25s MDEF Down (+8s) (Low -> Mid) [Range: All Enemies]
+        25s PATK Down (+8s) (Low -> Mid) [Range: All Enemies]
+        40s 20% Exploit Weakness (+13s) [Range: All Allies] [Condition: Self 70-100% HP]
+        10% Crit Rate [Range: All Enemies]
+    ob0:
+      effects:
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: MdefDown
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: PatkDown
+        - value:
+            range: All
+            percentage: 20
+            durExt:
+              extension: 10
+              duration: 30
+          type: ExploitWeakness
+      description: |-
+        Torque Slash (4 ATB)
+        400% Phys. Non-elem. Damage [Range: All Enemies]
+        20s MDEF Down (+6s) (Low -> Mid) [Range: All Enemies]
+        20s PATK Down (+6s) (Low -> Mid) [Range: All Enemies]
+        30s 20% Exploit Weakness (+10s) [Range: All Allies] [Condition: Self 70-100% HP]
+        10% Crit Rate [Range: All Enemies]
+    name: Inflatable Buster Sword (Club Custom)
+    image: https://i.imgur.com/1RT4kI8.png
+    diamondCustomDescription: Stream Phase Phys. Resist. Boost
+    character: Angeal
+    atbCost: 4
+  - source: Gacha (Non-Limited)
+    sAbilities:
       slot3: MATK Boost I
       slot2: MATK Boost I
       slot1: MATK Boost I

@@ -405,6 +405,22 @@
       - Kamura Wand
     character: Aerith
   - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
       - Protector's Blade
       - Radiant Edge
     character: Sephiroth
@@ -609,6 +625,14 @@
       - Sleek Collar
     character: Red XIII
 - - weapons:
+      - Kamura Wand
+      - Terra's Rod
+    character: Aerith
+  - weapons:
+      - Gargantuan Monolith
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+- - weapons:
       - Crimson Staff
       - Lightning's Rod
     character: Aerith
@@ -648,6 +672,14 @@
       - Ivy Collar
       - Sleek Collar
     character: Red XIII
+- - weapons:
+      - Rousing Wizer Staff
+      - Terra's Rod
+    character: Aerith
+  - weapons:
+      - Gargantuan Monolith
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
 - - weapons:
       - Crimson Staff
       - Snowflake
@@ -791,6 +823,14 @@
   - weapons:
       - Microlaser
       - Sharkslayer
+    character: Barret
+- - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+  - weapons:
+      - Escutcheon Cannon
+      - Microlaser
     character: Barret
 - - weapons:
       - Escutcheon Cannon
@@ -1117,6 +1157,22 @@
       - Terra's Rod
     character: Aerith
   - weapons:
+      - Greatsword of the Worthy
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Gorgeous Staff
+    character: Aerith
+  - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Terra's Rod
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Nocturne Horn
     character: Cait Sith
@@ -1425,6 +1481,14 @@
       - Boomerang
     character: Yuffie
 - - weapons:
+      - Gorgeous Staff
+      - Terra's Rod
+    character: Aerith
+  - weapons:
+      - Gargantuan Monolith
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+- - weapons:
       - Crimson Staff
       - Kamura Wand
     character: Aerith
@@ -1865,6 +1929,14 @@
       - Canyon Collar
     character: Red XIII
 - - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+  - weapons:
+      - Brilliant Collar
+      - Sleek Collar
+    character: Red XIII
+- - weapons:
       - Brilliant Collar
       - Sleek Collar
     character: Red XIII
@@ -1897,6 +1969,14 @@
       - Headphones
     character: Red XIII
 - - weapons:
+      - Gargantuan Monolith
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Ivy Collar
+      - Pilot's Collar
+    character: Red XIII
+- - weapons:
       - Escutcheon Cannon
       - Sharkslayer
     character: Barret
@@ -1927,6 +2007,14 @@
   - weapons:
       - Canyon Collar
       - Pirate Collar
+    character: Red XIII
+- - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+  - weapons:
+      - Pirate Collar
+      - Sleek Collar
     character: Red XIII
 - - weapons:
       - Pirate Collar
@@ -2249,6 +2337,14 @@
       - Withering Blaze
     character: Sephiroth
 - - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+  - weapons:
+      - Deroplatys
+      - Luminary Sword
+    character: Matt
+- - weapons:
       - Deroplatys
       - Luminary Sword
     character: Matt
@@ -2257,6 +2353,14 @@
       - Radiant Edge
     character: Sephiroth
 - - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+  - weapons:
+      - Core Defender
+      - Luminary Sword
+    character: Matt
+- - weapons:
       - Core Defender
       - Luminary Sword
     character: Matt
@@ -2264,6 +2368,22 @@
       - Protector's Blade
       - Radiant Edge
     character: Sephiroth
+- - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+  - weapons:
+      - Brilliant Collar
+      - Pilot's Collar
+    character: Red XIII
+- - weapons:
+      - Greatsword of the Worthy
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Brilliant Collar
+      - Ivy Collar
+    character: Red XIII
 - - weapons:
       - Gold Megaphone
       - Nocturne Horn
@@ -2313,6 +2433,14 @@
       - Pilot's Collar
     character: Red XIII
 - - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+  - weapons:
+      - Pilot's Collar
+      - Pirate Collar
+    character: Red XIII
+- - weapons:
       - Pilot's Collar
       - Pirate Collar
     character: Red XIII
@@ -2336,6 +2464,14 @@
       - Galian Roar
       - Kugelblitz
     character: Vincent
+- - weapons:
+      - Greatsword of the Worthy
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Ivy Collar
+      - Pirate Collar
+    character: Red XIII
 - - weapons:
       - Gold Megaphone
       - Nocturne Horn
@@ -2560,6 +2696,22 @@
       - Canyon Collar
       - Ivy Collar
     character: Red XIII
+- - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+  - weapons:
+      - Luminary Sword
+      - Physician's Scalpel
+    character: Matt
+- - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+  - weapons:
+      - Luminary Sword
+      - Syringe Rapier
+    character: Matt
 - - weapons:
       - Gold Megaphone
       - Nocturne Horn
@@ -3103,6 +3255,14 @@
     character: Red XIII
 - - weapons:
       - Crimson Staff
+      - Mythril Rod
+    character: Aerith
+  - weapons:
+      - Inflatable Buster Sword (Club Custom)
+      - Volcanic Heat
+    character: Angeal
+- - weapons:
+      - Crimson Staff
       - Terra's Rod
     character: Aerith
   - weapons:
@@ -3325,6 +3485,14 @@
       - Flame Dragon's Band
       - Sleek Collar
     character: Red XIII
+- - weapons:
+      - Mythril Rod
+      - Terra's Rod
+    character: Aerith
+  - weapons:
+      - Gargantuan Monolith
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
 - - weapons:
       - Crimson Staff
       - Umbrella
@@ -4324,6 +4492,14 @@
   - weapons:
       - Flame Dragon's Band
       - Headphones
+    character: Red XIII
+- - weapons:
+      - Gargantuan Monolith
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Flame Dragon's Band
+      - Pilot's Collar
     character: Red XIII
 - - weapons:
       - Gargantuan Monolith
@@ -4798,6 +4974,14 @@
       - Protector's Blade
     character: Sephiroth
 - - weapons:
+      - Greatsword of the Worthy
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Brilliant Collar
+      - Flame Dragon's Band
+    character: Red XIII
+- - weapons:
       - Battle Trumpet
       - Nocturne Horn
     character: Cait Sith
@@ -4949,6 +5133,14 @@
       - Galian Roar
       - Kugelblitz
     character: Vincent
+- - weapons:
+      - Greatsword of the Worthy
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Flame Dragon's Band
+      - Pirate Collar
+    character: Red XIII
 - - weapons:
       - Battle Trumpet
       - Nocturne Horn

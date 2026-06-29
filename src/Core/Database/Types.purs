@@ -157,13 +157,15 @@ data WeaponEffect
   | MatkUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | PdefUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | MdefUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
-  | HPGain { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | IncreaseCommandGauge { percentage :: Percentage }
+  | HPGain { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | EnhanceBuffs { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | PhysicalWeaponBoost { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | MagicWeaponBoost { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | PhysicalDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | MagicDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | PhysATBConservationEffect { range :: Range, durExt :: DurExt }
+  | MagATBConservationEffect { range :: Range, durExt :: DurExt }
   | FireDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | IceDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | LightningDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
@@ -182,6 +184,12 @@ data WeaponEffect
   | EarthDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | WaterDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | WindDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | FireATBConservationEffect { range :: Range, durExt :: DurExt }
+  | IceATBConservationEffect { range :: Range, durExt :: DurExt }
+  | LightningATBConservationEffect { range :: Range, durExt :: DurExt }
+  | EarthATBConservationEffect { range :: Range, durExt :: DurExt }
+  | WaterATBConservationEffect { range :: Range, durExt :: DurExt }
+  | WindATBConservationEffect { range :: Range, durExt :: DurExt }
   | FireResistUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | IceResistUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | LightningResistUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
@@ -235,13 +243,16 @@ data FilterEffectType
   | FilterMatkUp
   | FilterPdefUp
   | FilterMdefUp
-  | FilterHPGain
   | FilterIncreaseCommandGauge
+  | FilterHPGain
   | FilterEnhanceBuffs
+  | FilterEnliven
   | FilterPhysicalWeaponBoost
   | FilterMagicWeaponBoost
   | FilterPhysicalDamageBonus
   | FilterMagicDamageBonus
+  | FilterPhysATBConservationEffect
+  | FilterMagATBConservationEffect
   | FilterFireDamageUp
   | FilterIceDamageUp
   | FilterLightningDamageUp
@@ -266,13 +277,18 @@ data FilterEffectType
   | FilterEarthDamageBonus
   | FilterWaterDamageBonus
   | FilterWindDamageBonus
+  | FilterFireATBConservationEffect
+  | FilterIceATBConservationEffect
+  | FilterLightningATBConservationEffect
+  | FilterEarthATBConservationEffect
+  | FilterWaterATBConservationEffect
+  | FilterWindATBConservationEffect
 
   -- Debuffs
   | FilterEnfeeble
   | FilterStop
   | FilterExploitWeakness
   | FilterEnhanceDebuffs
-  | FilterEnliven
   | FilterPatkDown
   | FilterMatkDown
   | FilterPdefDown
@@ -345,6 +361,8 @@ instance Show WeaponEffect where
       MagicWeaponBoost rec -> showRec rec "MagicWeaponBoost"
       PhysicalDamageBonus rec -> showRec rec "PhysicalDamageBonus"
       MagicDamageBonus rec -> showRec rec "MagicDamageBonus"
+      PhysATBConservationEffect rec -> showRec rec "PhysATBConservationEffect"
+      MagATBConservationEffect rec -> showRec rec "MagATBConservationEffect"
       FireDamageUp rec -> showRec rec "FireDamageUp"
       IceDamageUp rec -> showRec rec "IceDamageUp"
       LightningDamageUp rec -> showRec rec "LightningDamageUp"
@@ -363,6 +381,12 @@ instance Show WeaponEffect where
       EarthDamageBonus rec -> showRec rec "EarthDamageBonus"
       WaterDamageBonus rec -> showRec rec "WaterDamageBonus"
       WindDamageBonus rec -> showRec rec "WindDamageBonus"
+      FireATBConservationEffect rec -> showRec rec "FireATBConservationEffect"
+      IceATBConservationEffect rec -> showRec rec "IceATBConservationEffect"
+      LightningATBConservationEffect rec -> showRec rec "LightningATBConservationEffect"
+      EarthATBConservationEffect rec -> showRec rec "EarthATBConservationEffect"
+      WaterATBConservationEffect rec -> showRec rec "WaterATBConservationEffect"
+      WindATBConservationEffect rec -> showRec rec "WindATBConservationEffect"
       FireResistUp rec -> showRec rec "FireResistUp"
       IceResistUp rec -> showRec rec "IceResistUp"
       LightningResistUp rec -> showRec rec "LightningResistUp"
@@ -396,8 +420,8 @@ instance Show WeaponEffect where
       Enfeeble rec -> showRec rec "Enfeeble"
       Stop rec -> showRec rec "Stop"
       ExploitWeakness rec -> showRec rec "ExploitWeakness"
-      HPGain rec -> showRec rec "HPGain"
       IncreaseCommandGauge rec -> showRec rec "IncreaseCommandGauge"
+      HPGain rec -> showRec rec "HPGain"
       EnhanceBuffs rec -> showRec rec "EnhanceBuffs"
       EnhanceDebuffs rec -> showRec rec "EnhanceDebuffs"
       Enliven rec -> showRec rec "Enliven"
@@ -416,8 +440,8 @@ instance Show FilterEffectType where
     FilterEnfeeble -> "FilterEnfeeble"
     FilterStop -> "FilterStop"
     FilterExploitWeakness -> "FilterExploitWeakness"
-    FilterHPGain -> "FilterHPGain"
     FilterIncreaseCommandGauge -> "FilterIncreaseCommandGauge"
+    FilterHPGain -> "FilterHPGain"
     FilterEnhanceBuffs -> "FilterEnhanceBuffs"
     FilterEnhanceDebuffs -> "FilterEnhanceDebuffs"
     FilterEnliven -> "FilterEnliven"
@@ -429,6 +453,8 @@ instance Show FilterEffectType where
     FilterMagicWeaponBoost -> "FilterMagicWeaponBoost"
     FilterPhysicalDamageBonus -> "FilterPhysicalDamageBonus"
     FilterMagicDamageBonus -> "FilterMagicDamageBonus"
+    FilterPhysATBConservationEffect -> "FilterPhysATBConservationEffect"
+    FilterMagATBConservationEffect -> "FilterMagATBConservationEffect"
     FilterFireDamageUp -> "FilterFireDamageUp"
     FilterIceDamageUp -> "FilterIceDamageUp"
     FilterLightningDamageUp -> "FilterLightningDamageUp"
@@ -453,6 +479,12 @@ instance Show FilterEffectType where
     FilterEarthDamageBonus -> "FilterEarthDamageBonus"
     FilterWaterDamageBonus -> "FilterWaterDamageBonus"
     FilterWindDamageBonus -> "FilterWindDamageBonus"
+    FilterFireATBConservationEffect -> "FilterFireATBConservationEffect"
+    FilterIceATBConservationEffect -> "FilterIceATBConservationEffect"
+    FilterLightningATBConservationEffect -> "FilterLightningATBConservationEffect"
+    FilterEarthATBConservationEffect -> "FilterEarthATBConservationEffect"
+    FilterWaterATBConservationEffect -> "FilterWaterATBConservationEffect"
+    FilterWindATBConservationEffect -> "FilterWindATBConservationEffect"
     FilterPatkDown -> "FilterPatkDown"
     FilterMatkDown -> "FilterMatkDown"
     FilterPdefDown -> "FilterPdefDown"
@@ -503,6 +535,8 @@ instance WriteForeign WeaponEffect where
       MagicWeaponBoost rec -> writeRecord rec "MagicWeaponBoost"
       PhysicalDamageBonus rec -> writeRecord rec "PhysicalDamageBonus"
       MagicDamageBonus rec -> writeRecord rec "MagicDamageBonus"
+      PhysATBConservationEffect rec -> writeRecord rec "PhysATBConservationEffects"
+      MagATBConservationEffect rec -> writeRecord rec "MagATBConservationEffect"
       FireDamageUp rec -> writeRecord rec "FireDamageUp"
       IceDamageUp rec -> writeRecord rec "IceDamageUp"
       LightningDamageUp rec -> writeRecord rec "LightningDamageUp"
@@ -527,6 +561,12 @@ instance WriteForeign WeaponEffect where
       EarthDamageBonus rec -> writeRecord rec "EarthDamageBonus"
       WaterDamageBonus rec -> writeRecord rec "WaterDamageBonus"
       WindDamageBonus rec -> writeRecord rec "WindDamageBonus"
+      FireATBConservationEffect rec -> writeRecord rec "FireATBConservationEffect"
+      IceATBConservationEffect rec -> writeRecord rec "IceATBConservationEffect"
+      LightningATBConservationEffect rec -> writeRecord rec "LightningATBConservationEffect"
+      EarthATBConservationEffect rec -> writeRecord rec "EarthATBConservationEffect"
+      WaterATBConservationEffect rec -> writeRecord rec "WaterATBConservationEffect"
+      WindATBConservationEffect rec -> writeRecord rec "WindATBConservationEffect"
       Veil rec -> writeRecord rec "Veil"
       Provoke rec -> writeRecord rec "Provoke"
       PatkDown rec -> writeRecord rec "PatkDown"
@@ -554,8 +594,8 @@ instance WriteForeign WeaponEffect where
       Enfeeble rec -> writeRecord rec "Enfeeble"
       Stop rec -> writeRecord rec "Stop"
       ExploitWeakness rec -> writeRecord rec "ExploitWeakness"
-      HPGain rec -> writeRecord rec "HPGain"
       IncreaseCommandGauge rec -> writeRecord rec "IncreaseCommandGauge"
+      HPGain rec -> writeRecord rec "HPGain"
       EnhanceBuffs rec -> writeRecord rec "EnhanceBuffs"
       EnhanceDebuffs rec -> writeRecord rec "EnhanceDebuffs"
       Enliven rec -> writeRecord rec "Enliven"
@@ -577,8 +617,8 @@ instance WriteForeign FilterEffectType where
     FilterEnfeeble -> writeImpl "FilterEnfeeble"
     FilterStop -> writeImpl "FilterStop"
     FilterExploitWeakness -> writeImpl "FilterExploitWeakness"
-    FilterHPGain -> writeImpl "FilterHPGain"
     FilterIncreaseCommandGauge -> writeImpl "FilterIncreaseCommandGauge"
+    FilterHPGain -> writeImpl "FilterHPGain"
     FilterEnhanceBuffs -> writeImpl "FilterEnhanceBuffs"
     FilterEnhanceDebuffs -> writeImpl "FilterEnhanceDebuffs"
     FilterEnliven -> writeImpl "FilterEnliven"
@@ -590,6 +630,8 @@ instance WriteForeign FilterEffectType where
     FilterMagicWeaponBoost -> writeImpl "FilterMagicWeaponBoost"
     FilterPhysicalDamageBonus -> writeImpl "FilterPhysicalDamageBonus"
     FilterMagicDamageBonus -> writeImpl "FilterMagicDamageBonus"
+    FilterPhysATBConservationEffect -> writeImpl "FilterPhysATBConservationEffect"
+    FilterMagATBConservationEffect -> writeImpl "FilterMagATBConservationEffect"
     FilterFireDamageUp -> writeImpl "FilterFireDamageUp"
     FilterIceDamageUp -> writeImpl "FilterIceDamageUp"
     FilterLightningDamageUp -> writeImpl "FilterLightningDamageUp"
@@ -614,6 +656,12 @@ instance WriteForeign FilterEffectType where
     FilterEarthDamageBonus -> writeImpl "FilterEarthDamageBonus"
     FilterWaterDamageBonus -> writeImpl "FilterWaterDamageBonus"
     FilterWindDamageBonus -> writeImpl "FilterWindDamageBonus"
+    FilterFireATBConservationEffect -> writeImpl "FilterFireATBConservationEffect"
+    FilterIceATBConservationEffect -> writeImpl "FilterIceATBConservationEffect"
+    FilterLightningATBConservationEffect -> writeImpl "FilterLightningATBConservationEffect"
+    FilterEarthATBConservationEffect -> writeImpl "FilterEarthATBConservationEffect"
+    FilterWaterATBConservationEffect -> writeImpl "FilterWaterATBConservationEffect"
+    FilterWindATBConservationEffect -> writeImpl "FilterWindATBConservationEffect"
     FilterPatkDown -> writeImpl "FilterPatkDown"
     FilterMatkDown -> writeImpl "FilterMatkDown"
     FilterPdefDown -> writeImpl "FilterPdefDown"
@@ -663,8 +711,8 @@ instance ReadForeign WeaponEffect where
         Enfeeble _ -> tryRead Enfeeble recType value "Enfeeble"
         Stop _ -> tryRead Stop recType value "Stop"
         ExploitWeakness _ -> tryRead ExploitWeakness recType value "ExploitWeakness"
-        HPGain _ -> tryRead HPGain recType value "HPGain"
         IncreaseCommandGauge _ -> tryRead IncreaseCommandGauge recType value "IncreaseCommandGauge"
+        HPGain _ -> tryRead HPGain recType value "HPGain"
         EnhanceBuffs _ -> tryRead EnhanceBuffs recType value "EnhanceBuffs"
         EnhanceDebuffs _ -> tryRead EnhanceDebuffs recType value "EnhanceDebuffs"
         Enliven _ -> tryRead Enliven recType value "Enliven"
@@ -676,12 +724,20 @@ instance ReadForeign WeaponEffect where
         MagicWeaponBoost _ -> tryRead MagicWeaponBoost recType value "MagicWeaponBoost"
         PhysicalDamageBonus _ -> tryRead PhysicalDamageBonus recType value "PhysicalDamageBonus"
         MagicDamageBonus _ -> tryRead MagicDamageBonus recType value "MagicDamageBonus"
+        PhysATBConservationEffects _ -> tryRead PhysATBConservationEffect recType value "PhysATBConservationEffect"
+        MagATBConservationEffect _ -> tryRead MagATBConservationEffect recType value "MagATBConservationEffect"
         FireDamageUp _ -> tryRead FireDamageUp recType value "FireDamageUp"
         IceDamageUp _ -> tryRead IceDamageUp recType value "IceDamageUp"
         LightningDamageUp _ -> tryRead LightningDamageUp recType value "LightningDamageUp"
         EarthDamageUp _ -> tryRead EarthDamageUp recType value "EarthDamageUp"
         WaterDamageUp _ -> tryRead WaterDamageUp recType value "WaterDamageUp"
         WindDamageUp _ -> tryRead WindDamageUp recType value "WindDamageUp"
+        FireATBConservationEffect _ -> tryRead FireATBConservationEffect recType value "FireATBConservationEffect"
+        IceATBConservationEffect _ -> tryRead IceATBConservationEffect recType value "IceATBConservationEffect"
+        LightningATBConservationEffect _ -> tryRead LightningATBConservationEffect recType value "LightningATBConservationEffect"
+        EarthATBConservationEffect _ -> tryRead EarthATBConservationEffect recType value "EarthATBConservationEffect"
+        WaterATBConservationEffect _ -> tryRead WaterATBConservationEffect recType value "WaterATBConservationEffect"
+        WindATBConservationEffect _ -> tryRead WindATBConservationEffect recType value "WindATBConservationEffect"
         FireResistUp _ -> tryRead FireResistUp recType value "FireResistUp"
         IceResistUp _ -> tryRead IceResistUp recType value "IceResistUp"
         LightningResistUp _ -> tryRead LightningResistUp recType value "LightningResistUp"
@@ -747,8 +803,8 @@ instance ReadForeign FilterEffectType where
         FilterEnfeeble -> tryRead x str "FilterEnfeeble"
         FilterStop -> tryRead x str "FilterStop"
         FilterExploitWeakness -> tryRead x str "FilterExploitWeakness"
-        FilterHPGain -> tryRead x str "FilterHPGain"
         FilterIncreaseCommandGauge -> tryRead x str "FilterIncreaseCommandGauge"
+        FilterHPGain -> tryRead x str "FilterHPGain"
         FilterEnhanceBuffs -> tryRead x str "FilterEnhanceBuffs"
         FilterEnhanceDebuffs -> tryRead x str "FilterEnhanceDebuffs"
         FilterEnliven -> tryRead x str "FilterEnliven"
@@ -760,6 +816,8 @@ instance ReadForeign FilterEffectType where
         FilterMagicWeaponBoost -> tryRead x str "FilterMagicWeaponBoost"
         FilterPhysicalDamageBonus -> tryRead x str "FilterPhysicalDamageBonus"
         FilterMagicDamageBonus -> tryRead x str "FilterMagicDamageBonus"
+        FilterPhysATBConservationEffect -> tryRead x str "FilterPhysATBConservationEffects"
+        FilterMagATBConservationEffect -> tryRead x str "FilterMagATBConservationEffect"
         FilterFireDamageUp -> tryRead x str "FilterFireDamageUp"
         FilterIceDamageUp -> tryRead x str "FilterIceDamageUp"
         FilterLightningDamageUp -> tryRead x str "FilterLightningDamageUp"
@@ -784,6 +842,12 @@ instance ReadForeign FilterEffectType where
         FilterEarthDamageBonus -> tryRead x str "FilterEarthDamageBonus"
         FilterWaterDamageBonus -> tryRead x str "FilterWaterDamageBonus"
         FilterWindDamageBonus -> tryRead x str "FilterWindDamageBonus"
+        FilterFireATBConservationEffect -> tryRead x str "FilterFireATBConservationEffect"
+        FilterIceATBConservationEffect -> tryRead x str "FilterIceATBConservationEffect"
+        FilterLightningATBConservationEffect -> tryRead x str "FilterLightningATBConservationEffect"
+        FilterEarthATBConservationEffect -> tryRead x str "FilterEarthATBConservationEffect"
+        FilterWaterATBConservationEffect -> tryRead x str "FilterWaterATBConservationEffect"
+        FilterWindATBConservationEffect -> tryRead x str "FilterWindATBConservationEffect"
         FilterPatkDown -> tryRead x str "FilterPatkDown"
         FilterMatkDown -> tryRead x str "FilterMatkDown"
         FilterPdefDown -> tryRead x str "FilterPdefDown"
@@ -839,8 +903,8 @@ instance Display FilterEffectType where
     FilterEnfeeble -> "Enfeeble"
     FilterStop -> "Stop"
     FilterExploitWeakness -> "Exploit Weakness"
-    FilterHPGain -> "HP Gain"
     FilterIncreaseCommandGauge -> "Increase command gauge"
+    FilterHPGain -> "HP Gain"
     FilterEnhanceBuffs -> "Enhance Buffs"
     FilterEnhanceDebuffs -> "Enhance Debuffs"
     FilterEnliven -> "Enliven"
@@ -853,6 +917,8 @@ instance Display FilterEffectType where
     FilterMagicWeaponBoost -> "Mag. weapon boost"
     FilterPhysicalDamageBonus -> "Phys. damage bonus"
     FilterMagicDamageBonus -> "Mag. damage bonus"
+    FilterPhysATBConservationEffect -> "Phys. ATB Conservation Effect"
+    FilterMagATBConservationEffect -> "Mag. ATB Conservation Effect"
     FilterFireDamageUp -> "Fire damage up"
     FilterIceDamageUp -> "Ice damage up"
     FilterLightningDamageUp -> "Lightning damage up"
@@ -877,6 +943,12 @@ instance Display FilterEffectType where
     FilterEarthDamageBonus -> "Earth damage bonus"
     FilterWaterDamageBonus -> "Water damage bonus"
     FilterWindDamageBonus -> "Wind damage bonus"
+    FilterFireATBConservationEffect -> "Fire ATB Conservation Effect"
+    FilterIceATBConservationEffect -> "Ice ATB Conservation Effect"
+    FilterLightningATBConservationEffect -> "Lightning ATB Conservation Effect"
+    FilterEarthATBConservationEffect -> "Earth ATB Conservation Effect"
+    FilterWaterATBConservationEffect -> "Water ATB Conservation Effect"
+    FilterWindATBConservationEffect -> "Wind ATB Conservation Effect"
 
     FilterPatkDown -> "PATK down"
     FilterMatkDown -> "MATK down"
@@ -917,8 +989,8 @@ allFilterEffectTypes =
   , FilterEnfeeble
   , FilterStop
   , FilterExploitWeakness
-  , FilterHPGain
   , FilterIncreaseCommandGauge
+  , FilterHPGain
   , FilterEnhanceBuffs
   , FilterEnhanceDebuffs
   , FilterEnliven
@@ -930,6 +1002,8 @@ allFilterEffectTypes =
   , FilterMagicWeaponBoost
   , FilterPhysicalDamageBonus
   , FilterMagicDamageBonus
+  , FilterPhysATBConservationEffect
+  , FilterMagATBConservationEffect
   , FilterFireDamageUp
   , FilterIceDamageUp
   , FilterLightningDamageUp
@@ -954,6 +1028,12 @@ allFilterEffectTypes =
   , FilterEarthDamageBonus
   , FilterWaterDamageBonus
   , FilterWindDamageBonus
+  , FilterFireATBConservationEffect
+  , FilterIceATBConservationEffect
+  , FilterLightningATBConservationEffect
+  , FilterEarthATBConservationEffect
+  , FilterWaterATBConservationEffect
+  , FilterWindATBConservationEffect
   , FilterPatkDown
   , FilterMatkDown
   , FilterPdefDown
@@ -993,8 +1073,8 @@ allFilterEffectTypes =
     FilterEnfeeble -> unit
     FilterStop -> unit
     FilterExploitWeakness -> unit
-    FilterHPGain -> unit
     FilterIncreaseCommandGauge -> unit
+    FilterHPGain -> unit
     FilterEnhanceBuffs -> unit
     FilterEnhanceDebuffs -> unit
     FilterEnliven -> unit
@@ -1006,6 +1086,8 @@ allFilterEffectTypes =
     FilterMagicWeaponBoost -> unit
     FilterPhysicalDamageBonus -> unit
     FilterMagicDamageBonus -> unit
+    FilterPhysATBConservationEffect -> unit
+    FilterMagATBConservationEffect -> unit
     FilterFireDamageUp -> unit
     FilterIceDamageUp -> unit
     FilterLightningDamageUp -> unit
@@ -1030,6 +1112,12 @@ allFilterEffectTypes =
     FilterEarthDamageBonus -> unit
     FilterWaterDamageBonus -> unit
     FilterWindDamageBonus -> unit
+    FilterFireATBConservationEffect -> unit
+    FilterIceATBConservationEffect -> unit
+    FilterLightningATBConservationEffect -> unit
+    FilterEarthATBConservationEffect -> unit
+    FilterWaterATBConservationEffect -> unit
+    FilterWindATBConservationEffect -> unit
     FilterPatkDown -> unit
     FilterMatkDown -> unit
     FilterPdefDown -> unit
@@ -1072,6 +1160,8 @@ exhaustiveWeaponEffectMatch =
   , MagicWeaponBoost { range, durExt, percentage }
   , PhysicalDamageBonus { range, durExt, percentage }
   , MagicDamageBonus { range, durExt, percentage }
+  , PhysATBConservationEffect { range }
+  , MagATBConservationEffect { range }
   , FireDamageUp { range, durExt, potencies }
   , IceDamageUp { range, durExt, potencies }
   , LightningDamageUp { range, durExt, potencies }
@@ -1096,6 +1186,12 @@ exhaustiveWeaponEffectMatch =
   , EarthDamageBonus { range, durExt, percentage }
   , WaterDamageBonus { range, durExt, percentage }
   , WindDamageBonus { range, durExt, percentage }
+  , FireATBConservationEffect { range }
+  , IceATBConservationEffect { range }
+  , LightningATBConservationEffect { range }
+  , EarthATBConservationEffect { range }
+  , WaterATBConservationEffect { range }
+  , WindATBConservationEffect { range }
   , Veil { range, durExt, percentage }
   , Provoke { range, durExt }
   , PatkDown { range, durExt, potencies }
@@ -1124,8 +1220,8 @@ exhaustiveWeaponEffectMatch =
   , Enfeeble { range, durExt }
   , Stop { range, durExt }
   , ExploitWeakness { range, durExt, percentage }
-  , HPGain { range, durExt, percentage }
   , IncreaseCommandGauge { percentage }
+  , HPGain { range, durExt, percentage }
   , EnhanceBuffs { range, durExt, potencies }
   , EnhanceDebuffs { range, durExt, potencies }
   , Enliven { range, durExt }
@@ -1168,6 +1264,8 @@ exhaustiveWeaponEffectMatch =
     MagicWeaponBoost _ -> unit
     PhysicalDamageBonus _ -> unit
     MagicDamageBonus _ -> unit
+    PhysATBConservationEffect _ -> unit
+    MagATBConservationEffect _ -> unit
     FireWeaponBoost _ -> unit
     IceWeaponBoost _ -> unit
     LightningWeaponBoost _ -> unit
@@ -1180,6 +1278,12 @@ exhaustiveWeaponEffectMatch =
     EarthDamageBonus _ -> unit
     WaterDamageBonus _ -> unit
     WindDamageBonus _ -> unit
+    FireATBConservationEffect _ -> unit
+    IceATBConservationEffect _ -> unit
+    LightningATBConservationEffect _ -> unit
+    EarthATBConservationEffect _ -> unit
+    WaterATBConservationEffect _ -> unit
+    WindATBConservationEffect _ -> unit
     FireDamageDown _ -> unit
     IceDamageDown _ -> unit
     LightningDamageDown _ -> unit

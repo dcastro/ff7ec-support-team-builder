@@ -406,8 +406,8 @@ hasPotencies = case _ of
     FilterEnfeeble -> false
     FilterStop -> false
     FilterExploitWeakness -> false
-    FilterHPGain -> false
     FilterIncreaseCommandGauge -> false
+    FilterHPGain -> false
     FilterEnhanceBuffs -> true
     FilterEnhanceDebuffs -> true
     FilterEnliven -> false
@@ -419,6 +419,8 @@ hasPotencies = case _ of
     FilterMagicWeaponBoost -> false
     FilterPhysicalDamageBonus -> false
     FilterMagicDamageBonus -> false
+    FilterPhysATBConservationEffect -> false
+    FilterMagATBConservationEffect -> false
     FilterFireDamageUp -> true
     FilterIceDamageUp -> true
     FilterLightningDamageUp -> true
@@ -443,6 +445,12 @@ hasPotencies = case _ of
     FilterEarthDamageBonus -> false
     FilterWaterDamageBonus -> false
     FilterWindDamageBonus -> false
+    FilterFireATBConservationEffect -> false
+    FilterIceATBConservationEffect -> false
+    FilterLightningConservationEffect -> false
+    FilterEarthATBConservationEffect -> false
+    FilterWaterATBConservationEffect -> false
+    FilterWindATBConservationEffect -> false
 
     FilterPatkDown -> true
     FilterMatkDown -> true
@@ -483,10 +491,11 @@ hasRange = case _ of
     FilterEnfeeble -> true
     FilterStop -> true
     FilterExploitWeakness -> true
+    FilterIncreaseCommandGauge -> false
     FilterHPGain -> true
     -- This effect has no range in the game data (its weapons are grouped with
     -- `ranges: Nothing`), so there's no range selector to show.
-    FilterIncreaseCommandGauge -> false
+
     FilterEnhanceBuffs -> true
     FilterEnhanceDebuffs -> true
     FilterEnliven -> true
@@ -499,6 +508,8 @@ hasRange = case _ of
     FilterMagicWeaponBoost -> true
     FilterPhysicalDamageBonus -> true
     FilterMagicDamageBonus -> true
+    FilterPhysATBConservationEffect -> false
+    FilterMagATBConservationEffect -> false
     FilterFireDamageUp -> true
     FilterIceDamageUp -> true
     FilterLightningDamageUp -> true
@@ -523,6 +534,12 @@ hasRange = case _ of
     FilterEarthDamageBonus -> true
     FilterWaterDamageBonus -> true
     FilterWindDamageBonus -> true
+    FilterFireATBConservationEffect -> false
+    FilterIceATBConservationEffect -> false
+    FilterLightningConservationEffect -> false
+    FilterEarthATBConservationEffect -> false
+    FilterWaterATBConservationEffect -> false
+    FilterWindATBConservationEffect -> false
 
     FilterPatkDown -> true
     FilterMatkDown -> true

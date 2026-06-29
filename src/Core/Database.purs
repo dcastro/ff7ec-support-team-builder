@@ -273,13 +273,15 @@ rangeOf = case _ of
   MatkUp r -> Just r.range
   PdefUp r -> Just r.range
   MdefUp r -> Just r.range
-  HPGain r -> Just r.range
   IncreaseCommandGauge _ -> Nothing
+  HPGain r -> Just r.range
   EnhanceBuffs r -> Just r.range
   PhysicalWeaponBoost r -> Just r.range
   MagicWeaponBoost r -> Just r.range
   PhysicalDamageBonus r -> Just r.range
   MagicDamageBonus r -> Just r.range
+  PhysATBConservationEffect r -> Just r.range
+  MagicATBConservationEffect r -> Just r.range
   FireDamageUp r -> Just r.range
   IceDamageUp r -> Just r.range
   LightningDamageUp r -> Just r.range
@@ -298,6 +300,12 @@ rangeOf = case _ of
   EarthDamageBonus r -> Just r.range
   WaterDamageBonus r -> Just r.range
   WindDamageBonus r -> Just r.range
+  FireATBConservationEffect r -> Just r.range
+  IceATBConservationEffect r -> Just r.range
+  LightningATBConservationEffect r -> Just r.range
+  EarthATBConservationEffect r -> Just r.range
+  WaterATBConservationEffect r -> Just r.range
+  WindATBConservationEffect r -> Just r.range
   FireResistUp r -> Just r.range
   IceResistUp r -> Just r.range
   LightningResistUp r -> Just r.range
@@ -344,13 +352,15 @@ potenciesOf = case _ of
   MatkUp r -> Just r.potencies
   PdefUp r -> Just r.potencies
   MdefUp r -> Just r.potencies
-  HPGain _ -> Nothing
   IncreaseCommandGauge _ -> Nothing
+  HPGain _ -> Nothing
   EnhanceBuffs r -> Just r.potencies
   PhysicalWeaponBoost _ -> Nothing
   MagicWeaponBoost _ -> Nothing
   PhysicalDamageBonus _ -> Nothing
   MagicDamageBonus _ -> Nothing
+  PhysATBConservationEffect _ -> Nothing
+  MagATBConservationEffect _ -> Nothing
   FireDamageUp r -> Just r.potencies
   IceDamageUp r -> Just r.potencies
   LightningDamageUp r -> Just r.potencies
@@ -369,6 +379,12 @@ potenciesOf = case _ of
   EarthDamageBonus _ -> Nothing
   WaterDamageBonus _ -> Nothing
   WindDamageBonus _ -> Nothing
+  FireATBConservationEffect _ -> Nothing
+  IceATBConservationEffect _ -> Nothing
+  LightningATBConservationEffect _ -> Nothing
+  EarthATBConservationEffect _ -> Nothing
+  WaterATBConservationEffect _ -> Nothing
+  WindATBConservationEffect _ -> Nothing
   FireResistUp r -> Just r.potencies
   IceResistUp r -> Just r.potencies
   LightningResistUp r -> Just r.potencies
@@ -414,13 +430,15 @@ tagOf = case _ of
   MatkUp _ -> FilterMatkUp
   PdefUp _ -> FilterPdefUp
   MdefUp _ -> FilterMdefUp
-  HPGain _ -> FilterHPGain
   IncreaseCommandGauge _ -> FilterIncreaseCommandGauge
+  HPGain _ -> FilterHPGain
   EnhanceBuffs _ -> FilterEnhanceBuffs
   PhysicalWeaponBoost _ -> FilterPhysicalWeaponBoost
   MagicWeaponBoost _ -> FilterMagicWeaponBoost
   PhysicalDamageBonus _ -> FilterPhysicalDamageBonus
   MagicDamageBonus _ -> FilterMagicDamageBonus
+  PhysATBConservationEffect _ -> FilterPhysATBConservationEffect
+  MagATBConservationEffect _ -> FilterMagATBConservationEffect
   FireDamageUp _ -> FilterFireDamageUp
   IceDamageUp _ -> FilterIceDamageUp
   LightningDamageUp _ -> FilterLightningDamageUp
@@ -439,6 +457,12 @@ tagOf = case _ of
   EarthDamageBonus _ -> FilterEarthDamageBonus
   WaterDamageBonus _ -> FilterWaterDamageBonus
   WindDamageBonus _ -> FilterWindDamageBonus
+  FireATBConservationEffect _ -> FilterFireATBConservationEffect
+  IceATBConservationEffect _ -> FilterIceATBConservationEffect
+  LightningATBConservationEffect _ -> FilterLightningATBConservationEffect
+  EarthATBConservationEffect _ -> FilterEarthATBConservationEffect
+  WaterATBConservationEffect _ -> FilterWaterATBConservationEffect
+  WindATBConservationEffect _ -> FilterWindATBConservationEffect
   FireResistUp _ -> FilterFireResistUp
   IceResistUp _ -> FilterIceResistUp
   LightningResistUp _ -> FilterLightningResistUp

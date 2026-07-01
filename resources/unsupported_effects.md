@@ -1,14 +1,11 @@
 <!-- LTEX: enabled=false -->
-Found 17 unsupported effect type(s).
+Found 13 unsupported effect type(s).
 
 # Table of Contents
 
 * [+N Costume C. Ability Uses](#n-costume-c-ability-uses)
 * [+N Gear C. Ability Uses](#n-gear-c-ability-uses)
 * [-N% Summon Gauge](#-n-summon-gauge)
-* [Ns -N ATB Ice Weapon/Gear C. Ability Cost](#ns--n-atb-ice-weapongear-c-ability-cost)
-* [Ns -N ATB Mag. Weapon/Gear C. Ability Cost](#ns--n-atb-mag-weapongear-c-ability-cost)
-* [Ns -N ATB Phys. Weapon/Gear C. Ability Cost](#ns--n-atb-phys-weapongear-c-ability-cost)
 * [Ns Haste](#ns-haste)
 * [Ns N% Amp. Earth Abilities](#ns-n-amp-earth-abilities)
 * [Ns N% Amp. Phys. Abilities](#ns-n-amp-phys-abilities)
@@ -19,7 +16,6 @@ Found 17 unsupported effect type(s).
 * [Ns N% Single Target Mag. Damage Received Up](#ns-n-single-target-mag-damage-received-up)
 * [Ns N% Single Target Phys. Damage Received Up](#ns-n-single-target-phys-damage-received-up)
 * [Ns N% Single Target Water Damage Received Up](#ns-n-single-target-water-damage-received-up)
-* [Ns N.N% Ice ATB Conservation Effect](#ns-nn-ice-atb-conservation-effect)
 * [Won't support](#wont-support)
 
 ---
@@ -73,41 +69,6 @@ Found 17 unsupported effect type(s).
 
 * **Aerith - Supreme Sage's Staff**
   * `-100% Summon Gauge [Range: Self]`
-
----
-
-# Ns -N ATB Ice Weapon/Gear C. Ability Cost
-
-[↑ Back to top](#table-of-contents)
-
-* **Cloud - Crimson Blitz**
-  * `10s -1 ATB Ice Weapon/Gear C. Ability Cost (+3s) [Range: All Allies] [Condition: First Use]`
-  * `15s -1 ATB Ice Weapon/Gear C. Ability Cost (+5s) [Range: All Allies] [Condition: First Use]`
-  * `25s -1 ATB Ice Weapon/Gear C. Ability Cost (+8s) [Range: All Allies] [Condition: First Use]`
-
----
-
-# Ns -N ATB Mag. Weapon/Gear C. Ability Cost
-
-[↑ Back to top](#table-of-contents)
-
-* **Yuffie - Heirloom Brush**
-  * `10s -1 ATB Mag. Weapon/Gear C. Ability Cost (+3s) [Range: Self]`
-  * `15s -1 ATB Mag. Weapon/Gear C. Ability Cost (+5s) [Range: Self]`
-  * `25s -1 ATB Mag. Weapon/Gear C. Ability Cost (+8s) [Range: Self]`
-  * `40s -1 ATB Mag. Weapon/Gear C. Ability Cost (+13s) [Range: Self]`
-
----
-
-# Ns -N ATB Phys. Weapon/Gear C. Ability Cost
-
-[↑ Back to top](#table-of-contents)
-
-* **Yuffie - Heirloom Brush**
-  * `10s -1 ATB Phys. Weapon/Gear C. Ability Cost (+3s) [Range: Self]`
-  * `15s -1 ATB Phys. Weapon/Gear C. Ability Cost (+5s) [Range: Self]`
-  * `25s -1 ATB Phys. Weapon/Gear C. Ability Cost (+8s) [Range: Self]`
-  * `40s -1 ATB Phys. Weapon/Gear C. Ability Cost (+13s) [Range: Self]`
 
 ---
 
@@ -258,18 +219,6 @@ Found 17 unsupported effect type(s).
   * `40s 25% Single Target Water Damage Received Up (+13s) [Range: Single Enemy]`
   * `50s 40% Single Target Water Damage Received Up (+16s) [Range: Single Enemy]`
   * `60s 50% Single Target Water Damage Received Up (+20s) [Range: Single Enemy]`
-
----
-
-# Ns N.N% Ice ATB Conservation Effect
-
-[↑ Back to top](#table-of-contents)
-
-* **Sephiroth (Orig.) - Omega Wing**
-  * `30s 0.2% Ice ATB Conservation Effect (+10s) [Range: Self] [Condition: First Use]`
-  * `40s 0.2% Ice ATB Conservation Effect (+13s) [Range: Self] [Condition: First Use]`
-  * `50s 0.2% Ice ATB Conservation Effect (+16s) [Range: Self] [Condition: First Use]`
-  * `60s 0.2% Ice ATB Conservation Effect (+20s) [Range: Self] [Condition: First Use]`
 
 ---
 

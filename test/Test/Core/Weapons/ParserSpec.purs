@@ -87,10 +87,10 @@ spec =
       "30s 20% Magic Damage Bonus (+10s) [Range: All Allies]"
         `shouldParse`
           MagicDamageBonus { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 20 }
-      "25s 0% Physical ATB Conservation Effekt (+8s) [Range: All Allies]"
+      "25s 0% Phys ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           PhysATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 }, percentage: Percentage 0 }
-      "25s 0% Magic ATB Conservation Effekt (+8s) [Range: All Allies]"
+      "25s 0% Mag ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           MagATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 }, percentage: Percentage 0 }
       "30s 25% Fire Weapon Boost (+10s) [Range: All Allies]"
@@ -129,22 +129,22 @@ spec =
       "15s 20% Wind Damage Bonus (+5s) [Range: All Allies]"
         `shouldParse`
           WindDamageBonus { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
-      "25s 0% Fire ATB Conservation Effekt (+8s) [Range: All Allies]"
+      "25s 0% Fire ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           FireATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 }, percentage: Percentage 0 }
-      "25s 0% Ice ATB Conservation Effekt (+8s) [Range: All Allies]"
+      "25s 0% Ice ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           IceATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 }, percentage: Percentage 0 }
-      "25s 0% Lightning ATB Conservation Effekt (+8s) [Range: All Allies]"
+      "25s 0% Lightning ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           LightningATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 }, percentage: Percentage 0 }
-      "25s 0% Earth ATB Conservation Effekt (+8s) [Range: All Allies]"
+      "25s 0% Earth ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           EarthATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 }, percentage: Percentage 0 }
-      "25s 0% Water ATB Conservation Effekt (+8s) [Range: All Allies]"
+      "25s 0% Water ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           WaterATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 }, percentage: Percentage 0 }
-      "25s 0% Wind ATB Conservation Effekt (+8s) [Range: All Allies]"
+      "25s 0% Wind ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           WindATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 }, percentage: Percentage 0 }
       "15s Fire Damage Down (+5s) (Mid -> High) [Range: All Allies]"

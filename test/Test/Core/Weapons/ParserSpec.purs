@@ -87,12 +87,6 @@ spec =
       "30s 20% Magic Damage Bonus (+10s) [Range: All Allies]"
         `shouldParse`
           MagicDamageBonus { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 20 }
-      "25s 0% Phys ATB Conservation Effect (+8s) [Range: All Allies]"
-        `shouldParse`
-          PhysATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
-      "25s 0% Mag ATB Conservation Effect (+8s) [Range: All Allies]"
-        `shouldParse`
-          MagATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
       "25s -1 ATB Phys. Weapon/Gear C. Ability Cost (+8s) [Range: All Allies]"
         `shouldParse`
           PhysATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
@@ -138,6 +132,9 @@ spec =
       "25s 0% Fire ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           FireATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
+      "25s -1 ATB Fire Weapon/Gear C. Ability Cost (+8s) [Range: All Allies]"
+        `shouldParse`
+          FireATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
       "25s 0% Ice ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           IceATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
@@ -150,13 +147,25 @@ spec =
       "25s 0% Lightning ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           LightningATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
+      "25s -1 ATB Lightning Weapon/Gear C. Ability Cost (+8s) [Range: All Allies]"
+        `shouldParse`
+          LightningATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
       "25s 0% Earth ATB Conservation Effect (+8s) [Range: All Allies]"
+        `shouldParse`
+          EarthATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
+      "25s -1 ATB Earth Weapon/Gear C. Ability Cost (+8s) [Range: All Allies]"
         `shouldParse`
           EarthATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
       "25s 0% Water ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           WaterATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
+      "25s -1 ATB Water Weapon/Gear C. Ability Cost (+8s) [Range: All Allies]"
+        `shouldParse`
+          WaterATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
       "25s 0% Wind ATB Conservation Effect (+8s) [Range: All Allies]"
+        `shouldParse`
+          WindATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
+      "25s -1 ATB Wind Weapon/Gear C. Ability Cost (+8s) [Range: All Allies]"
         `shouldParse`
           WindATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }
       "15s Fire Damage Down (+5s) (Mid -> High) [Range: All Allies]"

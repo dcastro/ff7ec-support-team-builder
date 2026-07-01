@@ -164,8 +164,8 @@ data WeaponEffect
   | MagicWeaponBoost { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | PhysicalDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | MagicDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | PhysATBConservationEffect { range :: Range, durExt :: DurExt }
-  | MagATBConservationEffect { range :: Range, durExt :: DurExt }
+  | PhysATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | MagATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | FireDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | IceDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | LightningDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
@@ -184,12 +184,12 @@ data WeaponEffect
   | EarthDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | WaterDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | WindDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | FireATBConservationEffect { range :: Range, durExt :: DurExt }
-  | IceATBConservationEffect { range :: Range, durExt :: DurExt }
-  | LightningATBConservationEffect { range :: Range, durExt :: DurExt }
-  | EarthATBConservationEffect { range :: Range, durExt :: DurExt }
-  | WaterATBConservationEffect { range :: Range, durExt :: DurExt }
-  | WindATBConservationEffect { range :: Range, durExt :: DurExt }
+  | FireATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | IceATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | LightningATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | EarthATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | WaterATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | WindATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | FireResistUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | IceResistUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | LightningResistUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
@@ -535,7 +535,7 @@ instance WriteForeign WeaponEffect where
       MagicWeaponBoost rec -> writeRecord rec "MagicWeaponBoost"
       PhysicalDamageBonus rec -> writeRecord rec "PhysicalDamageBonus"
       MagicDamageBonus rec -> writeRecord rec "MagicDamageBonus"
-      PhysATBConservationEffect rec -> writeRecord rec "PhysATBConservationEffects"
+      PhysATBConservationEffect rec -> writeRecord rec "PhysATBConservationEffect"
       MagATBConservationEffect rec -> writeRecord rec "MagATBConservationEffect"
       FireDamageUp rec -> writeRecord rec "FireDamageUp"
       IceDamageUp rec -> writeRecord rec "IceDamageUp"
@@ -724,7 +724,7 @@ instance ReadForeign WeaponEffect where
         MagicWeaponBoost _ -> tryRead MagicWeaponBoost recType value "MagicWeaponBoost"
         PhysicalDamageBonus _ -> tryRead PhysicalDamageBonus recType value "PhysicalDamageBonus"
         MagicDamageBonus _ -> tryRead MagicDamageBonus recType value "MagicDamageBonus"
-        PhysATBConservationEffects _ -> tryRead PhysATBConservationEffect recType value "PhysATBConservationEffect"
+        PhysATBConservationEffect _ -> tryRead PhysATBConservationEffect recType value "PhysATBConservationEffect"
         MagATBConservationEffect _ -> tryRead MagATBConservationEffect recType value "MagATBConservationEffect"
         FireDamageUp _ -> tryRead FireDamageUp recType value "FireDamageUp"
         IceDamageUp _ -> tryRead IceDamageUp recType value "IceDamageUp"
@@ -816,7 +816,7 @@ instance ReadForeign FilterEffectType where
         FilterMagicWeaponBoost -> tryRead x str "FilterMagicWeaponBoost"
         FilterPhysicalDamageBonus -> tryRead x str "FilterPhysicalDamageBonus"
         FilterMagicDamageBonus -> tryRead x str "FilterMagicDamageBonus"
-        FilterPhysATBConservationEffect -> tryRead x str "FilterPhysATBConservationEffects"
+        FilterPhysATBConservationEffect -> tryRead x str "FilterPhysATBConservationEffect"
         FilterMagATBConservationEffect -> tryRead x str "FilterMagATBConservationEffect"
         FilterFireDamageUp -> tryRead x str "FilterFireDamageUp"
         FilterIceDamageUp -> tryRead x str "FilterIceDamageUp"
@@ -1160,8 +1160,8 @@ exhaustiveWeaponEffectMatch =
   , MagicWeaponBoost { range, durExt, percentage }
   , PhysicalDamageBonus { range, durExt, percentage }
   , MagicDamageBonus { range, durExt, percentage }
-  , PhysATBConservationEffect { range }
-  , MagATBConservationEffect { range }
+  , PhysATBConservationEffect { range, durExt }
+  , MagATBConservationEffect { range, durExt }
   , FireDamageUp { range, durExt, potencies }
   , IceDamageUp { range, durExt, potencies }
   , LightningDamageUp { range, durExt, potencies }
@@ -1186,12 +1186,12 @@ exhaustiveWeaponEffectMatch =
   , EarthDamageBonus { range, durExt, percentage }
   , WaterDamageBonus { range, durExt, percentage }
   , WindDamageBonus { range, durExt, percentage }
-  , FireATBConservationEffect { range }
-  , IceATBConservationEffect { range }
-  , LightningATBConservationEffect { range }
-  , EarthATBConservationEffect { range }
-  , WaterATBConservationEffect { range }
-  , WindATBConservationEffect { range }
+  , FireATBConservationEffect { range, durExt }
+  , IceATBConservationEffect { range, durExt }
+  , LightningATBConservationEffect { range, durExt }
+  , EarthATBConservationEffect { range, durExt }
+  , WaterATBConservationEffect { range, durExt }
+  , WindATBConservationEffect { range, durExt }
   , Veil { range, durExt, percentage }
   , Provoke { range, durExt }
   , PatkDown { range, durExt, potencies }

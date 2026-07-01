@@ -2702,6 +2702,13 @@
             ob0:
               max: Mid
               base: Low
+- - FilterIncreaseCommandGauge
+  - - weaponName: Lightning's Rod
+    - weaponName: Mermaid Rod
+    - weaponName: Radiant Lance
+    - weaponName: Blade of Ruin
+    - weaponName: Rubber Band Gun
+    - weaponName: Rocker's Guitar
 - - FilterHPGain
   - - weaponName: Grinding Gear
       ranges:
@@ -2766,13 +2773,6 @@
             ob10: All
             ob1: All
             ob0: All
-- - FilterIncreaseCommandGauge
-  - - weaponName: Lightning's Rod
-    - weaponName: Mermaid Rod
-    - weaponName: Radiant Lance
-    - weaponName: Blade of Ruin
-    - weaponName: Rubber Band Gun
-    - weaponName: Rocker's Guitar
 - - FilterEnhanceBuffs
   - - weaponName: Mystic Sword
       ranges:
@@ -2874,6 +2874,21 @@
             ob0:
               max: High
               base: Low
+- - FilterEnliven
+  - - weaponName: Noble Parasol
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: Self
+            ob0: Self
+    - weaponName: Festive Sword
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: Self
+            ob0: Self
 - - FilterPhysicalWeaponBoost
   - - weaponName: Fusion Sword
       ranges:
@@ -2997,6 +3012,22 @@
             ob10: All
             ob1: All
             ob0: All
+- - FilterPhysATBConservationEffect
+  - - weaponName: Heirloom Brush
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
+- - FilterMagATBConservationEffect
+  - - weaponName: Heirloom Brush
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
 - - FilterFireDamageUp
   - - weaponName: Gambanteinn
       ranges:
@@ -3790,6 +3821,21 @@
             ob10: All
             ob1: All
             ob0: All
+- - FilterIceATBConservationEffect
+  - - weaponName: Crimson Blitz
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Omega Wing
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
 - - FilterEnfeeble
   - - weaponName: Cool Cat's Megaphone
       ranges:
@@ -4065,21 +4111,6 @@
             ob0:
               max: High
               base: Low
-- - FilterEnliven
-  - - weaponName: Noble Parasol
-      ranges:
-        - allRanges:
-            ob6: All
-            ob10: All
-            ob1: Self
-            ob0: Self
-    - weaponName: Festive Sword
-      ranges:
-        - allRanges:
-            ob6: All
-            ob10: All
-            ob1: Self
-            ob0: Self
 - - FilterPatkDown
   - - weaponName: Full Metal Staff
       ranges:

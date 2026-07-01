@@ -176,6 +176,8 @@ getPotencies = case _ of
   MagicWeaponBoost {} -> Nothing
   PhysicalDamageBonus {} -> Nothing
   MagicDamageBonus {} -> Nothing
+  PhysATBConservationEffect {} -> Nothing
+  MagATBConservationEffect {} -> Nothing
   FireDamageUp { potencies } -> Just $ FireDamageUp' potencies
   IceDamageUp { potencies } -> Just $ IceDamageUp' potencies
   LightningDamageUp { potencies } -> Just $ LightningDamageUp' potencies
@@ -200,6 +202,12 @@ getPotencies = case _ of
   EarthDamageBonus {} -> Nothing
   WaterDamageBonus {} -> Nothing
   WindDamageBonus {} -> Nothing
+  FireATBConservationEffect {} -> Nothing
+  IceATBConservationEffect {} -> Nothing
+  LightningATBConservationEffect {} -> Nothing
+  EarthATBConservationEffect {} -> Nothing
+  WaterATBConservationEffect {} -> Nothing
+  WindATBConservationEffect {} -> Nothing
   Veil {} -> Nothing
   Provoke {} -> Nothing
   PatkDown { potencies } -> Just $ PatkDown' potencies
@@ -222,8 +230,8 @@ getPotencies = case _ of
   Stop {} -> Nothing
   ExploitWeakness {} -> Nothing
   Enliven {} -> Nothing
-  HPGain {} -> Nothing
   IncreaseCommandGauge {} -> Nothing
+  HPGain {} -> Nothing
   EnhanceBuffs { potencies } -> Just $ EnhanceBuffs' potencies
   EnhanceDebuffs { potencies } -> Just $ EnhanceDebuffs' potencies
   FireWeakness {} -> Nothing

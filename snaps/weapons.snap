@@ -11555,6 +11555,12 @@ weapons:
               extension: 16
               duration: 50
           type: IceDamageBonus
+        - value:
+            range: All
+            durExt:
+              extension: 5
+              duration: 15
+          type: IceATBConservationEffect
       description: |-
         Lightning Rush+ (3 ATB)
         670% Mag. Non-elem. Damage [Range: Single Enemy]
@@ -11578,6 +11584,12 @@ weapons:
               extension: 20
               duration: 60
           type: IceDamageBonus
+        - value:
+            range: All
+            durExt:
+              extension: 8
+              duration: 25
+          type: IceATBConservationEffect
       description: |-
         Lightning Rush++ (3 ATB)
         800% Mag. Non-elem. Damage [Range: Single Enemy]
@@ -11601,6 +11613,12 @@ weapons:
               extension: 13
               duration: 40
           type: IceDamageBonus
+        - value:
+            range: All
+            durExt:
+              extension: 5
+              duration: 15
+          type: IceATBConservationEffect
       description: |-
         Lightning Rush (3 ATB)
         520% Mag. Non-elem. Damage [Range: Single Enemy]
@@ -11624,6 +11642,12 @@ weapons:
               extension: 10
               duration: 30
           type: IceDamageBonus
+        - value:
+            range: All
+            durExt:
+              extension: 3
+              duration: 10
+          type: IceATBConservationEffect
       description: |-
         Lightning Rush (3 ATB)
         430% Mag. Non-elem. Damage [Range: Single Enemy]
@@ -24549,6 +24573,12 @@ weapons:
               extension: 16
               duration: 50
           type: IceDamageBonus
+        - value:
+            range: Self
+            durExt:
+              extension: 16
+              duration: 50
+          type: IceATBConservationEffect
       description: |-
         Cryostasis+ (5 ATB)
         750% Mag. Ice Damage [Range: All Enemies]
@@ -24574,6 +24604,12 @@ weapons:
               extension: 20
               duration: 60
           type: IceDamageBonus
+        - value:
+            range: Self
+            durExt:
+              extension: 20
+              duration: 60
+          type: IceATBConservationEffect
       description: |-
         Cryostasis++ (5 ATB)
         900% Mag. Ice Damage [Range: All Enemies]
@@ -24599,6 +24635,12 @@ weapons:
               extension: 13
               duration: 40
           type: IceDamageBonus
+        - value:
+            range: Self
+            durExt:
+              extension: 13
+              duration: 40
+          type: IceATBConservationEffect
       description: |-
         Cryostasis (5 ATB)
         580% Mag. Ice Damage [Range: All Enemies]
@@ -24624,6 +24666,12 @@ weapons:
               extension: 10
               duration: 30
           type: IceDamageBonus
+        - value:
+            range: Self
+            durExt:
+              extension: 10
+              duration: 30
+          type: IceATBConservationEffect
       description: |-
         Cryostasis (5 ATB)
         480% Mag. Ice Damage [Range: All Enemies]
@@ -30483,6 +30531,18 @@ weapons:
     ob6:
       effects:
         - value:
+            range: Self
+            durExt:
+              extension: 8
+              duration: 25
+          type: PhysATBConservationEffect
+        - value:
+            range: Self
+            durExt:
+              extension: 8
+              duration: 25
+          type: MagATBConservationEffect
+        - value:
             range: All
             potencies:
               max: ExtraHigh
@@ -30500,6 +30560,18 @@ weapons:
         10% Crit Rate [Range: Single Enemy]
     ob10:
       effects:
+        - value:
+            range: Self
+            durExt:
+              extension: 13
+              duration: 40
+          type: PhysATBConservationEffect
+        - value:
+            range: Self
+            durExt:
+              extension: 13
+              duration: 40
+          type: MagATBConservationEffect
         - value:
             range: All
             potencies:
@@ -30519,6 +30591,18 @@ weapons:
     ob1:
       effects:
         - value:
+            range: Self
+            durExt:
+              extension: 5
+              duration: 15
+          type: PhysATBConservationEffect
+        - value:
+            range: Self
+            durExt:
+              extension: 5
+              duration: 15
+          type: MagATBConservationEffect
+        - value:
             range: All
             potencies:
               max: High
@@ -30536,6 +30620,18 @@ weapons:
         10% Crit Rate [Range: Single Enemy]
     ob0:
       effects:
+        - value:
+            range: Self
+            durExt:
+              extension: 3
+              duration: 10
+          type: PhysATBConservationEffect
+        - value:
+            range: Self
+            durExt:
+              extension: 3
+              duration: 10
+          type: MagATBConservationEffect
         - value:
             range: All
             potencies:

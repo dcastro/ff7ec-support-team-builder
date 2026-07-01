@@ -343,6 +343,8 @@ parseWeaponEffect coords =
       <|> P.try (withDurExtPercentage "Magic Weapon Boost" MagicWeaponBoost)
       <|> P.try (withDurExtPercentage "Physical Damage Bonus" PhysicalDamageBonus)
       <|> P.try (withDurExtPercentage "Magic Damage Bonus" MagicDamageBonus)
+      <|> P.try (withDurExtIgnoringSignedInt "ATB Phys. Weapon/Gear C. Ability Cost" PhysATBConservationEffect)
+      <|> P.try (withDurExtIgnoringSignedInt "ATB Mag. Weapon/Gear C. Ability Cost" MagATBConservationEffect)
       <|> P.try (withDurExtPotencies "Fire Damage Up" FireDamageUp)
       <|> P.try (withDurExtPotencies "Ice Damage Up" IceDamageUp)
       <|> P.try (withDurExtPotencies "Lightning Damage Up" LightningDamageUp)
@@ -373,6 +375,18 @@ parseWeaponEffect coords =
       <|> P.try (withDurExtPercentage "Earth Damage Bonus" EarthDamageBonus)
       <|> P.try (withDurExtPercentage "Water Damage Bonus" WaterDamageBonus)
       <|> P.try (withDurExtPercentage "Wind Damage Bonus" WindDamageBonus)
+      <|> P.try (withDurExtIgnoringPercentage "Fire ATB Conservation Effect" FireATBConservationEffect)
+      <|> P.try (withDurExtIgnoringSignedInt "ATB Fire Weapon/Gear C. Ability Cost" FireATBConservationEffect)
+      <|> P.try (withDurExtIgnoringPercentage "Ice ATB Conservation Effect" IceATBConservationEffect)
+      <|> P.try (withDurExtIgnoringSignedInt "ATB Ice Weapon/Gear C. Ability Cost" IceATBConservationEffect)
+      <|> P.try (withDurExtIgnoringPercentage "Lightning ATB Conservation Effect" LightningATBConservationEffect)
+      <|> P.try (withDurExtIgnoringSignedInt "ATB Lightning Weapon/Gear C. Ability Cost" LightningATBConservationEffect)
+      <|> P.try (withDurExtIgnoringPercentage "Earth ATB Conservation Effect" EarthATBConservationEffect)
+      <|> P.try (withDurExtIgnoringSignedInt "ATB Earth Weapon/Gear C. Ability Cost" EarthATBConservationEffect)
+      <|> P.try (withDurExtIgnoringPercentage "Water ATB Conservation Effect" WaterATBConservationEffect)
+      <|> P.try (withDurExtIgnoringSignedInt "ATB Water Weapon/Gear C. Ability Cost" WaterATBConservationEffect)
+      <|> P.try (withDurExtIgnoringPercentage "Wind ATB Conservation Effect" WindATBConservationEffect)
+      <|> P.try (withDurExtIgnoringSignedInt "ATB Wind Weapon/Gear C. Ability Cost" WindATBConservationEffect)
       <|> P.try (withDurExtPercentage "Veil" Veil)
       <|> P.try (withDurExt "Provoke" Provoke)
       <|> P.try (withDurExtPotencies "PATK Down" PatkDown)
@@ -405,10 +419,10 @@ parseWeaponEffect coords =
       <|> P.try (withDurExtPercentage "Wind Weakness" WindWeakness)
       <|> P.try (withDurExt "Enfeeble" Enfeeble)
       <|> P.try (withDurExt "Stop" Stop)
-      <|> P.try (withDurExtPercentage "HP Gain" HPGain)
       -- NOTE: the spreadsheet names this effect "Stance Gauge" (e.g. `+50% Stance Gauge`),
       -- but in-game it's the "Command Gauge", which is the name we use internally.
       <|> P.try (withPrefixedPercentage "Stance Gauge" IncreaseCommandGauge)
+      <|> P.try (withDurExtPercentage "HP Gain" HPGain)
       <|> P.try (withExtPotencies "Enhance Buffs" EnhanceBuffs)
       <|> P.try (withExtPotencies "Enhance Debuffs" EnhanceDebuffs)
       <|> P.try (withDurExt "Enliven" Enliven)
@@ -454,6 +468,33 @@ parseWeaponEffect coords =
       extension <- parseExtension <* space
       range <- parseRange
       pure $ constructor $ { range, durExt: { duration, extension }, percentage }
+
+  -- Like `withDurExt`, but the game data includes a percentage between the duration and
+  -- the effect name that we parse and discard. Handles both integer and fractional
+  -- percentages, e.g. `25s 0% Phys ATB Conservation Effect (+8s) [Range: All Allies]`
+  -- or `30s 0.2% Ice ATB Conservation Effect (+10s) [Range: Self]`.
+  withDurExtIgnoringPercentage :: String -> ({ range :: Range, durExt :: DurExt } -> WeaponEffect) -> Parser WeaponEffect
+  withDurExtIgnoringPercentage effectName constructor = do
+    inContext effectName do
+      duration <- parseDuration <* space
+      _ <- (void $ P.intDecimal *> P.optionMaybe (P.char '.' *> P.intDecimal) *> P.char '%') <* space
+      _ <- P.string effectName <* space
+      extension <- parseExtension <* space
+      range <- parseRange
+      pure $ constructor { range, durExt: { duration, extension } }
+
+  -- Like `withDurExt`, but the game data includes a signed integer between the duration
+  -- and the effect name that we parse and discard.
+  -- E.g. `10s -1 ATB Ice Weapon/Gear C. Ability Cost (+3s) [Range: All Allies]`
+  withDurExtIgnoringSignedInt :: String -> ({ range :: Range, durExt :: DurExt } -> WeaponEffect) -> Parser WeaponEffect
+  withDurExtIgnoringSignedInt effectName constructor = do
+    inContext effectName do
+      duration <- parseDuration <* space
+      _ <- (void $ P.optionMaybe (P.char '-') *> P.intDecimal) <* space
+      _ <- P.string effectName <* space
+      extension <- parseExtension <* space
+      range <- parseRange
+      pure $ constructor { range, durExt: { duration, extension } }
 
   withDurExtMissingPercentage :: Percentage -> String -> ({ range :: Range, durExt :: DurExt, percentage :: Percentage } -> WeaponEffect) -> Parser WeaponEffect
   withDurExtMissingPercentage fallbackPercentage effectName constructor = do

@@ -164,8 +164,8 @@ data WeaponEffect
   | MagicWeaponBoost { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | PhysicalDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | MagicDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | PhysATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | MagATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | PhysATBConservationEffect { range :: Range, durExt :: DurExt }
+  | MagATBConservationEffect { range :: Range, durExt :: DurExt }
   | FireDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | IceDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | LightningDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
@@ -184,12 +184,12 @@ data WeaponEffect
   | EarthDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | WaterDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | WindDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | FireATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | IceATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | LightningATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | EarthATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | WaterATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
-  | WindATBConservationEffect { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | FireATBConservationEffect { range :: Range, durExt :: DurExt }
+  | IceATBConservationEffect { range :: Range, durExt :: DurExt }
+  | LightningATBConservationEffect { range :: Range, durExt :: DurExt }
+  | EarthATBConservationEffect { range :: Range, durExt :: DurExt }
+  | WaterATBConservationEffect { range :: Range, durExt :: DurExt }
+  | WindATBConservationEffect { range :: Range, durExt :: DurExt }
   | FireResistUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | IceResistUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | LightningResistUp { range :: Range, durExt :: DurExt, potencies :: Potencies }

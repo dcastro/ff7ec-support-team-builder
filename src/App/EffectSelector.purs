@@ -447,7 +447,7 @@ hasPotencies = case _ of
     FilterWindDamageBonus -> false
     FilterFireATBConservationEffect -> false
     FilterIceATBConservationEffect -> false
-    FilterLightningConservationEffect -> false
+    FilterLightningATBConservationEffect -> false
     FilterEarthATBConservationEffect -> false
     FilterWaterATBConservationEffect -> false
     FilterWindATBConservationEffect -> false
@@ -536,7 +536,7 @@ hasRange = case _ of
     FilterWindDamageBonus -> true
     FilterFireATBConservationEffect -> false
     FilterIceATBConservationEffect -> false
-    FilterLightningConservationEffect -> false
+    FilterLightningATBConservationEffect -> false
     FilterEarthATBConservationEffect -> false
     FilterWaterATBConservationEffect -> false
     FilterWindATBConservationEffect -> false

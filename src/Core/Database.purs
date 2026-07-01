@@ -281,7 +281,7 @@ rangeOf = case _ of
   PhysicalDamageBonus r -> Just r.range
   MagicDamageBonus r -> Just r.range
   PhysATBConservationEffect r -> Just r.range
-  MagicATBConservationEffect r -> Just r.range
+  MagATBConservationEffect r -> Just r.range
   FireDamageUp r -> Just r.range
   IceDamageUp r -> Just r.range
   LightningDamageUp r -> Just r.range

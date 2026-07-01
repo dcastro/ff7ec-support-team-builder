@@ -177,7 +177,7 @@ getPotencies = case _ of
   PhysicalDamageBonus {} -> Nothing
   MagicDamageBonus {} -> Nothing
   PhysATBConservationEffect {} -> Nothing
-  MagicATBConservationEffect {} -> Nothing
+  MagATBConservationEffect {} -> Nothing
   FireDamageUp { potencies } -> Just $ FireDamageUp' potencies
   IceDamageUp { potencies } -> Just $ IceDamageUp' potencies
   LightningDamageUp { potencies } -> Just $ LightningDamageUp' potencies

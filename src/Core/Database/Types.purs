@@ -267,6 +267,7 @@ data FilterEffectType
   | FilterMatkUp
   | FilterPdefUp
   | FilterMdefUp
+  | FilterExploitWeakness
   | FilterIncreaseCommandGauge
   | FilterHPGain
   | FilterEnhanceBuffs
@@ -319,7 +320,6 @@ data FilterEffectType
   -- Debuffs
   | FilterEnfeeble
   | FilterStop
-  | FilterExploitWeakness
   | FilterEnhanceDebuffs
   | FilterPatkDown
   | FilterMatkDown
@@ -535,12 +535,6 @@ instance Show FilterEffectType where
     FilterEarthDamageUp -> "FilterEarthDamageUp"
     FilterWaterDamageUp -> "FilterWaterDamageUp"
     FilterWindDamageUp -> "FilterWindDamageUp"
-    FilterFireResistUp -> "FilterFireResistUp"
-    FilterIceResistUp -> "FilterIceResistUp"
-    FilterLightningResistUp -> "FilterLightningResistUp"
-    FilterEarthResistUp -> "FilterEarthResistUp"
-    FilterWaterResistUp -> "FilterWaterResistUp"
-    FilterWindResistUp -> "FilterWindResistUp"
     FilterFireWeaponBoost -> "FilterFireWeaponBoost"
     FilterIceWeaponBoost -> "FilterIceWeaponBoost"
     FilterLightningWeaponBoost -> "FilterLightningWeaponBoost"
@@ -565,6 +559,12 @@ instance Show FilterEffectType where
     FilterAmpEarthAbilities -> "FilterAmpEarthAbilities"
     FilterAmpWaterAbilities -> "FilterAmpWaterAbilities"
     FilterAmpWindAbilities -> "FilterAmpWindAbilities"
+    FilterFireResistUp -> "FilterFireResistUp"
+    FilterIceResistUp -> "FilterIceResistUp"
+    FilterLightningResistUp -> "FilterLightningResistUp"
+    FilterEarthResistUp -> "FilterEarthResistUp"
+    FilterWaterResistUp -> "FilterWaterResistUp"
+    FilterWindResistUp -> "FilterWindResistUp"
     FilterPatkDown -> "FilterPatkDown"
     FilterMatkDown -> "FilterMatkDown"
     FilterPdefDown -> "FilterPdefDown"

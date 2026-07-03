@@ -2702,6 +2702,98 @@
             ob0:
               max: Mid
               base: Low
+- - FilterExploitWeakness
+  - - weaponName: Supreme Sage's Staff
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Inflatable Buster Sword (Club Custom)
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Dragoon Lance
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Fusion Sword
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
+    - weaponName: Blade of the Worthy
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
+    - weaponName: Infiltration Sword
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Blue Daffodil Gloves
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
+    - weaponName: Lightning's Gloves
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
+    - weaponName: Transgressor
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
+    - weaponName: Bird of Prey
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
+    - weaponName: Rocker's Guitar
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Festive Sword
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Sword of the Hunt
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
 - - FilterIncreaseCommandGauge
   - - weaponName: Lightning's Rod
     - weaponName: Mermaid Rod
@@ -3022,6 +3114,14 @@
             ob0: Self
 - - FilterMagATBConservationEffect
   - - weaponName: Heirloom Brush
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
+- - FilterAmpPhysAbilities
+  - - weaponName: Chevron Blade
       ranges:
         - allRanges:
             ob6: Self
@@ -3836,6 +3936,14 @@
             ob10: Self
             ob1: Self
             ob0: Self
+- - FilterAmpEarthAbilities
+  - - weaponName: Elegant Gloves
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
 - - FilterEnfeeble
   - - weaponName: Cool Cat's Megaphone
       ranges:
@@ -3978,98 +4086,6 @@
             ob10: SingleTarget
             ob1: SingleTarget
             ob0: SingleTarget
-- - FilterExploitWeakness
-  - - weaponName: Supreme Sage's Staff
-      ranges:
-        - allRanges:
-            ob6: All
-            ob10: All
-            ob1: All
-            ob0: All
-    - weaponName: Inflatable Buster Sword (Club Custom)
-      ranges:
-        - allRanges:
-            ob6: All
-            ob10: All
-            ob1: All
-            ob0: All
-    - weaponName: Dragoon Lance
-      ranges:
-        - allRanges:
-            ob6: All
-            ob10: All
-            ob1: All
-            ob0: All
-    - weaponName: Fusion Sword
-      ranges:
-        - allRanges:
-            ob6: Self
-            ob10: Self
-            ob1: Self
-            ob0: Self
-    - weaponName: Blade of the Worthy
-      ranges:
-        - allRanges:
-            ob6: Self
-            ob10: Self
-            ob1: Self
-            ob0: Self
-    - weaponName: Infiltration Sword
-      ranges:
-        - allRanges:
-            ob6: All
-            ob10: All
-            ob1: All
-            ob0: All
-    - weaponName: Blue Daffodil Gloves
-      ranges:
-        - allRanges:
-            ob6: Self
-            ob10: Self
-            ob1: Self
-            ob0: Self
-    - weaponName: Lightning's Gloves
-      ranges:
-        - allRanges:
-            ob6: Self
-            ob10: Self
-            ob1: Self
-            ob0: Self
-    - weaponName: Transgressor
-      ranges:
-        - allRanges:
-            ob6: Self
-            ob10: Self
-            ob1: Self
-            ob0: Self
-    - weaponName: Bird of Prey
-      ranges:
-        - allRanges:
-            ob6: Self
-            ob10: Self
-            ob1: Self
-            ob0: Self
-    - weaponName: Rocker's Guitar
-      ranges:
-        - allRanges:
-            ob6: All
-            ob10: All
-            ob1: All
-            ob0: All
-    - weaponName: Festive Sword
-      ranges:
-        - allRanges:
-            ob6: All
-            ob10: All
-            ob1: All
-            ob0: All
-    - weaponName: Sword of the Hunt
-      ranges:
-        - allRanges:
-            ob6: Self
-            ob10: Self
-            ob1: Self
-            ob0: Self
 - - FilterEnhanceDebuffs
   - - weaponName: Physician's Scalpel
       ranges:
@@ -8022,6 +8038,59 @@
             ob0:
               max: Mid
               base: Low
+- - FilterSingleTgtPhysDmgRcvdUp
+  - - weaponName: Noble Parasol
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Muramasa
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Pressure Ridge
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+- - FilterSingleTgtMagDmgRcvdUp
+  - - weaponName: Noble Parasol
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Muramasa
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+- - FilterSingleTgtIceDmgRcvdUp
+  - - weaponName: Riding Gloves
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+- - FilterSingleTgtWaterDmgRcvdUp
+  - - weaponName: Wheel Edge
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
 - - FilterFireWeakness
   - - weaponName: Zenithian Sword
       ranges:

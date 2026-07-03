@@ -129,6 +129,85 @@ spec =
       "15s 20% Wind Damage Bonus (+5s) [Range: All Allies]"
         `shouldParse`
           WindDamageBonus { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      -- "Single Target Dmg. Received Up" is formatted 2 different ways in the spreadsheet.
+      "30s 25% Single Target Phys. Damage Received Up (+10s) [Range: All Enemies]"
+        `shouldParse`
+          SingleTgtPhysDmgRcvdUp { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 25 }
+      "30s 25% Phys. Single Target Dmg. Received Up (+10s) [Range: All Enemies]"
+        `shouldParse`
+          SingleTgtPhysDmgRcvdUp { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 25 }
+      "30s 25% Single Target Mag. Damage Received Up (+10s) [Range: All Enemies]"
+        `shouldParse`
+          SingleTgtMagDmgRcvdUp { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 25 }
+      "30s 25% Mag. Single Target Dmg. Received Up (+10s) [Range: All Enemies]"
+        `shouldParse`
+          SingleTgtMagDmgRcvdUp { range: All, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 25 }
+      "15s 20% All Target Phys. Damage Received Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          AllTgtPhysDmgRcvdUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% All Target Mag. Damage Received Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          AllTgtMagDmgRcvdUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "30s 25% Single Target Fire Damage Received Up (+10s) [Range: Single Enemy]"
+        `shouldParse`
+          SingleTgtFireDmgRcvdUp { range: SingleTarget, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 25 }
+      "30s 25% Single Target Ice Damage Received Up (+10s) [Range: Single Enemy]"
+        `shouldParse`
+          SingleTgtIceDmgRcvdUp { range: SingleTarget, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 25 }
+      "15s 20% Single Target Lightning Damage Received Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          SingleTgtLightningDmgRcvdUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% Single Target Earth Damage Received Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          SingleTgtEarthDmgRcvdUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "30s 25% Single Target Water Damage Received Up (+10s) [Range: Single Enemy]"
+        `shouldParse`
+          SingleTgtWaterDmgRcvdUp { range: SingleTarget, durExt: { duration: Duration 30, extension: Extension 10 }, percentage: Percentage 25 }
+      "15s 20% Single Target Wind Damage Received Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          SingleTgtWindDmgRcvdUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% All Target Fire Damage Received Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          AllTgtFireDmgRcvdUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% All Target Ice Damage Received Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          AllTgtIceDmgRcvdUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% All Target Lightning Damage Received Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          AllTgtLightningDmgRcvdUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% All Target Earth Damage Received Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          AllTgtEarthDmgRcvdUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% All Target Water Damage Received Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          AllTgtWaterDmgRcvdUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% All Target Wind Damage Received Up (+5s) [Range: All Allies]"
+        `shouldParse`
+          AllTgtWindDmgRcvdUp { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% Amp. Phys. Abilities (+5s) [Range: All Allies]"
+        `shouldParse`
+          AmpPhysAbilities { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% Amp. Mag. Abilities (+5s) [Range: All Allies]"
+        `shouldParse`
+          AmpMagAbilities { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% Amp. Fire Abilities (+5s) [Range: All Allies]"
+        `shouldParse`
+          AmpFireAbilities { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% Amp. Ice Abilities (+5s) [Range: All Allies]"
+        `shouldParse`
+          AmpIceAbilities { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% Amp. Lightning Abilities (+5s) [Range: All Allies]"
+        `shouldParse`
+          AmpLightningAbilities { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% Amp. Earth Abilities (+5s) [Range: All Allies]"
+        `shouldParse`
+          AmpEarthAbilities { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% Amp. Water Abilities (+5s) [Range: All Allies]"
+        `shouldParse`
+          AmpWaterAbilities { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
+      "15s 20% Amp. Wind Abilities (+5s) [Range: All Allies]"
+        `shouldParse`
+          AmpWindAbilities { range: All, durExt: { duration: Duration 15, extension: Extension 5 }, percentage: Percentage 20 }
       "25s 0% Fire ATB Conservation Effect (+8s) [Range: All Allies]"
         `shouldParse`
           FireATBConservationEffect { range: All, durExt: { duration: Duration 25, extension: Extension 8 } }

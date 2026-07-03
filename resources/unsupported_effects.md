@@ -1,5 +1,5 @@
 <!-- LTEX: enabled=false -->
-Found 13 unsupported effect type(s).
+Found 5 unsupported effect type(s).
 
 # Table of Contents
 
@@ -7,15 +7,7 @@ Found 13 unsupported effect type(s).
 * [+N Gear C. Ability Uses](#n-gear-c-ability-uses)
 * [-N% Summon Gauge](#-n-summon-gauge)
 * [Ns Haste](#ns-haste)
-* [Ns N% Amp. Earth Abilities](#ns-n-amp-earth-abilities)
-* [Ns N% Amp. Phys. Abilities](#ns-n-amp-phys-abilities)
-* [Ns N% Mag. Single Target Dmg. Received Up](#ns-n-mag-single-target-dmg-received-up)
-* [Ns N% Phys. Single Target Dmg. Received Up](#ns-n-phys-single-target-dmg-received-up)
 * [Ns N% PhysicalSingleVulnerable](#ns-n-physicalsinglevulnerable)
-* [Ns N% Single Target Ice Damage Received Up](#ns-n-single-target-ice-damage-received-up)
-* [Ns N% Single Target Mag. Damage Received Up](#ns-n-single-target-mag-damage-received-up)
-* [Ns N% Single Target Phys. Damage Received Up](#ns-n-single-target-phys-damage-received-up)
-* [Ns N% Single Target Water Damage Received Up](#ns-n-single-target-water-damage-received-up)
 * [Won't support](#wont-support)
 
 ---
@@ -109,59 +101,6 @@ Found 13 unsupported effect type(s).
 
 ---
 
-# Ns N% Amp. Earth Abilities
-
-[↑ Back to top](#table-of-contents)
-
-* **Tifa - Elegant Gloves**
-  * `30s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
-  * `40s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
-  * `50s 40% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
-  * `60s 50% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
-
----
-
-# Ns N% Amp. Phys. Abilities
-
-[↑ Back to top](#table-of-contents)
-
-* **Cloud - Chevron Blade**
-  * `30s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
-  * `40s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
-  * `50s 20% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
-  * `60s 30% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
-
----
-
-# Ns N% Mag. Single Target Dmg. Received Up
-
-[↑ Back to top](#table-of-contents)
-
-* **Sephiroth (Orig.) - Muramasa**
-  * `30s 25% Mag. Single Target Dmg. Received Up (+10s) [Range: All Enemies]`
-  * `40s 25% Mag. Single Target Dmg. Received Up (+13s) [Range: All Enemies]`
-  * `50s 40% Mag. Single Target Dmg. Received Up (+16s) [Range: All Enemies]`
-  * `60s 50% Mag. Single Target Dmg. Received Up (+20s) [Range: All Enemies]`
-
----
-
-# Ns N% Phys. Single Target Dmg. Received Up
-
-[↑ Back to top](#table-of-contents)
-
-* **Sephiroth (Orig.) - Muramasa**
-  * `30s 25% Phys. Single Target Dmg. Received Up (+10s) [Range: All Enemies]`
-  * `40s 25% Phys. Single Target Dmg. Received Up (+13s) [Range: All Enemies]`
-  * `50s 40% Phys. Single Target Dmg. Received Up (+16s) [Range: All Enemies]`
-  * `60s 50% Phys. Single Target Dmg. Received Up (+20s) [Range: All Enemies]`
-* **Zack - Pressure Ridge**
-  * `20s 25% Phys. Single Target Dmg. Received Up (+6s) [Range: Single Enemy] [Condition: Weakness Hit]`
-  * `22s 25% Phys. Single Target Dmg. Received Up (+7s) [Range: Single Enemy] [Condition: Weakness Hit]`
-  * `26s 35% Phys. Single Target Dmg. Received Up (+8s) [Range: Single Enemy] [Condition: Weakness Hit]`
-  * `30s 40% Phys. Single Target Dmg. Received Up (+10s) [Range: Single Enemy] [Condition: Weakness Hit]`
-
----
-
 # Ns N% PhysicalSingleVulnerable
 
 [↑ Back to top](#table-of-contents)
@@ -171,54 +110,6 @@ Found 13 unsupported effect type(s).
   * `40s 25% PhysicalSingleVulnerable (+13s) [Range: Single Enemy]`
   * `50s 40% PhysicalSingleVulnerable (+16s) [Range: Single Enemy]`
   * `60s 50% PhysicalSingleVulnerable (+20s) [Range: Single Enemy]`
-
----
-
-# Ns N% Single Target Ice Damage Received Up
-
-[↑ Back to top](#table-of-contents)
-
-* **Tifa - Riding Gloves**
-  * `30s 25% Single Target Ice Damage Received Up (+10s) [Range: Single Enemy]`
-  * `40s 25% Single Target Ice Damage Received Up (+13s) [Range: Single Enemy]`
-  * `50s 40% Single Target Ice Damage Received Up (+16s) [Range: Single Enemy]`
-  * `60s 50% Single Target Ice Damage Received Up (+20s) [Range: Single Enemy]`
-
----
-
-# Ns N% Single Target Mag. Damage Received Up
-
-[↑ Back to top](#table-of-contents)
-
-* **Cloud - Noble Parasol**
-  * `30s 25% Single Target Mag. Damage Received Up (+10s) [Range: All Enemies]`
-  * `40s 25% Single Target Mag. Damage Received Up (+13s) [Range: All Enemies]`
-  * `50s 40% Single Target Mag. Damage Received Up (+16s) [Range: All Enemies]`
-  * `60s 50% Single Target Mag. Damage Received Up (+20s) [Range: All Enemies]`
-
----
-
-# Ns N% Single Target Phys. Damage Received Up
-
-[↑ Back to top](#table-of-contents)
-
-* **Cloud - Noble Parasol**
-  * `30s 25% Single Target Phys. Damage Received Up (+10s) [Range: All Enemies]`
-  * `40s 25% Single Target Phys. Damage Received Up (+13s) [Range: All Enemies]`
-  * `50s 40% Single Target Phys. Damage Received Up (+16s) [Range: All Enemies]`
-  * `60s 50% Single Target Phys. Damage Received Up (+20s) [Range: All Enemies]`
-
----
-
-# Ns N% Single Target Water Damage Received Up
-
-[↑ Back to top](#table-of-contents)
-
-* **Zack - Wheel Edge**
-  * `30s 25% Single Target Water Damage Received Up (+10s) [Range: Single Enemy]`
-  * `40s 25% Single Target Water Damage Received Up (+13s) [Range: Single Enemy]`
-  * `50s 40% Single Target Water Damage Received Up (+16s) [Range: Single Enemy]`
-  * `60s 50% Single Target Water Damage Received Up (+20s) [Range: Single Enemy]`
 
 ---
 

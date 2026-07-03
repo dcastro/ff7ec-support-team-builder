@@ -166,8 +166,8 @@ data WeaponEffect
   | MagicDamageBonus { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | PhysATBConservationEffect { range :: Range, durExt :: DurExt }
   | MagATBConservationEffect { range :: Range, durExt :: DurExt }
-  | AmpPhysAbilities { range :: Range, durExt :: DurExt }
-  | AmpMagAbilities { range :: Range, durExt :: DurExt }
+  | AmpPhysAbilities { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | AmpMagAbilities { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | FireDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | IceDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | LightningDamageUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
@@ -192,12 +192,12 @@ data WeaponEffect
   | EarthATBConservationEffect { range :: Range, durExt :: DurExt }
   | WaterATBConservationEffect { range :: Range, durExt :: DurExt }
   | WindATBConservationEffect { range :: Range, durExt :: DurExt }
-  | AmpFireAbilities { range :: Range, durExt :: DurExt }
-  | AmpIceAbilities { range :: Range, durExt :: DurExt }
-  | AmpLightningAbilities { range :: Range, durExt :: DurExt }
-  | AmpEarthAbilities { range :: Range, durExt :: DurExt }
-  | AmpWaterAbilities { range :: Range, durExt :: DurExt }
-  | AmpWindAbilities { range :: Range, durExt :: DurExt }
+  | AmpFireAbilities { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | AmpIceAbilities { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | AmpLightningAbilities { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | AmpEarthAbilities { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | AmpWaterAbilities { range :: Range, durExt :: DurExt, percentage :: Percentage }
+  | AmpWindAbilities { range :: Range, durExt :: DurExt, percentage :: Percentage }
   | FireResistUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | IceResistUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
   | LightningResistUp { range :: Range, durExt :: DurExt, potencies :: Potencies }
@@ -792,6 +792,8 @@ instance WriteForeign FilterEffectType where
     FilterAmpWindAbilities -> writeImpl "FilterAmpWindAbilities"
     FilterPatkDown -> writeImpl "FilterPatkDown"
     FilterMatkDown -> writeImpl "FilterMatkDown"
+    FilterPdefDown -> writeImpl "FilterPdefDown"
+    FilterMdefDown -> writeImpl "FilterMdefDown"
     FilterSingleTgtPhysDmgRcvdUp -> writeImpl "FilterSingleTgtPhysDmgRcvdUp"
     FilterSingleTgtMagDmgRcvdUp -> writeImpl "FilterSingleTgtMagDmgRcvdUp"
     FilterAllTgtPhysDmgRcvdUp -> writeImpl "FilterAllTgtPhysDmgRcvdUp"

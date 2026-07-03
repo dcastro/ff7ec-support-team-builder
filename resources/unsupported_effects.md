@@ -1,5 +1,5 @@
 <!-- LTEX: enabled=false -->
-Found 13 unsupported effect type(s).
+Found 11 unsupported effect type(s).
 
 # Table of Contents
 
@@ -7,8 +7,6 @@ Found 13 unsupported effect type(s).
 * [+N Gear C. Ability Uses](#n-gear-c-ability-uses)
 * [-N% Summon Gauge](#-n-summon-gauge)
 * [Ns Haste](#ns-haste)
-* [Ns N% Amp. Earth Abilities](#ns-n-amp-earth-abilities)
-* [Ns N% Amp. Phys. Abilities](#ns-n-amp-phys-abilities)
 * [Ns N% Mag. Single Target Dmg. Received Up](#ns-n-mag-single-target-dmg-received-up)
 * [Ns N% Phys. Single Target Dmg. Received Up](#ns-n-phys-single-target-dmg-received-up)
 * [Ns N% PhysicalSingleVulnerable](#ns-n-physicalsinglevulnerable)
@@ -106,30 +104,6 @@ Found 13 unsupported effect type(s).
   * `10s Haste (+3s) [Range: All Allies] [Condition: First Use]`
   * `15s Haste (+5s) [Range: All Allies] [Condition: First Use]`
   * `5s Haste (+2s) [Range: All Allies] [Condition: First Use]`
-
----
-
-# Ns N% Amp. Earth Abilities
-
-[↑ Back to top](#table-of-contents)
-
-* **Tifa - Elegant Gloves**
-  * `30s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
-  * `40s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
-  * `50s 40% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
-  * `60s 50% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]`
-
----
-
-# Ns N% Amp. Phys. Abilities
-
-[↑ Back to top](#table-of-contents)
-
-* **Cloud - Chevron Blade**
-  * `30s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
-  * `40s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
-  * `50s 20% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
-  * `60s 30% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]`
 
 ---
 

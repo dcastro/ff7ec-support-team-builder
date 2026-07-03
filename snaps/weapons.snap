@@ -11368,6 +11368,13 @@ weapons:
               extension: 16
               duration: 50
           type: WindWeaponBoost
+        - value:
+            range: Self
+            percentage: 20
+            durExt:
+              extension: 0
+              duration: 50
+          type: AmpPhysAbilities
       description: |-
         Devastating Cyclone+ (4 ATB)
         750% Phys. Wind Damage [Range: All Enemies]
@@ -11393,6 +11400,13 @@ weapons:
               extension: 20
               duration: 60
           type: WindWeaponBoost
+        - value:
+            range: Self
+            percentage: 30
+            durExt:
+              extension: 0
+              duration: 60
+          type: AmpPhysAbilities
       description: |-
         Devastating Cyclone++ (4 ATB)
         900% Phys. Wind Damage [Range: All Enemies]
@@ -11418,6 +11432,13 @@ weapons:
               extension: 13
               duration: 40
           type: WindWeaponBoost
+        - value:
+            range: Self
+            percentage: 10
+            durExt:
+              extension: 0
+              duration: 40
+          type: AmpPhysAbilities
       description: |-
         Devastating Cyclone (4 ATB)
         580% Phys. Wind Damage [Range: All Enemies]
@@ -11443,6 +11464,13 @@ weapons:
               extension: 10
               duration: 30
           type: WindWeaponBoost
+        - value:
+            range: Self
+            percentage: 10
+            durExt:
+              extension: 0
+              duration: 30
+          type: AmpPhysAbilities
       description: |-
         Devastating Cyclone (4 ATB)
         480% Phys. Wind Damage [Range: All Enemies]
@@ -25598,6 +25626,13 @@ weapons:
               extension: 16
               duration: 50
           type: EarthWeaponBoost
+        - value:
+            range: Self
+            percentage: 40
+            durExt:
+              extension: 0
+              duration: 50
+          type: AmpEarthAbilities
       description: |-
         Spiral Tremor+ (4 ATB)
         1080% Mag. Earth Damage [Range: Single Enemy]
@@ -25613,6 +25648,13 @@ weapons:
               extension: 20
               duration: 60
           type: EarthWeaponBoost
+        - value:
+            range: Self
+            percentage: 50
+            durExt:
+              extension: 0
+              duration: 60
+          type: AmpEarthAbilities
       description: |-
         Spiral Tremor++ (4 ATB)
         1340% Mag. Earth Damage [Range: Single Enemy]
@@ -25628,6 +25670,13 @@ weapons:
               extension: 13
               duration: 40
           type: EarthWeaponBoost
+        - value:
+            range: Self
+            percentage: 30
+            durExt:
+              extension: 0
+              duration: 40
+          type: AmpEarthAbilities
       description: |-
         Spiral Tremor (4 ATB)
         720% Mag. Earth Damage [Range: Single Enemy]
@@ -25643,6 +25692,13 @@ weapons:
               extension: 10
               duration: 30
           type: EarthWeaponBoost
+        - value:
+            range: Self
+            percentage: 30
+            durExt:
+              extension: 0
+              duration: 30
+          type: AmpEarthAbilities
       description: |-
         Spiral Tremor (4 ATB)
         600% Mag. Earth Damage [Range: Single Enemy]

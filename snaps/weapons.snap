@@ -13059,6 +13059,20 @@ weapons:
       effects:
         - value:
             range: All
+            percentage: 40
+            durExt:
+              extension: 16
+              duration: 50
+          type: SingleTgtPhysDmgRcvdUp
+        - value:
+            range: All
+            percentage: 40
+            durExt:
+              extension: 16
+              duration: 50
+          type: SingleTgtMagDmgRcvdUp
+        - value:
+            range: All
             durExt:
               extension: 16
               duration: 50
@@ -13073,6 +13087,20 @@ weapons:
     ob10:
       spadeCustomDescription: '60s Enliven (+20s) [Range: All Allies]'
       effects:
+        - value:
+            range: All
+            percentage: 50
+            durExt:
+              extension: 20
+              duration: 60
+          type: SingleTgtPhysDmgRcvdUp
+        - value:
+            range: All
+            percentage: 50
+            durExt:
+              extension: 20
+              duration: 60
+          type: SingleTgtMagDmgRcvdUp
         - value:
             range: All
             durExt:
@@ -13090,6 +13118,20 @@ weapons:
       spadeCustomDescription: '40s Enliven (+13s) [Range: Self]'
       effects:
         - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 13
+              duration: 40
+          type: SingleTgtPhysDmgRcvdUp
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 13
+              duration: 40
+          type: SingleTgtMagDmgRcvdUp
+        - value:
             range: Self
             durExt:
               extension: 13
@@ -13105,6 +13147,20 @@ weapons:
     ob0:
       spadeCustomDescription: '30s Enliven (+10s) [Range: Self]'
       effects:
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 10
+              duration: 30
+          type: SingleTgtPhysDmgRcvdUp
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 10
+              duration: 30
+          type: SingleTgtMagDmgRcvdUp
         - value:
             range: Self
             durExt:
@@ -24511,6 +24567,20 @@ weapons:
       effects:
         - value:
             range: All
+            percentage: 40
+            durExt:
+              extension: 16
+              duration: 50
+          type: SingleTgtPhysDmgRcvdUp
+        - value:
+            range: All
+            percentage: 40
+            durExt:
+              extension: 16
+              duration: 50
+          type: SingleTgtMagDmgRcvdUp
+        - value:
+            range: All
             percentage: 6
             durExt:
               extension: 0
@@ -24525,6 +24595,20 @@ weapons:
         10% Crit Rate [Range: All Enemies]
     ob10:
       effects:
+        - value:
+            range: All
+            percentage: 50
+            durExt:
+              extension: 20
+              duration: 60
+          type: SingleTgtPhysDmgRcvdUp
+        - value:
+            range: All
+            percentage: 50
+            durExt:
+              extension: 20
+              duration: 60
+          type: SingleTgtMagDmgRcvdUp
         - value:
             range: All
             percentage: 8
@@ -24543,6 +24627,20 @@ weapons:
       effects:
         - value:
             range: All
+            percentage: 25
+            durExt:
+              extension: 13
+              duration: 40
+          type: SingleTgtPhysDmgRcvdUp
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 13
+              duration: 40
+          type: SingleTgtMagDmgRcvdUp
+        - value:
+            range: All
             percentage: 5
             durExt:
               extension: 0
@@ -24557,6 +24655,20 @@ weapons:
         10% Crit Rate [Range: All Enemies]
     ob0:
       effects:
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 10
+              duration: 30
+          type: SingleTgtPhysDmgRcvdUp
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 10
+              duration: 30
+          type: SingleTgtMagDmgRcvdUp
         - value:
             range: All
             percentage: 4
@@ -27012,28 +27124,56 @@ weapons:
       slot1: Boost Phys. Ability Pot.
     ob6:
       heartCustomDescription: '1350% Phys. Ice Damage [Range: Single Enemy]'
-      effects: []
+      effects:
+        - value:
+            range: SingleTarget
+            percentage: 40
+            durExt:
+              extension: 16
+              duration: 50
+          type: SingleTgtIceDmgRcvdUp
       description: |-
         Freezing Drive+ (4 ATB)
         1080% Phys. Ice Damage [Range: Single Enemy]
         50s 40% Single Target Ice Damage Received Up (+16s) [Range: Single Enemy]
     ob10:
       heartCustomDescription: '1680% Phys. Ice Damage [Range: Single Enemy]'
-      effects: []
+      effects:
+        - value:
+            range: SingleTarget
+            percentage: 50
+            durExt:
+              extension: 20
+              duration: 60
+          type: SingleTgtIceDmgRcvdUp
       description: |-
         Freezing Drive++ (4 ATB)
         1340% Phys. Ice Damage [Range: Single Enemy]
         60s 50% Single Target Ice Damage Received Up (+20s) [Range: Single Enemy]
     ob1:
       heartCustomDescription: '900% Phys. Ice Damage [Range: Single Enemy]'
-      effects: []
+      effects:
+        - value:
+            range: SingleTarget
+            percentage: 25
+            durExt:
+              extension: 13
+              duration: 40
+          type: SingleTgtIceDmgRcvdUp
       description: |-
         Freezing Drive (4 ATB)
         720% Phys. Ice Damage [Range: Single Enemy]
         40s 25% Single Target Ice Damage Received Up (+13s) [Range: Single Enemy]
     ob0:
       heartCustomDescription: '750% Phys. Ice Damage [Range: Single Enemy]'
-      effects: []
+      effects:
+        - value:
+            range: SingleTarget
+            percentage: 25
+            durExt:
+              extension: 10
+              duration: 30
+          type: SingleTgtIceDmgRcvdUp
       description: |-
         Freezing Drive (4 ATB)
         600% Phys. Ice Damage [Range: Single Enemy]
@@ -33050,6 +33190,13 @@ weapons:
               extension: 8
               duration: 26
           type: IceResistDown
+        - value:
+            range: SingleTarget
+            percentage: 35
+            durExt:
+              extension: 8
+              duration: 26
+          type: SingleTgtPhysDmgRcvdUp
       description: |-
         Freezing Cleave+ (4 ATB)
         550% Phys. Ice Damage [Range: Single Enemy]
@@ -33068,6 +33215,13 @@ weapons:
               extension: 10
               duration: 30
           type: IceResistDown
+        - value:
+            range: SingleTarget
+            percentage: 40
+            durExt:
+              extension: 10
+              duration: 30
+          type: SingleTgtPhysDmgRcvdUp
       description: |-
         Freezing Cleave++ (4 ATB)
         620% Phys. Ice Damage [Range: Single Enemy]
@@ -33086,6 +33240,13 @@ weapons:
               extension: 7
               duration: 22
           type: IceResistDown
+        - value:
+            range: SingleTarget
+            percentage: 25
+            durExt:
+              extension: 7
+              duration: 22
+          type: SingleTgtPhysDmgRcvdUp
       description: |-
         Freezing Cleave (4 ATB)
         450% Phys. Ice Damage [Range: Single Enemy]
@@ -33104,6 +33265,13 @@ weapons:
               extension: 6
               duration: 20
           type: IceResistDown
+        - value:
+            range: SingleTarget
+            percentage: 25
+            durExt:
+              extension: 6
+              duration: 20
+          type: SingleTgtPhysDmgRcvdUp
       description: |-
         Freezing Cleave (4 ATB)
         390% Phys. Ice Damage [Range: Single Enemy]
@@ -33713,28 +33881,56 @@ weapons:
       slot1: Boost PATK
     ob6:
       heartCustomDescription: '1350% Phys. Water Damage [Range: Single Enemy]'
-      effects: []
+      effects:
+        - value:
+            range: SingleTarget
+            percentage: 40
+            durExt:
+              extension: 16
+              duration: 50
+          type: SingleTgtWaterDmgRcvdUp
       description: |-
         Hydrocleave+ (4 ATB)
         1080% Phys. Water Damage [Range: Single Enemy]
         50s 40% Single Target Water Damage Received Up (+16s) [Range: Single Enemy]
     ob10:
       heartCustomDescription: '1680% Phys. Water Damage [Range: Single Enemy]'
-      effects: []
+      effects:
+        - value:
+            range: SingleTarget
+            percentage: 50
+            durExt:
+              extension: 20
+              duration: 60
+          type: SingleTgtWaterDmgRcvdUp
       description: |-
         Hydrocleave++ (4 ATB)
         1340% Phys. Water Damage [Range: Single Enemy]
         60s 50% Single Target Water Damage Received Up (+20s) [Range: Single Enemy]
     ob1:
       heartCustomDescription: '900% Phys. Water Damage [Range: Single Enemy]'
-      effects: []
+      effects:
+        - value:
+            range: SingleTarget
+            percentage: 25
+            durExt:
+              extension: 13
+              duration: 40
+          type: SingleTgtWaterDmgRcvdUp
       description: |-
         Hydrocleave (4 ATB)
         720% Phys. Water Damage [Range: Single Enemy]
         40s 25% Single Target Water Damage Received Up (+13s) [Range: Single Enemy]
     ob0:
       heartCustomDescription: '750% Phys. Water Damage [Range: Single Enemy]'
-      effects: []
+      effects:
+        - value:
+            range: SingleTarget
+            percentage: 25
+            durExt:
+              extension: 10
+              duration: 30
+          type: SingleTgtWaterDmgRcvdUp
       description: |-
         Hydrocleave (4 ATB)
         600% Phys. Water Damage [Range: Single Enemy]

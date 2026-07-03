@@ -8038,6 +8038,59 @@
             ob0:
               max: Mid
               base: Low
+- - FilterSingleTgtPhysDmgRcvdUp
+  - - weaponName: Noble Parasol
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Muramasa
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Pressure Ridge
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+- - FilterSingleTgtMagDmgRcvdUp
+  - - weaponName: Noble Parasol
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Muramasa
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+- - FilterSingleTgtIceDmgRcvdUp
+  - - weaponName: Riding Gloves
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+- - FilterSingleTgtWaterDmgRcvdUp
+  - - weaponName: Wheel Edge
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
 - - FilterFireWeakness
   - - weaponName: Zenithian Sword
       ranges:

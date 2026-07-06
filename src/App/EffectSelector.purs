@@ -527,18 +527,18 @@ hasRange = case _ of
     FilterMatkUp -> true
     FilterPdefUp -> true
     FilterMdefUp -> true
-    FilterSingleTgtPhysDmgRcvdUp -> false
-    FilterSingleTgtMagDmgRcvdUp -> false
-    FilterAllTgtPhysDmgRcvdUp -> false
-    FilterAllTgtMagDmgRcvdUp -> false
+    FilterSingleTgtPhysDmgRcvdUp -> true
+    FilterSingleTgtMagDmgRcvdUp -> true
+    FilterAllTgtPhysDmgRcvdUp -> true
+    FilterAllTgtMagDmgRcvdUp -> true
     FilterPhysicalWeaponBoost -> true
     FilterMagicWeaponBoost -> true
     FilterPhysicalDamageBonus -> true
     FilterMagicDamageBonus -> true
-    FilterPhysATBConservationEffect -> false
-    FilterMagATBConservationEffect -> false
-    FilterAmpPhysAbilities -> false
-    FilterAmpMagAbilities -> false
+    FilterPhysATBConservationEffect -> true
+    FilterMagATBConservationEffect -> true
+    FilterAmpPhysAbilities -> true
+    FilterAmpMagAbilities -> true
     FilterFireDamageUp -> true
     FilterIceDamageUp -> true
     FilterLightningDamageUp -> true
@@ -563,18 +563,18 @@ hasRange = case _ of
     FilterEarthDamageBonus -> true
     FilterWaterDamageBonus -> true
     FilterWindDamageBonus -> true
-    FilterFireATBConservationEffect -> false
-    FilterIceATBConservationEffect -> false
-    FilterLightningATBConservationEffect -> false
-    FilterEarthATBConservationEffect -> false
-    FilterWaterATBConservationEffect -> false
-    FilterWindATBConservationEffect -> false
-    FilterAmpFireAbilities -> false
-    FilterAmpIceAbilities -> false
-    FilterAmpLightningAbilities -> false
-    FilterAmpEarthAbilities -> false
-    FilterAmpWaterAbilities -> false
-    FilterAmpWindAbilities -> false
+    FilterFireATBConservationEffect -> true
+    FilterIceATBConservationEffect -> true
+    FilterLightningATBConservationEffect -> true
+    FilterEarthATBConservationEffect -> true
+    FilterWaterATBConservationEffect -> true
+    FilterWindATBConservationEffect -> true
+    FilterAmpFireAbilities -> true
+    FilterAmpIceAbilities -> true
+    FilterAmpLightningAbilities -> true
+    FilterAmpEarthAbilities -> true
+    FilterAmpWaterAbilities -> true
+    FilterAmpWindAbilities -> true
 
     FilterPatkDown -> true
     FilterMatkDown -> true
@@ -592,18 +592,18 @@ hasRange = case _ of
     FilterEarthResistDown -> true
     FilterWaterResistDown -> true
     FilterWindResistDown -> true
-    FilterSingleTgtFireDmgRcvdUp -> false
-    FilterSingleTgtIceDmgRcvdUp -> false
-    FilterSingleTgtLightningDmgRcvdUp -> false
-    FilterSingleTgtEarthDmgRcvdUp -> false
-    FilterSingleTgtWaterDmgRcvdUp -> false
-    FilterSingleTgtWindDmgRcvdUp -> false
-    FilterAllTgtFireDmgRcvdUp -> false
-    FilterAllTgtIceDmgRcvdUp -> false
-    FilterAllTgtLightningDmgRcvdUp -> false
-    FilterAllTgtEarthDmgRcvdUp -> false
-    FilterAllTgtWaterDmgRcvdUp -> false
-    FilterAllTgtWindDmgRcvdUp -> false
+    FilterSingleTgtFireDmgRcvdUp -> true
+    FilterSingleTgtIceDmgRcvdUp -> true
+    FilterSingleTgtLightningDmgRcvdUp -> true
+    FilterSingleTgtEarthDmgRcvdUp -> true
+    FilterSingleTgtWaterDmgRcvdUp -> true
+    FilterSingleTgtWindDmgRcvdUp -> true
+    FilterAllTgtFireDmgRcvdUp -> true
+    FilterAllTgtIceDmgRcvdUp -> true
+    FilterAllTgtLightningDmgRcvdUp -> true
+    FilterAllTgtEarthDmgRcvdUp -> true
+    FilterAllTgtWaterDmgRcvdUp -> true
+    FilterAllTgtWindDmgRcvdUp -> true
     FilterFireWeakness -> true
     FilterIceWeakness -> true
     FilterLightningWeakness -> true

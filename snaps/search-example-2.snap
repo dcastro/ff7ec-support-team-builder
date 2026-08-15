@@ -10,6 +10,13 @@
       - Terra's Rod
     character: Aerith
   - weapons:
+      - Heavy Hauser
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Terra's Rod
+    character: Aerith
+  - weapons:
       - Battle Trumpet
     character: Cait Sith
 - - weapons:
@@ -73,6 +80,13 @@
     character: Aerith
   - weapons:
       - Escutcheon Cannon
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+    character: Aerith
+  - weapons:
+      - Heavy Hauser
       - Sharkslayer
     character: Barret
 - - weapons:
@@ -308,6 +322,20 @@
     character: Tifa
 - - weapons:
       - Crimson Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Festival Pistol
+    character: Vincent
+- - weapons:
+      - Crimson Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Festival Pistol
+    character: Vincent
+- - weapons:
+      - Crimson Staff
       - Gorgeous Staff
     character: Aerith
   - weapons:
@@ -360,6 +388,13 @@
       - Gorgeous Staff
     character: Aerith
   - weapons:
+      - Festival Pistol
+    character: Vincent
+- - weapons:
+      - Crimson Staff
+      - Gorgeous Staff
+    character: Aerith
+  - weapons:
       - Withering Blaze
     character: Sephiroth
 - - weapons:
@@ -389,6 +424,14 @@
       - Crimson Staff
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Bahamut Rod
+      - Crimson Staff
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -450,6 +493,14 @@
     character: Angeal
 - - weapons:
       - Crimson Staff
+      - Terra's Rod
+    character: Aerith
+  - weapons:
+      - Escutcheon Cannon
+      - Heavy Hauser
+    character: Barret
+- - weapons:
+      - Crimson Staff
       - Kamura Wand
     character: Aerith
   - weapons:
@@ -477,6 +528,14 @@
       - Egg Staff
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Egg Staff
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -501,6 +560,14 @@
       - Fairy Tale
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Fairy Tale
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -525,6 +592,14 @@
       - Festive Rod
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Festive Rod
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -549,6 +624,14 @@
       - Floral Wand
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Floral Wand
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -573,6 +656,14 @@
       - Gambanteinn
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Gambanteinn
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -597,6 +688,14 @@
       - Gorgeous Staff
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Gorgeous Staff
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -608,6 +707,14 @@
       - Ivy Collar
       - Sleek Collar
     character: Red XIII
+- - weapons:
+      - Crimson Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
 - - weapons:
       - Crimson Staff
       - Kamura Wand
@@ -645,6 +752,14 @@
       - Lightning's Rod
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Lightning's Rod
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -656,6 +771,14 @@
       - Ivy Collar
       - Sleek Collar
     character: Red XIII
+- - weapons:
+      - Crimson Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
 - - weapons:
       - Crimson Staff
       - Rousing Wizer Staff
@@ -693,6 +816,14 @@
       - Snowflake
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Snowflake
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -717,6 +848,14 @@
       - Staff of the Possessed
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -741,6 +880,14 @@
       - Supreme Sage's Staff
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Supreme Sage's Staff
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -765,6 +912,14 @@
       - Terra's Rod
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Terra's Rod
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -789,6 +944,14 @@
       - Umbrella
     character: Aerith
   - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Umbrella
+    character: Aerith
+  - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -806,6 +969,14 @@
     character: Aerith
   - weapons:
       - Escutcheon Cannon
+      - Microlaser
+    character: Barret
+- - weapons:
+      - Crimson Staff
+      - Terra's Rod
+    character: Aerith
+  - weapons:
+      - Heavy Hauser
       - Microlaser
     character: Barret
 - - weapons:
@@ -1121,6 +1292,30 @@
       - Silver Collar
     character: Red XIII
 - - weapons:
+      - Crimson Staff
+      - Terra's Rod
+    character: Aerith
+  - weapons:
+      - Sleek Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Crimson Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Ivy Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Crimson Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Ivy Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
       - Bahamut Rod
       - Crimson Staff
     character: Aerith
@@ -1234,6 +1429,22 @@
     character: Sephiroth
 - - weapons:
       - Crimson Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
+- - weapons:
+      - Crimson Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
+- - weapons:
+      - Crimson Staff
       - Terra's Rod
     character: Aerith
   - weapons:
@@ -1288,6 +1499,22 @@
       - Pandemonic Sword
       - Radiant Edge
     character: Sephiroth
+- - weapons:
+      - Crimson Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Guide Gloves
+      - Metal Knuckles
+    character: Tifa
+- - weapons:
+      - Crimson Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Guide Gloves
+      - Metal Knuckles
+    character: Tifa
 - - weapons:
       - Crimson Staff
       - Egg Staff
@@ -1785,6 +2012,14 @@
       - Ivy Collar
     character: Red XIII
 - - weapons:
+      - Escutcheon Cannon
+      - Microlaser
+    character: Barret
+  - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
+- - weapons:
       - Crimson Staff
       - Terra's Rod
     character: Aerith
@@ -2047,6 +2282,30 @@
   - weapons:
       - Canyon Collar
       - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Crimson Staff
+      - Terra's Rod
+    character: Aerith
+  - weapons:
+      - Pilot's Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Crimson Staff
+      - Gorgeous Staff
+    character: Aerith
+  - weapons:
+      - Ivy Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Escutcheon Cannon
+      - Sharkslayer
+    character: Barret
+  - weapons:
+      - Canyon Collar
+      - Super Sleuth Collar
     character: Red XIII
 - - weapons:
       - Crimson Staff
@@ -2125,6 +2384,14 @@
       - Gorgeous Staff
     character: Aerith
   - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
+- - weapons:
+      - Crimson Staff
+      - Gorgeous Staff
+    character: Aerith
+  - weapons:
       - Garish Greatblade
       - Patissier's Glaive
     character: Glenn
@@ -2168,6 +2435,30 @@
       - Bahamut Fangs
       - Guide Gloves
     character: Tifa
+- - weapons:
+      - Crimson Staff
+      - Gorgeous Staff
+    character: Aerith
+  - weapons:
+      - Guide Gloves
+      - Metal Knuckles
+    character: Tifa
+- - weapons:
+      - Crimson Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Festival Pistol
+      - Galian Roar
+    character: Vincent
+- - weapons:
+      - Crimson Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Festival Pistol
+      - Galian Roar
+    character: Vincent
 - - weapons:
       - Crimson Staff
       - Terra's Rod
@@ -2401,6 +2692,14 @@
       - Ivy Collar
     character: Red XIII
 - - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+  - weapons:
+      - Brilliant Collar
+      - Canyon Collar
+    character: Red XIII
+- - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -2424,6 +2723,14 @@
       - Protector's Blade
       - Radiant Edge
     character: Sephiroth
+- - weapons:
+      - Brilliant Collar
+      - Sleek Collar
+    character: Red XIII
+  - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
 - - weapons:
       - Gargantuan Monolith
       - Volcanic Heat
@@ -2489,6 +2796,14 @@
       - Pirate Collar
     character: Red XIII
 - - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+  - weapons:
+      - Canyon Collar
+      - Pirate Collar
+    character: Red XIII
+- - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
@@ -2504,6 +2819,14 @@
       - Overture
       - Protector's Blade
     character: Sephiroth
+- - weapons:
+      - Pirate Collar
+      - Sleek Collar
+    character: Red XIII
+  - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
 - - weapons:
       - Crimson Staff
       - Gorgeous Staff
@@ -2552,6 +2875,14 @@
       - Bahamut Fangs
       - Guide Gloves
     character: Tifa
+- - weapons:
+      - Crimson Staff
+      - Gorgeous Staff
+    character: Aerith
+  - weapons:
+      - Festival Pistol
+      - Galian Roar
+    character: Vincent
 - - weapons:
       - Crimson Staff
       - Egg Staff
@@ -2697,6 +3028,14 @@
       - Ivy Collar
     character: Red XIII
 - - weapons:
+      - Deroplatys
+      - Luminary Sword
+    character: Matt
+  - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
+- - weapons:
       - Inflatable Buster Sword (Club Custom)
       - Volcanic Heat
     character: Angeal
@@ -2745,6 +3084,14 @@
       - Radiant Edge
     character: Sephiroth
 - - weapons:
+      - Core Defender
+      - Luminary Sword
+    character: Matt
+  - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
+- - weapons:
       - Gold Megaphone
       - Nocturne Horn
     character: Cait Sith
@@ -2785,6 +3132,14 @@
       - Withering Blaze
     character: Sephiroth
 - - weapons:
+      - Brilliant Collar
+      - Pilot's Collar
+    character: Red XIII
+  - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
+- - weapons:
       - Garish Greatblade
       - Patissier's Glaive
     character: Glenn
@@ -2801,6 +3156,14 @@
       - Pirate Collar
     character: Red XIII
 - - weapons:
+      - Pilot's Collar
+      - Pirate Collar
+    character: Red XIII
+  - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
+- - weapons:
       - Canyon Collar
       - Pilot's Collar
     character: Red XIII
@@ -2808,6 +3171,14 @@
       - Pandemonic Sword
       - Radiant Edge
     character: Sephiroth
+- - weapons:
+      - Canyon Collar
+      - Pilot's Collar
+    character: Red XIII
+  - weapons:
+      - Guide Gloves
+      - Metal Knuckles
+    character: Tifa
 - - weapons:
       - Greatsword of the Worthy
       - Volcanic Heat
@@ -2897,6 +3268,22 @@
       - Withering Blaze
     character: Sephiroth
 - - weapons:
+      - Luminary Sword
+      - Physician's Scalpel
+    character: Matt
+  - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
+- - weapons:
+      - Luminary Sword
+      - Syringe Rapier
+    character: Matt
+  - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
+- - weapons:
       - Patissier's Glaive
       - Snow's Bardiche
     character: Glenn
@@ -2945,6 +3332,14 @@
       - Guide Gloves
     character: Tifa
 - - weapons:
+      - Canyon Collar
+      - Pilot's Collar
+    character: Red XIII
+  - weapons:
+      - Festival Pistol
+      - Galian Roar
+    character: Vincent
+- - weapons:
       - Patissier's Glaive
       - Snow's Bardiche
     character: Glenn
@@ -2959,6 +3354,14 @@
   - weapons:
       - Canyon Collar
       - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Patissier's Glaive
+      - Snow's Bardiche
+    character: Glenn
+  - weapons:
+      - Canyon Collar
+      - Super Sleuth Collar
     character: Red XIII
 - - weapons:
       - Luminary Sword
@@ -3096,6 +3499,20 @@
       - Kamura Wand
     character: Aerith
   - weapons:
+      - Festival Umbrella
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
       - Chocobo Paddle
     character: Cloud
 - - weapons:
@@ -3177,6 +3594,13 @@
     character: Tifa
 - - weapons:
       - Crimson Staff
+      - Mythril Rod
+    character: Aerith
+  - weapons:
+      - Festival Pistol
+    character: Vincent
+- - weapons:
+      - Crimson Staff
       - Kamura Wand
     character: Aerith
   - weapons:
@@ -3189,6 +3613,20 @@
   - weapons:
       - Mallet of Luck
     character: Yuffie
+- - weapons:
+      - Crimson Staff
+      - Gorgeous Staff
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
 - - weapons:
       - Crimson Staff
       - Gorgeous Staff
@@ -3734,6 +4172,46 @@
       - Silver Collar
     character: Red XIII
 - - weapons:
+      - Crimson Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Flame Dragon's Band
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Crimson Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Flame Dragon's Band
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Crimson Staff
+      - Mythril Rod
+    character: Aerith
+  - weapons:
+      - Ivy Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Escutcheon Cannon
+      - Sharkslayer
+    character: Barret
+  - weapons:
+      - Gold Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Escutcheon Cannon
+      - Sharkslayer
+    character: Barret
+  - weapons:
+      - Great Sabrecat Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
       - Bahamut Rod
       - Crimson Staff
     character: Aerith
@@ -3765,6 +4243,22 @@
       - Flame Dragon Blade
       - Overture
     character: Sephiroth
+- - weapons:
+      - Crimson Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
 - - weapons:
       - Crimson Staff
       - Mythril Rod
@@ -3855,6 +4349,30 @@
     character: Sephiroth
 - - weapons:
       - Crimson Staff
+      - Mythril Rod
+    character: Aerith
+  - weapons:
+      - Festival Pistol
+      - Kugelblitz
+    character: Vincent
+- - weapons:
+      - Crimson Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Gargantuan Monolith
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Gargantuan Monolith
+    character: Angeal
+- - weapons:
+      - Crimson Staff
       - Gorgeous Staff
     character: Aerith
   - weapons:
@@ -3901,6 +4419,14 @@
       - Pandemonic Sword
       - Radiant Edge
     character: Sephiroth
+- - weapons:
+      - Crimson Staff
+      - Mythril Rod
+    character: Aerith
+  - weapons:
+      - Guide Gloves
+      - Metal Knuckles
+    character: Tifa
 - - weapons:
       - Crimson Staff
       - Egg Staff
@@ -4422,6 +4948,14 @@
       - Overture
     character: Sephiroth
 - - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Escutcheon Cannon
+      - Microlaser
+    character: Barret
+- - weapons:
       - Escutcheon Cannon
       - Microlaser
     character: Barret
@@ -4462,12 +4996,28 @@
       - Flame Dragon's Band
     character: Red XIII
 - - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+  - weapons:
+      - Brilliant Collar
+      - Gold Collar
+    character: Red XIII
+- - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
   - weapons:
       - Brilliant Collar
       - Gold Collar
+    character: Red XIII
+- - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+  - weapons:
+      - Brilliant Collar
+      - Great Sabrecat Collar
     character: Red XIII
 - - weapons:
       - Battle Trumpet
@@ -4526,11 +5076,27 @@
       - Pirate Collar
     character: Red XIII
 - - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+  - weapons:
+      - Gold Collar
+      - Pirate Collar
+    character: Red XIII
+- - weapons:
       - Battle Trumpet
       - Gold Megaphone
     character: Cait Sith
   - weapons:
       - Gold Collar
+      - Pirate Collar
+    character: Red XIII
+- - weapons:
+      - Heavy Hauser
+      - Sharkslayer
+    character: Barret
+  - weapons:
+      - Great Sabrecat Collar
       - Pirate Collar
     character: Red XIII
 - - weapons:
@@ -4556,6 +5122,14 @@
   - weapons:
       - Flame Dragon's Band
       - Silver Collar
+    character: Red XIII
+- - weapons:
+      - Crimson Staff
+      - Gorgeous Staff
+    character: Aerith
+  - weapons:
+      - Flame Dragon's Band
+      - Super Sleuth Collar
     character: Red XIII
 - - weapons:
       - Crimson Staff
@@ -4570,6 +5144,14 @@
       - Crimson Staff
     character: Aerith
   - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+- - weapons:
+      - Bahamut Rod
+      - Crimson Staff
+    character: Aerith
+  - weapons:
       - Overture
       - Shinra Wyvern Blade
     character: Sephiroth
@@ -4586,6 +5168,14 @@
       - Gorgeous Staff
     character: Aerith
   - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Gorgeous Staff
+    character: Aerith
+  - weapons:
       - Canyon Collar
       - Flame Dragon's Band
     character: Red XIII
@@ -4605,6 +5195,14 @@
       - Protector's Blade
       - Withering Blaze
     character: Sephiroth
+- - weapons:
+      - Crimson Staff
+      - Gorgeous Staff
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Gargantuan Monolith
+    character: Angeal
 - - weapons:
       - Crimson Staff
       - Gorgeous Staff
@@ -4639,6 +5237,22 @@
     character: Tifa
 - - weapons:
       - Crimson Staff
+      - Mythril Rod
+    character: Aerith
+  - weapons:
+      - Festival Pistol
+      - Galian Roar
+    character: Vincent
+- - weapons:
+      - Crimson Staff
+      - Egg Staff
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+- - weapons:
+      - Crimson Staff
       - Egg Staff
     character: Aerith
   - weapons:
@@ -4653,6 +5267,14 @@
       - Bahamut Cutter
       - Mallet of Luck
     character: Yuffie
+- - weapons:
+      - Crimson Staff
+      - Fairy Tale
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
 - - weapons:
       - Crimson Staff
       - Fairy Tale
@@ -4674,6 +5296,14 @@
       - Festive Rod
     character: Aerith
   - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Festive Rod
+    character: Aerith
+  - weapons:
       - Overture
       - Shinra Wyvern Blade
     character: Sephiroth
@@ -4690,6 +5320,14 @@
       - Floral Wand
     character: Aerith
   - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Floral Wand
+    character: Aerith
+  - weapons:
       - Overture
       - Shinra Wyvern Blade
     character: Sephiroth
@@ -4706,6 +5344,14 @@
       - Gambanteinn
     character: Aerith
   - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Gambanteinn
+    character: Aerith
+  - weapons:
       - Overture
       - Shinra Wyvern Blade
     character: Sephiroth
@@ -4717,6 +5363,14 @@
       - Bahamut Cutter
       - Mallet of Luck
     character: Yuffie
+- - weapons:
+      - Crimson Staff
+      - Gorgeous Staff
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
 - - weapons:
       - Crimson Staff
       - Gorgeous Staff
@@ -4778,6 +5432,14 @@
       - Kamura Wand
     character: Aerith
   - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Kamura Wand
+    character: Aerith
+  - weapons:
       - Overture
       - Shinra Wyvern Blade
     character: Sephiroth
@@ -4794,6 +5456,14 @@
       - Lightning's Rod
     character: Aerith
   - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Lightning's Rod
+    character: Aerith
+  - weapons:
       - Overture
       - Shinra Wyvern Blade
     character: Sephiroth
@@ -4810,6 +5480,14 @@
       - Rousing Wizer Staff
     character: Aerith
   - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Rousing Wizer Staff
+    character: Aerith
+  - weapons:
       - Overture
       - Shinra Wyvern Blade
     character: Sephiroth
@@ -4826,6 +5504,14 @@
       - Snowflake
     character: Aerith
   - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Snowflake
+    character: Aerith
+  - weapons:
       - Overture
       - Shinra Wyvern Blade
     character: Sephiroth
@@ -4842,6 +5528,14 @@
       - Staff of the Possessed
     character: Aerith
   - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
       - Overture
       - Shinra Wyvern Blade
     character: Sephiroth
@@ -4858,6 +5552,14 @@
       - Supreme Sage's Staff
     character: Aerith
   - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Supreme Sage's Staff
+    character: Aerith
+  - weapons:
       - Overture
       - Shinra Wyvern Blade
     character: Sephiroth
@@ -4869,6 +5571,14 @@
       - Bahamut Cutter
       - Mallet of Luck
     character: Yuffie
+- - weapons:
+      - Crimson Staff
+      - Terra's Rod
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
 - - weapons:
       - Crimson Staff
       - Terra's Rod
@@ -4901,6 +5611,14 @@
       - Canyon Collar
       - Pirate Collar
     character: Red XIII
+- - weapons:
+      - Crimson Staff
+      - Umbrella
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
 - - weapons:
       - Crimson Staff
       - Umbrella
@@ -4973,6 +5691,14 @@
       - Flame Dragon Blade
       - Protector's Blade
     character: Sephiroth
+- - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Brilliant Collar
+      - Sleek Collar
+    character: Red XIII
 - - weapons:
       - Greatsword of the Worthy
       - Inflatable Buster Sword (Club Custom)
@@ -5125,6 +5851,22 @@
       - Pandemonic Sword
       - Protector's Blade
     character: Sephiroth
+- - weapons:
+      - Gold Collar
+      - Pilot's Collar
+    character: Red XIII
+  - weapons:
+      - Guide Gloves
+      - Metal Knuckles
+    character: Tifa
+- - weapons:
+      - Great Sabrecat Collar
+      - Pilot's Collar
+    character: Red XIII
+  - weapons:
+      - Guide Gloves
+      - Metal Knuckles
+    character: Tifa
 - - weapons:
       - Flame Dragon's Band
       - Pilot's Collar
@@ -5134,6 +5876,14 @@
       - Kugelblitz
     character: Vincent
 - - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Pirate Collar
+      - Sleek Collar
+    character: Red XIII
+- - weapons:
       - Greatsword of the Worthy
       - Inflatable Buster Sword (Club Custom)
     character: Angeal
@@ -5230,6 +5980,14 @@
       - Withering Blaze
     character: Sephiroth
 - - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Deroplatys
+      - Luminary Sword
+    character: Matt
+- - weapons:
       - Deroplatys
       - Luminary Sword
     character: Matt
@@ -5245,6 +6003,14 @@
       - Protector's Blade
       - Shinra Wyvern Blade
     character: Sephiroth
+- - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Core Defender
+      - Luminary Sword
+    character: Matt
 - - weapons:
       - Core Defender
       - Luminary Sword
@@ -5334,6 +6100,14 @@
       - Great Sabrecat Collar
     character: Red XIII
 - - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Brilliant Collar
+      - Pilot's Collar
+    character: Red XIII
+- - weapons:
       - Bandaged Sword
       - Chocobo Paddle
     character: Cloud
@@ -5382,6 +6156,14 @@
       - Headphones
     character: Red XIII
 - - weapons:
+      - Festival Umbrella
+      - Gargantuan Monolith
+    character: Angeal
+  - weapons:
+      - Canyon Collar
+      - Pilot's Collar
+    character: Red XIII
+- - weapons:
       - Hardcore Squad
       - Patissier's Glaive
     character: Glenn
@@ -5404,6 +6186,14 @@
   - weapons:
       - Great Sabrecat Collar
       - Pilot's Collar
+    character: Red XIII
+- - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Pilot's Collar
+      - Pirate Collar
     character: Red XIII
 - - weapons:
       - Pilot's Collar
@@ -5438,6 +6228,22 @@
       - Guide Gloves
     character: Tifa
 - - weapons:
+      - Gold Collar
+      - Pilot's Collar
+    character: Red XIII
+  - weapons:
+      - Festival Pistol
+      - Galian Roar
+    character: Vincent
+- - weapons:
+      - Great Sabrecat Collar
+      - Pilot's Collar
+    character: Red XIII
+  - weapons:
+      - Festival Pistol
+      - Galian Roar
+    character: Vincent
+- - weapons:
       - Hardcore Squad
       - Patissier's Glaive
     character: Glenn
@@ -5502,6 +6308,46 @@
       - Silver Collar
     character: Red XIII
 - - weapons:
+      - Hardcore Squad
+      - Patissier's Glaive
+    character: Glenn
+  - weapons:
+      - Canyon Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Patissier's Glaive
+      - Snow's Bardiche
+    character: Glenn
+  - weapons:
+      - Gold Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Patissier's Glaive
+      - Snow's Bardiche
+    character: Glenn
+  - weapons:
+      - Great Sabrecat Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Luminary Sword
+      - Physician's Scalpel
+    character: Matt
+- - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+  - weapons:
+      - Luminary Sword
+      - Syringe Rapier
+    character: Matt
+- - weapons:
       - Luminary Sword
       - Physician's Scalpel
     character: Matt
@@ -5533,6 +6379,14 @@
       - Protector's Blade
       - Shinra Wyvern Blade
     character: Sephiroth
+- - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+  - weapons:
+      - Brilliant Collar
+      - Canyon Collar
+    character: Red XIII
 - - weapons:
       - Brilliant Collar
       - Canyon Collar
@@ -5590,6 +6444,14 @@
       - Withering Blaze
     character: Sephiroth
 - - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+  - weapons:
+      - Canyon Collar
+      - Pirate Collar
+    character: Red XIII
+- - weapons:
       - Canyon Collar
       - Pirate Collar
     character: Red XIII
@@ -5635,6 +6497,13 @@
   - weapons:
       - Flame Dragon Blade
     character: Sephiroth
+- - weapons:
+      - Crimson Staff
+      - Mythril Rod
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+    character: Angeal
 - - weapons:
       - Crimson Staff
       - Mythril Rod
@@ -5781,6 +6650,22 @@
       - Mythril Rod
     character: Aerith
   - weapons:
+      - Flame Dragon's Band
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Crimson Staff
+      - Mythril Rod
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Inflatable Buster Sword (Club Custom)
+    character: Angeal
+- - weapons:
+      - Crimson Staff
+      - Mythril Rod
+    character: Aerith
+  - weapons:
       - Canyon Collar
       - Flame Dragon's Band
     character: Red XIII
@@ -5808,6 +6693,14 @@
       - Protector's Blade
       - Shinra Wyvern Blade
     character: Sephiroth
+- - weapons:
+      - Crimson Staff
+      - Mythril Rod
+    character: Aerith
+  - weapons:
+      - Festival Umbrella
+      - Gargantuan Monolith
+    character: Angeal
 - - weapons:
       - Crimson Staff
       - Mythril Rod
@@ -5985,6 +6878,22 @@
       - Headphones
     character: Red XIII
 - - weapons:
+      - Festival Umbrella
+      - Gargantuan Monolith
+    character: Angeal
+  - weapons:
+      - Gold Collar
+      - Pilot's Collar
+    character: Red XIII
+- - weapons:
+      - Festival Umbrella
+      - Gargantuan Monolith
+    character: Angeal
+  - weapons:
+      - Great Sabrecat Collar
+      - Pilot's Collar
+    character: Red XIII
+- - weapons:
       - Nocturne Horn
       - Trumpet Shell
     character: Cait Sith
@@ -6089,6 +6998,22 @@
       - Silver Collar
     character: Red XIII
 - - weapons:
+      - Hardcore Squad
+      - Patissier's Glaive
+    character: Glenn
+  - weapons:
+      - Gold Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
+      - Hardcore Squad
+      - Patissier's Glaive
+    character: Glenn
+  - weapons:
+      - Great Sabrecat Collar
+      - Super Sleuth Collar
+    character: Red XIII
+- - weapons:
       - Luminary Sword
       - Physician's Scalpel
     character: Matt
@@ -6119,6 +7044,14 @@
   - weapons:
       - Flame Dragon's Band
       - Great Sabrecat Collar
+    character: Red XIII
+- - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+  - weapons:
+      - Brilliant Collar
+      - Gold Collar
     character: Red XIII
 - - weapons:
       - Brilliant Collar
@@ -6136,6 +7069,14 @@
       - Bahamut Cutter
       - Mallet of Luck
     character: Yuffie
+- - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+  - weapons:
+      - Brilliant Collar
+      - Great Sabrecat Collar
+    character: Red XIII
 - - weapons:
       - Brilliant Collar
       - Great Sabrecat Collar
@@ -6169,6 +7110,14 @@
       - Shinra Wyvern Blade
     character: Sephiroth
 - - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+  - weapons:
+      - Gold Collar
+      - Pirate Collar
+    character: Red XIII
+- - weapons:
       - Gold Collar
       - Pirate Collar
     character: Red XIII
@@ -6184,6 +7133,14 @@
       - Bahamut Cutter
       - Mallet of Luck
     character: Yuffie
+- - weapons:
+      - Festival Umbrella
+      - Greatsword of the Worthy
+    character: Angeal
+  - weapons:
+      - Great Sabrecat Collar
+      - Pirate Collar
+    character: Red XIII
 - - weapons:
       - Great Sabrecat Collar
       - Pirate Collar

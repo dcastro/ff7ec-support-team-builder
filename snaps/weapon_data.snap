@@ -143,6 +143,11 @@
     distinctObs:
       - OB0-5
       - OB6-10
+- - Blue Bramble (Club Custom)
+  - ownedOb: OB0-10
+    ignored: false
+    distinctObs:
+      - OB0-10
 - - Blue Daffodil Gloves
   - ownedOb: OB0-10
     ignored: false
@@ -183,6 +188,12 @@
     distinctObs:
       - OB0-10
 - - Butterfly Edge
+  - ownedOb: OB6-10
+    ignored: false
+    distinctObs:
+      - OB0-5
+      - OB6-10
+- - Candy Apple
   - ownedOb: OB6-10
     ignored: false
     distinctObs:
@@ -263,6 +274,11 @@
     distinctObs:
       - OB0-5
       - OB6-10
+- - Companion Arm
+  - ownedOb: OB0-10
+    ignored: false
+    distinctObs:
+      - OB0-10
 - - Cool Cat's Megaphone
   - ownedOb: OB6-10
     ignored: false
@@ -376,6 +392,12 @@
     distinctObs:
       - OB0-5
       - OB6-10
+- - Diner Tray
+  - ownedOb: OB6-10
+    ignored: false
+    distinctObs:
+      - OB0-5
+      - OB6-10
 - - Dragontail Sword
   - ownedOb: OB0-10
     ignored: false
@@ -459,6 +481,17 @@
       - OB0-5
       - OB6-10
 - - Featherscatter
+  - ownedOb: OB0-10
+    ignored: false
+    distinctObs:
+      - OB0-10
+- - Festival Pistol
+  - ownedOb: OB6-10
+    ignored: false
+    distinctObs:
+      - OB0-5
+      - OB6-10
+- - Festival Umbrella
   - ownedOb: OB0-10
     ignored: false
     distinctObs:
@@ -667,10 +700,11 @@
       - OB0-5
       - OB6-10
 - - Gun of the Worthy
-  - ownedOb: OB0-10
+  - ownedOb: OB6-10
     ignored: false
     distinctObs:
-      - OB0-10
+      - OB0-5
+      - OB6-10
 - - Hardcore Squad
   - ownedOb: OB6-10
     ignored: false
@@ -695,10 +729,11 @@
     distinctObs:
       - OB0-10
 - - Heavy Hauser
-  - ownedOb: OB0-10
+  - ownedOb: OB6-10
     ignored: false
     distinctObs:
-      - OB0-10
+      - OB0-5
+      - OB6-10
 - - Heavy Vulcan
   - ownedOb: OB6-10
     ignored: false
@@ -1013,6 +1048,12 @@
       - OB0-5
       - OB6-9
       - OB10
+- - Metal Knuckles
+  - ownedOb: OB6-10
+    ignored: false
+    distinctObs:
+      - OB0-5
+      - OB6-10
 - - Microlaser
   - ownedOb: OB6-10
     ignored: false
@@ -1030,10 +1071,11 @@
     distinctObs:
       - OB0-10
 - - Murasame
-  - ownedOb: OB0-10
+  - ownedOb: OB6-10
     ignored: false
     distinctObs:
-      - OB0-10
+      - OB0-5
+      - OB6-10
 - - Mystic Sword
   - ownedOb: OB6-10
     ignored: false
@@ -1446,6 +1488,12 @@
     distinctObs:
       - OB0-5
       - OB6-10
+- - Shinra Ceremonial Rifle (Club Custom)
+  - ownedOb: OB6-10
+    ignored: false
+    distinctObs:
+      - OB0-5
+      - OB6-10
 - - 'Shinra Greatsword: Model I'
   - ownedOb: OB6-10
     ignored: false
@@ -1486,10 +1534,11 @@
     distinctObs:
       - OB0-10
 - - Skysplitter
-  - ownedOb: OB0-10
+  - ownedOb: OB6-10
     ignored: false
     distinctObs:
-      - OB0-10
+      - OB0-5
+      - OB6-10
 - - Slash Lance
   - ownedOb: OB6-10
     ignored: false
@@ -1654,6 +1703,12 @@
       - OB0-5
       - OB6-10
 - - Sunrise Cannon
+  - ownedOb: OB6-10
+    ignored: false
+    distinctObs:
+      - OB0-5
+      - OB6-10
+- - Super Sleuth Collar
   - ownedOb: OB6-10
     ignored: false
     distinctObs:

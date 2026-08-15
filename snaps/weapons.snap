@@ -3377,6 +3377,82 @@ weapons:
     image: https://i.imgur.com/N1Crbpt.png
     character: Angeal
     atbCost: 4
+  - source: Event
+    sAbilities:
+      slot3: MATK Boost I
+      slot2: PATK Boost I
+      slot1: ATK Boost I
+    rAbilities:
+      slot2: Boost Phys. Ability Pot.
+      slot1: Boost ATK
+    ob6:
+      effects:
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 7
+              duration: 30
+          type: FireResistDown
+      description: |-
+        Defira Surge A+ (4 ATB)
+        230% Mag. Non-elem. Damage [Range: All Enemies]
+        30s Fire Resistance Down (+7s) (Low -> Mid) [Range: All Enemies]
+        10% Crit Rate [Range: All Enemies]
+    ob10:
+      effects:
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 35
+          type: FireResistDown
+      description: |-
+        Defira Surge A++ (4 ATB)
+        240% Mag. Non-elem. Damage [Range: All Enemies]
+        35s Fire Resistance Down (+8s) (Low -> Mid) [Range: All Enemies]
+        10% Crit Rate [Range: All Enemies]
+    ob1:
+      effects:
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 25
+          type: FireResistDown
+      description: |-
+        Defira Surge A (4 ATB)
+        200% Mag. Non-elem. Damage [Range: All Enemies]
+        25s Fire Resistance Down (+6s) (Low -> Mid) [Range: All Enemies]
+        10% Crit Rate [Range: All Enemies]
+    ob0:
+      effects:
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 5
+              duration: 20
+          type: FireResistDown
+      description: |-
+        Defira Surge A (4 ATB)
+        170% Mag. Non-elem. Damage [Range: All Enemies]
+        20s Fire Resistance Down (+5s) (Low -> Mid) [Range: All Enemies]
+        10% Crit Rate [Range: All Enemies]
+    name: Festival Umbrella
+    image: https://i.imgur.com/FXj00fQ.png
+    character: Angeal
+    atbCost: 4
   - source: Gacha (Limit Break)
     sAbilities:
       slot3: ▲ Sigil Boost I
@@ -3900,6 +3976,7 @@ weapons:
       slot2: Boost PDEF
       slot1: Boost ATK (All Allies)
     ob6:
+      spadeCustomDescription: '+15% Limit Break Gauge [Range: Self]'
       effects:
         - value:
             range: All
@@ -3937,6 +4014,7 @@ weapons:
         7% Heal [Range: All Allies]
         50s 8% Veil (+10s) [Range: All Allies] [Condition: Self 0-70% HP]
     ob10:
+      spadeCustomDescription: '+20% Limit Break Gauge [Range: Self]'
       effects:
         - value:
             range: All
@@ -3974,6 +4052,7 @@ weapons:
         7% Heal [Range: All Allies]
         60s 10% Veil (+12s) [Range: All Allies] [Condition: Self 0-70% HP]
     ob1:
+      spadeCustomDescription: '+10% Limit Break Gauge [Range: Self]'
       effects:
         - value:
             range: All
@@ -4011,6 +4090,7 @@ weapons:
         6% Heal [Range: All Allies]
         45s 5% Veil (+9s) [Range: All Allies] [Condition: Self 0-70% HP]
     ob0:
+      spadeCustomDescription: '+10% Limit Break Gauge [Range: Self]'
       effects:
         - value:
             range: All
@@ -4049,6 +4129,7 @@ weapons:
         40s 4% Veil (+8s) [Range: All Allies] [Condition: Self 0-70% HP]
     name: Greatsword of the Worthy
     image: https://i.imgur.com/OKUlIfX.png
+    diamondCustomDescription: Stream Phase Veil Boost (All Allies)
     character: Angeal
     atbCost: 4
   - source: Gacha (Non-Limited)
@@ -5398,7 +5479,7 @@ weapons:
         Rapid Blade (4 ATB)
         480% Phys. Non-elem. Damage [Range: Single Enemy]
         60s Provoke (+0s) [Range: Self]
-        3s 15% Regen (+3s) [Range: Self]
+        4s 15% Regen (+3s) [Range: Self]
         10% Crit Rate [Range: Single Enemy]
     ob0:
       effects:
@@ -5412,7 +5493,7 @@ weapons:
         Rapid Blade (4 ATB)
         400% Phys. Non-elem. Damage [Range: Single Enemy]
         60s Provoke (+0s) [Range: Self]
-        3s 15% Regen (+3s) [Range: Self]
+        4s 15% Regen (+3s) [Range: Self]
         10% Crit Rate [Range: Single Enemy]
     name: Type-90 Longsword
     image: https://i.imgur.com/ycn3hcG.png
@@ -5725,6 +5806,136 @@ weapons:
         4% Heal [Range: All Allies]
     name: Assault Gun
     image: https://i.imgur.com/XtDYCBu.png
+    character: Barret
+    atbCost: 4
+  - source: Gacha (Non-Limited)
+    sAbilities:
+      slot3: ⏺ Sigil Boost I
+      slot2: PATK Boost I
+      slot1: PATK Boost I
+    rAbilities:
+      slot2: Boost Fire Pot.
+      slot1: Boost ATK
+    ob6:
+      spadeCustomDescription: '50s 30% Physical Weapon Boost (+16s) [Range: All Allies]'
+      effects:
+        - value:
+            range: All
+            percentage: 8
+            durExt:
+              extension: 16
+              duration: 50
+          type: Veil
+        - value:
+            range: All
+            percentage: 30
+            durExt:
+              extension: 16
+              duration: 50
+          type: ExploitWeakness
+        - value:
+            range: All
+            percentage: 30
+            durExt:
+              extension: 16
+              duration: 50
+          type: PhysicalWeaponBoost
+      description: |-
+        Overheating Bash+ (4 ATB)
+        650% Phys. Fire Damage [Scaling: 2x (100% HP), 1x (50% HP)] [Range: Single Enemy]
+        50s 8% Veil (+16s) [Range: All Allies]
+        50s 30% Exploit Weakness (+16s) [Range: All Allies] [Condition: Self 50-100% HP]
+    ob10:
+      spadeCustomDescription: '60s 35% Physical Weapon Boost (+20s) [Range: All Allies]'
+      effects:
+        - value:
+            range: All
+            percentage: 10
+            durExt:
+              extension: 20
+              duration: 60
+          type: Veil
+        - value:
+            range: All
+            percentage: 40
+            durExt:
+              extension: 20
+              duration: 60
+          type: ExploitWeakness
+        - value:
+            range: All
+            percentage: 35
+            durExt:
+              extension: 20
+              duration: 60
+          type: PhysicalWeaponBoost
+      description: |-
+        Overheating Bash++ (4 ATB)
+        780% Phys. Fire Damage [Scaling: 2x (100% HP), 1x (50% HP)] [Range: Single Enemy]
+        60s 10% Veil (+20s) [Range: All Allies]
+        60s 40% Exploit Weakness (+20s) [Range: All Allies] [Condition: Self 50-100% HP]
+        +1 Costume C. Ability Uses [Range: Self] [Condition: First Use]
+    ob1:
+      spadeCustomDescription: '40s 25% Physical Weapon Boost (+13s) [Range: All Allies]'
+      effects:
+        - value:
+            range: All
+            percentage: 5
+            durExt:
+              extension: 13
+              duration: 40
+          type: Veil
+        - value:
+            range: All
+            percentage: 20
+            durExt:
+              extension: 13
+              duration: 40
+          type: ExploitWeakness
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 13
+              duration: 40
+          type: PhysicalWeaponBoost
+      description: |-
+        Overheating Bash (4 ATB)
+        520% Phys. Fire Damage [Scaling: 2x (100% HP), 1x (50% HP)] [Range: Single Enemy]
+        40s 5% Veil (+13s) [Range: All Allies]
+        40s 20% Exploit Weakness (+13s) [Range: All Allies] [Condition: Self 50-100% HP]
+    ob0:
+      spadeCustomDescription: '30s 25% Physical Weapon Boost (+10s) [Range: All Allies]'
+      effects:
+        - value:
+            range: All
+            percentage: 4
+            durExt:
+              extension: 10
+              duration: 30
+          type: Veil
+        - value:
+            range: All
+            percentage: 20
+            durExt:
+              extension: 10
+              duration: 30
+          type: ExploitWeakness
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 10
+              duration: 30
+          type: PhysicalWeaponBoost
+      description: |-
+        Overheating Bash (4 ATB)
+        430% Phys. Fire Damage [Scaling: 2x (100% HP), 1x (50% HP)] [Range: Single Enemy]
+        30s 4% Veil (+10s) [Range: All Allies]
+        30s 20% Exploit Weakness (+10s) [Range: All Allies] [Condition: Self 50-100% HP]
+    name: Companion Arm
+    image: https://i.imgur.com/GFGUc3E.png
+    diamondCustomDescription: Ultimate Fire Interruption (All Allies)
     character: Barret
     atbCost: 4
   - source: Gacha (Non-Limited)
@@ -6238,31 +6449,156 @@ weapons:
       slot2: Boost Ability Pot.
       slot1: Boost ATK
     ob6:
-      effects: []
+      spadeCustomDescription: |-
+        25s Lightning Damage Down (+8s) (High) [Range: Single Enemy]
+        25s Water Damage Down (+8s) (High) [Range: Single Enemy]
+        25s MDEF Up (+8s) (High) [Range: All Allies]
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 8
+              duration: 25
+          type: LightningDamageDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 8
+              duration: 25
+          type: WaterDamageDown
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 8
+              duration: 25
+          type: MdefUp
       description: |-
         Pyroball+ (4 ATB)
         780% Phys. Non-elem. Damage [Range: Single Enemy]
         10% Crit Rate [Range: Single Enemy]
     ob10:
-      effects: []
+      spadeCustomDescription: |-
+        30s Lightning Damage Down (+10s) (High) [Range: Single Enemy]
+        30s Water Damage Down (+10s) (High) [Range: Single Enemy]
+        30s MDEF Up (+10s) (High) [Range: All Allies]
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 10
+              duration: 30
+          type: LightningDamageDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 10
+              duration: 30
+          type: WaterDamageDown
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 10
+              duration: 30
+          type: MdefUp
       description: |-
         Pyroball++ (4 ATB)
         940% Phys. Non-elem. Damage [Range: Single Enemy]
         10% Crit Rate [Range: Single Enemy]
     ob1:
-      effects: []
+      spadeCustomDescription: |-
+        25s Lightning Damage Down (+8s) (Low -> Mid) [Range: Single Enemy]
+        25s Water Damage Down (+8s) (Low -> Mid) [Range: Single Enemy]
+        25s MDEF Up (+8s) (Low -> Mid) [Range: All Allies]
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: LightningDamageDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: WaterDamageDown
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: MdefUp
       description: |-
         Pyroball (4 ATB)
         600% Phys. Non-elem. Damage [Range: Single Enemy]
         10% Crit Rate [Range: Single Enemy]
     ob0:
-      effects: []
+      spadeCustomDescription: |-
+        20s Lightning Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]
+        20s Water Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]
+        20s MDEF Up (+6s) (Low -> Mid) [Range: All Allies]
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: LightningDamageDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: WaterDamageDown
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: MdefUp
       description: |-
         Pyroball (4 ATB)
         500% Phys. Non-elem. Damage [Range: Single Enemy]
         10% Crit Rate [Range: Single Enemy]
     name: Heavy Hauser
     image: https://i.imgur.com/y4gukMY.png
+    diamondCustomDescription: Stream Phase Mag. Resist. Boost
     character: Barret
     atbCost: 4
   - source: Gacha (Non-Limited)
@@ -10428,6 +10764,9 @@ weapons:
       slot2: Buff/Debuff Extension (Stats/Pot./Res.)
       slot1: Boost ATK (All Allies)
     ob6:
+      spadeCustomDescription: |-
+        25s ✖ Sigil Resistance Down (+8s) (High) [Range: Single Enemy]
+        +2 Gear C. Ability Uses [Range: Self] [Condition: First Use]
       effects:
         - value:
             range: SingleTarget
@@ -10451,6 +10790,9 @@ weapons:
         25s Ice Resistance Down (+8s) (High) [Range: Single Enemy]
         10% Crit Rate [Range: Single Enemy]
     ob10:
+      spadeCustomDescription: |-
+        35s ✖ Sigil Resistance Down (+11s) (High) [Range: Single Enemy]
+        +3 Gear C. Ability Uses [Range: Self] [Condition: First Use]
       effects:
         - value:
             range: SingleTarget
@@ -10474,6 +10816,9 @@ weapons:
         35s Ice Resistance Down (+11s) (High) [Range: Single Enemy]
         10% Crit Rate [Range: Single Enemy]
     ob1:
+      spadeCustomDescription: |-
+        25s ✖ Sigil Resistance Down (+8s) (Mid) [Range: Single Enemy]
+        +1 Gear C. Ability Uses [Range: Self] [Condition: First Use]
       effects:
         - value:
             range: SingleTarget
@@ -10497,6 +10842,9 @@ weapons:
         25s Ice Resistance Down (+8s) (Mid) [Range: Single Enemy]
         10% Crit Rate [Range: Single Enemy]
     ob0:
+      spadeCustomDescription: |-
+        20s ✖ Sigil Resistance Down (+6s) (Mid) [Range: Single Enemy]
+        +1 Gear C. Ability Uses [Range: Self] [Condition: First Use]
       effects:
         - value:
             range: SingleTarget
@@ -10521,6 +10869,7 @@ weapons:
         10% Crit Rate [Range: Single Enemy]
     name: Rocket Lance
     image: https://i.imgur.com/ee06twq.png
+    diamondCustomDescription: Boost Summon Ability Pot. (All Allies)
     character: Cid
     atbCost: 4
   - source: Gacha (Non-Limited)
@@ -11350,7 +11699,7 @@ weapons:
       slot2: Boost Wind Pot.
       slot1: Boost PATK
     ob6:
-      spadeCustomDescription: '50s 20% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]'
+      spadeCustomDescription: '50s 20% Amp. Phys. Abilities 1 Time (+0s) [Range: Self] [Condition: Self 50-100% HP]'
       effects:
         - value:
             range: All
@@ -11368,13 +11717,6 @@ weapons:
               extension: 16
               duration: 50
           type: WindWeaponBoost
-        - value:
-            range: Self
-            percentage: 20
-            durExt:
-              extension: 0
-              duration: 50
-          type: AmpPhysAbilities
       description: |-
         Devastating Cyclone+ (4 ATB)
         750% Phys. Wind Damage [Range: All Enemies]
@@ -11382,7 +11724,7 @@ weapons:
         50s PATK Up (+16s) (Mid -> High) [Range: All Allies]
         50s 30% Wind Weapon Boost (+16s) [Range: All Allies] [Condition: Self 50-100% HP]
     ob10:
-      spadeCustomDescription: '60s 30% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]'
+      spadeCustomDescription: '60s 30% Amp. Phys. Abilities 1 Time (+0s) [Range: Self] [Condition: Self 50-100% HP]'
       effects:
         - value:
             range: All
@@ -11400,13 +11742,6 @@ weapons:
               extension: 20
               duration: 60
           type: WindWeaponBoost
-        - value:
-            range: Self
-            percentage: 30
-            durExt:
-              extension: 0
-              duration: 60
-          type: AmpPhysAbilities
       description: |-
         Devastating Cyclone++ (4 ATB)
         900% Phys. Wind Damage [Range: All Enemies]
@@ -11414,7 +11749,7 @@ weapons:
         60s PATK Up (+20s) (Mid -> High) [Range: All Allies]
         60s 35% Wind Weapon Boost (+20s) [Range: All Allies] [Condition: Self 50-100% HP]
     ob1:
-      spadeCustomDescription: '40s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]'
+      spadeCustomDescription: '40s 10% Amp. Phys. Abilities 1 Time (+0s) [Range: Self] [Condition: Self 50-100% HP]'
       effects:
         - value:
             range: All
@@ -11432,13 +11767,6 @@ weapons:
               extension: 13
               duration: 40
           type: WindWeaponBoost
-        - value:
-            range: Self
-            percentage: 10
-            durExt:
-              extension: 0
-              duration: 40
-          type: AmpPhysAbilities
       description: |-
         Devastating Cyclone (4 ATB)
         580% Phys. Wind Damage [Range: All Enemies]
@@ -11446,7 +11774,7 @@ weapons:
         40s PATK Up (+13s) (Low -> Mid) [Range: All Allies]
         40s 25% Wind Weapon Boost (+13s) [Range: All Allies] [Condition: Self 50-100% HP]
     ob0:
-      spadeCustomDescription: '30s 10% Amp. Phys. Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]'
+      spadeCustomDescription: '30s 10% Amp. Phys. Abilities 1 Time (+0s) [Range: Self] [Condition: Self 50-100% HP]'
       effects:
         - value:
             range: All
@@ -11464,13 +11792,6 @@ weapons:
               extension: 10
               duration: 30
           type: WindWeaponBoost
-        - value:
-            range: Self
-            percentage: 10
-            durExt:
-              extension: 0
-              duration: 30
-          type: AmpPhysAbilities
       description: |-
         Devastating Cyclone (4 ATB)
         480% Phys. Wind Damage [Range: All Enemies]
@@ -12720,27 +13041,104 @@ weapons:
       slot2: Boost Lightning Pot.
       slot1: Boost PATK
     ob6:
-      effects: []
+      spadeCustomDescription: |-
+        25s PDEF Down (+8s) (Mid -> High) [Range: Single Enemy]
+        +1 ATB [Range: Self] [Condition: Self 80-100% HP]
+        25s -1 ATB Lightning Weapon/Gear C. Ability Cost (+8s) [Range: Self] [Condition: First Use]
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 8
+              duration: 25
+          type: PdefDown
+        - value:
+            range: Self
+            durExt:
+              extension: 8
+              duration: 25
+          type: LightningATBConservationEffect
       description: |-
         Thunderstrike+ (4 ATB)
-        620% Phys. Lightning Damage [Range: Single Enemy]
+        1080% Phys. Lightning Damage [Range: Single Enemy]
     ob10:
-      effects: []
+      spadeCustomDescription: |-
+        30s PDEF Down (+10s) (Mid -> High) [Range: Single Enemy]
+        +1 ATB [Range: Self] [Condition: Self 70-100% HP]
+        40s -1 ATB Lightning Weapon/Gear C. Ability Cost (+13s) [Range: Self] [Condition: First Use]
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 10
+              duration: 30
+          type: PdefDown
+        - value:
+            range: Self
+            durExt:
+              extension: 13
+              duration: 40
+          type: LightningATBConservationEffect
       description: |-
         Thunderstrike++ (4 ATB)
-        750% Phys. Lightning Damage [Range: Single Enemy]
+        1340% Phys. Lightning Damage [Range: Single Enemy]
     ob1:
-      effects: []
+      spadeCustomDescription: |-
+        25s PDEF Down (+8s) (Low -> Mid) [Range: Single Enemy]
+        +1 ATB [Range: Self] [Condition: Self 90-100% HP]
+        15s -1 ATB Lightning Weapon/Gear C. Ability Cost (+5s) [Range: Self] [Condition: First Use]
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: PdefDown
+        - value:
+            range: Self
+            durExt:
+              extension: 5
+              duration: 15
+          type: LightningATBConservationEffect
       description: |-
         Thunderstrike (4 ATB)
-        480% Phys. Lightning Damage [Range: Single Enemy]
+        720% Phys. Lightning Damage [Range: Single Enemy]
     ob0:
-      effects: []
+      spadeCustomDescription: |-
+        20s PDEF Down (+6s) (Low -> Mid) [Range: Single Enemy]
+        +1 ATB [Range: Self] [Condition: Self 90-100% HP]
+        10s -1 ATB Lightning Weapon/Gear C. Ability Cost (+3s) [Range: Self] [Condition: First Use]
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: PdefDown
+        - value:
+            range: Self
+            durExt:
+              extension: 3
+              duration: 10
+          type: LightningATBConservationEffect
       description: |-
         Thunderstrike (4 ATB)
-        400% Phys. Lightning Damage [Range: Single Enemy]
+        600% Phys. Lightning Damage [Range: Single Enemy]
     name: Murasame
     image: https://i.imgur.com/laQXQdJ.png
+    diamondCustomDescription: Lightning/Physical Sur Arcanum (All Allies)
     character: Cloud
     atbCost: 4
   - source: Gacha (Non-Limited)
@@ -13324,27 +13722,116 @@ weapons:
       slot2: Boost Fire Pot.
       slot1: Boost PATK
     ob6:
-      effects: []
+      spadeCustomDescription: |-
+        25s PATK Up (+8s) (Mid -> High) [Range: Self]
+        25s Fire Damage Up (+8s) (Mid -> High) [Range: All Allies]
+        20s 15% Amp. Fire Abilities 1 Time (+0s) [Range: Self] [Condition: Self 80-100% HP]
+      effects:
+        - value:
+            range: Self
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 8
+              duration: 25
+          type: PatkUp
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 8
+              duration: 25
+          type: FireDamageUp
       description: |-
         Blazing Strike+ (4 ATB)
-        710% Phys. Fire Damage [Range: Single Enemy]
+        1080% Phys. Fire Damage [Range: Single Enemy]
     ob10:
-      effects: []
+      spadeCustomDescription: |-
+        30s PATK Up (+10s) (Mid -> High) [Range: Self]
+        30s Fire Damage Up (+10s) (Mid -> High) [Range: All Allies]
+        20s 20% Amp. Fire Abilities 1 Time (+0s) [Range: Self] [Condition: Self 70-100% HP]
+      effects:
+        - value:
+            range: Self
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 10
+              duration: 30
+          type: PatkUp
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 10
+              duration: 30
+          type: FireDamageUp
       description: |-
         Blazing Strike++ (4 ATB)
-        850% Phys. Fire Damage [Range: Single Enemy]
+        1340% Phys. Fire Damage [Range: Single Enemy]
     ob1:
-      effects: []
+      spadeCustomDescription: |-
+        25s PATK Up (+8s) (Low -> Mid) [Range: Self]
+        25s Fire Damage Up (+8s) (Low -> Mid) [Range: All Allies]
+        20s 10% Amp. Fire Abilities 1 Time (+0s) [Range: Self] [Condition: Self 90-100% HP]
+      effects:
+        - value:
+            range: Self
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: PatkUp
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: FireDamageUp
       description: |-
         Blazing Strike (4 ATB)
-        580% Phys. Fire Damage [Range: Single Enemy]
+        720% Phys. Fire Damage [Range: Single Enemy]
     ob0:
-      effects: []
+      spadeCustomDescription: |-
+        20s PATK Up (+6s) (Low -> Mid) [Range: Self]
+        20s Fire Damage Up (+6s) (Low -> Mid) [Range: All Allies]
+        20s 10% Amp. Fire Abilities 1 Time (+0s) [Range: Self] [Condition: Self 90-100% HP]
+      effects:
+        - value:
+            range: Self
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: PatkUp
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: FireDamageUp
       description: |-
         Blazing Strike (4 ATB)
-        480% Phys. Fire Damage [Range: Single Enemy]
+        600% Phys. Fire Damage [Range: Single Enemy]
     name: Skysplitter
     image: https://i.imgur.com/vQ2T5hD.png
+    diamondCustomDescription: Fire/Physical Sur Arcanum (All Allies)
     character: Cloud
     atbCost: 4
   - source: Event
@@ -17230,6 +17717,116 @@ weapons:
         +1 ATB [Range: All Allies] [Condition: First Use]
     name: Shinra Ceremonial Rifle
     image: https://i.imgur.com/Q6vP9Dp.png
+    diamondCustomDescription: Boost Summon Ability Pot. (All Allies)
+    character: Lucia
+    atbCost: 4
+  - source: Gacha (Limit Break)
+    sAbilities:
+      slot3: ▲ Sigil Boost II
+      slot2: PATK Boost I
+      slot1: PATK Boost I
+    rAbilities:
+      slot2: Buff/Debuff Extension (Stats/Pot./Res.)
+      slot1: Boost ATK (All Allies)
+    ob6:
+      effects:
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 8
+              duration: 25
+          type: PatkUp
+        - value:
+            range: All
+            percentage: 30
+            durExt:
+              extension: 16
+              duration: 50
+          type: PhysicalWeaponBoost
+      description: |-
+        Napalm Assault+ (4 ATB)
+        700% Phys. Fire Damage [Range: Single Enemy]
+        25s ▲ Sigil Resistance Down (+8s) Mid -> High) [Range: Single Enemy]
+        25s PATK Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 50-100% HP]
+        50s 30% Physical Weapon Boost (+16s) [Range: All Allies] [Condition: Weakness Hit]
+    ob10:
+      effects:
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 10
+              duration: 30
+          type: PatkUp
+        - value:
+            range: All
+            percentage: 35
+            durExt:
+              extension: 20
+              duration: 60
+          type: PhysicalWeaponBoost
+      description: |-
+        Napalm Assault++ (4 ATB)
+        840% Phys. Fire Damage [Range: Single Enemy]
+        30s ▲ Sigil Resistance Down (+10s) Mid -> High) [Range: Single Enemy]
+        30s PATK Up (+10s) (Mid -> High) [Range: All Allies] [Condition: Self 50-100% HP]
+        60s 35% Physical Weapon Boost (+20s) [Range: All Allies] [Condition: Weakness Hit]
+    ob1:
+      effects:
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: PatkUp
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 13
+              duration: 40
+          type: PhysicalWeaponBoost
+      description: |-
+        Napalm Assault (4 ATB)
+        540% Phys. Fire Damage [Range: Single Enemy]
+        25s ▲ Sigil Resistance Down (+8s) (Low -> Mid) [Range: Single Enemy]
+        25s PATK Up (+8s) (Low -> Mid) [Range: All Allies] [Condition: Self 50-100% HP]
+        40s 25% Physical Weapon Boost (+13s) [Range: All Allies] [Condition: Weakness Hit]
+    ob0:
+      effects:
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: PatkUp
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 10
+              duration: 30
+          type: PhysicalWeaponBoost
+      description: |-
+        Napalm Assault (4 ATB)
+        450% Phys. Fire Damage [Range: Single Enemy]
+        20s ▲ Sigil Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy]
+        20s PATK Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 50-100% HP]
+        30s 25% Physical Weapon Boost (+10s) [Range: All Allies] [Condition: Weakness Hit]
+    name: Shinra Ceremonial Rifle (Club Custom)
+    image: https://i.imgur.com/Q6vP9Dp.png
+    diamondCustomDescription: Boost Summon Ability Pot. (All Allies)
     character: Lucia
     atbCost: 4
   - source: Event
@@ -17878,6 +18475,9 @@ weapons:
       slot2: Buff/Debuff Extension (Stats/Pot./Res.)
       slot1: Boost HEAL
     ob6:
+      spadeCustomDescription: |-
+        50s 25% Physical Damage Bonus (+16s) [Range: All Allies]
+        50s 30% Exploit Weakness (+16s) [Range: All Allies] [Condition: Self 70-100% HP]
       effects:
         - value:
             range: All
@@ -17892,11 +18492,28 @@ weapons:
               extension: 4
               duration: 12
           type: PdefUp
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 16
+              duration: 50
+          type: PhysicalDamageBonus
+        - value:
+            range: All
+            percentage: 30
+            durExt:
+              extension: 16
+              duration: 50
+          type: ExploitWeakness
       description: |-
         Recovery Circle+ (5 ATB)
         54% Heal [Range: All Allies]
         12s PDEF Up (+4s) (Mid -> High) [Range: All Allies]
     ob10:
+      spadeCustomDescription: |-
+        60s 30% Physical Damage Bonus (+20s) [Range: All Allies]
+        60s 30% Exploit Weakness (+20s) [Range: All Allies] [Condition: Self 70-100% HP]
       effects:
         - value:
             range: All
@@ -17911,11 +18528,28 @@ weapons:
               extension: 4
               duration: 14
           type: PdefUp
+        - value:
+            range: All
+            percentage: 30
+            durExt:
+              extension: 20
+              duration: 60
+          type: PhysicalDamageBonus
+        - value:
+            range: All
+            percentage: 30
+            durExt:
+              extension: 20
+              duration: 60
+          type: ExploitWeakness
       description: |-
         Recovery Circle++ (5 ATB)
         59% Heal [Range: All Allies]
         14s PDEF Up (+4s) (Mid -> High) [Range: All Allies]
     ob1:
+      spadeCustomDescription: |-
+        40s 20% Physical Damage Bonus (+13s) [Range: All Allies]
+        40s 20% Exploit Weakness (+13s) [Range: All Allies] [Condition: Self 70-100% HP]
       effects:
         - value:
             range: All
@@ -17930,11 +18564,28 @@ weapons:
               extension: 4
               duration: 12
           type: PdefUp
+        - value:
+            range: All
+            percentage: 20
+            durExt:
+              extension: 13
+              duration: 40
+          type: PhysicalDamageBonus
+        - value:
+            range: All
+            percentage: 20
+            durExt:
+              extension: 13
+              duration: 40
+          type: ExploitWeakness
       description: |-
         Recovery Circle (5 ATB)
         50% Heal [Range: All Allies]
         12s PDEF Up (+4s) (Mid) [Range: All Allies]
     ob0:
+      spadeCustomDescription: |-
+        30s 20% Physical Damage Bonus (+10s) [Range: All Allies]
+        30s 20% Exploit Weakness (+10s) [Range: All Allies] [Condition: Self 70-100% HP]
       effects:
         - value:
             range: All
@@ -17949,12 +18600,27 @@ weapons:
               extension: 3
               duration: 10
           type: PdefUp
+        - value:
+            range: All
+            percentage: 20
+            durExt:
+              extension: 10
+              duration: 30
+          type: PhysicalDamageBonus
+        - value:
+            range: All
+            percentage: 20
+            durExt:
+              extension: 10
+              duration: 30
+          type: ExploitWeakness
       description: |-
         Recovery Circle (5 ATB)
         42% Heal [Range: All Allies]
         10s PDEF Up (+3s) (Mid) [Range: All Allies]
     name: Centipede
     image: https://i.imgur.com/WraMWT9.png
+    diamondCustomDescription: Stream Phase Regen Boost (All Allies)
     character: Matt
     atbCost: 5
   - source: Gacha (Non-Limited)
@@ -21058,6 +21724,9 @@ weapons:
       slot2: Boost Lightning Pot.
       slot1: Boost HP
     ob6:
+      spadeCustomDescription: |-
+        18s Earth Resistance Down (+6s) (High) [Range: Single Enemy]
+        18s PATK Up (+6s) (High) [Range: All Allies] [Condition: Self 50-100% HP]
       effects:
         - value:
             range: SingleTarget
@@ -21068,13 +21737,34 @@ weapons:
               extension: 6
               duration: 18
           type: LightningResistDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 6
+              duration: 18
+          type: EarthResistDown
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 6
+              duration: 18
+          type: PatkUp
       description: |-
         Power Fang+ (4 ATB)
         450% Phys. Non-elem. Damage [Range: Single Enemy]
         18s Thunder Resistance Down (+6s) (High) [Range: Single Enemy]
         10% Crit Rate [Range: Single Enemy]
-        3s 15% Regen (+3s) [Range: Self]
+        4s 15% Regen (+3s) [Range: Self]
     ob10:
+      spadeCustomDescription: |-
+        21s Earth Resistance Down (+7s) (High) [Range: Single Enemy]
+        21s PATK Up (+7s) (High) [Range: All Allies] [Condition: Self 50-100% HP]
       effects:
         - value:
             range: SingleTarget
@@ -21085,13 +21775,34 @@ weapons:
               extension: 7
               duration: 21
           type: LightningResistDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 7
+              duration: 21
+          type: EarthResistDown
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 7
+              duration: 21
+          type: PatkUp
       description: |-
         Power Fang++ (4 ATB)
         510% Phys. Non-elem. Damage [Range: Single Enemy]
         21s Thunder Resistance Down (+7s) (High) [Range: Single Enemy]
         10% Crit Rate [Range: Single Enemy]
-        3s 15% Regen (+3s) [Range: Self]
+        4s 15% Regen (+3s) [Range: Self]
     ob1:
+      spadeCustomDescription: |-
+        18s Earth Resistance Down (+6s) (Mid -> High) [Range: Single Enemy]
+        18s PATK Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 50-100% HP]
       effects:
         - value:
             range: SingleTarget
@@ -21102,13 +21813,34 @@ weapons:
               extension: 6
               duration: 18
           type: LightningResistDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 6
+              duration: 18
+          type: EarthResistDown
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 6
+              duration: 18
+          type: PatkUp
       description: |-
         Power Fang (4 ATB)
         370% Phys. Non-elem. Damage [Range: Single Enemy]
         18s Thunder Resistance Down (+6s) (Mid -> High) [Range: Single Enemy]
         10% Crit Rate [Range: Single Enemy]
-        3s 15% Regen (+3s) [Range: Self]
+        4s 15% Regen (+3s) [Range: Self]
     ob0:
+      spadeCustomDescription: |-
+        15s Earth Resistance Down (+5s) (Mid -> High) [Range: Single Enemy]
+        15s PATK Up (+5s) (Mid -> High) [Range: All Allies] [Condition: Self 50-100% HP]
       effects:
         - value:
             range: SingleTarget
@@ -21119,14 +21851,33 @@ weapons:
               extension: 5
               duration: 15
           type: LightningResistDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 5
+              duration: 15
+          type: EarthResistDown
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 5
+              duration: 15
+          type: PatkUp
       description: |-
         Power Fang (4 ATB)
         320% Phys. Non-elem. Damage [Range: Single Enemy]
         15s Thunder Resistance Down (+5s) (Mid -> High) [Range: Single Enemy]
         10% Crit Rate [Range: Single Enemy]
-        3s 15% Regen (+3s) [Range: Self]
+        4s 15% Regen (+3s) [Range: Self]
     name: Seaside Collar
     image: https://i.imgur.com/HlMF5oE.png
+    diamondCustomDescription: Stream Phase Regen Boost (All Allies)
     character: Red XIII
     atbCost: 4
   - source: Gacha (Non-Limited)
@@ -21408,6 +22159,127 @@ weapons:
         10% Crit Rate [Range: Single Enemy]
     name: Steward Collar
     image: https://i.imgur.com/BiwpWT7.png
+    character: Red XIII
+    atbCost: 4
+  - source: Gacha (Non-Limited)
+    sAbilities:
+      slot3: All (Esuna) I
+      slot2: HEAL Boost I
+      slot1: MATK Boost I
+    rAbilities:
+      slot2: Boost HEAL
+      slot1: Boost HP
+    ob6:
+      spadeCustomDescription: '+2 Gear C. Ability Uses [Range: Self] [Condition: First Use]'
+      effects:
+        - value:
+            range: All
+            durExt:
+              extension: 16
+              duration: 50
+          type: Enliven
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 8
+              duration: 25
+          type: PdefUp
+        - value:
+            range: All
+            percentage: 43
+          type: Heal
+      description: |-
+        Case Solved+ (4 ATB)
+        50s Enliven (+16s) [Range: All Allies]
+        25s PDEF Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 50-100% HP]
+        43% Heal [Range: All Allies]
+    ob10:
+      spadeCustomDescription: '+3 Gear C. Ability Uses [Range: Self] [Condition: First Use]'
+      effects:
+        - value:
+            range: All
+            durExt:
+              extension: 20
+              duration: 60
+          type: Enliven
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 10
+              duration: 30
+          type: PdefUp
+        - value:
+            range: All
+            percentage: 47
+          type: Heal
+      description: |-
+        Case Solved++ (4 ATB)
+        60s Enliven (+20s) [Range: All Allies]
+        30s PDEF Up (+10s) (Mid -> High) [Range: All Allies] [Condition: Self 50-100% HP]
+        47% Heal [Range: All Allies]
+    ob1:
+      spadeCustomDescription: '+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]'
+      effects:
+        - value:
+            range: All
+            durExt:
+              extension: 13
+              duration: 40
+          type: Enliven
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: PdefUp
+        - value:
+            range: All
+            percentage: 40
+          type: Heal
+      description: |-
+        Case Solved (4 ATB)
+        40s Enliven (+13s) [Range: All Allies]
+        25s PDEF Up (+8s) (Low -> Mid) [Range: All Allies] [Condition: Self 50-100% HP]
+        40% Heal [Range: All Allies]
+    ob0:
+      spadeCustomDescription: '+1 Gear C. Ability Uses [Range: Self] [Condition: First Use]'
+      effects:
+        - value:
+            range: All
+            durExt:
+              extension: 10
+              duration: 30
+          type: Enliven
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: PdefUp
+        - value:
+            range: All
+            percentage: 33
+          type: Heal
+      description: |-
+        Case Solved (4 ATB)
+        30s Enliven (+10s) [Range: All Allies]
+        20s PDEF Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 50-100% HP]
+        33% Heal [Range: All Allies]
+    name: Super Sleuth Collar
+    image: https://i.imgur.com/ZUVG7Sc.png
+    diamondCustomDescription: Stream Phase Regen Boost (All Allies)
     character: Red XIII
     atbCost: 4
   - source: Event
@@ -21703,7 +22575,7 @@ weapons:
           type: EarthResistDown
       description: |-
         Sandsplitter+ (4 ATB)
-        620% Mag. Earth Damage [Range: Single Enemy]
+        1080% Mag. Earth Damage [Range: Single Enemy]
         26s Earth Resistance Down (+8s) (High) [Range: Single Enemy] [Condition: Self 50-100% HP]
     ob10:
       effects:
@@ -21718,7 +22590,7 @@ weapons:
           type: EarthResistDown
       description: |-
         Sandsplitter++ (4 ATB)
-        700% Mag. Earth Damage [Range: Single Enemy]
+        1340% Mag. Earth Damage [Range: Single Enemy]
         30s Earth Resistance Down (+10s) (High) [Range: Single Enemy] [Condition: Self 50-100% HP]
     ob1:
       effects:
@@ -21733,7 +22605,7 @@ weapons:
           type: EarthResistDown
       description: |-
         Sandsplitter (4 ATB)
-        510% Mag. Earth Damage [Range: Single Enemy]
+        720% Mag. Earth Damage [Range: Single Enemy]
         22s Earth Resistance Down (+7s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]
     ob0:
       effects:
@@ -21748,10 +22620,76 @@ weapons:
           type: EarthResistDown
       description: |-
         Sandsplitter (4 ATB)
-        440% Mag. Earth Damage [Range: Single Enemy]
+        600% Mag. Earth Damage [Range: Single Enemy]
         20s Earth Resistance Down (+6s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]
     name: Blue Bramble
     image: https://i.imgur.com/8hhEgaq.png
+    diamondCustomDescription: Earth/Magic Sur Arcanum (All Allies)
+    character: Sephiroth
+    atbCost: 4
+  - source: Gacha (Non-Limited)
+    sAbilities:
+      slot3: ▲ Sigil Boost I
+      slot2: MATK Boost I
+      slot1: MATK Boost I
+    rAbilities:
+      slot2: Boost Earth Pot.
+      slot1: Boost MATK
+    ob6:
+      effects:
+        - value:
+            range: SingleTarget
+            percentage: 40
+            durExt:
+              extension: 8
+              duration: 25
+          type: SingleTgtEarthDmgRcvdUp
+      description: |-
+        Sandsplitter+ (4 ATB)
+        1080% Mag. Earth Damage [Range: Single Enemy]
+        25s 40% Single Target Earth Damage Received Up (+8s) [Range: Single Enemy] [Condition: Self 50-100% HP]
+    ob10:
+      effects:
+        - value:
+            range: SingleTarget
+            percentage: 50
+            durExt:
+              extension: 10
+              duration: 30
+          type: SingleTgtEarthDmgRcvdUp
+      description: |-
+        Sandsplitter++ (4 ATB)
+        1340% Mag. Earth Damage [Range: Single Enemy]
+        30s 50% Single Target Earth Damage Received Up (+10s) [Range: Single Enemy] [Condition: Self 50-100% HP]
+    ob1:
+      effects:
+        - value:
+            range: SingleTarget
+            percentage: 25
+            durExt:
+              extension: 8
+              duration: 25
+          type: SingleTgtEarthDmgRcvdUp
+      description: |-
+        Sandsplitter (4 ATB)
+        720% Mag. Earth Damage [Range: Single Enemy]
+        25s 25% Single Target Earth Damage Received Up (+8s) [Range: Single Enemy] [Condition: Self 50-100% HP]
+    ob0:
+      effects:
+        - value:
+            range: SingleTarget
+            percentage: 25
+            durExt:
+              extension: 6
+              duration: 20
+          type: SingleTgtEarthDmgRcvdUp
+      description: |-
+        Sandsplitter (4 ATB)
+        600% Mag. Earth Damage [Range: Single Enemy]
+        20s 25% Single Target Earth Damage Received Up (+6s) [Range: Single Enemy] [Condition: Self 50-100% HP]
+    name: Blue Bramble (Club Custom)
+    image: https://i.imgur.com/8hhEgaq.png
+    diamondCustomDescription: Earth/Magic Sur Arcanum (All Allies)
     character: Sephiroth
     atbCost: 4
   - source: Gacha (Non-Limited)
@@ -23946,7 +24884,10 @@ weapons:
               extension: 6
               duration: 20
           type: IceWeaponBoost
-      description: "Tearing Frost (4 ATB)\n720% Phys. Ice Damage [Range: Single Enemy]\r\n20s 20% Ice Weapon Boost (+6s) [Range: All Allies]"
+      description: |-
+        Tearing Frost (4 ATB)
+        720% Phys. Ice Damage [Range: Single Enemy]
+        20s 20% Ice Weapon Boost (+6s) [Range: All Allies]
     ob0:
       effects:
         - value:
@@ -24162,6 +25103,7 @@ weapons:
       slot2: Boost Fire Pot.
       slot1: Boost MATK
     ob6:
+      spadeCustomDescription: '26s Ice Damage Down (+8s) (Low -> High) [Range: Single Enemy]'
       effects:
         - value:
             range: SingleTarget
@@ -24172,12 +25114,22 @@ weapons:
               extension: 8
               duration: 26
           type: FireResistDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Low
+            durExt:
+              extension: 8
+              duration: 26
+          type: IceDamageDown
       description: |-
         Blazing Ignis+ (4 ATB)
-        620% Mag. Fire Damage [Range: Single Enemy]
+        1080% Mag. Fire Damage [Range: Single Enemy]
         26s Fire Resistance Down (+8s) (Low -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]
         1.2x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]
     ob10:
+      spadeCustomDescription: '30s Ice Damage Down (+10s) (Low -> High) [Range: Single Enemy]'
       effects:
         - value:
             range: SingleTarget
@@ -24188,12 +25140,22 @@ weapons:
               extension: 10
               duration: 30
           type: FireResistDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Low
+            durExt:
+              extension: 10
+              duration: 30
+          type: IceDamageDown
       description: |-
         Blazing Ignis++ (4 ATB)
-        700% Mag. Fire Damage [Range: Single Enemy]
+        1340% Mag. Fire Damage [Range: Single Enemy]
         30s Fire Resistance Down (+10s) (Low -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]
         1.2x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]
     ob1:
+      spadeCustomDescription: '22s Ice Damage Down (+7s) (Low -> Mid) [Range: Single Enemy]'
       effects:
         - value:
             range: SingleTarget
@@ -24204,12 +25166,22 @@ weapons:
               extension: 7
               duration: 22
           type: FireResistDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 7
+              duration: 22
+          type: IceDamageDown
       description: |-
         Blazing Ignis (4 ATB)
-        510% Mag. Fire Damage [Range: Single Enemy]
+        720% Mag. Fire Damage [Range: Single Enemy]
         22s Fire Resistance Down (+7s) (Low -> Mid) [Range: Single Enemy] [Condition: Self 50-100% HP]
         1.2x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]
     ob0:
+      spadeCustomDescription: '20s Ice Damage Down (+6s) (Low -> Mid) [Range: Single Enemy]'
       effects:
         - value:
             range: SingleTarget
@@ -24220,13 +25192,23 @@ weapons:
               extension: 6
               duration: 20
           type: FireResistDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: IceDamageDown
       description: |-
         Blazing Ignis (4 ATB)
-        440% Mag. Fire Damage [Range: Single Enemy]
+        600% Mag. Fire Damage [Range: Single Enemy]
         20s Fire Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy] [Condition: Self 50-100% HP]
         1.2x Damage [Range: Single Enemy] [Condition: Self 1+ Buff, Enhancement]
     name: Withering Blaze
     image: https://i.imgur.com/cVMolrU.png
+    diamondCustomDescription: Fire/Magic Sur Arcanum (All Allies)
     character: Sephiroth
     atbCost: 4
   - source: Guild Exchange
@@ -24725,7 +25707,7 @@ weapons:
         1.5x Damage [Range: All Enemies] [Condition: Single Target]
         50s Enfeeble (+16s) [Range: All Enemies]
         50s 25% Ice Damage Bonus (+16s) [Range: All Allies]
-        50s 0.2% Ice ATB Conservation Effect (+16s) [Range: Self] [Condition: First Use]
+        50s -2 ATB Ice Weapon/Gear C. Ability Cost (+16s) [Range: Self] [Condition: First Use]
     ob10:
       heartCustomDescription: |-
         1120% Mag. Ice Damage [Range: All Enemies]
@@ -24756,7 +25738,7 @@ weapons:
         1.5x Damage [Range: All Enemies] [Condition: Single Target]
         60s Enfeeble (+20s) [Range: All Enemies]
         60s 30% Ice Damage Bonus (+20s) [Range: All Allies]
-        60s 0.2% Ice ATB Conservation Effect (+20s) [Range: Self] [Condition: First Use]
+        60s -2 ATB Ice Weapon/Gear C. Ability Cost (+20s) [Range: Self] [Condition: First Use]
     ob1:
       heartCustomDescription: |-
         730% Mag. Ice Damage [Range: All Enemies]
@@ -24787,7 +25769,7 @@ weapons:
         1.5x Damage [Range: All Enemies] [Condition: Single Target]
         40s Enfeeble (+13s) [Range: All Enemies]
         40s 20% Ice Damage Bonus (+13s) [Range: All Allies]
-        40s 0.2% Ice ATB Conservation Effect (+13s) [Range: Self] [Condition: First Use]
+        40s -2 ATB Ice Weapon/Gear C. Ability Cost (+13s) [Range: Self] [Condition: First Use]
     ob0:
       heartCustomDescription: |-
         600% Mag. Ice Damage [Range: All Enemies]
@@ -24818,7 +25800,7 @@ weapons:
         1.5x Damage [Range: All Enemies] [Condition: Single Target]
         30s Enfeeble (+10s) [Range: All Enemies]
         30s 20% Ice Damage Bonus (+10s) [Range: All Allies]
-        30s 0.2% Ice ATB Conservation Effect (+10s) [Range: Self] [Condition: First Use]
+        30s -2 ATB Ice Weapon/Gear C. Ability Cost (+10s) [Range: Self] [Condition: First Use]
     name: Omega Wing
     image: https://i.imgur.com/mWAWDaW.png
     diamondCustomDescription: Ultimate Ice Interruption (All Allies)
@@ -24905,6 +25887,7 @@ weapons:
       slot2: Boost Fire Pot.
       slot1: Boost MATK (All Allies)
     ob6:
+      heartCustomDescription: '1350% Mag. Fire Damage [Range: Single Enemy]'
       effects:
         - value:
             range: All
@@ -24918,6 +25901,7 @@ weapons:
         1080% Mag. Fire Damage [Range: Single Enemy]
         20s 25% Fire Damage Bonus (+6s) [Range: All Allies]
     ob10:
+      heartCustomDescription: '1680% Mag. Fire Damage [Range: Single Enemy]'
       effects:
         - value:
             range: All
@@ -24931,6 +25915,7 @@ weapons:
         1340% Mag. Fire Damage [Range: Single Enemy]
         25s 30% Fire Damage Bonus (+8s) [Range: All Allies]
     ob1:
+      heartCustomDescription: '900% Mag. Fire Damage [Range: Single Enemy]'
       effects:
         - value:
             range: All
@@ -24944,6 +25929,7 @@ weapons:
         720% Mag. Fire Damage [Range: Single Enemy]
         20s 20% Fire Damage Bonus (+6s) [Range: All Allies]
     ob0:
+      heartCustomDescription: '750% Mag. Fire Damage [Range: Single Enemy]'
       effects:
         - value:
             range: All
@@ -24958,6 +25944,7 @@ weapons:
         15s 20% Fire Damage Bonus (+5s) [Range: All Allies]
     name: Shiranui
     image: https://i.imgur.com/LNT2VDP.png
+    diamondCustomDescription: Fire/Magic Sur Arcanum (All Allies)
     character: Sephiroth (Orig.)
     atbCost: 4
   - source: Gacha (Limit Break)
@@ -25738,18 +26725,11 @@ weapons:
               extension: 16
               duration: 50
           type: EarthWeaponBoost
-        - value:
-            range: Self
-            percentage: 40
-            durExt:
-              extension: 0
-              duration: 50
-          type: AmpEarthAbilities
       description: |-
         Spiral Tremor+ (4 ATB)
         1080% Mag. Earth Damage [Range: Single Enemy]
         50s 30% Earth Weapon Boost (+16s) [Range: All Allies]
-        50s 40% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]
+        50s 40% Amp. Earth Abilities 2 Times (+0s) [Range: Self] [Condition: First Use]
     ob10:
       heartCustomDescription: '1680% Mag. Earth Damage [Range: Single Enemy]'
       effects:
@@ -25760,18 +26740,11 @@ weapons:
               extension: 20
               duration: 60
           type: EarthWeaponBoost
-        - value:
-            range: Self
-            percentage: 50
-            durExt:
-              extension: 0
-              duration: 60
-          type: AmpEarthAbilities
       description: |-
         Spiral Tremor++ (4 ATB)
         1340% Mag. Earth Damage [Range: Single Enemy]
         60s 35% Earth Weapon Boost (+20s) [Range: All Allies]
-        60s 50% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]
+        60s 50% Amp. Earth Abilities 3 Times (+0s) [Range: Self] [Condition: First Use]
     ob1:
       heartCustomDescription: '900% Mag. Earth Damage [Range: Single Enemy]'
       effects:
@@ -25782,18 +26755,11 @@ weapons:
               extension: 13
               duration: 40
           type: EarthWeaponBoost
-        - value:
-            range: Self
-            percentage: 30
-            durExt:
-              extension: 0
-              duration: 40
-          type: AmpEarthAbilities
       description: |-
         Spiral Tremor (4 ATB)
         720% Mag. Earth Damage [Range: Single Enemy]
         40s 25% Earth Weapon Boost (+13s) [Range: All Allies]
-        40s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]
+        40s 30% Amp. Earth Abilities 2 Times (+0s) [Range: Self] [Condition: First Use]
     ob0:
       heartCustomDescription: '750% Mag. Earth Damage [Range: Single Enemy]'
       effects:
@@ -25804,18 +26770,11 @@ weapons:
               extension: 10
               duration: 30
           type: EarthWeaponBoost
-        - value:
-            range: Self
-            percentage: 30
-            durExt:
-              extension: 0
-              duration: 30
-          type: AmpEarthAbilities
       description: |-
         Spiral Tremor (4 ATB)
         600% Mag. Earth Damage [Range: Single Enemy]
         30s 25% Earth Weapon Boost (+10s) [Range: All Allies]
-        30s 30% Amp. Earth Abilities (+0s) [Range: Self] [Condition: First Use]
+        30s 30% Amp. Earth Abilities 1 Time (+0s) [Range: Self] [Condition: First Use]
     name: Elegant Gloves
     image: https://i.imgur.com/BYA16kY.png
     diamondCustomDescription: Ultimate Earth Interruption (All Allies)
@@ -26888,6 +27847,115 @@ weapons:
     name: Lightning's Gloves
     image: https://i.imgur.com/93KvVeW.png
     diamondCustomDescription: Ultimate Ice Interruption (All Allies)
+    character: Tifa
+    atbCost: 4
+  - source: Gacha (Non-Limited)
+    sAbilities:
+      slot3: ✖ Sigil Boost I
+      slot2: MATK Boost I
+      slot1: MATK Boost I
+    rAbilities:
+      slot2: Boost Ability Pot.
+      slot1: Boost ATK
+    ob6:
+      spadeCustomDescription: '50s 25% Amp. Mag. Abilities 4 Times (+0s) [Range: Self]'
+      effects:
+        - value:
+            range: All
+            durExt:
+              extension: 8
+              duration: 25
+          type: MagATBConservationEffect
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 16
+              duration: 50
+          type: MatkUp
+      description: |-
+        Pulverizing Knuckle+ (4 ATB)
+        1080% Mag. Non-elem. Damage [Range: All Enemies]
+        25s -1 ATB Mag. Weapon/Gear C. Ability Cost (+8s) [Range: All Allies]
+        50s MATK Up (+16s) (High) [Range: All Allies]
+        10% Crit Rate [Range: All Enemies]
+    ob10:
+      spadeCustomDescription: '60s 30% Amp. Mag. Abilities 5 Times (+0s) [Range: Self]'
+      effects:
+        - value:
+            range: All
+            durExt:
+              extension: 13
+              duration: 40
+          type: MagATBConservationEffect
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: High
+            durExt:
+              extension: 20
+              duration: 60
+          type: MatkUp
+      description: |-
+        Pulverizing Knuckle++ (4 ATB)
+        1340% Mag. Non-elem. Damage [Range: All Enemies]
+        40s -1 ATB Mag. Weapon/Gear C. Ability Cost (+13s) [Range: All Allies]
+        60s MATK Up (+20s) (High) [Range: All Allies]
+        10% Crit Rate [Range: All Enemies]
+    ob1:
+      spadeCustomDescription: '40s 20% Amp. Mag. Abilities 3 Times (+0s) [Range: Self]'
+      effects:
+        - value:
+            range: All
+            durExt:
+              extension: 5
+              duration: 15
+          type: MagATBConservationEffect
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 13
+              duration: 40
+          type: MatkUp
+      description: |-
+        Pulverizing Knuckle (4 ATB)
+        720% Mag. Non-elem. Damage [Range: All Enemies]
+        15s -1 ATB Mag. Weapon/Gear C. Ability Cost (+5s) [Range: All Allies]
+        40s MATK Up (+13s) (Low -> Mid) [Range: All Allies]
+        10% Crit Rate [Range: All Enemies]
+    ob0:
+      spadeCustomDescription: '30s 20% Amp. Mag. Abilities 3 Times (+0s) [Range: Self]'
+      effects:
+        - value:
+            range: All
+            durExt:
+              extension: 3
+              duration: 10
+          type: MagATBConservationEffect
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 10
+              duration: 30
+          type: MatkUp
+      description: |-
+        Pulverizing Knuckle (4 ATB)
+        600% Mag. Non-elem. Damage [Range: All Enemies]
+        10s -1 ATB Mag. Weapon/Gear C. Ability Cost (+3s) [Range: All Allies]
+        30s MATK Up (+10s) (Low -> Mid) [Range: All Allies]
+        10% Crit Rate [Range: All Enemies]
+    name: Metal Knuckles
+    image: https://i.imgur.com/bFQx0xA.png
+    diamondCustomDescription: Ultimate Magic Interruption (All Allies)
     character: Tifa
     atbCost: 4
   - source: Gacha (Non-Limited)
@@ -28373,6 +29441,155 @@ weapons:
       slot2: MATK Boost I
       slot1: MATK Boost I
     rAbilities:
+      slot2: Boost Fire Pot.
+      slot1: Boost MATK
+    ob6:
+      heartCustomDescription: '1350% Mag. Fire Damage [Range: Single Enemy]'
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 6
+              duration: 20
+          type: FireResistDown
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 6
+              duration: 20
+          type: FireDamageUp
+        - value:
+            range: All
+            percentage: 6
+            durExt:
+              extension: 0
+              duration: 60
+          type: HPGain
+      description: |-
+        Ghostly Fire Shot+ (4 ATB)
+        1080% Mag. Fire Damage [Range: Single Enemy]
+        20s Fire Resistance Down (+6s) (Mid -> High) [Range: Single Enemy]
+        20s Fire Damage Up (+6s) (Mid -> High) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]
+        60s 6% HP Gain (+0s) [Range: All Allies] [Condition: First Use]
+    ob10:
+      heartCustomDescription: '1680% Mag. Fire Damage [Range: Single Enemy]'
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 8
+              duration: 25
+          type: FireResistDown
+        - value:
+            range: All
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 8
+              duration: 25
+          type: FireDamageUp
+        - value:
+            range: All
+            percentage: 8
+            durExt:
+              extension: 0
+              duration: 60
+          type: HPGain
+      description: |-
+        Ghostly Fire Shot++ (4 ATB)
+        1340% Mag. Fire Damage [Range: Single Enemy]
+        25s Fire Resistance Down (+8s) (Mid -> High) [Range: Single Enemy]
+        25s Fire Damage Up (+8s) (Mid -> High) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]
+        60s 8% HP Gain (+0s) [Range: All Allies] [Condition: First Use]
+    ob1:
+      heartCustomDescription: '900% Mag. Fire Damage [Range: Single Enemy]'
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: FireResistDown
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: FireDamageUp
+        - value:
+            range: All
+            percentage: 5
+            durExt:
+              extension: 0
+              duration: 60
+          type: HPGain
+      description: |-
+        Ghostly Fire Shot (4 ATB)
+        720% Mag. Fire Damage [Range: Single Enemy]
+        20s Fire Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy]
+        20s Fire Damage Up (+6s) (Low -> Mid) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]
+        60s 5% HP Gain (+0s) [Range: All Allies] [Condition: First Use]
+    ob0:
+      heartCustomDescription: '750% Mag. Fire Damage [Range: Single Enemy]'
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 5
+              duration: 15
+          type: FireResistDown
+        - value:
+            range: All
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 5
+              duration: 15
+          type: FireDamageUp
+        - value:
+            range: All
+            percentage: 4
+            durExt:
+              extension: 0
+              duration: 60
+          type: HPGain
+      description: |-
+        Ghostly Fire Shot (4 ATB)
+        600% Mag. Fire Damage [Range: Single Enemy]
+        15s Fire Resistance Down (+5s) (Low -> Mid) [Range: Single Enemy]
+        15s Fire Damage Up (+5s) (Low -> Mid) [Range: All Allies] [Condition: Self 1+ Buff, Enhancement]
+        60s 4% HP Gain (+0s) [Range: All Allies] [Condition: First Use]
+    name: Festival Pistol
+    image: https://i.imgur.com/aW578lt.png
+    diamondCustomDescription: Ultimate Fire Interruption (All Allies)
+    character: Vincent
+    atbCost: 4
+  - source: Gacha (Non-Limited)
+    sAbilities:
+      slot3: ▲ Sigil Boost I
+      slot2: MATK Boost I
+      slot1: MATK Boost I
+    rAbilities:
       slot2: Boost Mag. Ability Pot.
       slot1: Boost MATK
     ob6:
@@ -28576,6 +29793,9 @@ weapons:
       slot2: Boost Ice Pot.
       slot1: Boost PATK (All Allies)
     ob6:
+      spadeCustomDescription: |-
+        50s 30% Ice Weapon Boost (+16s) [Range: All Allies]
+        50s PATK Down (+16s) (Mid -> High) [Range: Single Enemy]
       effects:
         - value:
             range: SingleTarget
@@ -28584,12 +29804,27 @@ weapons:
               extension: 0
               duration: 100
           type: IceWeakness
-      description: |-
-        Frozen Strike+ (4 ATB)
-        930% Phys. Ice Damage [Range: Single Enemy]
-        100s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]
-        +5% Limit Break Gauge [Range: Self]
+        - value:
+            range: All
+            percentage: 30
+            durExt:
+              extension: 16
+              duration: 50
+          type: IceWeaponBoost
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 16
+              duration: 50
+          type: PatkDown
+      description: "Frozen Strike+ (4 ATB)\n1080% Phys. Ice Damage [Range: Single Enemy]\r\n100s 50% Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\r\n+5% Limit Break Gauge [Range: Self]"
     ob10:
+      spadeCustomDescription: |-
+        60s 35% Ice Weapon Boost (+20s) [Range: All Allies]
+        60s PATK Down (+20s) (Mid -> High) [Range: Single Enemy]
       effects:
         - value:
             range: SingleTarget
@@ -28598,41 +29833,84 @@ weapons:
               extension: 0
               duration: 150
           type: IceWeakness
-      description: |-
-        Frozen Strike++ (4 ATB)
-        1120% Phys. Ice Damage [Range: Single Enemy]
-        150s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]
-        +5% Limit Break Gauge [Range: Self]
+        - value:
+            range: All
+            percentage: 35
+            durExt:
+              extension: 20
+              duration: 60
+          type: IceWeaponBoost
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 20
+              duration: 60
+          type: PatkDown
+      description: "Frozen Strike++ (4 ATB)\n1340% Phys. Ice Damage [Range: Single Enemy]\r\n150s 50% Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\r\n+5% Limit Break Gauge [Range: Self]"
     ob1:
+      spadeCustomDescription: |-
+        40s 25% Ice Weapon Boost (+13s) [Range: All Allies]
+        40s PATK Down (+13s) (Low -> Mid) [Range: Single Enemy]
       effects:
         - value:
             range: SingleTarget
-            percentage: 50
+            percentage: 30
             durExt:
               extension: 0
               duration: 70
           type: IceWeakness
-      description: |-
-        Frozen Strike (4 ATB)
-        740% Phys. Ice Damage [Range: Single Enemy]
-        70s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]
-        +4% Limit Break Gauge [Range: Self]
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 13
+              duration: 40
+          type: IceWeaponBoost
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 13
+              duration: 40
+          type: PatkDown
+      description: "Frozen Strike (4 ATB)\n720% Phys. Ice Damage [Range: Single Enemy]\r\n70s 30% Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\r\n+4% Limit Break Gauge [Range: Self]"
     ob0:
+      spadeCustomDescription: |-
+        30s 25% Ice Weapon Boost (+10s) [Range: All Allies]
+        30s PATK Down (+10s) (Low -> Mid) [Range: Single Enemy]
       effects:
         - value:
             range: SingleTarget
-            percentage: 50
+            percentage: 30
             durExt:
               extension: 0
               duration: 60
           type: IceWeakness
-      description: |-
-        Frozen Strike (4 ATB)
-        620% Phys. Ice Damage [Range: Single Enemy]
-        60s Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]
-        +4% Limit Break Gauge [Range: Self]
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 10
+              duration: 30
+          type: IceWeaponBoost
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 10
+              duration: 30
+          type: PatkDown
+      description: "Frozen Strike (4 ATB)\n600% Phys. Ice Damage [Range: Single Enemy]\r\n60s 30% Ice Weakness (+0s) [Range: Single Enemy] [Condition: First Use]\r\n+4% Limit Break Gauge [Range: Self]"
     name: Gun of the Worthy
     image: https://i.imgur.com/5o0PTwY.png
+    diamondCustomDescription: Ice/Physical Sur Arcanum (All Allies)
     character: Vincent
     atbCost: 4
   - source: Gacha (Non-Limited)
@@ -28644,35 +29922,68 @@ weapons:
       slot2: Boost Fire Pot.
       slot1: Boost PATK
     ob6:
-      effects: []
+      spadeCustomDescription: '50s 25% Fire Damage Bonus (+16s) [Range: All Allies] [Condition: Self 70-100% HP]'
+      effects:
+        - value:
+            range: All
+            percentage: 25
+            durExt:
+              extension: 16
+              duration: 50
+          type: FireDamageBonus
       description: |-
         Hellhound Shot+ (4 ATB)
-        780% Phys. Fire Damage [Range: Single Enemy]
+        1080% Phys. Fire Damage [Range: Single Enemy]
         1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]
         +5% Limit Break Gauge [Range: Self]
     ob10:
-      effects: []
+      spadeCustomDescription: '60s 30% Fire Damage Bonus (+20s) [Range: All Allies] [Condition: Self 70-100% HP]'
+      effects:
+        - value:
+            range: All
+            percentage: 30
+            durExt:
+              extension: 20
+              duration: 60
+          type: FireDamageBonus
       description: |-
         Hellhound Shot++ (4 ATB)
-        940% Phys. Fire Damage [Range: Single Enemy]
+        1340% Phys. Fire Damage [Range: Single Enemy]
         1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]
         +5% Limit Break Gauge [Range: Self]
     ob1:
-      effects: []
+      spadeCustomDescription: '40s 20% Fire Damage Bonus (+13s) [Range: All Allies] [Condition: Self 70-100% HP]'
+      effects:
+        - value:
+            range: All
+            percentage: 20
+            durExt:
+              extension: 13
+              duration: 40
+          type: FireDamageBonus
       description: |-
         Hellhound Shot (4 ATB)
-        620% Phys. Fire Damage [Range: Single Enemy]
+        720% Phys. Fire Damage [Range: Single Enemy]
         1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]
         +4% Limit Break Gauge [Range: Self]
     ob0:
-      effects: []
+      spadeCustomDescription: '30s 20% Fire Damage Bonus (+10s) [Range: All Allies] [Condition: Self 70-100% HP]'
+      effects:
+        - value:
+            range: All
+            percentage: 20
+            durExt:
+              extension: 10
+              duration: 30
+          type: FireDamageBonus
       description: |-
         Hellhound Shot (4 ATB)
-        520% Phys. Fire Damage [Range: Single Enemy]
+        600% Phys. Fire Damage [Range: Single Enemy]
         1.2x Damage [Range: Single Enemy] [Condition: Single Enemy 1+ Debuff, Condition]
         +4% Limit Break Gauge [Range: Self]
     name: Holiday Garm
     image: https://i.imgur.com/l0FkCKy.png
+    diamondCustomDescription: Fire/Physical Sur Arcanum (All Allies)
     character: Vincent
     atbCost: 4
   - source: Gacha (Non-Limited)
@@ -30339,6 +31650,144 @@ weapons:
     image: https://i.imgur.com/ULsjYbK.png
     character: Yuffie
     atbCost: 4
+  - source: Gacha (Non-Limited)
+    sAbilities:
+      slot3: ⏺ Sigil Boost I
+      slot2: PATK Boost I
+      slot1: PATK Boost I
+    rAbilities:
+      slot2: Boost Fire Pot.
+      slot1: Boost PATK
+    ob6:
+      heartCustomDescription: '1350% Phys. Fire Damage [Range: Single Enemy]'
+      effects:
+        - value:
+            range: SingleTarget
+            durExt:
+              extension: 16
+              duration: 50
+          type: Enfeeble
+        - value:
+            range: SingleTarget
+            potencies:
+              max: ExtraHigh
+              base: Low
+            durExt:
+              extension: 10
+              duration: 0
+          type: EnhanceDebuffs
+        - value:
+            range: Self
+            percentage: 20
+            durExt:
+              extension: 0
+              duration: 20
+          type: AmpFireAbilities
+      description: |-
+        Triple Spinner+ (5 ATB)
+        1080% Phys. Fire Damage [Range: Single Enemy]
+        50s Enfeeble (+16s) [Range: Single Enemy]
+        Enhance Debuffs (+10s) (Low -> Extra High) [Range: Single Enemy]
+        20s 20% Amp. Fire Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]
+    ob10:
+      heartCustomDescription: '1680% Phys. Fire Damage [Range: Single Enemy]'
+      effects:
+        - value:
+            range: SingleTarget
+            durExt:
+              extension: 20
+              duration: 60
+          type: Enfeeble
+        - value:
+            range: SingleTarget
+            potencies:
+              max: ExtraHigh
+              base: Low
+            durExt:
+              extension: 10
+              duration: 0
+          type: EnhanceDebuffs
+        - value:
+            range: Self
+            percentage: 25
+            durExt:
+              extension: 0
+              duration: 20
+          type: AmpFireAbilities
+      description: |-
+        Triple Spinner++ (5 ATB)
+        1340% Phys. Fire Damage [Range: Single Enemy]
+        60s Enfeeble (+20s) [Range: Single Enemy]
+        Enhance Debuffs (+10s) (Low -> Extra High) [Range: Single Enemy]
+        20s 25% Amp. Fire Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]
+        +1 Costume C. Ability Uses [Range: Self] [Condition: First Use]
+    ob1:
+      heartCustomDescription: '900% Phys. Fire Damage [Range: Single Enemy]'
+      effects:
+        - value:
+            range: SingleTarget
+            durExt:
+              extension: 13
+              duration: 40
+          type: Enfeeble
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Low
+            durExt:
+              extension: 10
+              duration: 0
+          type: EnhanceDebuffs
+        - value:
+            range: Self
+            percentage: 15
+            durExt:
+              extension: 0
+              duration: 20
+          type: AmpFireAbilities
+      description: |-
+        Triple Spinner (5 ATB)
+        720% Phys. Fire Damage [Range: Single Enemy]
+        40s Enfeeble (+13s) [Range: Single Enemy]
+        Enhance Debuffs (+10s) (Low -> High) [Range: Single Enemy]
+        20s 15% Amp. Fire Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]
+    ob0:
+      heartCustomDescription: '750% Phys. Fire Damage [Range: Single Enemy]'
+      effects:
+        - value:
+            range: SingleTarget
+            durExt:
+              extension: 10
+              duration: 30
+          type: Enfeeble
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Low
+            durExt:
+              extension: 10
+              duration: 0
+          type: EnhanceDebuffs
+        - value:
+            range: Self
+            percentage: 15
+            durExt:
+              extension: 0
+              duration: 20
+          type: AmpFireAbilities
+      description: |-
+        Triple Spinner (5 ATB)
+        600% Phys. Fire Damage [Range: Single Enemy]
+        30s Enfeeble (+10s) [Range: Single Enemy]
+        Enhance Debuffs (+10s) (Low -> High) [Range: Single Enemy]
+        20s 15% Amp. Fire Abilities (+0s) [Range: Self] [Condition: Self 50-100% HP]
+    name: Candy Apple
+    image: https://i.imgur.com/5L4FUE5.png
+    diamondCustomDescription: Ultimate Fire Interruption (All Allies)
+    character: Yuffie
+    atbCost: 5
   - source: Event
     sAbilities:
       slot3: MATK Boost I
@@ -30472,27 +31921,152 @@ weapons:
       slot2: Boost Wind Pot.
       slot1: Boost PATK
     ob6:
-      effects: []
+      spadeCustomDescription: |-
+        25s PATK Down (+8s) (Mid -> High) [Range: Single Enemy]
+        25s MATK Down (+8s) (Mid -> High) [Range: Single Enemy]
+        25s Wind Resistance Down (+8s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 8
+              duration: 25
+          type: PatkDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 8
+              duration: 25
+          type: MatkDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 8
+              duration: 25
+          type: WindResistDown
       description: |-
         Twister+ (4 ATB)
-        710% Phys. Wind Damage [Range: Single Enemy]
+        1080% Phys. Wind Damage [Range: Single Enemy]
     ob10:
-      effects: []
+      spadeCustomDescription: |-
+        30s PATK Down (+10s) (Mid -> High) [Range: Single Enemy]
+        30s MATK Down (+10s) (Mid -> High) [Range: Single Enemy]
+        30s Wind Resistance Down (+10s) (Mid -> High) [Range: Single Enemy] [Condition: Self 50-100% HP]
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 10
+              duration: 30
+          type: PatkDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 10
+              duration: 30
+          type: MatkDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: High
+              base: Mid
+            durExt:
+              extension: 10
+              duration: 30
+          type: WindResistDown
       description: |-
         Twister++ (4 ATB)
-        850% Phys. Wind Damage [Range: Single Enemy]
+        1340% Phys. Wind Damage [Range: Single Enemy]
     ob1:
-      effects: []
+      spadeCustomDescription: |-
+        25s PATK Down (+8s) (Low -> Mid) [Range: Single Enemy]
+        25s MATK Down (+8s) (Low -> Mid) [Range: Single Enemy]
+        25s Wind Resistance Down (+8s) (Low -> Mid) [Range: Single Enemy] [Condition: Self 50-100% HP]
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: PatkDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: MatkDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 8
+              duration: 25
+          type: WindResistDown
       description: |-
         Twister (4 ATB)
-        580% Phys. Wind Damage [Range: Single Enemy]
+        720% Phys. Wind Damage [Range: Single Enemy]
     ob0:
-      effects: []
+      spadeCustomDescription: |-
+        20s PATK Down (+6s) (Low -> Mid) [Range: Single Enemy]
+        20s MATK Down (+6s) (Low -> Mid) [Range: Single Enemy]
+        20s Wind Resistance Down (+6s) (Low -> Mid) [Range: Single Enemy] [Condition: Self 50-100% HP]
+      effects:
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: PatkDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: MatkDown
+        - value:
+            range: SingleTarget
+            potencies:
+              max: Mid
+              base: Low
+            durExt:
+              extension: 6
+              duration: 20
+          type: WindResistDown
       description: |-
         Twister (4 ATB)
-        480% Phys. Wind Damage [Range: Single Enemy]
+        600% Phys. Wind Damage [Range: Single Enemy]
     name: Diner Tray
     image: https://i.imgur.com/KwoD3jW.png
+    diamondCustomDescription: Wind/Physical Sur Arcanum (All Allies)
     character: Yuffie
     atbCost: 4
   - source: Gacha (Crossover)
@@ -33326,6 +34900,7 @@ weapons:
       slot2: Boost Fire Pot.
       slot1: Boost MATK (All Allies)
     ob6:
+      spadeCustomDescription: '20s Enfeeble (+6s) [Range: Single Enemy] [Condition: Self 50-100% HP]'
       effects:
         - value:
             range: SingleTarget
@@ -33345,12 +34920,19 @@ weapons:
               extension: 6
               duration: 20
           type: MatkUp
+        - value:
+            range: SingleTarget
+            durExt:
+              extension: 6
+              duration: 20
+          type: Enfeeble
       description: |-
         Igniting Stream+ (4 ATB)
-        860% Mag. Fire Damage [Range: Single Enemy]
+        1080% Mag. Fire Damage [Range: Single Enemy]
         20s MDEF Down (+6s) (Mid) [Range: Single Enemy]
         20s MATK Up (+6s) (Mid) [Range: All Allies]
     ob10:
+      spadeCustomDescription: '25s Enfeeble (+8s) [Range: Single Enemy] [Condition: Self 50-100% HP]'
       effects:
         - value:
             range: SingleTarget
@@ -33370,12 +34952,19 @@ weapons:
               extension: 8
               duration: 25
           type: MatkUp
+        - value:
+            range: SingleTarget
+            durExt:
+              extension: 8
+              duration: 25
+          type: Enfeeble
       description: |-
         Igniting Stream++ (4 ATB)
-        1020% Mag. Fire Damage [Range: Single Enemy]
+        1340% Mag. Fire Damage [Range: Single Enemy]
         25s MDEF Down (+8s) (Mid -> High) [Range: Single Enemy]
         25s MATK Up (+8s) (Mid -> High) [Range: All Allies]
     ob1:
+      spadeCustomDescription: '20s Enfeeble (+6s) [Range: Single Enemy] [Condition: Self 50-100% HP]'
       effects:
         - value:
             range: SingleTarget
@@ -33395,12 +34984,19 @@ weapons:
               extension: 6
               duration: 20
           type: MatkUp
+        - value:
+            range: SingleTarget
+            durExt:
+              extension: 6
+              duration: 20
+          type: Enfeeble
       description: |-
         Igniting Stream (4 ATB)
-        700% Mag. Fire Damage [Range: Single Enemy]
+        720% Mag. Fire Damage [Range: Single Enemy]
         20s MDEF Down (+6s) (Low) [Range: Single Enemy]
         20s MATK Up (+6s) (Low -> Mid) [Range: All Allies]
     ob0:
+      spadeCustomDescription: '15s Enfeeble (+5s) [Range: Single Enemy] [Condition: Self 50-100% HP]'
       effects:
         - value:
             range: SingleTarget
@@ -33420,13 +35016,20 @@ weapons:
               extension: 5
               duration: 15
           type: MatkUp
+        - value:
+            range: SingleTarget
+            durExt:
+              extension: 5
+              duration: 15
+          type: Enfeeble
       description: |-
         Igniting Stream (4 ATB)
-        580% Mag. Fire Damage [Range: Single Enemy]
+        600% Mag. Fire Damage [Range: Single Enemy]
         15s MDEF Down (+5s) (Low) [Range: Single Enemy]
         15s MATK Up (+5s) (Low -> Mid) [Range: All Allies]
     name: Stream Guard
     image: https://i.imgur.com/AW32S8x.png
+    diamondCustomDescription: Fire/Magic Sur Arcanum (All Allies)
     character: Zack
     atbCost: 4
   - source: Gacha (Non-Limited)

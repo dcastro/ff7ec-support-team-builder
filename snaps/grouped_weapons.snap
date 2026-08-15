@@ -256,6 +256,13 @@
             ob10: All
             ob1: All
             ob0: All
+    - weaponName: Super Sleuth Collar
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
     - weaponName: Grand Gloves
       ranges:
         - allRanges:
@@ -391,6 +398,13 @@
             ob10: Self
             ob1: Self
             ob0: Self
+    - weaponName: Companion Arm
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
     - weaponName: Fafnir Rifle
       ranges:
         - allRanges:
@@ -781,6 +795,26 @@
             ob0:
               max: Mid
               base: Mid
+    - weaponName: Skysplitter
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
+          allPotencies:
+            ob6:
+              max: High
+              base: Mid
+            ob10:
+              max: High
+              base: Mid
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
     - weaponName: Pumpkin Lamppost
       ranges:
         - allRanges:
@@ -801,6 +835,26 @@
             ob0:
               max: High
               base: Mid
+    - weaponName: Shinra Ceremonial Rifle (Club Custom)
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+          allPotencies:
+            ob6:
+              max: High
+              base: Mid
+            ob10:
+              max: High
+              base: Mid
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
     - weaponName: Bramble Spine
       ranges:
         - allRanges:
@@ -881,6 +935,26 @@
             ob0:
               max: Mid
               base: Low
+    - weaponName: Seaside Collar
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+          allPotencies:
+            ob6:
+              max: High
+              base: High
+            ob10:
+              max: High
+              base: High
+            ob1:
+              max: High
+              base: Mid
+            ob0:
+              max: High
+              base: Mid
     - weaponName: Immaculate Blade
       ranges:
         - allRanges:
@@ -1560,6 +1634,26 @@
             ob0:
               max: Mid
               base: Low
+    - weaponName: Metal Knuckles
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+          allPotencies:
+            ob6:
+              max: High
+              base: High
+            ob10:
+              max: High
+              base: High
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
     - weaponName: Sabin's Claws
       ranges:
         - allRanges:
@@ -2061,6 +2155,26 @@
             ob0:
               max: Mid
               base: Mid
+    - weaponName: Super Sleuth Collar
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+          allPotencies:
+            ob6:
+              max: High
+              base: Mid
+            ob10:
+              max: High
+              base: Mid
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
     - weaponName: Mythril Type-0 Katana
       ranges:
         - allRanges:
@@ -2342,6 +2456,26 @@
             ob0:
               max: High
               base: Mid
+    - weaponName: Heavy Hauser
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+          allPotencies:
+            ob6:
+              max: High
+              base: High
+            ob10:
+              max: High
+              base: High
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
     - weaponName: Heavy Vulcan
       ranges:
         - allRanges:
@@ -2717,6 +2851,13 @@
             ob10: All
             ob1: All
             ob0: All
+    - weaponName: Companion Arm
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
     - weaponName: Dragoon Lance
       ranges:
         - allRanges:
@@ -2731,6 +2872,13 @@
             ob10: Self
             ob1: Self
             ob0: Self
+    - weaponName: Centipede
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
     - weaponName: Blade of the Worthy
       ranges:
         - allRanges:
@@ -2865,6 +3013,13 @@
             ob10: All
             ob1: All
             ob0: All
+    - weaponName: Festival Pistol
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
 - - FilterEnhanceBuffs
   - - weaponName: Mystic Sword
       ranges:
@@ -2974,6 +3129,13 @@
             ob10: All
             ob1: Self
             ob0: Self
+    - weaponName: Super Sleuth Collar
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
     - weaponName: Festive Sword
       ranges:
         - allRanges:
@@ -2982,13 +3144,27 @@
             ob1: Self
             ob0: Self
 - - FilterPhysicalWeaponBoost
-  - - weaponName: Fusion Sword
+  - - weaponName: Companion Arm
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Fusion Sword
       ranges:
         - allRanges:
             ob6: Self
             ob10: Self
             ob1: Self
             ob0: Self
+    - weaponName: Shinra Ceremonial Rifle (Club Custom)
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
     - weaponName: Phoenix Odachi
       ranges:
         - allRanges:
@@ -3068,6 +3244,13 @@
             ob10: All
             ob1: All
             ob0: All
+    - weaponName: Centipede
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
     - weaponName: Kikuichimonji
       ranges:
         - allRanges:
@@ -3113,15 +3296,14 @@
             ob1: Self
             ob0: Self
 - - FilterMagATBConservationEffect
-  - - weaponName: Heirloom Brush
+  - - weaponName: Metal Knuckles
       ranges:
         - allRanges:
-            ob6: Self
-            ob10: Self
-            ob1: Self
-            ob0: Self
-- - FilterAmpPhysAbilities
-  - - weaponName: Chevron Blade
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+    - weaponName: Heirloom Brush
       ranges:
         - allRanges:
             ob6: Self
@@ -3169,6 +3351,26 @@
             ob0:
               max: Mid
               base: Mid
+    - weaponName: Skysplitter
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+          allPotencies:
+            ob6:
+              max: High
+              base: Mid
+            ob10:
+              max: High
+              base: Mid
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
     - weaponName: Shinra Ceremonial Rifle
       ranges:
         - allRanges:
@@ -3203,6 +3405,26 @@
             ob10:
               max: High
               base: Low
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
+    - weaponName: Festival Pistol
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+          allPotencies:
+            ob6:
+              max: High
+              base: Mid
+            ob10:
+              max: High
+              base: Mid
             ob1:
               max: Mid
               base: Low
@@ -3807,6 +4029,13 @@
             ob10: All
             ob1: All
             ob0: All
+    - weaponName: Gun of the Worthy
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
 - - FilterLightningWeaponBoost
   - - weaponName: Festive Blade
       ranges:
@@ -3875,6 +4104,13 @@
             ob10: All
             ob1: All
             ob0: All
+    - weaponName: Holiday Garm
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
 - - FilterIceDamageBonus
   - - weaponName: Patissier's Spear
       ranges:
@@ -3936,8 +4172,16 @@
             ob10: Self
             ob1: Self
             ob0: Self
-- - FilterAmpEarthAbilities
-  - - weaponName: Elegant Gloves
+- - FilterLightningATBConservationEffect
+  - - weaponName: Murasame
+      ranges:
+        - allRanges:
+            ob6: Self
+            ob10: Self
+            ob1: Self
+            ob0: Self
+- - FilterAmpFireAbilities
+  - - weaponName: Candy Apple
       ranges:
         - allRanges:
             ob6: Self
@@ -4050,7 +4294,21 @@
             ob10: SingleTarget
             ob1: SingleTarget
             ob0: SingleTarget
+    - weaponName: Candy Apple
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
     - weaponName: Fatum Ex Machina
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+    - weaponName: Stream Guard
       ranges:
         - allRanges:
             ob6: SingleTarget
@@ -4114,6 +4372,26 @@
             ob10: All
             ob1: All
             ob0: All
+          allPotencies:
+            ob6:
+              max: ExtraHigh
+              base: Low
+            ob10:
+              max: ExtraHigh
+              base: Low
+            ob1:
+              max: High
+              base: Low
+            ob0:
+              max: High
+              base: Low
+    - weaponName: Candy Apple
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
           allPotencies:
             ob6:
               max: ExtraHigh
@@ -4768,6 +5046,26 @@
             ob0:
               max: Mid
               base: Low
+    - weaponName: Gun of the Worthy
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+          allPotencies:
+            ob6:
+              max: High
+              base: Mid
+            ob10:
+              max: High
+              base: Mid
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
     - weaponName: Noblesse Automatic
       ranges:
         - allRanges:
@@ -4821,6 +5119,26 @@
               base: Mid
             ob10:
               max: Mid
+              base: Mid
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
+    - weaponName: Diner Tray
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+          allPotencies:
+            ob6:
+              max: High
+              base: Mid
+            ob10:
+              max: High
               base: Mid
             ob1:
               max: Mid
@@ -5269,6 +5587,26 @@
             ob0:
               max: Mid
               base: Mid
+    - weaponName: Diner Tray
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+          allPotencies:
+            ob6:
+              max: High
+              base: Mid
+            ob10:
+              max: High
+              base: Mid
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
     - weaponName: Striped Moogle Flag
       ranges:
         - allRanges:
@@ -5548,6 +5886,26 @@
             ob0:
               max: High
               base: Mid
+    - weaponName: Murasame
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+          allPotencies:
+            ob6:
+              max: High
+              base: Mid
+            ob10:
+              max: High
+              base: Mid
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
     - weaponName: Sleek Saber
       ranges:
         - allRanges:
@@ -6630,8 +6988,49 @@
             ob0:
               max: Mid
               base: Low
+- - FilterIceDamageDown
+  - - weaponName: Withering Blaze
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+          allPotencies:
+            ob6:
+              max: High
+              base: Low
+            ob10:
+              max: High
+              base: Low
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
 - - FilterLightningDamageDown
   - - weaponName: Striking Staff
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+          allPotencies:
+            ob6:
+              max: High
+              base: High
+            ob10:
+              max: High
+              base: High
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
+    - weaponName: Heavy Hauser
       ranges:
         - allRanges:
             ob6: SingleTarget
@@ -6672,6 +7071,27 @@
             ob0:
               max: Mid
               base: Low
+- - FilterWaterDamageDown
+  - - weaponName: Heavy Hauser
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+          allPotencies:
+            ob6:
+              max: High
+              base: High
+            ob10:
+              max: High
+              base: High
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
 - - FilterFireResistDown
   - - weaponName: Terra's Rod
       ranges:
@@ -6693,6 +7113,26 @@
             ob0:
               max: High
               base: Mid
+    - weaponName: Festival Umbrella
+      ranges:
+        - allRanges:
+            ob6: All
+            ob10: All
+            ob1: All
+            ob0: All
+          allPotencies:
+            ob6:
+              max: Mid
+              base: Low
+            ob10:
+              max: Mid
+              base: Low
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
     - weaponName: Volcanic Heat
       ranges:
         - allRanges:
@@ -6934,6 +7374,26 @@
               max: Mid
               base: Low
     - weaponName: Guide Gloves
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+          allPotencies:
+            ob6:
+              max: High
+              base: Mid
+            ob10:
+              max: High
+              base: Mid
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
+    - weaponName: Festival Pistol
       ranges:
         - allRanges:
             ob6: SingleTarget
@@ -7536,6 +7996,26 @@
             ob0:
               max: Mid
               base: Low
+    - weaponName: Seaside Collar
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+          allPotencies:
+            ob6:
+              max: High
+              base: High
+            ob10:
+              max: High
+              base: High
+            ob1:
+              max: High
+              base: Mid
+            ob0:
+              max: High
+              base: Mid
     - weaponName: Blue Bramble
       ranges:
         - allRanges:
@@ -8018,6 +8498,26 @@
             ob0:
               max: Mid
               base: Low
+    - weaponName: Diner Tray
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
+          allPotencies:
+            ob6:
+              max: High
+              base: Mid
+            ob10:
+              max: High
+              base: Mid
+            ob1:
+              max: Mid
+              base: Low
+            ob0:
+              max: Mid
+              base: Low
     - weaponName: Holiday Bell
       ranges:
         - allRanges:
@@ -8083,6 +8583,14 @@
             ob10: SingleTarget
             ob1: SingleTarget
             ob0: SingleTarget
+- - FilterSingleTgtEarthDmgRcvdUp
+  - - weaponName: Blue Bramble (Club Custom)
+      ranges:
+        - allRanges:
+            ob6: SingleTarget
+            ob10: SingleTarget
+            ob1: SingleTarget
+            ob0: SingleTarget
 - - FilterSingleTgtWaterDmgRcvdUp
   - - weaponName: Wheel Edge
       ranges:
@@ -8128,6 +8636,7 @@
     - weaponName: Mermaid Rod
     - weaponName: Prism Rod
     - weaponName: Team Leader's Bamboo Sword
+    - weaponName: Companion Arm
     - weaponName: Electrocannon
     - weaponName: Escutcheon Cannon
     - weaponName: Fafnir Rifle
@@ -8170,6 +8679,7 @@
     - weaponName: Holy Flame Gloves
     - weaponName: Bahamut Cutter
     - weaponName: Bird of Prey
+    - weaponName: Candy Apple
     - weaponName: Fatum Ex Machina
     - weaponName: Hawkeye
     - weaponName: Heirloom Brush
@@ -8220,6 +8730,7 @@
     - weaponName: Kirin Gloves
     - weaponName: Leather Combat Gloves
     - weaponName: Lightning's Gloves
+    - weaponName: Metal Knuckles
     - weaponName: Riding Gloves
     - weaponName: Sabin's Claws
     - weaponName: Shell Knuckles
@@ -8259,9 +8770,11 @@
     - weaponName: Rose Musket
     - weaponName: Rubber Band Gun
     - weaponName: Shinra Ceremonial Rifle
+    - weaponName: Shinra Ceremonial Rifle (Club Custom)
     - weaponName: Noble Collar
     - weaponName: Blade of the Worthy
     - weaponName: Blue Bramble
+    - weaponName: Blue Bramble (Club Custom)
     - weaponName: Cerulean Sky
     - weaponName: Edgar's Coiled Blade
     - weaponName: Immaculate Blade
@@ -8285,6 +8798,7 @@
     - weaponName: Starsoul Blade
     - weaponName: Chrome Death Penalty
     - weaponName: Crow Familiar
+    - weaponName: Festival Pistol
     - weaponName: Galian Roar
     - weaponName: Gun of the Worthy
     - weaponName: Holiday Garm

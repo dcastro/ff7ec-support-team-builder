@@ -29,6 +29,14 @@
       - Mystic Sword
     character: Cloud
 - - weapons:
+      - Hardedge
+      - Mystic Sword
+    character: Cloud
+  - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
       - Gambanteinn
       - Staff of the Possessed
     character: Aerith
@@ -52,6 +60,30 @@
       - Hardedge
       - Mystic Sword
     character: Cloud
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Murasame
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Murasame
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Murasame
+      - Mystic Sword
+    character: Cloud
+  - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
 - - weapons:
       - Crystal Sword
       - Mystic Sword
@@ -101,6 +133,30 @@
       - Twinkling Star
     character: Zack
 - - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Murasame
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Murasame
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Murasame
+      - Mystic Sword
+    character: Cloud
+- - weapons:
       - Junk Collar
       - Silver Collar
     character: Red XIII
@@ -108,6 +164,30 @@
       - Class President's Bracelet
       - Leather Gloves
     character: Tifa
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Hawkeye
+    character: Yuffie
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Hawkeye
+    character: Yuffie
+- - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Diner Tray
+      - Hawkeye
+    character: Yuffie
 - - weapons:
       - Inflatable Buster Sword (Club Custom)
       - Mythril Slasher
@@ -157,6 +237,14 @@
       - Kuja's Spirit Blade
     character: Sephiroth
 - - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Cerulean Sky
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
       - Kamura Wand
       - Staff of the Possessed
     character: Aerith
@@ -168,6 +256,14 @@
       - Staff of the Possessed
       - Striking Staff
     character: Aerith
+  - weapons:
+      - Kuja's Spirit Blade
+      - Overture
+    character: Sephiroth
+- - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
   - weapons:
       - Kuja's Spirit Blade
       - Overture
@@ -184,6 +280,14 @@
       - Staff of the Possessed
       - Striking Staff
     character: Aerith
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
   - weapons:
       - Class President's Bracelet
       - Shining Gloves
@@ -212,6 +316,54 @@
       - Class President's Bracelet
       - Lifeguard Wraps
     character: Tifa
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Hawkeye
+    character: Yuffie
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Hawkeye
+    character: Yuffie
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Hawkeye
+    character: Yuffie
+- - weapons:
+      - Kamura Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Winged Chakram
+    character: Yuffie
+- - weapons:
+      - Staff of the Possessed
+      - Striking Staff
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Winged Chakram
+    character: Yuffie
+- - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Diner Tray
+      - Winged Chakram
+    character: Yuffie
 - - weapons:
       - Lifeguard Wraps
       - Shining Gloves
@@ -509,6 +661,14 @@
       - Shining Gloves
     character: Tifa
 - - weapons:
+      - Silver Collar
+      - Super Sleuth Collar
+    character: Red XIII
+  - weapons:
+      - Class President's Bracelet
+      - Shining Gloves
+    character: Tifa
+- - weapons:
       - Kuja's Spirit Blade
       - Tempest
     character: Sephiroth
@@ -524,6 +684,30 @@
       - Black Whiskers
       - Twinkling Star
     character: Zack
+- - weapons:
+      - Gambanteinn
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Winged Chakram
+    character: Yuffie
+- - weapons:
+      - Mermaid Rod
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Winged Chakram
+    character: Yuffie
+- - weapons:
+      - Rousing Wizer Staff
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Winged Chakram
+    character: Yuffie
 - - weapons:
       - Stalwart Integrity
       - Type-91 Two-Hander
@@ -614,6 +798,14 @@
     character: Zack
 - - weapons:
       - Arctic Star
+      - Diner Tray
+    character: Yuffie
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Arctic Star
       - Watch of the Hunt
     character: Yuffie
   - weapons:
@@ -653,6 +845,14 @@
       - Twinkling Star
     character: Zack
 - - weapons:
+      - Marine Shooter
+      - Shinra Ceremonial Rifle (Club Custom)
+    character: Lucia
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
       - Immaculate Blade
       - Kuja's Spirit Blade
     character: Sephiroth
@@ -685,6 +885,14 @@
       - Silver Megaphone
     character: Cait Sith
 - - weapons:
+      - Battle Trumpet
+      - Silver Megaphone
+    character: Cait Sith
+  - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
       - Kamura Wand
       - Staff of the Possessed
     character: Aerith
@@ -700,6 +908,14 @@
       - Glavenus Sword
       - Mystic Sword
     character: Cloud
+- - weapons:
+      - Glavenus Sword
+      - Mystic Sword
+    character: Cloud
+  - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
 - - weapons:
       - Kamura Wand
       - Sea Dragon Staff
@@ -765,6 +981,14 @@
       - Type-91 Two-Hander
     character: Angeal
 - - weapons:
+      - Greatsword (A)
+      - Type-91 Two-Hander
+    character: Angeal
+  - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
       - Kamura Wand
       - Staff of the Possessed
     character: Aerith
@@ -780,6 +1004,14 @@
       - Electrocannon
       - W Machine
     character: Barret
+- - weapons:
+      - Electrocannon
+      - W Machine
+    character: Barret
+  - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
 - - weapons:
       - Gambanteinn
       - Staff of the Possessed
@@ -846,6 +1078,14 @@
     character: Cloud
 - - weapons:
       - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Murasame
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Kamura Wand
       - Staff of the Possessed
     character: Aerith
   - weapons:
@@ -860,6 +1100,14 @@
       - Mystic Sword
       - Sleek Saber
     character: Cloud
+- - weapons:
+      - Mystic Sword
+      - Sleek Saber
+    character: Cloud
+  - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
 - - weapons:
       - Chevron Blade
       - Mystic Sword
@@ -949,6 +1197,14 @@
       - Shining Gloves
     character: Tifa
 - - weapons:
+      - Floral Wand
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Arctic Star
+      - Diner Tray
+    character: Yuffie
+- - weapons:
       - Gambanteinn
       - Sun Umbrella
     character: Aerith
@@ -981,6 +1237,14 @@
       - Shining Gloves
     character: Tifa
 - - weapons:
+      - Staff of the Possessed
+      - Sun Umbrella
+    character: Aerith
+  - weapons:
+      - Arctic Star
+      - Diner Tray
+    character: Yuffie
+- - weapons:
       - Gambanteinn
       - Staff of the Possessed
     character: Aerith
@@ -1028,6 +1292,22 @@
       - Electrocannon
       - W Machine
     character: Barret
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Murasame
+      - Mystic Sword
+    character: Cloud
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Murasame
+      - Mystic Sword
+    character: Cloud
 - - weapons:
       - Gambanteinn
       - Staff of the Possessed
@@ -1061,6 +1341,14 @@
       - Shining Gloves
     character: Tifa
 - - weapons:
+      - Great Sabrecat Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Arctic Star
+      - Diner Tray
+    character: Yuffie
+- - weapons:
       - Chevron Blade
       - Mystic Sword
     character: Cloud
@@ -1085,6 +1373,14 @@
       - Radiant Edge
     character: Sephiroth
 - - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Kuja's Spirit Blade
+      - Radiant Edge
+    character: Sephiroth
+- - weapons:
       - Full Metal Staff
       - Staff of the Possessed
     character: Aerith
@@ -1100,6 +1396,14 @@
       - Class President's Bracelet
       - Lifeguard Wraps
     character: Tifa
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Hawkeye
+    character: Yuffie
 - - weapons:
       - Noblesse Rod
       - Staff of the Possessed
@@ -1205,6 +1509,14 @@
       - Shining Gloves
     character: Tifa
 - - weapons:
+      - Dawn's Prayers
+      - Staff of the Possessed
+    character: Aerith
+  - weapons:
+      - Arctic Star
+      - Diner Tray
+    character: Yuffie
+- - weapons:
       - Floral Wand
       - Gambanteinn
     character: Aerith
@@ -1301,6 +1613,14 @@
       - Pole Axe
     character: Cid
 - - weapons:
+      - Captain's Spear
+      - Pole Axe
+    character: Cid
+  - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
+- - weapons:
       - Pole Axe
       - Scimitar
     character: Cid
@@ -1333,6 +1653,14 @@
       - Shining Gloves
     character: Tifa
 - - weapons:
+      - Iron Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Arctic Star
+      - Diner Tray
+    character: Yuffie
+- - weapons:
       - Kamura Wand
       - Sea Dragon Staff
     character: Aerith
@@ -1352,6 +1680,14 @@
       - Staff of the Possessed
       - Striking Staff
     character: Aerith
+  - weapons:
+      - Folding Ruler
+      - Kuja's Spirit Blade
+    character: Sephiroth
+- - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
   - weapons:
       - Folding Ruler
       - Kuja's Spirit Blade
@@ -1477,6 +1813,14 @@
       - Shining Gloves
     character: Tifa
 - - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Járngreipr
+      - Shining Gloves
+    character: Tifa
+- - weapons:
       - Kamura Wand
       - Staff of the Possessed
     character: Aerith
@@ -1492,6 +1836,38 @@
       - Shining Gloves
       - Turks' Gloves
     character: Tifa
+- - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
+  - weapons:
+      - Shining Gloves
+      - Turks' Gloves
+    character: Tifa
+- - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Hawkeye
+    character: Yuffie
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Hawkeye
+    character: Yuffie
+- - weapons:
+      - Kamura Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Winged Chakram
+    character: Yuffie
 - - weapons:
       - Mythril Slasher
       - Turks' Blade
@@ -1925,6 +2301,22 @@
       - Turks' Gloves
     character: Tifa
 - - weapons:
+      - Gambanteinn
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Winged Chakram
+    character: Yuffie
+- - weapons:
+      - Rousing Wizer Staff
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Diner Tray
+      - Winged Chakram
+    character: Yuffie
+- - weapons:
       - Full Metal Staff
       - Gambanteinn
     character: Aerith
@@ -2037,6 +2429,14 @@
       - Twinkling Star
     character: Zack
 - - weapons:
+      - Seaside Collar
+      - Steward Collar
+    character: Red XIII
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
       - Demon's Impetus
       - Steward Gloves
     character: Tifa
@@ -2109,6 +2509,22 @@
       - Twinkling Star
     character: Zack
 - - weapons:
+      - Featherscatter
+      - Shinra Ceremonial Rifle (Club Custom)
+    character: Lucia
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Shinra Ceremonial Rifle (Club Custom)
+      - Spirit Demon Rifle
+    character: Lucia
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
       - Deroplatys
       - Dragontail Sword
     character: Matt
@@ -2136,6 +2552,14 @@
       - Oven Mitts
       - Shining Gloves
     character: Tifa
+  - weapons:
+      - Black Whiskers
+      - Twinkling Star
+    character: Zack
+- - weapons:
+      - Gun of the Worthy
+      - Rhad Gun
+    character: Vincent
   - weapons:
       - Black Whiskers
       - Twinkling Star
@@ -2597,6 +3021,14 @@
       - Shining Gloves
     character: Tifa
 - - weapons:
+      - Floral Wand
+      - Sea Dragon Staff
+    character: Aerith
+  - weapons:
+      - Arctic Star
+      - Diner Tray
+    character: Yuffie
+- - weapons:
       - Gambanteinn
       - Sun Umbrella
     character: Aerith
@@ -2652,6 +3084,14 @@
       - Electrocannon
       - Quad Gatling Gun
     character: Barret
+- - weapons:
+      - Electrocannon
+      - Quad Gatling Gun
+    character: Barret
+  - weapons:
+      - Seaside Collar
+      - Silver Collar
+    character: Red XIII
 - - weapons:
       - Gambanteinn
       - Sea Dragon Staff
